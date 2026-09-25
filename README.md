@@ -9,4 +9,3 @@ Original article text and original illustrations: CC BY 4.0. See public/reuse/in
 ## Deployment
 
 Cloudflare Pages: no framework, no build command, output directory `public`. Deploy the approved main branch. The repository contains curated release files, not working documents or account information.
-

@@ -1,0 +1,24 @@
+# Discovery in Practice
+
+> Practical knowledge on assays, instruments, and drug discovery.
+
+Original articles are shared under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Search, retrieval, and AI training access are permitted. Preserve attribution, references, limitations, and version information. Worked numerical examples and schematic figures are not raw experimental data.
+
+## Library
+
+- [Library](https://discoveryinpractice.com/articles/)
+- [Cited sources](https://discoveryinpractice.com/references/)
+- [About](https://discoveryinpractice.com/about/)
+
+## Articles
+
+- [A better Z′ can hide a worse measurement](https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.md): A higher Z′ can reflect nonlinear detector compression rather than a better assay. This article explains how bright-well variation can shrink while effect sizes become distorted, and how to check proportionality without confusing detector behavior with assay chemistry.
+- [When reading longer stops helping](https://discoveryinpractice.com/articles/luminescence-integration-time/article.md): Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.
+- [Read the plate map before you read the statistic](https://discoveryinpractice.com/bench-tips/plate-map/article.md): Inspect spatial patterns alongside control statistics, then use those patterns to choose a follow-up check.
+
+## Downloads
+
+- [Catalog](https://discoveryinpractice.com/data/catalog.json)
+- [Full collection](https://discoveryinpractice.com/data/articles.jsonl)
+- [Reuse and license](https://discoveryinpractice.com/reuse/)
+- [GitHub mirror](https://github.com/discovery-in-practice/website)

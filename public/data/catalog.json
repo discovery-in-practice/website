@@ -1,0 +1,73 @@
+[
+  {
+    "id": "z-prime-detector-linearity",
+    "title": "A better Z′ can hide a worse measurement",
+    "canonical_url": "https://discoveryinpractice.com/articles/z-prime-detector-linearity/",
+    "summary": "A higher Z′ can reflect nonlinear detector compression rather than a better assay. This article explains how bright-well variation can shrink while effect sizes become distorted, and how to check proportionality without confusing detector behavior with assay chemistry.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Assay quality",
+      "Detector linearity",
+      "Luminescence",
+      "Z-prime"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "39831090c495e52f8564ced712390c9e2b63c03d39f5af4c42d5ef46be9206cc",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-25",
+    "date_modified": "2026-09-25",
+    "json_url": "https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.md"
+  },
+  {
+    "id": "luminescence-integration-time",
+    "title": "When reading longer stops helping",
+    "canonical_url": "https://discoveryinpractice.com/articles/luminescence-integration-time/",
+    "summary": "Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Measurement & precision",
+      "Luminescence",
+      "Integration time",
+      "Background noise"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "014655d21b70af281a7698e0b7f32df1fd2a8867f123f84d3b3bf5fcc97a05ee",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-25",
+    "date_modified": "2026-09-25",
+    "json_url": "https://discoveryinpractice.com/articles/luminescence-integration-time/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/luminescence-integration-time/article.md"
+  },
+  {
+    "id": "plate-map",
+    "title": "Read the plate map before you read the statistic",
+    "canonical_url": "https://discoveryinpractice.com/bench-tips/plate-map/",
+    "summary": "Inspect spatial patterns alongside control statistics, then use those patterns to choose a follow-up check.",
+    "author": {
+      "name": "Discovery in Practice",
+      "url": "https://discoveryinpractice.com/about/",
+      "@type": "Organization"
+    },
+    "topics": [
+      "Bench tips",
+      "Plate maps"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "763d8831adbbabb97e874b5035d5aee2c06a8cd6aa1125a1361f0578b6a3c1cc",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-25",
+    "date_modified": "2026-09-25",
+    "json_url": "https://discoveryinpractice.com/bench-tips/plate-map/article.json",
+    "markdown_url": "https://discoveryinpractice.com/bench-tips/plate-map/article.md"
+  }
+]

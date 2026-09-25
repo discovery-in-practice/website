@@ -22,3 +22,4 @@ Original articles are shared under CC BY 4.0: https://creativecommons.org/licens
 - [Full collection](https://discoveryinpractice.com/data/articles.jsonl)
 - [Reuse and license](https://discoveryinpractice.com/reuse/)
 - [GitHub mirror](https://github.com/discovery-in-practice/website)
+- [Hugging Face dataset](https://huggingface.co/datasets/andrewinpractice/discovery-in-practice)

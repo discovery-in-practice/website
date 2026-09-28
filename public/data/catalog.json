@@ -142,5 +142,104 @@
     "date_modified": "2026-09-28",
     "json_url": "https://discoveryinpractice.com/compare/confocal-screening-systems/article.json",
     "markdown_url": "https://discoveryinpractice.com/compare/confocal-screening-systems/article.md"
+  },
+  {
+    "id": "htrf-ratio-whole-result",
+    "title": "HTRF: the ratio is not the whole result",
+    "canonical_url": "https://discoveryinpractice.com/articles/htrf-ratio-whole-result/",
+    "summary": "A stable HTRF ratio can conceal a major loss of signal, degraded precision, or a channel-specific interference. The article explains how to retain and interpret both emission channels, per-well ratios, and acquisition conditions.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "HTRF",
+      "Ratiometric assays",
+      "Fluorescence",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "f0f0f72d34315a7633b3243724107b6e625a81fba07e13c4cbcdb6045a43cc55",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/articles/htrf-ratio-whole-result/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/htrf-ratio-whole-result/article.md"
+  },
+  {
+    "id": "adp-glo-light-after-kinase",
+    "title": "ADP-Glo: the light comes after the kinase",
+    "canonical_url": "https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/",
+    "summary": "ADP-Glo light is the endpoint of a multistep detection sequence, so a lower signal can arise outside the kinase reaction. This article shows how to reconstruct the endpoint with ATP/ADP controls and interpret temperature, timing, conversion, and ATP-dependent potency.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "ADP-Glo",
+      "Kinase assays",
+      "Luminescence",
+      "Assay interference",
+      "Temperature"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "f7c341318bb3f80036e2c9dbe1cba4fe2d8c21e69f60745e441a83cc9a36b08f",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/article.md"
+  },
+  {
+    "id": "celltiter-glo-light-cells",
+    "title": "CellTiter-Glo: when less light doesn’t mean fewer cells",
+    "canonical_url": "https://discoveryinpractice.com/articles/celltiter-glo-light-cells/",
+    "summary": "CellTiter-Glo measures ATP-dependent light, not cell number directly, so metabolism and detection conditions can change the signal independently of abundance. The article separates biological effects from reagent, temperature, mixing, and detector effects and proposes controls for each.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "CellTiter-Glo",
+      "Cell viability",
+      "Luminescence",
+      "Temperature",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "d071dce991a23605539b1ae6e46de47d149e3f84dbdc54a14be1a295c9783ea5",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/articles/celltiter-glo-light-cells/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/celltiter-glo-light-cells/article.md"
+  },
+  {
+    "id": "hibit-protein-or-light",
+    "title": "HiBiT: did the protein disappear, or just the light?",
+    "canonical_url": "https://discoveryinpractice.com/articles/hibit-protein-or-light/",
+    "summary": "A decrease in HiBiT light can reflect less tagged protein or a change in complementation, luciferase activity, lysis, background, or measurement. The article separates reporter abundance from accelerated degradation and outlines controls that test the detection system and native protein.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "HiBiT",
+      "Protein degradation",
+      "Luminescence",
+      "Reporter assays",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "175e1f597878e944ed2cee72fb4393fdf8f3be5ce4bb41d240b834e3fb5efc84",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/articles/hibit-protein-or-light/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/hibit-protein-or-light/article.md"
   }
 ]

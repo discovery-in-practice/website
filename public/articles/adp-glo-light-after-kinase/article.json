@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0",
+  "id": "adp-glo-light-after-kinase",
+  "canonical_url": "https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/",
+  "title": "ADP-Glo: the light comes after the kinase",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "ADP-Glo light is the endpoint of a multistep detection sequence, so a lower signal can arise outside the kinase reaction. This article shows how to reconstruct the endpoint with ATP/ADP controls and interpret temperature, timing, conversion, and ATP-dependent potency.",
+  "takeaways": [
+    "Use a known ATP/ADP mock endpoint through both detection steps to test compound interference beyond the luciferase reaction.",
+    "Keep total nucleotide constant across conversion standards and match compound dilution, matrix, timing, and temperature to the assay workflow.",
+    "Interpret IC50 alongside ATP concentration and reaction conditions; the Cheng–Prusoff-style relationship applies only under the stated competitive and initial-rate assumptions."
+  ],
+  "limitations_summary": "The 10 µM examples and 1:1:2 dilution arithmetic are hypothetical. The ATP-competitive potency relationship is qualified for a simple reversible competitive model with negligible inhibitor depletion; complex or time-dependent mechanisms need other analysis. Temperature guidance applies to the described ADP-Glo workflow and does not establish reader performance.",
+  "topics": [
+    "ADP-Glo",
+    "Kinase assays",
+    "Luminescence",
+    "Assay interference",
+    "Temperature"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-09-28",
+  "date_modified": "2026-09-28",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A kinase inhibitor reduces the ADP-Glo signal. That is the expected result. Unfortunately, a compound that leaves the kinase alone and interferes with detection can also reduce the signal. Between the enzyme reaction and the reported number sit additional reactions, reagent additions and incubation periods. Include those stages in the troubleshooting plan.</p><p>ADP-Glo detects the ADP produced by the reaction. Its first reagent terminates the kinase reaction and removes remaining ATP. The second detection step converts ADP into ATP and measures that newly generated ATP through a luciferase reaction. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>,<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>] The instrument sees the end of this sequence. Establishing kinase inhibition requires showing where in the sequence the effect occurred.</p><h2 id=\"reconstruct-the-endpoint-without-the-kinase\">Reconstruct the endpoint without the kinase</h2><p>The most useful detection control contains a known ATP/ADP mixture instead of an active kinase reaction. It should otherwise resemble the assay closely enough to retain the suspected interference. Process it through both detection steps, with compound and vehicle controls.</p><p>Zegzouti and colleagues describe this approach in the original ADP-Glo paper. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>] It tests more than a luciferase-only counterscreen because it includes ATP depletion and ADP conversion. A compound can interfere before light production ever begins. Depending on which steps are affected, interference may raise or lower the result, or partly offset genuine kinase inhibition.</p><p>For a hypothetical assay starting with 10 µM ATP and reaching 10% conversion, prepare a mock endpoint containing 1 µM ADP and 9 µM ATP, with concentrations expressed before detection-reagent addition. Include the reaction buffer, substrate and other compatible components. Keep their dilution history consistent with the real samples.</p><p>Do not confuse the compound concentration during kinase exposure with its concentration during detection. In a 1:1:2 sequence of reaction, first reagent and second reagent volumes, the final volume is four times the kinase-reaction volume. A compound initially at 20 µM ends at 5 µM, assuming neither detection reagent adds compound. Prepare the mock reaction so the compound experiences the same staged dilution.</p><p>A detection effect flags the hit for further work; it does not prove the kinase is unaffected. Conversely, a clean mock reaction supports the assay interpretation without proving selectivity. Confirmation with an appropriate direct product or alternative activity measurement answers a different question.</p><h2 id=\"the-standard-curve-should-contain-the-atp-you-removed\">The standard curve should contain the ATP you removed</h2><p>For conversion standards, hold the total ATP plus ADP concentration constant while varying their proportions. This reproduces the changing nucleotide composition of the reaction more closely than ADP diluted into buffer alone. Both the technical manual and the original study describe this approach. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>,<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>]</p><p>At 10 µM total nucleotide, 5% conversion corresponds to 0.5 µM ADP plus 9.5 µM ATP. A 20% standard contains 2 µM ADP plus 8 µM ATP. Those standards must undergo the same detection sequence as the samples.</p><p>Pay particular attention to the zero-conversion mixture. ADP contamination in an ATP stock is already detectable product, even when the kinase does nothing. Promega recommends its supplied high-purity ATP to limit this problem. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>] An illustrative 0.1 µM ADP background is only a small fraction of a nominal 10 µM nucleotide pool, yet it equals the product from a reaction generating just 0.1 µM ADP.</p><p>Background subtraction removes the estimated mean contribution. It does not remove uncertainty in that estimate, nor does it repair well-to-well differences in nucleotide contamination or ATP depletion. Include matched no-enzyme controls and low-conversion standards across the plate, especially when working near the assay's lower useful range.</p><h2 id=\"more-conversion-is-not-always-a-better-kinase-experiment\">More conversion is not always a better kinase experiment</h2><p>Extending the reaction often produces a larger signal. It also changes the experiment. Substrate concentrations fall, product accumulates, and a control reaction may approach completion while an inhibited reaction is still progressing. The resulting endpoint no longer necessarily represents the ratio of their initial rates.</p><p>Establish a time interval and enzyme concentration over which product formation supports the intended kinetic interpretation. Low conversion helps limit substrate depletion, but low conversion alone does not prove linear progress. Enzyme activation, inactivation or slow inhibitor binding can still make the trajectory nonlinear.</p><p>Choose detection settings that measure the required low-conversion signal precisely instead of driving the biology harder merely to make a brighter well. Good light collection and low background can reduce pressure to use more enzyme or longer incubations. Preserve enough verified linear range for the highest standards and unexpected samples as well.</p><h2 id=\"atp-concentration-belongs-beside-every-potency-value\">ATP concentration belongs beside every potency value</h2><p>For a simple reversible ATP-competitive inhibitor under initial-rate conditions, a useful approximation is:</p><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC50 equals Ki times (1 plus ATP concentration divided by Km), under the assumptions stated in the article.\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msub><mrow><mrow><mtext>K</mtext></mrow></mrow><mrow><mrow><mtext>i</mtext></mrow></mrow></msub><mrow><mtext> (1 + </mtext></mrow><mfrac><mrow><mrow><mtext>[ATP]</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>K</mtext></mrow></mrow><mrow><mrow><mtext>m</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext>)</mtext></mrow></mrow></math></div><p>Here Ki is the inhibition constant and Km is the apparent ATP Michaelis constant under the chosen assay conditions. This relationship assumes the appropriate competitive model, negligible inhibitor depletion and suitable control of the kinase's other substrate. Tight binding, time dependence and more complex mechanisms require other analysis.</p><p>If Ki is 10 nM, measuring at ATP equal to Km gives an expected IC50 of 20 nM. Measuring at ten times Km gives 110 nM. The compound has not become intrinsically weaker; the competition has changed. In the original ADP-Glo study, increasing ATP shifted the measured potency of an ATP-competitive PKA inhibitor much more than that of the noncompetitive comparator. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>]</p><p>ATP titration is therefore informative, but it changes both the kinase reaction and the nucleotide burden entering detection. Qualify the conversion curve and detection controls at each ATP condition. Report ATP concentration, substrate, enzyme amount, incubation time and temperature with potency. Those conditions are needed to interpret the IC50.</p><h2 id=\"temperature-is-part-of-every-stage\">Temperature is part of every stage</h2><p>Promega explicitly states that temperature affects ADP-Glo light intensity and signal stability, and that inadequate equilibration can produce center-to-edge gradients. The manual calls for assay plates and reagents to reach room temperature before detection-reagent addition. It also recommends developing the kinase reaction at room temperature where appropriate. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>]</p><p>This gives the workflow two distinct temperature questions: under what conditions did the kinase produce ADP, and under what conditions was that ADP detected? Making the second stage stable cannot undo unequal reaction histories in the first.</p><p>There is a timing trap here. The first ADP-Glo reagent terminates the kinase reaction. If a reaction runs above room temperature and then waits to equilibrate before that addition, the waiting period is still potentially part of the active reaction. Follow the manufacturer's equilibration guidance, but include that transition when qualifying the effective reaction time. Do not silently treat removal from an incubator as the stop event.</p><p>Once detection begins, keep the reagent additions, incubation intervals and measurement temperature reproducible. A plate equilibrated near 22°C should not encounter a chamber that warms substantially above the room during the batch. Turning the heater off does not show that this requirement has been met. Internal components can still supply heat, and an above-ambient-only heater cannot remove it.</p><p>Ask for evidence that the sample environment remains stable near the intended room-temperature target under sustained use. Heat removal, separation of heat sources from the plate and limited unnecessary airflow across open wells are useful capabilities. A chamber-temperature display is not a substitute for checking representative liquid-filled wells. Low airflow also does not establish humidity control.</p><p>Keep stacks, reagent reservoirs and plate queues in the qualification experiment. A bottle may be equilibrated while newly dispensed liquid and the plate are not. Record the actual intervals between additions and reading; a long-lived glow still has kinetics. Avoid applying an Alpha-assay temperature coefficient to ADP-Glo, or assuming that all parts of the coupled reaction respond identically to warming.</p><h2 id=\"qualify-the-complete-workflow\">Qualify the complete workflow</h2><p>Run matched low, middle and high ATP/ADP mixtures through the complete detection sequence early and late in realistic instrument use. Alongside them, run kinase controls with matched reaction histories. Distribute positions so concentration is not inseparable from row, column or read order.</p><p>If both sets drift, investigate detection conditions, including temperature, timing, dispensing and reader response. If only the kinase-containing wells drift, focus on reaction history and components absent from the mock controls. These patterns guide follow-up; differences in matrix or timing can still complicate the diagnosis.</p><p>Challenge weak wells beside bright ones and verify proportional response across the required range. Crosstalk can lift the apparent activity of inhibited samples; compression can distort strong controls and intermediate responses. Neither a tight control CV nor a favorable Z′ establishes linearity.</p><p>Keep the ATP/ADP controls, thermal history and raw light values with the kinase results. They make it possible to distinguish a change in enzyme activity from a change in the chain of reactions used to observe it.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf?rev=42e85ccab87244b395f4ecd1ad8e1616&amp;sc_lang=en\">ADP-Glo Kinase Assay, TM313</a>. Revised July 2023. Sections 3B, 4 and 5: conversion standards, reagent sequence, thermal guidance and interference controls.</p><p id=\"ref-2\">2. Zegzouti H., Zdanovskaia M., Hsiao K. and Goueli S.A. <a href=\"https://journals.sagepub.com/doi/full/10.1089/adt.2009.0222\">ADP-Glo: A Bioluminescent and Homogeneous ADP Monitoring Assay for Kinases</a>. Assay and Drug Development Technologies 7, 560–572 (2009). doi:10.1089/adt.2009.0222.</p>",
+  "body_text": "A kinase inhibitor reduces the ADP-Glo signal. That is the expected result. Unfortunately, a compound that leaves the kinase alone and interferes with detection can also reduce the signal. Between the enzyme reaction and the reported number sit additional reactions, reagent additions and incubation periods. Include those stages in the troubleshooting plan.\n\nADP-Glo detects the ADP produced by the reaction. Its first reagent terminates the kinase reaction and removes remaining ATP. The second detection step converts ADP into ATP and measures that newly generated ATP through a luciferase reaction. [1,2] The instrument sees the end of this sequence. Establishing kinase inhibition requires showing where in the sequence the effect occurred.\n\nReconstruct the endpoint without the kinase\n\nThe most useful detection control contains a known ATP/ADP mixture instead of an active kinase reaction. It should otherwise resemble the assay closely enough to retain the suspected interference. Process it through both detection steps, with compound and vehicle controls.\n\nZegzouti and colleagues describe this approach in the original ADP-Glo paper. [2] It tests more than a luciferase-only counterscreen because it includes ATP depletion and ADP conversion. A compound can interfere before light production ever begins. Depending on which steps are affected, interference may raise or lower the result, or partly offset genuine kinase inhibition.\n\nFor a hypothetical assay starting with 10 µM ATP and reaching 10% conversion, prepare a mock endpoint containing 1 µM ADP and 9 µM ATP, with concentrations expressed before detection-reagent addition. Include the reaction buffer, substrate and other compatible components. Keep their dilution history consistent with the real samples.\n\nDo not confuse the compound concentration during kinase exposure with its concentration during detection. In a 1:1:2 sequence of reaction, first reagent and second reagent volumes, the final volume is four times the kinase-reaction volume. A compound initially at 20 µM ends at 5 µM, assuming neither detection reagent adds compound. Prepare the mock reaction so the compound experiences the same staged dilution.\n\nA detection effect flags the hit for further work; it does not prove the kinase is unaffected. Conversely, a clean mock reaction supports the assay interpretation without proving selectivity. Confirmation with an appropriate direct product or alternative activity measurement answers a different question.\n\nThe standard curve should contain the ATP you removed\n\nFor conversion standards, hold the total ATP plus ADP concentration constant while varying their proportions. This reproduces the changing nucleotide composition of the reaction more closely than ADP diluted into buffer alone. Both the technical manual and the original study describe this approach. [1,2]\n\nAt 10 µM total nucleotide, 5% conversion corresponds to 0.5 µM ADP plus 9.5 µM ATP. A 20% standard contains 2 µM ADP plus 8 µM ATP. Those standards must undergo the same detection sequence as the samples.\n\nPay particular attention to the zero-conversion mixture. ADP contamination in an ATP stock is already detectable product, even when the kinase does nothing. Promega recommends its supplied high-purity ATP to limit this problem. [1] An illustrative 0.1 µM ADP background is only a small fraction of a nominal 10 µM nucleotide pool, yet it equals the product from a reaction generating just 0.1 µM ADP.\n\nBackground subtraction removes the estimated mean contribution. It does not remove uncertainty in that estimate, nor does it repair well-to-well differences in nucleotide contamination or ATP depletion. Include matched no-enzyme controls and low-conversion standards across the plate, especially when working near the assay's lower useful range.\n\nMore conversion is not always a better kinase experiment\n\nExtending the reaction often produces a larger signal. It also changes the experiment. Substrate concentrations fall, product accumulates, and a control reaction may approach completion while an inhibited reaction is still progressing. The resulting endpoint no longer necessarily represents the ratio of their initial rates.\n\nEstablish a time interval and enzyme concentration over which product formation supports the intended kinetic interpretation. Low conversion helps limit substrate depletion, but low conversion alone does not prove linear progress. Enzyme activation, inactivation or slow inhibitor binding can still make the trajectory nonlinear.\n\nChoose detection settings that measure the required low-conversion signal precisely instead of driving the biology harder merely to make a brighter well. Good light collection and low background can reduce pressure to use more enzyme or longer incubations. Preserve enough verified linear range for the highest standards and unexpected samples as well.\n\nATP concentration belongs beside every potency value\n\nFor a simple reversible ATP-competitive inhibitor under initial-rate conditions, a useful approximation is:\n\nIC50 equals Ki times (1 plus ATP concentration divided by Km), under the assumptions stated in the article.\n\nHere Ki is the inhibition constant and Km is the apparent ATP Michaelis constant under the chosen assay conditions. This relationship assumes the appropriate competitive model, negligible inhibitor depletion and suitable control of the kinase's other substrate. Tight binding, time dependence and more complex mechanisms require other analysis.\n\nIf Ki is 10 nM, measuring at ATP equal to Km gives an expected IC50 of 20 nM. Measuring at ten times Km gives 110 nM. The compound has not become intrinsically weaker; the competition has changed. In the original ADP-Glo study, increasing ATP shifted the measured potency of an ATP-competitive PKA inhibitor much more than that of the noncompetitive comparator. [2]\n\nATP titration is therefore informative, but it changes both the kinase reaction and the nucleotide burden entering detection. Qualify the conversion curve and detection controls at each ATP condition. Report ATP concentration, substrate, enzyme amount, incubation time and temperature with potency. Those conditions are needed to interpret the IC50.\n\nTemperature is part of every stage\n\nPromega explicitly states that temperature affects ADP-Glo light intensity and signal stability, and that inadequate equilibration can produce center-to-edge gradients. The manual calls for assay plates and reagents to reach room temperature before detection-reagent addition. It also recommends developing the kinase reaction at room temperature where appropriate. [1]\n\nThis gives the workflow two distinct temperature questions: under what conditions did the kinase produce ADP, and under what conditions was that ADP detected? Making the second stage stable cannot undo unequal reaction histories in the first.\n\nThere is a timing trap here. The first ADP-Glo reagent terminates the kinase reaction. If a reaction runs above room temperature and then waits to equilibrate before that addition, the waiting period is still potentially part of the active reaction. Follow the manufacturer's equilibration guidance, but include that transition when qualifying the effective reaction time. Do not silently treat removal from an incubator as the stop event.\n\nOnce detection begins, keep the reagent additions, incubation intervals and measurement temperature reproducible. A plate equilibrated near 22°C should not encounter a chamber that warms substantially above the room during the batch. Turning the heater off does not show that this requirement has been met. Internal components can still supply heat, and an above-ambient-only heater cannot remove it.\n\nAsk for evidence that the sample environment remains stable near the intended room-temperature target under sustained use. Heat removal, separation of heat sources from the plate and limited unnecessary airflow across open wells are useful capabilities. A chamber-temperature display is not a substitute for checking representative liquid-filled wells. Low airflow also does not establish humidity control.\n\nKeep stacks, reagent reservoirs and plate queues in the qualification experiment. A bottle may be equilibrated while newly dispensed liquid and the plate are not. Record the actual intervals between additions and reading; a long-lived glow still has kinetics. Avoid applying an Alpha-assay temperature coefficient to ADP-Glo, or assuming that all parts of the coupled reaction respond identically to warming.\n\nQualify the complete workflow\n\nRun matched low, middle and high ATP/ADP mixtures through the complete detection sequence early and late in realistic instrument use. Alongside them, run kinase controls with matched reaction histories. Distribute positions so concentration is not inseparable from row, column or read order.\n\nIf both sets drift, investigate detection conditions, including temperature, timing, dispensing and reader response. If only the kinase-containing wells drift, focus on reaction history and components absent from the mock controls. These patterns guide follow-up; differences in matrix or timing can still complicate the diagnosis.\n\nChallenge weak wells beside bright ones and verify proportional response across the required range. Crosstalk can lift the apparent activity of inhibited samples; compression can distort strong controls and intermediate responses. Neither a tight control CV nor a favorable Z′ establishes linearity.\n\nKeep the ATP/ADP controls, thermal history and raw light values with the kinase results. They make it possible to distinguish a change in enzyme activity from a change in the chain of reactions used to observe it.\n\nReferences\n\n1. Promega. ADP-Glo Kinase Assay, TM313. Revised July 2023. Sections 3B, 4 and 5: conversion standards, reagent sequence, thermal guidance and interference controls.\n\n2. Zegzouti H., Zdanovskaia M., Hsiao K. and Goueli S.A. ADP-Glo: A Bioluminescent and Homogeneous ADP Monitoring Assay for Kinases. Assay and Drug Development Technologies 7, 560–572 (2009). doi:10.1089/adt.2009.0222.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A kinase inhibitor reduces the ADP-Glo signal. That is the expected result. Unfortunately, a compound that leaves the kinase alone and interferes with detection can also reduce the signal. Between the enzyme reaction and the reported number sit additional reactions, reagent additions and incubation periods. Include those stages in the troubleshooting plan.",
+          "html": "<p>A kinase inhibitor reduces the ADP-Glo signal. That is the expected result. Unfortunately, a compound that leaves the kinase alone and interferes with detection can also reduce the signal. Between the enzyme reaction and the reported number sit additional reactions, reagent additions and incubation periods. Include those stages in the troubleshooting plan.</p>"
+        },
+        {
+          "type": "p",
+          "text": "ADP-Glo detects the ADP produced by the reaction. Its first reagent terminates the kinase reaction and removes remaining ATP. The second detection step converts ADP into ATP and measures that newly generated ATP through a luciferase reaction. [1,2] The instrument sees the end of this sequence. Establishing kinase inhibition requires showing where in the sequence the effect occurred.",
+          "html": "<p>ADP-Glo detects the ADP produced by the reaction. Its first reagent terminates the kinase reaction and removes remaining ATP. The second detection step converts ADP into ATP and measures that newly generated ATP through a luciferase reaction. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>,<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>] The instrument sees the end of this sequence. Establishing kinase inhibition requires showing where in the sequence the effect occurred.</p>"
+        }
+      ]
+    },
+    {
+      "id": "reconstruct-the-endpoint-without-the-kinase",
+      "heading": "Reconstruct the endpoint without the kinase",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Reconstruct the endpoint without the kinase",
+          "html": "<h2 id=\"reconstruct-the-endpoint-without-the-kinase\">Reconstruct the endpoint without the kinase</h2>"
+        },
+        {
+          "type": "p",
+          "text": "The most useful detection control contains a known ATP/ADP mixture instead of an active kinase reaction. It should otherwise resemble the assay closely enough to retain the suspected interference. Process it through both detection steps, with compound and vehicle controls.",
+          "html": "<p>The most useful detection control contains a known ATP/ADP mixture instead of an active kinase reaction. It should otherwise resemble the assay closely enough to retain the suspected interference. Process it through both detection steps, with compound and vehicle controls.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Zegzouti and colleagues describe this approach in the original ADP-Glo paper. [2] It tests more than a luciferase-only counterscreen because it includes ATP depletion and ADP conversion. A compound can interfere before light production ever begins. Depending on which steps are affected, interference may raise or lower the result, or partly offset genuine kinase inhibition.",
+          "html": "<p>Zegzouti and colleagues describe this approach in the original ADP-Glo paper. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>] It tests more than a luciferase-only counterscreen because it includes ATP depletion and ADP conversion. A compound can interfere before light production ever begins. Depending on which steps are affected, interference may raise or lower the result, or partly offset genuine kinase inhibition.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a hypothetical assay starting with 10 µM ATP and reaching 10% conversion, prepare a mock endpoint containing 1 µM ADP and 9 µM ATP, with concentrations expressed before detection-reagent addition. Include the reaction buffer, substrate and other compatible components. Keep their dilution history consistent with the real samples.",
+          "html": "<p>For a hypothetical assay starting with 10 µM ATP and reaching 10% conversion, prepare a mock endpoint containing 1 µM ADP and 9 µM ATP, with concentrations expressed before detection-reagent addition. Include the reaction buffer, substrate and other compatible components. Keep their dilution history consistent with the real samples.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Do not confuse the compound concentration during kinase exposure with its concentration during detection. In a 1:1:2 sequence of reaction, first reagent and second reagent volumes, the final volume is four times the kinase-reaction volume. A compound initially at 20 µM ends at 5 µM, assuming neither detection reagent adds compound. Prepare the mock reaction so the compound experiences the same staged dilution.",
+          "html": "<p>Do not confuse the compound concentration during kinase exposure with its concentration during detection. In a 1:1:2 sequence of reaction, first reagent and second reagent volumes, the final volume is four times the kinase-reaction volume. A compound initially at 20 µM ends at 5 µM, assuming neither detection reagent adds compound. Prepare the mock reaction so the compound experiences the same staged dilution.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A detection effect flags the hit for further work; it does not prove the kinase is unaffected. Conversely, a clean mock reaction supports the assay interpretation without proving selectivity. Confirmation with an appropriate direct product or alternative activity measurement answers a different question.",
+          "html": "<p>A detection effect flags the hit for further work; it does not prove the kinase is unaffected. Conversely, a clean mock reaction supports the assay interpretation without proving selectivity. Confirmation with an appropriate direct product or alternative activity measurement answers a different question.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-standard-curve-should-contain-the-atp-you-removed",
+      "heading": "The standard curve should contain the ATP you removed",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The standard curve should contain the ATP you removed",
+          "html": "<h2 id=\"the-standard-curve-should-contain-the-atp-you-removed\">The standard curve should contain the ATP you removed</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For conversion standards, hold the total ATP plus ADP concentration constant while varying their proportions. This reproduces the changing nucleotide composition of the reaction more closely than ADP diluted into buffer alone. Both the technical manual and the original study describe this approach. [1,2]",
+          "html": "<p>For conversion standards, hold the total ATP plus ADP concentration constant while varying their proportions. This reproduces the changing nucleotide composition of the reaction more closely than ADP diluted into buffer alone. Both the technical manual and the original study describe this approach. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>,<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>]</p>"
+        },
+        {
+          "type": "p",
+          "text": "At 10 µM total nucleotide, 5% conversion corresponds to 0.5 µM ADP plus 9.5 µM ATP. A 20% standard contains 2 µM ADP plus 8 µM ATP. Those standards must undergo the same detection sequence as the samples.",
+          "html": "<p>At 10 µM total nucleotide, 5% conversion corresponds to 0.5 µM ADP plus 9.5 µM ATP. A 20% standard contains 2 µM ADP plus 8 µM ATP. Those standards must undergo the same detection sequence as the samples.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Pay particular attention to the zero-conversion mixture. ADP contamination in an ATP stock is already detectable product, even when the kinase does nothing. Promega recommends its supplied high-purity ATP to limit this problem. [1] An illustrative 0.1 µM ADP background is only a small fraction of a nominal 10 µM nucleotide pool, yet it equals the product from a reaction generating just 0.1 µM ADP.",
+          "html": "<p>Pay particular attention to the zero-conversion mixture. ADP contamination in an ATP stock is already detectable product, even when the kinase does nothing. Promega recommends its supplied high-purity ATP to limit this problem. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>] An illustrative 0.1 µM ADP background is only a small fraction of a nominal 10 µM nucleotide pool, yet it equals the product from a reaction generating just 0.1 µM ADP.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Background subtraction removes the estimated mean contribution. It does not remove uncertainty in that estimate, nor does it repair well-to-well differences in nucleotide contamination or ATP depletion. Include matched no-enzyme controls and low-conversion standards across the plate, especially when working near the assay's lower useful range.",
+          "html": "<p>Background subtraction removes the estimated mean contribution. It does not remove uncertainty in that estimate, nor does it repair well-to-well differences in nucleotide contamination or ATP depletion. Include matched no-enzyme controls and low-conversion standards across the plate, especially when working near the assay's lower useful range.</p>"
+        }
+      ]
+    },
+    {
+      "id": "more-conversion-is-not-always-a-better-kinase-experiment",
+      "heading": "More conversion is not always a better kinase experiment",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "More conversion is not always a better kinase experiment",
+          "html": "<h2 id=\"more-conversion-is-not-always-a-better-kinase-experiment\">More conversion is not always a better kinase experiment</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Extending the reaction often produces a larger signal. It also changes the experiment. Substrate concentrations fall, product accumulates, and a control reaction may approach completion while an inhibited reaction is still progressing. The resulting endpoint no longer necessarily represents the ratio of their initial rates.",
+          "html": "<p>Extending the reaction often produces a larger signal. It also changes the experiment. Substrate concentrations fall, product accumulates, and a control reaction may approach completion while an inhibited reaction is still progressing. The resulting endpoint no longer necessarily represents the ratio of their initial rates.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Establish a time interval and enzyme concentration over which product formation supports the intended kinetic interpretation. Low conversion helps limit substrate depletion, but low conversion alone does not prove linear progress. Enzyme activation, inactivation or slow inhibitor binding can still make the trajectory nonlinear.",
+          "html": "<p>Establish a time interval and enzyme concentration over which product formation supports the intended kinetic interpretation. Low conversion helps limit substrate depletion, but low conversion alone does not prove linear progress. Enzyme activation, inactivation or slow inhibitor binding can still make the trajectory nonlinear.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Choose detection settings that measure the required low-conversion signal precisely instead of driving the biology harder merely to make a brighter well. Good light collection and low background can reduce pressure to use more enzyme or longer incubations. Preserve enough verified linear range for the highest standards and unexpected samples as well.",
+          "html": "<p>Choose detection settings that measure the required low-conversion signal precisely instead of driving the biology harder merely to make a brighter well. Good light collection and low background can reduce pressure to use more enzyme or longer incubations. Preserve enough verified linear range for the highest standards and unexpected samples as well.</p>"
+        }
+      ]
+    },
+    {
+      "id": "atp-concentration-belongs-beside-every-potency-value",
+      "heading": "ATP concentration belongs beside every potency value",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "ATP concentration belongs beside every potency value",
+          "html": "<h2 id=\"atp-concentration-belongs-beside-every-potency-value\">ATP concentration belongs beside every potency value</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For a simple reversible ATP-competitive inhibitor under initial-rate conditions, a useful approximation is:",
+          "html": "<p>For a simple reversible ATP-competitive inhibitor under initial-rate conditions, a useful approximation is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "IC50 equals Ki times (1 plus ATP concentration divided by Km), under the assumptions stated in the article.",
+          "html": "<div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC50 equals Ki times (1 plus ATP concentration divided by Km), under the assumptions stated in the article.\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msub><mrow><mrow><mtext>K</mtext></mrow></mrow><mrow><mrow><mtext>i</mtext></mrow></mrow></msub><mrow><mtext> (1 + </mtext></mrow><mfrac><mrow><mrow><mtext>[ATP]</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>K</mtext></mrow></mrow><mrow><mrow><mtext>m</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext>)</mtext></mrow></mrow></math></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here Ki is the inhibition constant and Km is the apparent ATP Michaelis constant under the chosen assay conditions. This relationship assumes the appropriate competitive model, negligible inhibitor depletion and suitable control of the kinase's other substrate. Tight binding, time dependence and more complex mechanisms require other analysis.",
+          "html": "<p>Here Ki is the inhibition constant and Km is the apparent ATP Michaelis constant under the chosen assay conditions. This relationship assumes the appropriate competitive model, negligible inhibitor depletion and suitable control of the kinase's other substrate. Tight binding, time dependence and more complex mechanisms require other analysis.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If Ki is 10 nM, measuring at ATP equal to Km gives an expected IC50 of 20 nM. Measuring at ten times Km gives 110 nM. The compound has not become intrinsically weaker; the competition has changed. In the original ADP-Glo study, increasing ATP shifted the measured potency of an ATP-competitive PKA inhibitor much more than that of the noncompetitive comparator. [2]",
+          "html": "<p>If Ki is 10 nM, measuring at ATP equal to Km gives an expected IC50 of 20 nM. Measuring at ten times Km gives 110 nM. The compound has not become intrinsically weaker; the competition has changed. In the original ADP-Glo study, increasing ATP shifted the measured potency of an ATP-competitive PKA inhibitor much more than that of the noncompetitive comparator. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2\">2</a>]</p>"
+        },
+        {
+          "type": "p",
+          "text": "ATP titration is therefore informative, but it changes both the kinase reaction and the nucleotide burden entering detection. Qualify the conversion curve and detection controls at each ATP condition. Report ATP concentration, substrate, enzyme amount, incubation time and temperature with potency. Those conditions are needed to interpret the IC50.",
+          "html": "<p>ATP titration is therefore informative, but it changes both the kinase reaction and the nucleotide burden entering detection. Qualify the conversion curve and detection controls at each ATP condition. Report ATP concentration, substrate, enzyme amount, incubation time and temperature with potency. Those conditions are needed to interpret the IC50.</p>"
+        }
+      ]
+    },
+    {
+      "id": "temperature-is-part-of-every-stage",
+      "heading": "Temperature is part of every stage",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Temperature is part of every stage",
+          "html": "<h2 id=\"temperature-is-part-of-every-stage\">Temperature is part of every stage</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Promega explicitly states that temperature affects ADP-Glo light intensity and signal stability, and that inadequate equilibration can produce center-to-edge gradients. The manual calls for assay plates and reagents to reach room temperature before detection-reagent addition. It also recommends developing the kinase reaction at room temperature where appropriate. [1]",
+          "html": "<p>Promega explicitly states that temperature affects ADP-Glo light intensity and signal stability, and that inadequate equilibration can produce center-to-edge gradients. The manual calls for assay plates and reagents to reach room temperature before detection-reagent addition. It also recommends developing the kinase reaction at room temperature where appropriate. [<a href=\"https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1\">1</a>]</p>"
+        },
+        {
+          "type": "p",
+          "text": "This gives the workflow two distinct temperature questions: under what conditions did the kinase produce ADP, and under what conditions was that ADP detected? Making the second stage stable cannot undo unequal reaction histories in the first.",
+          "html": "<p>This gives the workflow two distinct temperature questions: under what conditions did the kinase produce ADP, and under what conditions was that ADP detected? Making the second stage stable cannot undo unequal reaction histories in the first.</p>"
+        },
+        {
+          "type": "p",
+          "text": "There is a timing trap here. The first ADP-Glo reagent terminates the kinase reaction. If a reaction runs above room temperature and then waits to equilibrate before that addition, the waiting period is still potentially part of the active reaction. Follow the manufacturer's equilibration guidance, but include that transition when qualifying the effective reaction time. Do not silently treat removal from an incubator as the stop event.",
+          "html": "<p>There is a timing trap here. The first ADP-Glo reagent terminates the kinase reaction. If a reaction runs above room temperature and then waits to equilibrate before that addition, the waiting period is still potentially part of the active reaction. Follow the manufacturer's equilibration guidance, but include that transition when qualifying the effective reaction time. Do not silently treat removal from an incubator as the stop event.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Once detection begins, keep the reagent additions, incubation intervals and measurement temperature reproducible. A plate equilibrated near 22°C should not encounter a chamber that warms substantially above the room during the batch. Turning the heater off does not show that this requirement has been met. Internal components can still supply heat, and an above-ambient-only heater cannot remove it.",
+          "html": "<p>Once detection begins, keep the reagent additions, incubation intervals and measurement temperature reproducible. A plate equilibrated near 22°C should not encounter a chamber that warms substantially above the room during the batch. Turning the heater off does not show that this requirement has been met. Internal components can still supply heat, and an above-ambient-only heater cannot remove it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Ask for evidence that the sample environment remains stable near the intended room-temperature target under sustained use. Heat removal, separation of heat sources from the plate and limited unnecessary airflow across open wells are useful capabilities. A chamber-temperature display is not a substitute for checking representative liquid-filled wells. Low airflow also does not establish humidity control.",
+          "html": "<p>Ask for evidence that the sample environment remains stable near the intended room-temperature target under sustained use. Heat removal, separation of heat sources from the plate and limited unnecessary airflow across open wells are useful capabilities. A chamber-temperature display is not a substitute for checking representative liquid-filled wells. Low airflow also does not establish humidity control.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep stacks, reagent reservoirs and plate queues in the qualification experiment. A bottle may be equilibrated while newly dispensed liquid and the plate are not. Record the actual intervals between additions and reading; a long-lived glow still has kinetics. Avoid applying an Alpha-assay temperature coefficient to ADP-Glo, or assuming that all parts of the coupled reaction respond identically to warming.",
+          "html": "<p>Keep stacks, reagent reservoirs and plate queues in the qualification experiment. A bottle may be equilibrated while newly dispensed liquid and the plate are not. Record the actual intervals between additions and reading; a long-lived glow still has kinetics. Avoid applying an Alpha-assay temperature coefficient to ADP-Glo, or assuming that all parts of the coupled reaction respond identically to warming.</p>"
+        }
+      ]
+    },
+    {
+      "id": "qualify-the-complete-workflow",
+      "heading": "Qualify the complete workflow",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Qualify the complete workflow",
+          "html": "<h2 id=\"qualify-the-complete-workflow\">Qualify the complete workflow</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Run matched low, middle and high ATP/ADP mixtures through the complete detection sequence early and late in realistic instrument use. Alongside them, run kinase controls with matched reaction histories. Distribute positions so concentration is not inseparable from row, column or read order.",
+          "html": "<p>Run matched low, middle and high ATP/ADP mixtures through the complete detection sequence early and late in realistic instrument use. Alongside them, run kinase controls with matched reaction histories. Distribute positions so concentration is not inseparable from row, column or read order.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If both sets drift, investigate detection conditions, including temperature, timing, dispensing and reader response. If only the kinase-containing wells drift, focus on reaction history and components absent from the mock controls. These patterns guide follow-up; differences in matrix or timing can still complicate the diagnosis.",
+          "html": "<p>If both sets drift, investigate detection conditions, including temperature, timing, dispensing and reader response. If only the kinase-containing wells drift, focus on reaction history and components absent from the mock controls. These patterns guide follow-up; differences in matrix or timing can still complicate the diagnosis.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Challenge weak wells beside bright ones and verify proportional response across the required range. Crosstalk can lift the apparent activity of inhibited samples; compression can distort strong controls and intermediate responses. Neither a tight control CV nor a favorable Z′ establishes linearity.",
+          "html": "<p>Challenge weak wells beside bright ones and verify proportional response across the required range. Crosstalk can lift the apparent activity of inhibited samples; compression can distort strong controls and intermediate responses. Neither a tight control CV nor a favorable Z′ establishes linearity.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep the ATP/ADP controls, thermal history and raw light values with the kinase results. They make it possible to distinguish a change in enzyme activity from a change in the chain of reactions used to observe it.",
+          "html": "<p>Keep the ATP/ADP controls, thermal history and raw light values with the kinase results. They make it possible to distinguish a change in enzyme activity from a change in the chain of reactions used to observe it.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Promega. ADP-Glo Kinase Assay, TM313. Revised July 2023. Sections 3B, 4 and 5: conversion standards, reagent sequence, thermal guidance and interference controls.",
+          "html": "<p id=\"ref-1\">1. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf?rev=42e85ccab87244b395f4ecd1ad8e1616&amp;sc_lang=en\">ADP-Glo Kinase Assay, TM313</a>. Revised July 2023. Sections 3B, 4 and 5: conversion standards, reagent sequence, thermal guidance and interference controls.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Zegzouti H., Zdanovskaia M., Hsiao K. and Goueli S.A. ADP-Glo: A Bioluminescent and Homogeneous ADP Monitoring Assay for Kinases. Assay and Drug Development Technologies 7, 560–572 (2009). doi:10.1089/adt.2009.0222.",
+          "html": "<p id=\"ref-2\">2. Zegzouti H., Zdanovskaia M., Hsiao K. and Goueli S.A. <a href=\"https://journals.sagepub.com/doi/full/10.1089/adt.2009.0222\">ADP-Glo: A Bioluminescent and Homogeneous ADP Monitoring Assay for Kinases</a>. Assay and Drug Development Technologies 7, 560–572 (2009). doi:10.1089/adt.2009.0222.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Promega. ADP-Glo Kinase Assay, TM313. Revised July 2023. Sections 3B, 4 and 5: conversion standards, reagent sequence, thermal guidance and interference controls.",
+      "urls": [
+        "https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf?rev=42e85ccab87244b395f4ecd1ad8e1616&sc_lang=en"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Zegzouti H., Zdanovskaia M., Hsiao K. and Goueli S.A. ADP-Glo: A Bioluminescent and Homogeneous ADP Monitoring Assay for Kinases. Assay and Drug Development Technologies 7, 560–572 (2009). doi:10.1089/adt.2009.0222.",
+      "urls": [
+        "https://journals.sagepub.com/doi/full/10.1089/adt.2009.0222"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "IC50 equals Ki times (1 plus ATP concentration divided by Km), under the assumptions stated in the article.",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC50 equals Ki times (1 plus ATP concentration divided by Km), under the assumptions stated in the article.\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msub><mrow><mrow><mtext>K</mtext></mrow></mrow><mrow><mrow><mtext>i</mtext></mrow></mrow></msub><mrow><mtext> (1 + </mtext></mrow><mfrac><mrow><mrow><mtext>[ATP]</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>K</mtext></mrow></mrow><mrow><mrow><mtext>m</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext>)</mtext></mrow></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "provenance": {
+    "kind": "Author-provided article converted to structured text",
+    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
+    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
+  },
+  "display_additions": {},
+  "content_sha256": "f7c341318bb3f80036e2c9dbe1cba4fe2d8c21e69f60745e441a83cc9a36b08f"
+}

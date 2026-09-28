@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0",
+  "id": "htrf-ratio-whole-result",
+  "canonical_url": "https://discoveryinpractice.com/articles/htrf-ratio-whole-result/",
+  "title": "HTRF: the ratio is not the whole result",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "A stable HTRF ratio can conceal a major loss of signal, degraded precision, or a channel-specific interference. The article explains how to retain and interpret both emission channels, per-well ratios, and acquisition conditions.",
+  "takeaways": [
+    "Calculate the ratio for each well and retain both raw channels; a shared proportional signal loss may cancel in the ratio while precision still worsens.",
+    "Simultaneous dual-emission collection can preserve shared excitation information, while mismatched gates, nonlinear response, background, or channel-specific effects can still distort the result.",
+    "Use channel patterns and assay-matched controls to guide follow-up; a reader control check does not validate compound behavior or the biological assay."
+  ],
+  "limitations_summary": "The arithmetic and excitation-variation examples are constructed; they do not assign a mechanism to a compound or promise a reader-specific improvement. Simultaneous acquisition only helps with shared effects when channel calibration, timing, and linear response are suitable.",
+  "topics": [
+    "HTRF",
+    "Ratiometric assays",
+    "Fluorescence",
+    "Assay interference"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-09-28",
+  "date_modified": "2026-09-28",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Two HTRF plates give almost identical ratios. On the second plate, both emission channels have lost most of their signal. Has the assay reproduced? Perhaps the ratio has corrected a shared optical effect exactly as intended. Perhaps the measurements are now much noisier, and a weak positive has become difficult to distinguish from background. Inspect the raw channels before deciding.</p><p>HTRF combines delayed fluorescence detection with a donor–acceptor measurement. That combination is useful because it rejects much short-lived background and can compensate for effects shared between channels. To use those advantages well, keep the two channel values. They explain what the final number leaves out.</p><h2 id=\"what-the-ratio-corrects\">What the ratio corrects</h2><p>For a common red-acceptor HTRF configuration, the reported ratio is:</p><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"R equals 10000 times A divided by D.\"><mrow><mrow><mtext>R = 10000 </mtext></mrow><mfrac><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math></div><p>Here A and D are the acceptor- and donor-channel readings, commonly near 665 and 620 nm in that configuration. Other dye combinations need their specified optics. The factor of 10,000 makes the numbers convenient; it adds no information. Revvity recommends calculating the ratio separately for each well before calculating replicate statistics. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-1\">1</a>]</p><p>Suppose an effect multiplies both signals by the same factor q. Then qA divided by qD equals A divided by D. This is the useful cancellation at the center of ratiometric detection. It works for a shared proportional effect, not for every event that happens in the well.</p><p>Consider these constructed readings in arbitrary linear signal units:</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Condition</th><th scope=\"col\">Acceptor A</th><th scope=\"col\">Donor D</th><th scope=\"col\">Ratio R</th></tr></thead><tbody><tr><th scope=\"row\">Reference</th><td>2,000</td><td>10,000</td><td>2,000</td></tr><tr><th scope=\"row\">Both signals fall to one fifth</th><td>400</td><td>2,000</td><td>2,000</td></tr><tr><th scope=\"row\">Only donor signal halves</th><td>2,000</td><td>5,000</td><td>4,000</td></tr><tr><th scope=\"row\">Only acceptor signal halves</th><td>1,000</td><td>10,000</td><td>1,000</td></tr></tbody></table></div><p>The second row illustrates successful cancellation of a common scaling factor. It does not establish unchanged precision. The third row doubles the ratio without increasing acceptor signal at all. These are arithmetic examples, not assignments of a particular compound mechanism. Real changes in energy transfer can themselves affect both channels, so an unusual donor value is a reason to investigate, not an automatic reason to discard a hit.</p><p>Additive background behaves differently. With backgrounds present, the ratio contains A plus its background divided by D plus its background. A shared reduction in the genuine signals need not cancel once those backgrounds become substantial. Use the kit's specified controls and reduction method; do not invent an extra subtraction merely because the resulting curve looks better.</p><h2 id=\"delta-f-is-not-fret-efficiency\">Delta F is not FRET efficiency</h2><p>A common HTRF normalization compares the sample ratio with the negative-control ratio:</p><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Delta F in percent equals 100 times (R sample minus R negative) divided by R negative.\"><mrow><mrow><mtext>ΔF (%) = 100 </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>sample</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>negative</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>negative</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math></div><p>A sample ratio of 3,000 and a negative-control ratio of 1,000 produce a Delta F of 200%. That does not mean 200% energy transfer, 200% binding or 200% inhibition. It is a relative increase above the negative-control ratio. Revvity uses this normalization to help compare assay signals. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-1\">1</a>]</p><p>Converting that response into concentration or activity requires the assay's calibration and direction of response. A sandwich assay and a competitive assay can move in opposite directions as analyte increases. Know which measurement you are plotting before labeling the vertical axis “activity.”</p><p>Even the order of averaging matters. Suppose two replicate wells give A/D values of 200/1,000 and 200/2,000. Their scaled ratios are 2,000 and 1,000, averaging 1,500. Dividing the mean acceptor by the mean donor instead gives about 1,333. The latter effectively weights wells by donor intensity. Keep the per-well calculation and investigate the channel variation rather than letting an aggregation choice conceal it.</p><h2 id=\"collect-the-two-emissions-from-the-same-excitation-events\">Collect the two emissions from the same excitation events</h2><p>Simultaneous dual-emission collection is particularly valuable here. The donor and acceptor measurements can share the same excitation pulses, observation interval and well position. A fluctuation that affects both proportionally can then cancel in the ratio. Sequential measurements expose the two channels to different excitation events and potentially different sample conditions.</p><p>For a simple illustration, assume excitation amplitude varies independently by 2% between the two separate measurements. If all other errors are absent, the ratio acquires approximately 2.8% relative variation from those two independent contributions. With simultaneous collection, a perfectly common multiplicative excitation fluctuation cancels. Actual assays still have photon noise, detector noise and effects that do not scale both channels equally.</p><p>This is a precision benefit as well as a throughput benefit. Collecting both emissions together removes the need to repeat the acquisition merely to obtain the denominator. In a long plate queue, saved acquisition time can also reduce differences in assay age between the first and last plates. The actual time saving depends on motion, excitation and other overhead; it is not automatically a twofold speed increase.</p><p>Check what “dual” means in a reader specification. Ask whether both channels collect from the same pulses, with appropriate delays and integration windows, or are acquired in succession. Confirm channel calibration and usable linear ranges. Simultaneous acquisition preserves shared information; mismatched gates or nonlinear response can still spoil the comparison.</p><h2 id=\"laser-excitation-can-buy-useful-photons-and-time\">Laser excitation can buy useful photons and time</h2><p>A well-matched pulsed ultraviolet laser can deliver substantial excitation energy in the donor's useful absorption band. Revvity's HTRF technical guide describes the distinction between high-energy fixed-wavelength laser excitation and the broader excitation spectrum of a flash lamp. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-2\">2</a>] The practical question is how efficiently the system turns that excitation into useful detected photons in the required time.</p><p>More useful excitation can improve the weak acceptor measurement without requiring more labelled reagent. Alternatively, it can support the required precision with fewer pulses or a shorter acquisition. That matters in small volumes and large screens, where increasing reagent concentration may change binding equilibria or increase background.</p><p>Under an ideal photon-limited model, four times as many useful detected photons would halve the relative shot-noise contribution. That is a conditional scaling relationship, not a promised improvement from installing a laser. Displayed fluorescence units are not automatically photon counts, and background or biological variation may dominate the actual error.</p><p>Evaluate wavelength compatibility, pulse timing, collection efficiency and precision together. Excitation delivered outside the useful absorption range is not a benefit. Nor is a higher donor count sufficient evidence that the acceptor channel improved. Check low-signal samples, blanks and the brightest controls, using the actual plate and volume.</p><p>Laser excitation and simultaneous emission collection address different parts of the measurement. The laser can improve how efficiently the sample is excited; collecting both channels together retains their relationship. Combining them can deliver precise ratios quickly, provided the optics, timing and detector response are qualified for the assay.</p><h2 id=\"investigate-an-unexpected-ratio\">Investigate an unexpected ratio</h2><p>Plot donor and acceptor signals alongside the ratio across each concentration response. A proportional loss in both channels suggests a different follow-up from an isolated donor collapse or an acceptor increase. None of those patterns uniquely identifies the cause, but they make the next experiment more specific.</p><p>For a suspicious compound, use controls suited to the assay architecture: donor-only or acceptor-only conditions where informative, the prescribed negative control, and a detection system that retains the labels while bypassing the biological interaction under investigation. Match compound concentration and matrix. A fluorophore control in clean buffer may miss interference that appears only in the assay mixture.</p><p>Revvity's reader control kit provides a separate way to check HTRF optical and software configuration and follow instrument performance. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-3\">3</a>] A successful reader check helps isolate the problem, but it does not validate a compound's behavior or the biological assay. Keep these questions separate when troubleshooting a failed transfer.</p><p>Preserve sample conditions during measurement too. Follow the specific assay's incubation temperature and timing, and qualify chamber stability over sustained use. A ratio cannot be expected to cancel temperature-dependent changes in binding or unequal channel behavior. Good focus and low crosstalk also matter: nearby bright wells can contribute different fractions of light to the two channels.</p><p>For routine screening, retain both raw channels, the per-well ratio, the normalization controls and the acquisition settings. Assess precision near the decision threshold, not just the maximum ratio. Use the donor and acceptor readings to assess what a stable ratio actually establishes.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Revvity. <a href=\"https://www.revvity.com/ask/htrf-signal-treatment-and-analysis\">HTRF Signal Treatment and Analysis</a>. Per-well ratios, Delta F, negative controls and calibration.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Guide</a>. HTRF detection and reader guidance; p. 20 discusses laser and flash-lamp excitation.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit, 62RCLPEA</a>. Version 08, January 2026. Optical/software configuration and instrument-performance checks.</p>",
+  "body_text": "Two HTRF plates give almost identical ratios. On the second plate, both emission channels have lost most of their signal. Has the assay reproduced? Perhaps the ratio has corrected a shared optical effect exactly as intended. Perhaps the measurements are now much noisier, and a weak positive has become difficult to distinguish from background. Inspect the raw channels before deciding.\n\nHTRF combines delayed fluorescence detection with a donor–acceptor measurement. That combination is useful because it rejects much short-lived background and can compensate for effects shared between channels. To use those advantages well, keep the two channel values. They explain what the final number leaves out.\n\nWhat the ratio corrects\n\nFor a common red-acceptor HTRF configuration, the reported ratio is:\n\nR equals 10000 times A divided by D.\n\nHere A and D are the acceptor- and donor-channel readings, commonly near 665 and 620 nm in that configuration. Other dye combinations need their specified optics. The factor of 10,000 makes the numbers convenient; it adds no information. Revvity recommends calculating the ratio separately for each well before calculating replicate statistics. [1]\n\nSuppose an effect multiplies both signals by the same factor q. Then qA divided by qD equals A divided by D. This is the useful cancellation at the center of ratiometric detection. It works for a shared proportional effect, not for every event that happens in the well.\n\nConsider these constructed readings in arbitrary linear signal units:\n\nCondition | Acceptor A | Donor D | Ratio R | Reference | 2,000 | 10,000 | 2,000 | Both signals fall to one fifth | 400 | 2,000 | 2,000 | Only donor signal halves | 2,000 | 5,000 | 4,000 | Only acceptor signal halves | 1,000 | 10,000 | 1,000 | \n\nThe second row illustrates successful cancellation of a common scaling factor. It does not establish unchanged precision. The third row doubles the ratio without increasing acceptor signal at all. These are arithmetic examples, not assignments of a particular compound mechanism. Real changes in energy transfer can themselves affect both channels, so an unusual donor value is a reason to investigate, not an automatic reason to discard a hit.\n\nAdditive background behaves differently. With backgrounds present, the ratio contains A plus its background divided by D plus its background. A shared reduction in the genuine signals need not cancel once those backgrounds become substantial. Use the kit's specified controls and reduction method; do not invent an extra subtraction merely because the resulting curve looks better.\n\nDelta F is not FRET efficiency\n\nA common HTRF normalization compares the sample ratio with the negative-control ratio:\n\nDelta F in percent equals 100 times (R sample minus R negative) divided by R negative.\n\nA sample ratio of 3,000 and a negative-control ratio of 1,000 produce a Delta F of 200%. That does not mean 200% energy transfer, 200% binding or 200% inhibition. It is a relative increase above the negative-control ratio. Revvity uses this normalization to help compare assay signals. [1]\n\nConverting that response into concentration or activity requires the assay's calibration and direction of response. A sandwich assay and a competitive assay can move in opposite directions as analyte increases. Know which measurement you are plotting before labeling the vertical axis “activity.”\n\nEven the order of averaging matters. Suppose two replicate wells give A/D values of 200/1,000 and 200/2,000. Their scaled ratios are 2,000 and 1,000, averaging 1,500. Dividing the mean acceptor by the mean donor instead gives about 1,333. The latter effectively weights wells by donor intensity. Keep the per-well calculation and investigate the channel variation rather than letting an aggregation choice conceal it.\n\nCollect the two emissions from the same excitation events\n\nSimultaneous dual-emission collection is particularly valuable here. The donor and acceptor measurements can share the same excitation pulses, observation interval and well position. A fluctuation that affects both proportionally can then cancel in the ratio. Sequential measurements expose the two channels to different excitation events and potentially different sample conditions.\n\nFor a simple illustration, assume excitation amplitude varies independently by 2% between the two separate measurements. If all other errors are absent, the ratio acquires approximately 2.8% relative variation from those two independent contributions. With simultaneous collection, a perfectly common multiplicative excitation fluctuation cancels. Actual assays still have photon noise, detector noise and effects that do not scale both channels equally.\n\nThis is a precision benefit as well as a throughput benefit. Collecting both emissions together removes the need to repeat the acquisition merely to obtain the denominator. In a long plate queue, saved acquisition time can also reduce differences in assay age between the first and last plates. The actual time saving depends on motion, excitation and other overhead; it is not automatically a twofold speed increase.\n\nCheck what “dual” means in a reader specification. Ask whether both channels collect from the same pulses, with appropriate delays and integration windows, or are acquired in succession. Confirm channel calibration and usable linear ranges. Simultaneous acquisition preserves shared information; mismatched gates or nonlinear response can still spoil the comparison.\n\nLaser excitation can buy useful photons and time\n\nA well-matched pulsed ultraviolet laser can deliver substantial excitation energy in the donor's useful absorption band. Revvity's HTRF technical guide describes the distinction between high-energy fixed-wavelength laser excitation and the broader excitation spectrum of a flash lamp. [2] The practical question is how efficiently the system turns that excitation into useful detected photons in the required time.\n\nMore useful excitation can improve the weak acceptor measurement without requiring more labelled reagent. Alternatively, it can support the required precision with fewer pulses or a shorter acquisition. That matters in small volumes and large screens, where increasing reagent concentration may change binding equilibria or increase background.\n\nUnder an ideal photon-limited model, four times as many useful detected photons would halve the relative shot-noise contribution. That is a conditional scaling relationship, not a promised improvement from installing a laser. Displayed fluorescence units are not automatically photon counts, and background or biological variation may dominate the actual error.\n\nEvaluate wavelength compatibility, pulse timing, collection efficiency and precision together. Excitation delivered outside the useful absorption range is not a benefit. Nor is a higher donor count sufficient evidence that the acceptor channel improved. Check low-signal samples, blanks and the brightest controls, using the actual plate and volume.\n\nLaser excitation and simultaneous emission collection address different parts of the measurement. The laser can improve how efficiently the sample is excited; collecting both channels together retains their relationship. Combining them can deliver precise ratios quickly, provided the optics, timing and detector response are qualified for the assay.\n\nInvestigate an unexpected ratio\n\nPlot donor and acceptor signals alongside the ratio across each concentration response. A proportional loss in both channels suggests a different follow-up from an isolated donor collapse or an acceptor increase. None of those patterns uniquely identifies the cause, but they make the next experiment more specific.\n\nFor a suspicious compound, use controls suited to the assay architecture: donor-only or acceptor-only conditions where informative, the prescribed negative control, and a detection system that retains the labels while bypassing the biological interaction under investigation. Match compound concentration and matrix. A fluorophore control in clean buffer may miss interference that appears only in the assay mixture.\n\nRevvity's reader control kit provides a separate way to check HTRF optical and software configuration and follow instrument performance. [3] A successful reader check helps isolate the problem, but it does not validate a compound's behavior or the biological assay. Keep these questions separate when troubleshooting a failed transfer.\n\nPreserve sample conditions during measurement too. Follow the specific assay's incubation temperature and timing, and qualify chamber stability over sustained use. A ratio cannot be expected to cancel temperature-dependent changes in binding or unequal channel behavior. Good focus and low crosstalk also matter: nearby bright wells can contribute different fractions of light to the two channels.\n\nFor routine screening, retain both raw channels, the per-well ratio, the normalization controls and the acquisition settings. Assess precision near the decision threshold, not just the maximum ratio. Use the donor and acceptor readings to assess what a stable ratio actually establishes.\n\nReferences\n\n1. Revvity. HTRF Signal Treatment and Analysis. Per-well ratios, Delta F, negative controls and calibration.\n\n2. Revvity. HTRF Technical Guide. HTRF detection and reader guidance; p. 20 discusses laser and flash-lamp excitation.\n\n3. Revvity. HTRF Reader Control Kit, 62RCLPEA. Version 08, January 2026. Optical/software configuration and instrument-performance checks.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two HTRF plates give almost identical ratios. On the second plate, both emission channels have lost most of their signal. Has the assay reproduced? Perhaps the ratio has corrected a shared optical effect exactly as intended. Perhaps the measurements are now much noisier, and a weak positive has become difficult to distinguish from background. Inspect the raw channels before deciding.",
+          "html": "<p>Two HTRF plates give almost identical ratios. On the second plate, both emission channels have lost most of their signal. Has the assay reproduced? Perhaps the ratio has corrected a shared optical effect exactly as intended. Perhaps the measurements are now much noisier, and a weak positive has become difficult to distinguish from background. Inspect the raw channels before deciding.</p>"
+        },
+        {
+          "type": "p",
+          "text": "HTRF combines delayed fluorescence detection with a donor–acceptor measurement. That combination is useful because it rejects much short-lived background and can compensate for effects shared between channels. To use those advantages well, keep the two channel values. They explain what the final number leaves out.",
+          "html": "<p>HTRF combines delayed fluorescence detection with a donor–acceptor measurement. That combination is useful because it rejects much short-lived background and can compensate for effects shared between channels. To use those advantages well, keep the two channel values. They explain what the final number leaves out.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-the-ratio-corrects",
+      "heading": "What the ratio corrects",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What the ratio corrects",
+          "html": "<h2 id=\"what-the-ratio-corrects\">What the ratio corrects</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For a common red-acceptor HTRF configuration, the reported ratio is:",
+          "html": "<p>For a common red-acceptor HTRF configuration, the reported ratio is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "R equals 10000 times A divided by D.",
+          "html": "<div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"R equals 10000 times A divided by D.\"><mrow><mrow><mtext>R = 10000 </mtext></mrow><mfrac><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here A and D are the acceptor- and donor-channel readings, commonly near 665 and 620 nm in that configuration. Other dye combinations need their specified optics. The factor of 10,000 makes the numbers convenient; it adds no information. Revvity recommends calculating the ratio separately for each well before calculating replicate statistics. [1]",
+          "html": "<p>Here A and D are the acceptor- and donor-channel readings, commonly near 665 and 620 nm in that configuration. Other dye combinations need their specified optics. The factor of 10,000 makes the numbers convenient; it adds no information. Revvity recommends calculating the ratio separately for each well before calculating replicate statistics. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-1\">1</a>]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose an effect multiplies both signals by the same factor q. Then qA divided by qD equals A divided by D. This is the useful cancellation at the center of ratiometric detection. It works for a shared proportional effect, not for every event that happens in the well.",
+          "html": "<p>Suppose an effect multiplies both signals by the same factor q. Then qA divided by qD equals A divided by D. This is the useful cancellation at the center of ratiometric detection. It works for a shared proportional effect, not for every event that happens in the well.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider these constructed readings in arbitrary linear signal units:",
+          "html": "<p>Consider these constructed readings in arbitrary linear signal units:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Condition | Acceptor A | Donor D | Ratio R | Reference | 2,000 | 10,000 | 2,000 | Both signals fall to one fifth | 400 | 2,000 | 2,000 | Only donor signal halves | 2,000 | 5,000 | 4,000 | Only acceptor signal halves | 1,000 | 10,000 | 1,000 | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Condition</th><th scope=\"col\">Acceptor A</th><th scope=\"col\">Donor D</th><th scope=\"col\">Ratio R</th></tr></thead><tbody><tr><th scope=\"row\">Reference</th><td>2,000</td><td>10,000</td><td>2,000</td></tr><tr><th scope=\"row\">Both signals fall to one fifth</th><td>400</td><td>2,000</td><td>2,000</td></tr><tr><th scope=\"row\">Only donor signal halves</th><td>2,000</td><td>5,000</td><td>4,000</td></tr><tr><th scope=\"row\">Only acceptor signal halves</th><td>1,000</td><td>10,000</td><td>1,000</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "The second row illustrates successful cancellation of a common scaling factor. It does not establish unchanged precision. The third row doubles the ratio without increasing acceptor signal at all. These are arithmetic examples, not assignments of a particular compound mechanism. Real changes in energy transfer can themselves affect both channels, so an unusual donor value is a reason to investigate, not an automatic reason to discard a hit.",
+          "html": "<p>The second row illustrates successful cancellation of a common scaling factor. It does not establish unchanged precision. The third row doubles the ratio without increasing acceptor signal at all. These are arithmetic examples, not assignments of a particular compound mechanism. Real changes in energy transfer can themselves affect both channels, so an unusual donor value is a reason to investigate, not an automatic reason to discard a hit.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Additive background behaves differently. With backgrounds present, the ratio contains A plus its background divided by D plus its background. A shared reduction in the genuine signals need not cancel once those backgrounds become substantial. Use the kit's specified controls and reduction method; do not invent an extra subtraction merely because the resulting curve looks better.",
+          "html": "<p>Additive background behaves differently. With backgrounds present, the ratio contains A plus its background divided by D plus its background. A shared reduction in the genuine signals need not cancel once those backgrounds become substantial. Use the kit's specified controls and reduction method; do not invent an extra subtraction merely because the resulting curve looks better.</p>"
+        }
+      ]
+    },
+    {
+      "id": "delta-f-is-not-fret-efficiency",
+      "heading": "Delta F is not FRET efficiency",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Delta F is not FRET efficiency",
+          "html": "<h2 id=\"delta-f-is-not-fret-efficiency\">Delta F is not FRET efficiency</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A common HTRF normalization compares the sample ratio with the negative-control ratio:",
+          "html": "<p>A common HTRF normalization compares the sample ratio with the negative-control ratio:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Delta F in percent equals 100 times (R sample minus R negative) divided by R negative.",
+          "html": "<div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Delta F in percent equals 100 times (R sample minus R negative) divided by R negative.\"><mrow><mrow><mtext>ΔF (%) = 100 </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>sample</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>negative</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>negative</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math></div>"
+        },
+        {
+          "type": "p",
+          "text": "A sample ratio of 3,000 and a negative-control ratio of 1,000 produce a Delta F of 200%. That does not mean 200% energy transfer, 200% binding or 200% inhibition. It is a relative increase above the negative-control ratio. Revvity uses this normalization to help compare assay signals. [1]",
+          "html": "<p>A sample ratio of 3,000 and a negative-control ratio of 1,000 produce a Delta F of 200%. That does not mean 200% energy transfer, 200% binding or 200% inhibition. It is a relative increase above the negative-control ratio. Revvity uses this normalization to help compare assay signals. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-1\">1</a>]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Converting that response into concentration or activity requires the assay's calibration and direction of response. A sandwich assay and a competitive assay can move in opposite directions as analyte increases. Know which measurement you are plotting before labeling the vertical axis “activity.”",
+          "html": "<p>Converting that response into concentration or activity requires the assay's calibration and direction of response. A sandwich assay and a competitive assay can move in opposite directions as analyte increases. Know which measurement you are plotting before labeling the vertical axis “activity.”</p>"
+        },
+        {
+          "type": "p",
+          "text": "Even the order of averaging matters. Suppose two replicate wells give A/D values of 200/1,000 and 200/2,000. Their scaled ratios are 2,000 and 1,000, averaging 1,500. Dividing the mean acceptor by the mean donor instead gives about 1,333. The latter effectively weights wells by donor intensity. Keep the per-well calculation and investigate the channel variation rather than letting an aggregation choice conceal it.",
+          "html": "<p>Even the order of averaging matters. Suppose two replicate wells give A/D values of 200/1,000 and 200/2,000. Their scaled ratios are 2,000 and 1,000, averaging 1,500. Dividing the mean acceptor by the mean donor instead gives about 1,333. The latter effectively weights wells by donor intensity. Keep the per-well calculation and investigate the channel variation rather than letting an aggregation choice conceal it.</p>"
+        }
+      ]
+    },
+    {
+      "id": "collect-the-two-emissions-from-the-same-excitation-events",
+      "heading": "Collect the two emissions from the same excitation events",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Collect the two emissions from the same excitation events",
+          "html": "<h2 id=\"collect-the-two-emissions-from-the-same-excitation-events\">Collect the two emissions from the same excitation events</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission collection is particularly valuable here. The donor and acceptor measurements can share the same excitation pulses, observation interval and well position. A fluctuation that affects both proportionally can then cancel in the ratio. Sequential measurements expose the two channels to different excitation events and potentially different sample conditions.",
+          "html": "<p>Simultaneous dual-emission collection is particularly valuable here. The donor and acceptor measurements can share the same excitation pulses, observation interval and well position. A fluctuation that affects both proportionally can then cancel in the ratio. Sequential measurements expose the two channels to different excitation events and potentially different sample conditions.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a simple illustration, assume excitation amplitude varies independently by 2% between the two separate measurements. If all other errors are absent, the ratio acquires approximately 2.8% relative variation from those two independent contributions. With simultaneous collection, a perfectly common multiplicative excitation fluctuation cancels. Actual assays still have photon noise, detector noise and effects that do not scale both channels equally.",
+          "html": "<p>For a simple illustration, assume excitation amplitude varies independently by 2% between the two separate measurements. If all other errors are absent, the ratio acquires approximately 2.8% relative variation from those two independent contributions. With simultaneous collection, a perfectly common multiplicative excitation fluctuation cancels. Actual assays still have photon noise, detector noise and effects that do not scale both channels equally.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This is a precision benefit as well as a throughput benefit. Collecting both emissions together removes the need to repeat the acquisition merely to obtain the denominator. In a long plate queue, saved acquisition time can also reduce differences in assay age between the first and last plates. The actual time saving depends on motion, excitation and other overhead; it is not automatically a twofold speed increase.",
+          "html": "<p>This is a precision benefit as well as a throughput benefit. Collecting both emissions together removes the need to repeat the acquisition merely to obtain the denominator. In a long plate queue, saved acquisition time can also reduce differences in assay age between the first and last plates. The actual time saving depends on motion, excitation and other overhead; it is not automatically a twofold speed increase.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check what “dual” means in a reader specification. Ask whether both channels collect from the same pulses, with appropriate delays and integration windows, or are acquired in succession. Confirm channel calibration and usable linear ranges. Simultaneous acquisition preserves shared information; mismatched gates or nonlinear response can still spoil the comparison.",
+          "html": "<p>Check what “dual” means in a reader specification. Ask whether both channels collect from the same pulses, with appropriate delays and integration windows, or are acquired in succession. Confirm channel calibration and usable linear ranges. Simultaneous acquisition preserves shared information; mismatched gates or nonlinear response can still spoil the comparison.</p>"
+        }
+      ]
+    },
+    {
+      "id": "laser-excitation-can-buy-useful-photons-and-time",
+      "heading": "Laser excitation can buy useful photons and time",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Laser excitation can buy useful photons and time",
+          "html": "<h2 id=\"laser-excitation-can-buy-useful-photons-and-time\">Laser excitation can buy useful photons and time</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A well-matched pulsed ultraviolet laser can deliver substantial excitation energy in the donor's useful absorption band. Revvity's HTRF technical guide describes the distinction between high-energy fixed-wavelength laser excitation and the broader excitation spectrum of a flash lamp. [2] The practical question is how efficiently the system turns that excitation into useful detected photons in the required time.",
+          "html": "<p>A well-matched pulsed ultraviolet laser can deliver substantial excitation energy in the donor's useful absorption band. Revvity's HTRF technical guide describes the distinction between high-energy fixed-wavelength laser excitation and the broader excitation spectrum of a flash lamp. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-2\">2</a>] The practical question is how efficiently the system turns that excitation into useful detected photons in the required time.</p>"
+        },
+        {
+          "type": "p",
+          "text": "More useful excitation can improve the weak acceptor measurement without requiring more labelled reagent. Alternatively, it can support the required precision with fewer pulses or a shorter acquisition. That matters in small volumes and large screens, where increasing reagent concentration may change binding equilibria or increase background.",
+          "html": "<p>More useful excitation can improve the weak acceptor measurement without requiring more labelled reagent. Alternatively, it can support the required precision with fewer pulses or a shorter acquisition. That matters in small volumes and large screens, where increasing reagent concentration may change binding equilibria or increase background.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Under an ideal photon-limited model, four times as many useful detected photons would halve the relative shot-noise contribution. That is a conditional scaling relationship, not a promised improvement from installing a laser. Displayed fluorescence units are not automatically photon counts, and background or biological variation may dominate the actual error.",
+          "html": "<p>Under an ideal photon-limited model, four times as many useful detected photons would halve the relative shot-noise contribution. That is a conditional scaling relationship, not a promised improvement from installing a laser. Displayed fluorescence units are not automatically photon counts, and background or biological variation may dominate the actual error.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Evaluate wavelength compatibility, pulse timing, collection efficiency and precision together. Excitation delivered outside the useful absorption range is not a benefit. Nor is a higher donor count sufficient evidence that the acceptor channel improved. Check low-signal samples, blanks and the brightest controls, using the actual plate and volume.",
+          "html": "<p>Evaluate wavelength compatibility, pulse timing, collection efficiency and precision together. Excitation delivered outside the useful absorption range is not a benefit. Nor is a higher donor count sufficient evidence that the acceptor channel improved. Check low-signal samples, blanks and the brightest controls, using the actual plate and volume.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Laser excitation and simultaneous emission collection address different parts of the measurement. The laser can improve how efficiently the sample is excited; collecting both channels together retains their relationship. Combining them can deliver precise ratios quickly, provided the optics, timing and detector response are qualified for the assay.",
+          "html": "<p>Laser excitation and simultaneous emission collection address different parts of the measurement. The laser can improve how efficiently the sample is excited; collecting both channels together retains their relationship. Combining them can deliver precise ratios quickly, provided the optics, timing and detector response are qualified for the assay.</p>"
+        }
+      ]
+    },
+    {
+      "id": "investigate-an-unexpected-ratio",
+      "heading": "Investigate an unexpected ratio",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Investigate an unexpected ratio",
+          "html": "<h2 id=\"investigate-an-unexpected-ratio\">Investigate an unexpected ratio</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Plot donor and acceptor signals alongside the ratio across each concentration response. A proportional loss in both channels suggests a different follow-up from an isolated donor collapse or an acceptor increase. None of those patterns uniquely identifies the cause, but they make the next experiment more specific.",
+          "html": "<p>Plot donor and acceptor signals alongside the ratio across each concentration response. A proportional loss in both channels suggests a different follow-up from an isolated donor collapse or an acceptor increase. None of those patterns uniquely identifies the cause, but they make the next experiment more specific.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a suspicious compound, use controls suited to the assay architecture: donor-only or acceptor-only conditions where informative, the prescribed negative control, and a detection system that retains the labels while bypassing the biological interaction under investigation. Match compound concentration and matrix. A fluorophore control in clean buffer may miss interference that appears only in the assay mixture.",
+          "html": "<p>For a suspicious compound, use controls suited to the assay architecture: donor-only or acceptor-only conditions where informative, the prescribed negative control, and a detection system that retains the labels while bypassing the biological interaction under investigation. Match compound concentration and matrix. A fluorophore control in clean buffer may miss interference that appears only in the assay mixture.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's reader control kit provides a separate way to check HTRF optical and software configuration and follow instrument performance. [3] A successful reader check helps isolate the problem, but it does not validate a compound's behavior or the biological assay. Keep these questions separate when troubleshooting a failed transfer.",
+          "html": "<p>Revvity's reader control kit provides a separate way to check HTRF optical and software configuration and follow instrument performance. [<a href=\"https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-3\">3</a>] A successful reader check helps isolate the problem, but it does not validate a compound's behavior or the biological assay. Keep these questions separate when troubleshooting a failed transfer.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Preserve sample conditions during measurement too. Follow the specific assay's incubation temperature and timing, and qualify chamber stability over sustained use. A ratio cannot be expected to cancel temperature-dependent changes in binding or unequal channel behavior. Good focus and low crosstalk also matter: nearby bright wells can contribute different fractions of light to the two channels.",
+          "html": "<p>Preserve sample conditions during measurement too. Follow the specific assay's incubation temperature and timing, and qualify chamber stability over sustained use. A ratio cannot be expected to cancel temperature-dependent changes in binding or unequal channel behavior. Good focus and low crosstalk also matter: nearby bright wells can contribute different fractions of light to the two channels.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For routine screening, retain both raw channels, the per-well ratio, the normalization controls and the acquisition settings. Assess precision near the decision threshold, not just the maximum ratio. Use the donor and acceptor readings to assess what a stable ratio actually establishes.",
+          "html": "<p>For routine screening, retain both raw channels, the per-well ratio, the normalization controls and the acquisition settings. Assess precision near the decision threshold, not just the maximum ratio. Use the donor and acceptor readings to assess what a stable ratio actually establishes.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Revvity. HTRF Signal Treatment and Analysis. Per-well ratios, Delta F, negative controls and calibration.",
+          "html": "<p id=\"ref-1\">1. Revvity. <a href=\"https://www.revvity.com/ask/htrf-signal-treatment-and-analysis\">HTRF Signal Treatment and Analysis</a>. Per-well ratios, Delta F, negative controls and calibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. HTRF Technical Guide. HTRF detection and reader guidance; p. 20 discusses laser and flash-lamp excitation.",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Guide</a>. HTRF detection and reader guidance; p. 20 discusses laser and flash-lamp excitation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. HTRF Reader Control Kit, 62RCLPEA. Version 08, January 2026. Optical/software configuration and instrument-performance checks.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit, 62RCLPEA</a>. Version 08, January 2026. Optical/software configuration and instrument-performance checks.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Revvity. HTRF Signal Treatment and Analysis. Per-well ratios, Delta F, negative controls and calibration.",
+      "urls": [
+        "https://www.revvity.com/ask/htrf-signal-treatment-and-analysis"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. HTRF Technical Guide. HTRF detection and reader guidance; p. 20 discusses laser and flash-lamp excitation.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. HTRF Reader Control Kit, 62RCLPEA. Version 08, January 2026. Optical/software configuration and instrument-performance checks.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "R equals 10000 times A divided by D.",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"R equals 10000 times A divided by D.\"><mrow><mrow><mtext>R = 10000 </mtext></mrow><mfrac><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "Delta F in percent equals 100 times (R sample minus R negative) divided by R negative.",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Delta F in percent equals 100 times (R sample minus R negative) divided by R negative.\"><mrow><mrow><mtext>ΔF (%) = 100 </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>sample</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>negative</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>R</mtext></mrow></mrow><mrow><mrow><mtext>negative</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "HTRF: the ratio is not the whole result",
+      "rows": [
+        [
+          "Condition",
+          "Acceptor A",
+          "Donor D",
+          "Ratio R"
+        ],
+        [
+          "Reference",
+          "2,000",
+          "10,000",
+          "2,000"
+        ],
+        [
+          "Both signals fall to one fifth",
+          "400",
+          "2,000",
+          "2,000"
+        ],
+        [
+          "Only donor signal halves",
+          "2,000",
+          "5,000",
+          "4,000"
+        ],
+        [
+          "Only acceptor signal halves",
+          "1,000",
+          "10,000",
+          "1,000"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "provenance": {
+    "kind": "Author-provided article converted to structured text",
+    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
+    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
+  },
+  "display_additions": {},
+  "content_sha256": "f0f0f72d34315a7633b3243724107b6e625a81fba07e13c4cbcdb6045a43cc55"
+}

@@ -1,0 +1,81 @@
+# HiBiT: did the protein disappear, or just the light?
+
+By Andrew Stewart · CC BY 4.0
+
+https://discoveryinpractice.com/articles/hibit-protein-or-light/
+
+A decrease in HiBiT light can reflect less tagged protein or a change in complementation, luciferase activity, lysis, background, or measurement. The article separates reporter abundance from accelerated degradation and outlines controls that test the detection system and native protein.
+
+A compound knocks the HiBiT signal down by 80%. The replicates agree, the concentration response looks respectable, and someone has already named the spreadsheet “degradation hits.” Before that name becomes permanent, there are two questions to settle: did the tagged protein decrease, and, if so, why?
+
+HiBiT makes protein abundance unusually convenient to measure. Its eleven-amino-acid tag binds a larger partner, LgBiT, to form an active luciferase. In the lytic endpoint assay, detection reagent supplies that partner and substrate after treatment. Light can then report tagged protein abundance under validated conditions. [[1](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-1)] The next task is to establish whether less light means that the compound accelerates degradation of the native protein.
+
+## Start with what the endpoint actually measures
+
+A useful working model for background-subtracted signal is:
+
+L minus B equals k times P times f.
+
+Here P is the amount of tagged protein in the well, f is the fraction successfully recovered and complemented, and k includes enzyme activity and light collection under the measurement conditions. This is a conditional model: it assumes proportional detection and comparable activity among the complemented molecules.
+
+Suppose treatment leaves P unchanged but halves f. The instrument reports the same decrease as it would if half the protein disappeared with f unchanged. A concentration response cannot distinguish those explanations by its shape alone. Compounds have concentration-dependent effects on detection chemistry too.
+
+Separate those possibilities with controls that retain the suspected interference while removing the proposed biology. Add compound to a fixed amount of HiBiT control protein in the detection reaction, matching the final compound concentration and solvent. Promega specifically recommends a cell-free control-protein assay for potential luciferase inhibitors. [[1](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-1)] Where practical, repeat in a representative lysate matrix rather than assuming buffer reproduces every interaction.
+
+Suppression in that control implicates the detection system; it does not identify the molecular target of inhibition. A clean result is useful but incomplete: metabolism during cell treatment, protein sequestration and treatment-dependent lysis effects may not be reproduced. Use it to narrow the next experiment.
+
+## A real decrease still does not establish faster degradation
+
+Protein abundance reflects production and removal. Even an ideal abundance measurement cannot, by itself, separate them. For a simple first-order model:
+
+The time derivative of P equals s minus k sub d times P.
+
+Here s is the synthesis rate and k_d is the degradation rate constant. At steady state, production balances removal. Now imagine completely stopping synthesis while leaving degradation unchanged. For a protein with a two-hour half-life, half the starting amount remains after two hours. The protein really has fallen by 50%, yet its degradation rate never increased.
+
+That constructed example is why an endpoint decrease needs a mechanism experiment. For a proposed proteasome-dependent degrader, a suitable proteasome-blockade experiment can test pathway dependence, alongside inhibitor-only and viability controls. Competition at the proposed target or ligase-binding site may answer another part of the mechanism. Rescue supports an interpretation; it is not sufficient alone, since the rescuing treatment can affect protein production and cell state as well.
+
+An antibody-based measurement of the untagged target, or another validated protein measurement, provides a different kind of evidence. It can establish whether the native protein follows the reporter. A time course then distinguishes rapid loss, delayed loss and recovery that a single endpoint would hide. Record the exposure time with every potency estimate; a degradation concentration response is a measurement at a particular time, not a timeless property of the compound.
+
+## The tag is small, but it is still part of the experiment
+
+Tag placement deserves testing before the compound library arrives. A terminus may participate in localization, processing or binding. For internal tags, access to LgBiT becomes another concern. Promega notes that some internal HiBiT fusions give lower signals and equilibrate more slowly after reagent addition. [[1](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-1)] A slowly developing signal can therefore reflect the detection step rather than changing protein abundance.
+
+During assay development, follow the post-reagent signal in representative controls and treated samples. Look for an interval in which their relative signals are stable enough for the intended comparison. Do not choose a later reading merely because it gives the largest fold difference. Establish acceptable mixing, lysis and equilibration first, then apply the same timing consistently.
+
+A more surprising complication is that a tag can introduce potential ubiquitination sites. Lin and colleagues compared conventional and lysineless HiBiT and NanoLuc tags. Most tested HiBiT degradation responses were similar, but one BRD4 comparison showed a modest kinetic difference; larger differences occurred with certain full-length NanoLuc fusions. [[2](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-2)] That distinction matters. The paper supports checking tag-dependent behavior, not treating every HiBiT result as suspect.
+
+For an important series, agreement between tagged and untagged protein is worth more than an especially smooth reporter curve. Endogenous tagging also avoids driving expression from an artificial strong promoter, although it does not remove the need to validate the tagged protein's function and behavior.
+
+## Background becomes the result at deep depletion
+
+Consider a constructed experiment with 110,000 RLU in untreated wells, 20,000 RLU after treatment and 10,000 RLU in appropriate background controls. Dividing the raw signals gives 18.2% remaining. Subtracting background first gives 10% remaining: 10,000 divided by 100,000.
+
+The raw calculation understates depletion. But subtracting a number is not enough: the background must represent the samples, and its uncertainty remains in the answer. Near background, a small absolute mismatch produces a large error in the residual protein estimate. Promega recommends untagged cells in matching medium for the lytic assay's background control. [[1](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-1)] Treatment-matched untagged wells can reveal whether the compound changes that background.
+
+Keep a separate measure of cell number or cell health appropriate to the biological question. Half as many cells with unchanged protein per cell can produce half the protein per well. An ATP viability assay can help flag problems, but ATP per cell may change; it is not an automatic cell-count correction. Decide whether the intended quantity is protein per well, per cell, or something else before normalizing away a biological effect.
+
+## Keep the measurement chamber out of the concentration response
+
+For HiBiT lytic endpoints, Promega recommends room-temperature equilibration and constant sample and reagent temperatures during luminescence measurement. [[1](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-1)] That instruction extends beyond taking a plate out of the incubator. The reader must preserve the intended temperature once the plate is inside.
+
+If plates equilibrate near 22°C, a chamber that warms substantially above the room during a long run changes the detection conditions. Turning the heater off does not demonstrate thermal stability. Heat from electronics and motors can remain, and a heater that only operates above ambient cannot remove it.
+
+Qualify sustained use, including plausible queues and interruptions. Compare equivalent assay controls early and late in the run, while checking representative liquid temperatures with an appropriate sacrificial plate. A chamber sensor is useful information; it is not a measurement of every well. Efficient heat removal, limited heat transfer to the plate and little unnecessary airflow across open wells all help preserve conditions. Room-temperature stability alone does not establish humidity control or prevent evaporation.
+
+This guidance concerns the lytic endpoint. Live-cell kinetic HiBiT experiments have biological temperature and atmosphere requirements of their own. Keep those requirements intact rather than cooling living cells simply because the endpoint reagent uses room-temperature conditions.
+
+## A brighter control can make the assay harder
+
+Preserve headroom at the bright end and useful precision at the depleted end. An expression level that produces spectacular untreated signals may create detection problems while also changing the biology being investigated. Establish the operating range with appropriate sample titrations and retain the raw signals alongside normalized results.
+
+Treat chemical and instrumental limits separately. Substrate depletion changes the light being generated; detector compression changes the response to that light. A sample dilution changes both the chemistry and the photon flux, so recovery after dilution cannot by itself identify which limit was responsible. A calibrated optical attenuation test can examine proportional detection without changing the reaction, where the instrument permits such a test.
+
+Low interwell crosstalk matters most when strong untreated wells sit beside nearly depleted ones. In an illustrative case, leakage of 0.1% from a neighboring million-unit signal adds 1,000 units to a weak well. That doubles a genuine 1,000-unit residual. A remote blank will not necessarily capture this local contamination. Challenge the actual plate and collection geometry with bright wells beside weak samples.
+
+For a promising hit, retain a compact evidence package: detection-only interference controls, suitable background and cell-state measurements, a time course, and confirmation of the native protein response. If the conclusion is specifically accelerated degradation, add the experiments that test that mechanism. Keep the abundance result and the mechanistic conclusion distinct in the hit report.
+
+## References
+
+1. Promega. [Nano-Glo HiBiT Lytic Detection System, TM516](https://at.promega.com/-/media/files/resources/protocols/technical-manuals/500/nano-glo-hibit-lytic-detection-system-technical-manual.pdf?rev=c60ea014d049499484b20ae1da288eec&sc_lang=en). Revised June 2023. Sections 3, 6B, 6C, 6G and 6H: detection principle, temperature, tag accessibility, expression, background and reporter-interference controls.
+
+2. Lin H. et al. [Lysineless HiBiT and NanoLuc Tagging Systems as Alternative Tools for Monitoring Targeted Protein Degradation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11318018/). ACS Medicinal Chemistry Letters 15, 1367–1375 (2024). doi:10.1021/acsmedchemlett.4c00271.

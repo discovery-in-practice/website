@@ -23,3 +23,9 @@ Original articles are shared under CC BY 4.0: https://creativecommons.org/licens
 - [Reuse and license](https://discoveryinpractice.com/reuse/)
 - [GitHub mirror](https://github.com/discovery-in-practice/website)
 - [Hugging Face dataset](https://huggingface.co/datasets/andrewinpractice/discovery-in-practice)
+
+## Additional articles and comparisons
+
+- [DNA quantification: five methods, five different answers](https://discoveryinpractice.com/compare/dna-quantification/article.md): DNA mass, target copies, amplifiable library molecules and fragment integrity are different measurements. Choose the answer your next experiment needs before choosing the instrument.
+- [Microplate kinase assays: choose the event you need to measure](https://discoveryinpractice.com/compare/microplate-kinase-assays/article.md): ADP production, ATP depletion, substrate phosphorylation and target binding are useful measurements. They are not interchangeable evidence of kinase inhibition.
+- [Automated confocal screening: compare the result, not the camera speed](https://discoveryinpractice.com/compare/confocal-screening-systems/article.md): Six representative high-content imaging families compared by optics, simultaneous channels, live-cell conditions and the work required to turn a plate into reliable measurements.

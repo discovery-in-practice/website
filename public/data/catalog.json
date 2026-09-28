@@ -69,5 +69,78 @@
     "date_modified": "2026-09-25",
     "json_url": "https://discoveryinpractice.com/bench-tips/plate-map/article.json",
     "markdown_url": "https://discoveryinpractice.com/bench-tips/plate-map/article.md"
+  },
+  {
+    "id": "dna-quantification",
+    "title": "DNA quantification: five methods, five different answers",
+    "canonical_url": "https://discoveryinpractice.com/compare/dna-quantification/",
+    "summary": "DNA mass, target copies, amplifiable library molecules and fragment integrity are different measurements. Choose the answer your next experiment needs before choosing the instrument.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "DNA quantification",
+      "Fluorescence",
+      "qPCR",
+      "Digital PCR",
+      "Library QC"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "078d80163e11e5d32f12652a2f92ad440fbb88ea1598a9dc7670a3efa31588d3",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/compare/dna-quantification/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/dna-quantification/article.md"
+  },
+  {
+    "id": "microplate-kinase-assays",
+    "title": "Microplate kinase assays: choose the event you need to measure",
+    "canonical_url": "https://discoveryinpractice.com/compare/microplate-kinase-assays/",
+    "summary": "ADP production, ATP depletion, substrate phosphorylation and target binding are useful measurements. They are not interchangeable evidence of kinase inhibition.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Kinase assays",
+      "ADP-Glo",
+      "TR-FRET",
+      "Target engagement"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "999dd116585e39c26b7f1fc519d0f6f66419f753f4db82979e3a63804e935d2b",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/compare/microplate-kinase-assays/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/microplate-kinase-assays/article.md"
+  },
+  {
+    "id": "confocal-screening-systems",
+    "title": "Automated confocal screening: compare the result, not the camera speed",
+    "canonical_url": "https://discoveryinpractice.com/compare/confocal-screening-systems/",
+    "summary": "Six representative high-content imaging families compared by optics, simultaneous channels, live-cell conditions and the work required to turn a plate into reliable measurements.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "High-content screening",
+      "Confocal imaging",
+      "Instrument selection",
+      "Live-cell imaging"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "7791c57dcd7abaac6332926cbe2440c1c822dc910af4d5a53a4d869288b702c4",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-28",
+    "date_modified": "2026-09-28",
+    "json_url": "https://discoveryinpractice.com/compare/confocal-screening-systems/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/confocal-screening-systems/article.md"
   }
 ]

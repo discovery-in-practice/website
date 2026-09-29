@@ -43,3 +43,13 @@ Original articles are shared under CC BY 4.0: https://creativecommons.org/licens
 - [Your fluorescent label is part of the experiment](https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/article.md): Choose a fluorescence polarization tracer by matching lifetime to molecular motion, testing the conjugate and checking controls in the actual assay matrix.
 - [One extra carbon can change the binding result](https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/article.md): A one-carbon linker change can alter tracer affinity and assay performance. Learn how to separate binding chemistry from your fluorescence polarization window.
 - [Half the molecules and two thirds of the light](https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.md): Binding can change tracer brightness and shift an apparent Kd while the curve still fits beautifully. See the equations, controls and fluorescence data to keep.
+
+## Topic navigation
+
+- [Luminescence](https://discoveryinpractice.com/luminescence/): Interpret light output, choose useful acquisition settings, and separate biology from detection chemistry.
+- [Fluorescence](https://discoveryinpractice.com/fluorescence/): Fluorescence polarization, tracer design and fluorescent assay readouts.
+- [TR-FRET & HTRF](https://discoveryinpractice.com/trf-htrf/): Interpret time-resolved fluorescence ratios and choose assay and acquisition controls.
+- [Plate effects](https://discoveryinpractice.com/plate-effects/): Plate maps, temperature, mixing and the spatial patterns behind assay results.
+- [Assays](https://discoveryinpractice.com/assays/): Choose and interpret assay formats by the biological event and detection sequence.
+- [Troubleshooting](https://discoveryinpractice.com/troubleshooting/): Practical questions about unexpected signals, interference and assay precision.
+- [Measurement concepts](https://discoveryinpractice.com/concepts/): Detector response, photon statistics, binding and the meaning of assay measurements.

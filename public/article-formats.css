@@ -1,0 +1,1 @@
+.article-formats{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:20px 0;margin:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px}.article-formats a{color:var(--blue)}.article-formats strong{font-size:14px}.article-formats .format-note{flex-basis:100%;color:var(--muted);font-size:13px;line-height:1.5}

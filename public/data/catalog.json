@@ -241,5 +241,99 @@
     "date_modified": "2026-09-28",
     "json_url": "https://discoveryinpractice.com/articles/hibit-protein-or-light/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/hibit-protein-or-light/article.md"
+  },
+  {
+    "id": "fp-two-measurements",
+    "title": "Your fluorescence polarization result is hiding two measurements",
+    "canonical_url": "https://discoveryinpractice.com/articles/fp-two-measurements/",
+    "summary": "A fluorescence-polarization value is calculated from parallel and perpendicular intensity measurements, and the ratio can hide low photon counts or timing mismatch. The article explains how to preserve both channels, interpret intensity and binding curves, and qualify tracer and reader behavior.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Fluorescence",
+      "Binding assays",
+      "Assay interference",
+      "Photon counting"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "5fe8b49901833619eead640726c78baa4a08bc829ad88e0020fd9070aee57cb9",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-29",
+    "date_modified": "2026-09-29",
+    "json_url": "https://discoveryinpractice.com/articles/fp-two-measurements/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fp-two-measurements/article.md"
+  },
+  {
+    "id": "choosing-fluorescence-polarization-tracer",
+    "title": "Your fluorescent label is part of the experiment",
+    "canonical_url": "https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/",
+    "summary": "Choose a fluorescence polarization tracer by matching lifetime to molecular motion, testing the conjugate and checking controls in the actual assay matrix.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Tracer design",
+      "Fluorescence"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "6cd22f5996ff2bac37746b35ed2fb95f50dc5a069c946aa64d355eb4d52f2a1b",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-29",
+    "date_modified": "2026-09-29",
+    "json_url": "https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/article.md"
+  },
+  {
+    "id": "fluorescence-polarization-tracer-linker-length",
+    "title": "One extra carbon can change the binding result",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/",
+    "summary": "A one-carbon linker change can alter tracer affinity and assay performance. Learn how to separate binding chemistry from your fluorescence polarization window.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Tracer design",
+      "Binding assays"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "349e8400d13d0ee22acfcd1348d3a7c6a0ffb2cbe7338acec1ec97acf9f3fddf",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-29",
+    "date_modified": "2026-09-29",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/article.md"
+  },
+  {
+    "id": "fluorescence-polarization-brightness-correction-kd",
+    "title": "Half the molecules and two thirds of the light",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/",
+    "summary": "Binding can change tracer brightness and shift an apparent Kd while the curve still fits beautifully. See the equations, controls and fluorescence data to keep.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Binding affinity",
+      "Tracer brightness"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "f48414267efb282fbe1deafb72bd4796a81997405cdb9d25902ee758af8bbd1b",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-29",
+    "date_modified": "2026-09-29",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.md"
   }
 ]

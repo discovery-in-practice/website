@@ -1,1 +1,7 @@
 # Comparison hub is served directly; no legacy comparison redirect.
+
+/articles/longer-plate-reader-integration-assay-cv/ /articles/luminescence-integration-time/ 301
+/articles/longer-plate-reader-integration-assay-cv/article.md /articles/luminescence-integration-time/article.md 301
+/articles/longer-plate-reader-integration-assay-cv/article.json /articles/luminescence-integration-time/article.json 301
+
+/index.html / 301

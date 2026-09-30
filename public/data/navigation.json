@@ -1,0 +1,294 @@
+{
+  "sections": {
+    "assays": [
+      "Assays",
+      "Choose an assay",
+      "Choose a microplate assay for the biological event you want to measure, then work through its detection chemistry, controls and interpretation."
+    ],
+    "troubleshooting": [
+      "Result interpretation",
+      "Interpret your results",
+      "Explore what microplate assay signals reveal about your experiment, from background and variability to plate handling and detection effects."
+    ],
+    "concepts": [
+      "Concepts",
+      "Understand the measurement",
+      "Understand how microplate readers measure light and how detector response, photon statistics and ratio calculations shape the numbers you report."
+    ],
+    "compare": [
+      "Comparisons",
+      "Compare methods & instruments",
+      "Compare assay formats and screening equipment by the measurement you need, the controls it requires and the practical trade-offs."
+    ]
+  },
+  "research_topics": [
+    {
+      "id": "luminescence",
+      "label": "Luminescence"
+    },
+    {
+      "id": "fluorescence",
+      "label": "Fluorescence"
+    },
+    {
+      "id": "trf-htrf",
+      "label": "TR-FRET & HTRF"
+    },
+    {
+      "id": "plate-effects",
+      "label": "Plate effects"
+    },
+    {
+      "id": "absorbance",
+      "label": "Absorbance"
+    },
+    {
+      "id": "binding-assays",
+      "label": "Binding assays"
+    },
+    {
+      "id": "screening-equipment",
+      "label": "Screening equipment"
+    }
+  ],
+  "articles": {
+    "z-prime-detector-linearity": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 30,
+      "tags": [
+        "luminescence",
+        "fluorescence"
+      ]
+    },
+    "luminescence-integration-time": {
+      "section": "concepts",
+      "group": "photons",
+      "order": 10,
+      "tags": [
+        "luminescence",
+        "plate-effects"
+      ],
+      "title_override": "When does reading longer stop improving assay CV?"
+    },
+    "plate-map": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 10,
+      "tags": [
+        "plate-effects"
+      ]
+    },
+    "dna-quantification": {
+      "section": "compare",
+      "group": "formats",
+      "order": 20,
+      "tags": [
+        "absorbance",
+        "fluorescence"
+      ]
+    },
+    "microplate-kinase-assays": {
+      "section": "compare",
+      "group": "formats",
+      "order": 10,
+      "tags": [
+        "luminescence",
+        "trf-htrf",
+        "binding-assays"
+      ]
+    },
+    "confocal-screening-systems": {
+      "section": "compare",
+      "group": "equipment",
+      "order": 10,
+      "tags": [
+        "screening-equipment"
+      ]
+    },
+    "htrf-ratio-whole-result": {
+      "section": "assays",
+      "group": "binding",
+      "order": 10,
+      "tags": [
+        "fluorescence",
+        "trf-htrf"
+      ]
+    },
+    "adp-glo-light-after-kinase": {
+      "section": "assays",
+      "group": "reporters",
+      "order": 10,
+      "tags": [
+        "luminescence",
+        "plate-effects"
+      ]
+    },
+    "celltiter-glo-light-cells": {
+      "section": "assays",
+      "group": "reporters",
+      "order": 20,
+      "tags": [
+        "luminescence",
+        "plate-effects"
+      ]
+    },
+    "hibit-protein-or-light": {
+      "section": "assays",
+      "group": "reporters",
+      "order": 30,
+      "tags": [
+        "luminescence"
+      ]
+    },
+    "fp-two-measurements": {
+      "section": "concepts",
+      "group": "ratios",
+      "order": 10,
+      "tags": [
+        "fluorescence",
+        "binding-assays"
+      ]
+    },
+    "choosing-fluorescence-polarization-tracer": {
+      "section": "assays",
+      "group": "binding",
+      "order": 20,
+      "tags": [
+        "fluorescence",
+        "binding-assays"
+      ]
+    },
+    "fluorescence-polarization-tracer-linker-length": {
+      "section": "assays",
+      "group": "binding",
+      "order": 30,
+      "tags": [
+        "fluorescence",
+        "binding-assays"
+      ]
+    },
+    "fluorescence-polarization-brightness-correction-kd": {
+      "section": "concepts",
+      "group": "ratios",
+      "order": 20,
+      "tags": [
+        "fluorescence",
+        "binding-assays"
+      ]
+    },
+    "luminescence-signal-different-plate-readers": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 10,
+      "tags": [
+        "luminescence",
+        "plate-effects"
+      ]
+    },
+    "analog-photon-counting-luminescence": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 10,
+      "tags": [
+        "luminescence"
+      ]
+    },
+    "pmt-saturation-signal-compression-no-warning": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 20,
+      "tags": [
+        "luminescence"
+      ]
+    },
+    "bright-control-cv-weak-samples": {
+      "section": "concepts",
+      "group": "photons",
+      "order": 30,
+      "tags": [
+        "luminescence",
+        "fluorescence"
+      ]
+    },
+    "negative-values-blank-subtraction": {
+      "section": "troubleshooting",
+      "group": "background",
+      "order": 10,
+      "tags": [
+        "luminescence",
+        "fluorescence"
+      ]
+    },
+    "background-subtraction-increases-cv": {
+      "section": "troubleshooting",
+      "group": "background",
+      "order": 20,
+      "tags": [
+        "luminescence",
+        "fluorescence"
+      ]
+    },
+    "repeat-reads-versus-replicate-wells": {
+      "section": "troubleshooting",
+      "group": "variation",
+      "order": 10,
+      "tags": [
+        "plate-effects"
+      ]
+    }
+  },
+  "groups": {
+    "detector": [
+      "Detector response & linearity",
+      "Learn how light becomes a reported signal and where proportionality can break down. Then examine what gain, saturation and signal compression mean for assay interpretation."
+    ],
+    "photons": [
+      "Photon statistics & read time",
+      "Photon collection contributes to measurement variability. Explore when additional reading time helps and when differences between wells set the limit."
+    ],
+    "background": [
+      "Background & blanks",
+      "A blank helps define the baseline against which you interpret a sample. Follow what subtraction does to low signals and estimates of variability."
+    ],
+    "ratios": [
+      "Ratio measurements & binding",
+      "A ratio combines channels that may respond differently to the experiment. Start with those measurements, then examine tracer behavior and fitted binding results."
+    ],
+    "variation": [
+      "Variation & replication",
+      "Repeated readings and separately prepared wells capture different sources of variation. Use that distinction to interpret precision across a plate."
+    ],
+    "reporters": [
+      "Light-producing assays",
+      "Connect the biological event to the reactions that generate light. These guides explain the controls that help you interpret a change in signal."
+    ],
+    "binding": [
+      "Binding & proximity assays",
+      "Choose a readout that fits the interaction you want to study. Explore tracer design, proximity measurements and the conditions that affect apparent binding."
+    ],
+    "handling": [
+      "Plate handling & assay conditions",
+      "Plate layout, timing and temperature influence what reaches the detector. Explore practical ways to understand those effects in microplate experiments."
+    ],
+    "optics": [
+      "Optical settings & signal interpretation",
+      "Reader settings influence which light is collected and how it is reported. Use these articles to connect an observation to the measurement conditions."
+    ],
+    "chemistry": [
+      "Detection chemistry & interference",
+      "Detection reagents can respond to more than the intended biological event. Explore controls and observations that help explain a change in signal."
+    ],
+    "formats": [
+      "Assay method comparisons",
+      "Different methods can report different aspects of the same sample. Compare what each format measures before choosing a readout."
+    ],
+    "equipment": [
+      "Instruments & screening workflows",
+      "An instrument choice depends on the measurements and workflow it needs to support. Compare practical capabilities alongside the conditions behind them."
+    ]
+  },
+  "redirects": {
+    "/articles/longer-plate-reader-integration-assay-cv/": "/articles/luminescence-integration-time/"
+  }
+}

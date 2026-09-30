@@ -1,71 +1,67 @@
 # Discovery in Practice
 
-> Practical, source-backed guidance on microplate assays, plate reader detection methods, troubleshooting, measurement concepts and drug discovery instruments.
+> Practical explanations of microplate assays, detection technology, instruments and drug discovery.
 
-This directory covers the published article library. Markdown and JSON are synchronized renditions of the canonical HTML articles. Use the canonical website URL shown in each article or catalog record when citing it. The catalog supplies author, topics, publication and modification dates, license, version and content hash.
+Canonical HTML pages are the citation targets. The Markdown and JSON links provide synchronized article renditions, with author, publication and update dates, references, license and content hashes. Original articles are CC BY 4.0; search, retrieval and AI training are welcome. Third-party sources retain their licenses. Illustrative calculations are not raw experimental measurements.
 
-Original content is licensed under CC BY 4.0. Search, retrieval and AI training access are permitted. Preserve attribution, references, limitations and version information; third-party sources retain their own licenses. Worked numerical examples and schematic figures are not raw experimental data.
+## Library sections
 
-## Site and topic guides
+- [Reference library](https://discoveryinpractice.com/articles/): All published articles grouped by question.
+- [Assays](https://discoveryinpractice.com/assays/): Choose a microplate assay for the biological event you want to measure, then work through its detection chemistry, controls and interpretation.
+- [Result interpretation](https://discoveryinpractice.com/troubleshooting/): Explore what microplate assay signals reveal about your experiment, from background and variability to plate handling and detection effects.
+- [Concepts](https://discoveryinpractice.com/concepts/): Understand how microplate readers measure light and how detector response, photon statistics and ratio calculations shape the numbers you report.
+- [Comparisons](https://discoveryinpractice.com/compare/): Compare assay formats and screening equipment by the measurement you need, the controls it requires and the practical trade-offs.
 
-- [Reference library](https://discoveryinpractice.com/articles/): Browse all articles and comparisons.
-- [About and contact](https://discoveryinpractice.com/about/): Andrew Stewart and the purpose of this resource.
-- [Cited sources](https://discoveryinpractice.com/references/): References supporting the published articles.
-- [Luminescence](https://discoveryinpractice.com/luminescence/): Browse related questions and articles.
-- [Fluorescence](https://discoveryinpractice.com/fluorescence/): Browse related questions and articles.
-- [TR-FRET and HTRF](https://discoveryinpractice.com/trf-htrf/): Browse related questions and articles.
-- [Plate effects](https://discoveryinpractice.com/plate-effects/): Browse related questions and articles.
-- [Assays](https://discoveryinpractice.com/assays/): Browse related questions and articles.
-- [Troubleshooting](https://discoveryinpractice.com/troubleshooting/): Browse related questions and articles.
-- [Measurement concepts](https://discoveryinpractice.com/concepts/): Browse related questions and articles.
+## By research topic
 
-## Measurement concepts
+- [Luminescence](https://discoveryinpractice.com/luminescence/): Related explanations and practical guidance.
+- [Fluorescence](https://discoveryinpractice.com/fluorescence/): Related explanations and practical guidance.
+- [TR-FRET & HTRF](https://discoveryinpractice.com/trf-htrf/): Related explanations and practical guidance.
+- [Plate effects](https://discoveryinpractice.com/plate-effects/): Related explanations and practical guidance.
+- [Absorbance](https://discoveryinpractice.com/absorbance/): Related explanations and practical guidance.
+- [Binding assays](https://discoveryinpractice.com/binding-assays/): Related explanations and practical guidance.
+- [Screening equipment](https://discoveryinpractice.com/screening-equipment/): Related explanations and practical guidance.
 
-- [Why are repeated readings of one well precise while replicate wells disagree?](https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.md): Separate reader repeatability from dispensing, cell loading, position effects and preparation variability using a staged comparison.
-- [Why do my bright controls have excellent CVs while my weak samples are unreliable?](https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.md): Why bright controls can have excellent CV while weak samples remain unreliable, with photon statistics, background and working-range checks.
+## Assays — authoritative Markdown
 
-## Luminescence
-
-- [Can PMT saturation or signal compression occur without an overload warning?](https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/article.md): Learn how luminescence signal compression can precede an overload warning, distort results and appear in a practical detector-linearity check.
-- [Why is my luminescence signal lower on one plate reader than another?](https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/article.md): Learn why luminescence signals differ between readers and how to compare precision, linearity, temperature and crosstalk fairly.
-- [Why does reading longer stop improving my assay CV?](https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/article.md): Find out when longer integration improves assay CV, when well variability dominates and how to choose a useful reading time.
-- [What is the difference between analog and photon-counting luminescence detection?](https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/article.md): Compare analog and photon-counting readout, understand why longer integration cannot fix pulse overlap and qualify a useful linear range.
-- [HiBiT: did the protein disappear, or just the light?](https://discoveryinpractice.com/articles/hibit-protein-or-light/article.md): A decrease in HiBiT light can reflect less tagged protein or a change in complementation, luciferase activity, lysis, background, or measurement. The article separates reporter abundance from accelerated degradation and outlines controls that test the detection system and native protein.
-- [CellTiter-Glo: when less light doesn’t mean fewer cells](https://discoveryinpractice.com/articles/celltiter-glo-light-cells/article.md): CellTiter-Glo measures ATP-dependent light, not cell number directly, so metabolism and detection conditions can change the signal independently of abundance. The article separates biological effects from reagent, temperature, mixing, and detector effects and proposes controls for each.
 - [ADP-Glo: the light comes after the kinase](https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/article.md): ADP-Glo light is the endpoint of a multistep detection sequence, so a lower signal can arise outside the kinase reaction. This article shows how to reconstruct the endpoint with ATP/ADP controls and interpret temperature, timing, conversion, and ATP-dependent potency.
-- [A better Z′ can hide a worse measurement](https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.md): A higher Z′ can reflect nonlinear detector compression rather than a better assay. This article explains how bright-well variation can shrink while effect sizes become distorted, and how to check proportionality without confusing detector behavior with assay chemistry.
-- [When reading longer stops helping](https://discoveryinpractice.com/articles/luminescence-integration-time/article.md): Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.
+- [CellTiter-Glo: when less light doesn’t mean fewer cells](https://discoveryinpractice.com/articles/celltiter-glo-light-cells/article.md): CellTiter-Glo measures ATP-dependent light, not cell number directly, so metabolism and detection conditions can change the signal independently of abundance. The article separates biological effects from reagent, temperature, mixing, and detector effects and proposes controls for each.
+- [HiBiT: did the protein disappear, or just the light?](https://discoveryinpractice.com/articles/hibit-protein-or-light/article.md): A decrease in HiBiT light can reflect less tagged protein or a change in complementation, luciferase activity, lysis, background, or measurement. The article separates reporter abundance from accelerated degradation and outlines controls that test the detection system and native protein.
+- [HTRF: the ratio is not the whole result](https://discoveryinpractice.com/articles/htrf-ratio-whole-result/article.md): A stable HTRF ratio can conceal a major loss of signal, degraded precision, or a channel-specific interference. The article explains how to retain and interpret both emission channels, per-well ratios, and acquisition conditions.
+- [Your fluorescent label is part of the experiment](https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/article.md): Choose a fluorescence polarization tracer by matching lifetime to molecular motion, testing the conjugate and checking controls in the actual assay matrix.
+- [One extra carbon can change the binding result](https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/article.md): A one-carbon linker change can alter tracer affinity and assay performance. Learn how to separate binding chemistry from your fluorescence polarization window.
 
-## Fluorescence
+## Result interpretation — authoritative Markdown
 
 - [Why do I get negative fluorescence or luminescence values after blank subtraction?](https://discoveryinpractice.com/articles/negative-values-blank-subtraction/article.md): Understand negative fluorescence or luminescence after blank subtraction, diagnose blank mismatch and avoid bias from replacing negatives with zero.
-- [Your fluorescence polarization result is hiding two measurements](https://discoveryinpractice.com/articles/fp-two-measurements/article.md): A fluorescence-polarization value is calculated from parallel and perpendicular intensity measurements, and the ratio can hide low photon counts or timing mismatch. The article explains how to preserve both channels, interpret intensity and binding curves, and qualify tracer and reader behavior.
-- [One extra carbon can change the binding result](https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/article.md): A one-carbon linker change can alter tracer affinity and assay performance. Learn how to separate binding chemistry from your fluorescence polarization window.
-- [Half the molecules and two thirds of the light](https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.md): Binding can change tracer brightness and shift an apparent Kd while the curve still fits beautifully. See the equations, controls and fluorescence data to keep.
-- [Your fluorescent label is part of the experiment](https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/article.md): Choose a fluorescence polarization tracer by matching lifetime to molecular motion, testing the conjugate and checking controls in the actual assay matrix.
-
-## Troubleshooting
-
 - [Why does subtracting background make my CV worse?](https://discoveryinpractice.com/articles/background-subtraction-increases-cv/article.md): Learn why blank subtraction raises CV, how shared blanks create correlated uncertainty and why optical background prevention helps.
+- [Why are repeated readings of one well precise while replicate wells disagree?](https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.md): Separate reader repeatability from dispensing, cell loading, position effects and preparation variability using a staged comparison.
+- [Read the plate map before you read the statistic](https://discoveryinpractice.com/bench-tips/plate-map/article.md): Inspect spatial patterns alongside control statistics, then use those patterns to choose a follow-up check.
+- [Why is my luminescence signal lower on one plate reader than another?](https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/article.md): Learn why luminescence signals differ between readers and how to compare precision, linearity, temperature and crosstalk fairly.
 
-## Assay and instrument comparisons
+## Concepts — authoritative Markdown
+
+- [What is the difference between analog and photon-counting luminescence detection?](https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/article.md): Compare analog and photon-counting readout, understand why longer integration cannot fix pulse overlap and qualify a useful linear range.
+- [Can PMT saturation or signal compression occur without an overload warning?](https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/article.md): Learn how luminescence signal compression can precede an overload warning, distort results and appear in a practical detector-linearity check.
+- [A better Z′ can hide a worse measurement](https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.md): A higher Z′ can reflect nonlinear detector compression rather than a better assay. This article explains how bright-well variation can shrink while effect sizes become distorted, and how to check proportionality without confusing detector behavior with assay chemistry.
+- [When does reading longer stop improving assay CV?](https://discoveryinpractice.com/articles/luminescence-integration-time/article.md): Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.
+- [Why do my bright controls have excellent CVs while my weak samples are unreliable?](https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.md): Why bright controls can have excellent CV while weak samples remain unreliable, with photon statistics, background and working-range checks.
+- [Your fluorescence polarization result is hiding two measurements](https://discoveryinpractice.com/articles/fp-two-measurements/article.md): A fluorescence-polarization value is calculated from parallel and perpendicular intensity measurements, and the ratio can hide low photon counts or timing mismatch. The article explains how to preserve both channels, interpret intensity and binding curves, and qualify tracer and reader behavior.
+- [Half the molecules and two thirds of the light](https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.md): Binding can change tracer brightness and shift an apparent Kd while the curve still fits beautifully. See the equations, controls and fluorescence data to keep.
+
+## Comparisons — authoritative Markdown
 
 - [Microplate kinase assays: choose the event you need to measure](https://discoveryinpractice.com/compare/microplate-kinase-assays/article.md): ADP production, ATP depletion, substrate phosphorylation and target binding are useful measurements. They are not interchangeable evidence of kinase inhibition.
 - [DNA quantification: five methods, five different answers](https://discoveryinpractice.com/compare/dna-quantification/article.md): DNA mass, target copies, amplifiable library molecules and fragment integrity are different measurements. Choose the answer your next experiment needs before choosing the instrument.
 - [Automated confocal screening: compare the result, not the camera speed](https://discoveryinpractice.com/compare/confocal-screening-systems/article.md): Six representative high-content imaging families compared by optics, simultaneous channels, live-cell conditions and the work required to turn a plate into reliable measurements.
 
-## TR-FRET and HTRF
+## Machine-readable directories and reuse
 
-- [HTRF: the ratio is not the whole result](https://discoveryinpractice.com/articles/htrf-ratio-whole-result/article.md): A stable HTRF ratio can conceal a major loss of signal, degraded precision, or a channel-specific interference. The article explains how to retain and interpret both emission channels, per-well ratios, and acquisition conditions.
-
-## Bench tips
-
-- [Read the plate map before you read the statistic](https://discoveryinpractice.com/bench-tips/plate-map/article.md): Inspect spatial patterns alongside control statistics, then use those patterns to choose a follow-up check.
-
-## Catalog, complete collection and reuse
-
-- [JSON catalog](https://discoveryinpractice.com/data/catalog.json): Every article with canonical, Markdown and JSON URLs and version metadata.
-- [Full article collection](https://discoveryinpractice.com/data/articles.jsonl): Complete article records, bodies, references and metadata in JSON Lines.
-- [Reuse and license](https://discoveryinpractice.com/reuse/): Attribution and CC BY 4.0 terms for original content.
-- [GitHub mirror](https://github.com/discovery-in-practice/website): Public website source and article files.
-- [Hugging Face dataset](https://huggingface.co/datasets/andrewinpractice/discovery-in-practice): Versioned article corpus.
+- [Navigation directory](https://discoveryinpractice.com/data/navigation.json): Primary sections, learning order, topic tags and retired-URL mappings.
+- [Article catalog](https://discoveryinpractice.com/data/catalog.json): Canonical HTML, Markdown and JSON addresses with dates and attribution.
+- [Complete corpus](https://discoveryinpractice.com/data/articles.jsonl): Full article records.
+- [About and contact](https://discoveryinpractice.com/about/): Andrew Stewart and the purpose of the site.
+- [References](https://discoveryinpractice.com/references/): Cited sources.
+- [Reuse](https://discoveryinpractice.com/reuse/): CC BY 4.0 and attribution.
+- [GitHub mirror](https://github.com/discovery-in-practice/website)
+- [Hugging Face corpus](https://huggingface.co/datasets/andrewinpractice/discovery-in-practice)

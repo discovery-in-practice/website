@@ -1,25 +1,5 @@
 (() => {
-  'use strict';
-  const routes = {home:'/index.html?view=home',article:'/articles/z-prime-detector-linearity/'};
-  let prefs = {startPage:'home',showConsulting:true};
-  try { prefs = {...prefs,...JSON.parse(localStorage.getItem('dip-display-v1') || '{}')}; } catch {}
-  if (!Object.hasOwn(routes,prefs.startPage)) prefs.startPage='home';
-  if (typeof prefs.showConsulting !== 'boolean') prefs.showConsulting=true;
-  if (['/','/index.html'].includes(location.pathname) && !new URLSearchParams(location.search).has('view') && prefs.startPage !== 'home') {
-    location.replace(routes[prefs.startPage]); return;
-  }
-  const apply=()=>document.querySelectorAll('[data-consulting]').forEach(el=>el.hidden=!prefs.showConsulting);
-  const store=()=>{try {localStorage.setItem('dip-display-v1',JSON.stringify(prefs));}catch{} apply();};
-  apply();
-  const dialog=document.querySelector('#settings-dialog');
-  const start=document.querySelector('#start-page');
-  const consulting=document.querySelector('#show-consulting');
-  start.value=prefs.startPage;consulting.checked=prefs.showConsulting;
-  document.querySelector('#settings-open').addEventListener('click',()=>dialog.showModal());
-  start.addEventListener('change',()=>{prefs.startPage=start.value;store();});
-  consulting.addEventListener('change',()=>{prefs.showConsulting=consulting.checked;store();});
-  document.querySelector('#open-start').addEventListener('click',()=>{location.href=routes[prefs.startPage];});
-  dialog.addEventListener('click',ev=>{if(ev.target===dialog){const r=dialog.getBoundingClientRect();if(ev.clientX<r.left||ev.clientX>r.right||ev.clientY<r.top||ev.clientY>r.bottom)dialog.close();}});
+'use strict';
   const diff=document.querySelector('#diff-only');
   if(diff){
     const rows=[...document.querySelectorAll('.spec-row')];
@@ -37,3 +17,26 @@
     }));
   }
 })();
+
+(() => {
+  const controls = document.querySelector('.research-filters');
+  if (!controls) return;
+  const rows = [...document.querySelectorAll('.reading-row')];
+  controls.hidden = false;
+  controls.querySelectorAll('[data-filter]').forEach(button => {
+    button.addEventListener('click', () => {
+      const topic = button.dataset.filter;
+      controls.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+      rows.forEach(row => { row.hidden = topic !== 'all' && !row.dataset.tags.split(' ').includes(topic); });
+      document.querySelectorAll('.reading-group').forEach(group => {
+        group.hidden = ![...group.querySelectorAll('.reading-row')].some(row => !row.hidden);
+        const link = document.querySelector('[aria-label="On this page"] a[href="#' + group.id + '"]');
+        if (link) link.hidden = group.hidden;
+      });
+      const count = rows.filter(row => !row.hidden).length;
+      document.querySelector('#filter-status').textContent = count + (count === 1 ? ' article' : ' articles') + (topic === 'all' ? '' : ' · ' + button.textContent);
+    });
+  });
+})();
+
+if(location.pathname==='/'||location.pathname==='/index.html'){const u=new URL(location.href);if(u.searchParams.has('view')){u.searchParams.delete('view');history.replaceState(null,'',u.pathname+u.search+u.hash);}}

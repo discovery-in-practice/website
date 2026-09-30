@@ -1,4 +1,4 @@
-# When reading longer stops helping
+# When does reading longer stop improving assay CV?
 
 By Andrew Stewart · CC BY 4.0
 
@@ -26,6 +26,8 @@ Do not insert a displayed value of 10,000 RLU into this equation. Relative light
 
 Efficient light collection can save substantial time when photon statistics dominate. Merely multiplying an existing signal multiplies its fluctuations as well.
 
+CV is the standard deviation divided by a positive mean, multiplied by 100 when reported as a percentage. Keep every CV term on the same scale when combining contributions. Hamamatsu’s photon-counting treatment also accounts for background and dark counts. [[5]](https://discoveryinpractice.com/articles/luminescence-integration-time/#ref-5)
+
 ## What a longer read buys across the plate
 
 Suppose a one-second read contributes 6% measurement CV, while persistent differences between nominally identical wells contribute 8%. Assume these contributions are independent, the signal is stable and the measurement component decreases with the square root of integration time.
@@ -47,6 +49,8 @@ The detector measurement improves fourfold between the first and last rows. Over
 For a reader measuring wells one at a time, sixteen seconds across 1,536 wells is nearly seven hours of integration alone, before motion and other overheads. That adds more than five hours compared with a four-second read, for a change from 8.5% to 8.1% overall CV. The signal might also change appreciably while you wait.
 
 The assumed 8% contribution represents persistent differences between wells. In an actual experiment, a plateau could reflect dispensing variation, persistent optical effects, imperfect blank correction or sample instability.
+
+The increase from 4 to 16 seconds per well adds 18,432 seconds, or 5.12 hours, across 1,536 wells measured sequentially. This is integration time alone.
 
 ## Cells have counting statistics too
 
@@ -80,6 +84,8 @@ Balance read order and elapsed time across settings. Reading every well briefly 
 
 For a stable assay, plotting CV squared against inverse integration time can be informative. A simple model gives a straight line whose intercept represents variation that does not decrease with longer reading. Use it as a diagnostic approximation. Correlated noise, drift and nonlinearity can defeat the interpretation.
 
+In pulsed fluorescence, increasing the number of flashes, lengthening each collection window and extending the overall well time are different changes. Record which parameter actually changed.
+
 ## Subtracting background leaves its noise behind
 
 Blank subtraction removes an estimate of the average background. It does not remove the random background photons collected in the sample well.
@@ -106,6 +112,8 @@ Recheck the chosen timing under a realistic plate sequence, including temperatur
 
 Stop extending the read when the extra precision no longer changes which compounds you select or which results you would repeat.
 
+The CellTiter-Glo 2.0 protocol specifies room-temperature equilibration and a stabilization period before measurement. For this lytic endpoint, stable near-room-temperature detection supports a fair timing comparison; live-cell assays may require another temperature. A longer read can expose a plate to thermal drift unless the measurement chamber maintains the validated sample temperature. [[6]](https://discoveryinpractice.com/articles/luminescence-integration-time/#ref-6)
+
 ## References
 
 1. Hamamatsu Photonics. [Photon Counting SNR Simulator](https://www.hamamatsu.com/eu/en/resources/interactive-tools/photon-counting-snr-simulator.html). Photon statistics and signal/background contributions; accessed September 24, 2026.
@@ -115,3 +123,7 @@ Stop extending the read when the extra precision no longer changes which compoun
 3. Chang TC and colleagues. [Microwell arrays reveal cellular heterogeneity during the clonal expansion of transformed human cells](https://pmc.ncbi.nlm.nih.gov/articles/PMC4854201/). Technology. 2015;3:163–171. Initial seeding statistics and subsequent clonal behavior in their microwell system.
 
 4. Promega. [CellTiter-Glo 2.0 Cell Viability Assay Technical Manual TM403](https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en). Revision 1/23, section 4; temperature and ATP-per-cell considerations. Worked examples in this article are constructed calculations, not measurements from this manual.
+
+5. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Counting statistics and integration time. The variance example is a calculation under stated assumptions. [Source document](https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf)
+
+6. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Protocol timing and temperature guidance. [Source document](https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/)

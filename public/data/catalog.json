@@ -25,7 +25,7 @@
   },
   {
     "id": "luminescence-integration-time",
-    "title": "When reading longer stops helping",
+    "title": "When does reading longer stop improving assay CV?",
     "canonical_url": "https://discoveryinpractice.com/articles/luminescence-integration-time/",
     "summary": "Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.",
     "author": {
@@ -38,8 +38,8 @@
       "Integration time",
       "Background noise"
     ],
-    "content_version": "1.1.1",
-    "content_sha256": "7c46fd762ab6e06ea704185ebcb1c64b71b1615945800799641d072cda1ae44d",
+    "content_version": "1.3",
+    "content_sha256": "5eafb5cdea28160fc6e715b86ef5d32def25a81869dd1cac1374d71674ab3173",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-25",
@@ -427,29 +427,6 @@
     "date_modified": "2026-09-30",
     "json_url": "https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.md"
-  },
-  {
-    "id": "longer-plate-reader-integration-assay-cv",
-    "title": "Why does reading longer stop improving my assay CV?",
-    "canonical_url": "https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/",
-    "summary": "Find out when longer integration improves assay CV, when well variability dominates and how to choose a useful reading time.",
-    "author": {
-      "name": "Andrew Stewart",
-      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
-    },
-    "topics": [
-      "Assay precision",
-      "Photon counting",
-      "Luminescence"
-    ],
-    "content_version": "1.1",
-    "content_sha256": "9540d23e0f0811fdc068f282bad30959130a2942c5bfbb0dff83c00130d6b3e8",
-    "publication_status": "published",
-    "license": "CC-BY-4.0",
-    "date_published": "2026-09-30",
-    "date_modified": "2026-09-30",
-    "json_url": "https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/article.json",
-    "markdown_url": "https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/article.md"
   },
   {
     "id": "negative-values-blank-subtraction",

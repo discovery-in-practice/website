@@ -6,7 +6,7 @@ https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-wa
 
 Learn how luminescence signal compression can precede an overload warning, distort results and appear in a practical detector-linearity check.
 
-Yes. A detector can depart from proportional response before its output reaches a hard ceiling or triggers a software warning. In photon-counting luminescence, closely spaced detector pulses can be missed as the count rate rises. Analog detection can also become nonlinear, through the photomultiplier tube (PMT) or associated electronics. Whether a reader corrects these effects or flags them depends on its implementation. An ordinary-looking number is not proof that the measurement is linear. [1]
+Yes. A detector can depart from proportional response before its output reaches a hard ceiling or triggers a software warning. In photon-counting luminescence, closely spaced detector pulses can be missed as the count rate rises. Analog detection can also become nonlinear, through the photomultiplier tube (PMT) or associated electronics. Whether a reader corrects these effects or flags them depends on its implementation. Check proportionality even when the instrument reports an ordinary-looking number. [1]
 
 ## Where counts are lost
 
@@ -16,7 +16,7 @@ A simplified nonparalyzable dead-time model describes one possible response:
 
 m = (n) divided by (1 + nτ)
 
-Here n is the event rate before counting losses, m is the measured rate, both in counts per second (cps), and τ is the effective dead time in seconds. The model is illustrative; it does not describe every reader or every operating region.
+Here n is the event rate before counting losses, m is the measured rate, both in counts per second (cps), and τ is the effective dead time in seconds. This illustrative model applies only where its dead-time assumptions fit the detector and operating range.
 
 With an assumed τ of 20 ns, a true rate of 12.5 million cps gives a measured rate of 10.0 million cps: 80% of the expected response. A count display can still look entirely ordinary at that level of loss. This calculation does not establish the dead time, warning threshold or error of any commercial reader. A reader with validated correction may report a much more accurate result over its specified range. [1]
 

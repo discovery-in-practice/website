@@ -6,9 +6,9 @@ https://discoveryinpractice.com/compare/microplate-kinase-assays/
 
 ADP production, ATP depletion, substrate phosphorylation and target binding are useful measurements. They are not interchangeable evidence of kinase inhibition.
 
-The first question in choosing a kinase assay is where the signal comes from. An ADP assay can detect turnover without recognizing the substrate. A phospho-specific assay recognizes a modified substrate but depends on an antibody or development chemistry. A binding assay can find a compound that occupies a kinase without measuring phosphate transfer at all. Each format has a good use, and each can give a convincing result for the wrong reason.
+Start by asking where the assay signal comes from. An ADP assay can detect turnover without recognizing the substrate. A phospho-specific assay recognizes a modified substrate but depends on an antibody or development chemistry. A binding assay can find a compound that occupies a kinase without measuring phosphate transfer at all. Each format has a good use, and each can give a convincing result for the wrong reason.
 
-This comparison covers major plate-based biochemical formats and the cellular assays used to follow them: ADP-Glo, Kinase-Glo, Adapta, Transcreener, HTRF KinEASE, LANCE Ultra, LanthaScreen, Z′-LYTE, Alpha, DELFIA, radiometric detection and NanoBRET target engagement. Reader features matter when they preserve the required signal, timing and temperature. They cannot make two different biological endpoints equivalent.
+This comparison covers major plate-based biochemical formats and the cellular assays used to follow them: ADP-Glo, Kinase-Glo, Adapta, Transcreener, HTRF KinEASE, LANCE Ultra, LanthaScreen, Z′-LYTE, Alpha, DELFIA, radiometric detection and NanoBRET target engagement. The reader matters when they preserve the required signal, timing and temperature. They cannot make two different biological endpoints equivalent.
 
 ## Headlines
 

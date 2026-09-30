@@ -6,7 +6,7 @@ https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/
 
 Why bright controls can have excellent CV while weak samples remain unreliable, with photon statistics, background and working-range checks.
 
-Bright controls can have a small coefficient of variation (CV) because their mean signal is large relative to the measurement noise. Weak samples have fewer useful photons and may sit close to an uncertain background. A low CV at the high end therefore says little about the precision or accuracy of a weak response. High-signal compression can also make bright controls appear unusually uniform. [1,2]
+Bright controls can have a small coefficient of variation (CV) because their mean signal is large relative to the measurement noise. Weak samples have fewer useful photons and may sit close to an uncertain background. Measure precision near the weak response rather than relying on the bright-control CV. High-signal compression can also make bright controls appear unusually uniform. [1,2]
 
 ## Relative precision depends on the size of the response
 
@@ -14,7 +14,7 @@ For a positive mean, CV is the standard deviation (SD) divided by that mean, usu
 
 CV = 100 × (SD) divided by (mean)
 
-An SD of 20 relative fluorescence units (RFU) corresponds to 0.2% CV at a mean of 10,000 RFU, but 20% CV at a mean of 100 RFU. This constructed comparison has identical absolute scatter. The smaller mean makes the same scatter much more consequential. Near zero, CV becomes unstable and can stop being a useful summary. [1]
+An SD of 20 relative fluorescence units (RFU) corresponds to 0.2% CV at a mean of 10,000 RFU, but 20% CV at a mean of 100 RFU. This constructed comparison has identical absolute scatter. The same absolute scatter is a much larger fraction of the weak signal. Near zero, CV becomes unstable and can stop being a useful summary. [1]
 
 Photon counting introduces another dependence on brightness. In an ideal linear measurement with independent photon arrivals and negligible background, relative counting uncertainty falls as the inverse square root of the accumulated count. Expected counts of 10,000 and 100 photons correspond to approximately 1% and 10% counting CV, respectively. Displayed RFU or relative light units (RLU) are not automatically physical photon counts. [2]
 

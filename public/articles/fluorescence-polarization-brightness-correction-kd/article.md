@@ -14,7 +14,7 @@ K subscript d
 
 That fifteenfold change appears in Invitrogen's fluorescence polarization technical guide, in an example using a single-chain anti-fluorescein antibody. Binding strongly quenched the fluorescein. The correction changed the interpretation of the measurements already collected. [1]
 
-The error enters when a fraction of the optical response is treated as a fraction of the molecules. When free and bound tracer have different brightness, the detector gives the two populations different weights. A neat curve can survive the mistake.
+The error enters when a fraction of the optical response is treated as a fraction of the molecules. When free and bound tracer have different brightness, the detector gives the two populations different weights. The fitted curve may still look convincing.
 
 ## Start with the photons
 
@@ -66,7 +66,7 @@ Divide the last expression's numerator and denominator by q. The expression rema
 
 . For this example, an uncorrected fit reports 50 nM. The residuals can look excellent because the wrong interpretation still has the right mathematical shape.
 
-That result assumes two states with fixed brightness, known endpoints, and the binding model just described. It is a calculated illustration, not a general conversion rule for every FP assay. Ligand depletion, multiple sites or concentration-dependent optical effects require a more complete treatment. The excellent fit establishes the shape of the response while leaving its physical interpretation unresolved.
+That result assumes two states with fixed brightness, known endpoints, and the binding model just described. It is a calculated illustration, not a general conversion rule for every FP assay. Ligand depletion, multiple sites or concentration-dependent optical effects require a more complete treatment. A good fit alone does not establish molecular occupancy.
 
 In the antibody example, binding quenched the dye and the uncorrected affinity appeared weaker. A tracer that becomes brighter on binding can push the apparent affinity in the other direction. The sign and size of the error depend on the experiment.
 

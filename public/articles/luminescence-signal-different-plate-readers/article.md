@@ -6,7 +6,7 @@ https://discoveryinpractice.com/articles/luminescence-signal-different-plate-rea
 
 Learn why luminescence signals differ between readers and how to compare precision, linearity, temperature and crosstalk fairly.
 
-A lower luminescence reading can reflect a different reporting scale, less collected light, different acquisition settings or a change in the sample between measurements. Relative light units (RLU) are not standardized across plate readers. A tenfold difference in RLU therefore does not establish a tenfold difference in sensitivity. Compare the reader's ability to resolve relevant low signals and reproduce the assay response. [1]
+A lower luminescence reading can reflect a different reporting scale, less collected light, different acquisition settings or a change in the sample between measurements. Relative light units (RLU) are not standardized across plate readers. A tenfold difference in displayed RLU says little about which reader detects weak samples more reliably. Compare the reader's ability to resolve relevant low signals and reproduce the assay response. [1]
 
 ## Start with what the displayed number means
 
@@ -34,7 +34,7 @@ Live-cell kinetic assays may require controlled biological temperatures instead.
 
 Run blanks, low positives and a concentration series with independently prepared replicates. Evaluate blank variability, low-positive precision, response proportionality and recovery of known differences. For a screening assay, inspect control separation and representative concentration–response curves. Keep the raw signals alongside any normalization.
 
-A multiplier can align two display scales. It cannot repair poor separation from background, restore a compressed high end or identify light collected from another well. Judge those limits using the samples and response differences the assay must resolve.
+Aligning the display scales leaves background separation, high-end compression and light from neighboring wells to be checked separately. Judge those limits using the samples and response differences the assay must resolve.
 
 ## References
 

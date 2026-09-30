@@ -6,7 +6,7 @@ https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/
 
 ADP-Glo light is the endpoint of a multistep detection sequence, so a lower signal can arise outside the kinase reaction. This article shows how to reconstruct the endpoint with ATP/ADP controls and interpret temperature, timing, conversion, and ATP-dependent potency.
 
-A kinase inhibitor reduces the ADP-Glo signal. That is the expected result. Unfortunately, a compound that leaves the kinase alone and interferes with detection can also reduce the signal. Between the enzyme reaction and the reported number sit additional reactions, reagent additions and incubation periods. Include those stages in the troubleshooting plan.
+A kinase inhibitor reduces the ADP-Glo signal. The compound may inhibit the kinase, or it may interfere with a later detection step and produce the same drop. Between the enzyme reaction and the reported number sit additional reactions, reagent additions and incubation periods. Test which stage the compound affects.
 
 ADP-Glo detects the ADP produced by the reaction. Its first reagent terminates the kinase reaction and removes remaining ATP. The second detection step converts ADP into ATP and measures that newly generated ATP through a luciferase reaction. [[1](https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-1),[2](https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/#ref-2)] The instrument sees the end of this sequence. Establishing kinase inhibition requires showing where in the sequence the effect occurred.
 
@@ -20,7 +20,7 @@ For a hypothetical assay starting with 10 µM ATP and reaching 10% conversion, p
 
 Do not confuse the compound concentration during kinase exposure with its concentration during detection. In a 1:1:2 sequence of reaction, first reagent and second reagent volumes, the final volume is four times the kinase-reaction volume. A compound initially at 20 µM ends at 5 µM, assuming neither detection reagent adds compound. Prepare the mock reaction so the compound experiences the same staged dilution.
 
-A detection effect flags the hit for further work; it does not prove the kinase is unaffected. Conversely, a clean mock reaction supports the assay interpretation without proving selectivity. Confirmation with an appropriate direct product or alternative activity measurement answers a different question.
+A detection effect calls for further work, since the compound could also inhibit the kinase. A clean mock reaction supports the kinase interpretation; selectivity still needs a separate test. Confirmation with an appropriate direct product or alternative activity measurement answers a different question.
 
 ## The standard curve should contain the ATP you removed
 
@@ -58,7 +58,7 @@ Promega explicitly states that temperature affects ADP-Glo light intensity and s
 
 This gives the workflow two distinct temperature questions: under what conditions did the kinase produce ADP, and under what conditions was that ADP detected? Making the second stage stable cannot undo unequal reaction histories in the first.
 
-There is a timing trap here. The first ADP-Glo reagent terminates the kinase reaction. If a reaction runs above room temperature and then waits to equilibrate before that addition, the waiting period is still potentially part of the active reaction. Follow the manufacturer's equilibration guidance, but include that transition when qualifying the effective reaction time. Do not silently treat removal from an incubator as the stop event.
+The reaction may continue during the temperature transition. The first ADP-Glo reagent terminates the kinase reaction. If a reaction runs above room temperature and then waits to equilibrate before that addition, the waiting period is still potentially part of the active reaction. Follow the manufacturer's equilibration guidance, but include that transition when qualifying the effective reaction time. Do not silently treat removal from an incubator as the stop event.
 
 Once detection begins, keep the reagent additions, incubation intervals and measurement temperature reproducible. A plate equilibrated near 22°C should not encounter a chamber that warms substantially above the room during the batch. Turning the heater off does not show that this requirement has been met. Internal components can still supply heat, and an above-ambient-only heater cannot remove it.
 

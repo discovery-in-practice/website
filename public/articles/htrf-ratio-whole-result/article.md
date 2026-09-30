@@ -6,9 +6,9 @@ https://discoveryinpractice.com/articles/htrf-ratio-whole-result/
 
 A stable HTRF ratio can conceal a major loss of signal, degraded precision, or a channel-specific interference. The article explains how to retain and interpret both emission channels, per-well ratios, and acquisition conditions.
 
-Two HTRF plates give almost identical ratios. On the second plate, both emission channels have lost most of their signal. Has the assay reproduced? Perhaps the ratio has corrected a shared optical effect exactly as intended. Perhaps the measurements are now much noisier, and a weak positive has become difficult to distinguish from background. Inspect the raw channels before deciding.
+Two HTRF plates give almost identical ratios. On the second plate, both emission channels have lost most of their signal. The ratio may have corrected a shared optical effect, but the weaker channels may also make a positive difficult to distinguish from background. Inspect both raw channels before deciding whether the assay has reproduced.
 
-HTRF combines delayed fluorescence detection with a donor–acceptor measurement. That combination is useful because it rejects much short-lived background and can compensate for effects shared between channels. To use those advantages well, keep the two channel values. They explain what the final number leaves out.
+HTRF combines delayed fluorescence detection with a donor–acceptor measurement. That combination is useful because it rejects much short-lived background and can compensate for effects shared between channels. Keep both channel values so you can see what produced the final ratio.
 
 ## What the ratio corrects
 
@@ -18,7 +18,7 @@ R equals 10000 times A divided by D.
 
 Here A and D are the acceptor- and donor-channel readings, commonly near 665 and 620 nm in that configuration. Other dye combinations need their specified optics. The factor of 10,000 makes the numbers convenient; it adds no information. Revvity recommends calculating the ratio separately for each well before calculating replicate statistics. [[1](https://discoveryinpractice.com/articles/htrf-ratio-whole-result/#ref-1)]
 
-Suppose an effect multiplies both signals by the same factor q. Then qA divided by qD equals A divided by D. This is the useful cancellation at the center of ratiometric detection. It works for a shared proportional effect, not for every event that happens in the well.
+Suppose an effect multiplies both signals by the same factor q. Then qA divided by qD equals A divided by D. That cancellation applies to an effect that scales both channels proportionally.
 
 Consider these constructed readings in arbitrary linear signal units:
 
@@ -51,7 +51,7 @@ Simultaneous dual-emission collection is particularly valuable here. The donor a
 
 For a simple illustration, assume excitation amplitude varies independently by 2% between the two separate measurements. If all other errors are absent, the ratio acquires approximately 2.8% relative variation from those two independent contributions. With simultaneous collection, a perfectly common multiplicative excitation fluctuation cancels. Actual assays still have photon noise, detector noise and effects that do not scale both channels equally.
 
-This is a precision benefit as well as a throughput benefit. Collecting both emissions together removes the need to repeat the acquisition merely to obtain the denominator. In a long plate queue, saved acquisition time can also reduce differences in assay age between the first and last plates. The actual time saving depends on motion, excitation and other overhead; it is not automatically a twofold speed increase.
+Collecting both channels together can improve precision and shorten acquisition. Collecting both emissions together removes the need to repeat the acquisition merely to obtain the denominator. In a long plate queue, saved acquisition time can also reduce differences in assay age between the first and last plates. The actual time saving depends on motion, excitation and other overhead; it is not automatically a twofold speed increase.
 
 Check what “dual” means in a reader specification. Ask whether both channels collect from the same pulses, with appropriate delays and integration windows, or are acquired in succession. Confirm channel calibration and usable linear ranges. Simultaneous acquisition preserves shared information; mismatched gates or nonlinear response can still spoil the comparison.
 

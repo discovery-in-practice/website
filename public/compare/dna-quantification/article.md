@@ -6,9 +6,9 @@ https://discoveryinpractice.com/compare/dna-quantification/
 
 DNA mass, target copies, amplifiable library molecules and fragment integrity are different measurements. Choose the answer your next experiment needs before choosing the instrument.
 
-A DNA extract can produce a high absorbance result, a lower fluorescent-dye result and a still lower PCR result without any instrument being broken. The methods count different things. Absorbance measures ultraviolet absorption; a dsDNA dye reports accessible double-stranded DNA; PCR interrogates a chosen amplifiable sequence; electrophoresis adds a size distribution. Agreement is useful, but disagreement can reveal contamination, degradation or a library-preparation problem.
+A DNA extract can produce a high absorbance result, a lower fluorescent-dye result and a still lower PCR result without any instrument being broken. Each method responds to a different feature of the sample. Absorbance measures ultraviolet absorption; a dsDNA dye reports accessible double-stranded DNA; PCR interrogates a chosen amplifiable sequence; electrophoresis adds a size distribution. Agreement is useful, but disagreement can reveal contamination, degradation or a library-preparation problem.
 
-This comparison covers UV absorbance, fluorescent dyes, qPCR, digital PCR and automated electrophoretic QC, with representative commercial products. Instrument names do not define the chemistry: NanoDrop Ultra FL and DeNovix DS-11 FX combine absorbance and fluorescence. Product limits below retain their units and sample-volume conditions. The practical recommendations concern workflow fit, not a universal sensitivity ranking. A separate adapter-selective fluorescent library assay is included to distinguish it from ordinary DNA-binding dyes.
+This comparison covers UV absorbance, fluorescent dyes, qPCR, digital PCR and automated electrophoretic QC, with representative commercial products. Check the measurement chemistry as well as the instrument name: NanoDrop Ultra FL and DeNovix DS-11 FX combine absorbance and fluorescence. Product limits below retain their units and sample-volume conditions. The practical recommendations concern workflow fit, not a universal sensitivity ranking. A separate adapter-selective fluorescent library assay is included to distinguish it from ordinary DNA-binding dyes.
 
 ## Headlines
 

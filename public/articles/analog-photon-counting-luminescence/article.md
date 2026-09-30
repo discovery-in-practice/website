@@ -6,13 +6,13 @@ https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/
 
 Compare analog and photon-counting readout, understand why longer integration cannot fix pulse overlap and qualify a useful linear range.
 
-Analog detection measures the photomultiplier tube's electrical output as current or integrated charge. Photon counting identifies individual pulses above a discriminator threshold and counts them. Photon counting can be especially useful at low light levels. At high event rates, pulses can overlap and the recorded rate becomes nonlinear. Analog operation also has limits, including detector, amplifier and converter saturation. The useful choice depends on the complete detection system and the assay's signal range. [1]
+Analog detection measures the photomultiplier tube's electrical output as current or integrated charge. Photon counting identifies individual pulses above a discriminator threshold and counts them. Photon counting can be especially useful at low light levels. At high event rates, pulses can overlap and the recorded rate becomes nonlinear. Analog operation also has limits, including detector, amplifier and converter saturation. Choose a mode against the assay's weak and bright signals using the complete detector configuration. [1]
 
 ## What the electronics measure
 
 A photomultiplier tube (PMT) converts detected light into amplified electron pulses. An analog circuit measures their combined electrical contribution. A counting circuit separates qualifying pulses into events; its discriminator can reject small electronic pulses below the threshold. “Analog” therefore describes how the signal is measured; the instrument can still digitize the result for storage and analysis. Tecan's Infinite 200 PRO documentation, for example, explicitly describes analog-to-digital conversion of a PMT signal in fluorescence mode. [1,2]
 
-A photon count is not a census of every photon emitted by the well. Collection efficiency, wavelength-dependent detection efficiency and pulse discrimination affect which events are registered. Relative light units (RLU) may also include software scaling. Establish what the reported output represents before treating it as a physical count.
+The recorded count includes only photons that reach the detector and pass its event threshold. Collection efficiency, wavelength-dependent detection efficiency and pulse discrimination affect which events are registered. Relative light units (RLU) may also include software scaling. Establish what the reported output represents before treating it as a physical count.
 
 ## A longer read cannot separate pulses that arrived together
 

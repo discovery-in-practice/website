@@ -12,7 +12,7 @@ Subtracting a background value makes the mean signal smaller. If the same value 
 
 Consider constructed sample readings with a mean of 1,000 relative light units (RLU) and a standard deviation (SD) of 20 RLU. CV is SD divided by a positive mean, multiplied by 100: 2% here. Subtract a common value of 900 RLU and the net mean becomes 100 RLU. The SD remains 20 RLU, giving a CV of 20%.
 
-Subtracting a constant shifts every point equally and leaves the distance between any two points unchanged. The higher CV reflects the scatter relative to the net signal. Keeping the background in the denominator would make the percentage look smaller without improving the analyte measurement.
+Subtracting a constant shifts every point equally and leaves the distance between any two points unchanged. The higher CV describes scatter relative to the net signal. Using the uncorrected mean in the denominator would lower the percentage without improving the analyte measurement.
 
 ## The blank estimate has uncertainty too
 
@@ -28,7 +28,7 @@ For example, suppose a single sample reading has a standard uncertainty of 20 RL
 
 If every sample on a plate uses that same blank mean, all corrected values move together when the blank estimate changes. In the example, subtracting the realized common blank still leaves the observed within-plate sample SD at 20 RLU. The 22.4 RLU uncertainty describes a different question: uncertainty in an individual corrected estimate across possible repetitions of the sample and blank measurements.
 
-The uncertainty in a plate mean also retains that shared contribution. Averaging more sample wells can reduce their independent noise, but it does not average away the uncertainty in the single blank estimate they share. The analysis must preserve the fact that those wells share one correction.
+The uncertainty in a plate mean also retains that shared contribution. More sample wells reduce independent noise while retaining uncertainty in the single blank estimate shared by all of them. The analysis must preserve the fact that those wells share one correction.
 
 ## Improve the background before the arithmetic
 

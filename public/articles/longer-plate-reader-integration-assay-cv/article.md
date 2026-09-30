@@ -6,7 +6,7 @@ https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-c
 
 Find out when longer integration improves assay CV, when well variability dominates and how to choose a useful reading time.
 
-Longer reading helps mainly while light-collection noise makes a substantial contribution to the result. Once differences in dispensing, cell number, temperature or other persistent well properties dominate, extra integration produces little improvement in the coefficient of variation (CV). Drift during a longer run can even make precision worse. Before lengthening the read again, compare repeated measurements of the same preparation with independently prepared replicate wells.
+Longer reading helps while light-collection noise still makes a substantial contribution to the result. Once differences in dispensing, cell number, temperature or other persistent well properties dominate, extra integration produces little improvement in the coefficient of variation (CV). Drift during a longer run can even make precision worse. Before lengthening the read again, compare repeated measurements of the same preparation with independently prepared replicate wells.
 
 ## The square-root return on reading time
 
@@ -18,7 +18,7 @@ Consider a constructed example. At 1 s per well, measurement noise contributes 6
 
 CV subscript total raised to (2) = CV subscript measurement raised to (2) + CV subscript between wells raised to (2)
 
-CV is the standard deviation divided by a positive mean, multiplied by 100 when reported as a percentage. All CV terms use the same scale; the table reports percentages. The 8% term is an assumption, not a measured noise floor.
+CV is the standard deviation divided by a positive mean, multiplied by 100 when reported as a percentage. All CV terms use the same scale; the table reports percentages. Here the persistent 8% contribution is assumed, not measured.
 
 | Integration per well | Measurement CV | Persistent well CV | Total CV |
 | --- | --- | --- | --- |

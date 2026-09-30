@@ -16,9 +16,9 @@ A useful working model for background-subtracted signal is:
 
 L minus B equals k times P times f.
 
-Here P is the amount of tagged protein in the well, f is the fraction successfully recovered and complemented, and k includes enzyme activity and light collection under the measurement conditions. This is a conditional model: it assumes proportional detection and comparable activity among the complemented molecules.
+Here P is the amount of tagged protein in the well, f is the fraction successfully recovered and complemented, and k includes enzyme activity and light collection under the measurement conditions. The model assumes proportional detection and comparable activity among complemented molecules.
 
-Suppose treatment leaves P unchanged but halves f. The instrument reports the same decrease as it would if half the protein disappeared with f unchanged. A concentration response cannot distinguish those explanations by its shape alone. Compounds have concentration-dependent effects on detection chemistry too.
+Suppose treatment leaves P unchanged but halves f. The instrument reports the same decrease as it would if half the protein disappeared with f unchanged. A concentration response alone cannot separate protein loss from a concentration-dependent effect on detection chemistry.
 
 Separate those possibilities with controls that retain the suspected interference while removing the proposed biology. Add compound to a fixed amount of HiBiT control protein in the detection reaction, matching the final compound concentration and solvent. Promega specifically recommends a cell-free control-protein assay for potential luciferase inhibitors. [[1](https://discoveryinpractice.com/articles/hibit-protein-or-light/#ref-1)] Where practical, repeat in a representative lysate matrix rather than assuming buffer reproduces every interaction.
 
@@ -30,7 +30,7 @@ Protein abundance reflects production and removal. Even an ideal abundance measu
 
 The time derivative of P equals s minus k sub d times P.
 
-Here s is the synthesis rate and k_d is the degradation rate constant. At steady state, production balances removal. Now imagine completely stopping synthesis while leaving degradation unchanged. For a protein with a two-hour half-life, half the starting amount remains after two hours. The protein really has fallen by 50%, yet its degradation rate never increased.
+Here s is the synthesis rate and k_d is the degradation rate constant. At steady state, production balances removal. Now imagine completely stopping synthesis while leaving degradation unchanged. For a protein with a two-hour half-life, half the starting amount remains after two hours. Protein abundance falls by 50% even though the degradation rate is unchanged.
 
 That constructed example is why an endpoint decrease needs a mechanism experiment. For a proposed proteasome-dependent degrader, a suitable proteasome-blockade experiment can test pathway dependence, alongside inhibitor-only and viability controls. Competition at the proposed target or ligase-binding site may answer another part of the mechanism. Rescue supports an interpretation; it is not sufficient alone, since the rescuing treatment can affect protein production and cell state as well.
 

@@ -6,7 +6,7 @@ https://discoveryinpractice.com/compare/confocal-screening-systems/
 
 Six representative high-content imaging families compared by optics, simultaneous channels, live-cell conditions and the work required to turn a plate into reliable measurements.
 
-A high-content imager is a microscope, a plate-handling system and an analysis workflow. Its useful throughput is the rate at which it produces accepted biological results. Camera frame rate is only one contributor. Autofocus, the number of fields, color changes, z-stacks, water replenishment, analysis and file transfer can dominate the time spent on a plate.
+A high-content imager is a microscope, a plate-handling system and an analysis workflow. Judge throughput by accepted biological results. Camera frame rate is only one part of that workflow. Autofocus, the number of fields, color changes, z-stacks, water replenishment, analysis and file transfer can dominate the time spent on a plate.
 
 This comparison focuses on automated microplate systems: Revvity Opera Phenix OptIQ and Operetta CLS, Molecular Devices ImageXpress HCS.ai, Yokogawa CellVoyager CV8000 and CQ3000, and Thermo Scientific CellInsight CX7 LZR Pro. They are representative product families, not a market-share ranking. Older Opera Phenix Plus and ImageXpress HT.ai documentation is identified where relevant; specifications and options belong to the named generation and configuration.
 

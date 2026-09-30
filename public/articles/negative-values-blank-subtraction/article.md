@@ -10,11 +10,11 @@ A negative corrected value means the measured sample was below the blank value t
 
 ## Subtraction estimates a difference
 
-Suppose a sample reads 996 relative fluorescence units (RFU) and the estimated blank is 1,000 RFU. The corrected result is −4 RFU. The negative number estimates signal relative to the selected background; the detector has not counted negative photons.
+Suppose a sample reads 996 relative fluorescence units (RFU) and the estimated blank is 1,000 RFU. The corrected result is −4 RFU. The detector has counted photons. The corrected result is the estimated difference from the selected background.
 
 The sample reading and blank estimate both have uncertainty. For independent measurements, their variances add when you subtract them. A small negative difference can therefore be compatible with a zero net response. Correlated or paired measurements require their covariance to be considered. These are applications of standard uncertainty propagation. [1]
 
-Judge the negatives by their size, frequency, spatial or temporal pattern, and relationship to blank uncertainty. Nor do they establish a numerical detection limit without an appropriate validation study.
+Assess their size, frequency and position or time pattern against blank uncertainty. Establish a numerical detection limit through a separate validation study.
 
 ## Look for a mismatch that subtraction cannot fix
 

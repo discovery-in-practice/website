@@ -6,9 +6,9 @@ https://discoveryinpractice.com/articles/fp-two-measurements/
 
 A fluorescence-polarization value is calculated from parallel and perpendicular intensity measurements, and the ratio can hide low photon counts or timing mismatch. The article explains how to preserve both channels, interpret intensity and binding curves, and qualify tracer and reader behavior.
 
-A fluorescence polarization assay can produce a perfectly respectable mP value from a paltry amount of light. It can also turn a timing difference between two measurements into an apparent binding event. Both problems become much easier to recognize if the export contains the two intensity channels that produced the answer.
+A fluorescence polarization assay can produce a plausible mP value from very little light. It can also turn a timing difference between two measurements into an apparent binding event. Keep both intensity channels in the export so you can recognize either problem.
 
-Fluorescence polarization, or FP, is useful precisely because it is a ratio measurement. Several proportional changes in brightness can cancel. But cancellation has conditions, and the ratio discards information you may need later. Keep the parallel and perpendicular intensities alongside the mP result from the first optimization plate onward.
+Fluorescence polarization, or FP, is useful precisely because it is a ratio measurement. Several proportional changes in brightness can cancel. The cancellation holds only under certain conditions, and the ratio hides the intensities used to calculate it. Keep the parallel and perpendicular intensities alongside the mP result from the first optimization plate onward.
 
 ## What the two channels measure
 
@@ -35,7 +35,7 @@ Set G to 1 and consider two ideal measurements with negligible background. The n
 | 12,000 | 8,000 | 200 mP | 6.9 mP |
 | 120 | 80 | 200 mP | 69.3 mP |
 
-Both ratios give the same answer. The dim measurement has approximately ten times the photon-limited uncertainty.
+The ratios match, although the dim measurement has approximately ten times the photon-limited uncertainty.
 
 For independent Poisson counts, G = 1 and sufficiently large counts for error propagation, the approximate standard deviation is:
 
@@ -103,7 +103,7 @@ Keep assay plates and reagents at a reproducible measurement temperature, and ev
 - Examine intensity throughout target titrations and compound curves. Investigate large changes before interpreting affinity or inhibition.
 - Recheck tracer behavior, temperature and equilibration time when the window changes after miniaturization.
 
-The mP column is the result you will usually plot. The two intensity columns are often what let you explain it.
+Plot the mP result, and retain both intensity columns for troubleshooting.
 
 ## References
 

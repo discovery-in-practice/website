@@ -6,7 +6,7 @@ https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/
 
 Separate reader repeatability from dispensing, cell loading, position effects and preparation variability using a staged comparison.
 
-Repeated readings revisit the same preparation. Replicate wells include differences in dispensing, cell number, mixing, incubation and position as well as reading noise. A reader can measure one imperfectly prepared well very consistently. Separate these sources of variation before changing the optics or collecting more readings from every well.
+Repeated readings estimate variation from measuring the same preparation. Independently prepared wells also capture dispensing, cell number, mixing, incubation and position effects. A poorly prepared well can produce very consistent repeated readings. Separate these sources of variation before changing the optics or collecting more readings from every well.
 
 ## Repetition preserves the original preparation
 

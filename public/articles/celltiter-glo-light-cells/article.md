@@ -8,9 +8,9 @@ CellTiter-Glo measures ATP-dependent light, not cell number directly, so metabol
 
 The plate says 50% viability. The microscope says there are rather more cells than that. Before deciding which result to believe, ask what the luminescence measurement actually counted.
 
-CellTiter-Glo measures ATP through a light-producing reaction. ATP is a useful marker of viable cells, but the instrument does not count cells directly. The result depends on how many cells remain, how much ATP each contributes, how effectively the reagent releases it, and how faithfully the resulting glow is measured. That distinction becomes useful as soon as a compound changes metabolism, cell size or proliferation.
+CellTiter-Glo measures ATP through a light-producing reaction. ATP is a useful marker of viable cells, but the instrument does not count cells directly. The result depends on how many cells remain, how much ATP each contributes, how effectively the reagent releases it, and how faithfully the resulting glow is measured. Those factors matter when a compound changes metabolism, cell size or proliferation.
 
-There is another experiment happening after you add the reagent: an enzyme reaction whose output depends on temperature. For the room-temperature endpoint workflow discussed here, a stable measurement chamber close to the equilibrated plate temperature is part of obtaining a reliable result.
+After reagent addition, an enzyme reaction produces the light, and its output depends on temperature. For the room-temperature endpoint workflow discussed here, a stable measurement chamber close to the equilibrated plate temperature is part of obtaining a reliable result.
 
 ## Three biological outcomes can produce two answers
 
@@ -33,7 +33,7 @@ The middle two rows produce the same light for different reasons. The last row p
 
 This is more than an algebraic possibility. Chan and colleagues compared cell counting with ATP and MTS assays across drug treatments and cell lines. Some cell-cycle-arresting treatments increased ATP per cell, with changes in cell size and mitochondrial content, masking part of their antiproliferative effect in the metabolic assays. The discrepancy depended on the treatment and cell line. [[1](https://discoveryinpractice.com/articles/celltiter-glo-light-cells/#ref-1)]
 
-That makes the disagreement informative. An imaging result showing fewer, larger cells points directly to the ATP-per-cell assumption.
+If imaging shows fewer, larger cells, test whether ATP per cell changed.
 
 ## A low endpoint does not establish cell killing
 
@@ -88,7 +88,7 @@ For assay development and hit follow-up, retain enough information to separate t
 - Detection-only ATP controls and the results of mixing and optical-linearity checks.
 - Plate and reagent equilibration conditions, reagent-to-read times, and chamber behavior through the intended batch.
 
-A well-controlled room-temperature glow measurement makes ATP a more dependable endpoint. Interpreting that endpoint still requires the biology. When the microscope and the luminescence disagree, check which part of the relationship changed: cells, ATP per cell, recovery, or detection.
+Stable room-temperature handling makes the ATP endpoint more dependable, while imaging and orthogonal controls help explain what changed. When the microscope and the luminescence disagree, check which part of the relationship changed: cells, ATP per cell, recovery, or detection.
 
 ## References
 

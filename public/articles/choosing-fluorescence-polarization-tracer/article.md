@@ -8,9 +8,9 @@ Choose a fluorescence polarization tracer by matching lifetime to molecular moti
 
 There is usually a sensible reason for choosing the first fluorescent tracer: an available conjugate, a familiar dye, a filter set already in the reader. Trouble begins when that first convenient choice quietly becomes a fixed property of the assay. Every subsequent optimization then asks how to make the chosen tracer work.
 
-It is worth keeping the choice open for a little longer. A tracer has to bind in a useful way, provide an optical distinction between states, and remain measurable in the intended sample. Those requirements interact. The candidate with the highest affinity or the brightest fluorescence can lose to a less impressive-looking alternative once the complete assay is assembled.
+Compare a few candidates before fixing the tracer. A tracer has to bind in a useful way, provide an optical distinction between states, and remain measurable in the intended sample. Those requirements interact. The candidate with the highest affinity or the brightest fluorescence can lose to a less impressive-looking alternative once the complete assay is assembled.
 
-An early tracer comparison gives those later adjustments a firmer basis. Knowing why a candidate works helps when the assay moves to a smaller volume or a different target preparation.
+An early comparison shows which feature of the tracer carries the assay window and helps when you move to a smaller volume or a different target preparation.
 
 ## Choose a lifetime that can reveal the motion
 
@@ -66,7 +66,7 @@ Temperature belongs in this comparison because viscosity and rotational motion d
 
 ## Make the reader part of tracer selection
 
-An optical window becomes useful only when it can be measured with enough precision at the required throughput. Test candidate tracers with the intended plate, volume and acquisition time. A large window obtained with a long, leisurely read may offer little advantage in a screen whose cycle time allows a fraction of that collection period.
+An optical window becomes useful only when it can be measured with enough precision at the required throughput. Test candidate tracers with the intended plate, volume and acquisition time. A large window obtained with a long read may offer little advantage in a screen whose cycle time allows a fraction of that collection period.
 
 Both polarization components contribute to the result. Simultaneous collection makes them sample the same excitation interval, reducing the opportunity for changes between sequential measurements to disturb the ratio. That is a useful capability to test when evaluating small windows or changing samples. Its benefit still depends on relative channel calibration, photon collection and the actual sources of variation. It cannot remove dye motion or restore binding lost through an unfavorable conjugation.
 

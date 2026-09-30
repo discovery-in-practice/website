@@ -8,7 +8,7 @@ A one-carbon linker change can alter tracer affinity and assay performance. Lear
 
 A fluorescent tracer arrives with an appealing division of labor. The ligand recognizes the target, the dye supplies the light, and the linker keeps the two from getting in each other's way. It is a convenient drawing. The target encounters the whole molecule.
 
-That detail matters when a fluorescence polarization assay becomes difficult. A narrow window invites another protein titration, a different gain setting, perhaps a longer read. The tracer itself deserves a place in that investigation. Adding a fluorescent label creates another molecule to characterize, even when the starting ligand has impeccable credentials.
+That detail matters when a fluorescence polarization assay becomes difficult. A narrow window invites another protein titration, a different gain setting, perhaps a longer read. The tracer itself deserves a place in that investigation. The labeled product needs its own binding and optical characterization, even when the starting ligand is well established.
 
 One serotonin tracer series makes the point with an unusually small structural change. Cornelius and colleagues compared Cy3B conjugates with two- and three-carbon linkers. At the 5-HT₂B receptor, the radioligand competition 
 
@@ -16,7 +16,7 @@ K subscript i
 
  changed from 552 to 6,713 nM: about twelvefold weaker binding after adding one carbon. At 5-HT₂A, it changed from 6.09 to 32.18 nM. At the intended FP assay target, 5-HT₂C, the difference was smaller: 1.9 to 3.4 nM. [1]
 
-The subtype is worth keeping beside the number. “One carbon costs twelvefold affinity” is memorable. The actual result is more useful: the same linker change affected related receptors differently. A tracer modification can alter the selectivity pattern as well as the strength of binding.
+The one-carbon linker change cost twelvefold affinity in one receptor subtype and affected related receptors differently. A tracer modification can alter the selectivity pattern as well as the strength of binding.
 
 ## The binding result and the optical window
 
@@ -26,7 +26,7 @@ K subscript i
 
  values. The table does not establish that linker motion alone caused the smaller window. [1]
 
-Affinity describes an equilibrium. The polarization window depends on how much tracer occupies each state, the optical behavior of those states, and the background reaching the detector. A compound can bind well and still provide a disappointing FP signal.
+Affinity describes an equilibrium. The polarization window depends on how much tracer occupies each state, the optical behavior of those states, and the background reaching the detector. Strong binding can coexist with a small FP window.
 
 Consider a deliberately simple binding calculation. With a trace amount of fluorescent ligand, a single class of independent sites, and free receptor concentration R, its bound fraction is:
 

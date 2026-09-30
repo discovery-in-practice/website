@@ -335,11 +335,6 @@
       "data_kind": "author-provided table; see source caveats"
     }
   ],
-  "provenance": {
-    "kind": "Author-provided article converted to structured text",
-    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
-    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
-  },
   "display_additions": {},
   "content_sha256": "41669f6677162095116fbd95ddeae3912ba982e265ffff6fb797643c22ff2835"
 }

@@ -66,7 +66,7 @@ This comparison focuses on automated microplate systems: Revvity Opera Phenix Op
 
 ## About the sources
 
-Sources checked 25 September 2026. Manufacturer specifications describe the named product and configuration; they are not independent all-vendor benchmarks. Row-level source IDs link to the references below. Calculations and practical interpretations are identified separately. No physical comparison or procurement quotation is represented by these tables.
+Manufacturer specifications describe the named product and configuration; they are not independent all-vendor benchmarks. Row-level source IDs link to the references below. Calculations and practical interpretations are identified separately. No physical comparison or procurement quotation is represented by these tables.
 
 C01  [Revvity Opera Phenix OptIQ product and configuration matrix](https://www.revvity.com/product/opera-phenix-optiq-hh25000000)
 

@@ -406,11 +406,6 @@
       "data_kind": "constructed example"
     }
   ],
-  "provenance": {
-    "kind": "Author-provided article converted to structured text",
-    "examples": "Constructed calculations, not a raw experimental dataset",
-    "editorial_additions": "Summary, takeaways, topic tags, and limitations summary"
-  },
   "display_additions": {
     "figures": [],
     "bench_check": false,

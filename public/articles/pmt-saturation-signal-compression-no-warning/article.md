@@ -45,7 +45,3 @@ A wide validated dynamic range is valuable because bright controls and weak resi
 1. Hamamatsu Photonics. [Photomultiplier Tubes: Basics and Applications](https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf). Fourth edition, April 2017. Section 6.3, printed pp. 149–150, PDF pp. 162–163; equations 6-2 through 6-4 and count-rate correction examples. Component/system examples are not commercial plate-reader specifications.
 
 2. Zhang J-H, Chung TDY, Oldenburg KR. [A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays](https://doi.org/10.1177/108705719900400206). Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor reference; PubMed abstract checked, full publisher article not retrieved for this draft.
-
-## Provenance
-
-Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.

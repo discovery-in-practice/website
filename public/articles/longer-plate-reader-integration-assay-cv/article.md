@@ -47,7 +47,3 @@ Efficient collection and lower optical background can improve a weak measurement
 1. Hamamatsu Photonics. [Photomultiplier Tubes: Basics and Applications, fourth edition](https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf), April 2017, printed pp. 152–153 (PDF pp. 165–166). Counting statistics and integration time. The variance example is a calculation under stated assumptions.
 
 2. Promega. [CellTiter-Glo 2.0 Assay Technical Manual TM403](https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/), archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Protocol timing and temperature guidance.
-
-## Provenance
-
-Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.

@@ -294,11 +294,6 @@
     }
   ],
   "tables": [],
-  "provenance": {
-    "kind": "Author-provided article converted to structured text",
-    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
-    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
-  },
   "display_additions": {},
   "content_sha256": "c305a78ff0de722d5d6b64d220ef9298cf97d921d9432bd43b86921ff3c8913c"
 }

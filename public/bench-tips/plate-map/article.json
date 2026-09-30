@@ -77,11 +77,6 @@
   ],
   "equations": [],
   "tables": [],
-  "provenance": {
-    "kind": "Editorial adaptation",
-    "examples": "Illustrative map, not experimental measurements",
-    "editorial_status": "Approved for publication"
-  },
   "license_status": "Published under CC BY 4.0",
   "content_sha256": "8a6d3ec8e75543f7ac7de4efe8b95161b06a62688d99ed46027d64cfb2ba0d8a"
 }

@@ -45,7 +45,3 @@ Inspect raw and net means, SDs and the blank distribution alongside CV. Near the
 2. Hamamatsu Photonics. [Photomultiplier Tubes: Basics and Applications, fourth edition](https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf), April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting linearity, background and signal-to-noise relationships.
 
 3. BMG LABTECH. [How does the number of flashes influence measurement results?](https://www.bmglabtech.com/en/howto-notes/how-does-the-number-of-flashes-influence-measurement-results/). Flash averaging, concentration-dependent variability and acquisition time; checked 29 September 2026. Example-specific flash counts are not generalized.
-
-## Provenance
-
-Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.

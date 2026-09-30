@@ -45,7 +45,3 @@ Compare groups at balanced times and retain the preparation hierarchy in the ana
 2. [Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology](https://www.ncbi.nlm.nih.gov/books/NBK558077/). Assay Guidance Manual. Previously archived full chapter; plate geometry, handling, mixing and position effects.
 
 3. Promega. [CellTiter-Glo 2.0 Assay Technical Manual TM403](https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/), archived revision January 2023, PDF pp. 7 and 11. Room-temperature equilibration, stabilization and temperature effects on intensity and decay.
-
-## Provenance
-
-Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.

@@ -45,7 +45,3 @@ Keep specimen temperature and assay age stable while making the comparison. Prom
 2. Tecan. [Infinite 200 PRO Instructions for Use](https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf), revision 1.4, June 2021, p. 72. Analog-to-digital conversion and gain in the fluorescence path; this example does not identify every reader's luminescence architecture.
 
 3. Promega. [CellTiter-Glo 2.0 Assay Technical Manual TM403](https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/), archived revision January 2023, PDF pp. 7 and 11. Equilibration and temperature effects on intensity and decay.
-
-## Provenance
-
-Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.

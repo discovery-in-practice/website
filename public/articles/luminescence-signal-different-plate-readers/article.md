@@ -43,7 +43,3 @@ Aligning the display scales leaves background separation, high-end compression a
 2. Wieczorek D, Hooper K, Bjerke M. Promega. [How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results](https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/), June 2019, tpub_212. Well isolation and plate opacity; no historical instrument ranking is carried forward.
 
 3. Promega. [CellTiter-Glo 2.0 Assay Technical Manual TM403](https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/), archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, stabilization and temperature-dependent light output.
-
-## Provenance
-
-Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.

@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "id": "pmt-saturation-signal-compression-no-warning",
+  "canonical_url": "https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/",
+  "title": "Can PMT saturation or signal compression occur without an overload warning?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Learn how luminescence signal compression can precede an overload warning, distort results and appear in a practical detector-linearity check.",
+  "takeaways": [
+    "Where counts are lost",
+    "Why controls can become misleading",
+    "Test proportionality without changing the reaction"
+  ],
+  "limitations_summary": "Named human technical review remains pending. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this article. Preserve the assay-specific assumptions and source limitations.",
+  "topics": [
+    "Detector linearity",
+    "Photon counting",
+    "Luminescence"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-09-30",
+  "date_modified": "2026-09-30",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Yes. A detector can depart from proportional response before its output reaches a hard ceiling or triggers a software warning. In photon-counting luminescence, closely spaced detector pulses can be missed as the count rate rises. Analog detection can also become nonlinear, through the photomultiplier tube (PMT) or associated electronics. Whether a reader corrects these effects or flags them depends on its implementation. An ordinary-looking number is not proof that the measurement is linear. [1]</p><h2 id=\"where-counts-are-lost\">Where counts are lost</h2><p>Photon counting separates and counts electrical pulses produced by detected light. At high rates, pulses can arrive too close together for the detection chain to resolve them individually. Hamamatsu describes this count loss in terms of pulse-pair resolution and gives examples of both nonlinear response and correction. Pulse separation depends on the PMT and the downstream electronics. [1]</p><p>A simplified nonparalyzable dead-time model describes one possible response:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"m = (n) divided by (1 + nτ)\"><mrow><mrow><mtext>m = </mtext></mrow><mfrac><mrow><mrow><mtext>n</mtext></mrow></mrow><mrow><mrow><mtext>1 + nτ</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>Here n is the event rate before counting losses, m is the measured rate, both in counts per second (cps), and τ is the effective dead time in seconds. The model is illustrative; it does not describe every reader or every operating region.</p><p>With an assumed τ of 20 ns, a true rate of 12.5 million cps gives a measured rate of 10.0 million cps: 80% of the expected response. A count display can still look entirely ordinary at that level of loss. This calculation does not establish the dead time, warning threshold or error of any commercial reader. A reader with validated correction may report a much more accurate result over its specified range. [1]</p><h2 id=\"why-controls-can-become-misleading\">Why controls can become misleading</h2><p>Compression reduces the separation between different high inputs. If a high-control distribution falls within a region with a shallower response slope, its measured standard deviation can shrink. That can affect Z-prime, the dimensionless statistic describing control separation relative to control variability. [2]</p><p>Compression can raise or lower Z-prime because it changes both the control means and their variability. It can also distort intermediate compound responses even when the control statistic remains attractive. A high Z-prime therefore does not substitute for a linearity check. The effect follows from how a nonlinear response changes a distribution.</p><h2 id=\"test-proportionality-without-changing-the-reaction\">Test proportionality without changing the reaction</h2><p>Use a stable reference and, where the manufacturer supports it, calibrated optical attenuation. Keep the detection geometry, spectral range and reporting scale fixed. Compare the observed signal change with the known change in transmitted light. The attenuator must be characterized for the relevant emission spectrum and optical arrangement; improvised covers are unsuitable.</p><p>In the example above, reducing the true input by half gives about 5.56 million cps. Doubling that reading predicts 11.11 million cps, which exceeds the unattenuated reading of 10.0 million cps. The mismatch exposes compression under the stated model. Alternate attenuated and unattenuated measurements or use matched stable references to distinguish nonlinearity from luminescence decay.</p><p>A dilution series can be useful, but dilution also changes substrates, inhibitors, enzyme concentrations and matrix effects. Verify that it changes emitted light proportionally before assigning a curved response to the detector. Shortening integration time collects fewer total counts but does not reduce the instantaneous event rate, so it need not cure pulse-overlap losses.</p><h2 id=\"what-to-ask-of-the-reader\">What to ask of the reader</h2><p>Ask for the usable linear range in the actual detection mode, the acceptable proportionality error, the role of automatic range changes or correction, and the meaning of overload flags. Relative luminescence units (RLU) are not automatically raw counts or cps.</p><p>A wide validated dynamic range is valuable because bright controls and weak residual signals often share a plate. Qualify both ends, including dim wells beside bright wells: optical crosstalk is a separate failure mode that a linear detector can still report faithfully.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications</a>. Fourth edition, April 2017. Section 6.3, printed pp. 149–150, PDF pp. 162–163; equations 6-2 through 6-4 and count-rate correction examples. Component/system examples are not commercial plate-reader specifications.</p><p id=\"ref-2\">2. Zhang J-H, Chung TDY, Oldenburg KR. <a href=\"https://doi.org/10.1177/108705719900400206\">A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays</a>. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor reference; PubMed abstract checked, full publisher article not retrieved for this draft.</p><h2 id=\"provenance\">Provenance</h2><p>Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.</p>",
+  "body_text": "Yes. A detector can depart from proportional response before its output reaches a hard ceiling or triggers a software warning. In photon-counting luminescence, closely spaced detector pulses can be missed as the count rate rises. Analog detection can also become nonlinear, through the photomultiplier tube (PMT) or associated electronics. Whether a reader corrects these effects or flags them depends on its implementation. An ordinary-looking number is not proof that the measurement is linear. [1]\n\nWhere counts are lost\n\nPhoton counting separates and counts electrical pulses produced by detected light. At high rates, pulses can arrive too close together for the detection chain to resolve them individually. Hamamatsu describes this count loss in terms of pulse-pair resolution and gives examples of both nonlinear response and correction. Pulse separation depends on the PMT and the downstream electronics. [1]\n\nA simplified nonparalyzable dead-time model describes one possible response:\n\nm = (n) divided by (1 + nτ)\n\nHere n is the event rate before counting losses, m is the measured rate, both in counts per second (cps), and τ is the effective dead time in seconds. The model is illustrative; it does not describe every reader or every operating region.\n\nWith an assumed τ of 20 ns, a true rate of 12.5 million cps gives a measured rate of 10.0 million cps: 80% of the expected response. A count display can still look entirely ordinary at that level of loss. This calculation does not establish the dead time, warning threshold or error of any commercial reader. A reader with validated correction may report a much more accurate result over its specified range. [1]\n\nWhy controls can become misleading\n\nCompression reduces the separation between different high inputs. If a high-control distribution falls within a region with a shallower response slope, its measured standard deviation can shrink. That can affect Z-prime, the dimensionless statistic describing control separation relative to control variability. [2]\n\nCompression can raise or lower Z-prime because it changes both the control means and their variability. It can also distort intermediate compound responses even when the control statistic remains attractive. A high Z-prime therefore does not substitute for a linearity check. The effect follows from how a nonlinear response changes a distribution.\n\nTest proportionality without changing the reaction\n\nUse a stable reference and, where the manufacturer supports it, calibrated optical attenuation. Keep the detection geometry, spectral range and reporting scale fixed. Compare the observed signal change with the known change in transmitted light. The attenuator must be characterized for the relevant emission spectrum and optical arrangement; improvised covers are unsuitable.\n\nIn the example above, reducing the true input by half gives about 5.56 million cps. Doubling that reading predicts 11.11 million cps, which exceeds the unattenuated reading of 10.0 million cps. The mismatch exposes compression under the stated model. Alternate attenuated and unattenuated measurements or use matched stable references to distinguish nonlinearity from luminescence decay.\n\nA dilution series can be useful, but dilution also changes substrates, inhibitors, enzyme concentrations and matrix effects. Verify that it changes emitted light proportionally before assigning a curved response to the detector. Shortening integration time collects fewer total counts but does not reduce the instantaneous event rate, so it need not cure pulse-overlap losses.\n\nWhat to ask of the reader\n\nAsk for the usable linear range in the actual detection mode, the acceptable proportionality error, the role of automatic range changes or correction, and the meaning of overload flags. Relative luminescence units (RLU) are not automatically raw counts or cps.\n\nA wide validated dynamic range is valuable because bright controls and weak residual signals often share a plate. Qualify both ends, including dim wells beside bright wells: optical crosstalk is a separate failure mode that a linear detector can still report faithfully.\n\nReferences\n\n1. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications. Fourth edition, April 2017. Section 6.3, printed pp. 149–150, PDF pp. 162–163; equations 6-2 through 6-4 and count-rate correction examples. Component/system examples are not commercial plate-reader specifications.\n\n2. Zhang J-H, Chung TDY, Oldenburg KR. A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor reference; PubMed abstract checked, full publisher article not retrieved for this draft.\n\nProvenance\n\nAuthor: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Yes. A detector can depart from proportional response before its output reaches a hard ceiling or triggers a software warning. In photon-counting luminescence, closely spaced detector pulses can be missed as the count rate rises. Analog detection can also become nonlinear, through the photomultiplier tube (PMT) or associated electronics. Whether a reader corrects these effects or flags them depends on its implementation. An ordinary-looking number is not proof that the measurement is linear. [1]",
+          "html": "<p>Yes. A detector can depart from proportional response before its output reaches a hard ceiling or triggers a software warning. In photon-counting luminescence, closely spaced detector pulses can be missed as the count rate rises. Analog detection can also become nonlinear, through the photomultiplier tube (PMT) or associated electronics. Whether a reader corrects these effects or flags them depends on its implementation. An ordinary-looking number is not proof that the measurement is linear. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "where-counts-are-lost",
+      "heading": "Where counts are lost",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Where counts are lost",
+          "html": "<h2 id=\"where-counts-are-lost\">Where counts are lost</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Photon counting separates and counts electrical pulses produced by detected light. At high rates, pulses can arrive too close together for the detection chain to resolve them individually. Hamamatsu describes this count loss in terms of pulse-pair resolution and gives examples of both nonlinear response and correction. Pulse separation depends on the PMT and the downstream electronics. [1]",
+          "html": "<p>Photon counting separates and counts electrical pulses produced by detected light. At high rates, pulses can arrive too close together for the detection chain to resolve them individually. Hamamatsu describes this count loss in terms of pulse-pair resolution and gives examples of both nonlinear response and correction. Pulse separation depends on the PMT and the downstream electronics. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A simplified nonparalyzable dead-time model describes one possible response:",
+          "html": "<p>A simplified nonparalyzable dead-time model describes one possible response:</p>"
+        },
+        {
+          "type": "div",
+          "text": "m = (n) divided by (1 + nτ)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"m = (n) divided by (1 + nτ)\"><mrow><mrow><mtext>m = </mtext></mrow><mfrac><mrow><mrow><mtext>n</mtext></mrow></mrow><mrow><mrow><mtext>1 + nτ</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here n is the event rate before counting losses, m is the measured rate, both in counts per second (cps), and τ is the effective dead time in seconds. The model is illustrative; it does not describe every reader or every operating region.",
+          "html": "<p>Here n is the event rate before counting losses, m is the measured rate, both in counts per second (cps), and τ is the effective dead time in seconds. The model is illustrative; it does not describe every reader or every operating region.</p>"
+        },
+        {
+          "type": "p",
+          "text": "With an assumed τ of 20 ns, a true rate of 12.5 million cps gives a measured rate of 10.0 million cps: 80% of the expected response. A count display can still look entirely ordinary at that level of loss. This calculation does not establish the dead time, warning threshold or error of any commercial reader. A reader with validated correction may report a much more accurate result over its specified range. [1]",
+          "html": "<p>With an assumed τ of 20 ns, a true rate of 12.5 million cps gives a measured rate of 10.0 million cps: 80% of the expected response. A count display can still look entirely ordinary at that level of loss. This calculation does not establish the dead time, warning threshold or error of any commercial reader. A reader with validated correction may report a much more accurate result over its specified range. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "why-controls-can-become-misleading",
+      "heading": "Why controls can become misleading",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Why controls can become misleading",
+          "html": "<h2 id=\"why-controls-can-become-misleading\">Why controls can become misleading</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Compression reduces the separation between different high inputs. If a high-control distribution falls within a region with a shallower response slope, its measured standard deviation can shrink. That can affect Z-prime, the dimensionless statistic describing control separation relative to control variability. [2]",
+          "html": "<p>Compression reduces the separation between different high inputs. If a high-control distribution falls within a region with a shallower response slope, its measured standard deviation can shrink. That can affect Z-prime, the dimensionless statistic describing control separation relative to control variability. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compression can raise or lower Z-prime because it changes both the control means and their variability. It can also distort intermediate compound responses even when the control statistic remains attractive. A high Z-prime therefore does not substitute for a linearity check. The effect follows from how a nonlinear response changes a distribution.",
+          "html": "<p>Compression can raise or lower Z-prime because it changes both the control means and their variability. It can also distort intermediate compound responses even when the control statistic remains attractive. A high Z-prime therefore does not substitute for a linearity check. The effect follows from how a nonlinear response changes a distribution.</p>"
+        }
+      ]
+    },
+    {
+      "id": "test-proportionality-without-changing-the-reaction",
+      "heading": "Test proportionality without changing the reaction",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Test proportionality without changing the reaction",
+          "html": "<h2 id=\"test-proportionality-without-changing-the-reaction\">Test proportionality without changing the reaction</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use a stable reference and, where the manufacturer supports it, calibrated optical attenuation. Keep the detection geometry, spectral range and reporting scale fixed. Compare the observed signal change with the known change in transmitted light. The attenuator must be characterized for the relevant emission spectrum and optical arrangement; improvised covers are unsuitable.",
+          "html": "<p>Use a stable reference and, where the manufacturer supports it, calibrated optical attenuation. Keep the detection geometry, spectral range and reporting scale fixed. Compare the observed signal change with the known change in transmitted light. The attenuator must be characterized for the relevant emission spectrum and optical arrangement; improvised covers are unsuitable.</p>"
+        },
+        {
+          "type": "p",
+          "text": "In the example above, reducing the true input by half gives about 5.56 million cps. Doubling that reading predicts 11.11 million cps, which exceeds the unattenuated reading of 10.0 million cps. The mismatch exposes compression under the stated model. Alternate attenuated and unattenuated measurements or use matched stable references to distinguish nonlinearity from luminescence decay.",
+          "html": "<p>In the example above, reducing the true input by half gives about 5.56 million cps. Doubling that reading predicts 11.11 million cps, which exceeds the unattenuated reading of 10.0 million cps. The mismatch exposes compression under the stated model. Alternate attenuated and unattenuated measurements or use matched stable references to distinguish nonlinearity from luminescence decay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A dilution series can be useful, but dilution also changes substrates, inhibitors, enzyme concentrations and matrix effects. Verify that it changes emitted light proportionally before assigning a curved response to the detector. Shortening integration time collects fewer total counts but does not reduce the instantaneous event rate, so it need not cure pulse-overlap losses.",
+          "html": "<p>A dilution series can be useful, but dilution also changes substrates, inhibitors, enzyme concentrations and matrix effects. Verify that it changes emitted light proportionally before assigning a curved response to the detector. Shortening integration time collects fewer total counts but does not reduce the instantaneous event rate, so it need not cure pulse-overlap losses.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-to-ask-of-the-reader",
+      "heading": "What to ask of the reader",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What to ask of the reader",
+          "html": "<h2 id=\"what-to-ask-of-the-reader\">What to ask of the reader</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Ask for the usable linear range in the actual detection mode, the acceptable proportionality error, the role of automatic range changes or correction, and the meaning of overload flags. Relative luminescence units (RLU) are not automatically raw counts or cps.",
+          "html": "<p>Ask for the usable linear range in the actual detection mode, the acceptable proportionality error, the role of automatic range changes or correction, and the meaning of overload flags. Relative luminescence units (RLU) are not automatically raw counts or cps.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A wide validated dynamic range is valuable because bright controls and weak residual signals often share a plate. Qualify both ends, including dim wells beside bright wells: optical crosstalk is a separate failure mode that a linear detector can still report faithfully.",
+          "html": "<p>A wide validated dynamic range is valuable because bright controls and weak residual signals often share a plate. Qualify both ends, including dim wells beside bright wells: optical crosstalk is a separate failure mode that a linear detector can still report faithfully.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications. Fourth edition, April 2017. Section 6.3, printed pp. 149–150, PDF pp. 162–163; equations 6-2 through 6-4 and count-rate correction examples. Component/system examples are not commercial plate-reader specifications.",
+          "html": "<p id=\"ref-1\">1. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications</a>. Fourth edition, April 2017. Section 6.3, printed pp. 149–150, PDF pp. 162–163; equations 6-2 through 6-4 and count-rate correction examples. Component/system examples are not commercial plate-reader specifications.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Zhang J-H, Chung TDY, Oldenburg KR. A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor reference; PubMed abstract checked, full publisher article not retrieved for this draft.",
+          "html": "<p id=\"ref-2\">2. Zhang J-H, Chung TDY, Oldenburg KR. <a href=\"https://doi.org/10.1177/108705719900400206\">A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays</a>. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor reference; PubMed abstract checked, full publisher article not retrieved for this draft.</p>"
+        }
+      ]
+    },
+    {
+      "id": "provenance",
+      "heading": "Provenance",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Provenance",
+          "html": "<h2 id=\"provenance\">Provenance</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.",
+          "html": "<p>Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications. Fourth edition, April 2017. Section 6.3, printed pp. 149–150, PDF pp. 162–163; equations 6-2 through 6-4 and count-rate correction examples. Component/system examples are not commercial plate-reader specifications.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Zhang J-H, Chung TDY, Oldenburg KR. A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor reference; PubMed abstract checked, full publisher article not retrieved for this draft.",
+      "urls": [
+        "https://doi.org/10.1177/108705719900400206"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "m = (n) divided by (1 + nτ)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"m = (n) divided by (1 + nτ)\"><mrow><mrow><mtext>m = </mtext></mrow><mfrac><mrow><mrow><mtext>n</mtext></mrow></mrow><mrow><mrow><mtext>1 + nτ</mtext></mrow></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "provenance": {
+    "kind": "Author-provided article converted to structured text",
+    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
+    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
+  },
+  "display_additions": {},
+  "content_sha256": "5c330d6d1f88ab5c9158e0b638ac77baec82c313b08831f2e82d567694974873"
+}

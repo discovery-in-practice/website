@@ -1,6 +1,6 @@
 # Discovery in Practice
 
-> Practical, source-backed guidance on assays, detection methods, instruments and drug discovery.
+> Practical, source-backed guidance on microplate assays, plate reader detection methods, troubleshooting, measurement concepts and drug discovery instruments.
 
 This directory covers the published article library. Markdown and JSON are synchronized renditions of the canonical HTML articles. Use the canonical website URL shown in each article or catalog record when citing it. The catalog supplies author, topics, publication and modification dates, license, version and content hash.
 
@@ -19,12 +19,34 @@ Original content is licensed under CC BY 4.0. Search, retrieval and AI training 
 - [Troubleshooting](https://discoveryinpractice.com/troubleshooting/): Browse related questions and articles.
 - [Measurement concepts](https://discoveryinpractice.com/concepts/): Browse related questions and articles.
 
+## Measurement concepts
+
+- [Why are repeated readings of one well precise while replicate wells disagree?](https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.md): Separate reader repeatability from dispensing, cell loading, position effects and preparation variability using a staged comparison.
+- [Why do my bright controls have excellent CVs while my weak samples are unreliable?](https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.md): Why bright controls can have excellent CV while weak samples remain unreliable, with photon statistics, background and working-range checks.
+
+## Luminescence
+
+- [Can PMT saturation or signal compression occur without an overload warning?](https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/article.md): Learn how luminescence signal compression can precede an overload warning, distort results and appear in a practical detector-linearity check.
+- [Why is my luminescence signal lower on one plate reader than another?](https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/article.md): Learn why luminescence signals differ between readers and how to compare precision, linearity, temperature and crosstalk fairly.
+- [Why does reading longer stop improving my assay CV?](https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/article.md): Find out when longer integration improves assay CV, when well variability dominates and how to choose a useful reading time.
+- [What is the difference between analog and photon-counting luminescence detection?](https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/article.md): Compare analog and photon-counting readout, understand why longer integration cannot fix pulse overlap and qualify a useful linear range.
+- [HiBiT: did the protein disappear, or just the light?](https://discoveryinpractice.com/articles/hibit-protein-or-light/article.md): A decrease in HiBiT light can reflect less tagged protein or a change in complementation, luciferase activity, lysis, background, or measurement. The article separates reporter abundance from accelerated degradation and outlines controls that test the detection system and native protein.
+- [CellTiter-Glo: when less light doesn’t mean fewer cells](https://discoveryinpractice.com/articles/celltiter-glo-light-cells/article.md): CellTiter-Glo measures ATP-dependent light, not cell number directly, so metabolism and detection conditions can change the signal independently of abundance. The article separates biological effects from reagent, temperature, mixing, and detector effects and proposes controls for each.
+- [ADP-Glo: the light comes after the kinase](https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/article.md): ADP-Glo light is the endpoint of a multistep detection sequence, so a lower signal can arise outside the kinase reaction. This article shows how to reconstruct the endpoint with ATP/ADP controls and interpret temperature, timing, conversion, and ATP-dependent potency.
+- [A better Z′ can hide a worse measurement](https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.md): A higher Z′ can reflect nonlinear detector compression rather than a better assay. This article explains how bright-well variation can shrink while effect sizes become distorted, and how to check proportionality without confusing detector behavior with assay chemistry.
+- [When reading longer stops helping](https://discoveryinpractice.com/articles/luminescence-integration-time/article.md): Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.
+
 ## Fluorescence
 
+- [Why do I get negative fluorescence or luminescence values after blank subtraction?](https://discoveryinpractice.com/articles/negative-values-blank-subtraction/article.md): Understand negative fluorescence or luminescence after blank subtraction, diagnose blank mismatch and avoid bias from replacing negatives with zero.
 - [Your fluorescence polarization result is hiding two measurements](https://discoveryinpractice.com/articles/fp-two-measurements/article.md): A fluorescence-polarization value is calculated from parallel and perpendicular intensity measurements, and the ratio can hide low photon counts or timing mismatch. The article explains how to preserve both channels, interpret intensity and binding curves, and qualify tracer and reader behavior.
 - [One extra carbon can change the binding result](https://discoveryinpractice.com/articles/fluorescence-polarization-tracer-linker-length/article.md): A one-carbon linker change can alter tracer affinity and assay performance. Learn how to separate binding chemistry from your fluorescence polarization window.
 - [Half the molecules and two thirds of the light](https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.md): Binding can change tracer brightness and shift an apparent Kd while the curve still fits beautifully. See the equations, controls and fluorescence data to keep.
 - [Your fluorescent label is part of the experiment](https://discoveryinpractice.com/articles/choosing-fluorescence-polarization-tracer/article.md): Choose a fluorescence polarization tracer by matching lifetime to molecular motion, testing the conjugate and checking controls in the actual assay matrix.
+
+## Troubleshooting
+
+- [Why does subtracting background make my CV worse?](https://discoveryinpractice.com/articles/background-subtraction-increases-cv/article.md): Learn why blank subtraction raises CV, how shared blanks create correlated uncertainty and why optical background prevention helps.
 
 ## Assay and instrument comparisons
 
@@ -35,14 +57,6 @@ Original content is licensed under CC BY 4.0. Search, retrieval and AI training 
 ## TR-FRET and HTRF
 
 - [HTRF: the ratio is not the whole result](https://discoveryinpractice.com/articles/htrf-ratio-whole-result/article.md): A stable HTRF ratio can conceal a major loss of signal, degraded precision, or a channel-specific interference. The article explains how to retain and interpret both emission channels, per-well ratios, and acquisition conditions.
-
-## Luminescence
-
-- [HiBiT: did the protein disappear, or just the light?](https://discoveryinpractice.com/articles/hibit-protein-or-light/article.md): A decrease in HiBiT light can reflect less tagged protein or a change in complementation, luciferase activity, lysis, background, or measurement. The article separates reporter abundance from accelerated degradation and outlines controls that test the detection system and native protein.
-- [CellTiter-Glo: when less light doesn’t mean fewer cells](https://discoveryinpractice.com/articles/celltiter-glo-light-cells/article.md): CellTiter-Glo measures ATP-dependent light, not cell number directly, so metabolism and detection conditions can change the signal independently of abundance. The article separates biological effects from reagent, temperature, mixing, and detector effects and proposes controls for each.
-- [ADP-Glo: the light comes after the kinase](https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/article.md): ADP-Glo light is the endpoint of a multistep detection sequence, so a lower signal can arise outside the kinase reaction. This article shows how to reconstruct the endpoint with ATP/ADP controls and interpret temperature, timing, conversion, and ATP-dependent potency.
-- [A better Z′ can hide a worse measurement](https://discoveryinpractice.com/articles/z-prime-detector-linearity/article.md): A higher Z′ can reflect nonlinear detector compression rather than a better assay. This article explains how bright-well variation can shrink while effect sizes become distorted, and how to check proportionality without confusing detector behavior with assay chemistry.
-- [When reading longer stops helping](https://discoveryinpractice.com/articles/luminescence-integration-time/article.md): Longer luminescence reads help when photon collection limits precision, but they cannot remove persistent differences between wells. This article shows how to compare repeated reads with independently prepared replicates, account for background noise, and choose a useful stopping point.
 
 ## Bench tips
 

@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "id": "bright-control-cv-weak-samples",
+  "canonical_url": "https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/",
+  "title": "Why do my bright controls have excellent CVs while my weak samples are unreliable?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Why bright controls can have excellent CV while weak samples remain unreliable, with photon statistics, background and working-range checks.",
+  "takeaways": [
+    "Relative precision depends on the size of the response",
+    "Background can make raw CV look reassuring",
+    "Check whether the high end is proportional"
+  ],
+  "limitations_summary": "Named human technical review remains pending. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this article. Preserve the assay-specific assumptions and source limitations.",
+  "topics": [
+    "Assay precision",
+    "Background noise",
+    "Detector linearity"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-09-30",
+  "date_modified": "2026-09-30",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Bright controls can have a small coefficient of variation (CV) because their mean signal is large relative to the measurement noise. Weak samples have fewer useful photons and may sit close to an uncertain background. A low CV at the high end therefore says little about the precision or accuracy of a weak response. High-signal compression can also make bright controls appear unusually uniform. [1,2]</p><h2 id=\"relative-precision-depends-on-the-size-of-the-response\">Relative precision depends on the size of the response</h2><p>For a positive mean, CV is the standard deviation (SD) divided by that mean, usually reported as a percentage:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"CV = 100 × (SD) divided by (mean)\"><mrow><mrow><mtext>CV = 100 × </mtext></mrow><mfrac><mrow><mrow><mtext>SD</mtext></mrow></mrow><mrow><mrow><mtext>mean</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>An SD of 20 relative fluorescence units (RFU) corresponds to 0.2% CV at a mean of 10,000 RFU, but 20% CV at a mean of 100 RFU. This constructed comparison has identical absolute scatter. The smaller mean makes the same scatter much more consequential. Near zero, CV becomes unstable and can stop being a useful summary. [1]</p><p>Photon counting introduces another dependence on brightness. In an ideal linear measurement with independent photon arrivals and negligible background, relative counting uncertainty falls as the inverse square root of the accumulated count. Expected counts of 10,000 and 100 photons correspond to approximately 1% and 10% counting CV, respectively. Displayed RFU or relative light units (RLU) are not automatically physical photon counts. [2]</p><h2 id=\"background-can-make-raw-cv-look-reassuring\">Background can make raw CV look reassuring</h2><p>A weak assay response may be sitting on a substantial background. Including that background in the mean makes the raw CV smaller without increasing the amount of analyte-specific information. Subtracting a common blank value reduces the mean but leaves the within-plate SD of the sample replicates unchanged.</p><p>Consider raw readings with a mean of 1,000 RFU and an SD of 20 RFU. Their CV is 2%. Subtract a common blank of 900 RFU and the net mean becomes 100 RFU, with the same 20 RFU SD: 20% CV. The corrected percentage describes scatter relative to the useful signal.</p><p>Uncertainty in the blank estimate needs separate accounting. So do systematic differences between the blank matrix and the sample. A precise measurement can still be biased.</p><h2 id=\"check-whether-the-high-end-is-proportional\">Check whether the high end is proportional</h2><p>A detector or processing chain approaching its upper range may compress differences between bright samples. Low observed scatter then accompanies a distorted response. Check a concentration series or validated optical attenuation rather than accepting a good bright-control CV as evidence of linearity. Hamamatsu describes pulse-overlap losses at high counting rates. [2]</p><p>At the low end, additional acquisition may help. BMG LABTECH's flash-count example shows that weak fluorescence standards benefit more from increased averaging than bright standards in that configuration. Whether this helps your assay depends on the contribution from reading noise versus preparation variability. [3]</p><h2 id=\"test-the-response-differences-the-screen-must-resolve\">Test the response differences the screen must resolve</h2><p>Include independently prepared low positives and relevant intermediate responses, with enough replicates to inspect their distributions. Test recovery of known additions where compatible with the assay. Place some weak samples beside bright wells to expose crosstalk that isolated controls miss.</p><p>Inspect raw and net means, SDs and the blank distribution alongside CV. Near the blank, use an appropriate uncertainty or detection analysis rather than ranking samples by CV alone. Define the smallest response difference the screen must resolve and challenge the method at that level. Record the range over which those differences remain distinguishable and the response stays proportional.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. National Institute of Standards and Technology (NIST). <a href=\"https://itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm\">Coefficient of Variation</a>. Definition, ratio-scale requirement and behavior near zero; checked 29 September 2026.</p><p id=\"ref-2\">2. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting linearity, background and signal-to-noise relationships.</p><p id=\"ref-3\">3. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/howto-notes/how-does-the-number-of-flashes-influence-measurement-results/\">How does the number of flashes influence measurement results?</a>. Flash averaging, concentration-dependent variability and acquisition time; checked 29 September 2026. Example-specific flash counts are not generalized.</p><h2 id=\"provenance\">Provenance</h2><p>Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.</p>",
+  "body_text": "Bright controls can have a small coefficient of variation (CV) because their mean signal is large relative to the measurement noise. Weak samples have fewer useful photons and may sit close to an uncertain background. A low CV at the high end therefore says little about the precision or accuracy of a weak response. High-signal compression can also make bright controls appear unusually uniform. [1,2]\n\nRelative precision depends on the size of the response\n\nFor a positive mean, CV is the standard deviation (SD) divided by that mean, usually reported as a percentage:\n\nCV = 100 × (SD) divided by (mean)\n\nAn SD of 20 relative fluorescence units (RFU) corresponds to 0.2% CV at a mean of 10,000 RFU, but 20% CV at a mean of 100 RFU. This constructed comparison has identical absolute scatter. The smaller mean makes the same scatter much more consequential. Near zero, CV becomes unstable and can stop being a useful summary. [1]\n\nPhoton counting introduces another dependence on brightness. In an ideal linear measurement with independent photon arrivals and negligible background, relative counting uncertainty falls as the inverse square root of the accumulated count. Expected counts of 10,000 and 100 photons correspond to approximately 1% and 10% counting CV, respectively. Displayed RFU or relative light units (RLU) are not automatically physical photon counts. [2]\n\nBackground can make raw CV look reassuring\n\nA weak assay response may be sitting on a substantial background. Including that background in the mean makes the raw CV smaller without increasing the amount of analyte-specific information. Subtracting a common blank value reduces the mean but leaves the within-plate SD of the sample replicates unchanged.\n\nConsider raw readings with a mean of 1,000 RFU and an SD of 20 RFU. Their CV is 2%. Subtract a common blank of 900 RFU and the net mean becomes 100 RFU, with the same 20 RFU SD: 20% CV. The corrected percentage describes scatter relative to the useful signal.\n\nUncertainty in the blank estimate needs separate accounting. So do systematic differences between the blank matrix and the sample. A precise measurement can still be biased.\n\nCheck whether the high end is proportional\n\nA detector or processing chain approaching its upper range may compress differences between bright samples. Low observed scatter then accompanies a distorted response. Check a concentration series or validated optical attenuation rather than accepting a good bright-control CV as evidence of linearity. Hamamatsu describes pulse-overlap losses at high counting rates. [2]\n\nAt the low end, additional acquisition may help. BMG LABTECH's flash-count example shows that weak fluorescence standards benefit more from increased averaging than bright standards in that configuration. Whether this helps your assay depends on the contribution from reading noise versus preparation variability. [3]\n\nTest the response differences the screen must resolve\n\nInclude independently prepared low positives and relevant intermediate responses, with enough replicates to inspect their distributions. Test recovery of known additions where compatible with the assay. Place some weak samples beside bright wells to expose crosstalk that isolated controls miss.\n\nInspect raw and net means, SDs and the blank distribution alongside CV. Near the blank, use an appropriate uncertainty or detection analysis rather than ranking samples by CV alone. Define the smallest response difference the screen must resolve and challenge the method at that level. Record the range over which those differences remain distinguishable and the response stays proportional.\n\nReferences\n\n1. National Institute of Standards and Technology (NIST). Coefficient of Variation. Definition, ratio-scale requirement and behavior near zero; checked 29 September 2026.\n\n2. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting linearity, background and signal-to-noise relationships.\n\n3. BMG LABTECH. How does the number of flashes influence measurement results?. Flash averaging, concentration-dependent variability and acquisition time; checked 29 September 2026. Example-specific flash counts are not generalized.\n\nProvenance\n\nAuthor: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bright controls can have a small coefficient of variation (CV) because their mean signal is large relative to the measurement noise. Weak samples have fewer useful photons and may sit close to an uncertain background. A low CV at the high end therefore says little about the precision or accuracy of a weak response. High-signal compression can also make bright controls appear unusually uniform. [1,2]",
+          "html": "<p>Bright controls can have a small coefficient of variation (CV) because their mean signal is large relative to the measurement noise. Weak samples have fewer useful photons and may sit close to an uncertain background. A low CV at the high end therefore says little about the precision or accuracy of a weak response. High-signal compression can also make bright controls appear unusually uniform. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "relative-precision-depends-on-the-size-of-the-response",
+      "heading": "Relative precision depends on the size of the response",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Relative precision depends on the size of the response",
+          "html": "<h2 id=\"relative-precision-depends-on-the-size-of-the-response\">Relative precision depends on the size of the response</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For a positive mean, CV is the standard deviation (SD) divided by that mean, usually reported as a percentage:",
+          "html": "<p>For a positive mean, CV is the standard deviation (SD) divided by that mean, usually reported as a percentage:</p>"
+        },
+        {
+          "type": "div",
+          "text": "CV = 100 × (SD) divided by (mean)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"CV = 100 × (SD) divided by (mean)\"><mrow><mrow><mtext>CV = 100 × </mtext></mrow><mfrac><mrow><mrow><mtext>SD</mtext></mrow></mrow><mrow><mrow><mtext>mean</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "An SD of 20 relative fluorescence units (RFU) corresponds to 0.2% CV at a mean of 10,000 RFU, but 20% CV at a mean of 100 RFU. This constructed comparison has identical absolute scatter. The smaller mean makes the same scatter much more consequential. Near zero, CV becomes unstable and can stop being a useful summary. [1]",
+          "html": "<p>An SD of 20 relative fluorescence units (RFU) corresponds to 0.2% CV at a mean of 10,000 RFU, but 20% CV at a mean of 100 RFU. This constructed comparison has identical absolute scatter. The smaller mean makes the same scatter much more consequential. Near zero, CV becomes unstable and can stop being a useful summary. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Photon counting introduces another dependence on brightness. In an ideal linear measurement with independent photon arrivals and negligible background, relative counting uncertainty falls as the inverse square root of the accumulated count. Expected counts of 10,000 and 100 photons correspond to approximately 1% and 10% counting CV, respectively. Displayed RFU or relative light units (RLU) are not automatically physical photon counts. [2]",
+          "html": "<p>Photon counting introduces another dependence on brightness. In an ideal linear measurement with independent photon arrivals and negligible background, relative counting uncertainty falls as the inverse square root of the accumulated count. Expected counts of 10,000 and 100 photons correspond to approximately 1% and 10% counting CV, respectively. Displayed RFU or relative light units (RLU) are not automatically physical photon counts. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "background-can-make-raw-cv-look-reassuring",
+      "heading": "Background can make raw CV look reassuring",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Background can make raw CV look reassuring",
+          "html": "<h2 id=\"background-can-make-raw-cv-look-reassuring\">Background can make raw CV look reassuring</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A weak assay response may be sitting on a substantial background. Including that background in the mean makes the raw CV smaller without increasing the amount of analyte-specific information. Subtracting a common blank value reduces the mean but leaves the within-plate SD of the sample replicates unchanged.",
+          "html": "<p>A weak assay response may be sitting on a substantial background. Including that background in the mean makes the raw CV smaller without increasing the amount of analyte-specific information. Subtracting a common blank value reduces the mean but leaves the within-plate SD of the sample replicates unchanged.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider raw readings with a mean of 1,000 RFU and an SD of 20 RFU. Their CV is 2%. Subtract a common blank of 900 RFU and the net mean becomes 100 RFU, with the same 20 RFU SD: 20% CV. The corrected percentage describes scatter relative to the useful signal.",
+          "html": "<p>Consider raw readings with a mean of 1,000 RFU and an SD of 20 RFU. Their CV is 2%. Subtract a common blank of 900 RFU and the net mean becomes 100 RFU, with the same 20 RFU SD: 20% CV. The corrected percentage describes scatter relative to the useful signal.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Uncertainty in the blank estimate needs separate accounting. So do systematic differences between the blank matrix and the sample. A precise measurement can still be biased.",
+          "html": "<p>Uncertainty in the blank estimate needs separate accounting. So do systematic differences between the blank matrix and the sample. A precise measurement can still be biased.</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-whether-the-high-end-is-proportional",
+      "heading": "Check whether the high end is proportional",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check whether the high end is proportional",
+          "html": "<h2 id=\"check-whether-the-high-end-is-proportional\">Check whether the high end is proportional</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A detector or processing chain approaching its upper range may compress differences between bright samples. Low observed scatter then accompanies a distorted response. Check a concentration series or validated optical attenuation rather than accepting a good bright-control CV as evidence of linearity. Hamamatsu describes pulse-overlap losses at high counting rates. [2]",
+          "html": "<p>A detector or processing chain approaching its upper range may compress differences between bright samples. Low observed scatter then accompanies a distorted response. Check a concentration series or validated optical attenuation rather than accepting a good bright-control CV as evidence of linearity. Hamamatsu describes pulse-overlap losses at high counting rates. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "At the low end, additional acquisition may help. BMG LABTECH's flash-count example shows that weak fluorescence standards benefit more from increased averaging than bright standards in that configuration. Whether this helps your assay depends on the contribution from reading noise versus preparation variability. [3]",
+          "html": "<p>At the low end, additional acquisition may help. BMG LABTECH's flash-count example shows that weak fluorescence standards benefit more from increased averaging than bright standards in that configuration. Whether this helps your assay depends on the contribution from reading noise versus preparation variability. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "test-the-response-differences-the-screen-must-resolve",
+      "heading": "Test the response differences the screen must resolve",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Test the response differences the screen must resolve",
+          "html": "<h2 id=\"test-the-response-differences-the-screen-must-resolve\">Test the response differences the screen must resolve</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Include independently prepared low positives and relevant intermediate responses, with enough replicates to inspect their distributions. Test recovery of known additions where compatible with the assay. Place some weak samples beside bright wells to expose crosstalk that isolated controls miss.",
+          "html": "<p>Include independently prepared low positives and relevant intermediate responses, with enough replicates to inspect their distributions. Test recovery of known additions where compatible with the assay. Place some weak samples beside bright wells to expose crosstalk that isolated controls miss.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Inspect raw and net means, SDs and the blank distribution alongside CV. Near the blank, use an appropriate uncertainty or detection analysis rather than ranking samples by CV alone. Define the smallest response difference the screen must resolve and challenge the method at that level. Record the range over which those differences remain distinguishable and the response stays proportional.",
+          "html": "<p>Inspect raw and net means, SDs and the blank distribution alongside CV. Near the blank, use an appropriate uncertainty or detection analysis rather than ranking samples by CV alone. Define the smallest response difference the screen must resolve and challenge the method at that level. Record the range over which those differences remain distinguishable and the response stays proportional.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. National Institute of Standards and Technology (NIST). Coefficient of Variation. Definition, ratio-scale requirement and behavior near zero; checked 29 September 2026.",
+          "html": "<p id=\"ref-1\">1. National Institute of Standards and Technology (NIST). <a href=\"https://itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm\">Coefficient of Variation</a>. Definition, ratio-scale requirement and behavior near zero; checked 29 September 2026.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting linearity, background and signal-to-noise relationships.",
+          "html": "<p id=\"ref-2\">2. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting linearity, background and signal-to-noise relationships.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. BMG LABTECH. How does the number of flashes influence measurement results?. Flash averaging, concentration-dependent variability and acquisition time; checked 29 September 2026. Example-specific flash counts are not generalized.",
+          "html": "<p id=\"ref-3\">3. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/howto-notes/how-does-the-number-of-flashes-influence-measurement-results/\">How does the number of flashes influence measurement results?</a>. Flash averaging, concentration-dependent variability and acquisition time; checked 29 September 2026. Example-specific flash counts are not generalized.</p>"
+        }
+      ]
+    },
+    {
+      "id": "provenance",
+      "heading": "Provenance",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Provenance",
+          "html": "<h2 id=\"provenance\">Provenance</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.",
+          "html": "<p>Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. National Institute of Standards and Technology (NIST). Coefficient of Variation. Definition, ratio-scale requirement and behavior near zero; checked 29 September 2026.",
+      "urls": [
+        "https://itl.nist.gov/div898/software/dataplot/refman2/auxillar/coefvari.htm"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting linearity, background and signal-to-noise relationships.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. BMG LABTECH. How does the number of flashes influence measurement results?. Flash averaging, concentration-dependent variability and acquisition time; checked 29 September 2026. Example-specific flash counts are not generalized.",
+      "urls": [
+        "https://www.bmglabtech.com/en/howto-notes/how-does-the-number-of-flashes-influence-measurement-results/"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "CV = 100 × (SD) divided by (mean)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"CV = 100 × (SD) divided by (mean)\"><mrow><mrow><mtext>CV = 100 × </mtext></mrow><mfrac><mrow><mrow><mtext>SD</mtext></mrow></mrow><mrow><mrow><mtext>mean</mtext></mrow></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "provenance": {
+    "kind": "Author-provided article converted to structured text",
+    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
+    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
+  },
+  "display_additions": {},
+  "content_sha256": "9d129023cd06d6aaaebf14ae785d36bcbbc8bb114be88ff1c5ba1ac7a7b07d9b"
+}

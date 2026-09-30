@@ -335,5 +335,188 @@
     "date_modified": "2026-09-29",
     "json_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-polarization-brightness-correction-kd/article.md"
+  },
+  {
+    "id": "luminescence-signal-different-plate-readers",
+    "title": "Why is my luminescence signal lower on one plate reader than another?",
+    "canonical_url": "https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/",
+    "summary": "Learn why luminescence signals differ between readers and how to compare precision, linearity, temperature and crosstalk fairly.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Luminescence",
+      "Plate readers",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "2d89d14fa77e1836014e9652af96a0cd01d4fa57d56617f4f4e7baa7234042e7",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/article.md"
+  },
+  {
+    "id": "analog-photon-counting-luminescence",
+    "title": "What is the difference between analog and photon-counting luminescence detection?",
+    "canonical_url": "https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/",
+    "summary": "Compare analog and photon-counting readout, understand why longer integration cannot fix pulse overlap and qualify a useful linear range.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Luminescence",
+      "Photon counting",
+      "Detector linearity"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "ad597b44dc5fd462ed7f0313233c8d01a8cee28c9a703b2ee7e9c308eba72df9",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/article.md"
+  },
+  {
+    "id": "pmt-saturation-signal-compression-no-warning",
+    "title": "Can PMT saturation or signal compression occur without an overload warning?",
+    "canonical_url": "https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/",
+    "summary": "Learn how luminescence signal compression can precede an overload warning, distort results and appear in a practical detector-linearity check.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Detector linearity",
+      "Photon counting",
+      "Luminescence"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "5c330d6d1f88ab5c9158e0b638ac77baec82c313b08831f2e82d567694974873",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/article.md"
+  },
+  {
+    "id": "bright-control-cv-weak-samples",
+    "title": "Why do my bright controls have excellent CVs while my weak samples are unreliable?",
+    "canonical_url": "https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/",
+    "summary": "Why bright controls can have excellent CV while weak samples remain unreliable, with photon statistics, background and working-range checks.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Assay precision",
+      "Background noise",
+      "Detector linearity"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "9d129023cd06d6aaaebf14ae785d36bcbbc8bb114be88ff1c5ba1ac7a7b07d9b",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/article.md"
+  },
+  {
+    "id": "longer-plate-reader-integration-assay-cv",
+    "title": "Why does reading longer stop improving my assay CV?",
+    "canonical_url": "https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/",
+    "summary": "Find out when longer integration improves assay CV, when well variability dominates and how to choose a useful reading time.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Assay precision",
+      "Photon counting",
+      "Luminescence"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "f3983c5fd8c61e09c07ff8c9da9e29356950a2a0852e686348ae167de04c18d0",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/article.md"
+  },
+  {
+    "id": "negative-values-blank-subtraction",
+    "title": "Why do I get negative fluorescence or luminescence values after blank subtraction?",
+    "canonical_url": "https://discoveryinpractice.com/articles/negative-values-blank-subtraction/",
+    "summary": "Understand negative fluorescence or luminescence after blank subtraction, diagnose blank mismatch and avoid bias from replacing negatives with zero.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Background noise",
+      "Fluorescence",
+      "Luminescence"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "15ba2f803de3b4134fcfbeeeee9857b14081e67eac4d26590d834aae65d14614",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/negative-values-blank-subtraction/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/negative-values-blank-subtraction/article.md"
+  },
+  {
+    "id": "background-subtraction-increases-cv",
+    "title": "Why does subtracting background make my CV worse?",
+    "canonical_url": "https://discoveryinpractice.com/articles/background-subtraction-increases-cv/",
+    "summary": "Learn why blank subtraction raises CV, how shared blanks create correlated uncertainty and why optical background prevention helps.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Background noise",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "4bb9561481781d1cab1f5dd91673d728a5985cba379eff76ccebf6cbe5e80ef2",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/background-subtraction-increases-cv/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/background-subtraction-increases-cv/article.md"
+  },
+  {
+    "id": "repeat-reads-versus-replicate-wells",
+    "title": "Why are repeated readings of one well precise while replicate wells disagree?",
+    "canonical_url": "https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/",
+    "summary": "Separate reader repeatability from dispensing, cell loading, position effects and preparation variability using a staged comparison.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Assay precision",
+      "Measurement & precision",
+      "Assay preparation"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "cccb9308a03e0a66e4b7d4e2a1570156d4549b5956bfa63fede4e00a65f38f66",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-09-30",
+    "date_modified": "2026-09-30",
+    "json_url": "https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.md"
   }
 ]

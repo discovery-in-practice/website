@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "id": "luminescence-signal-different-plate-readers",
+  "canonical_url": "https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/",
+  "title": "Why is my luminescence signal lower on one plate reader than another?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Learn why luminescence signals differ between readers and how to compare precision, linearity, temperature and crosstalk fairly.",
+  "takeaways": [
+    "Start with what the displayed number means",
+    "Check what each reader actually collects",
+    "Keep the sample comparison fair"
+  ],
+  "limitations_summary": "Named human technical review remains pending. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this article. Preserve the assay-specific assumptions and source limitations.",
+  "topics": [
+    "Luminescence",
+    "Plate readers",
+    "Assay precision"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-09-30",
+  "date_modified": "2026-09-30",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A lower luminescence reading can reflect a different reporting scale, less collected light, different acquisition settings or a change in the sample between measurements. Relative light units (RLU) are not standardized across plate readers. A tenfold difference in RLU therefore does not establish a tenfold difference in sensitivity. Compare the reader's ability to resolve relevant low signals and reproduce the assay response. [1]</p><h2 id=\"start-with-what-the-displayed-number-means\">Start with what the displayed number means</h2><p>Ask whether the software reports integrated output, a rate normalized to acquisition time, gain-scaled intensity or another processed quantity. Increasing the integration time may increase a summed output while leaving a normalized rate approximately unchanged. Changing amplification can change the displayed number without producing additional photons in the sample.</p><p>Consider a constructed comparison. Replicates on one reader have a mean of 100,000 RLU and a standard deviation of 5,000 RLU. On another, they have a mean of 10,000 RLU and a standard deviation of 500 RLU. Both have a 5% coefficient of variation (CV), calculated as standard deviation divided by mean, times 100. Those results could arise from a simple scale difference. They do not establish equal performance near the blank or across the full assay range.</p><h2 id=\"check-what-each-reader-actually-collects\">Check what each reader actually collects</h2><p>Record integration time in seconds, gain or sensitivity mode, read geometry, plate definition and optical filters. A broad luminescence measurement collects a different spectral range from a filtered bioluminescence resonance energy transfer (BRET) donor channel. Comparing their RLU directly leaves that difference hidden.</p><p>Detector spectral response, collection efficiency, read height and plate construction can also change output. Use the correct plate definition and validated optics for each instrument. Check dilution behavior over the bright end: a compressed response can make the brightest standards look deceptively consistent. Verify an approximately proportional response through the bright end and distinguishable signals near the blank.</p><p>Some of the measured light may come from another well. Promega's crosstalk guidance describes how light from strong emitters affects nearby wells, and why well isolation and plate opacity matter. Include dim or blank wells beside bright samples, plus comparable wells far from them. That layout reveals whether a high apparent low-signal response includes neighboring light. Physical suppression of that leakage also avoids the extra counting noise that subtraction cannot remove. [2]</p><h2 id=\"keep-the-sample-comparison-fair\">Keep the sample comparison fair</h2><p>Reading a plate first on one instrument and later on another confounds instrument performance with assay age. Use balanced read order across matched plates or another design that separates the two. Record substrate-addition time, transfer time and the order of readings. A stable control material can help isolate instrument behavior, but it does not reproduce all the chemistry of the assay.</p><p>For CellTiter-Glo 2.0, Promega specifies approximately 30 minutes of room-temperature equilibration before reagent addition and a stabilization period before measurement. Its manual also explains that temperature affects light intensity and decay. Keep the sample and reagent handling consistent and maintain a stable near-room-temperature chamber for this validated endpoint. A switched-off heater alone does not establish stable sample temperature during a long run. [3]</p><p>Live-cell kinetic assays may require controlled biological temperatures instead. Use the assay protocol to define the condition, then check whether each instrument maintains it through the acquisition.</p><h2 id=\"compare-the-result-you-need-to-make-a-decision\">Compare the result you need to make a decision</h2><p>Run blanks, low positives and a concentration series with independently prepared replicates. Evaluate blank variability, low-positive precision, response proportionality and recovery of known differences. For a screening assay, inspect control separation and representative concentration–response curves. Keep the raw signals alongside any normalization.</p><p>A multiplier can align two display scales. It cannot repair poor separation from background, restore a compressed high end or identify light collected from another well. Judge those limits using the samples and response differences the assay must resolve.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Messenger S. Promega. <a href=\"https://www.promegaconnections.com/measuring-relative-light-units/\">Just What Is an RLU (Relative Light Unit)?</a>, 28 October 2020; checked 29 September 2026. Instrument-dependent reporting units. Web text reviewed; complete local archive unavailable.</p><p id=\"ref-2\">2. Wieczorek D, Hooper K, Bjerke M. Promega. <a href=\"https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/\">How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results</a>, June 2019, tpub_212. Well isolation and plate opacity; no historical instrument ranking is carried forward.</p><p id=\"ref-3\">3. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, stabilization and temperature-dependent light output.</p><h2 id=\"provenance\">Provenance</h2><p>Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.</p>",
+  "body_text": "A lower luminescence reading can reflect a different reporting scale, less collected light, different acquisition settings or a change in the sample between measurements. Relative light units (RLU) are not standardized across plate readers. A tenfold difference in RLU therefore does not establish a tenfold difference in sensitivity. Compare the reader's ability to resolve relevant low signals and reproduce the assay response. [1]\n\nStart with what the displayed number means\n\nAsk whether the software reports integrated output, a rate normalized to acquisition time, gain-scaled intensity or another processed quantity. Increasing the integration time may increase a summed output while leaving a normalized rate approximately unchanged. Changing amplification can change the displayed number without producing additional photons in the sample.\n\nConsider a constructed comparison. Replicates on one reader have a mean of 100,000 RLU and a standard deviation of 5,000 RLU. On another, they have a mean of 10,000 RLU and a standard deviation of 500 RLU. Both have a 5% coefficient of variation (CV), calculated as standard deviation divided by mean, times 100. Those results could arise from a simple scale difference. They do not establish equal performance near the blank or across the full assay range.\n\nCheck what each reader actually collects\n\nRecord integration time in seconds, gain or sensitivity mode, read geometry, plate definition and optical filters. A broad luminescence measurement collects a different spectral range from a filtered bioluminescence resonance energy transfer (BRET) donor channel. Comparing their RLU directly leaves that difference hidden.\n\nDetector spectral response, collection efficiency, read height and plate construction can also change output. Use the correct plate definition and validated optics for each instrument. Check dilution behavior over the bright end: a compressed response can make the brightest standards look deceptively consistent. Verify an approximately proportional response through the bright end and distinguishable signals near the blank.\n\nSome of the measured light may come from another well. Promega's crosstalk guidance describes how light from strong emitters affects nearby wells, and why well isolation and plate opacity matter. Include dim or blank wells beside bright samples, plus comparable wells far from them. That layout reveals whether a high apparent low-signal response includes neighboring light. Physical suppression of that leakage also avoids the extra counting noise that subtraction cannot remove. [2]\n\nKeep the sample comparison fair\n\nReading a plate first on one instrument and later on another confounds instrument performance with assay age. Use balanced read order across matched plates or another design that separates the two. Record substrate-addition time, transfer time and the order of readings. A stable control material can help isolate instrument behavior, but it does not reproduce all the chemistry of the assay.\n\nFor CellTiter-Glo 2.0, Promega specifies approximately 30 minutes of room-temperature equilibration before reagent addition and a stabilization period before measurement. Its manual also explains that temperature affects light intensity and decay. Keep the sample and reagent handling consistent and maintain a stable near-room-temperature chamber for this validated endpoint. A switched-off heater alone does not establish stable sample temperature during a long run. [3]\n\nLive-cell kinetic assays may require controlled biological temperatures instead. Use the assay protocol to define the condition, then check whether each instrument maintains it through the acquisition.\n\nCompare the result you need to make a decision\n\nRun blanks, low positives and a concentration series with independently prepared replicates. Evaluate blank variability, low-positive precision, response proportionality and recovery of known differences. For a screening assay, inspect control separation and representative concentration–response curves. Keep the raw signals alongside any normalization.\n\nA multiplier can align two display scales. It cannot repair poor separation from background, restore a compressed high end or identify light collected from another well. Judge those limits using the samples and response differences the assay must resolve.\n\nReferences\n\n1. Messenger S. Promega. Just What Is an RLU (Relative Light Unit)?, 28 October 2020; checked 29 September 2026. Instrument-dependent reporting units. Web text reviewed; complete local archive unavailable.\n\n2. Wieczorek D, Hooper K, Bjerke M. Promega. How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results, June 2019, tpub_212. Well isolation and plate opacity; no historical instrument ranking is carried forward.\n\n3. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, stabilization and temperature-dependent light output.\n\nProvenance\n\nAuthor: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A lower luminescence reading can reflect a different reporting scale, less collected light, different acquisition settings or a change in the sample between measurements. Relative light units (RLU) are not standardized across plate readers. A tenfold difference in RLU therefore does not establish a tenfold difference in sensitivity. Compare the reader's ability to resolve relevant low signals and reproduce the assay response. [1]",
+          "html": "<p>A lower luminescence reading can reflect a different reporting scale, less collected light, different acquisition settings or a change in the sample between measurements. Relative light units (RLU) are not standardized across plate readers. A tenfold difference in RLU therefore does not establish a tenfold difference in sensitivity. Compare the reader's ability to resolve relevant low signals and reproduce the assay response. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "start-with-what-the-displayed-number-means",
+      "heading": "Start with what the displayed number means",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Start with what the displayed number means",
+          "html": "<h2 id=\"start-with-what-the-displayed-number-means\">Start with what the displayed number means</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Ask whether the software reports integrated output, a rate normalized to acquisition time, gain-scaled intensity or another processed quantity. Increasing the integration time may increase a summed output while leaving a normalized rate approximately unchanged. Changing amplification can change the displayed number without producing additional photons in the sample.",
+          "html": "<p>Ask whether the software reports integrated output, a rate normalized to acquisition time, gain-scaled intensity or another processed quantity. Increasing the integration time may increase a summed output while leaving a normalized rate approximately unchanged. Changing amplification can change the displayed number without producing additional photons in the sample.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider a constructed comparison. Replicates on one reader have a mean of 100,000 RLU and a standard deviation of 5,000 RLU. On another, they have a mean of 10,000 RLU and a standard deviation of 500 RLU. Both have a 5% coefficient of variation (CV), calculated as standard deviation divided by mean, times 100. Those results could arise from a simple scale difference. They do not establish equal performance near the blank or across the full assay range.",
+          "html": "<p>Consider a constructed comparison. Replicates on one reader have a mean of 100,000 RLU and a standard deviation of 5,000 RLU. On another, they have a mean of 10,000 RLU and a standard deviation of 500 RLU. Both have a 5% coefficient of variation (CV), calculated as standard deviation divided by mean, times 100. Those results could arise from a simple scale difference. They do not establish equal performance near the blank or across the full assay range.</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-what-each-reader-actually-collects",
+      "heading": "Check what each reader actually collects",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check what each reader actually collects",
+          "html": "<h2 id=\"check-what-each-reader-actually-collects\">Check what each reader actually collects</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Record integration time in seconds, gain or sensitivity mode, read geometry, plate definition and optical filters. A broad luminescence measurement collects a different spectral range from a filtered bioluminescence resonance energy transfer (BRET) donor channel. Comparing their RLU directly leaves that difference hidden.",
+          "html": "<p>Record integration time in seconds, gain or sensitivity mode, read geometry, plate definition and optical filters. A broad luminescence measurement collects a different spectral range from a filtered bioluminescence resonance energy transfer (BRET) donor channel. Comparing their RLU directly leaves that difference hidden.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Detector spectral response, collection efficiency, read height and plate construction can also change output. Use the correct plate definition and validated optics for each instrument. Check dilution behavior over the bright end: a compressed response can make the brightest standards look deceptively consistent. Verify an approximately proportional response through the bright end and distinguishable signals near the blank.",
+          "html": "<p>Detector spectral response, collection efficiency, read height and plate construction can also change output. Use the correct plate definition and validated optics for each instrument. Check dilution behavior over the bright end: a compressed response can make the brightest standards look deceptively consistent. Verify an approximately proportional response through the bright end and distinguishable signals near the blank.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Some of the measured light may come from another well. Promega's crosstalk guidance describes how light from strong emitters affects nearby wells, and why well isolation and plate opacity matter. Include dim or blank wells beside bright samples, plus comparable wells far from them. That layout reveals whether a high apparent low-signal response includes neighboring light. Physical suppression of that leakage also avoids the extra counting noise that subtraction cannot remove. [2]",
+          "html": "<p>Some of the measured light may come from another well. Promega's crosstalk guidance describes how light from strong emitters affects nearby wells, and why well isolation and plate opacity matter. Include dim or blank wells beside bright samples, plus comparable wells far from them. That layout reveals whether a high apparent low-signal response includes neighboring light. Physical suppression of that leakage also avoids the extra counting noise that subtraction cannot remove. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-the-sample-comparison-fair",
+      "heading": "Keep the sample comparison fair",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep the sample comparison fair",
+          "html": "<h2 id=\"keep-the-sample-comparison-fair\">Keep the sample comparison fair</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Reading a plate first on one instrument and later on another confounds instrument performance with assay age. Use balanced read order across matched plates or another design that separates the two. Record substrate-addition time, transfer time and the order of readings. A stable control material can help isolate instrument behavior, but it does not reproduce all the chemistry of the assay.",
+          "html": "<p>Reading a plate first on one instrument and later on another confounds instrument performance with assay age. Use balanced read order across matched plates or another design that separates the two. Record substrate-addition time, transfer time and the order of readings. A stable control material can help isolate instrument behavior, but it does not reproduce all the chemistry of the assay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For CellTiter-Glo 2.0, Promega specifies approximately 30 minutes of room-temperature equilibration before reagent addition and a stabilization period before measurement. Its manual also explains that temperature affects light intensity and decay. Keep the sample and reagent handling consistent and maintain a stable near-room-temperature chamber for this validated endpoint. A switched-off heater alone does not establish stable sample temperature during a long run. [3]",
+          "html": "<p>For CellTiter-Glo 2.0, Promega specifies approximately 30 minutes of room-temperature equilibration before reagent addition and a stabilization period before measurement. Its manual also explains that temperature affects light intensity and decay. Keep the sample and reagent handling consistent and maintain a stable near-room-temperature chamber for this validated endpoint. A switched-off heater alone does not establish stable sample temperature during a long run. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Live-cell kinetic assays may require controlled biological temperatures instead. Use the assay protocol to define the condition, then check whether each instrument maintains it through the acquisition.",
+          "html": "<p>Live-cell kinetic assays may require controlled biological temperatures instead. Use the assay protocol to define the condition, then check whether each instrument maintains it through the acquisition.</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-the-result-you-need-to-make-a-decision",
+      "heading": "Compare the result you need to make a decision",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare the result you need to make a decision",
+          "html": "<h2 id=\"compare-the-result-you-need-to-make-a-decision\">Compare the result you need to make a decision</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Run blanks, low positives and a concentration series with independently prepared replicates. Evaluate blank variability, low-positive precision, response proportionality and recovery of known differences. For a screening assay, inspect control separation and representative concentration–response curves. Keep the raw signals alongside any normalization.",
+          "html": "<p>Run blanks, low positives and a concentration series with independently prepared replicates. Evaluate blank variability, low-positive precision, response proportionality and recovery of known differences. For a screening assay, inspect control separation and representative concentration–response curves. Keep the raw signals alongside any normalization.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A multiplier can align two display scales. It cannot repair poor separation from background, restore a compressed high end or identify light collected from another well. Judge those limits using the samples and response differences the assay must resolve.",
+          "html": "<p>A multiplier can align two display scales. It cannot repair poor separation from background, restore a compressed high end or identify light collected from another well. Judge those limits using the samples and response differences the assay must resolve.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Messenger S. Promega. Just What Is an RLU (Relative Light Unit)?, 28 October 2020; checked 29 September 2026. Instrument-dependent reporting units. Web text reviewed; complete local archive unavailable.",
+          "html": "<p id=\"ref-1\">1. Messenger S. Promega. <a href=\"https://www.promegaconnections.com/measuring-relative-light-units/\">Just What Is an RLU (Relative Light Unit)?</a>, 28 October 2020; checked 29 September 2026. Instrument-dependent reporting units. Web text reviewed; complete local archive unavailable.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Wieczorek D, Hooper K, Bjerke M. Promega. How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results, June 2019, tpub_212. Well isolation and plate opacity; no historical instrument ranking is carried forward.",
+          "html": "<p id=\"ref-2\">2. Wieczorek D, Hooper K, Bjerke M. Promega. <a href=\"https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/\">How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results</a>, June 2019, tpub_212. Well isolation and plate opacity; no historical instrument ranking is carried forward.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, stabilization and temperature-dependent light output.",
+          "html": "<p id=\"ref-3\">3. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, stabilization and temperature-dependent light output.</p>"
+        }
+      ]
+    },
+    {
+      "id": "provenance",
+      "heading": "Provenance",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Provenance",
+          "html": "<h2 id=\"provenance\">Provenance</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.",
+          "html": "<p>Author: Andrew Stewart. Named human technical review: pending. Research and editorial preparation: 29 September 2026. Sources checked: 29 September 2026. Proposed checks and illustrative calculations have not been validated in a laboratory as part of this draft.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Messenger S. Promega. Just What Is an RLU (Relative Light Unit)?, 28 October 2020; checked 29 September 2026. Instrument-dependent reporting units. Web text reviewed; complete local archive unavailable.",
+      "urls": [
+        "https://www.promegaconnections.com/measuring-relative-light-units/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Wieczorek D, Hooper K, Bjerke M. Promega. How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results, June 2019, tpub_212. Well isolation and plate opacity; no historical instrument ranking is carried forward.",
+      "urls": [
+        "https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, stabilization and temperature-dependent light output.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "provenance": {
+    "kind": "Author-provided article converted to structured text",
+    "examples": "Preserve stated constructed examples, manufacturer claims and unperformed checks; not a raw experimental dataset",
+    "editorial_additions": "Summary, takeaways, topic tags, limitations summary and responsive formatting"
+  },
+  "display_additions": {},
+  "content_sha256": "2d89d14fa77e1836014e9652af96a0cd01d4fa57d56617f4f4e7baa7234042e7"
+}

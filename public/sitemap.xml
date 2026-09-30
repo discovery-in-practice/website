@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://discoveryinpractice.com/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/about/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/</loc>
     <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/analog-photon-counting-luminescence/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/background-subtraction-increases-cv/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/bright-control-cv-weak-samples/</loc>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/celltiter-glo-light-cells/</loc>
@@ -45,8 +57,28 @@
     <lastmod>2026-09-28</lastmod>
   </url>
   <url>
+    <loc>https://discoveryinpractice.com/articles/longer-plate-reader-integration-assay-cv/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
     <loc>https://discoveryinpractice.com/articles/luminescence-integration-time/</loc>
     <lastmod>2026-09-25</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/negative-values-blank-subtraction/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/pmt-saturation-signal-compression-no-warning/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/</loc>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/z-prime-detector-linearity/</loc>
@@ -54,7 +86,7 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/assays/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/bench-tips/plate-map/</loc>
@@ -62,7 +94,7 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/compare/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/compare/confocal-screening-systems/</loc>
@@ -78,23 +110,23 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/concepts/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/fluorescence/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/luminescence/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/plate-effects/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/references/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/reuse/</loc>
@@ -102,10 +134,10 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/trf-htrf/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/troubleshooting/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-09-30</lastmod>
   </url>
 </urlset>

@@ -26,7 +26,7 @@ Do not insert a displayed value of 10,000 RLU into this equation. Relative light
 
 Efficient light collection can save substantial time when photon statistics dominate. Merely multiplying an existing signal multiplies its fluctuations as well.
 
-## A small improvement can consume a large afternoon
+## What a longer read buys across the plate
 
 Suppose a one-second read contributes 6% measurement CV, while persistent differences between nominally identical wells contribute 8%. Assume these contributions are independent, the signal is stable and the measurement component decreases with the square root of integration time.
 

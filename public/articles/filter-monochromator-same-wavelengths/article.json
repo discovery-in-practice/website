@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "filter-monochromator-same-wavelengths",
+  "canonical_url": "https://discoveryinpractice.com/articles/filter-monochromator-same-wavelengths/",
+  "title": "Why do filter and monochromator readers perform differently at the same nominal wavelengths?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Why matching wavelengths does not match plate reader performance, with bandwidth, blocking, dichroics and practical method-transfer checks.",
+  "takeaways": [
+    "What center wavelengths leave unspecified",
+    "Monochromator is a category with different implementations",
+    "Decide whether you are transferring a method or comparing capability"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "Optics",
+    "Plate readers"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-01",
+  "date_modified": "2026-10-01",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Matching the excitation and emission center wavelengths leaves much of the measurement unmatched. Bandwidth, optical transmission, rejection of unwanted light, excitation delivery, read geometry and detector response all influence the result. At 485 nm excitation and 535 nm emission, two readers may still illuminate and collect light differently, and their relative fluorescence units (RFU) may use different scales. Compare assay performance under documented settings before attributing the difference to filters or monochromators alone.</p><h2 id=\"what-center-wavelengths-leave-unspecified\">What center wavelengths leave unspecified</h2><p>Suppose two hypothetical emission settings are both centered at 535 nm. One has a 10 nm full width at half maximum (FWHM), and the other has a 30 nm FWHM. For symmetric bands, their half-height spans are approximately 530–540 nm and 520–550 nm. These are different spectral measurements. The broader band may admit more desired fluorescence, more background, or both.</p><p>Even matching those widths would leave the passband shape, peak transmission and out-of-band blocking unspecified. FWHM describes width at half the maximum transmission; it does not tell you how much excitation light leaks through far from the emission band. For weak fluorescence in the presence of intense excitation, that missing information can matter greatly. [1]</p><p>A dichroic mirror can direct excitation toward the well and emission toward the detector according to wavelength. Its transition region must suit the selected bands. Good separation can retain useful photons while excluding unwanted light before detection. Check the installed dichroic against the complete excitation and emission bands. [2]</p><h2 id=\"monochromator-is-a-category-with-different-implementations\">Monochromator is a category with different implementations</h2><p>In a conventional grating monochromator, dispersion and slits select a region of the spectrum. Tecan's Infinite 200 PRO manual describes using two monochromators in series on each side to improve rejection of unwanted wavelengths. Blocking and optical throughput must both be considered when judging such a design. [1]</p><p>Other wavelength-selectable readers use movable short-pass and long-pass filters to define the band, together with a wavelength-adjustable dichroic. BMG LABTECH describes that arrangement for its monochromator architecture. Broad selectable bands and efficient excitation/emission separation can preserve useful light while retaining wavelength flexibility. Check the benefit with assay-matched blanks and low positives. [2]</p><p>Fixed interference filters can offer high transmission and strong blocking for an established assay. They require the appropriate installed set. Revvity's HTRF guide describes the practical tradeoff between transmission and wavelength flexibility, but the word “monochromator” alone cannot predict the sensitivity of every current implementation. [3]</p><h2 id=\"decide-whether-you-are-transferring-a-method-or-comparing-capability\">Decide whether you are transferring a method or comparing capability</h2><p>For method transfer, document the complete excitation and emission settings, including centers and bandwidths in nm. Record plate, volume in µL, top or bottom reading, focus or read height, gain, acquisition timing and temperature. Match the assay's age at reading. If the optical configurations differ, preserve that difference in the record rather than calling the methods identical.</p><p>For a capability comparison, optimize each reader within its supported settings using the same assay preparations. Compare a low-concentration series with matrix-matched blanks, weak-positive precision and recovery, and linearity through the bright samples. Define the detection-limit calculation and measure total plate-read time. This answers how well each configured system handles the assay.</p><p>The two exercises may produce different rankings. A reader with a poor inherited configuration may perform well after optimization. Conversely, more RFU after optimization may simply reflect gain or additional background.</p><h2 id=\"keep-the-reported-endpoint-in-view\">Keep the reported endpoint in view</h2><p>For homogeneous time-resolved fluorescence (HTRF), donor and acceptor settings and their measurement timing both matter. Sequential and simultaneous collection are different acquisition schemes, even with the same nominal channels. Simultaneous dual emission with matched, calibrated photomultiplier tubes (PMTs) can preserve paired-channel timing as the sample changes. It still needs suitable spectral blocking and sufficient counts in each channel.</p><p>Judge the raw channels as well as the final ratio, and retain the configuration that supports reliable low and intermediate responses. Save the complete optical and acquisition settings with the results so another scientist can reproduce the comparison.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use</a>, no. 30125944, revision 1.4, June 2021, pp. 31–34. Grating selection, FWHM, double monochromators and optical geometry.</p><p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/lvf-monochromators/\">Monochromator optical architecture</a>. Manufacturer description of variable filter bands and dichroic separation.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 13 and 20. Ratiometric detection and reader-selection considerations.</p>",
+  "body_text": "Matching the excitation and emission center wavelengths leaves much of the measurement unmatched. Bandwidth, optical transmission, rejection of unwanted light, excitation delivery, read geometry and detector response all influence the result. At 485 nm excitation and 535 nm emission, two readers may still illuminate and collect light differently, and their relative fluorescence units (RFU) may use different scales. Compare assay performance under documented settings before attributing the difference to filters or monochromators alone.\n\nWhat center wavelengths leave unspecified\n\nSuppose two hypothetical emission settings are both centered at 535 nm. One has a 10 nm full width at half maximum (FWHM), and the other has a 30 nm FWHM. For symmetric bands, their half-height spans are approximately 530–540 nm and 520–550 nm. These are different spectral measurements. The broader band may admit more desired fluorescence, more background, or both.\n\nEven matching those widths would leave the passband shape, peak transmission and out-of-band blocking unspecified. FWHM describes width at half the maximum transmission; it does not tell you how much excitation light leaks through far from the emission band. For weak fluorescence in the presence of intense excitation, that missing information can matter greatly. [1]\n\nA dichroic mirror can direct excitation toward the well and emission toward the detector according to wavelength. Its transition region must suit the selected bands. Good separation can retain useful photons while excluding unwanted light before detection. Check the installed dichroic against the complete excitation and emission bands. [2]\n\nMonochromator is a category with different implementations\n\nIn a conventional grating monochromator, dispersion and slits select a region of the spectrum. Tecan's Infinite 200 PRO manual describes using two monochromators in series on each side to improve rejection of unwanted wavelengths. Blocking and optical throughput must both be considered when judging such a design. [1]\n\nOther wavelength-selectable readers use movable short-pass and long-pass filters to define the band, together with a wavelength-adjustable dichroic. BMG LABTECH describes that arrangement for its monochromator architecture. Broad selectable bands and efficient excitation/emission separation can preserve useful light while retaining wavelength flexibility. Check the benefit with assay-matched blanks and low positives. [2]\n\nFixed interference filters can offer high transmission and strong blocking for an established assay. They require the appropriate installed set. Revvity's HTRF guide describes the practical tradeoff between transmission and wavelength flexibility, but the word “monochromator” alone cannot predict the sensitivity of every current implementation. [3]\n\nDecide whether you are transferring a method or comparing capability\n\nFor method transfer, document the complete excitation and emission settings, including centers and bandwidths in nm. Record plate, volume in µL, top or bottom reading, focus or read height, gain, acquisition timing and temperature. Match the assay's age at reading. If the optical configurations differ, preserve that difference in the record rather than calling the methods identical.\n\nFor a capability comparison, optimize each reader within its supported settings using the same assay preparations. Compare a low-concentration series with matrix-matched blanks, weak-positive precision and recovery, and linearity through the bright samples. Define the detection-limit calculation and measure total plate-read time. This answers how well each configured system handles the assay.\n\nThe two exercises may produce different rankings. A reader with a poor inherited configuration may perform well after optimization. Conversely, more RFU after optimization may simply reflect gain or additional background.\n\nKeep the reported endpoint in view\n\nFor homogeneous time-resolved fluorescence (HTRF), donor and acceptor settings and their measurement timing both matter. Sequential and simultaneous collection are different acquisition schemes, even with the same nominal channels. Simultaneous dual emission with matched, calibrated photomultiplier tubes (PMTs) can preserve paired-channel timing as the sample changes. It still needs suitable spectral blocking and sufficient counts in each channel.\n\nJudge the raw channels as well as the final ratio, and retain the configuration that supports reliable low and intermediate responses. Save the complete optical and acquisition settings with the results so another scientist can reproduce the comparison.\n\nReferences\n\n1. Tecan. Infinite 200 PRO Instructions for Use, no. 30125944, revision 1.4, June 2021, pp. 31–34. Grating selection, FWHM, double monochromators and optical geometry.\n\n2. BMG LABTECH. Monochromator optical architecture. Manufacturer description of variable filter bands and dichroic separation.\n\n3. Revvity. HTRF Technical Booklet, pp. 13 and 20. Ratiometric detection and reader-selection considerations.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Matching the excitation and emission center wavelengths leaves much of the measurement unmatched. Bandwidth, optical transmission, rejection of unwanted light, excitation delivery, read geometry and detector response all influence the result. At 485 nm excitation and 535 nm emission, two readers may still illuminate and collect light differently, and their relative fluorescence units (RFU) may use different scales. Compare assay performance under documented settings before attributing the difference to filters or monochromators alone.",
+          "html": "<p>Matching the excitation and emission center wavelengths leaves much of the measurement unmatched. Bandwidth, optical transmission, rejection of unwanted light, excitation delivery, read geometry and detector response all influence the result. At 485 nm excitation and 535 nm emission, two readers may still illuminate and collect light differently, and their relative fluorescence units (RFU) may use different scales. Compare assay performance under documented settings before attributing the difference to filters or monochromators alone.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-center-wavelengths-leave-unspecified",
+      "heading": "What center wavelengths leave unspecified",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What center wavelengths leave unspecified",
+          "html": "<h2 id=\"what-center-wavelengths-leave-unspecified\">What center wavelengths leave unspecified</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose two hypothetical emission settings are both centered at 535 nm. One has a 10 nm full width at half maximum (FWHM), and the other has a 30 nm FWHM. For symmetric bands, their half-height spans are approximately 530–540 nm and 520–550 nm. These are different spectral measurements. The broader band may admit more desired fluorescence, more background, or both.",
+          "html": "<p>Suppose two hypothetical emission settings are both centered at 535 nm. One has a 10 nm full width at half maximum (FWHM), and the other has a 30 nm FWHM. For symmetric bands, their half-height spans are approximately 530–540 nm and 520–550 nm. These are different spectral measurements. The broader band may admit more desired fluorescence, more background, or both.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Even matching those widths would leave the passband shape, peak transmission and out-of-band blocking unspecified. FWHM describes width at half the maximum transmission; it does not tell you how much excitation light leaks through far from the emission band. For weak fluorescence in the presence of intense excitation, that missing information can matter greatly. [1]",
+          "html": "<p>Even matching those widths would leave the passband shape, peak transmission and out-of-band blocking unspecified. FWHM describes width at half the maximum transmission; it does not tell you how much excitation light leaks through far from the emission band. For weak fluorescence in the presence of intense excitation, that missing information can matter greatly. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A dichroic mirror can direct excitation toward the well and emission toward the detector according to wavelength. Its transition region must suit the selected bands. Good separation can retain useful photons while excluding unwanted light before detection. Check the installed dichroic against the complete excitation and emission bands. [2]",
+          "html": "<p>A dichroic mirror can direct excitation toward the well and emission toward the detector according to wavelength. Its transition region must suit the selected bands. Good separation can retain useful photons while excluding unwanted light before detection. Check the installed dichroic against the complete excitation and emission bands. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "monochromator-is-a-category-with-different-implementations",
+      "heading": "Monochromator is a category with different implementations",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Monochromator is a category with different implementations",
+          "html": "<h2 id=\"monochromator-is-a-category-with-different-implementations\">Monochromator is a category with different implementations</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In a conventional grating monochromator, dispersion and slits select a region of the spectrum. Tecan's Infinite 200 PRO manual describes using two monochromators in series on each side to improve rejection of unwanted wavelengths. Blocking and optical throughput must both be considered when judging such a design. [1]",
+          "html": "<p>In a conventional grating monochromator, dispersion and slits select a region of the spectrum. Tecan's Infinite 200 PRO manual describes using two monochromators in series on each side to improve rejection of unwanted wavelengths. Blocking and optical throughput must both be considered when judging such a design. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Other wavelength-selectable readers use movable short-pass and long-pass filters to define the band, together with a wavelength-adjustable dichroic. BMG LABTECH describes that arrangement for its monochromator architecture. Broad selectable bands and efficient excitation/emission separation can preserve useful light while retaining wavelength flexibility. Check the benefit with assay-matched blanks and low positives. [2]",
+          "html": "<p>Other wavelength-selectable readers use movable short-pass and long-pass filters to define the band, together with a wavelength-adjustable dichroic. BMG LABTECH describes that arrangement for its monochromator architecture. Broad selectable bands and efficient excitation/emission separation can preserve useful light while retaining wavelength flexibility. Check the benefit with assay-matched blanks and low positives. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Fixed interference filters can offer high transmission and strong blocking for an established assay. They require the appropriate installed set. Revvity's HTRF guide describes the practical tradeoff between transmission and wavelength flexibility, but the word “monochromator” alone cannot predict the sensitivity of every current implementation. [3]",
+          "html": "<p>Fixed interference filters can offer high transmission and strong blocking for an established assay. They require the appropriate installed set. Revvity's HTRF guide describes the practical tradeoff between transmission and wavelength flexibility, but the word “monochromator” alone cannot predict the sensitivity of every current implementation. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "decide-whether-you-are-transferring-a-method-or-comparing-capability",
+      "heading": "Decide whether you are transferring a method or comparing capability",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Decide whether you are transferring a method or comparing capability",
+          "html": "<h2 id=\"decide-whether-you-are-transferring-a-method-or-comparing-capability\">Decide whether you are transferring a method or comparing capability</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For method transfer, document the complete excitation and emission settings, including centers and bandwidths in nm. Record plate, volume in µL, top or bottom reading, focus or read height, gain, acquisition timing and temperature. Match the assay's age at reading. If the optical configurations differ, preserve that difference in the record rather than calling the methods identical.",
+          "html": "<p>For method transfer, document the complete excitation and emission settings, including centers and bandwidths in nm. Record plate, volume in µL, top or bottom reading, focus or read height, gain, acquisition timing and temperature. Match the assay's age at reading. If the optical configurations differ, preserve that difference in the record rather than calling the methods identical.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a capability comparison, optimize each reader within its supported settings using the same assay preparations. Compare a low-concentration series with matrix-matched blanks, weak-positive precision and recovery, and linearity through the bright samples. Define the detection-limit calculation and measure total plate-read time. This answers how well each configured system handles the assay.",
+          "html": "<p>For a capability comparison, optimize each reader within its supported settings using the same assay preparations. Compare a low-concentration series with matrix-matched blanks, weak-positive precision and recovery, and linearity through the bright samples. Define the detection-limit calculation and measure total plate-read time. This answers how well each configured system handles the assay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The two exercises may produce different rankings. A reader with a poor inherited configuration may perform well after optimization. Conversely, more RFU after optimization may simply reflect gain or additional background.",
+          "html": "<p>The two exercises may produce different rankings. A reader with a poor inherited configuration may perform well after optimization. Conversely, more RFU after optimization may simply reflect gain or additional background.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-the-reported-endpoint-in-view",
+      "heading": "Keep the reported endpoint in view",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep the reported endpoint in view",
+          "html": "<h2 id=\"keep-the-reported-endpoint-in-view\">Keep the reported endpoint in view</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For homogeneous time-resolved fluorescence (HTRF), donor and acceptor settings and their measurement timing both matter. Sequential and simultaneous collection are different acquisition schemes, even with the same nominal channels. Simultaneous dual emission with matched, calibrated photomultiplier tubes (PMTs) can preserve paired-channel timing as the sample changes. It still needs suitable spectral blocking and sufficient counts in each channel.",
+          "html": "<p>For homogeneous time-resolved fluorescence (HTRF), donor and acceptor settings and their measurement timing both matter. Sequential and simultaneous collection are different acquisition schemes, even with the same nominal channels. Simultaneous dual emission with matched, calibrated photomultiplier tubes (PMTs) can preserve paired-channel timing as the sample changes. It still needs suitable spectral blocking and sufficient counts in each channel.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Judge the raw channels as well as the final ratio, and retain the configuration that supports reliable low and intermediate responses. Save the complete optical and acquisition settings with the results so another scientist can reproduce the comparison.",
+          "html": "<p>Judge the raw channels as well as the final ratio, and retain the configuration that supports reliable low and intermediate responses. Save the complete optical and acquisition settings with the results so another scientist can reproduce the comparison.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Tecan. Infinite 200 PRO Instructions for Use, no. 30125944, revision 1.4, June 2021, pp. 31–34. Grating selection, FWHM, double monochromators and optical geometry.",
+          "html": "<p id=\"ref-1\">1. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use</a>, no. 30125944, revision 1.4, June 2021, pp. 31–34. Grating selection, FWHM, double monochromators and optical geometry.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. BMG LABTECH. Monochromator optical architecture. Manufacturer description of variable filter bands and dichroic separation.",
+          "html": "<p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/lvf-monochromators/\">Monochromator optical architecture</a>. Manufacturer description of variable filter bands and dichroic separation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. HTRF Technical Booklet, pp. 13 and 20. Ratiometric detection and reader-selection considerations.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 13 and 20. Ratiometric detection and reader-selection considerations.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Tecan. Infinite 200 PRO Instructions for Use, no. 30125944, revision 1.4, June 2021, pp. 31–34. Grating selection, FWHM, double monochromators and optical geometry.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. BMG LABTECH. Monochromator optical architecture. Manufacturer description of variable filter bands and dichroic separation.",
+      "urls": [
+        "https://www.bmglabtech.com/en/lvf-monochromators/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. HTRF Technical Booklet, pp. 13 and 20. Ratiometric detection and reader-selection considerations.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "65ce59e644585b6d76af8a8627eb272088957f55df3e456b807dce3282b1d75e"
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "automatic-gain-screening-plates",
+  "canonical_url": "https://discoveryinpractice.com/articles/automatic-gain-screening-plates/",
+  "title": "Should I use automatic gain on every plate in a screening run?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "When to keep plate reader gain fixed, when calibrated automatic range selection helps and how to check comparability across a screening run.",
+  "takeaways": [
+    "Automatic gain can mean different operations",
+    "What plate normalization can cancel",
+    "Choose a setting with room for the samples you will encounter"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "PMT gain",
+    "Screening"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-01",
+  "date_modified": "2026-10-01",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>For directly comparable raw fluorescence values, establish a suitable gain during assay development and usually keep it fixed across the run. Recalculating gain on each plate can change the reporting scale. Automatic range selection can still be appropriate when the reader reports values on a validated common scale or when the analysis has been shown to tolerate the change. Before combining plates, check whether the selected mode changed their reporting scale. [1]</p><h2 id=\"automatic-gain-can-mean-different-operations\">Automatic gain can mean different operations</h2><p>An automatic setup may inspect a reference well or scan a plate, choose one gain, then use it for the measurement. BMG LABTECH describes both selected-well and full-plate adjustment; in the latter, the strongest signal influences the chosen gain. A plate containing an unusually bright sample can therefore produce a different setting from a routine plate. [1]</p><p>Other systems adjust ranges during acquisition and convert results to a common output scale. That conversion is part of the measurement method. Check the mode's documentation, export fields and behavior with standards rather than assuming that every option called “automatic” works alike.</p><p>Gain controls amplification, not the amount of light emitted by a sample. A numerical gain setting also need not be a linear multiplication factor: doubling the setting does not necessarily double the response. Tecan's Infinite 200 PRO manual relates gain to photomultiplier tube (PMT) supply voltage and the electrical range needed by its converter. [2]</p><h2 id=\"what-plate-normalization-can-cancel\">What plate normalization can cancel</h2><p>Consider a constructed example. On one plate, low controls, high controls and a sample read 100, 1,100 and 600 relative fluorescence units (RFU). The sample lies halfway between the controls. If a change of amplification doubles all three readings to 200, 2,200 and 1,200 RFU, the normalized position is still 50%, although the raw sample value doubled.</p><p>This cancellation works because the same linear scale change affects controls and sample. Saturation, unequal backgrounds, weak-signal noise or different gain behavior across wells can break that assumption. A satisfactory normalized control metric does not establish that low positives retain their precision.</p><p>Ratiometric assays need an additional check. Independently changing donor and acceptor gain can change their ratio unless the channel responses are calibrated onto the intended scale. Using simultaneous dual-emission detection aligns the observation times; it does not automatically correct a change in their relative amplification.</p><h2 id=\"choose-a-setting-with-room-for-the-samples-you-will-encounter\">Choose a setting with room for the samples you will encounter</h2><p>During development, include blanks, low positives, routine high controls and the brightest plausible sample. Test the selected gain across that range, allowing for expected plate-to-plate variation. Verify proportional response at the bright end and useful precision near the blank. An unusually fluorescent compound or a sample above the control range can still exceed the chosen window. [1,2]</p><p>If no fixed setting resolves the required range, investigate a validated broad-range mode, an alternative assay configuration or a predefined repeat-measurement procedure. Simply lowering gain until overflow disappears can sacrifice weak-signal resolution. Raising it to enlarge every number can compromise the bright end.</p><h2 id=\"record-enough-information-to-detect-a-change\">Record enough information to detect a change</h2><p>Include common reference material and appropriate assay controls throughout the run. Save gain or range information, raw signals and normalization settings with every plate. Track changes in reference response and precision, and flag range transitions for review.</p><p>To qualify an automatic mode, challenge it with matched plates that differ in their brightest wells while sharing the same low and middle standards. Compare the shared standards' recovered response and variability. Balance assay age and temperature so those variables do not confound the comparison. Accept the automatic mode when those shared standards retain their recovered response and required precision across the challenge.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/howto-notes/how-to-optimise-the-gain-setting-of-my-microplate-reader/\">How to optimise the gain setting of my microplate reader?</a>. Gain selection, strongest-well adjustment and fixed-setting comparisons. Instrument-specific numerical settings and targeting percentages are not generalized.</p><p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use</a>, revision 1.4, June 2021, p. 72. Gain, supply voltage, converter range and fluorescence signal quality.</p>",
+  "body_text": "For directly comparable raw fluorescence values, establish a suitable gain during assay development and usually keep it fixed across the run. Recalculating gain on each plate can change the reporting scale. Automatic range selection can still be appropriate when the reader reports values on a validated common scale or when the analysis has been shown to tolerate the change. Before combining plates, check whether the selected mode changed their reporting scale. [1]\n\nAutomatic gain can mean different operations\n\nAn automatic setup may inspect a reference well or scan a plate, choose one gain, then use it for the measurement. BMG LABTECH describes both selected-well and full-plate adjustment; in the latter, the strongest signal influences the chosen gain. A plate containing an unusually bright sample can therefore produce a different setting from a routine plate. [1]\n\nOther systems adjust ranges during acquisition and convert results to a common output scale. That conversion is part of the measurement method. Check the mode's documentation, export fields and behavior with standards rather than assuming that every option called “automatic” works alike.\n\nGain controls amplification, not the amount of light emitted by a sample. A numerical gain setting also need not be a linear multiplication factor: doubling the setting does not necessarily double the response. Tecan's Infinite 200 PRO manual relates gain to photomultiplier tube (PMT) supply voltage and the electrical range needed by its converter. [2]\n\nWhat plate normalization can cancel\n\nConsider a constructed example. On one plate, low controls, high controls and a sample read 100, 1,100 and 600 relative fluorescence units (RFU). The sample lies halfway between the controls. If a change of amplification doubles all three readings to 200, 2,200 and 1,200 RFU, the normalized position is still 50%, although the raw sample value doubled.\n\nThis cancellation works because the same linear scale change affects controls and sample. Saturation, unequal backgrounds, weak-signal noise or different gain behavior across wells can break that assumption. A satisfactory normalized control metric does not establish that low positives retain their precision.\n\nRatiometric assays need an additional check. Independently changing donor and acceptor gain can change their ratio unless the channel responses are calibrated onto the intended scale. Using simultaneous dual-emission detection aligns the observation times; it does not automatically correct a change in their relative amplification.\n\nChoose a setting with room for the samples you will encounter\n\nDuring development, include blanks, low positives, routine high controls and the brightest plausible sample. Test the selected gain across that range, allowing for expected plate-to-plate variation. Verify proportional response at the bright end and useful precision near the blank. An unusually fluorescent compound or a sample above the control range can still exceed the chosen window. [1,2]\n\nIf no fixed setting resolves the required range, investigate a validated broad-range mode, an alternative assay configuration or a predefined repeat-measurement procedure. Simply lowering gain until overflow disappears can sacrifice weak-signal resolution. Raising it to enlarge every number can compromise the bright end.\n\nRecord enough information to detect a change\n\nInclude common reference material and appropriate assay controls throughout the run. Save gain or range information, raw signals and normalization settings with every plate. Track changes in reference response and precision, and flag range transitions for review.\n\nTo qualify an automatic mode, challenge it with matched plates that differ in their brightest wells while sharing the same low and middle standards. Compare the shared standards' recovered response and variability. Balance assay age and temperature so those variables do not confound the comparison. Accept the automatic mode when those shared standards retain their recovered response and required precision across the challenge.\n\nReferences\n\n1. BMG LABTECH. How to optimise the gain setting of my microplate reader?. Gain selection, strongest-well adjustment and fixed-setting comparisons. Instrument-specific numerical settings and targeting percentages are not generalized.\n\n2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, p. 72. Gain, supply voltage, converter range and fluorescence signal quality.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For directly comparable raw fluorescence values, establish a suitable gain during assay development and usually keep it fixed across the run. Recalculating gain on each plate can change the reporting scale. Automatic range selection can still be appropriate when the reader reports values on a validated common scale or when the analysis has been shown to tolerate the change. Before combining plates, check whether the selected mode changed their reporting scale. [1]",
+          "html": "<p>For directly comparable raw fluorescence values, establish a suitable gain during assay development and usually keep it fixed across the run. Recalculating gain on each plate can change the reporting scale. Automatic range selection can still be appropriate when the reader reports values on a validated common scale or when the analysis has been shown to tolerate the change. Before combining plates, check whether the selected mode changed their reporting scale. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "automatic-gain-can-mean-different-operations",
+      "heading": "Automatic gain can mean different operations",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Automatic gain can mean different operations",
+          "html": "<h2 id=\"automatic-gain-can-mean-different-operations\">Automatic gain can mean different operations</h2>"
+        },
+        {
+          "type": "p",
+          "text": "An automatic setup may inspect a reference well or scan a plate, choose one gain, then use it for the measurement. BMG LABTECH describes both selected-well and full-plate adjustment; in the latter, the strongest signal influences the chosen gain. A plate containing an unusually bright sample can therefore produce a different setting from a routine plate. [1]",
+          "html": "<p>An automatic setup may inspect a reference well or scan a plate, choose one gain, then use it for the measurement. BMG LABTECH describes both selected-well and full-plate adjustment; in the latter, the strongest signal influences the chosen gain. A plate containing an unusually bright sample can therefore produce a different setting from a routine plate. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Other systems adjust ranges during acquisition and convert results to a common output scale. That conversion is part of the measurement method. Check the mode's documentation, export fields and behavior with standards rather than assuming that every option called “automatic” works alike.",
+          "html": "<p>Other systems adjust ranges during acquisition and convert results to a common output scale. That conversion is part of the measurement method. Check the mode's documentation, export fields and behavior with standards rather than assuming that every option called “automatic” works alike.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Gain controls amplification, not the amount of light emitted by a sample. A numerical gain setting also need not be a linear multiplication factor: doubling the setting does not necessarily double the response. Tecan's Infinite 200 PRO manual relates gain to photomultiplier tube (PMT) supply voltage and the electrical range needed by its converter. [2]",
+          "html": "<p>Gain controls amplification, not the amount of light emitted by a sample. A numerical gain setting also need not be a linear multiplication factor: doubling the setting does not necessarily double the response. Tecan's Infinite 200 PRO manual relates gain to photomultiplier tube (PMT) supply voltage and the electrical range needed by its converter. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-plate-normalization-can-cancel",
+      "heading": "What plate normalization can cancel",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What plate normalization can cancel",
+          "html": "<h2 id=\"what-plate-normalization-can-cancel\">What plate normalization can cancel</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Consider a constructed example. On one plate, low controls, high controls and a sample read 100, 1,100 and 600 relative fluorescence units (RFU). The sample lies halfway between the controls. If a change of amplification doubles all three readings to 200, 2,200 and 1,200 RFU, the normalized position is still 50%, although the raw sample value doubled.",
+          "html": "<p>Consider a constructed example. On one plate, low controls, high controls and a sample read 100, 1,100 and 600 relative fluorescence units (RFU). The sample lies halfway between the controls. If a change of amplification doubles all three readings to 200, 2,200 and 1,200 RFU, the normalized position is still 50%, although the raw sample value doubled.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This cancellation works because the same linear scale change affects controls and sample. Saturation, unequal backgrounds, weak-signal noise or different gain behavior across wells can break that assumption. A satisfactory normalized control metric does not establish that low positives retain their precision.",
+          "html": "<p>This cancellation works because the same linear scale change affects controls and sample. Saturation, unequal backgrounds, weak-signal noise or different gain behavior across wells can break that assumption. A satisfactory normalized control metric does not establish that low positives retain their precision.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Ratiometric assays need an additional check. Independently changing donor and acceptor gain can change their ratio unless the channel responses are calibrated onto the intended scale. Using simultaneous dual-emission detection aligns the observation times; it does not automatically correct a change in their relative amplification.",
+          "html": "<p>Ratiometric assays need an additional check. Independently changing donor and acceptor gain can change their ratio unless the channel responses are calibrated onto the intended scale. Using simultaneous dual-emission detection aligns the observation times; it does not automatically correct a change in their relative amplification.</p>"
+        }
+      ]
+    },
+    {
+      "id": "choose-a-setting-with-room-for-the-samples-you-will-encounter",
+      "heading": "Choose a setting with room for the samples you will encounter",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Choose a setting with room for the samples you will encounter",
+          "html": "<h2 id=\"choose-a-setting-with-room-for-the-samples-you-will-encounter\">Choose a setting with room for the samples you will encounter</h2>"
+        },
+        {
+          "type": "p",
+          "text": "During development, include blanks, low positives, routine high controls and the brightest plausible sample. Test the selected gain across that range, allowing for expected plate-to-plate variation. Verify proportional response at the bright end and useful precision near the blank. An unusually fluorescent compound or a sample above the control range can still exceed the chosen window. [1,2]",
+          "html": "<p>During development, include blanks, low positives, routine high controls and the brightest plausible sample. Test the selected gain across that range, allowing for expected plate-to-plate variation. Verify proportional response at the bright end and useful precision near the blank. An unusually fluorescent compound or a sample above the control range can still exceed the chosen window. [1,2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "If no fixed setting resolves the required range, investigate a validated broad-range mode, an alternative assay configuration or a predefined repeat-measurement procedure. Simply lowering gain until overflow disappears can sacrifice weak-signal resolution. Raising it to enlarge every number can compromise the bright end.",
+          "html": "<p>If no fixed setting resolves the required range, investigate a validated broad-range mode, an alternative assay configuration or a predefined repeat-measurement procedure. Simply lowering gain until overflow disappears can sacrifice weak-signal resolution. Raising it to enlarge every number can compromise the bright end.</p>"
+        }
+      ]
+    },
+    {
+      "id": "record-enough-information-to-detect-a-change",
+      "heading": "Record enough information to detect a change",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Record enough information to detect a change",
+          "html": "<h2 id=\"record-enough-information-to-detect-a-change\">Record enough information to detect a change</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Include common reference material and appropriate assay controls throughout the run. Save gain or range information, raw signals and normalization settings with every plate. Track changes in reference response and precision, and flag range transitions for review.",
+          "html": "<p>Include common reference material and appropriate assay controls throughout the run. Save gain or range information, raw signals and normalization settings with every plate. Track changes in reference response and precision, and flag range transitions for review.</p>"
+        },
+        {
+          "type": "p",
+          "text": "To qualify an automatic mode, challenge it with matched plates that differ in their brightest wells while sharing the same low and middle standards. Compare the shared standards' recovered response and variability. Balance assay age and temperature so those variables do not confound the comparison. Accept the automatic mode when those shared standards retain their recovered response and required precision across the challenge.",
+          "html": "<p>To qualify an automatic mode, challenge it with matched plates that differ in their brightest wells while sharing the same low and middle standards. Compare the shared standards' recovered response and variability. Balance assay age and temperature so those variables do not confound the comparison. Accept the automatic mode when those shared standards retain their recovered response and required precision across the challenge.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. BMG LABTECH. How to optimise the gain setting of my microplate reader?. Gain selection, strongest-well adjustment and fixed-setting comparisons. Instrument-specific numerical settings and targeting percentages are not generalized.",
+          "html": "<p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/howto-notes/how-to-optimise-the-gain-setting-of-my-microplate-reader/\">How to optimise the gain setting of my microplate reader?</a>. Gain selection, strongest-well adjustment and fixed-setting comparisons. Instrument-specific numerical settings and targeting percentages are not generalized.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, p. 72. Gain, supply voltage, converter range and fluorescence signal quality.",
+          "html": "<p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use</a>, revision 1.4, June 2021, p. 72. Gain, supply voltage, converter range and fluorescence signal quality.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. BMG LABTECH. How to optimise the gain setting of my microplate reader?. Gain selection, strongest-well adjustment and fixed-setting comparisons. Instrument-specific numerical settings and targeting percentages are not generalized.",
+      "urls": [
+        "https://www.bmglabtech.com/en/howto-notes/how-to-optimise-the-gain-setting-of-my-microplate-reader/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, p. 72. Gain, supply voltage, converter range and fluorescence signal quality.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "7bce74014bfae4f170ee35bca9a175b8fc1cb23d2569d9d445a5bc778c3d775b"
+}

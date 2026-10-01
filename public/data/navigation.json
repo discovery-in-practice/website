@@ -236,6 +236,70 @@
       "tags": [
         "plate-effects"
       ]
+    },
+    "fluorescence-intensity-read-height": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 110,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "pmt-gain-low-signal-fluorescence-cv": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 130,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "automatic-gain-screening-plates": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 110,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "fluorescence-bandwidth-sensitivity": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 140,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "filter-monochromator-same-wavelengths": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 120,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "dichroic-mirror-fluorescence-plate-reader": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 130,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "fluorescence-excitation-emission-wavelengths": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 150,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "top-vs-bottom-read-cell-fluorescence": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 160,
+      "tags": [
+        "fluorescence"
+      ]
     }
   },
   "groups": {

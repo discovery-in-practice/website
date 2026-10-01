@@ -86,8 +86,8 @@
       "Digital PCR",
       "Library QC"
     ],
-    "content_version": "1.1",
-    "content_sha256": "a724fb57851c5b930a6659d83e55737496a70a650f00c5c21bd01f06bc3dd4f3",
+    "content_version": "1.2",
+    "content_sha256": "0b66d41b3e416bcc483cedcf7e7e66234a7b7a001e427650a7658fd33e013005",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-28",
@@ -110,8 +110,8 @@
       "TR-FRET",
       "Target engagement"
     ],
-    "content_version": "1.1",
-    "content_sha256": "74659b0cc70c8d32e0580d6188de603d33b6a0851b350d556f39176413812012",
+    "content_version": "1.2",
+    "content_sha256": "39d567984befe209e98d5b0ee7ae4d4640e608990ed567c611d22eb4bd278a01",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-28",
@@ -134,8 +134,8 @@
       "Instrument selection",
       "Live-cell imaging"
     ],
-    "content_version": "1.1",
-    "content_sha256": "14ddbb45b617cdc730c50f42b43845db7f0e736778ca4a498f6bd328cfb1c409",
+    "content_version": "1.2",
+    "content_sha256": "21f6e8183c55b56568b2cb02ec26b81fe7b21f685801723a38f4f065450e49fc",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-28",
@@ -350,8 +350,8 @@
       "Plate readers",
       "Assay precision"
     ],
-    "content_version": "1.1",
-    "content_sha256": "22c97808695203b292b3544f85710b83113549a93254bd0752f42f198911e68e",
+    "content_version": "1.2",
+    "content_sha256": "5c28cb9f4d5f869056b56fb8dc10179dd057d55b72331a2c5ea55b965f7fefd0",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
@@ -373,8 +373,8 @@
       "Photon counting",
       "Detector linearity"
     ],
-    "content_version": "1.1",
-    "content_sha256": "55c914b8dcd0a20fe1a2ad901a45b65515a0f27c8e53ce8201729b008cf65d4e",
+    "content_version": "1.2",
+    "content_sha256": "b333dc0d88ba892afc3bf9ea481d9c7ded85df6c4797ba3e232527655136eb3b",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
@@ -396,8 +396,8 @@
       "Photon counting",
       "Luminescence"
     ],
-    "content_version": "1.1",
-    "content_sha256": "4884631b9db001b99a22cce0bdcfa8868023d49b3dabdbe49e75b610828d8db1",
+    "content_version": "1.2",
+    "content_sha256": "b8dc5a9769f7409a02e928fbada5b5bf876aa54af5397d554626db87992fae99",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
@@ -419,8 +419,8 @@
       "Background noise",
       "Detector linearity"
     ],
-    "content_version": "1.1",
-    "content_sha256": "a264ceff4f260c73f81e1eb710faa36856ce81b7bc4a68320ed7554cfa43e583",
+    "content_version": "1.2",
+    "content_sha256": "8e4469399a8b352fb08f0da1d8ce2a94590748d589c442b426643043bf83f055",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
@@ -442,8 +442,8 @@
       "Fluorescence",
       "Luminescence"
     ],
-    "content_version": "1.1",
-    "content_sha256": "767b155115ae2689c10cc5e05a98a66efe5960c405725e65bf4fcff165cf599d",
+    "content_version": "1.2",
+    "content_sha256": "b5b1103c89799672a23abf796cde61773029cc844826f40983abd94161ef35b9",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
@@ -464,8 +464,8 @@
       "Background noise",
       "Assay precision"
     ],
-    "content_version": "1.1",
-    "content_sha256": "85261c19d89d4dfe321c117ed78763cdefcf107e8cdc250c3fafcfbaab91a3ba",
+    "content_version": "1.2",
+    "content_sha256": "ffde488a7ed8c4c55a231f1b18c7c0f1c942e6f274ec9a252f0e56e1f5e588cb",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
@@ -487,13 +487,197 @@
       "Measurement & precision",
       "Assay preparation"
     ],
-    "content_version": "1.1",
-    "content_sha256": "780d6d9320c4897da64e86958bc7e89111907738cc42b2bd7d6bfa602382a12c",
+    "content_version": "1.2",
+    "content_sha256": "e4b62c9c685c13287aab5baba71225bc84cacebc6835631bb5cb92d73e1c167e",
     "publication_status": "published",
     "license": "CC-BY-4.0",
     "date_published": "2026-09-30",
     "date_modified": "2026-09-30",
     "json_url": "https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/repeat-reads-versus-replicate-wells/article.md"
+  },
+  {
+    "id": "fluorescence-intensity-read-height",
+    "title": "How much does read height matter in fluorescence intensity?",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-intensity-read-height/",
+    "summary": "Optimize fluorescence read height using blanks and weak samples, with practical checks for plate geometry, fill volume and top versus bottom reads.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Read height",
+      "Assay optimization"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "93e68e202ebf26e93a4a87150ac0c95576cc93e72d9eec98c7a52bc46757b7c4",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescence-intensity-read-height/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-intensity-read-height/article.md"
+  },
+  {
+    "id": "pmt-gain-low-signal-fluorescence-cv",
+    "title": "Why can increasing PMT gain make low-signal fluorescence CV worse?",
+    "canonical_url": "https://discoveryinpractice.com/articles/pmt-gain-low-signal-fluorescence-cv/",
+    "summary": "Why higher PMT gain can leave fluorescence precision unchanged or make it worse, with blank checks, gain tests and practical interpretation.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Assay precision",
+      "PMT gain"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "3f5b0bc4c52a7e871c6fc78c1001f688d174a05b6dfdc66f732fe985fe7a581c",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/pmt-gain-low-signal-fluorescence-cv/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/pmt-gain-low-signal-fluorescence-cv/article.md"
+  },
+  {
+    "id": "automatic-gain-screening-plates",
+    "title": "Should I use automatic gain on every plate in a screening run?",
+    "canonical_url": "https://discoveryinpractice.com/articles/automatic-gain-screening-plates/",
+    "summary": "When to keep plate reader gain fixed, when calibrated automatic range selection helps and how to check comparability across a screening run.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "PMT gain",
+      "Screening"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "7bce74014bfae4f170ee35bca9a175b8fc1cb23d2569d9d445a5bc778c3d775b",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/automatic-gain-screening-plates/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/automatic-gain-screening-plates/article.md"
+  },
+  {
+    "id": "fluorescence-bandwidth-sensitivity",
+    "title": "When does a wider fluorescence bandwidth improve sensitivity—and when does it make results worse?",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-bandwidth-sensitivity/",
+    "summary": "Learn when wider fluorescence bandwidth improves sensitivity, when it adds background and how to compare settings using weak samples and blanks.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Optics",
+      "Background noise"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "ef21daf4a70a4dd1adefbf2f4a920163d927805f45e7711735f3f840a35fe5ff",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescence-bandwidth-sensitivity/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-bandwidth-sensitivity/article.md"
+  },
+  {
+    "id": "filter-monochromator-same-wavelengths",
+    "title": "Why do filter and monochromator readers perform differently at the same nominal wavelengths?",
+    "canonical_url": "https://discoveryinpractice.com/articles/filter-monochromator-same-wavelengths/",
+    "summary": "Why matching wavelengths does not match plate reader performance, with bandwidth, blocking, dichroics and practical method-transfer checks.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Optics",
+      "Plate readers"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "65ce59e644585b6d76af8a8627eb272088957f55df3e456b807dce3282b1d75e",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/filter-monochromator-same-wavelengths/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/filter-monochromator-same-wavelengths/article.md"
+  },
+  {
+    "id": "dichroic-mirror-fluorescence-plate-reader",
+    "title": "What does a dichroic mirror change in a fluorescence measurement?",
+    "canonical_url": "https://discoveryinpractice.com/articles/dichroic-mirror-fluorescence-plate-reader/",
+    "summary": "How dichroic mirrors improve fluorescence light collection and excitation rejection, including monochromator optics and practical background checks.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Optics",
+      "Background noise"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "ff508873bd3cf07dbff20eeb8040aa7054e1201b8dc3555504e635e98c7b3ae3",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/dichroic-mirror-fluorescence-plate-reader/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/dichroic-mirror-fluorescence-plate-reader/article.md"
+  },
+  {
+    "id": "fluorescence-excitation-emission-wavelengths",
+    "title": "Should I always read at a fluorophore's published excitation and emission peaks?",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-excitation-emission-wavelengths/",
+    "summary": "Why published dye peaks are starting points, with FITC wavelengths, bandwidth overlap and practical tests using low positives and realistic blanks.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Optics",
+      "Assay optimization"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "6ac04ef2ee2e9d6b1d4438882f1501f2aeee4a3f3530ca7242814997f089d6d5",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescence-excitation-emission-wavelengths/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-excitation-emission-wavelengths/article.md"
+  },
+  {
+    "id": "top-vs-bottom-read-cell-fluorescence",
+    "title": "Top vs bottom read: which should I use for cell-based fluorescence?",
+    "canonical_url": "https://discoveryinpractice.com/articles/top-vs-bottom-read-cell-fluorescence/",
+    "summary": "Choose top or bottom plate reading using cell location, medium background, plate transmission and matched controls while preserving assay biology.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Cell-based assays",
+      "Microplates"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "9c790100521fc3ca61d32d721af9187001a7135cb51374bcad216f75a853a03a",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-01",
+    "date_modified": "2026-10-01",
+    "json_url": "https://discoveryinpractice.com/articles/top-vs-bottom-read-cell-fluorescence/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/top-vs-bottom-read-cell-fluorescence/article.md"
   }
 ]

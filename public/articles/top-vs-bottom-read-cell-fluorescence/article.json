@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "top-vs-bottom-read-cell-fluorescence",
+  "canonical_url": "https://discoveryinpractice.com/articles/top-vs-bottom-read-cell-fluorescence/",
+  "title": "Top vs bottom read: which should I use for cell-based fluorescence?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Choose top or bottom plate reading using cell location, medium background, plate transmission and matched controls while preserving assay biology.",
+  "takeaways": [
+    "Bottom reading can avoid much of the overlying medium",
+    "The transparent bottom is part of the optics",
+    "Compare useful separation at a realistic read time"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "Cell-based assays",
+    "Microplates"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-01",
+  "date_modified": "2026-10-01",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Bottom reading is often the better starting point for fluorescent reporters in adherent cells on a transparent well bottom, especially when the medium contributes substantial background. Top reading can work better when the signal is distributed through the liquid, the bottom transmits poorly at the required wavelengths, or the reader's top optics collect light more efficiently. Compare both reading directions with appropriate controls. [1,2]</p><h2 id=\"bottom-reading-can-avoid-much-of-the-overlying-medium\">Bottom reading can avoid much of the overlying medium</h2><p>With top reading, excitation aimed at an adherent cell layer passes through the overlying medium, and returning fluorescence travels through it again. Medium components can absorb, scatter or emit light along that path. Bottom reading accesses the cell layer through the plate base and can reduce those contributions.</p><p>BMG LABTECH's HowTo Note 04 tested adherent HeLa cells expressing a red fluorescent protein at 580 nm excitation and 620 nm emission. Bottom reading improved signal-to-blank relative to top reading, particularly with autofluorescent medium. [1] The result supports testing bottom optics under those conditions; it does not supply a universal improvement factor for every reporter or reader.</p><p>The cell layer still contributes its own autofluorescence. A cell-free medium blank cannot tell you how much signal comes from unlabeled cells. Include both controls before attributing all remaining fluorescence to the reporter.</p><h2 id=\"the-transparent-bottom-is-part-of-the-optics\">The transparent bottom is part of the optics</h2><p>Bottom reading requires transmission through the base at both excitation and emission wavelengths. “Clear” in visible room light does not establish ultraviolet transmission. Material, thickness, coatings and the reader's focal geometry all matter. The Assay Guidance Manual discusses these plate-selection constraints. [2]</p><p>For adherent cells, black-walled plates with an appropriate clear bottom are a practical fluorescence starting point. Preserve the surface treatment needed for attachment. Comparing plates with different coatings may change the cells as well as the light path. Inspect underside contamination, condensation and scratches when a few wells behave strangely.</p><p>Bottom optical paths differ in their efficiency. Ask how much light the bottom optical path delivers and collects at the relevant wavelengths, and whether it can focus appropriately on the cell layer. Manufacturer manuals, such as Tecan's Infinite 200 PRO instructions, specify different optical arrangements and settings for top and bottom modes. [3]</p><h2 id=\"compare-useful-separation-at-a-realistic-read-time\">Compare useful separation at a realistic read time</h2><p>Use the same compatible plate when possible, containing labeled cells, otherwise comparable unlabeled cells, medium-only wells and a stable fluorescent reference. Optimize each direction within the reader's supported settings, including focus where adjustable. Prevent saturation and record gain differences; larger raw relative fluorescence units (RFU) alone do not establish better sensitivity.</p><p>Inspect low-positive separation from negative controls, replicate scatter and position effects. Check weak wells beside bright wells for optical crosstalk. If repeated excitation changes the reporter, balance read order across replicate plates or use separate matched plates for the comparison.</p><p>Uneven cell attachment can dominate either read direction. Imaging or a validated well-scan pattern can reveal whether the central reading spot represents the cell layer. Repeatedly sampling one bright patch can produce precise readings that misrepresent the well.</p><h2 id=\"keep-the-biology-comparable\">Keep the biology comparable</h2><p>Reducing fluorescent medium components may help, but changing medium also changes the biological environment. Verify cell function after any substitution. Use the assay's validated temperature and control drift during the measurement sequence; live-cell biology may require incubation above room temperature. A room-temperature chamber is useful only when that temperature suits the assay endpoint.</p><p>Choose the direction that preserves the smallest relevant biological response at the required throughput, then repeat that comparison after changing the plate bottom, medium or reporter.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/hubfs/1_Webseite/5_Resources/Downloads/Howto%20Notes/HTN4.pdf\">How to reduce autofluorescence in cell-based assays</a>, HowTo Note 04, pp. 2–3. Adherent-cell top/bottom comparison and media effects; manufacturer experiment, not a universal performance ratio.</p><p id=\"ref-2\">2. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual. Archived full chapter; plate color, bottom material, surfaces and optical crosstalk.</p><p id=\"ref-3\">3. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use</a>, revision 1.4, June 2021. Fluorescence top/bottom optics and measurement-parameter guidance; instrument-specific details require the relevant reader manual.</p>",
+  "body_text": "Bottom reading is often the better starting point for fluorescent reporters in adherent cells on a transparent well bottom, especially when the medium contributes substantial background. Top reading can work better when the signal is distributed through the liquid, the bottom transmits poorly at the required wavelengths, or the reader's top optics collect light more efficiently. Compare both reading directions with appropriate controls. [1,2]\n\nBottom reading can avoid much of the overlying medium\n\nWith top reading, excitation aimed at an adherent cell layer passes through the overlying medium, and returning fluorescence travels through it again. Medium components can absorb, scatter or emit light along that path. Bottom reading accesses the cell layer through the plate base and can reduce those contributions.\n\nBMG LABTECH's HowTo Note 04 tested adherent HeLa cells expressing a red fluorescent protein at 580 nm excitation and 620 nm emission. Bottom reading improved signal-to-blank relative to top reading, particularly with autofluorescent medium. [1] The result supports testing bottom optics under those conditions; it does not supply a universal improvement factor for every reporter or reader.\n\nThe cell layer still contributes its own autofluorescence. A cell-free medium blank cannot tell you how much signal comes from unlabeled cells. Include both controls before attributing all remaining fluorescence to the reporter.\n\nThe transparent bottom is part of the optics\n\nBottom reading requires transmission through the base at both excitation and emission wavelengths. “Clear” in visible room light does not establish ultraviolet transmission. Material, thickness, coatings and the reader's focal geometry all matter. The Assay Guidance Manual discusses these plate-selection constraints. [2]\n\nFor adherent cells, black-walled plates with an appropriate clear bottom are a practical fluorescence starting point. Preserve the surface treatment needed for attachment. Comparing plates with different coatings may change the cells as well as the light path. Inspect underside contamination, condensation and scratches when a few wells behave strangely.\n\nBottom optical paths differ in their efficiency. Ask how much light the bottom optical path delivers and collects at the relevant wavelengths, and whether it can focus appropriately on the cell layer. Manufacturer manuals, such as Tecan's Infinite 200 PRO instructions, specify different optical arrangements and settings for top and bottom modes. [3]\n\nCompare useful separation at a realistic read time\n\nUse the same compatible plate when possible, containing labeled cells, otherwise comparable unlabeled cells, medium-only wells and a stable fluorescent reference. Optimize each direction within the reader's supported settings, including focus where adjustable. Prevent saturation and record gain differences; larger raw relative fluorescence units (RFU) alone do not establish better sensitivity.\n\nInspect low-positive separation from negative controls, replicate scatter and position effects. Check weak wells beside bright wells for optical crosstalk. If repeated excitation changes the reporter, balance read order across replicate plates or use separate matched plates for the comparison.\n\nUneven cell attachment can dominate either read direction. Imaging or a validated well-scan pattern can reveal whether the central reading spot represents the cell layer. Repeatedly sampling one bright patch can produce precise readings that misrepresent the well.\n\nKeep the biology comparable\n\nReducing fluorescent medium components may help, but changing medium also changes the biological environment. Verify cell function after any substitution. Use the assay's validated temperature and control drift during the measurement sequence; live-cell biology may require incubation above room temperature. A room-temperature chamber is useful only when that temperature suits the assay endpoint.\n\nChoose the direction that preserves the smallest relevant biological response at the required throughput, then repeat that comparison after changing the plate bottom, medium or reporter.\n\nReferences\n\n1. BMG LABTECH. How to reduce autofluorescence in cell-based assays, HowTo Note 04, pp. 2–3. Adherent-cell top/bottom comparison and media effects; manufacturer experiment, not a universal performance ratio.\n\n2. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Archived full chapter; plate color, bottom material, surfaces and optical crosstalk.\n\n3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021. Fluorescence top/bottom optics and measurement-parameter guidance; instrument-specific details require the relevant reader manual.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Bottom reading is often the better starting point for fluorescent reporters in adherent cells on a transparent well bottom, especially when the medium contributes substantial background. Top reading can work better when the signal is distributed through the liquid, the bottom transmits poorly at the required wavelengths, or the reader's top optics collect light more efficiently. Compare both reading directions with appropriate controls. [1,2]",
+          "html": "<p>Bottom reading is often the better starting point for fluorescent reporters in adherent cells on a transparent well bottom, especially when the medium contributes substantial background. Top reading can work better when the signal is distributed through the liquid, the bottom transmits poorly at the required wavelengths, or the reader's top optics collect light more efficiently. Compare both reading directions with appropriate controls. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "bottom-reading-can-avoid-much-of-the-overlying-medium",
+      "heading": "Bottom reading can avoid much of the overlying medium",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Bottom reading can avoid much of the overlying medium",
+          "html": "<h2 id=\"bottom-reading-can-avoid-much-of-the-overlying-medium\">Bottom reading can avoid much of the overlying medium</h2>"
+        },
+        {
+          "type": "p",
+          "text": "With top reading, excitation aimed at an adherent cell layer passes through the overlying medium, and returning fluorescence travels through it again. Medium components can absorb, scatter or emit light along that path. Bottom reading accesses the cell layer through the plate base and can reduce those contributions.",
+          "html": "<p>With top reading, excitation aimed at an adherent cell layer passes through the overlying medium, and returning fluorescence travels through it again. Medium components can absorb, scatter or emit light along that path. Bottom reading accesses the cell layer through the plate base and can reduce those contributions.</p>"
+        },
+        {
+          "type": "p",
+          "text": "BMG LABTECH's HowTo Note 04 tested adherent HeLa cells expressing a red fluorescent protein at 580 nm excitation and 620 nm emission. Bottom reading improved signal-to-blank relative to top reading, particularly with autofluorescent medium. [1] The result supports testing bottom optics under those conditions; it does not supply a universal improvement factor for every reporter or reader.",
+          "html": "<p>BMG LABTECH's HowTo Note 04 tested adherent HeLa cells expressing a red fluorescent protein at 580 nm excitation and 620 nm emission. Bottom reading improved signal-to-blank relative to top reading, particularly with autofluorescent medium. [1] The result supports testing bottom optics under those conditions; it does not supply a universal improvement factor for every reporter or reader.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The cell layer still contributes its own autofluorescence. A cell-free medium blank cannot tell you how much signal comes from unlabeled cells. Include both controls before attributing all remaining fluorescence to the reporter.",
+          "html": "<p>The cell layer still contributes its own autofluorescence. A cell-free medium blank cannot tell you how much signal comes from unlabeled cells. Include both controls before attributing all remaining fluorescence to the reporter.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-transparent-bottom-is-part-of-the-optics",
+      "heading": "The transparent bottom is part of the optics",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The transparent bottom is part of the optics",
+          "html": "<h2 id=\"the-transparent-bottom-is-part-of-the-optics\">The transparent bottom is part of the optics</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Bottom reading requires transmission through the base at both excitation and emission wavelengths. “Clear” in visible room light does not establish ultraviolet transmission. Material, thickness, coatings and the reader's focal geometry all matter. The Assay Guidance Manual discusses these plate-selection constraints. [2]",
+          "html": "<p>Bottom reading requires transmission through the base at both excitation and emission wavelengths. “Clear” in visible room light does not establish ultraviolet transmission. Material, thickness, coatings and the reader's focal geometry all matter. The Assay Guidance Manual discusses these plate-selection constraints. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For adherent cells, black-walled plates with an appropriate clear bottom are a practical fluorescence starting point. Preserve the surface treatment needed for attachment. Comparing plates with different coatings may change the cells as well as the light path. Inspect underside contamination, condensation and scratches when a few wells behave strangely.",
+          "html": "<p>For adherent cells, black-walled plates with an appropriate clear bottom are a practical fluorescence starting point. Preserve the surface treatment needed for attachment. Comparing plates with different coatings may change the cells as well as the light path. Inspect underside contamination, condensation and scratches when a few wells behave strangely.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Bottom optical paths differ in their efficiency. Ask how much light the bottom optical path delivers and collects at the relevant wavelengths, and whether it can focus appropriately on the cell layer. Manufacturer manuals, such as Tecan's Infinite 200 PRO instructions, specify different optical arrangements and settings for top and bottom modes. [3]",
+          "html": "<p>Bottom optical paths differ in their efficiency. Ask how much light the bottom optical path delivers and collects at the relevant wavelengths, and whether it can focus appropriately on the cell layer. Manufacturer manuals, such as Tecan's Infinite 200 PRO instructions, specify different optical arrangements and settings for top and bottom modes. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-useful-separation-at-a-realistic-read-time",
+      "heading": "Compare useful separation at a realistic read time",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare useful separation at a realistic read time",
+          "html": "<h2 id=\"compare-useful-separation-at-a-realistic-read-time\">Compare useful separation at a realistic read time</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use the same compatible plate when possible, containing labeled cells, otherwise comparable unlabeled cells, medium-only wells and a stable fluorescent reference. Optimize each direction within the reader's supported settings, including focus where adjustable. Prevent saturation and record gain differences; larger raw relative fluorescence units (RFU) alone do not establish better sensitivity.",
+          "html": "<p>Use the same compatible plate when possible, containing labeled cells, otherwise comparable unlabeled cells, medium-only wells and a stable fluorescent reference. Optimize each direction within the reader's supported settings, including focus where adjustable. Prevent saturation and record gain differences; larger raw relative fluorescence units (RFU) alone do not establish better sensitivity.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Inspect low-positive separation from negative controls, replicate scatter and position effects. Check weak wells beside bright wells for optical crosstalk. If repeated excitation changes the reporter, balance read order across replicate plates or use separate matched plates for the comparison.",
+          "html": "<p>Inspect low-positive separation from negative controls, replicate scatter and position effects. Check weak wells beside bright wells for optical crosstalk. If repeated excitation changes the reporter, balance read order across replicate plates or use separate matched plates for the comparison.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Uneven cell attachment can dominate either read direction. Imaging or a validated well-scan pattern can reveal whether the central reading spot represents the cell layer. Repeatedly sampling one bright patch can produce precise readings that misrepresent the well.",
+          "html": "<p>Uneven cell attachment can dominate either read direction. Imaging or a validated well-scan pattern can reveal whether the central reading spot represents the cell layer. Repeatedly sampling one bright patch can produce precise readings that misrepresent the well.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-the-biology-comparable",
+      "heading": "Keep the biology comparable",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep the biology comparable",
+          "html": "<h2 id=\"keep-the-biology-comparable\">Keep the biology comparable</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Reducing fluorescent medium components may help, but changing medium also changes the biological environment. Verify cell function after any substitution. Use the assay's validated temperature and control drift during the measurement sequence; live-cell biology may require incubation above room temperature. A room-temperature chamber is useful only when that temperature suits the assay endpoint.",
+          "html": "<p>Reducing fluorescent medium components may help, but changing medium also changes the biological environment. Verify cell function after any substitution. Use the assay's validated temperature and control drift during the measurement sequence; live-cell biology may require incubation above room temperature. A room-temperature chamber is useful only when that temperature suits the assay endpoint.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Choose the direction that preserves the smallest relevant biological response at the required throughput, then repeat that comparison after changing the plate bottom, medium or reporter.",
+          "html": "<p>Choose the direction that preserves the smallest relevant biological response at the required throughput, then repeat that comparison after changing the plate bottom, medium or reporter.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. BMG LABTECH. How to reduce autofluorescence in cell-based assays, HowTo Note 04, pp. 2–3. Adherent-cell top/bottom comparison and media effects; manufacturer experiment, not a universal performance ratio.",
+          "html": "<p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/hubfs/1_Webseite/5_Resources/Downloads/Howto%20Notes/HTN4.pdf\">How to reduce autofluorescence in cell-based assays</a>, HowTo Note 04, pp. 2–3. Adherent-cell top/bottom comparison and media effects; manufacturer experiment, not a universal performance ratio.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Archived full chapter; plate color, bottom material, surfaces and optical crosstalk.",
+          "html": "<p id=\"ref-2\">2. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual. Archived full chapter; plate color, bottom material, surfaces and optical crosstalk.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021. Fluorescence top/bottom optics and measurement-parameter guidance; instrument-specific details require the relevant reader manual.",
+          "html": "<p id=\"ref-3\">3. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use</a>, revision 1.4, June 2021. Fluorescence top/bottom optics and measurement-parameter guidance; instrument-specific details require the relevant reader manual.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. BMG LABTECH. How to reduce autofluorescence in cell-based assays, HowTo Note 04, pp. 2–3. Adherent-cell top/bottom comparison and media effects; manufacturer experiment, not a universal performance ratio.",
+      "urls": [
+        "https://www.bmglabtech.com/hubfs/1_Webseite/5_Resources/Downloads/Howto%20Notes/HTN4.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Archived full chapter; plate color, bottom material, surfaces and optical crosstalk.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558077/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021. Fluorescence top/bottom optics and measurement-parameter guidance; instrument-specific details require the relevant reader manual.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "9c790100521fc3ca61d32d721af9187001a7135cb51374bcad216f75a853a03a"
+}

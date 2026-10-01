@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "fluorescence-intensity-read-height",
+  "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-intensity-read-height/",
+  "title": "How much does read height matter in fluorescence intensity?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Optimize fluorescence read height using blanks and weak samples, with practical checks for plate geometry, fill volume and top versus bottom reads.",
+  "takeaways": [
+    "Start with the location of the fluorescence",
+    "Published height settings need their reference point",
+    "Watch the blank while you move the focus"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "Read height",
+    "Assay optimization"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-01",
+  "date_modified": "2026-10-01",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Move the read height in a fluorescence assay and the signal may change substantially: the excitation and collection optics now overlap the sample and background differently. The useful setting depends on plate geometry, fill volume, sample location and reader design. Optimize with matrix-matched blanks and representative weak samples. The height that gives the largest raw signal may not give the best low-concentration measurement. [1,2]</p><h2 id=\"start-with-the-location-of-the-fluorescence\">Start with the location of the fluorescence</h2><p>In a homogeneous solution, fluorophore occupies the liquid volume. In an adherent-cell assay, much of the relevant fluorescence may be concentrated near the bottom. The meniscus, liquid depth and plate walls affect the optical path. BMG LABTECH's fluorescence guidance specifically distinguishes solution measurements from samples such as adherent cells when discussing focal height. [1]</p><p>Top versus bottom reading is a separate choice from focal-height optimization. Bottom reading through a suitable clear base can favor a cell layer near that base, while the plastic and medium can contribute background. A top-read height that works for a soluble dye should not be assumed to work for an adherent-cell assay.</p><p>Moving to a different fill volume changes the sample's depth and surface position. Moving to a different plate can change the bottom position, well shape or optical properties. Recheck the height when either changes materially.</p><h2 id=\"published-height-settings-need-their-reference-point\">Published height settings need their reference point</h2><p>Tecan's 2011 technical note for the Infinite M1000 and F500 shows that optimum height varies with plate format and fill volume. Its procedure measures a signal well and a blank during height optimization. Use both types of well when checking a height setting on another instrument. [2]</p><p>The note includes a default coordinate of 20,000 µm. That is an instrument setting, not a portable instruction to focus 20 mm above the liquid. Before copying a height value, establish its reference plane and whether it describes the optics position or a focal plane within the sample.</p><p>The published F500 fluorescein configuration used excitation centered at 485 nm with a 20 nm bandwidth and emission centered at 535 nm with a 25 nm bandwidth. These settings identify the historical experiment; they do not prescribe a universal fluorescein protocol or height. [2]</p><h2 id=\"watch-the-blank-while-you-move-the-focus\">Watch the blank while you move the focus</h2><p>Consider an illustrative pair of settings. At the first, a sample gives 1,000 relative fluorescence units (RFU) and its matched blank gives 900 RFU, leaving 100 RFU after subtraction. At the second, the sample gives 800 RFU and the blank gives 100 RFU, leaving 700 RFU. The brightest raw sample reading has the smaller net response.</p><p>This arithmetic alone cannot select the better measurement. You still need replicate variability, a concentration series and acceptable low-positive recovery. A large signal-to-background ratio can also be misleading when its blank denominator is extremely small or unstable.</p><h2 id=\"run-a-height-scan-that-resembles-the-assay\">Run a height scan that resembles the assay</h2><p>Use the actual plate, working volume and sample matrix. Include matched blanks and low, middle and bright responses. Keep gain, wavelengths, bandwidths and acquisition timing fixed during the scan, within the manufacturer's permitted height range. Check that none of the bright samples reaches a nonlinear response.</p><p>For a homogeneous assay, prepare independent replicate wells rather than choosing a single unusually bright well as the focus standard. For cells, include the intended cell distribution and controls. Inspect representative center and edge positions; a setting established in one well may miss plate tilt, warping or position-dependent behavior.</p><p>Choose a setting that preserves low-positive precision and useful response across the required range. With a narrow optimum, small variations in dispensing volume or plate position could move routine samples away from the chosen focus. Recheck the chosen setting over the expected volume tolerance and plate lots.</p><p>Record height with its instrument reference, along with read direction, plate identity, volume and optical bands. Include the instrument model and software definition of height so the next scientist can reproduce the measurement.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/fluorescence-intensity/\">Fluorescence intensity</a>, focal-height section. Sample location, fill volume and sensitivity. No universal percentage improvement is inferred.</p><p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/HubDB/Te-DocDB/pdf/TN_Maximize_signal_to_blank_intensity_ratios_M1000_F500_396815_V1.pdf\">Maximize signal to blank intensity ratios</a>, technical note 396815 V1.0, August 2011, pp. 1–4. Infinite M1000/F500 height optimization and optical settings. Historical, configuration-specific evidence.</p>",
+  "body_text": "Move the read height in a fluorescence assay and the signal may change substantially: the excitation and collection optics now overlap the sample and background differently. The useful setting depends on plate geometry, fill volume, sample location and reader design. Optimize with matrix-matched blanks and representative weak samples. The height that gives the largest raw signal may not give the best low-concentration measurement. [1,2]\n\nStart with the location of the fluorescence\n\nIn a homogeneous solution, fluorophore occupies the liquid volume. In an adherent-cell assay, much of the relevant fluorescence may be concentrated near the bottom. The meniscus, liquid depth and plate walls affect the optical path. BMG LABTECH's fluorescence guidance specifically distinguishes solution measurements from samples such as adherent cells when discussing focal height. [1]\n\nTop versus bottom reading is a separate choice from focal-height optimization. Bottom reading through a suitable clear base can favor a cell layer near that base, while the plastic and medium can contribute background. A top-read height that works for a soluble dye should not be assumed to work for an adherent-cell assay.\n\nMoving to a different fill volume changes the sample's depth and surface position. Moving to a different plate can change the bottom position, well shape or optical properties. Recheck the height when either changes materially.\n\nPublished height settings need their reference point\n\nTecan's 2011 technical note for the Infinite M1000 and F500 shows that optimum height varies with plate format and fill volume. Its procedure measures a signal well and a blank during height optimization. Use both types of well when checking a height setting on another instrument. [2]\n\nThe note includes a default coordinate of 20,000 µm. That is an instrument setting, not a portable instruction to focus 20 mm above the liquid. Before copying a height value, establish its reference plane and whether it describes the optics position or a focal plane within the sample.\n\nThe published F500 fluorescein configuration used excitation centered at 485 nm with a 20 nm bandwidth and emission centered at 535 nm with a 25 nm bandwidth. These settings identify the historical experiment; they do not prescribe a universal fluorescein protocol or height. [2]\n\nWatch the blank while you move the focus\n\nConsider an illustrative pair of settings. At the first, a sample gives 1,000 relative fluorescence units (RFU) and its matched blank gives 900 RFU, leaving 100 RFU after subtraction. At the second, the sample gives 800 RFU and the blank gives 100 RFU, leaving 700 RFU. The brightest raw sample reading has the smaller net response.\n\nThis arithmetic alone cannot select the better measurement. You still need replicate variability, a concentration series and acceptable low-positive recovery. A large signal-to-background ratio can also be misleading when its blank denominator is extremely small or unstable.\n\nRun a height scan that resembles the assay\n\nUse the actual plate, working volume and sample matrix. Include matched blanks and low, middle and bright responses. Keep gain, wavelengths, bandwidths and acquisition timing fixed during the scan, within the manufacturer's permitted height range. Check that none of the bright samples reaches a nonlinear response.\n\nFor a homogeneous assay, prepare independent replicate wells rather than choosing a single unusually bright well as the focus standard. For cells, include the intended cell distribution and controls. Inspect representative center and edge positions; a setting established in one well may miss plate tilt, warping or position-dependent behavior.\n\nChoose a setting that preserves low-positive precision and useful response across the required range. With a narrow optimum, small variations in dispensing volume or plate position could move routine samples away from the chosen focus. Recheck the chosen setting over the expected volume tolerance and plate lots.\n\nRecord height with its instrument reference, along with read direction, plate identity, volume and optical bands. Include the instrument model and software definition of height so the next scientist can reproduce the measurement.\n\nReferences\n\n1. BMG LABTECH. Fluorescence intensity, focal-height section. Sample location, fill volume and sensitivity. No universal percentage improvement is inferred.\n\n2. Tecan. Maximize signal to blank intensity ratios, technical note 396815 V1.0, August 2011, pp. 1–4. Infinite M1000/F500 height optimization and optical settings. Historical, configuration-specific evidence.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Move the read height in a fluorescence assay and the signal may change substantially: the excitation and collection optics now overlap the sample and background differently. The useful setting depends on plate geometry, fill volume, sample location and reader design. Optimize with matrix-matched blanks and representative weak samples. The height that gives the largest raw signal may not give the best low-concentration measurement. [1,2]",
+          "html": "<p>Move the read height in a fluorescence assay and the signal may change substantially: the excitation and collection optics now overlap the sample and background differently. The useful setting depends on plate geometry, fill volume, sample location and reader design. Optimize with matrix-matched blanks and representative weak samples. The height that gives the largest raw signal may not give the best low-concentration measurement. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "start-with-the-location-of-the-fluorescence",
+      "heading": "Start with the location of the fluorescence",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Start with the location of the fluorescence",
+          "html": "<h2 id=\"start-with-the-location-of-the-fluorescence\">Start with the location of the fluorescence</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In a homogeneous solution, fluorophore occupies the liquid volume. In an adherent-cell assay, much of the relevant fluorescence may be concentrated near the bottom. The meniscus, liquid depth and plate walls affect the optical path. BMG LABTECH's fluorescence guidance specifically distinguishes solution measurements from samples such as adherent cells when discussing focal height. [1]",
+          "html": "<p>In a homogeneous solution, fluorophore occupies the liquid volume. In an adherent-cell assay, much of the relevant fluorescence may be concentrated near the bottom. The meniscus, liquid depth and plate walls affect the optical path. BMG LABTECH's fluorescence guidance specifically distinguishes solution measurements from samples such as adherent cells when discussing focal height. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Top versus bottom reading is a separate choice from focal-height optimization. Bottom reading through a suitable clear base can favor a cell layer near that base, while the plastic and medium can contribute background. A top-read height that works for a soluble dye should not be assumed to work for an adherent-cell assay.",
+          "html": "<p>Top versus bottom reading is a separate choice from focal-height optimization. Bottom reading through a suitable clear base can favor a cell layer near that base, while the plastic and medium can contribute background. A top-read height that works for a soluble dye should not be assumed to work for an adherent-cell assay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Moving to a different fill volume changes the sample's depth and surface position. Moving to a different plate can change the bottom position, well shape or optical properties. Recheck the height when either changes materially.",
+          "html": "<p>Moving to a different fill volume changes the sample's depth and surface position. Moving to a different plate can change the bottom position, well shape or optical properties. Recheck the height when either changes materially.</p>"
+        }
+      ]
+    },
+    {
+      "id": "published-height-settings-need-their-reference-point",
+      "heading": "Published height settings need their reference point",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Published height settings need their reference point",
+          "html": "<h2 id=\"published-height-settings-need-their-reference-point\">Published height settings need their reference point</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Tecan's 2011 technical note for the Infinite M1000 and F500 shows that optimum height varies with plate format and fill volume. Its procedure measures a signal well and a blank during height optimization. Use both types of well when checking a height setting on another instrument. [2]",
+          "html": "<p>Tecan's 2011 technical note for the Infinite M1000 and F500 shows that optimum height varies with plate format and fill volume. Its procedure measures a signal well and a blank during height optimization. Use both types of well when checking a height setting on another instrument. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The note includes a default coordinate of 20,000 µm. That is an instrument setting, not a portable instruction to focus 20 mm above the liquid. Before copying a height value, establish its reference plane and whether it describes the optics position or a focal plane within the sample.",
+          "html": "<p>The note includes a default coordinate of 20,000 µm. That is an instrument setting, not a portable instruction to focus 20 mm above the liquid. Before copying a height value, establish its reference plane and whether it describes the optics position or a focal plane within the sample.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The published F500 fluorescein configuration used excitation centered at 485 nm with a 20 nm bandwidth and emission centered at 535 nm with a 25 nm bandwidth. These settings identify the historical experiment; they do not prescribe a universal fluorescein protocol or height. [2]",
+          "html": "<p>The published F500 fluorescein configuration used excitation centered at 485 nm with a 20 nm bandwidth and emission centered at 535 nm with a 25 nm bandwidth. These settings identify the historical experiment; they do not prescribe a universal fluorescein protocol or height. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "watch-the-blank-while-you-move-the-focus",
+      "heading": "Watch the blank while you move the focus",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Watch the blank while you move the focus",
+          "html": "<h2 id=\"watch-the-blank-while-you-move-the-focus\">Watch the blank while you move the focus</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Consider an illustrative pair of settings. At the first, a sample gives 1,000 relative fluorescence units (RFU) and its matched blank gives 900 RFU, leaving 100 RFU after subtraction. At the second, the sample gives 800 RFU and the blank gives 100 RFU, leaving 700 RFU. The brightest raw sample reading has the smaller net response.",
+          "html": "<p>Consider an illustrative pair of settings. At the first, a sample gives 1,000 relative fluorescence units (RFU) and its matched blank gives 900 RFU, leaving 100 RFU after subtraction. At the second, the sample gives 800 RFU and the blank gives 100 RFU, leaving 700 RFU. The brightest raw sample reading has the smaller net response.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This arithmetic alone cannot select the better measurement. You still need replicate variability, a concentration series and acceptable low-positive recovery. A large signal-to-background ratio can also be misleading when its blank denominator is extremely small or unstable.",
+          "html": "<p>This arithmetic alone cannot select the better measurement. You still need replicate variability, a concentration series and acceptable low-positive recovery. A large signal-to-background ratio can also be misleading when its blank denominator is extremely small or unstable.</p>"
+        }
+      ]
+    },
+    {
+      "id": "run-a-height-scan-that-resembles-the-assay",
+      "heading": "Run a height scan that resembles the assay",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Run a height scan that resembles the assay",
+          "html": "<h2 id=\"run-a-height-scan-that-resembles-the-assay\">Run a height scan that resembles the assay</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use the actual plate, working volume and sample matrix. Include matched blanks and low, middle and bright responses. Keep gain, wavelengths, bandwidths and acquisition timing fixed during the scan, within the manufacturer's permitted height range. Check that none of the bright samples reaches a nonlinear response.",
+          "html": "<p>Use the actual plate, working volume and sample matrix. Include matched blanks and low, middle and bright responses. Keep gain, wavelengths, bandwidths and acquisition timing fixed during the scan, within the manufacturer's permitted height range. Check that none of the bright samples reaches a nonlinear response.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a homogeneous assay, prepare independent replicate wells rather than choosing a single unusually bright well as the focus standard. For cells, include the intended cell distribution and controls. Inspect representative center and edge positions; a setting established in one well may miss plate tilt, warping or position-dependent behavior.",
+          "html": "<p>For a homogeneous assay, prepare independent replicate wells rather than choosing a single unusually bright well as the focus standard. For cells, include the intended cell distribution and controls. Inspect representative center and edge positions; a setting established in one well may miss plate tilt, warping or position-dependent behavior.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Choose a setting that preserves low-positive precision and useful response across the required range. With a narrow optimum, small variations in dispensing volume or plate position could move routine samples away from the chosen focus. Recheck the chosen setting over the expected volume tolerance and plate lots.",
+          "html": "<p>Choose a setting that preserves low-positive precision and useful response across the required range. With a narrow optimum, small variations in dispensing volume or plate position could move routine samples away from the chosen focus. Recheck the chosen setting over the expected volume tolerance and plate lots.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Record height with its instrument reference, along with read direction, plate identity, volume and optical bands. Include the instrument model and software definition of height so the next scientist can reproduce the measurement.",
+          "html": "<p>Record height with its instrument reference, along with read direction, plate identity, volume and optical bands. Include the instrument model and software definition of height so the next scientist can reproduce the measurement.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. BMG LABTECH. Fluorescence intensity, focal-height section. Sample location, fill volume and sensitivity. No universal percentage improvement is inferred.",
+          "html": "<p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/fluorescence-intensity/\">Fluorescence intensity</a>, focal-height section. Sample location, fill volume and sensitivity. No universal percentage improvement is inferred.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Tecan. Maximize signal to blank intensity ratios, technical note 396815 V1.0, August 2011, pp. 1–4. Infinite M1000/F500 height optimization and optical settings. Historical, configuration-specific evidence.",
+          "html": "<p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/HubDB/Te-DocDB/pdf/TN_Maximize_signal_to_blank_intensity_ratios_M1000_F500_396815_V1.pdf\">Maximize signal to blank intensity ratios</a>, technical note 396815 V1.0, August 2011, pp. 1–4. Infinite M1000/F500 height optimization and optical settings. Historical, configuration-specific evidence.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. BMG LABTECH. Fluorescence intensity, focal-height section. Sample location, fill volume and sensitivity. No universal percentage improvement is inferred.",
+      "urls": [
+        "https://www.bmglabtech.com/en/fluorescence-intensity/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Tecan. Maximize signal to blank intensity ratios, technical note 396815 V1.0, August 2011, pp. 1–4. Infinite M1000/F500 height optimization and optical settings. Historical, configuration-specific evidence.",
+      "urls": [
+        "https://www.tecan.com/hubfs/HubDB/Te-DocDB/pdf/TN_Maximize_signal_to_blank_intensity_ratios_M1000_F500_396815_V1.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "93e68e202ebf26e93a4a87150ac0c95576cc93e72d9eec98c7a52bc46757b7c4"
+}

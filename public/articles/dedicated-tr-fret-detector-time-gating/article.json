@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "dedicated-tr-fret-detector-time-gating",
+  "canonical_url": "https://discoveryinpractice.com/articles/dedicated-tr-fret-detector-time-gating/",
+  "title": "What does a dedicated TR-FRET detector add beyond time-gating a general-purpose PMT?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Understand detector recovery, delayed background, spectral sensitivity and linearity when evaluating dedicated TR-FRET detection and laser excitation.",
+  "takeaways": [
+    "What happens before the collection window opens?",
+    "Good excitation and good detection have to work together",
+    "Evaluate the complete delayed measurement"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "TR-FRET",
+    "Optics",
+    "Detector linearity"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-02",
+  "date_modified": "2026-10-02",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A dedicated time-resolved Förster resonance energy transfer (TR-FRET) detector path can be optimized to measure weak delayed emission after an intense excitation pulse. Compare spectral sensitivity, prompt-pulse suppression, recovery behavior, noise and linearity. A delayed acquisition window specifies when data are collected; it does not, by itself, establish what happened to the detector before that window opened. [1]</p><h2 id=\"what-happens-before-the-collection-window-opens\">What happens before the collection window opens?</h2><p>A photomultiplier tube (PMT) may receive a large burst of stray excitation or prompt fluorescence before the desired delayed signal. Hamamatsu explains that this can saturate the PMT or subsequent circuits and describes electronic gating that suppresses response during unwanted intervals. [1] A software delay that discards early output does not necessarily prevent that exposure. Readers implement timing and protection differently, so ask how the actual detection path works.</p><p>Afterpulses are another detector-specific concern. Hamamatsu describes spurious pulses following a preceding signal, including mechanisms operating from nanoseconds into microseconds. [1] Those times should not be stretched into a blanket explanation for every high-background assay collected tens or hundreds of microseconds later. Establish the delay dependence and the instrument's recovery behavior before assigning the cause.</p><p>An optimized detector is valuable when these characteristics improve the measurement in the chosen time window. The word “dedicated” is not itself a sensitivity specification. BMG LABTECH, for example, describes a separate matched PMT pair optimized for time-resolved fluorescence and TR-FRET in the PHERAstar FSX. [2] Use assay controls to establish what that architecture delivers at the required read time.</p><h2 id=\"good-excitation-and-good-detection-have-to-work-together\">Good excitation and good detection have to work together</h2><p>For common europium-based homogeneous time-resolved fluorescence (HTRF), donor and acceptor emissions are measured near 620 nm and 665 nm. After suitable ultraviolet excitation, the donor continues emitting long enough for delayed collection to suppress much of the prompt fluorescence. Revvity's technical booklet discusses excitation-source choice as well as this time discrimination. [3]</p><p>A suitable pulsed laser can deliver more useful excitation to the donor, helping weak assays collect sufficient photons in a practical read time. Efficient delayed detection must then collect those photons without a disproportionate rise in background or nonlinear response. The stronger pulse also makes optical rejection and detector protection worth checking.</p><p>Optical rejection matters before the electronics apply any correction. Removing an average background cannot undo detector overload, and subtraction does not remove the photon noise of unwanted light that was collected. Check spectral leakage within a well separately from optical crosstalk between wells. Both can compromise a weak acceptor channel.</p><h2 id=\"evaluate-the-complete-delayed-measurement\">Evaluate the complete delayed measurement</h2><p>Compare matched assay plates using reagent blanks, donor-only controls, acceptor-only controls and low and high assay controls. Scan delay and collection-window duration in microseconds (µs), recording pulse count and total read time in seconds (s). Preserve raw donor and acceptor values.</p><p>At very short delays, prompt leakage or recovery may dominate. At longer delays, useful donor emission has also decayed. A lower blank at a longer delay is helpful only if the assay retains adequate precision and separation. Use the same source and timing when isolating a detector comparison; otherwise describe the result as a comparison of complete systems.</p><p>Simultaneous dual-emission acquisition allows matched donor and acceptor observations after the same excitation event. Confirm that both channels use the intended timing windows and remain linear across the assay range. Judge performance with replicate variability, control separation and weak-sample behavior at the required throughput. Keep the lowest acceptable acquisition time with the validated protocol, together with the raw-channel limits that made it acceptable.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.</p><p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/pherastar-detection-system/\">PHERAstar detection system</a>. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 9–13 and 20. Lanthanide donors, emission channels, delayed detection and excitation-source guidance. Archived complete PDF.</p>",
+  "body_text": "A dedicated time-resolved Förster resonance energy transfer (TR-FRET) detector path can be optimized to measure weak delayed emission after an intense excitation pulse. Compare spectral sensitivity, prompt-pulse suppression, recovery behavior, noise and linearity. A delayed acquisition window specifies when data are collected; it does not, by itself, establish what happened to the detector before that window opened. [1]\n\nWhat happens before the collection window opens?\n\nA photomultiplier tube (PMT) may receive a large burst of stray excitation or prompt fluorescence before the desired delayed signal. Hamamatsu explains that this can saturate the PMT or subsequent circuits and describes electronic gating that suppresses response during unwanted intervals. [1] A software delay that discards early output does not necessarily prevent that exposure. Readers implement timing and protection differently, so ask how the actual detection path works.\n\nAfterpulses are another detector-specific concern. Hamamatsu describes spurious pulses following a preceding signal, including mechanisms operating from nanoseconds into microseconds. [1] Those times should not be stretched into a blanket explanation for every high-background assay collected tens or hundreds of microseconds later. Establish the delay dependence and the instrument's recovery behavior before assigning the cause.\n\nAn optimized detector is valuable when these characteristics improve the measurement in the chosen time window. The word “dedicated” is not itself a sensitivity specification. BMG LABTECH, for example, describes a separate matched PMT pair optimized for time-resolved fluorescence and TR-FRET in the PHERAstar FSX. [2] Use assay controls to establish what that architecture delivers at the required read time.\n\nGood excitation and good detection have to work together\n\nFor common europium-based homogeneous time-resolved fluorescence (HTRF), donor and acceptor emissions are measured near 620 nm and 665 nm. After suitable ultraviolet excitation, the donor continues emitting long enough for delayed collection to suppress much of the prompt fluorescence. Revvity's technical booklet discusses excitation-source choice as well as this time discrimination. [3]\n\nA suitable pulsed laser can deliver more useful excitation to the donor, helping weak assays collect sufficient photons in a practical read time. Efficient delayed detection must then collect those photons without a disproportionate rise in background or nonlinear response. The stronger pulse also makes optical rejection and detector protection worth checking.\n\nOptical rejection matters before the electronics apply any correction. Removing an average background cannot undo detector overload, and subtraction does not remove the photon noise of unwanted light that was collected. Check spectral leakage within a well separately from optical crosstalk between wells. Both can compromise a weak acceptor channel.\n\nEvaluate the complete delayed measurement\n\nCompare matched assay plates using reagent blanks, donor-only controls, acceptor-only controls and low and high assay controls. Scan delay and collection-window duration in microseconds (µs), recording pulse count and total read time in seconds (s). Preserve raw donor and acceptor values.\n\nAt very short delays, prompt leakage or recovery may dominate. At longer delays, useful donor emission has also decayed. A lower blank at a longer delay is helpful only if the assay retains adequate precision and separation. Use the same source and timing when isolating a detector comparison; otherwise describe the result as a comparison of complete systems.\n\nSimultaneous dual-emission acquisition allows matched donor and acceptor observations after the same excitation event. Confirm that both channels use the intended timing windows and remain linear across the assay range. Judge performance with replicate variability, control separation and weak-sample behavior at the required throughput. Keep the lowest acceptable acquisition time with the validated protocol, together with the raw-channel limits that made it acceptable.\n\nReferences\n\n1. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.\n\n2. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.\n\n3. Revvity. HTRF Technical Booklet, pp. 9–13 and 20. Lanthanide donors, emission channels, delayed detection and excitation-source guidance. Archived complete PDF.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A dedicated time-resolved Förster resonance energy transfer (TR-FRET) detector path can be optimized to measure weak delayed emission after an intense excitation pulse. Compare spectral sensitivity, prompt-pulse suppression, recovery behavior, noise and linearity. A delayed acquisition window specifies when data are collected; it does not, by itself, establish what happened to the detector before that window opened. [1]",
+          "html": "<p>A dedicated time-resolved Förster resonance energy transfer (TR-FRET) detector path can be optimized to measure weak delayed emission after an intense excitation pulse. Compare spectral sensitivity, prompt-pulse suppression, recovery behavior, noise and linearity. A delayed acquisition window specifies when data are collected; it does not, by itself, establish what happened to the detector before that window opened. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-happens-before-the-collection-window-opens",
+      "heading": "What happens before the collection window opens?",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What happens before the collection window opens?",
+          "html": "<h2 id=\"what-happens-before-the-collection-window-opens\">What happens before the collection window opens?</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A photomultiplier tube (PMT) may receive a large burst of stray excitation or prompt fluorescence before the desired delayed signal. Hamamatsu explains that this can saturate the PMT or subsequent circuits and describes electronic gating that suppresses response during unwanted intervals. [1] A software delay that discards early output does not necessarily prevent that exposure. Readers implement timing and protection differently, so ask how the actual detection path works.",
+          "html": "<p>A photomultiplier tube (PMT) may receive a large burst of stray excitation or prompt fluorescence before the desired delayed signal. Hamamatsu explains that this can saturate the PMT or subsequent circuits and describes electronic gating that suppresses response during unwanted intervals. [1] A software delay that discards early output does not necessarily prevent that exposure. Readers implement timing and protection differently, so ask how the actual detection path works.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Afterpulses are another detector-specific concern. Hamamatsu describes spurious pulses following a preceding signal, including mechanisms operating from nanoseconds into microseconds. [1] Those times should not be stretched into a blanket explanation for every high-background assay collected tens or hundreds of microseconds later. Establish the delay dependence and the instrument's recovery behavior before assigning the cause.",
+          "html": "<p>Afterpulses are another detector-specific concern. Hamamatsu describes spurious pulses following a preceding signal, including mechanisms operating from nanoseconds into microseconds. [1] Those times should not be stretched into a blanket explanation for every high-background assay collected tens or hundreds of microseconds later. Establish the delay dependence and the instrument's recovery behavior before assigning the cause.</p>"
+        },
+        {
+          "type": "p",
+          "text": "An optimized detector is valuable when these characteristics improve the measurement in the chosen time window. The word “dedicated” is not itself a sensitivity specification. BMG LABTECH, for example, describes a separate matched PMT pair optimized for time-resolved fluorescence and TR-FRET in the PHERAstar FSX. [2] Use assay controls to establish what that architecture delivers at the required read time.",
+          "html": "<p>An optimized detector is valuable when these characteristics improve the measurement in the chosen time window. The word “dedicated” is not itself a sensitivity specification. BMG LABTECH, for example, describes a separate matched PMT pair optimized for time-resolved fluorescence and TR-FRET in the PHERAstar FSX. [2] Use assay controls to establish what that architecture delivers at the required read time.</p>"
+        }
+      ]
+    },
+    {
+      "id": "good-excitation-and-good-detection-have-to-work-together",
+      "heading": "Good excitation and good detection have to work together",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Good excitation and good detection have to work together",
+          "html": "<h2 id=\"good-excitation-and-good-detection-have-to-work-together\">Good excitation and good detection have to work together</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For common europium-based homogeneous time-resolved fluorescence (HTRF), donor and acceptor emissions are measured near 620 nm and 665 nm. After suitable ultraviolet excitation, the donor continues emitting long enough for delayed collection to suppress much of the prompt fluorescence. Revvity's technical booklet discusses excitation-source choice as well as this time discrimination. [3]",
+          "html": "<p>For common europium-based homogeneous time-resolved fluorescence (HTRF), donor and acceptor emissions are measured near 620 nm and 665 nm. After suitable ultraviolet excitation, the donor continues emitting long enough for delayed collection to suppress much of the prompt fluorescence. Revvity's technical booklet discusses excitation-source choice as well as this time discrimination. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A suitable pulsed laser can deliver more useful excitation to the donor, helping weak assays collect sufficient photons in a practical read time. Efficient delayed detection must then collect those photons without a disproportionate rise in background or nonlinear response. The stronger pulse also makes optical rejection and detector protection worth checking.",
+          "html": "<p>A suitable pulsed laser can deliver more useful excitation to the donor, helping weak assays collect sufficient photons in a practical read time. Efficient delayed detection must then collect those photons without a disproportionate rise in background or nonlinear response. The stronger pulse also makes optical rejection and detector protection worth checking.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Optical rejection matters before the electronics apply any correction. Removing an average background cannot undo detector overload, and subtraction does not remove the photon noise of unwanted light that was collected. Check spectral leakage within a well separately from optical crosstalk between wells. Both can compromise a weak acceptor channel.",
+          "html": "<p>Optical rejection matters before the electronics apply any correction. Removing an average background cannot undo detector overload, and subtraction does not remove the photon noise of unwanted light that was collected. Check spectral leakage within a well separately from optical crosstalk between wells. Both can compromise a weak acceptor channel.</p>"
+        }
+      ]
+    },
+    {
+      "id": "evaluate-the-complete-delayed-measurement",
+      "heading": "Evaluate the complete delayed measurement",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Evaluate the complete delayed measurement",
+          "html": "<h2 id=\"evaluate-the-complete-delayed-measurement\">Evaluate the complete delayed measurement</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Compare matched assay plates using reagent blanks, donor-only controls, acceptor-only controls and low and high assay controls. Scan delay and collection-window duration in microseconds (µs), recording pulse count and total read time in seconds (s). Preserve raw donor and acceptor values.",
+          "html": "<p>Compare matched assay plates using reagent blanks, donor-only controls, acceptor-only controls and low and high assay controls. Scan delay and collection-window duration in microseconds (µs), recording pulse count and total read time in seconds (s). Preserve raw donor and acceptor values.</p>"
+        },
+        {
+          "type": "p",
+          "text": "At very short delays, prompt leakage or recovery may dominate. At longer delays, useful donor emission has also decayed. A lower blank at a longer delay is helpful only if the assay retains adequate precision and separation. Use the same source and timing when isolating a detector comparison; otherwise describe the result as a comparison of complete systems.",
+          "html": "<p>At very short delays, prompt leakage or recovery may dominate. At longer delays, useful donor emission has also decayed. A lower blank at a longer delay is helpful only if the assay retains adequate precision and separation. Use the same source and timing when isolating a detector comparison; otherwise describe the result as a comparison of complete systems.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission acquisition allows matched donor and acceptor observations after the same excitation event. Confirm that both channels use the intended timing windows and remain linear across the assay range. Judge performance with replicate variability, control separation and weak-sample behavior at the required throughput. Keep the lowest acceptable acquisition time with the validated protocol, together with the raw-channel limits that made it acceptable.",
+          "html": "<p>Simultaneous dual-emission acquisition allows matched donor and acceptor observations after the same excitation event. Confirm that both channels use the intended timing windows and remain linear across the assay range. Judge performance with replicate variability, control separation and weak-sample behavior at the required throughput. Keep the lowest acceptable acquisition time with the validated protocol, together with the raw-channel limits that made it acceptable.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.",
+          "html": "<p id=\"ref-1\">1. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+          "html": "<p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/pherastar-detection-system/\">PHERAstar detection system</a>. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. HTRF Technical Booklet, pp. 9–13 and 20. Lanthanide donors, emission channels, delayed detection and excitation-source guidance. Archived complete PDF.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 9–13 and 20. Lanthanide donors, emission channels, delayed detection and excitation-source guidance. Archived complete PDF.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+      "urls": [
+        "https://www.bmglabtech.com/en/pherastar-detection-system/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. HTRF Technical Booklet, pp. 9–13 and 20. Lanthanide donors, emission channels, delayed detection and excitation-source guidance. Archived complete PDF.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "0f01ba086475b3cd9f4b296d3ecd70cf827e49b78645742d195d21a9b4efa357"
+}

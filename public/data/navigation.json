@@ -43,6 +43,10 @@
       "label": "Absorbance"
     },
     {
+      "id": "bret",
+      "label": "BRET"
+    },
+    {
       "id": "binding-assays",
       "label": "Binding assays"
     },
@@ -299,6 +303,72 @@
       "order": 160,
       "tags": [
         "fluorescence"
+      ]
+    },
+    "nanobret-assay-optimization-dual-emission": {
+      "section": "assays",
+      "group": "binding",
+      "order": 110,
+      "tags": [
+        "plate-effects",
+        "bret"
+      ]
+    },
+    "tr-fret-troubleshooting-filters-timing-excitation": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 100,
+      "tags": [
+        "trf-htrf"
+      ]
+    },
+    "htrf-good-signal-background-low-z-prime": {
+      "section": "troubleshooting",
+      "group": "variation",
+      "order": 100,
+      "tags": [
+        "trf-htrf"
+      ]
+    },
+    "optimize-nanobret-donor-acceptor-filters": {
+      "section": "assays",
+      "group": "binding",
+      "order": 120,
+      "tags": [
+        "bret"
+      ]
+    },
+    "htrf-high-background-delay-time": {
+      "section": "troubleshooting",
+      "group": "background",
+      "order": 100,
+      "tags": [
+        "trf-htrf"
+      ]
+    },
+    "laser-excitation-htrf-tr-fret": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 190,
+      "tags": [
+        "trf-htrf"
+      ]
+    },
+    "dedicated-tr-fret-detector-time-gating": {
+      "section": "concepts",
+      "group": "detector",
+      "order": 140,
+      "tags": [
+        "trf-htrf"
+      ]
+    },
+    "white-vs-black-plates-tr-fret-htrf": {
+      "section": "troubleshooting",
+      "group": "optics",
+      "order": 170,
+      "tags": [
+        "trf-htrf",
+        "plate-effects"
       ]
     }
   },

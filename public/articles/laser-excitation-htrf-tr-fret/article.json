@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "laser-excitation-htrf-tr-fret",
+  "canonical_url": "https://discoveryinpractice.com/articles/laser-excitation-htrf-tr-fret/",
+  "title": "When does laser excitation improve an HTRF or TR-FRET assay?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "When laser excitation improves HTRF and TR-FRET precision or speed, with donor compatibility, paired detection and a practical comparison plan.",
+  "takeaways": [
+    "What the extra excitation buys",
+    "The donor channel needs photons too",
+    "Compare precision at a useful plate-read time"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "HTRF",
+    "TR-FRET",
+    "Optics"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-02",
+  "date_modified": "2026-10-02",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Laser excitation helps when too few useful photons are limiting measurement precision or speed, and the laser wavelength efficiently excites the assay's donor. A suitable pulsed laser can deliver more excitation energy at that wavelength than a filtered flash lamp, allowing a shorter acquisition or better precision. The benefit depends on the donor, optics, detection timing and sample; more excitation will not remedy inconsistent reagent delivery or an unstable binding reaction. [1,2]</p><h2 id=\"what-the-extra-excitation-buys\">What the extra excitation buys</h2><p>In time-resolved Förster resonance energy transfer (TR-FRET), a long-lived donor excites a nearby acceptor after the original excitation pulse has ended. Delayed detection rejects much of the short-lived fluorescence from other sample components. Homogeneous time-resolved fluorescence (HTRF), supplied by Revvity, commonly uses europium or terbium cryptate donors with red acceptors such as d2 or XL665. In that configuration, donor and acceptor channels are commonly centered at 620 nm and 665 nm, respectively. [1]</p><p>A laser concentrates its output into a narrow spectral region. BMG LABTECH's published example is a pulsed nitrogen laser at 337 nm for compatible europium- and terbium-based assays. Its stated pulse rate is 60 s⁻¹. Those are excitation specifications; they do not tell you how many useful photons a particular well will deliver to either detector. Follow the assay manufacturer's validated donor and reader configuration. [2]</p><p>Under an ideal shot-noise model, collecting four times as many useful detected photons reduces their relative counting uncertainty by half. Alternatively, obtaining the original photon count in one-quarter of the acquisition time could preserve that uncertainty. These are conditional arithmetic relationships, not promised improvements for a named reader. Detector noise, background, motion and other overheads can change the result. [3]</p><p>When miniaturization leaves too few detected photons, better excitation can help a low-volume assay retain acceptable precision without extending every well's read. Confirm that the biological response and assay chemistry remain suitable at the reduced volume or concentration.</p><h2 id=\"the-donor-channel-needs-photons-too\">The donor channel needs photons too</h2><p>For the common red HTRF configuration, the scaled ratio is 10,000 times the 665 nm acceptor reading divided by the 620 nm donor reading. The scaled ratio is dimensionless, and both readings contribute uncertainty. A brighter acceptor channel accompanied by an unreliable donor denominator can still produce a noisy ratio. Inspect the raw channels alongside the ratio and control distributions. [1]</p><p>Simultaneous dual-emission collection measures both channels during the same excitation events. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response. This is particularly useful when excitation varies between pulses or the sample changes between sequential measurements. Dedicated time-resolved detectors can be designed to tolerate the excitation pulse and recover for the delayed window; verify that behavior at the intended pulse energy and timing. Check these capabilities together using the actual assay and its weakest channels.</p><h2 id=\"compare-precision-at-a-useful-plate-read-time\">Compare precision at a useful plate-read time</h2><p>Start with blanks and low, middle and high responses, including the weakest donor levels expected in real samples. Keep plate type, volume, read geometry, temperature and time since reagent addition comparable. Use validated delay and integration settings for each source; an identical flash count does not make the delivered energy identical.</p><p>First compare results at a similar total plate-read time. This asks whether the laser improves precision within the time available. Then determine the shortest acquisition that preserves the required control separation and precision of relevant intermediate responses. Record pulse count, delay in µs, collection duration in µs and actual plate-read time in s. Check both channels for nonlinearity.</p><p>If repeat readings improve but independently prepared wells remain variable, the next work belongs in assay preparation. If the laser supports the required precision with fewer pulses, its practical benefit may be faster plate processing. A brighter displayed signal alone does not establish either result.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 9–13 and 20. Donors, acceptors, delayed detection and excitation-source guidance.</p><p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/tr-fret-laser/\">TRF laser</a>. Manufacturer description of a 337 nm pulsed nitrogen laser and 60 s⁻¹ pulse rate. No universal performance advantage is inferred from these specifications.</p><p id=\"ref-3\">3. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting signal-to-noise principles.</p>",
+  "body_text": "Laser excitation helps when too few useful photons are limiting measurement precision or speed, and the laser wavelength efficiently excites the assay's donor. A suitable pulsed laser can deliver more excitation energy at that wavelength than a filtered flash lamp, allowing a shorter acquisition or better precision. The benefit depends on the donor, optics, detection timing and sample; more excitation will not remedy inconsistent reagent delivery or an unstable binding reaction. [1,2]\n\nWhat the extra excitation buys\n\nIn time-resolved Förster resonance energy transfer (TR-FRET), a long-lived donor excites a nearby acceptor after the original excitation pulse has ended. Delayed detection rejects much of the short-lived fluorescence from other sample components. Homogeneous time-resolved fluorescence (HTRF), supplied by Revvity, commonly uses europium or terbium cryptate donors with red acceptors such as d2 or XL665. In that configuration, donor and acceptor channels are commonly centered at 620 nm and 665 nm, respectively. [1]\n\nA laser concentrates its output into a narrow spectral region. BMG LABTECH's published example is a pulsed nitrogen laser at 337 nm for compatible europium- and terbium-based assays. Its stated pulse rate is 60 s⁻¹. Those are excitation specifications; they do not tell you how many useful photons a particular well will deliver to either detector. Follow the assay manufacturer's validated donor and reader configuration. [2]\n\nUnder an ideal shot-noise model, collecting four times as many useful detected photons reduces their relative counting uncertainty by half. Alternatively, obtaining the original photon count in one-quarter of the acquisition time could preserve that uncertainty. These are conditional arithmetic relationships, not promised improvements for a named reader. Detector noise, background, motion and other overheads can change the result. [3]\n\nWhen miniaturization leaves too few detected photons, better excitation can help a low-volume assay retain acceptable precision without extending every well's read. Confirm that the biological response and assay chemistry remain suitable at the reduced volume or concentration.\n\nThe donor channel needs photons too\n\nFor the common red HTRF configuration, the scaled ratio is 10,000 times the 665 nm acceptor reading divided by the 620 nm donor reading. The scaled ratio is dimensionless, and both readings contribute uncertainty. A brighter acceptor channel accompanied by an unreliable donor denominator can still produce a noisy ratio. Inspect the raw channels alongside the ratio and control distributions. [1]\n\nSimultaneous dual-emission collection measures both channels during the same excitation events. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response. This is particularly useful when excitation varies between pulses or the sample changes between sequential measurements. Dedicated time-resolved detectors can be designed to tolerate the excitation pulse and recover for the delayed window; verify that behavior at the intended pulse energy and timing. Check these capabilities together using the actual assay and its weakest channels.\n\nCompare precision at a useful plate-read time\n\nStart with blanks and low, middle and high responses, including the weakest donor levels expected in real samples. Keep plate type, volume, read geometry, temperature and time since reagent addition comparable. Use validated delay and integration settings for each source; an identical flash count does not make the delivered energy identical.\n\nFirst compare results at a similar total plate-read time. This asks whether the laser improves precision within the time available. Then determine the shortest acquisition that preserves the required control separation and precision of relevant intermediate responses. Record pulse count, delay in µs, collection duration in µs and actual plate-read time in s. Check both channels for nonlinearity.\n\nIf repeat readings improve but independently prepared wells remain variable, the next work belongs in assay preparation. If the laser supports the required precision with fewer pulses, its practical benefit may be faster plate processing. A brighter displayed signal alone does not establish either result.\n\nReferences\n\n1. Revvity. HTRF Technical Booklet, pp. 9–13 and 20. Donors, acceptors, delayed detection and excitation-source guidance.\n\n2. BMG LABTECH. TRF laser. Manufacturer description of a 337 nm pulsed nitrogen laser and 60 s⁻¹ pulse rate. No universal performance advantage is inferred from these specifications.\n\n3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting signal-to-noise principles.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Laser excitation helps when too few useful photons are limiting measurement precision or speed, and the laser wavelength efficiently excites the assay's donor. A suitable pulsed laser can deliver more excitation energy at that wavelength than a filtered flash lamp, allowing a shorter acquisition or better precision. The benefit depends on the donor, optics, detection timing and sample; more excitation will not remedy inconsistent reagent delivery or an unstable binding reaction. [1,2]",
+          "html": "<p>Laser excitation helps when too few useful photons are limiting measurement precision or speed, and the laser wavelength efficiently excites the assay's donor. A suitable pulsed laser can deliver more excitation energy at that wavelength than a filtered flash lamp, allowing a shorter acquisition or better precision. The benefit depends on the donor, optics, detection timing and sample; more excitation will not remedy inconsistent reagent delivery or an unstable binding reaction. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-the-extra-excitation-buys",
+      "heading": "What the extra excitation buys",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What the extra excitation buys",
+          "html": "<h2 id=\"what-the-extra-excitation-buys\">What the extra excitation buys</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In time-resolved Förster resonance energy transfer (TR-FRET), a long-lived donor excites a nearby acceptor after the original excitation pulse has ended. Delayed detection rejects much of the short-lived fluorescence from other sample components. Homogeneous time-resolved fluorescence (HTRF), supplied by Revvity, commonly uses europium or terbium cryptate donors with red acceptors such as d2 or XL665. In that configuration, donor and acceptor channels are commonly centered at 620 nm and 665 nm, respectively. [1]",
+          "html": "<p>In time-resolved Förster resonance energy transfer (TR-FRET), a long-lived donor excites a nearby acceptor after the original excitation pulse has ended. Delayed detection rejects much of the short-lived fluorescence from other sample components. Homogeneous time-resolved fluorescence (HTRF), supplied by Revvity, commonly uses europium or terbium cryptate donors with red acceptors such as d2 or XL665. In that configuration, donor and acceptor channels are commonly centered at 620 nm and 665 nm, respectively. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A laser concentrates its output into a narrow spectral region. BMG LABTECH's published example is a pulsed nitrogen laser at 337 nm for compatible europium- and terbium-based assays. Its stated pulse rate is 60 s⁻¹. Those are excitation specifications; they do not tell you how many useful photons a particular well will deliver to either detector. Follow the assay manufacturer's validated donor and reader configuration. [2]",
+          "html": "<p>A laser concentrates its output into a narrow spectral region. BMG LABTECH's published example is a pulsed nitrogen laser at 337 nm for compatible europium- and terbium-based assays. Its stated pulse rate is 60 s⁻¹. Those are excitation specifications; they do not tell you how many useful photons a particular well will deliver to either detector. Follow the assay manufacturer's validated donor and reader configuration. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Under an ideal shot-noise model, collecting four times as many useful detected photons reduces their relative counting uncertainty by half. Alternatively, obtaining the original photon count in one-quarter of the acquisition time could preserve that uncertainty. These are conditional arithmetic relationships, not promised improvements for a named reader. Detector noise, background, motion and other overheads can change the result. [3]",
+          "html": "<p>Under an ideal shot-noise model, collecting four times as many useful detected photons reduces their relative counting uncertainty by half. Alternatively, obtaining the original photon count in one-quarter of the acquisition time could preserve that uncertainty. These are conditional arithmetic relationships, not promised improvements for a named reader. Detector noise, background, motion and other overheads can change the result. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "When miniaturization leaves too few detected photons, better excitation can help a low-volume assay retain acceptable precision without extending every well's read. Confirm that the biological response and assay chemistry remain suitable at the reduced volume or concentration.",
+          "html": "<p>When miniaturization leaves too few detected photons, better excitation can help a low-volume assay retain acceptable precision without extending every well's read. Confirm that the biological response and assay chemistry remain suitable at the reduced volume or concentration.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-donor-channel-needs-photons-too",
+      "heading": "The donor channel needs photons too",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The donor channel needs photons too",
+          "html": "<h2 id=\"the-donor-channel-needs-photons-too\">The donor channel needs photons too</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For the common red HTRF configuration, the scaled ratio is 10,000 times the 665 nm acceptor reading divided by the 620 nm donor reading. The scaled ratio is dimensionless, and both readings contribute uncertainty. A brighter acceptor channel accompanied by an unreliable donor denominator can still produce a noisy ratio. Inspect the raw channels alongside the ratio and control distributions. [1]",
+          "html": "<p>For the common red HTRF configuration, the scaled ratio is 10,000 times the 665 nm acceptor reading divided by the 620 nm donor reading. The scaled ratio is dimensionless, and both readings contribute uncertainty. A brighter acceptor channel accompanied by an unreliable donor denominator can still produce a noisy ratio. Inspect the raw channels alongside the ratio and control distributions. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission collection measures both channels during the same excitation events. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response. This is particularly useful when excitation varies between pulses or the sample changes between sequential measurements. Dedicated time-resolved detectors can be designed to tolerate the excitation pulse and recover for the delayed window; verify that behavior at the intended pulse energy and timing. Check these capabilities together using the actual assay and its weakest channels.",
+          "html": "<p>Simultaneous dual-emission collection measures both channels during the same excitation events. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response. This is particularly useful when excitation varies between pulses or the sample changes between sequential measurements. Dedicated time-resolved detectors can be designed to tolerate the excitation pulse and recover for the delayed window; verify that behavior at the intended pulse energy and timing. Check these capabilities together using the actual assay and its weakest channels.</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-precision-at-a-useful-plate-read-time",
+      "heading": "Compare precision at a useful plate-read time",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare precision at a useful plate-read time",
+          "html": "<h2 id=\"compare-precision-at-a-useful-plate-read-time\">Compare precision at a useful plate-read time</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Start with blanks and low, middle and high responses, including the weakest donor levels expected in real samples. Keep plate type, volume, read geometry, temperature and time since reagent addition comparable. Use validated delay and integration settings for each source; an identical flash count does not make the delivered energy identical.",
+          "html": "<p>Start with blanks and low, middle and high responses, including the weakest donor levels expected in real samples. Keep plate type, volume, read geometry, temperature and time since reagent addition comparable. Use validated delay and integration settings for each source; an identical flash count does not make the delivered energy identical.</p>"
+        },
+        {
+          "type": "p",
+          "text": "First compare results at a similar total plate-read time. This asks whether the laser improves precision within the time available. Then determine the shortest acquisition that preserves the required control separation and precision of relevant intermediate responses. Record pulse count, delay in µs, collection duration in µs and actual plate-read time in s. Check both channels for nonlinearity.",
+          "html": "<p>First compare results at a similar total plate-read time. This asks whether the laser improves precision within the time available. Then determine the shortest acquisition that preserves the required control separation and precision of relevant intermediate responses. Record pulse count, delay in µs, collection duration in µs and actual plate-read time in s. Check both channels for nonlinearity.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If repeat readings improve but independently prepared wells remain variable, the next work belongs in assay preparation. If the laser supports the required precision with fewer pulses, its practical benefit may be faster plate processing. A brighter displayed signal alone does not establish either result.",
+          "html": "<p>If repeat readings improve but independently prepared wells remain variable, the next work belongs in assay preparation. If the laser supports the required precision with fewer pulses, its practical benefit may be faster plate processing. A brighter displayed signal alone does not establish either result.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Revvity. HTRF Technical Booklet, pp. 9–13 and 20. Donors, acceptors, delayed detection and excitation-source guidance.",
+          "html": "<p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 9–13 and 20. Donors, acceptors, delayed detection and excitation-source guidance.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. BMG LABTECH. TRF laser. Manufacturer description of a 337 nm pulsed nitrogen laser and 60 s⁻¹ pulse rate. No universal performance advantage is inferred from these specifications.",
+          "html": "<p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/tr-fret-laser/\">TRF laser</a>. Manufacturer description of a 337 nm pulsed nitrogen laser and 60 s⁻¹ pulse rate. No universal performance advantage is inferred from these specifications.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting signal-to-noise principles.",
+          "html": "<p id=\"ref-3\">3. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting signal-to-noise principles.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Revvity. HTRF Technical Booklet, pp. 9–13 and 20. Donors, acceptors, delayed detection and excitation-source guidance.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. BMG LABTECH. TRF laser. Manufacturer description of a 337 nm pulsed nitrogen laser and 60 s⁻¹ pulse rate. No universal performance advantage is inferred from these specifications.",
+      "urls": [
+        "https://www.bmglabtech.com/en/tr-fret-laser/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting signal-to-noise principles.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "79e80a912d49e1495f3189a1ff052b5e2462d0743acab023cc0001a9fe76b28a"
+}

@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.0",
+  "id": "htrf-good-signal-background-low-z-prime",
+  "canonical_url": "https://discoveryinpractice.com/articles/htrf-good-signal-background-low-z-prime/",
+  "title": "Why does an HTRF assay have good signal-to-background but poor Z-prime?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Explain low HTRF Z-prime despite a good signal window using control variability, raw donor and acceptor data, and a worked example.",
+  "takeaways": [
+    "Define the numbers before comparing them",
+    "The same window can hide very different precision",
+    "Find where the variation enters"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "HTRF",
+    "Assay precision",
+    "Z-prime"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-02",
+  "date_modified": "2026-10-02",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>An assay can have a large signal-to-background ratio and a poor Z-prime when its control wells vary: the ratio compares average signals, while Z-prime also accounts for their spread. For homogeneous time-resolved fluorescence (HTRF), inspect the donor and acceptor readings as well as the calculated ratio: a weak or unstable donor denominator can make the ratio noisy even when the average response looks impressive. [1,2]</p><h2 id=\"define-the-numbers-before-comparing-them\">Define the numbers before comparing them</h2><p>In the common red-acceptor HTRF configuration described by Revvity, acceptor emission is read at 665 nm and donor emission at 620 nm. Calculate the scaled ratio for each well:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"R = 10000 × (A) divided by (D)\"><mrow><mrow><mtext>R = 10000 × </mtext></mrow><mfrac><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>A is the 665 nm channel reading and D is the 620 nm channel reading on the instrument's corresponding output scales. R is a scaled, dimensionless ratio. The factor 10,000 changes its numerical scale, not its precision. Keep channel settings and normalization consistent. Other fluorophore configurations require their own settings. [2]</p><p>For the example below, signal-to-background (S/B) means the mean high-control ratio divided by the mean low-control ratio. It is not Revvity's Delta F percentage, which expresses the ratio increment relative to a negative control. Specify your convention whenever reporting a window.</p><p>Z-prime uses the control means and standard deviations:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\"><mrow><mrow><mtext>Z′ = 1 − </mtext></mrow><mfrac><mrow><mrow><mtext>3(</mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> + </mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>)</mtext></mrow></mrow><mrow><mrow><mtext>|</mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>|</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>Here μ denotes the mean and σ the standard deviation (SD) of the per-well ratio distribution. High and low describe the measured response; the biological positive control may be the low signal in a competitive assay. [1]</p><h2 id=\"the-same-window-can-hide-very-different-precision\">The same window can hide very different precision</h2><p>Both constructed examples have a mean high-control ratio of 10,000 and a mean low-control ratio of 1,000. Their S/B is 10. The ratios and their SDs are dimensionless.</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Example</th><th scope=\"col\">High-control SD</th><th scope=\"col\">Low-control SD</th><th scope=\"col\">Z-prime</th></tr></thead><tbody><tr><th scope=\"row\">A</th><td>200</td><td>100</td><td>0.90</td></tr><tr><th scope=\"row\">B</th><td>2,500</td><td>100</td><td>0.13</td></tr></tbody></table></div><p>Only the high-control variability changed. S/B remains unchanged while Z-prime falls sharply. These are arithmetic examples, not measured assay results, and neither establishes a universal acceptance threshold.</p><h2 id=\"find-where-the-variation-enters\">Find where the variation enters</h2><p>Start with per-well 620 nm, 665 nm and ratio data, plus their positions and read times. Calculate replicate statistics from per-well ratios; a ratio of group-average channels is a different calculation. Check for dim donor wells, bright-channel nonlinearity, outliers and row or column patterns.</p><p>Repeat readings of a stable prepared plate using the same settings. If read repeatability is good but separately prepared wells disagree, examine dispensing, mixing, cell loading, reagent concentration and equilibration. If repeated readings themselves vary, investigate photon collection, detector behavior, read timing and sample drift. Do not remove inconvenient wells without a documented reason.</p><p>When photon counts are limiting, compatible laser excitation, suitable filters and additional collection time may improve precision. Simultaneous dual-emission detection records donor and acceptor together, avoiding a time difference between the measurements. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response, but neither matching nor simultaneity fixes a weak denominator or variable reagent addition.</p><p>Revvity's HTRF Reader Control Kit separates optical checks from biological assay performance using donor and acceptor controls, blanks and defined calibrators. Passing that check does not establish that your cell preparation or binding reaction is reproducible. Follow the kit's own incubation and read windows. [3]</p><p>Keep temperature and assay age consistent, and examine a realistic plate sequence. A ratio may cancel a shared optical fluctuation but cannot be assumed to cancel temperature-dependent binding or different changes in the two channels. Judge an optimization by the control distributions and the precision of relevant samples. Retain the raw channels so you can see what changed.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Zhang J-H, Chung TDY, Oldenburg KR. <a href=\"https://doi.org/10.1177/108705719900400206\">A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays</a>. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor paper; PubMed abstract accessed, full publisher text not retrieved for this draft. Formula also corroborated in the project’s NIH Assay Guidance Manual.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/htrf-signal-treatment-and-analysis\">HTRF Signal Treatment and Analysis</a> and <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 13–17 and 20. Per-well ratios, signal treatment, temperature and reader principles; web</p><p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit 62RCLPEA</a>. Version 08, January 2026; PDF pp. 2–4. Reader qualification controls and timing conditions.</p>",
+  "body_text": "An assay can have a large signal-to-background ratio and a poor Z-prime when its control wells vary: the ratio compares average signals, while Z-prime also accounts for their spread. For homogeneous time-resolved fluorescence (HTRF), inspect the donor and acceptor readings as well as the calculated ratio: a weak or unstable donor denominator can make the ratio noisy even when the average response looks impressive. [1,2]\n\nDefine the numbers before comparing them\n\nIn the common red-acceptor HTRF configuration described by Revvity, acceptor emission is read at 665 nm and donor emission at 620 nm. Calculate the scaled ratio for each well:\n\nR = 10000 × (A) divided by (D)\n\nA is the 665 nm channel reading and D is the 620 nm channel reading on the instrument's corresponding output scales. R is a scaled, dimensionless ratio. The factor 10,000 changes its numerical scale, not its precision. Keep channel settings and normalization consistent. Other fluorophore configurations require their own settings. [2]\n\nFor the example below, signal-to-background (S/B) means the mean high-control ratio divided by the mean low-control ratio. It is not Revvity's Delta F percentage, which expresses the ratio increment relative to a negative control. Specify your convention whenever reporting a window.\n\nZ-prime uses the control means and standard deviations:\n\nZ′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\n\nHere μ denotes the mean and σ the standard deviation (SD) of the per-well ratio distribution. High and low describe the measured response; the biological positive control may be the low signal in a competitive assay. [1]\n\nThe same window can hide very different precision\n\nBoth constructed examples have a mean high-control ratio of 10,000 and a mean low-control ratio of 1,000. Their S/B is 10. The ratios and their SDs are dimensionless.\n\nExample | High-control SD | Low-control SD | Z-prime | A | 200 | 100 | 0.90 | B | 2,500 | 100 | 0.13 | \n\nOnly the high-control variability changed. S/B remains unchanged while Z-prime falls sharply. These are arithmetic examples, not measured assay results, and neither establishes a universal acceptance threshold.\n\nFind where the variation enters\n\nStart with per-well 620 nm, 665 nm and ratio data, plus their positions and read times. Calculate replicate statistics from per-well ratios; a ratio of group-average channels is a different calculation. Check for dim donor wells, bright-channel nonlinearity, outliers and row or column patterns.\n\nRepeat readings of a stable prepared plate using the same settings. If read repeatability is good but separately prepared wells disagree, examine dispensing, mixing, cell loading, reagent concentration and equilibration. If repeated readings themselves vary, investigate photon collection, detector behavior, read timing and sample drift. Do not remove inconvenient wells without a documented reason.\n\nWhen photon counts are limiting, compatible laser excitation, suitable filters and additional collection time may improve precision. Simultaneous dual-emission detection records donor and acceptor together, avoiding a time difference between the measurements. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response, but neither matching nor simultaneity fixes a weak denominator or variable reagent addition.\n\nRevvity's HTRF Reader Control Kit separates optical checks from biological assay performance using donor and acceptor controls, blanks and defined calibrators. Passing that check does not establish that your cell preparation or binding reaction is reproducible. Follow the kit's own incubation and read windows. [3]\n\nKeep temperature and assay age consistent, and examine a realistic plate sequence. A ratio may cancel a shared optical fluctuation but cannot be assumed to cancel temperature-dependent binding or different changes in the two channels. Judge an optimization by the control distributions and the precision of relevant samples. Retain the raw channels so you can see what changed.\n\nReferences\n\n1. Zhang J-H, Chung TDY, Oldenburg KR. A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor paper; PubMed abstract accessed, full publisher text not retrieved for this draft. Formula also corroborated in the project’s NIH Assay Guidance Manual.\n\n2. Revvity. HTRF Signal Treatment and Analysis and HTRF Technical Booklet, pp. 13–17 and 20. Per-well ratios, signal treatment, temperature and reader principles; web\n\n3. Revvity. HTRF Reader Control Kit 62RCLPEA. Version 08, January 2026; PDF pp. 2–4. Reader qualification controls and timing conditions.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "An assay can have a large signal-to-background ratio and a poor Z-prime when its control wells vary: the ratio compares average signals, while Z-prime also accounts for their spread. For homogeneous time-resolved fluorescence (HTRF), inspect the donor and acceptor readings as well as the calculated ratio: a weak or unstable donor denominator can make the ratio noisy even when the average response looks impressive. [1,2]",
+          "html": "<p>An assay can have a large signal-to-background ratio and a poor Z-prime when its control wells vary: the ratio compares average signals, while Z-prime also accounts for their spread. For homogeneous time-resolved fluorescence (HTRF), inspect the donor and acceptor readings as well as the calculated ratio: a weak or unstable donor denominator can make the ratio noisy even when the average response looks impressive. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "define-the-numbers-before-comparing-them",
+      "heading": "Define the numbers before comparing them",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Define the numbers before comparing them",
+          "html": "<h2 id=\"define-the-numbers-before-comparing-them\">Define the numbers before comparing them</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In the common red-acceptor HTRF configuration described by Revvity, acceptor emission is read at 665 nm and donor emission at 620 nm. Calculate the scaled ratio for each well:",
+          "html": "<p>In the common red-acceptor HTRF configuration described by Revvity, acceptor emission is read at 665 nm and donor emission at 620 nm. Calculate the scaled ratio for each well:</p>"
+        },
+        {
+          "type": "div",
+          "text": "R = 10000 × (A) divided by (D)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"R = 10000 × (A) divided by (D)\"><mrow><mrow><mtext>R = 10000 × </mtext></mrow><mfrac><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "A is the 665 nm channel reading and D is the 620 nm channel reading on the instrument's corresponding output scales. R is a scaled, dimensionless ratio. The factor 10,000 changes its numerical scale, not its precision. Keep channel settings and normalization consistent. Other fluorophore configurations require their own settings. [2]",
+          "html": "<p>A is the 665 nm channel reading and D is the 620 nm channel reading on the instrument's corresponding output scales. R is a scaled, dimensionless ratio. The factor 10,000 changes its numerical scale, not its precision. Keep channel settings and normalization consistent. Other fluorophore configurations require their own settings. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For the example below, signal-to-background (S/B) means the mean high-control ratio divided by the mean low-control ratio. It is not Revvity's Delta F percentage, which expresses the ratio increment relative to a negative control. Specify your convention whenever reporting a window.",
+          "html": "<p>For the example below, signal-to-background (S/B) means the mean high-control ratio divided by the mean low-control ratio. It is not Revvity's Delta F percentage, which expresses the ratio increment relative to a negative control. Specify your convention whenever reporting a window.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Z-prime uses the control means and standard deviations:",
+          "html": "<p>Z-prime uses the control means and standard deviations:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\"><mrow><mrow><mtext>Z′ = 1 − </mtext></mrow><mfrac><mrow><mrow><mtext>3(</mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> + </mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>)</mtext></mrow></mrow><mrow><mrow><mtext>|</mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>|</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here μ denotes the mean and σ the standard deviation (SD) of the per-well ratio distribution. High and low describe the measured response; the biological positive control may be the low signal in a competitive assay. [1]",
+          "html": "<p>Here μ denotes the mean and σ the standard deviation (SD) of the per-well ratio distribution. High and low describe the measured response; the biological positive control may be the low signal in a competitive assay. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-same-window-can-hide-very-different-precision",
+      "heading": "The same window can hide very different precision",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The same window can hide very different precision",
+          "html": "<h2 id=\"the-same-window-can-hide-very-different-precision\">The same window can hide very different precision</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Both constructed examples have a mean high-control ratio of 10,000 and a mean low-control ratio of 1,000. Their S/B is 10. The ratios and their SDs are dimensionless.",
+          "html": "<p>Both constructed examples have a mean high-control ratio of 10,000 and a mean low-control ratio of 1,000. Their S/B is 10. The ratios and their SDs are dimensionless.</p>"
+        },
+        {
+          "type": "div",
+          "text": "Example | High-control SD | Low-control SD | Z-prime | A | 200 | 100 | 0.90 | B | 2,500 | 100 | 0.13 | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Example</th><th scope=\"col\">High-control SD</th><th scope=\"col\">Low-control SD</th><th scope=\"col\">Z-prime</th></tr></thead><tbody><tr><th scope=\"row\">A</th><td>200</td><td>100</td><td>0.90</td></tr><tr><th scope=\"row\">B</th><td>2,500</td><td>100</td><td>0.13</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "Only the high-control variability changed. S/B remains unchanged while Z-prime falls sharply. These are arithmetic examples, not measured assay results, and neither establishes a universal acceptance threshold.",
+          "html": "<p>Only the high-control variability changed. S/B remains unchanged while Z-prime falls sharply. These are arithmetic examples, not measured assay results, and neither establishes a universal acceptance threshold.</p>"
+        }
+      ]
+    },
+    {
+      "id": "find-where-the-variation-enters",
+      "heading": "Find where the variation enters",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Find where the variation enters",
+          "html": "<h2 id=\"find-where-the-variation-enters\">Find where the variation enters</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Start with per-well 620 nm, 665 nm and ratio data, plus their positions and read times. Calculate replicate statistics from per-well ratios; a ratio of group-average channels is a different calculation. Check for dim donor wells, bright-channel nonlinearity, outliers and row or column patterns.",
+          "html": "<p>Start with per-well 620 nm, 665 nm and ratio data, plus their positions and read times. Calculate replicate statistics from per-well ratios; a ratio of group-average channels is a different calculation. Check for dim donor wells, bright-channel nonlinearity, outliers and row or column patterns.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Repeat readings of a stable prepared plate using the same settings. If read repeatability is good but separately prepared wells disagree, examine dispensing, mixing, cell loading, reagent concentration and equilibration. If repeated readings themselves vary, investigate photon collection, detector behavior, read timing and sample drift. Do not remove inconvenient wells without a documented reason.",
+          "html": "<p>Repeat readings of a stable prepared plate using the same settings. If read repeatability is good but separately prepared wells disagree, examine dispensing, mixing, cell loading, reagent concentration and equilibration. If repeated readings themselves vary, investigate photon collection, detector behavior, read timing and sample drift. Do not remove inconvenient wells without a documented reason.</p>"
+        },
+        {
+          "type": "p",
+          "text": "When photon counts are limiting, compatible laser excitation, suitable filters and additional collection time may improve precision. Simultaneous dual-emission detection records donor and acceptor together, avoiding a time difference between the measurements. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response, but neither matching nor simultaneity fixes a weak denominator or variable reagent addition.",
+          "html": "<p>When photon counts are limiting, compatible laser excitation, suitable filters and additional collection time may improve precision. Simultaneous dual-emission detection records donor and acceptor together, avoiding a time difference between the measurements. Matched, calibrated photomultiplier tubes (PMTs) can support consistent channel response, but neither matching nor simultaneity fixes a weak denominator or variable reagent addition.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's HTRF Reader Control Kit separates optical checks from biological assay performance using donor and acceptor controls, blanks and defined calibrators. Passing that check does not establish that your cell preparation or binding reaction is reproducible. Follow the kit's own incubation and read windows. [3]",
+          "html": "<p>Revvity's HTRF Reader Control Kit separates optical checks from biological assay performance using donor and acceptor controls, blanks and defined calibrators. Passing that check does not establish that your cell preparation or binding reaction is reproducible. Follow the kit's own incubation and read windows. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep temperature and assay age consistent, and examine a realistic plate sequence. A ratio may cancel a shared optical fluctuation but cannot be assumed to cancel temperature-dependent binding or different changes in the two channels. Judge an optimization by the control distributions and the precision of relevant samples. Retain the raw channels so you can see what changed.",
+          "html": "<p>Keep temperature and assay age consistent, and examine a realistic plate sequence. A ratio may cancel a shared optical fluctuation but cannot be assumed to cancel temperature-dependent binding or different changes in the two channels. Judge an optimization by the control distributions and the precision of relevant samples. Retain the raw channels so you can see what changed.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Zhang J-H, Chung TDY, Oldenburg KR. A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor paper; PubMed abstract accessed, full publisher text not retrieved for this draft. Formula also corroborated in the project’s NIH Assay Guidance Manual.",
+          "html": "<p id=\"ref-1\">1. Zhang J-H, Chung TDY, Oldenburg KR. <a href=\"https://doi.org/10.1177/108705719900400206\">A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays</a>. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor paper; PubMed abstract accessed, full publisher text not retrieved for this draft. Formula also corroborated in the project’s NIH Assay Guidance Manual.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. HTRF Signal Treatment and Analysis and HTRF Technical Booklet, pp. 13–17 and 20. Per-well ratios, signal treatment, temperature and reader principles; web",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/htrf-signal-treatment-and-analysis\">HTRF Signal Treatment and Analysis</a> and <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 13–17 and 20. Per-well ratios, signal treatment, temperature and reader principles; web</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. HTRF Reader Control Kit 62RCLPEA. Version 08, January 2026; PDF pp. 2–4. Reader qualification controls and timing conditions.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit 62RCLPEA</a>. Version 08, January 2026; PDF pp. 2–4. Reader qualification controls and timing conditions.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Zhang J-H, Chung TDY, Oldenburg KR. A Simple Statistical Parameter for Use in Evaluation and Validation of High Throughput Screening Assays. Journal of Biomolecular Screening. 1999;4(2):67–73. DOI: 10.1177/108705719900400206. Original Z-factor paper; PubMed abstract accessed, full publisher text not retrieved for this draft. Formula also corroborated in the project’s NIH Assay Guidance Manual.",
+      "urls": [
+        "https://doi.org/10.1177/108705719900400206"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. HTRF Signal Treatment and Analysis and HTRF Technical Booklet, pp. 13–17 and 20. Per-well ratios, signal treatment, temperature and reader principles; web",
+      "urls": [
+        "https://www.revvity.com/ask/htrf-signal-treatment-and-analysis",
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. HTRF Reader Control Kit 62RCLPEA. Version 08, January 2026; PDF pp. 2–4. Reader qualification controls and timing conditions.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "R = 10000 × (A) divided by (D)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"R = 10000 × (A) divided by (D)\"><mrow><mrow><mtext>R = 10000 × </mtext></mrow><mfrac><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\"><mrow><mrow><mtext>Z′ = 1 − </mtext></mrow><mfrac><mrow><mrow><mtext>3(</mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> + </mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>)</mtext></mrow></mrow><mrow><mrow><mtext>|</mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>|</mtext></mrow></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Why does an HTRF assay have good signal-to-background but poor Z-prime?",
+      "rows": [
+        [
+          "Example",
+          "High-control SD",
+          "Low-control SD",
+          "Z-prime"
+        ],
+        [
+          "A",
+          "200",
+          "100",
+          "0.90"
+        ],
+        [
+          "B",
+          "2,500",
+          "100",
+          "0.13"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "57576082822000cb006326f68f5a04cf195759df111eb3eecdd7ac36dab59ad5"
+}

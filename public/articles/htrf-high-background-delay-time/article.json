@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "htrf-high-background-delay-time",
+  "canonical_url": "https://discoveryinpractice.com/articles/htrf-high-background-delay-time/",
+  "title": "Why does my HTRF assay still have high background after I increase the delay time?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Troubleshoot persistent HTRF background with donor-only, acceptor-only and assay controls before changing delay, filters or integration time.",
+  "takeaways": [
+    "What the delay actually removes",
+    "Use controls that identify the source",
+    "Change timing after identifying the background"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "HTRF",
+    "TR-FRET",
+    "Background noise"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-02",
+  "date_modified": "2026-10-02",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A longer delay suppresses fluorescence that decays quickly after excitation. It does not necessarily remove long-lived donor light entering the acceptor channel, unwanted donor-to-acceptor energy transfer, or an inflated ratio caused by a weak donor denominator. Because a longer delay also discards useful delayed photons, identify the source of persistent homogeneous time-resolved fluorescence (HTRF) background before extending it again. [1,2]</p><h2 id=\"what-the-delay-actually-removes\">What the delay actually removes</h2><p>Revvity HTRF assays use long-lived europium or terbium cryptate donors. In a common red-acceptor configuration, the reader detects donor emission at 620 nm and emission from an acceptor such as d2 or XL665 at 665 nm. The scaled HTRF ratio is 10,000 times the 665 nm reading divided by the 620 nm reading. These are channel wavelengths, not complete filter specifications: bandwidth and blocking must also suit the assay. [1,2]</p><p>For a concrete example, an Agilent/Cisbio Tag-lite CXCR4 application uses terbium-based HTRF detection on a Synergy H1 with excitation centered at 340 nm and a 30 nm bandwidth. Its emission filters are centered at 620 nm and 665 nm with bandwidths of 10 nm and 8 nm, respectively; the reported delay is 100 µs and collection duration 300 µs. These describe that published configuration, not universal HTRF settings. [4] During time-resolved Förster resonance energy transfer (TR-FRET), a nearby donor continues to excite the acceptor after the source pulse has ended. Consequently, acceptor emission associated with energy transfer persists into the delayed measurement window. The booklet discusses delays of 50–150 µs to reduce prompt background; that range explains the principle and is not a universal setting for every kit and reader. [1]</p><p>Unwanted donor emission admitted by the acceptor optics is long-lived too. Nonspecific proximity between labelled reagents can also produce delayed energy transfer. Waiting longer may reduce these contributions and the desired signal together, providing little improvement in discrimination.</p><h2 id=\"use-controls-that-identify-the-source\">Use controls that identify the source</h2><p>Buffer or assay-matrix blank: high delayed raw readings without labelled reagents point toward matrix emission, contamination, plate effects or instrumental background. Match the sample medium and compound solvent. Inspect both channels; a large ratio made from two near-blank readings is difficult to interpret.</p><p>Donor-only control: a 665 nm response associated with the donor can reveal donor emission admitted by the acceptor channel. Keep donor concentration and matrix matched. The result motivates a check of emission filters, spectral blocking and the reader's validated assay configuration. It is not, by itself, proof that a component is defective.</p><p>Acceptor-only control: residual delayed response can reveal direct-excitation background or another contribution in that preparation. Compare it with the matched matrix blank. Do not assume that all of it represents donor-to-acceptor transfer when no donor is present.</p><p>Both labels without the intended interaction: this tests the assay's actual negative state. Use a format-appropriate control: no analyte for a suitable sandwich assay, a nonbinding partner, or a validated competitor where appropriate. A binding assay may show a high basal signal because of nonspecific association or reagent concentration, even when the optics are working correctly.</p><p>Revvity includes cryptate-only, XL665-only and buffer blanks in its HTRF Reader Control Kit to help diagnose failed qualification. Its current analysis guidance also distinguishes donor-only corrections from negative controls containing both detection reagents. Optical blanks and biological negatives answer different questions. [2,3]</p><h2 id=\"change-timing-after-identifying-the-background\">Change timing after identifying the background</h2><p>Compare a small matrix of manufacturer-supported delay and integration settings. Record delay in µs, collection duration in µs, pulse count, excitation settings, optical bands and both raw channels. Include useful positive and negative controls, and judge their variability as well as their separation. A very low blank can accompany an unusably dim positive control.</p><p>Good spectral separation prevents unwanted light from entering the measurement. Subtracting an average donor contribution cannot remove the photon fluctuations already recorded with it. A suitable laser and dedicated time-resolved detector can help collect useful delayed signal with appropriate timing, but they do not guarantee removal of spectral leakage or nonspecific binding.</p><p>Simultaneous dual-emission acquisition can preserve paired-channel timing during a changing assay. It still requires suitable filters and assay controls. If high background remains specific to wells containing both labels, investigate reagent concentrations and binding conditions before extending the delay further.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>. Pages 9–13 and 20. Donor-fed delayed acceptor emission, red acceptors, time-resolved detection and excitation-source guidance.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/htrf-signal-treatment-and-analysis\">HTRF Signal Treatment and Analysis</a>. Ratio definition, background corrections and assay-format-specific negative controls.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit 62RCLPEA</a>. Version 08, January 2026; PDF pp. 2–4. Defined blank, donor, acceptor and calibrator controls for reader qualification.</p><p id=\"ref-4\">4. Goodrich W, Amouretti X, Banks P, Degorce F, Pierre N. <a href=\"https://www.agilent.com/cs/library/applications/htrf-ligand-binding-assay-for-cxcr4-5994-3104EN-agilent.pdf\">HTRF Ligand Binding Assay for the Chemokine Receptor CXCR4</a>. Agilent/Cisbio application note 5994-3104EN; PDF p. 3. Configuration-specific optical bands and read timing.</p>",
+  "body_text": "A longer delay suppresses fluorescence that decays quickly after excitation. It does not necessarily remove long-lived donor light entering the acceptor channel, unwanted donor-to-acceptor energy transfer, or an inflated ratio caused by a weak donor denominator. Because a longer delay also discards useful delayed photons, identify the source of persistent homogeneous time-resolved fluorescence (HTRF) background before extending it again. [1,2]\n\nWhat the delay actually removes\n\nRevvity HTRF assays use long-lived europium or terbium cryptate donors. In a common red-acceptor configuration, the reader detects donor emission at 620 nm and emission from an acceptor such as d2 or XL665 at 665 nm. The scaled HTRF ratio is 10,000 times the 665 nm reading divided by the 620 nm reading. These are channel wavelengths, not complete filter specifications: bandwidth and blocking must also suit the assay. [1,2]\n\nFor a concrete example, an Agilent/Cisbio Tag-lite CXCR4 application uses terbium-based HTRF detection on a Synergy H1 with excitation centered at 340 nm and a 30 nm bandwidth. Its emission filters are centered at 620 nm and 665 nm with bandwidths of 10 nm and 8 nm, respectively; the reported delay is 100 µs and collection duration 300 µs. These describe that published configuration, not universal HTRF settings. [4] During time-resolved Förster resonance energy transfer (TR-FRET), a nearby donor continues to excite the acceptor after the source pulse has ended. Consequently, acceptor emission associated with energy transfer persists into the delayed measurement window. The booklet discusses delays of 50–150 µs to reduce prompt background; that range explains the principle and is not a universal setting for every kit and reader. [1]\n\nUnwanted donor emission admitted by the acceptor optics is long-lived too. Nonspecific proximity between labelled reagents can also produce delayed energy transfer. Waiting longer may reduce these contributions and the desired signal together, providing little improvement in discrimination.\n\nUse controls that identify the source\n\nBuffer or assay-matrix blank: high delayed raw readings without labelled reagents point toward matrix emission, contamination, plate effects or instrumental background. Match the sample medium and compound solvent. Inspect both channels; a large ratio made from two near-blank readings is difficult to interpret.\n\nDonor-only control: a 665 nm response associated with the donor can reveal donor emission admitted by the acceptor channel. Keep donor concentration and matrix matched. The result motivates a check of emission filters, spectral blocking and the reader's validated assay configuration. It is not, by itself, proof that a component is defective.\n\nAcceptor-only control: residual delayed response can reveal direct-excitation background or another contribution in that preparation. Compare it with the matched matrix blank. Do not assume that all of it represents donor-to-acceptor transfer when no donor is present.\n\nBoth labels without the intended interaction: this tests the assay's actual negative state. Use a format-appropriate control: no analyte for a suitable sandwich assay, a nonbinding partner, or a validated competitor where appropriate. A binding assay may show a high basal signal because of nonspecific association or reagent concentration, even when the optics are working correctly.\n\nRevvity includes cryptate-only, XL665-only and buffer blanks in its HTRF Reader Control Kit to help diagnose failed qualification. Its current analysis guidance also distinguishes donor-only corrections from negative controls containing both detection reagents. Optical blanks and biological negatives answer different questions. [2,3]\n\nChange timing after identifying the background\n\nCompare a small matrix of manufacturer-supported delay and integration settings. Record delay in µs, collection duration in µs, pulse count, excitation settings, optical bands and both raw channels. Include useful positive and negative controls, and judge their variability as well as their separation. A very low blank can accompany an unusably dim positive control.\n\nGood spectral separation prevents unwanted light from entering the measurement. Subtracting an average donor contribution cannot remove the photon fluctuations already recorded with it. A suitable laser and dedicated time-resolved detector can help collect useful delayed signal with appropriate timing, but they do not guarantee removal of spectral leakage or nonspecific binding.\n\nSimultaneous dual-emission acquisition can preserve paired-channel timing during a changing assay. It still requires suitable filters and assay controls. If high background remains specific to wells containing both labels, investigate reagent concentrations and binding conditions before extending the delay further.\n\nReferences\n\n1. Revvity. HTRF Technical Booklet. Pages 9–13 and 20. Donor-fed delayed acceptor emission, red acceptors, time-resolved detection and excitation-source guidance.\n\n2. Revvity. HTRF Signal Treatment and Analysis. Ratio definition, background corrections and assay-format-specific negative controls.\n\n3. Revvity. HTRF Reader Control Kit 62RCLPEA. Version 08, January 2026; PDF pp. 2–4. Defined blank, donor, acceptor and calibrator controls for reader qualification.\n\n4. Goodrich W, Amouretti X, Banks P, Degorce F, Pierre N. HTRF Ligand Binding Assay for the Chemokine Receptor CXCR4. Agilent/Cisbio application note 5994-3104EN; PDF p. 3. Configuration-specific optical bands and read timing.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A longer delay suppresses fluorescence that decays quickly after excitation. It does not necessarily remove long-lived donor light entering the acceptor channel, unwanted donor-to-acceptor energy transfer, or an inflated ratio caused by a weak donor denominator. Because a longer delay also discards useful delayed photons, identify the source of persistent homogeneous time-resolved fluorescence (HTRF) background before extending it again. [1,2]",
+          "html": "<p>A longer delay suppresses fluorescence that decays quickly after excitation. It does not necessarily remove long-lived donor light entering the acceptor channel, unwanted donor-to-acceptor energy transfer, or an inflated ratio caused by a weak donor denominator. Because a longer delay also discards useful delayed photons, identify the source of persistent homogeneous time-resolved fluorescence (HTRF) background before extending it again. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-the-delay-actually-removes",
+      "heading": "What the delay actually removes",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What the delay actually removes",
+          "html": "<h2 id=\"what-the-delay-actually-removes\">What the delay actually removes</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity HTRF assays use long-lived europium or terbium cryptate donors. In a common red-acceptor configuration, the reader detects donor emission at 620 nm and emission from an acceptor such as d2 or XL665 at 665 nm. The scaled HTRF ratio is 10,000 times the 665 nm reading divided by the 620 nm reading. These are channel wavelengths, not complete filter specifications: bandwidth and blocking must also suit the assay. [1,2]",
+          "html": "<p>Revvity HTRF assays use long-lived europium or terbium cryptate donors. In a common red-acceptor configuration, the reader detects donor emission at 620 nm and emission from an acceptor such as d2 or XL665 at 665 nm. The scaled HTRF ratio is 10,000 times the 665 nm reading divided by the 620 nm reading. These are channel wavelengths, not complete filter specifications: bandwidth and blocking must also suit the assay. [1,2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a concrete example, an Agilent/Cisbio Tag-lite CXCR4 application uses terbium-based HTRF detection on a Synergy H1 with excitation centered at 340 nm and a 30 nm bandwidth. Its emission filters are centered at 620 nm and 665 nm with bandwidths of 10 nm and 8 nm, respectively; the reported delay is 100 µs and collection duration 300 µs. These describe that published configuration, not universal HTRF settings. [4] During time-resolved Förster resonance energy transfer (TR-FRET), a nearby donor continues to excite the acceptor after the source pulse has ended. Consequently, acceptor emission associated with energy transfer persists into the delayed measurement window. The booklet discusses delays of 50–150 µs to reduce prompt background; that range explains the principle and is not a universal setting for every kit and reader. [1]",
+          "html": "<p>For a concrete example, an Agilent/Cisbio Tag-lite CXCR4 application uses terbium-based HTRF detection on a Synergy H1 with excitation centered at 340 nm and a 30 nm bandwidth. Its emission filters are centered at 620 nm and 665 nm with bandwidths of 10 nm and 8 nm, respectively; the reported delay is 100 µs and collection duration 300 µs. These describe that published configuration, not universal HTRF settings. [4] During time-resolved Förster resonance energy transfer (TR-FRET), a nearby donor continues to excite the acceptor after the source pulse has ended. Consequently, acceptor emission associated with energy transfer persists into the delayed measurement window. The booklet discusses delays of 50–150 µs to reduce prompt background; that range explains the principle and is not a universal setting for every kit and reader. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Unwanted donor emission admitted by the acceptor optics is long-lived too. Nonspecific proximity between labelled reagents can also produce delayed energy transfer. Waiting longer may reduce these contributions and the desired signal together, providing little improvement in discrimination.",
+          "html": "<p>Unwanted donor emission admitted by the acceptor optics is long-lived too. Nonspecific proximity between labelled reagents can also produce delayed energy transfer. Waiting longer may reduce these contributions and the desired signal together, providing little improvement in discrimination.</p>"
+        }
+      ]
+    },
+    {
+      "id": "use-controls-that-identify-the-source",
+      "heading": "Use controls that identify the source",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Use controls that identify the source",
+          "html": "<h2 id=\"use-controls-that-identify-the-source\">Use controls that identify the source</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Buffer or assay-matrix blank: high delayed raw readings without labelled reagents point toward matrix emission, contamination, plate effects or instrumental background. Match the sample medium and compound solvent. Inspect both channels; a large ratio made from two near-blank readings is difficult to interpret.",
+          "html": "<p>Buffer or assay-matrix blank: high delayed raw readings without labelled reagents point toward matrix emission, contamination, plate effects or instrumental background. Match the sample medium and compound solvent. Inspect both channels; a large ratio made from two near-blank readings is difficult to interpret.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Donor-only control: a 665 nm response associated with the donor can reveal donor emission admitted by the acceptor channel. Keep donor concentration and matrix matched. The result motivates a check of emission filters, spectral blocking and the reader's validated assay configuration. It is not, by itself, proof that a component is defective.",
+          "html": "<p>Donor-only control: a 665 nm response associated with the donor can reveal donor emission admitted by the acceptor channel. Keep donor concentration and matrix matched. The result motivates a check of emission filters, spectral blocking and the reader's validated assay configuration. It is not, by itself, proof that a component is defective.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Acceptor-only control: residual delayed response can reveal direct-excitation background or another contribution in that preparation. Compare it with the matched matrix blank. Do not assume that all of it represents donor-to-acceptor transfer when no donor is present.",
+          "html": "<p>Acceptor-only control: residual delayed response can reveal direct-excitation background or another contribution in that preparation. Compare it with the matched matrix blank. Do not assume that all of it represents donor-to-acceptor transfer when no donor is present.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Both labels without the intended interaction: this tests the assay's actual negative state. Use a format-appropriate control: no analyte for a suitable sandwich assay, a nonbinding partner, or a validated competitor where appropriate. A binding assay may show a high basal signal because of nonspecific association or reagent concentration, even when the optics are working correctly.",
+          "html": "<p>Both labels without the intended interaction: this tests the assay's actual negative state. Use a format-appropriate control: no analyte for a suitable sandwich assay, a nonbinding partner, or a validated competitor where appropriate. A binding assay may show a high basal signal because of nonspecific association or reagent concentration, even when the optics are working correctly.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity includes cryptate-only, XL665-only and buffer blanks in its HTRF Reader Control Kit to help diagnose failed qualification. Its current analysis guidance also distinguishes donor-only corrections from negative controls containing both detection reagents. Optical blanks and biological negatives answer different questions. [2,3]",
+          "html": "<p>Revvity includes cryptate-only, XL665-only and buffer blanks in its HTRF Reader Control Kit to help diagnose failed qualification. Its current analysis guidance also distinguishes donor-only corrections from negative controls containing both detection reagents. Optical blanks and biological negatives answer different questions. [2,3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "change-timing-after-identifying-the-background",
+      "heading": "Change timing after identifying the background",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Change timing after identifying the background",
+          "html": "<h2 id=\"change-timing-after-identifying-the-background\">Change timing after identifying the background</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Compare a small matrix of manufacturer-supported delay and integration settings. Record delay in µs, collection duration in µs, pulse count, excitation settings, optical bands and both raw channels. Include useful positive and negative controls, and judge their variability as well as their separation. A very low blank can accompany an unusably dim positive control.",
+          "html": "<p>Compare a small matrix of manufacturer-supported delay and integration settings. Record delay in µs, collection duration in µs, pulse count, excitation settings, optical bands and both raw channels. Include useful positive and negative controls, and judge their variability as well as their separation. A very low blank can accompany an unusably dim positive control.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Good spectral separation prevents unwanted light from entering the measurement. Subtracting an average donor contribution cannot remove the photon fluctuations already recorded with it. A suitable laser and dedicated time-resolved detector can help collect useful delayed signal with appropriate timing, but they do not guarantee removal of spectral leakage or nonspecific binding.",
+          "html": "<p>Good spectral separation prevents unwanted light from entering the measurement. Subtracting an average donor contribution cannot remove the photon fluctuations already recorded with it. A suitable laser and dedicated time-resolved detector can help collect useful delayed signal with appropriate timing, but they do not guarantee removal of spectral leakage or nonspecific binding.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission acquisition can preserve paired-channel timing during a changing assay. It still requires suitable filters and assay controls. If high background remains specific to wells containing both labels, investigate reagent concentrations and binding conditions before extending the delay further.",
+          "html": "<p>Simultaneous dual-emission acquisition can preserve paired-channel timing during a changing assay. It still requires suitable filters and assay controls. If high background remains specific to wells containing both labels, investigate reagent concentrations and binding conditions before extending the delay further.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Revvity. HTRF Technical Booklet. Pages 9–13 and 20. Donor-fed delayed acceptor emission, red acceptors, time-resolved detection and excitation-source guidance.",
+          "html": "<p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>. Pages 9–13 and 20. Donor-fed delayed acceptor emission, red acceptors, time-resolved detection and excitation-source guidance.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. HTRF Signal Treatment and Analysis. Ratio definition, background corrections and assay-format-specific negative controls.",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/htrf-signal-treatment-and-analysis\">HTRF Signal Treatment and Analysis</a>. Ratio definition, background corrections and assay-format-specific negative controls.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. HTRF Reader Control Kit 62RCLPEA. Version 08, January 2026; PDF pp. 2–4. Defined blank, donor, acceptor and calibrator controls for reader qualification.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit 62RCLPEA</a>. Version 08, January 2026; PDF pp. 2–4. Defined blank, donor, acceptor and calibrator controls for reader qualification.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Goodrich W, Amouretti X, Banks P, Degorce F, Pierre N. HTRF Ligand Binding Assay for the Chemokine Receptor CXCR4. Agilent/Cisbio application note 5994-3104EN; PDF p. 3. Configuration-specific optical bands and read timing.",
+          "html": "<p id=\"ref-4\">4. Goodrich W, Amouretti X, Banks P, Degorce F, Pierre N. <a href=\"https://www.agilent.com/cs/library/applications/htrf-ligand-binding-assay-for-cxcr4-5994-3104EN-agilent.pdf\">HTRF Ligand Binding Assay for the Chemokine Receptor CXCR4</a>. Agilent/Cisbio application note 5994-3104EN; PDF p. 3. Configuration-specific optical bands and read timing.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Revvity. HTRF Technical Booklet. Pages 9–13 and 20. Donor-fed delayed acceptor emission, red acceptors, time-resolved detection and excitation-source guidance.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. HTRF Signal Treatment and Analysis. Ratio definition, background corrections and assay-format-specific negative controls.",
+      "urls": [
+        "https://www.revvity.com/ask/htrf-signal-treatment-and-analysis"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. HTRF Reader Control Kit 62RCLPEA. Version 08, January 2026; PDF pp. 2–4. Defined blank, donor, acceptor and calibrator controls for reader qualification.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Goodrich W, Amouretti X, Banks P, Degorce F, Pierre N. HTRF Ligand Binding Assay for the Chemokine Receptor CXCR4. Agilent/Cisbio application note 5994-3104EN; PDF p. 3. Configuration-specific optical bands and read timing.",
+      "urls": [
+        "https://www.agilent.com/cs/library/applications/htrf-ligand-binding-assay-for-cxcr4-5994-3104EN-agilent.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "224eaa05a13805dce14f959db27590b01968fa54d0f9ba1b4c9f66e900869dbe"
+}

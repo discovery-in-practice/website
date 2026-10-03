@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "id": "optimize-nanobret-donor-acceptor-filters",
+  "canonical_url": "https://discoveryinpractice.com/articles/optimize-nanobret-donor-acceptor-filters/",
+  "title": "How should I optimize NanoBRET donor and acceptor filters?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Choose assay-specific NanoBRET emission filters using raw channels, negative controls, ratio precision and simultaneous dual-emission detection.",
+  "takeaways": [
+    "Specify the assay before selecting the bands",
+    "The ratio changes when either collection band changes",
+    "Carry the negative control through every filter comparison"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "NanoBRET",
+    "BRET",
+    "Optics"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-02",
+  "date_modified": "2026-10-02",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Use the validated filter configuration as the reference while comparing alternatives with raw donor and acceptor signals, matched negative controls and a known biological response. Seek adequate photon collection in both channels while limiting donor emission entering the acceptor measurement. A higher raw NanoBRET ratio can arise simply because the filters collect different fractions of the two emissions. [1]</p><h2 id=\"specify-the-assay-before-selecting-the-bands\">Specify the assay before selecting the bands</h2><p>NanoBRET measures bioluminescence resonance energy transfer (BRET) from NanoLuc luciferase to an acceptor. Promega's protein–protein interaction system uses the HaloTag NanoBRET 618 ligand. The donor emits near 460 nm and the acceptor near 618 nm. Other NanoBRET formats use different acceptor reagents; follow their own manuals rather than transferring a filter pair solely because the assay name contains NanoBRET. [1]</p><p>For the protein–protein interaction system, Promega describes a donor bandpass centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter beginning around 600–610 nm. The manual's explicit example uses 610 nm long pass. These are two emission measurements; no external excitation wavelength is required for the BRET read. [1]</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Channel</th><th scope=\"col\">Emission peak</th><th scope=\"col\">Example filter</th><th scope=\"col\">Meaning</th></tr></thead><tbody><tr><th scope=\"row\">NanoLuc donor</th><td>About 460 nm</td><td>450 nm / 80 nm bandpass</td><td>Nominal band about 410–490 nm</td></tr><tr><th scope=\"row\">HaloTag 618 acceptor</th><td>About 618 nm</td><td>610 nm long pass</td><td>Transmits longer wavelengths above the transition</td></tr></tbody></table></div><p>Actual transmission curves have slopes and out-of-band leakage. A long-pass specification also does not identify a universal upper wavelength limit: the remaining optics and detector response matter.</p><h2 id=\"the-ratio-changes-when-either-collection-band-changes\">The ratio changes when either collection band changes</h2><p>If an alternative donor filter collects half as much donor light while acceptor output stays unchanged, the raw acceptor-to-donor ratio doubles. No additional energy transfer is required. This constructed example assumes linear response and unchanged sample emission. Compare a known response range and replicate precision, rather than optimizing the height of the ratio alone.</p><p>A broader donor band may improve denominator precision by collecting more light. A broader acceptor measurement may collect more transferred emission but also more of the donor's spectral tail or other background. Evaluate both effects with the complete optical configuration, including dichroic separation when present. Simultaneous collection does not by itself block spectral leakage.</p><h2 id=\"carry-the-negative-control-through-every-filter-comparison\">Carry the negative control through every filter comparison</h2><p>For the HaloTag assay, include matched samples without the acceptor ligand. Their acceptor-channel reading captures donor-related background and other contributions under those conditions. Follow Promega's ratio correction: calculate acceptor divided by donor, multiply by 1,000 for milliBRET units (mBU), and subtract the corresponding no-ligand control ratio on the same scale. [1]</p><p>That subtraction estimates a background contribution; its uncertainty remains. A filter that admits more donor light into the acceptor channel can increase the burden on the control measurement. Preserve raw channels and check low-donor conditions, where a denominator close to background makes ratios unreliable.</p><h2 id=\"keep-the-two-observations-comparable\">Keep the two observations comparable</h2><p>Use the same sample preparation, substrate timing and validated temperature across configurations. Balance read order or use matched preparations if output changes during the comparison. Keep detector settings documented and verify both channels across their intended linear ranges.</p><p>Simultaneous dual-emission collection with matched, calibrated photomultiplier tubes (PMTs) removes the interval between donor and acceptor observations. That is useful when brightness changes during sequential reads. It does not replace channel calibration or add photons to a weak signal. [2]</p><p>Confirm the final filter choice with the expected positive and negative responses, replicate preparations and a concentration series. Save the actual centers, bandwidths or long-pass cutoffs in nm, detector settings and correction method. Include the optical specifications when transferring the method; a filter labelled “BRET” on another reader may transmit a different band.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanobret-proteinprotein-interaction-system-protocol.pdf\">NanoBRET Protein:Protein Interaction System Technical Manual TM439</a>, revision October 2023, sections 1, 3.A and 6. Donor/acceptor identity, filters and ratio correction. Settings are specific to the stated assay format.</p><p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/simultaneous-dual-emission/\">Simultaneous dual emission</a>. Paired channel collection and matched PMTs. Timing benefits require assay-specific verification.</p>",
+  "body_text": "Use the validated filter configuration as the reference while comparing alternatives with raw donor and acceptor signals, matched negative controls and a known biological response. Seek adequate photon collection in both channels while limiting donor emission entering the acceptor measurement. A higher raw NanoBRET ratio can arise simply because the filters collect different fractions of the two emissions. [1]\n\nSpecify the assay before selecting the bands\n\nNanoBRET measures bioluminescence resonance energy transfer (BRET) from NanoLuc luciferase to an acceptor. Promega's protein–protein interaction system uses the HaloTag NanoBRET 618 ligand. The donor emits near 460 nm and the acceptor near 618 nm. Other NanoBRET formats use different acceptor reagents; follow their own manuals rather than transferring a filter pair solely because the assay name contains NanoBRET. [1]\n\nFor the protein–protein interaction system, Promega describes a donor bandpass centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter beginning around 600–610 nm. The manual's explicit example uses 610 nm long pass. These are two emission measurements; no external excitation wavelength is required for the BRET read. [1]\n\nChannel | Emission peak | Example filter | Meaning | NanoLuc donor | About 460 nm | 450 nm / 80 nm bandpass | Nominal band about 410–490 nm | HaloTag 618 acceptor | About 618 nm | 610 nm long pass | Transmits longer wavelengths above the transition | \n\nActual transmission curves have slopes and out-of-band leakage. A long-pass specification also does not identify a universal upper wavelength limit: the remaining optics and detector response matter.\n\nThe ratio changes when either collection band changes\n\nIf an alternative donor filter collects half as much donor light while acceptor output stays unchanged, the raw acceptor-to-donor ratio doubles. No additional energy transfer is required. This constructed example assumes linear response and unchanged sample emission. Compare a known response range and replicate precision, rather than optimizing the height of the ratio alone.\n\nA broader donor band may improve denominator precision by collecting more light. A broader acceptor measurement may collect more transferred emission but also more of the donor's spectral tail or other background. Evaluate both effects with the complete optical configuration, including dichroic separation when present. Simultaneous collection does not by itself block spectral leakage.\n\nCarry the negative control through every filter comparison\n\nFor the HaloTag assay, include matched samples without the acceptor ligand. Their acceptor-channel reading captures donor-related background and other contributions under those conditions. Follow Promega's ratio correction: calculate acceptor divided by donor, multiply by 1,000 for milliBRET units (mBU), and subtract the corresponding no-ligand control ratio on the same scale. [1]\n\nThat subtraction estimates a background contribution; its uncertainty remains. A filter that admits more donor light into the acceptor channel can increase the burden on the control measurement. Preserve raw channels and check low-donor conditions, where a denominator close to background makes ratios unreliable.\n\nKeep the two observations comparable\n\nUse the same sample preparation, substrate timing and validated temperature across configurations. Balance read order or use matched preparations if output changes during the comparison. Keep detector settings documented and verify both channels across their intended linear ranges.\n\nSimultaneous dual-emission collection with matched, calibrated photomultiplier tubes (PMTs) removes the interval between donor and acceptor observations. That is useful when brightness changes during sequential reads. It does not replace channel calibration or add photons to a weak signal. [2]\n\nConfirm the final filter choice with the expected positive and negative responses, replicate preparations and a concentration series. Save the actual centers, bandwidths or long-pass cutoffs in nm, detector settings and correction method. Include the optical specifications when transferring the method; a filter labelled “BRET” on another reader may transmit a different band.\n\nReferences\n\n1. Promega. NanoBRET Protein:Protein Interaction System Technical Manual TM439, revision October 2023, sections 1, 3.A and 6. Donor/acceptor identity, filters and ratio correction. Settings are specific to the stated assay format.\n\n2. BMG LABTECH. Simultaneous dual emission. Paired channel collection and matched PMTs. Timing benefits require assay-specific verification.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Use the validated filter configuration as the reference while comparing alternatives with raw donor and acceptor signals, matched negative controls and a known biological response. Seek adequate photon collection in both channels while limiting donor emission entering the acceptor measurement. A higher raw NanoBRET ratio can arise simply because the filters collect different fractions of the two emissions. [1]",
+          "html": "<p>Use the validated filter configuration as the reference while comparing alternatives with raw donor and acceptor signals, matched negative controls and a known biological response. Seek adequate photon collection in both channels while limiting donor emission entering the acceptor measurement. A higher raw NanoBRET ratio can arise simply because the filters collect different fractions of the two emissions. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "specify-the-assay-before-selecting-the-bands",
+      "heading": "Specify the assay before selecting the bands",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Specify the assay before selecting the bands",
+          "html": "<h2 id=\"specify-the-assay-before-selecting-the-bands\">Specify the assay before selecting the bands</h2>"
+        },
+        {
+          "type": "p",
+          "text": "NanoBRET measures bioluminescence resonance energy transfer (BRET) from NanoLuc luciferase to an acceptor. Promega's protein–protein interaction system uses the HaloTag NanoBRET 618 ligand. The donor emits near 460 nm and the acceptor near 618 nm. Other NanoBRET formats use different acceptor reagents; follow their own manuals rather than transferring a filter pair solely because the assay name contains NanoBRET. [1]",
+          "html": "<p>NanoBRET measures bioluminescence resonance energy transfer (BRET) from NanoLuc luciferase to an acceptor. Promega's protein–protein interaction system uses the HaloTag NanoBRET 618 ligand. The donor emits near 460 nm and the acceptor near 618 nm. Other NanoBRET formats use different acceptor reagents; follow their own manuals rather than transferring a filter pair solely because the assay name contains NanoBRET. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For the protein–protein interaction system, Promega describes a donor bandpass centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter beginning around 600–610 nm. The manual's explicit example uses 610 nm long pass. These are two emission measurements; no external excitation wavelength is required for the BRET read. [1]",
+          "html": "<p>For the protein–protein interaction system, Promega describes a donor bandpass centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter beginning around 600–610 nm. The manual's explicit example uses 610 nm long pass. These are two emission measurements; no external excitation wavelength is required for the BRET read. [1]</p>"
+        },
+        {
+          "type": "div",
+          "text": "Channel | Emission peak | Example filter | Meaning | NanoLuc donor | About 460 nm | 450 nm / 80 nm bandpass | Nominal band about 410–490 nm | HaloTag 618 acceptor | About 618 nm | 610 nm long pass | Transmits longer wavelengths above the transition | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Channel</th><th scope=\"col\">Emission peak</th><th scope=\"col\">Example filter</th><th scope=\"col\">Meaning</th></tr></thead><tbody><tr><th scope=\"row\">NanoLuc donor</th><td>About 460 nm</td><td>450 nm / 80 nm bandpass</td><td>Nominal band about 410–490 nm</td></tr><tr><th scope=\"row\">HaloTag 618 acceptor</th><td>About 618 nm</td><td>610 nm long pass</td><td>Transmits longer wavelengths above the transition</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "Actual transmission curves have slopes and out-of-band leakage. A long-pass specification also does not identify a universal upper wavelength limit: the remaining optics and detector response matter.",
+          "html": "<p>Actual transmission curves have slopes and out-of-band leakage. A long-pass specification also does not identify a universal upper wavelength limit: the remaining optics and detector response matter.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-ratio-changes-when-either-collection-band-changes",
+      "heading": "The ratio changes when either collection band changes",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The ratio changes when either collection band changes",
+          "html": "<h2 id=\"the-ratio-changes-when-either-collection-band-changes\">The ratio changes when either collection band changes</h2>"
+        },
+        {
+          "type": "p",
+          "text": "If an alternative donor filter collects half as much donor light while acceptor output stays unchanged, the raw acceptor-to-donor ratio doubles. No additional energy transfer is required. This constructed example assumes linear response and unchanged sample emission. Compare a known response range and replicate precision, rather than optimizing the height of the ratio alone.",
+          "html": "<p>If an alternative donor filter collects half as much donor light while acceptor output stays unchanged, the raw acceptor-to-donor ratio doubles. No additional energy transfer is required. This constructed example assumes linear response and unchanged sample emission. Compare a known response range and replicate precision, rather than optimizing the height of the ratio alone.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A broader donor band may improve denominator precision by collecting more light. A broader acceptor measurement may collect more transferred emission but also more of the donor's spectral tail or other background. Evaluate both effects with the complete optical configuration, including dichroic separation when present. Simultaneous collection does not by itself block spectral leakage.",
+          "html": "<p>A broader donor band may improve denominator precision by collecting more light. A broader acceptor measurement may collect more transferred emission but also more of the donor's spectral tail or other background. Evaluate both effects with the complete optical configuration, including dichroic separation when present. Simultaneous collection does not by itself block spectral leakage.</p>"
+        }
+      ]
+    },
+    {
+      "id": "carry-the-negative-control-through-every-filter-comparison",
+      "heading": "Carry the negative control through every filter comparison",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Carry the negative control through every filter comparison",
+          "html": "<h2 id=\"carry-the-negative-control-through-every-filter-comparison\">Carry the negative control through every filter comparison</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For the HaloTag assay, include matched samples without the acceptor ligand. Their acceptor-channel reading captures donor-related background and other contributions under those conditions. Follow Promega's ratio correction: calculate acceptor divided by donor, multiply by 1,000 for milliBRET units (mBU), and subtract the corresponding no-ligand control ratio on the same scale. [1]",
+          "html": "<p>For the HaloTag assay, include matched samples without the acceptor ligand. Their acceptor-channel reading captures donor-related background and other contributions under those conditions. Follow Promega's ratio correction: calculate acceptor divided by donor, multiply by 1,000 for milliBRET units (mBU), and subtract the corresponding no-ligand control ratio on the same scale. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "That subtraction estimates a background contribution; its uncertainty remains. A filter that admits more donor light into the acceptor channel can increase the burden on the control measurement. Preserve raw channels and check low-donor conditions, where a denominator close to background makes ratios unreliable.",
+          "html": "<p>That subtraction estimates a background contribution; its uncertainty remains. A filter that admits more donor light into the acceptor channel can increase the burden on the control measurement. Preserve raw channels and check low-donor conditions, where a denominator close to background makes ratios unreliable.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-the-two-observations-comparable",
+      "heading": "Keep the two observations comparable",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep the two observations comparable",
+          "html": "<h2 id=\"keep-the-two-observations-comparable\">Keep the two observations comparable</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use the same sample preparation, substrate timing and validated temperature across configurations. Balance read order or use matched preparations if output changes during the comparison. Keep detector settings documented and verify both channels across their intended linear ranges.",
+          "html": "<p>Use the same sample preparation, substrate timing and validated temperature across configurations. Balance read order or use matched preparations if output changes during the comparison. Keep detector settings documented and verify both channels across their intended linear ranges.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission collection with matched, calibrated photomultiplier tubes (PMTs) removes the interval between donor and acceptor observations. That is useful when brightness changes during sequential reads. It does not replace channel calibration or add photons to a weak signal. [2]",
+          "html": "<p>Simultaneous dual-emission collection with matched, calibrated photomultiplier tubes (PMTs) removes the interval between donor and acceptor observations. That is useful when brightness changes during sequential reads. It does not replace channel calibration or add photons to a weak signal. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Confirm the final filter choice with the expected positive and negative responses, replicate preparations and a concentration series. Save the actual centers, bandwidths or long-pass cutoffs in nm, detector settings and correction method. Include the optical specifications when transferring the method; a filter labelled “BRET” on another reader may transmit a different band.",
+          "html": "<p>Confirm the final filter choice with the expected positive and negative responses, replicate preparations and a concentration series. Save the actual centers, bandwidths or long-pass cutoffs in nm, detector settings and correction method. Include the optical specifications when transferring the method; a filter labelled “BRET” on another reader may transmit a different band.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Promega. NanoBRET Protein:Protein Interaction System Technical Manual TM439, revision October 2023, sections 1, 3.A and 6. Donor/acceptor identity, filters and ratio correction. Settings are specific to the stated assay format.",
+          "html": "<p id=\"ref-1\">1. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanobret-proteinprotein-interaction-system-protocol.pdf\">NanoBRET Protein:Protein Interaction System Technical Manual TM439</a>, revision October 2023, sections 1, 3.A and 6. Donor/acceptor identity, filters and ratio correction. Settings are specific to the stated assay format.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. BMG LABTECH. Simultaneous dual emission. Paired channel collection and matched PMTs. Timing benefits require assay-specific verification.",
+          "html": "<p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/simultaneous-dual-emission/\">Simultaneous dual emission</a>. Paired channel collection and matched PMTs. Timing benefits require assay-specific verification.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Promega. NanoBRET Protein:Protein Interaction System Technical Manual TM439, revision October 2023, sections 1, 3.A and 6. Donor/acceptor identity, filters and ratio correction. Settings are specific to the stated assay format.",
+      "urls": [
+        "https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanobret-proteinprotein-interaction-system-protocol.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. BMG LABTECH. Simultaneous dual emission. Paired channel collection and matched PMTs. Timing benefits require assay-specific verification.",
+      "urls": [
+        "https://www.bmglabtech.com/en/simultaneous-dual-emission/"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [
+    {
+      "caption": "How should I optimize NanoBRET donor and acceptor filters?",
+      "rows": [
+        [
+          "Channel",
+          "Emission peak",
+          "Example filter",
+          "Meaning"
+        ],
+        [
+          "NanoLuc donor",
+          "About 460 nm",
+          "450 nm / 80 nm bandpass",
+          "Nominal band about 410–490 nm"
+        ],
+        [
+          "HaloTag 618 acceptor",
+          "About 618 nm",
+          "610 nm long pass",
+          "Transmits longer wavelengths above the transition"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "bb9fe9f39b9d91531cf8905bd16aab463b7c33009faf975eeeef0858771534a6"
+}

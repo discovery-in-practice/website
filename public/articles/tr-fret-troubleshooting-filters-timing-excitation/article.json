@@ -1,0 +1,401 @@
+{
+  "schema_version": "1.0",
+  "id": "tr-fret-troubleshooting-filters-timing-excitation",
+  "canonical_url": "https://discoveryinpractice.com/articles/tr-fret-troubleshooting-filters-timing-excitation/",
+  "title": "TR-FRET: waiting doesn’t fix the wrong photons",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Troubleshoot HTRF and LanthaScreen assays by separating timing from spectral leakage. Learn when filters, excitation and reader controls improve results.",
+  "takeaways": [
+    "Why a short-lived acceptor can give a delayed signal",
+    "More fluorescence can mean less useful contrast",
+    "Delay time and collection time spend different photons"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "TR-FRET",
+    "Optics",
+    "Assay interference"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-02",
+  "date_modified": "2026-10-02",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>The assay has almost no window, but plenty of fluorescence. Increasing the flash count raises the numbers; extending the delay lowers them. Yet the positive and negative controls still do not separate.</p><p>Before replacing the protein, check which photons the reader is collecting.</p><p>Time-resolved fluorescence resonance energy transfer, or TR-FRET, uses both timing and wavelength selection. HTRF and LanthaScreen are implementations of that general approach, with different donor–acceptor combinations and setup requirements. The time delay rejects short-lived fluorescence. The emission optics decide which of the remaining photons enter each channel. A good delay cannot rescue an unsuitable emission filter.</p><h2 id=\"why-a-short-lived-acceptor-can-give-a-delayed-signal\">Why a short-lived acceptor can give a delayed signal</h2><p>After an excitation pulse, a population of excited lanthanide donors decays slowly. Donors near suitable acceptors can transfer energy during that decay. Each acceptor excitation is brief; the delayed emission persists because different donors transfer their energy at different times. The signal therefore carries information about donor–acceptor proximity. [1]</p><p>This separates direct acceptor excitation from excitation through the donor. Prompt fluorescence can decay before measurement begins, while sensitized acceptor fluorescence remains detectable.</p><p>It does not remove every unwanted signal. Donor emission is deliberately long-lived. Any donor photons admitted into the acceptor channel can survive the delay along with the signal you intended to measure.</p><p>Thermo Fisher's LanthaScreen guidance makes the problem unusually explicit: a conventional fluorescein emission filter can have too broad a bandwidth and admit terbium emission. The familiar fluorophore name on a filter is insufficient evidence that it suits the assay. [2]</p><p>Check the complete optical recommendation for the exact donor, acceptor and reader configuration. Center wavelength matters, but so do bandwidth and rejection of unwanted wavelengths. A red-acceptor HTRF setup is not a template to copy indiscriminately into a terbium–fluorescein assay.</p><h2 id=\"more-fluorescence-can-mean-less-useful-contrast\">More fluorescence can mean less useful contrast</h2><p>Write the acceptor-channel measurement as a simple model:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"A subscript measured = F + αD + B\"><mrow><msub><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub><mrow><mtext> = F + αD + B</mtext></mrow></mrow></math></div></div><p>F is the desired sensitized acceptor signal, D is the measured donor-channel signal, α describes donor leakage into the acceptor channel, and B is other background. This is an illustrative linear model; α depends on the spectra and detection paths, and B can include several mechanisms.</p><p>Suppose the useful acceptor signal is 100 units in the low control and 1,000 in the high control. Hold donor emission constant between controls and set other background to zero. Compare two hypothetical optical selections:</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Optical selection</th><th scope=\"col\">Low control</th><th scope=\"col\">High control</th><th scope=\"col\">High/low window</th></tr></thead><tbody><tr><th scope=\"row\">Adds 100 units of donor leakage</th><td>200</td><td>1,100</td><td>5.5-fold</td></tr><tr><th scope=\"row\">Adds 1,900 units of donor leakage</th><td>2,000</td><td>2,900</td><td>1.45-fold</td></tr></tbody></table></div><p>The second selection delivers the larger raw readings and the poorer fold window. In this deliberately simplified comparison, it collects the same useful fluorescence and admits more donor light. Actual filters may change both contributions.</p><p>The absolute high-minus-low difference remains 900 units. That matters: a constant offset does not automatically corrupt a properly fitted concentration-response curve. But the leaked light contributes photon noise, and collecting it uses detector range without adding the desired biological contrast. Subtracting its mean cannot subtract the random photons that arrived with it.</p><p>The donor-normalized ratio also has a limit:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"(A subscript measured) divided by (D) = (F) divided by (D) + α + (B) divided by (D)\"><mrow><mfrac><mrow><msub><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><mrow><mtext>F</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac><mrow><mtext> + α + </mtext></mrow><mfrac><mrow><mrow><mtext>B</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>Dividing by the donor channel does not remove α. It makes constant proportional leakage a ratio offset. If spectra, background or detector response change across samples, the problem can become more complicated than an offset. Keep both channels and donor-only controls rather than expecting the ratio to perform an optical repair.</p><h2 id=\"delay-time-and-collection-time-spend-different-photons\">Delay time and collection time spend different photons</h2><p>Delay is the interval between excitation and the start of measurement. Collection time is the interval during which the detector accepts photons. Increasing one discards an earlier portion of the decay; increasing the other collects a later portion. They are not interchangeable sensitivity settings.</p><p>For an ideal single exponential with lifetime τ, the fraction of its total post-pulse photons collected after delay d during a window T is:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"f subscript gate = e raised to (− (d) divided by (τ)) − e raised to (− (d + T) divided by (τ))\"><mrow><msub><mrow><mrow><mtext>f</mtext></mrow></mrow><mrow><mrow><mtext>gate</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msup><mrow><mrow><mtext>e</mtext></mrow></mrow><mrow><mrow><mtext>−</mtext></mrow><mfrac><mrow><mrow><mtext>d</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac></mrow></msup><mrow><mtext> − </mtext></mrow><msup><mrow><mrow><mtext>e</mtext></mrow></mrow><mrow><mrow><mtext>−</mtext></mrow><mfrac><mrow><mrow><mtext>d + T</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac></mrow></msup></mrow></math></div></div><p>Take a hypothetical 600-microsecond lifetime and a 200-microsecond collection window. Starting at 100 microseconds collects about 24% of the total decay. Starting at 300 microseconds collects about 17%. The extra waiting has discarded roughly 28% of the photons that the earlier window would have collected.</p><p>That can be a good trade if it removes disproportionately more background. Once the troublesome short-lived background is already gone, however, a longer delay may mainly cost precision. Real TR-FRET decays can contain several components, and donor leakage need not share the decay of the useful acceptor signal. Optimize with assay controls; do not treat this one-exponential example as a universal timing prescription.</p><p>Manufacturer settings provide a defensible starting point. Thermo's 2010 LanthaScreen reader-test note specifies a 100-microsecond delay and 200-microsecond integration window for that procedure. It explicitly distinguishes its settings from other TR-FRET assays. Use the applicable setup guide, not a timing value remembered from a different kit. [3]</p><h2 id=\"where-strong-excitation-earns-its-keep\">Where strong excitation earns its keep</h2><p>Once wavelength selection and timing are correct, collecting more useful photons can improve precision or shorten acquisition. A suitable pulsed UV laser can supply substantial excitation at a wavelength the donor absorbs, concentrating energy into a brief pulse. The practical benefit is more usable signal per excitation cycle when the rest of the optical system and assay can use it.</p><p>An assay-manufacturer setup guide documents both lamp excitation and a 337-nm laser option for LanthaScreen terbium measurements. That establishes compatibility in the described configuration, not universal superiority of every laser over every lamp. [4]</p><p>Compare the actual assay at equal precision or equal total read time. Include the dim conditions, the raw donor and acceptor channels, and the brightest samples. Stronger excitation is valuable when it supplies information you were short of. It cannot make donor leakage specific, and the detectors must remain linear at the resulting signals.</p><p>Simultaneous donor and acceptor collection offers another practical advantage. Reading the same excitation events with matching time gates lets proportional pulse-to-pulse changes affect both channels together. That shared variation can cancel in the ratio. It also avoids a second channel acquisition where the instrument would otherwise need one.</p><p>Use corresponding time gates and calibrated relative channel responses, with adequate counts in both channels. Independent photon noise and additive background remain. Assess precision and throughput under the intended protocol instead of assuming that two detectors halve the entire plate time.</p><h2 id=\"check-the-reader-without-asking-the-protein-to-cooperate\">Check the reader without asking the protein to cooperate</h2><p>Thermo's LanthaScreen reader-test procedure contains a useful troubleshooting idea: generate a TR-FRET response independently of a biological binding equilibrium. It uses diffusion-enhanced energy transfer at suitable donor and acceptor concentrations. The note has explicit reagent restrictions, so follow that procedure rather than improvising a high-concentration mixture from any available kit. [3]</p><p>Revvity's HTRF Reader Control Kit similarly provides a way to assess optical and software configuration and follow reader performance. Its incubation schedules and signal-stability windows are specified; it is not simply a permanent fluorescent reference plate. [5]</p><p>These controls separate two questions. Can the configured instrument resolve an appropriate TR-FRET response? Does the biological assay generate that response under its own conditions? A successful reader control narrows the investigation without proving that the target assay is sound.</p><p>For a failing assay, start with the correct manufacturer setup and a compatible reader control. Then examine matrix blanks, donor-only wells, acceptor-only wells, and complete low and high assay controls. Keep reagent concentrations and matrix conditions comparable where the control design permits. Change one optical or timing variable at a time before undertaking another protein titration.</p><h2 id=\"keep-the-plate-history-in-the-experiment\">Keep the plate history in the experiment</h2><p>Stable fluorescent chemistry does not make the underlying biology temperature-independent. Revvity distinguishes the temperature robustness of HTRF chemistry from temperature-sensitive protein components and incubation kinetics. [1] Keep incubation temperature, equilibration and read order reproducible when comparing settings.</p><p>A sensible final check is a representative plate sequence, not one favorable plate. Record delay, collection window, pulse count, excitation source, channel optics and plate type. Review intermediate responses as well as the controls, and verify the operating range.</p><p>A passing reader control with no biological window points back to the assay. Strong donor-only signal in the acceptor channel points to the optics. If a longer delay only dims every well, stop extending it.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, especially pp. 9, 13 and 17. Donor-fed delayed acceptor emission, detection principles and temperature qualifications.</p><p id=\"ref-2\">2. Thermo Fisher Scientific. <a href=\"https://www.thermofisher.com/order/catalog/product/A15140/faqs\">LanthaScreen assay FAQs</a>, emission-filter and assay-window questions.</p><p id=\"ref-3\">3. Thermo Fisher Scientific. <a href=\"https://www.thermofisher.com/TFS-Assets/LSG/manuals/LanthaScreen_Tb_Instrument_Control_Application_Note17Sep10.pdf\">Method to Test Microplate Readers for LanthaScreen Tb Assays</a>. September 20, 2010, pp. 1–3. Historical manufacturer procedure; check current assay-specific instructions before use.</p><p id=\"ref-4\">4. Life Technologies/Thermo Fisher Scientific. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/EnVision_LanthaScreen_Terbium.pdf\">LanthaScreen Terbium Assay Setup Guide on the EnVision Multilabel Reader</a>. April 13, 2012, especially p. 2. Configuration-specific lamp/laser and optical guidance; not a current comparative performance study.</p><p id=\"ref-5\">5. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit</a>. Version 08, January 2026. Optical/software validation, incubation schedules and stability windows. Numerical examples in this article are constructed calculations, not measured reader performance.</p>",
+  "body_text": "The assay has almost no window, but plenty of fluorescence. Increasing the flash count raises the numbers; extending the delay lowers them. Yet the positive and negative controls still do not separate.\n\nBefore replacing the protein, check which photons the reader is collecting.\n\nTime-resolved fluorescence resonance energy transfer, or TR-FRET, uses both timing and wavelength selection. HTRF and LanthaScreen are implementations of that general approach, with different donor–acceptor combinations and setup requirements. The time delay rejects short-lived fluorescence. The emission optics decide which of the remaining photons enter each channel. A good delay cannot rescue an unsuitable emission filter.\n\nWhy a short-lived acceptor can give a delayed signal\n\nAfter an excitation pulse, a population of excited lanthanide donors decays slowly. Donors near suitable acceptors can transfer energy during that decay. Each acceptor excitation is brief; the delayed emission persists because different donors transfer their energy at different times. The signal therefore carries information about donor–acceptor proximity. [1]\n\nThis separates direct acceptor excitation from excitation through the donor. Prompt fluorescence can decay before measurement begins, while sensitized acceptor fluorescence remains detectable.\n\nIt does not remove every unwanted signal. Donor emission is deliberately long-lived. Any donor photons admitted into the acceptor channel can survive the delay along with the signal you intended to measure.\n\nThermo Fisher's LanthaScreen guidance makes the problem unusually explicit: a conventional fluorescein emission filter can have too broad a bandwidth and admit terbium emission. The familiar fluorophore name on a filter is insufficient evidence that it suits the assay. [2]\n\nCheck the complete optical recommendation for the exact donor, acceptor and reader configuration. Center wavelength matters, but so do bandwidth and rejection of unwanted wavelengths. A red-acceptor HTRF setup is not a template to copy indiscriminately into a terbium–fluorescein assay.\n\nMore fluorescence can mean less useful contrast\n\nWrite the acceptor-channel measurement as a simple model:\n\nA subscript measured = F + αD + B\n\nF is the desired sensitized acceptor signal, D is the measured donor-channel signal, α describes donor leakage into the acceptor channel, and B is other background. This is an illustrative linear model; α depends on the spectra and detection paths, and B can include several mechanisms.\n\nSuppose the useful acceptor signal is 100 units in the low control and 1,000 in the high control. Hold donor emission constant between controls and set other background to zero. Compare two hypothetical optical selections:\n\nOptical selection | Low control | High control | High/low window | Adds 100 units of donor leakage | 200 | 1,100 | 5.5-fold | Adds 1,900 units of donor leakage | 2,000 | 2,900 | 1.45-fold | \n\nThe second selection delivers the larger raw readings and the poorer fold window. In this deliberately simplified comparison, it collects the same useful fluorescence and admits more donor light. Actual filters may change both contributions.\n\nThe absolute high-minus-low difference remains 900 units. That matters: a constant offset does not automatically corrupt a properly fitted concentration-response curve. But the leaked light contributes photon noise, and collecting it uses detector range without adding the desired biological contrast. Subtracting its mean cannot subtract the random photons that arrived with it.\n\nThe donor-normalized ratio also has a limit:\n\n(A subscript measured) divided by (D) = (F) divided by (D) + α + (B) divided by (D)\n\nDividing by the donor channel does not remove α. It makes constant proportional leakage a ratio offset. If spectra, background or detector response change across samples, the problem can become more complicated than an offset. Keep both channels and donor-only controls rather than expecting the ratio to perform an optical repair.\n\nDelay time and collection time spend different photons\n\nDelay is the interval between excitation and the start of measurement. Collection time is the interval during which the detector accepts photons. Increasing one discards an earlier portion of the decay; increasing the other collects a later portion. They are not interchangeable sensitivity settings.\n\nFor an ideal single exponential with lifetime τ, the fraction of its total post-pulse photons collected after delay d during a window T is:\n\nf subscript gate = e raised to (− (d) divided by (τ)) − e raised to (− (d + T) divided by (τ))\n\nTake a hypothetical 600-microsecond lifetime and a 200-microsecond collection window. Starting at 100 microseconds collects about 24% of the total decay. Starting at 300 microseconds collects about 17%. The extra waiting has discarded roughly 28% of the photons that the earlier window would have collected.\n\nThat can be a good trade if it removes disproportionately more background. Once the troublesome short-lived background is already gone, however, a longer delay may mainly cost precision. Real TR-FRET decays can contain several components, and donor leakage need not share the decay of the useful acceptor signal. Optimize with assay controls; do not treat this one-exponential example as a universal timing prescription.\n\nManufacturer settings provide a defensible starting point. Thermo's 2010 LanthaScreen reader-test note specifies a 100-microsecond delay and 200-microsecond integration window for that procedure. It explicitly distinguishes its settings from other TR-FRET assays. Use the applicable setup guide, not a timing value remembered from a different kit. [3]\n\nWhere strong excitation earns its keep\n\nOnce wavelength selection and timing are correct, collecting more useful photons can improve precision or shorten acquisition. A suitable pulsed UV laser can supply substantial excitation at a wavelength the donor absorbs, concentrating energy into a brief pulse. The practical benefit is more usable signal per excitation cycle when the rest of the optical system and assay can use it.\n\nAn assay-manufacturer setup guide documents both lamp excitation and a 337-nm laser option for LanthaScreen terbium measurements. That establishes compatibility in the described configuration, not universal superiority of every laser over every lamp. [4]\n\nCompare the actual assay at equal precision or equal total read time. Include the dim conditions, the raw donor and acceptor channels, and the brightest samples. Stronger excitation is valuable when it supplies information you were short of. It cannot make donor leakage specific, and the detectors must remain linear at the resulting signals.\n\nSimultaneous donor and acceptor collection offers another practical advantage. Reading the same excitation events with matching time gates lets proportional pulse-to-pulse changes affect both channels together. That shared variation can cancel in the ratio. It also avoids a second channel acquisition where the instrument would otherwise need one.\n\nUse corresponding time gates and calibrated relative channel responses, with adequate counts in both channels. Independent photon noise and additive background remain. Assess precision and throughput under the intended protocol instead of assuming that two detectors halve the entire plate time.\n\nCheck the reader without asking the protein to cooperate\n\nThermo's LanthaScreen reader-test procedure contains a useful troubleshooting idea: generate a TR-FRET response independently of a biological binding equilibrium. It uses diffusion-enhanced energy transfer at suitable donor and acceptor concentrations. The note has explicit reagent restrictions, so follow that procedure rather than improvising a high-concentration mixture from any available kit. [3]\n\nRevvity's HTRF Reader Control Kit similarly provides a way to assess optical and software configuration and follow reader performance. Its incubation schedules and signal-stability windows are specified; it is not simply a permanent fluorescent reference plate. [5]\n\nThese controls separate two questions. Can the configured instrument resolve an appropriate TR-FRET response? Does the biological assay generate that response under its own conditions? A successful reader control narrows the investigation without proving that the target assay is sound.\n\nFor a failing assay, start with the correct manufacturer setup and a compatible reader control. Then examine matrix blanks, donor-only wells, acceptor-only wells, and complete low and high assay controls. Keep reagent concentrations and matrix conditions comparable where the control design permits. Change one optical or timing variable at a time before undertaking another protein titration.\n\nKeep the plate history in the experiment\n\nStable fluorescent chemistry does not make the underlying biology temperature-independent. Revvity distinguishes the temperature robustness of HTRF chemistry from temperature-sensitive protein components and incubation kinetics. [1] Keep incubation temperature, equilibration and read order reproducible when comparing settings.\n\nA sensible final check is a representative plate sequence, not one favorable plate. Record delay, collection window, pulse count, excitation source, channel optics and plate type. Review intermediate responses as well as the controls, and verify the operating range.\n\nA passing reader control with no biological window points back to the assay. Strong donor-only signal in the acceptor channel points to the optics. If a longer delay only dims every well, stop extending it.\n\nReferences\n\n1. Revvity. HTRF Technical Booklet, especially pp. 9, 13 and 17. Donor-fed delayed acceptor emission, detection principles and temperature qualifications.\n\n2. Thermo Fisher Scientific. LanthaScreen assay FAQs, emission-filter and assay-window questions.\n\n3. Thermo Fisher Scientific. Method to Test Microplate Readers for LanthaScreen Tb Assays. September 20, 2010, pp. 1–3. Historical manufacturer procedure; check current assay-specific instructions before use.\n\n4. Life Technologies/Thermo Fisher Scientific. LanthaScreen Terbium Assay Setup Guide on the EnVision Multilabel Reader. April 13, 2012, especially p. 2. Configuration-specific lamp/laser and optical guidance; not a current comparative performance study.\n\n5. Revvity. HTRF Reader Control Kit. Version 08, January 2026. Optical/software validation, incubation schedules and stability windows. Numerical examples in this article are constructed calculations, not measured reader performance.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The assay has almost no window, but plenty of fluorescence. Increasing the flash count raises the numbers; extending the delay lowers them. Yet the positive and negative controls still do not separate.",
+          "html": "<p>The assay has almost no window, but plenty of fluorescence. Increasing the flash count raises the numbers; extending the delay lowers them. Yet the positive and negative controls still do not separate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Before replacing the protein, check which photons the reader is collecting.",
+          "html": "<p>Before replacing the protein, check which photons the reader is collecting.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Time-resolved fluorescence resonance energy transfer, or TR-FRET, uses both timing and wavelength selection. HTRF and LanthaScreen are implementations of that general approach, with different donor–acceptor combinations and setup requirements. The time delay rejects short-lived fluorescence. The emission optics decide which of the remaining photons enter each channel. A good delay cannot rescue an unsuitable emission filter.",
+          "html": "<p>Time-resolved fluorescence resonance energy transfer, or TR-FRET, uses both timing and wavelength selection. HTRF and LanthaScreen are implementations of that general approach, with different donor–acceptor combinations and setup requirements. The time delay rejects short-lived fluorescence. The emission optics decide which of the remaining photons enter each channel. A good delay cannot rescue an unsuitable emission filter.</p>"
+        }
+      ]
+    },
+    {
+      "id": "why-a-short-lived-acceptor-can-give-a-delayed-signal",
+      "heading": "Why a short-lived acceptor can give a delayed signal",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Why a short-lived acceptor can give a delayed signal",
+          "html": "<h2 id=\"why-a-short-lived-acceptor-can-give-a-delayed-signal\">Why a short-lived acceptor can give a delayed signal</h2>"
+        },
+        {
+          "type": "p",
+          "text": "After an excitation pulse, a population of excited lanthanide donors decays slowly. Donors near suitable acceptors can transfer energy during that decay. Each acceptor excitation is brief; the delayed emission persists because different donors transfer their energy at different times. The signal therefore carries information about donor–acceptor proximity. [1]",
+          "html": "<p>After an excitation pulse, a population of excited lanthanide donors decays slowly. Donors near suitable acceptors can transfer energy during that decay. Each acceptor excitation is brief; the delayed emission persists because different donors transfer their energy at different times. The signal therefore carries information about donor–acceptor proximity. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "This separates direct acceptor excitation from excitation through the donor. Prompt fluorescence can decay before measurement begins, while sensitized acceptor fluorescence remains detectable.",
+          "html": "<p>This separates direct acceptor excitation from excitation through the donor. Prompt fluorescence can decay before measurement begins, while sensitized acceptor fluorescence remains detectable.</p>"
+        },
+        {
+          "type": "p",
+          "text": "It does not remove every unwanted signal. Donor emission is deliberately long-lived. Any donor photons admitted into the acceptor channel can survive the delay along with the signal you intended to measure.",
+          "html": "<p>It does not remove every unwanted signal. Donor emission is deliberately long-lived. Any donor photons admitted into the acceptor channel can survive the delay along with the signal you intended to measure.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Thermo Fisher's LanthaScreen guidance makes the problem unusually explicit: a conventional fluorescein emission filter can have too broad a bandwidth and admit terbium emission. The familiar fluorophore name on a filter is insufficient evidence that it suits the assay. [2]",
+          "html": "<p>Thermo Fisher's LanthaScreen guidance makes the problem unusually explicit: a conventional fluorescein emission filter can have too broad a bandwidth and admit terbium emission. The familiar fluorophore name on a filter is insufficient evidence that it suits the assay. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check the complete optical recommendation for the exact donor, acceptor and reader configuration. Center wavelength matters, but so do bandwidth and rejection of unwanted wavelengths. A red-acceptor HTRF setup is not a template to copy indiscriminately into a terbium–fluorescein assay.",
+          "html": "<p>Check the complete optical recommendation for the exact donor, acceptor and reader configuration. Center wavelength matters, but so do bandwidth and rejection of unwanted wavelengths. A red-acceptor HTRF setup is not a template to copy indiscriminately into a terbium–fluorescein assay.</p>"
+        }
+      ]
+    },
+    {
+      "id": "more-fluorescence-can-mean-less-useful-contrast",
+      "heading": "More fluorescence can mean less useful contrast",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "More fluorescence can mean less useful contrast",
+          "html": "<h2 id=\"more-fluorescence-can-mean-less-useful-contrast\">More fluorescence can mean less useful contrast</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Write the acceptor-channel measurement as a simple model:",
+          "html": "<p>Write the acceptor-channel measurement as a simple model:</p>"
+        },
+        {
+          "type": "div",
+          "text": "A subscript measured = F + αD + B",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"A subscript measured = F + αD + B\"><mrow><msub><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub><mrow><mtext> = F + αD + B</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "F is the desired sensitized acceptor signal, D is the measured donor-channel signal, α describes donor leakage into the acceptor channel, and B is other background. This is an illustrative linear model; α depends on the spectra and detection paths, and B can include several mechanisms.",
+          "html": "<p>F is the desired sensitized acceptor signal, D is the measured donor-channel signal, α describes donor leakage into the acceptor channel, and B is other background. This is an illustrative linear model; α depends on the spectra and detection paths, and B can include several mechanisms.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose the useful acceptor signal is 100 units in the low control and 1,000 in the high control. Hold donor emission constant between controls and set other background to zero. Compare two hypothetical optical selections:",
+          "html": "<p>Suppose the useful acceptor signal is 100 units in the low control and 1,000 in the high control. Hold donor emission constant between controls and set other background to zero. Compare two hypothetical optical selections:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Optical selection | Low control | High control | High/low window | Adds 100 units of donor leakage | 200 | 1,100 | 5.5-fold | Adds 1,900 units of donor leakage | 2,000 | 2,900 | 1.45-fold | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Optical selection</th><th scope=\"col\">Low control</th><th scope=\"col\">High control</th><th scope=\"col\">High/low window</th></tr></thead><tbody><tr><th scope=\"row\">Adds 100 units of donor leakage</th><td>200</td><td>1,100</td><td>5.5-fold</td></tr><tr><th scope=\"row\">Adds 1,900 units of donor leakage</th><td>2,000</td><td>2,900</td><td>1.45-fold</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "The second selection delivers the larger raw readings and the poorer fold window. In this deliberately simplified comparison, it collects the same useful fluorescence and admits more donor light. Actual filters may change both contributions.",
+          "html": "<p>The second selection delivers the larger raw readings and the poorer fold window. In this deliberately simplified comparison, it collects the same useful fluorescence and admits more donor light. Actual filters may change both contributions.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The absolute high-minus-low difference remains 900 units. That matters: a constant offset does not automatically corrupt a properly fitted concentration-response curve. But the leaked light contributes photon noise, and collecting it uses detector range without adding the desired biological contrast. Subtracting its mean cannot subtract the random photons that arrived with it.",
+          "html": "<p>The absolute high-minus-low difference remains 900 units. That matters: a constant offset does not automatically corrupt a properly fitted concentration-response curve. But the leaked light contributes photon noise, and collecting it uses detector range without adding the desired biological contrast. Subtracting its mean cannot subtract the random photons that arrived with it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The donor-normalized ratio also has a limit:",
+          "html": "<p>The donor-normalized ratio also has a limit:</p>"
+        },
+        {
+          "type": "div",
+          "text": "(A subscript measured) divided by (D) = (F) divided by (D) + α + (B) divided by (D)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"(A subscript measured) divided by (D) = (F) divided by (D) + α + (B) divided by (D)\"><mrow><mfrac><mrow><msub><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><mrow><mtext>F</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac><mrow><mtext> + α + </mtext></mrow><mfrac><mrow><mrow><mtext>B</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Dividing by the donor channel does not remove α. It makes constant proportional leakage a ratio offset. If spectra, background or detector response change across samples, the problem can become more complicated than an offset. Keep both channels and donor-only controls rather than expecting the ratio to perform an optical repair.",
+          "html": "<p>Dividing by the donor channel does not remove α. It makes constant proportional leakage a ratio offset. If spectra, background or detector response change across samples, the problem can become more complicated than an offset. Keep both channels and donor-only controls rather than expecting the ratio to perform an optical repair.</p>"
+        }
+      ]
+    },
+    {
+      "id": "delay-time-and-collection-time-spend-different-photons",
+      "heading": "Delay time and collection time spend different photons",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Delay time and collection time spend different photons",
+          "html": "<h2 id=\"delay-time-and-collection-time-spend-different-photons\">Delay time and collection time spend different photons</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Delay is the interval between excitation and the start of measurement. Collection time is the interval during which the detector accepts photons. Increasing one discards an earlier portion of the decay; increasing the other collects a later portion. They are not interchangeable sensitivity settings.",
+          "html": "<p>Delay is the interval between excitation and the start of measurement. Collection time is the interval during which the detector accepts photons. Increasing one discards an earlier portion of the decay; increasing the other collects a later portion. They are not interchangeable sensitivity settings.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For an ideal single exponential with lifetime τ, the fraction of its total post-pulse photons collected after delay d during a window T is:",
+          "html": "<p>For an ideal single exponential with lifetime τ, the fraction of its total post-pulse photons collected after delay d during a window T is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "f subscript gate = e raised to (− (d) divided by (τ)) − e raised to (− (d + T) divided by (τ))",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"f subscript gate = e raised to (− (d) divided by (τ)) − e raised to (− (d + T) divided by (τ))\"><mrow><msub><mrow><mrow><mtext>f</mtext></mrow></mrow><mrow><mrow><mtext>gate</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msup><mrow><mrow><mtext>e</mtext></mrow></mrow><mrow><mrow><mtext>−</mtext></mrow><mfrac><mrow><mrow><mtext>d</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac></mrow></msup><mrow><mtext> − </mtext></mrow><msup><mrow><mrow><mtext>e</mtext></mrow></mrow><mrow><mrow><mtext>−</mtext></mrow><mfrac><mrow><mrow><mtext>d + T</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac></mrow></msup></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Take a hypothetical 600-microsecond lifetime and a 200-microsecond collection window. Starting at 100 microseconds collects about 24% of the total decay. Starting at 300 microseconds collects about 17%. The extra waiting has discarded roughly 28% of the photons that the earlier window would have collected.",
+          "html": "<p>Take a hypothetical 600-microsecond lifetime and a 200-microsecond collection window. Starting at 100 microseconds collects about 24% of the total decay. Starting at 300 microseconds collects about 17%. The extra waiting has discarded roughly 28% of the photons that the earlier window would have collected.</p>"
+        },
+        {
+          "type": "p",
+          "text": "That can be a good trade if it removes disproportionately more background. Once the troublesome short-lived background is already gone, however, a longer delay may mainly cost precision. Real TR-FRET decays can contain several components, and donor leakage need not share the decay of the useful acceptor signal. Optimize with assay controls; do not treat this one-exponential example as a universal timing prescription.",
+          "html": "<p>That can be a good trade if it removes disproportionately more background. Once the troublesome short-lived background is already gone, however, a longer delay may mainly cost precision. Real TR-FRET decays can contain several components, and donor leakage need not share the decay of the useful acceptor signal. Optimize with assay controls; do not treat this one-exponential example as a universal timing prescription.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Manufacturer settings provide a defensible starting point. Thermo's 2010 LanthaScreen reader-test note specifies a 100-microsecond delay and 200-microsecond integration window for that procedure. It explicitly distinguishes its settings from other TR-FRET assays. Use the applicable setup guide, not a timing value remembered from a different kit. [3]",
+          "html": "<p>Manufacturer settings provide a defensible starting point. Thermo's 2010 LanthaScreen reader-test note specifies a 100-microsecond delay and 200-microsecond integration window for that procedure. It explicitly distinguishes its settings from other TR-FRET assays. Use the applicable setup guide, not a timing value remembered from a different kit. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "where-strong-excitation-earns-its-keep",
+      "heading": "Where strong excitation earns its keep",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Where strong excitation earns its keep",
+          "html": "<h2 id=\"where-strong-excitation-earns-its-keep\">Where strong excitation earns its keep</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Once wavelength selection and timing are correct, collecting more useful photons can improve precision or shorten acquisition. A suitable pulsed UV laser can supply substantial excitation at a wavelength the donor absorbs, concentrating energy into a brief pulse. The practical benefit is more usable signal per excitation cycle when the rest of the optical system and assay can use it.",
+          "html": "<p>Once wavelength selection and timing are correct, collecting more useful photons can improve precision or shorten acquisition. A suitable pulsed UV laser can supply substantial excitation at a wavelength the donor absorbs, concentrating energy into a brief pulse. The practical benefit is more usable signal per excitation cycle when the rest of the optical system and assay can use it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "An assay-manufacturer setup guide documents both lamp excitation and a 337-nm laser option for LanthaScreen terbium measurements. That establishes compatibility in the described configuration, not universal superiority of every laser over every lamp. [4]",
+          "html": "<p>An assay-manufacturer setup guide documents both lamp excitation and a 337-nm laser option for LanthaScreen terbium measurements. That establishes compatibility in the described configuration, not universal superiority of every laser over every lamp. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare the actual assay at equal precision or equal total read time. Include the dim conditions, the raw donor and acceptor channels, and the brightest samples. Stronger excitation is valuable when it supplies information you were short of. It cannot make donor leakage specific, and the detectors must remain linear at the resulting signals.",
+          "html": "<p>Compare the actual assay at equal precision or equal total read time. Include the dim conditions, the raw donor and acceptor channels, and the brightest samples. Stronger excitation is valuable when it supplies information you were short of. It cannot make donor leakage specific, and the detectors must remain linear at the resulting signals.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous donor and acceptor collection offers another practical advantage. Reading the same excitation events with matching time gates lets proportional pulse-to-pulse changes affect both channels together. That shared variation can cancel in the ratio. It also avoids a second channel acquisition where the instrument would otherwise need one.",
+          "html": "<p>Simultaneous donor and acceptor collection offers another practical advantage. Reading the same excitation events with matching time gates lets proportional pulse-to-pulse changes affect both channels together. That shared variation can cancel in the ratio. It also avoids a second channel acquisition where the instrument would otherwise need one.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use corresponding time gates and calibrated relative channel responses, with adequate counts in both channels. Independent photon noise and additive background remain. Assess precision and throughput under the intended protocol instead of assuming that two detectors halve the entire plate time.",
+          "html": "<p>Use corresponding time gates and calibrated relative channel responses, with adequate counts in both channels. Independent photon noise and additive background remain. Assess precision and throughput under the intended protocol instead of assuming that two detectors halve the entire plate time.</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-the-reader-without-asking-the-protein-to-cooperate",
+      "heading": "Check the reader without asking the protein to cooperate",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check the reader without asking the protein to cooperate",
+          "html": "<h2 id=\"check-the-reader-without-asking-the-protein-to-cooperate\">Check the reader without asking the protein to cooperate</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Thermo's LanthaScreen reader-test procedure contains a useful troubleshooting idea: generate a TR-FRET response independently of a biological binding equilibrium. It uses diffusion-enhanced energy transfer at suitable donor and acceptor concentrations. The note has explicit reagent restrictions, so follow that procedure rather than improvising a high-concentration mixture from any available kit. [3]",
+          "html": "<p>Thermo's LanthaScreen reader-test procedure contains a useful troubleshooting idea: generate a TR-FRET response independently of a biological binding equilibrium. It uses diffusion-enhanced energy transfer at suitable donor and acceptor concentrations. The note has explicit reagent restrictions, so follow that procedure rather than improvising a high-concentration mixture from any available kit. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's HTRF Reader Control Kit similarly provides a way to assess optical and software configuration and follow reader performance. Its incubation schedules and signal-stability windows are specified; it is not simply a permanent fluorescent reference plate. [5]",
+          "html": "<p>Revvity's HTRF Reader Control Kit similarly provides a way to assess optical and software configuration and follow reader performance. Its incubation schedules and signal-stability windows are specified; it is not simply a permanent fluorescent reference plate. [5]</p>"
+        },
+        {
+          "type": "p",
+          "text": "These controls separate two questions. Can the configured instrument resolve an appropriate TR-FRET response? Does the biological assay generate that response under its own conditions? A successful reader control narrows the investigation without proving that the target assay is sound.",
+          "html": "<p>These controls separate two questions. Can the configured instrument resolve an appropriate TR-FRET response? Does the biological assay generate that response under its own conditions? A successful reader control narrows the investigation without proving that the target assay is sound.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a failing assay, start with the correct manufacturer setup and a compatible reader control. Then examine matrix blanks, donor-only wells, acceptor-only wells, and complete low and high assay controls. Keep reagent concentrations and matrix conditions comparable where the control design permits. Change one optical or timing variable at a time before undertaking another protein titration.",
+          "html": "<p>For a failing assay, start with the correct manufacturer setup and a compatible reader control. Then examine matrix blanks, donor-only wells, acceptor-only wells, and complete low and high assay controls. Keep reagent concentrations and matrix conditions comparable where the control design permits. Change one optical or timing variable at a time before undertaking another protein titration.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-the-plate-history-in-the-experiment",
+      "heading": "Keep the plate history in the experiment",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep the plate history in the experiment",
+          "html": "<h2 id=\"keep-the-plate-history-in-the-experiment\">Keep the plate history in the experiment</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Stable fluorescent chemistry does not make the underlying biology temperature-independent. Revvity distinguishes the temperature robustness of HTRF chemistry from temperature-sensitive protein components and incubation kinetics. [1] Keep incubation temperature, equilibration and read order reproducible when comparing settings.",
+          "html": "<p>Stable fluorescent chemistry does not make the underlying biology temperature-independent. Revvity distinguishes the temperature robustness of HTRF chemistry from temperature-sensitive protein components and incubation kinetics. [1] Keep incubation temperature, equilibration and read order reproducible when comparing settings.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A sensible final check is a representative plate sequence, not one favorable plate. Record delay, collection window, pulse count, excitation source, channel optics and plate type. Review intermediate responses as well as the controls, and verify the operating range.",
+          "html": "<p>A sensible final check is a representative plate sequence, not one favorable plate. Record delay, collection window, pulse count, excitation source, channel optics and plate type. Review intermediate responses as well as the controls, and verify the operating range.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A passing reader control with no biological window points back to the assay. Strong donor-only signal in the acceptor channel points to the optics. If a longer delay only dims every well, stop extending it.",
+          "html": "<p>A passing reader control with no biological window points back to the assay. Strong donor-only signal in the acceptor channel points to the optics. If a longer delay only dims every well, stop extending it.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Revvity. HTRF Technical Booklet, especially pp. 9, 13 and 17. Donor-fed delayed acceptor emission, detection principles and temperature qualifications.",
+          "html": "<p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, especially pp. 9, 13 and 17. Donor-fed delayed acceptor emission, detection principles and temperature qualifications.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Thermo Fisher Scientific. LanthaScreen assay FAQs, emission-filter and assay-window questions.",
+          "html": "<p id=\"ref-2\">2. Thermo Fisher Scientific. <a href=\"https://www.thermofisher.com/order/catalog/product/A15140/faqs\">LanthaScreen assay FAQs</a>, emission-filter and assay-window questions.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Thermo Fisher Scientific. Method to Test Microplate Readers for LanthaScreen Tb Assays. September 20, 2010, pp. 1–3. Historical manufacturer procedure; check current assay-specific instructions before use.",
+          "html": "<p id=\"ref-3\">3. Thermo Fisher Scientific. <a href=\"https://www.thermofisher.com/TFS-Assets/LSG/manuals/LanthaScreen_Tb_Instrument_Control_Application_Note17Sep10.pdf\">Method to Test Microplate Readers for LanthaScreen Tb Assays</a>. September 20, 2010, pp. 1–3. Historical manufacturer procedure; check current assay-specific instructions before use.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Life Technologies/Thermo Fisher Scientific. LanthaScreen Terbium Assay Setup Guide on the EnVision Multilabel Reader. April 13, 2012, especially p. 2. Configuration-specific lamp/laser and optical guidance; not a current comparative performance study.",
+          "html": "<p id=\"ref-4\">4. Life Technologies/Thermo Fisher Scientific. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/EnVision_LanthaScreen_Terbium.pdf\">LanthaScreen Terbium Assay Setup Guide on the EnVision Multilabel Reader</a>. April 13, 2012, especially p. 2. Configuration-specific lamp/laser and optical guidance; not a current comparative performance study.</p>"
+        },
+        {
+          "type": "p",
+          "text": "5. Revvity. HTRF Reader Control Kit. Version 08, January 2026. Optical/software validation, incubation schedules and stability windows. Numerical examples in this article are constructed calculations, not measured reader performance.",
+          "html": "<p id=\"ref-5\">5. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf\">HTRF Reader Control Kit</a>. Version 08, January 2026. Optical/software validation, incubation schedules and stability windows. Numerical examples in this article are constructed calculations, not measured reader performance.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Revvity. HTRF Technical Booklet, especially pp. 9, 13 and 17. Donor-fed delayed acceptor emission, detection principles and temperature qualifications.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Thermo Fisher Scientific. LanthaScreen assay FAQs, emission-filter and assay-window questions.",
+      "urls": [
+        "https://www.thermofisher.com/order/catalog/product/A15140/faqs"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Thermo Fisher Scientific. Method to Test Microplate Readers for LanthaScreen Tb Assays. September 20, 2010, pp. 1–3. Historical manufacturer procedure; check current assay-specific instructions before use.",
+      "urls": [
+        "https://www.thermofisher.com/TFS-Assets/LSG/manuals/LanthaScreen_Tb_Instrument_Control_Application_Note17Sep10.pdf"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Life Technologies/Thermo Fisher Scientific. LanthaScreen Terbium Assay Setup Guide on the EnVision Multilabel Reader. April 13, 2012, especially p. 2. Configuration-specific lamp/laser and optical guidance; not a current comparative performance study.",
+      "urls": [
+        "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/EnVision_LanthaScreen_Terbium.pdf"
+      ]
+    },
+    {
+      "id": "ref-5",
+      "citation": "5. Revvity. HTRF Reader Control Kit. Version 08, January 2026. Optical/software validation, incubation schedules and stability windows. Numerical examples in this article are constructed calculations, not measured reader performance.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/rvty_ls_manual_62RCLPEA.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "A subscript measured = F + αD + B",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"A subscript measured = F + αD + B\"><mrow><msub><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub><mrow><mtext> = F + αD + B</mtext></mrow></mrow></math>"
+    },
+    {
+      "description": "(A subscript measured) divided by (D) = (F) divided by (D) + α + (B) divided by (D)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"(A subscript measured) divided by (D) = (F) divided by (D) + α + (B) divided by (D)\"><mrow><mfrac><mrow><msub><mrow><mrow><mtext>A</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><mrow><mtext>F</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac><mrow><mtext> + α + </mtext></mrow><mfrac><mrow><mrow><mtext>B</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "f subscript gate = e raised to (− (d) divided by (τ)) − e raised to (− (d + T) divided by (τ))",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"f subscript gate = e raised to (− (d) divided by (τ)) − e raised to (− (d + T) divided by (τ))\"><mrow><msub><mrow><mrow><mtext>f</mtext></mrow></mrow><mrow><mrow><mtext>gate</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msup><mrow><mrow><mtext>e</mtext></mrow></mrow><mrow><mrow><mtext>−</mtext></mrow><mfrac><mrow><mrow><mtext>d</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac></mrow></msup><mrow><mtext> − </mtext></mrow><msup><mrow><mrow><mtext>e</mtext></mrow></mrow><mrow><mrow><mtext>−</mtext></mrow><mfrac><mrow><mrow><mtext>d + T</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac></mrow></msup></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "TR-FRET: waiting doesn’t fix the wrong photons",
+      "rows": [
+        [
+          "Optical selection",
+          "Low control",
+          "High control",
+          "High/low window"
+        ],
+        [
+          "Adds 100 units of donor leakage",
+          "200",
+          "1,100",
+          "5.5-fold"
+        ],
+        [
+          "Adds 1,900 units of donor leakage",
+          "2,000",
+          "2,900",
+          "1.45-fold"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "36aa9483808491a157cd538f7eace1bafc4ea9310d1c8ee0b4f2b77e305a9995"
+}

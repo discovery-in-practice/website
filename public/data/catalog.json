@@ -679,5 +679,189 @@
     "date_modified": "2026-10-01",
     "json_url": "https://discoveryinpractice.com/articles/top-vs-bottom-read-cell-fluorescence/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/top-vs-bottom-read-cell-fluorescence/article.md"
+  },
+  {
+    "id": "nanobret-assay-optimization-dual-emission",
+    "title": "NanoBRET: proximity needs a good alibi",
+    "canonical_url": "https://discoveryinpractice.com/articles/nanobret-assay-optimization-dual-emission/",
+    "summary": "Improve NanoBRET assays with expression controls, simultaneous dual-emission detection, linearity checks and stable temperature. Includes worked examples.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "NanoBRET",
+      "Protein interactions",
+      "Dual emission"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "a435cb17b12fde51ea1a9562d4d13c49261079959648759f907b54cf8d72e909",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/nanobret-assay-optimization-dual-emission/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/nanobret-assay-optimization-dual-emission/article.md"
+  },
+  {
+    "id": "tr-fret-troubleshooting-filters-timing-excitation",
+    "title": "TR-FRET: waiting doesn’t fix the wrong photons",
+    "canonical_url": "https://discoveryinpractice.com/articles/tr-fret-troubleshooting-filters-timing-excitation/",
+    "summary": "Troubleshoot HTRF and LanthaScreen assays by separating timing from spectral leakage. Learn when filters, excitation and reader controls improve results.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "TR-FRET",
+      "Optics",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "36aa9483808491a157cd538f7eace1bafc4ea9310d1c8ee0b4f2b77e305a9995",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/tr-fret-troubleshooting-filters-timing-excitation/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/tr-fret-troubleshooting-filters-timing-excitation/article.md"
+  },
+  {
+    "id": "htrf-good-signal-background-low-z-prime",
+    "title": "Why does an HTRF assay have good signal-to-background but poor Z-prime?",
+    "canonical_url": "https://discoveryinpractice.com/articles/htrf-good-signal-background-low-z-prime/",
+    "summary": "Explain low HTRF Z-prime despite a good signal window using control variability, raw donor and acceptor data, and a worked example.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "HTRF",
+      "Assay precision",
+      "Z-prime"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "57576082822000cb006326f68f5a04cf195759df111eb3eecdd7ac36dab59ad5",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/htrf-good-signal-background-low-z-prime/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/htrf-good-signal-background-low-z-prime/article.md"
+  },
+  {
+    "id": "optimize-nanobret-donor-acceptor-filters",
+    "title": "How should I optimize NanoBRET donor and acceptor filters?",
+    "canonical_url": "https://discoveryinpractice.com/articles/optimize-nanobret-donor-acceptor-filters/",
+    "summary": "Choose assay-specific NanoBRET emission filters using raw channels, negative controls, ratio precision and simultaneous dual-emission detection.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "NanoBRET",
+      "BRET",
+      "Optics"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "bb9fe9f39b9d91531cf8905bd16aab463b7c33009faf975eeeef0858771534a6",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/optimize-nanobret-donor-acceptor-filters/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/optimize-nanobret-donor-acceptor-filters/article.md"
+  },
+  {
+    "id": "htrf-high-background-delay-time",
+    "title": "Why does my HTRF assay still have high background after I increase the delay time?",
+    "canonical_url": "https://discoveryinpractice.com/articles/htrf-high-background-delay-time/",
+    "summary": "Troubleshoot persistent HTRF background with donor-only, acceptor-only and assay controls before changing delay, filters or integration time.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "HTRF",
+      "TR-FRET",
+      "Background noise"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "224eaa05a13805dce14f959db27590b01968fa54d0f9ba1b4c9f66e900869dbe",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/htrf-high-background-delay-time/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/htrf-high-background-delay-time/article.md"
+  },
+  {
+    "id": "laser-excitation-htrf-tr-fret",
+    "title": "When does laser excitation improve an HTRF or TR-FRET assay?",
+    "canonical_url": "https://discoveryinpractice.com/articles/laser-excitation-htrf-tr-fret/",
+    "summary": "When laser excitation improves HTRF and TR-FRET precision or speed, with donor compatibility, paired detection and a practical comparison plan.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "HTRF",
+      "TR-FRET",
+      "Optics"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "79e80a912d49e1495f3189a1ff052b5e2462d0743acab023cc0001a9fe76b28a",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/laser-excitation-htrf-tr-fret/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/laser-excitation-htrf-tr-fret/article.md"
+  },
+  {
+    "id": "dedicated-tr-fret-detector-time-gating",
+    "title": "What does a dedicated TR-FRET detector add beyond time-gating a general-purpose PMT?",
+    "canonical_url": "https://discoveryinpractice.com/articles/dedicated-tr-fret-detector-time-gating/",
+    "summary": "Understand detector recovery, delayed background, spectral sensitivity and linearity when evaluating dedicated TR-FRET detection and laser excitation.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "TR-FRET",
+      "Optics",
+      "Detector linearity"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "0f01ba086475b3cd9f4b296d3ecd70cf827e49b78645742d195d21a9b4efa357",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/dedicated-tr-fret-detector-time-gating/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/dedicated-tr-fret-detector-time-gating/article.md"
+  },
+  {
+    "id": "white-vs-black-plates-tr-fret-htrf",
+    "title": "Why can a white plate outperform a black plate in a TR-FRET assay?",
+    "canonical_url": "https://discoveryinpractice.com/articles/white-vs-black-plates-tr-fret-htrf/",
+    "summary": "Compare white and black TR-FRET plates through photon statistics, laser excitation, detector efficiency, crosstalk and assay-specific requirements.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "TR-FRET",
+      "HTRF",
+      "Microplates"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "12c109250bdfeb7a893c62ebb36e0bbfae418a1101ae81f359f3997e0e18f4ab",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-02",
+    "date_modified": "2026-10-02",
+    "json_url": "https://discoveryinpractice.com/articles/white-vs-black-plates-tr-fret-htrf/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/white-vs-black-plates-tr-fret-htrf/article.md"
   }
 ]

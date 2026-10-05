@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "id": "matched-pmts-ratio-calibration",
+  "canonical_url": "https://discoveryinpractice.com/articles/matched-pmts-ratio-calibration/",
+  "title": "Are two PMTs enough for accurate ratiometric measurements, or do they need matching and calibration?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Learn why simultaneous detection, relative channel calibration and linearity all matter for accurate FP, TR-FRET and BRET measurements.",
+  "takeaways": [
+    "Equal light does not necessarily produce equal numbers",
+    "One calibration point cannot establish linearity",
+    "Check when the two channels acquire their light"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Detector linearity",
+    "Ratiometric assays",
+    "Assay precision"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-05",
+  "date_modified": "2026-10-05",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A pair of photomultiplier tubes (PMTs) provides two detection channels, but a reliable ratio also depends on the optical paths, coordinated acquisition and a known, stable relationship between channel responses. Matched detectors help make that relationship reproducible; calibration establishes how the complete instrument measures a reference. Verify that relationship across the signal range occupied by the assay. [1,2]</p><h2 id=\"equal-light-does-not-necessarily-produce-equal-numbers\">Equal light does not necessarily produce equal numbers</h2><p>The two channels include filters, polarizers or wavelength-selective mirrors as well as detectors and electronics. Their transmission, spectral sensitivity and gain can differ. A channel viewing red light need not produce the same number as a channel receiving the same photon flux at a different wavelength. PMT gain and response also depend on operating conditions. [3]</p><p>In fluorescence polarization (FP), both channels usually view the same emission band through different polarization paths. In time-resolved Förster resonance energy transfer (TR-FRET) and bioluminescence resonance energy transfer (BRET), they view different donor and acceptor bands. Calibration must suit the measurement; an FP correction is not automatically a correction for a BRET ratio.</p><p>Consider a constructed spectral-ratio example. The acceptor and donor channels would yield 1,000 and 10,000 relative fluorescence units (RFU), giving a ratio of 0.100. If the acceptor path has an uncorrected 20% higher response, the measured ratio becomes 0.120. The ratio could be highly repeatable and still carry a 20% scaling error. A stable scaling error can be calibrated; it need not spoil every within-run comparison, but it complicates transfer between configurations.</p><h2 id=\"one-calibration-point-cannot-establish-linearity\">One calibration point cannot establish linearity</h2><p>Now suppose the acceptor channel is linear at the reference level but compresses at higher signals. A single scaling factor cannot repair the changing response. Check both channels across the range occupied by blanks, controls and samples. A wide usable linear range matters because a ratio can be biased when either channel departs from proportional response, even while the other behaves well. [3]</p><p>For FP, the G factor corrects relative response of the parallel and perpendicular channels. Tecan's instructions explicitly connect it to optical differences and a reference of known polarization. [2] Matching the PMTs does not remove filters, polarizers or alignment from that calibration problem.</p><h2 id=\"check-when-the-two-channels-acquire-their-light\">Check when the two channels acquire their light</h2><p>BMG LABTECH describes two matched PMT pairs in the PHERAstar FSX: one covers several intensity, polarization and luminescence modes, while the other is optimized for time-resolved fluorescence and TR-FRET. [1] For the assay in front of you, establish which detector pair is used and whether its channels acquire the same event.</p><p>Simultaneous dual emission keeps donor and acceptor observations on the same time interval. For FP, paired acquisition can similarly keep the two polarization components exposed to the same excitation fluctuation. This reduces timing mismatch when brightness changes between sequential reads. It does not remove independent photon noise or a fixed response bias. Stable relative response supports calibration; paired timing keeps sample changes between reads out of the ratio.</p><h2 id=\"qualify-the-pair-under-assay-conditions\">Qualify the pair under assay conditions</h2><p>Use an appropriate FP reference or donor/acceptor controls, including blanks and single-label controls where relevant. Examine raw channels as well as the final ratio. A stable-composition dilution series can reveal a brightness-dependent ratio, provided dilution does not change binding, aggregation or the sample matrix.</p><p>Record filters, gains, timing windows, plate type and the calibration used. Keep temperature and assay age consistent, so real sample changes are not mistaken for detector mismatch. If the same reference gives different ratios at low and high brightness, investigate that dependence before accepting a one-point correction.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/pherastar-detection-system/\">PHERAstar detection system</a>. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.</p><p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.</p><p id=\"ref-3\">3. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.</p>",
+  "body_text": "A pair of photomultiplier tubes (PMTs) provides two detection channels, but a reliable ratio also depends on the optical paths, coordinated acquisition and a known, stable relationship between channel responses. Matched detectors help make that relationship reproducible; calibration establishes how the complete instrument measures a reference. Verify that relationship across the signal range occupied by the assay. [1,2]\n\nEqual light does not necessarily produce equal numbers\n\nThe two channels include filters, polarizers or wavelength-selective mirrors as well as detectors and electronics. Their transmission, spectral sensitivity and gain can differ. A channel viewing red light need not produce the same number as a channel receiving the same photon flux at a different wavelength. PMT gain and response also depend on operating conditions. [3]\n\nIn fluorescence polarization (FP), both channels usually view the same emission band through different polarization paths. In time-resolved Förster resonance energy transfer (TR-FRET) and bioluminescence resonance energy transfer (BRET), they view different donor and acceptor bands. Calibration must suit the measurement; an FP correction is not automatically a correction for a BRET ratio.\n\nConsider a constructed spectral-ratio example. The acceptor and donor channels would yield 1,000 and 10,000 relative fluorescence units (RFU), giving a ratio of 0.100. If the acceptor path has an uncorrected 20% higher response, the measured ratio becomes 0.120. The ratio could be highly repeatable and still carry a 20% scaling error. A stable scaling error can be calibrated; it need not spoil every within-run comparison, but it complicates transfer between configurations.\n\nOne calibration point cannot establish linearity\n\nNow suppose the acceptor channel is linear at the reference level but compresses at higher signals. A single scaling factor cannot repair the changing response. Check both channels across the range occupied by blanks, controls and samples. A wide usable linear range matters because a ratio can be biased when either channel departs from proportional response, even while the other behaves well. [3]\n\nFor FP, the G factor corrects relative response of the parallel and perpendicular channels. Tecan's instructions explicitly connect it to optical differences and a reference of known polarization. [2] Matching the PMTs does not remove filters, polarizers or alignment from that calibration problem.\n\nCheck when the two channels acquire their light\n\nBMG LABTECH describes two matched PMT pairs in the PHERAstar FSX: one covers several intensity, polarization and luminescence modes, while the other is optimized for time-resolved fluorescence and TR-FRET. [1] For the assay in front of you, establish which detector pair is used and whether its channels acquire the same event.\n\nSimultaneous dual emission keeps donor and acceptor observations on the same time interval. For FP, paired acquisition can similarly keep the two polarization components exposed to the same excitation fluctuation. This reduces timing mismatch when brightness changes between sequential reads. It does not remove independent photon noise or a fixed response bias. Stable relative response supports calibration; paired timing keeps sample changes between reads out of the ratio.\n\nQualify the pair under assay conditions\n\nUse an appropriate FP reference or donor/acceptor controls, including blanks and single-label controls where relevant. Examine raw channels as well as the final ratio. A stable-composition dilution series can reveal a brightness-dependent ratio, provided dilution does not change binding, aggregation or the sample matrix.\n\nRecord filters, gains, timing windows, plate type and the calibration used. Keep temperature and assay age consistent, so real sample changes are not mistaken for detector mismatch. If the same reference gives different ratios at low and high brightness, investigate that dependence before accepting a one-point correction.\n\nReferences\n\n1. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.\n\n2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.\n\n3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A pair of photomultiplier tubes (PMTs) provides two detection channels, but a reliable ratio also depends on the optical paths, coordinated acquisition and a known, stable relationship between channel responses. Matched detectors help make that relationship reproducible; calibration establishes how the complete instrument measures a reference. Verify that relationship across the signal range occupied by the assay. [1,2]",
+          "html": "<p>A pair of photomultiplier tubes (PMTs) provides two detection channels, but a reliable ratio also depends on the optical paths, coordinated acquisition and a known, stable relationship between channel responses. Matched detectors help make that relationship reproducible; calibration establishes how the complete instrument measures a reference. Verify that relationship across the signal range occupied by the assay. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "equal-light-does-not-necessarily-produce-equal-numbers",
+      "heading": "Equal light does not necessarily produce equal numbers",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Equal light does not necessarily produce equal numbers",
+          "html": "<h2 id=\"equal-light-does-not-necessarily-produce-equal-numbers\">Equal light does not necessarily produce equal numbers</h2>"
+        },
+        {
+          "type": "p",
+          "text": "The two channels include filters, polarizers or wavelength-selective mirrors as well as detectors and electronics. Their transmission, spectral sensitivity and gain can differ. A channel viewing red light need not produce the same number as a channel receiving the same photon flux at a different wavelength. PMT gain and response also depend on operating conditions. [3]",
+          "html": "<p>The two channels include filters, polarizers or wavelength-selective mirrors as well as detectors and electronics. Their transmission, spectral sensitivity and gain can differ. A channel viewing red light need not produce the same number as a channel receiving the same photon flux at a different wavelength. PMT gain and response also depend on operating conditions. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "In fluorescence polarization (FP), both channels usually view the same emission band through different polarization paths. In time-resolved Förster resonance energy transfer (TR-FRET) and bioluminescence resonance energy transfer (BRET), they view different donor and acceptor bands. Calibration must suit the measurement; an FP correction is not automatically a correction for a BRET ratio.",
+          "html": "<p>In fluorescence polarization (FP), both channels usually view the same emission band through different polarization paths. In time-resolved Förster resonance energy transfer (TR-FRET) and bioluminescence resonance energy transfer (BRET), they view different donor and acceptor bands. Calibration must suit the measurement; an FP correction is not automatically a correction for a BRET ratio.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider a constructed spectral-ratio example. The acceptor and donor channels would yield 1,000 and 10,000 relative fluorescence units (RFU), giving a ratio of 0.100. If the acceptor path has an uncorrected 20% higher response, the measured ratio becomes 0.120. The ratio could be highly repeatable and still carry a 20% scaling error. A stable scaling error can be calibrated; it need not spoil every within-run comparison, but it complicates transfer between configurations.",
+          "html": "<p>Consider a constructed spectral-ratio example. The acceptor and donor channels would yield 1,000 and 10,000 relative fluorescence units (RFU), giving a ratio of 0.100. If the acceptor path has an uncorrected 20% higher response, the measured ratio becomes 0.120. The ratio could be highly repeatable and still carry a 20% scaling error. A stable scaling error can be calibrated; it need not spoil every within-run comparison, but it complicates transfer between configurations.</p>"
+        }
+      ]
+    },
+    {
+      "id": "one-calibration-point-cannot-establish-linearity",
+      "heading": "One calibration point cannot establish linearity",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "One calibration point cannot establish linearity",
+          "html": "<h2 id=\"one-calibration-point-cannot-establish-linearity\">One calibration point cannot establish linearity</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Now suppose the acceptor channel is linear at the reference level but compresses at higher signals. A single scaling factor cannot repair the changing response. Check both channels across the range occupied by blanks, controls and samples. A wide usable linear range matters because a ratio can be biased when either channel departs from proportional response, even while the other behaves well. [3]",
+          "html": "<p>Now suppose the acceptor channel is linear at the reference level but compresses at higher signals. A single scaling factor cannot repair the changing response. Check both channels across the range occupied by blanks, controls and samples. A wide usable linear range matters because a ratio can be biased when either channel departs from proportional response, even while the other behaves well. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For FP, the G factor corrects relative response of the parallel and perpendicular channels. Tecan's instructions explicitly connect it to optical differences and a reference of known polarization. [2] Matching the PMTs does not remove filters, polarizers or alignment from that calibration problem.",
+          "html": "<p>For FP, the G factor corrects relative response of the parallel and perpendicular channels. Tecan's instructions explicitly connect it to optical differences and a reference of known polarization. [2] Matching the PMTs does not remove filters, polarizers or alignment from that calibration problem.</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-when-the-two-channels-acquire-their-light",
+      "heading": "Check when the two channels acquire their light",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check when the two channels acquire their light",
+          "html": "<h2 id=\"check-when-the-two-channels-acquire-their-light\">Check when the two channels acquire their light</h2>"
+        },
+        {
+          "type": "p",
+          "text": "BMG LABTECH describes two matched PMT pairs in the PHERAstar FSX: one covers several intensity, polarization and luminescence modes, while the other is optimized for time-resolved fluorescence and TR-FRET. [1] For the assay in front of you, establish which detector pair is used and whether its channels acquire the same event.",
+          "html": "<p>BMG LABTECH describes two matched PMT pairs in the PHERAstar FSX: one covers several intensity, polarization and luminescence modes, while the other is optimized for time-resolved fluorescence and TR-FRET. [1] For the assay in front of you, establish which detector pair is used and whether its channels acquire the same event.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual emission keeps donor and acceptor observations on the same time interval. For FP, paired acquisition can similarly keep the two polarization components exposed to the same excitation fluctuation. This reduces timing mismatch when brightness changes between sequential reads. It does not remove independent photon noise or a fixed response bias. Stable relative response supports calibration; paired timing keeps sample changes between reads out of the ratio.",
+          "html": "<p>Simultaneous dual emission keeps donor and acceptor observations on the same time interval. For FP, paired acquisition can similarly keep the two polarization components exposed to the same excitation fluctuation. This reduces timing mismatch when brightness changes between sequential reads. It does not remove independent photon noise or a fixed response bias. Stable relative response supports calibration; paired timing keeps sample changes between reads out of the ratio.</p>"
+        }
+      ]
+    },
+    {
+      "id": "qualify-the-pair-under-assay-conditions",
+      "heading": "Qualify the pair under assay conditions",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Qualify the pair under assay conditions",
+          "html": "<h2 id=\"qualify-the-pair-under-assay-conditions\">Qualify the pair under assay conditions</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use an appropriate FP reference or donor/acceptor controls, including blanks and single-label controls where relevant. Examine raw channels as well as the final ratio. A stable-composition dilution series can reveal a brightness-dependent ratio, provided dilution does not change binding, aggregation or the sample matrix.",
+          "html": "<p>Use an appropriate FP reference or donor/acceptor controls, including blanks and single-label controls where relevant. Examine raw channels as well as the final ratio. A stable-composition dilution series can reveal a brightness-dependent ratio, provided dilution does not change binding, aggregation or the sample matrix.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Record filters, gains, timing windows, plate type and the calibration used. Keep temperature and assay age consistent, so real sample changes are not mistaken for detector mismatch. If the same reference gives different ratios at low and high brightness, investigate that dependence before accepting a one-point correction.",
+          "html": "<p>Record filters, gains, timing windows, plate type and the calibration used. Keep temperature and assay age consistent, so real sample changes are not mistaken for detector mismatch. If the same reference gives different ratios at low and high brightness, investigate that dependence before accepting a one-point correction.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+          "html": "<p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/pherastar-detection-system/\">PHERAstar detection system</a>. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.",
+          "html": "<p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.",
+          "html": "<p id=\"ref-3\">3. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+      "urls": [
+        "https://www.bmglabtech.com/en/pherastar-detection-system/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, sections 4.3.2, 4.3.6–4.3.9 and 5.1.7. Gain, linearity, noise, afterpulsing, polarization dependence and detector gating.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "768d3cc7a0d051475630d723bb5be38c1092b0d933872b31c3d06a370e8ee8c0"
+}

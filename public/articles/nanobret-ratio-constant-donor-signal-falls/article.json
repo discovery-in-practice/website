@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "id": "nanobret-ratio-constant-donor-signal-falls",
+  "canonical_url": "https://discoveryinpractice.com/articles/nanobret-ratio-constant-donor-signal-falls/",
+  "title": "Why can my NanoBRET ratio stay constant while the donor signal falls?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Why a NanoBRET ratio can stay constant as donor light falls, how precision suffers and which raw signals and controls to inspect.",
+  "takeaways": [
+    "A ratio can hide a poor expression condition",
+    "The same ratio can have very different precision",
+    "Work out why the light fell"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "NanoBRET",
+    "BRET",
+    "Assay precision"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-05",
+  "date_modified": "2026-10-05",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A NanoBRET ratio can stay constant when donor and acceptor signals fall in roughly the same proportion, concealing the loss of brightness. That loss can reduce measurement precision and may reflect fewer emitting donor molecules, altered substrate chemistry or an optical effect. A stable ratio alone cannot establish stable protein abundance, cell health or assay quality. [1]</p><h2 id=\"a-ratio-can-hide-a-poor-expression-condition\">A ratio can hide a poor expression condition</h2><p>NanoBRET measures bioluminescence resonance energy transfer (BRET). Promega's protein–protein interaction manual compares different NanoLuc-to-HaloTag deoxyribonucleic acid (DNA) ratios. In Figure 8, the 1:100 and 1:1,000 conditions produce similar BRET ratios, yet the latter has much lower raw donor output. The manual warns that operation close to the instrument's detection limit can increase variability. The ratio plot alone gives little reason to reject the dimmer condition. [1]</p><p>In this assay, NanoLuc luciferase is the donor and the HaloTag NanoBRET 618 ligand supplies the fluorescent acceptor. Donor emission peaks around 460 nm and acceptor emission around 618 nm. One recommended filter arrangement uses a donor band centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter above 610 nm. Confirm the configuration for the actual assay and reader. [1]</p><p>The raw acceptor-to-donor ratio is dimensionless. Multiplying it by 1,000 gives milliBRET units (mBU). In the manual's corrected result, the corresponding no-acceptor-ligand control ratio is subtracted. Keep that control alongside the raw donor and acceptor readings; a corrected ratio adds another measurement and its uncertainty. [1]</p><h2 id=\"the-same-ratio-can-have-very-different-precision\">The same ratio can have very different precision</h2><p>Suppose both detected channel counts fall one hundredfold. The following constructed example assumes independent Poisson counting, linear response, negligible background and no control subtraction. Counts are accumulated photons per acquisition, not displayed relative light units (RLU). Precision is reported as the coefficient of variation (CV).</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Expected donor count</th><th scope=\"col\">Expected acceptor count</th><th scope=\"col\">Ratio of expected counts</th><th scope=\"col\">Approximate ratio CV</th></tr></thead><tbody><tr><th scope=\"row\">100,000 photons</th><td>10,000 photons</td><td>0.100</td><td>1.05%</td></tr><tr><th scope=\"row\">1,000 photons</th><td>100 photons</td><td>0.100</td><td>10.49%</td></tr></tbody></table></div><p>First-order error propagation gives:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"CV subscript R ≈ square root of ((1) divided by (A) + (1) divided by (D))\"><mrow><msub><mrow><mrow><mtext>CV</mtext></mrow></mrow><mrow><mrow><mtext>R</mtext></mrow></mrow></msub><mrow><mtext> ≈ </mtext></mrow><msqrt><mrow><mfrac><mrow><mrow><mtext>1</mtext></mrow></mrow><mrow><mrow><mtext>A</mtext></mrow></mrow></mfrac><mrow><mtext> + </mtext></mrow><mfrac><mrow><mrow><mtext>1</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></msqrt></mrow></math></div></div><p>Here A and D are expected acceptor and donor counts. The subscript R denotes their measured ratio, and its CV is expressed as a fraction. Multiply it by 100 to report percent. This approximation follows from independent counting variances; background and other noise worsen it. Near-zero denominators also invalidate the approximation. The ratio of expected counts is not exactly the expected value of a noisy ratio. [2]</p><p>Both rows describe the same underlying ratio. The dimmer measurement has about ten times the relative uncertainty, despite preserving the underlying ratio.</p><h2 id=\"work-out-why-the-light-fell\">Work out why the light fell</h2><p>Plot donor, acceptor and corrected ratio against concentration or time. Inspect the no-acceptor-ligand controls separately. A falling donor signal can accompany changes in cell number, donor expression or protein degradation, but it can also arise from luciferase inhibition, substrate availability or optical attenuation. Follow up with an appropriate orthogonal protein or viability measurement before assigning a biological cause.</p><p>Check acquisition settings and timing after substrate addition, then verify that both channels remain proportional over the intended range. Establish an acceptable weak-signal range experimentally using representative controls and replicate preparations; a universal RLU cutoff cannot transfer reliably between readers.</p><p>Simultaneous dual-emission detection can prevent a changing signal from being sampled at two different times. It does not prevent loss of photon-counting precision. Keep temperature consistent too: Promega's live-cell kinetic protocol uses equilibration at 37 °C with 5% carbon dioxide before measurement. Preserve the validated biological conditions when designing the read; room-temperature detection is not a general requirement for live-cell NanoBRET. [1]</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanobret-proteinprotein-interaction-system-protocol.pdf\">NanoBRET Protein:Protein Interaction System Technical Manual TM439</a>, revision October 2023. Sections 3.A, 5.D and 6; Figure 8, printed p. 20 (PDF p. 21). Filters, live-cell conditions, corrected ratios and the low-donor example.</p><p id=\"ref-2\">2. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting noise principles. The ratio calculation is an explicitly derived example, not a manufacturer performance claim.</p>",
+  "body_text": "A NanoBRET ratio can stay constant when donor and acceptor signals fall in roughly the same proportion, concealing the loss of brightness. That loss can reduce measurement precision and may reflect fewer emitting donor molecules, altered substrate chemistry or an optical effect. A stable ratio alone cannot establish stable protein abundance, cell health or assay quality. [1]\n\nA ratio can hide a poor expression condition\n\nNanoBRET measures bioluminescence resonance energy transfer (BRET). Promega's protein–protein interaction manual compares different NanoLuc-to-HaloTag deoxyribonucleic acid (DNA) ratios. In Figure 8, the 1:100 and 1:1,000 conditions produce similar BRET ratios, yet the latter has much lower raw donor output. The manual warns that operation close to the instrument's detection limit can increase variability. The ratio plot alone gives little reason to reject the dimmer condition. [1]\n\nIn this assay, NanoLuc luciferase is the donor and the HaloTag NanoBRET 618 ligand supplies the fluorescent acceptor. Donor emission peaks around 460 nm and acceptor emission around 618 nm. One recommended filter arrangement uses a donor band centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter above 610 nm. Confirm the configuration for the actual assay and reader. [1]\n\nThe raw acceptor-to-donor ratio is dimensionless. Multiplying it by 1,000 gives milliBRET units (mBU). In the manual's corrected result, the corresponding no-acceptor-ligand control ratio is subtracted. Keep that control alongside the raw donor and acceptor readings; a corrected ratio adds another measurement and its uncertainty. [1]\n\nThe same ratio can have very different precision\n\nSuppose both detected channel counts fall one hundredfold. The following constructed example assumes independent Poisson counting, linear response, negligible background and no control subtraction. Counts are accumulated photons per acquisition, not displayed relative light units (RLU). Precision is reported as the coefficient of variation (CV).\n\nExpected donor count | Expected acceptor count | Ratio of expected counts | Approximate ratio CV | 100,000 photons | 10,000 photons | 0.100 | 1.05% | 1,000 photons | 100 photons | 0.100 | 10.49% | \n\nFirst-order error propagation gives:\n\nCV subscript R ≈ square root of ((1) divided by (A) + (1) divided by (D))\n\nHere A and D are expected acceptor and donor counts. The subscript R denotes their measured ratio, and its CV is expressed as a fraction. Multiply it by 100 to report percent. This approximation follows from independent counting variances; background and other noise worsen it. Near-zero denominators also invalidate the approximation. The ratio of expected counts is not exactly the expected value of a noisy ratio. [2]\n\nBoth rows describe the same underlying ratio. The dimmer measurement has about ten times the relative uncertainty, despite preserving the underlying ratio.\n\nWork out why the light fell\n\nPlot donor, acceptor and corrected ratio against concentration or time. Inspect the no-acceptor-ligand controls separately. A falling donor signal can accompany changes in cell number, donor expression or protein degradation, but it can also arise from luciferase inhibition, substrate availability or optical attenuation. Follow up with an appropriate orthogonal protein or viability measurement before assigning a biological cause.\n\nCheck acquisition settings and timing after substrate addition, then verify that both channels remain proportional over the intended range. Establish an acceptable weak-signal range experimentally using representative controls and replicate preparations; a universal RLU cutoff cannot transfer reliably between readers.\n\nSimultaneous dual-emission detection can prevent a changing signal from being sampled at two different times. It does not prevent loss of photon-counting precision. Keep temperature consistent too: Promega's live-cell kinetic protocol uses equilibration at 37 °C with 5% carbon dioxide before measurement. Preserve the validated biological conditions when designing the read; room-temperature detection is not a general requirement for live-cell NanoBRET. [1]\n\nReferences\n\n1. Promega. NanoBRET Protein:Protein Interaction System Technical Manual TM439, revision October 2023. Sections 3.A, 5.D and 6; Figure 8, printed p. 20 (PDF p. 21). Filters, live-cell conditions, corrected ratios and the low-donor example.\n\n2. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting noise principles. The ratio calculation is an explicitly derived example, not a manufacturer performance claim.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A NanoBRET ratio can stay constant when donor and acceptor signals fall in roughly the same proportion, concealing the loss of brightness. That loss can reduce measurement precision and may reflect fewer emitting donor molecules, altered substrate chemistry or an optical effect. A stable ratio alone cannot establish stable protein abundance, cell health or assay quality. [1]",
+          "html": "<p>A NanoBRET ratio can stay constant when donor and acceptor signals fall in roughly the same proportion, concealing the loss of brightness. That loss can reduce measurement precision and may reflect fewer emitting donor molecules, altered substrate chemistry or an optical effect. A stable ratio alone cannot establish stable protein abundance, cell health or assay quality. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-ratio-can-hide-a-poor-expression-condition",
+      "heading": "A ratio can hide a poor expression condition",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A ratio can hide a poor expression condition",
+          "html": "<h2 id=\"a-ratio-can-hide-a-poor-expression-condition\">A ratio can hide a poor expression condition</h2>"
+        },
+        {
+          "type": "p",
+          "text": "NanoBRET measures bioluminescence resonance energy transfer (BRET). Promega's protein–protein interaction manual compares different NanoLuc-to-HaloTag deoxyribonucleic acid (DNA) ratios. In Figure 8, the 1:100 and 1:1,000 conditions produce similar BRET ratios, yet the latter has much lower raw donor output. The manual warns that operation close to the instrument's detection limit can increase variability. The ratio plot alone gives little reason to reject the dimmer condition. [1]",
+          "html": "<p>NanoBRET measures bioluminescence resonance energy transfer (BRET). Promega's protein–protein interaction manual compares different NanoLuc-to-HaloTag deoxyribonucleic acid (DNA) ratios. In Figure 8, the 1:100 and 1:1,000 conditions produce similar BRET ratios, yet the latter has much lower raw donor output. The manual warns that operation close to the instrument's detection limit can increase variability. The ratio plot alone gives little reason to reject the dimmer condition. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "In this assay, NanoLuc luciferase is the donor and the HaloTag NanoBRET 618 ligand supplies the fluorescent acceptor. Donor emission peaks around 460 nm and acceptor emission around 618 nm. One recommended filter arrangement uses a donor band centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter above 610 nm. Confirm the configuration for the actual assay and reader. [1]",
+          "html": "<p>In this assay, NanoLuc luciferase is the donor and the HaloTag NanoBRET 618 ligand supplies the fluorescent acceptor. Donor emission peaks around 460 nm and acceptor emission around 618 nm. One recommended filter arrangement uses a donor band centered at 450 nm with an 80 nm bandwidth and an acceptor long-pass filter above 610 nm. Confirm the configuration for the actual assay and reader. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The raw acceptor-to-donor ratio is dimensionless. Multiplying it by 1,000 gives milliBRET units (mBU). In the manual's corrected result, the corresponding no-acceptor-ligand control ratio is subtracted. Keep that control alongside the raw donor and acceptor readings; a corrected ratio adds another measurement and its uncertainty. [1]",
+          "html": "<p>The raw acceptor-to-donor ratio is dimensionless. Multiplying it by 1,000 gives milliBRET units (mBU). In the manual's corrected result, the corresponding no-acceptor-ligand control ratio is subtracted. Keep that control alongside the raw donor and acceptor readings; a corrected ratio adds another measurement and its uncertainty. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-same-ratio-can-have-very-different-precision",
+      "heading": "The same ratio can have very different precision",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The same ratio can have very different precision",
+          "html": "<h2 id=\"the-same-ratio-can-have-very-different-precision\">The same ratio can have very different precision</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose both detected channel counts fall one hundredfold. The following constructed example assumes independent Poisson counting, linear response, negligible background and no control subtraction. Counts are accumulated photons per acquisition, not displayed relative light units (RLU). Precision is reported as the coefficient of variation (CV).",
+          "html": "<p>Suppose both detected channel counts fall one hundredfold. The following constructed example assumes independent Poisson counting, linear response, negligible background and no control subtraction. Counts are accumulated photons per acquisition, not displayed relative light units (RLU). Precision is reported as the coefficient of variation (CV).</p>"
+        },
+        {
+          "type": "div",
+          "text": "Expected donor count | Expected acceptor count | Ratio of expected counts | Approximate ratio CV | 100,000 photons | 10,000 photons | 0.100 | 1.05% | 1,000 photons | 100 photons | 0.100 | 10.49% | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Expected donor count</th><th scope=\"col\">Expected acceptor count</th><th scope=\"col\">Ratio of expected counts</th><th scope=\"col\">Approximate ratio CV</th></tr></thead><tbody><tr><th scope=\"row\">100,000 photons</th><td>10,000 photons</td><td>0.100</td><td>1.05%</td></tr><tr><th scope=\"row\">1,000 photons</th><td>100 photons</td><td>0.100</td><td>10.49%</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "First-order error propagation gives:",
+          "html": "<p>First-order error propagation gives:</p>"
+        },
+        {
+          "type": "div",
+          "text": "CV subscript R ≈ square root of ((1) divided by (A) + (1) divided by (D))",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"CV subscript R ≈ square root of ((1) divided by (A) + (1) divided by (D))\"><mrow><msub><mrow><mrow><mtext>CV</mtext></mrow></mrow><mrow><mrow><mtext>R</mtext></mrow></mrow></msub><mrow><mtext> ≈ </mtext></mrow><msqrt><mrow><mfrac><mrow><mrow><mtext>1</mtext></mrow></mrow><mrow><mrow><mtext>A</mtext></mrow></mrow></mfrac><mrow><mtext> + </mtext></mrow><mfrac><mrow><mrow><mtext>1</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></msqrt></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here A and D are expected acceptor and donor counts. The subscript R denotes their measured ratio, and its CV is expressed as a fraction. Multiply it by 100 to report percent. This approximation follows from independent counting variances; background and other noise worsen it. Near-zero denominators also invalidate the approximation. The ratio of expected counts is not exactly the expected value of a noisy ratio. [2]",
+          "html": "<p>Here A and D are expected acceptor and donor counts. The subscript R denotes their measured ratio, and its CV is expressed as a fraction. Multiply it by 100 to report percent. This approximation follows from independent counting variances; background and other noise worsen it. Near-zero denominators also invalidate the approximation. The ratio of expected counts is not exactly the expected value of a noisy ratio. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Both rows describe the same underlying ratio. The dimmer measurement has about ten times the relative uncertainty, despite preserving the underlying ratio.",
+          "html": "<p>Both rows describe the same underlying ratio. The dimmer measurement has about ten times the relative uncertainty, despite preserving the underlying ratio.</p>"
+        }
+      ]
+    },
+    {
+      "id": "work-out-why-the-light-fell",
+      "heading": "Work out why the light fell",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Work out why the light fell",
+          "html": "<h2 id=\"work-out-why-the-light-fell\">Work out why the light fell</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Plot donor, acceptor and corrected ratio against concentration or time. Inspect the no-acceptor-ligand controls separately. A falling donor signal can accompany changes in cell number, donor expression or protein degradation, but it can also arise from luciferase inhibition, substrate availability or optical attenuation. Follow up with an appropriate orthogonal protein or viability measurement before assigning a biological cause.",
+          "html": "<p>Plot donor, acceptor and corrected ratio against concentration or time. Inspect the no-acceptor-ligand controls separately. A falling donor signal can accompany changes in cell number, donor expression or protein degradation, but it can also arise from luciferase inhibition, substrate availability or optical attenuation. Follow up with an appropriate orthogonal protein or viability measurement before assigning a biological cause.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check acquisition settings and timing after substrate addition, then verify that both channels remain proportional over the intended range. Establish an acceptable weak-signal range experimentally using representative controls and replicate preparations; a universal RLU cutoff cannot transfer reliably between readers.",
+          "html": "<p>Check acquisition settings and timing after substrate addition, then verify that both channels remain proportional over the intended range. Establish an acceptable weak-signal range experimentally using representative controls and replicate preparations; a universal RLU cutoff cannot transfer reliably between readers.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission detection can prevent a changing signal from being sampled at two different times. It does not prevent loss of photon-counting precision. Keep temperature consistent too: Promega's live-cell kinetic protocol uses equilibration at 37 °C with 5% carbon dioxide before measurement. Preserve the validated biological conditions when designing the read; room-temperature detection is not a general requirement for live-cell NanoBRET. [1]",
+          "html": "<p>Simultaneous dual-emission detection can prevent a changing signal from being sampled at two different times. It does not prevent loss of photon-counting precision. Keep temperature consistent too: Promega's live-cell kinetic protocol uses equilibration at 37 °C with 5% carbon dioxide before measurement. Preserve the validated biological conditions when designing the read; room-temperature detection is not a general requirement for live-cell NanoBRET. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Promega. NanoBRET Protein:Protein Interaction System Technical Manual TM439, revision October 2023. Sections 3.A, 5.D and 6; Figure 8, printed p. 20 (PDF p. 21). Filters, live-cell conditions, corrected ratios and the low-donor example.",
+          "html": "<p id=\"ref-1\">1. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanobret-proteinprotein-interaction-system-protocol.pdf\">NanoBRET Protein:Protein Interaction System Technical Manual TM439</a>, revision October 2023. Sections 3.A, 5.D and 6; Figure 8, printed p. 20 (PDF p. 21). Filters, live-cell conditions, corrected ratios and the low-donor example.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting noise principles. The ratio calculation is an explicitly derived example, not a manufacturer performance claim.",
+          "html": "<p id=\"ref-2\">2. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting noise principles. The ratio calculation is an explicitly derived example, not a manufacturer performance claim.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Promega. NanoBRET Protein:Protein Interaction System Technical Manual TM439, revision October 2023. Sections 3.A, 5.D and 6; Figure 8, printed p. 20 (PDF p. 21). Filters, live-cell conditions, corrected ratios and the low-donor example.",
+      "urls": [
+        "https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanobret-proteinprotein-interaction-system-protocol.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 152–153 (PDF pp. 165–166). Photon-counting noise principles. The ratio calculation is an explicitly derived example, not a manufacturer performance claim.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "CV subscript R ≈ square root of ((1) divided by (A) + (1) divided by (D))",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"CV subscript R ≈ square root of ((1) divided by (A) + (1) divided by (D))\"><mrow><msub><mrow><mrow><mtext>CV</mtext></mrow></mrow><mrow><mrow><mtext>R</mtext></mrow></mrow></msub><mrow><mtext> ≈ </mtext></mrow><msqrt><mrow><mfrac><mrow><mrow><mtext>1</mtext></mrow></mrow><mrow><mrow><mtext>A</mtext></mrow></mrow></mfrac><mrow><mtext> + </mtext></mrow><mfrac><mrow><mrow><mtext>1</mtext></mrow></mrow><mrow><mrow><mtext>D</mtext></mrow></mrow></mfrac></mrow></msqrt></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Why can my NanoBRET ratio stay constant while the donor signal falls?",
+      "rows": [
+        [
+          "Expected donor count",
+          "Expected acceptor count",
+          "Ratio of expected counts",
+          "Approximate ratio CV"
+        ],
+        [
+          "100,000 photons",
+          "10,000 photons",
+          "0.100",
+          "1.05%"
+        ],
+        [
+          "1,000 photons",
+          "100 photons",
+          "0.100",
+          "10.49%"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "a847a1d6ff22f2b3eb87457eb5a527b99625ce8f6128c9f6820e08af96a15313"
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "reuse-fp-g-factor-filters-gain-reader",
+  "canonical_url": "https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/",
+  "title": "Can I reuse the same FP G factor after changing filters, gain settings or readers?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Know when to verify or recalibrate an FP G factor after changing filters, gains or readers, and why one matching reference value is insufficient.",
+  "takeaways": [
+    "G belongs to the measurement configuration",
+    "A small channel error can make a substantial mP shift",
+    "Check more than the calibration well"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence polarization",
+    "Channel calibration",
+    "Plate readers"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-05",
+  "date_modified": "2026-10-05",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>The fluorescence polarization (FP) G factor describes relative channel response and should be reused only after that response has been checked in the new configuration. A filter change, a different reader or a change in relative channel gain can alter that response. Some instruments manage calibration internally; follow the system's documented method and verify an appropriate reference before carrying the factor into a new protocol. [1]</p><h2 id=\"g-belongs-to-the-measurement-configuration\">G belongs to the measurement configuration</h2><p>Tecan's Infinite 200 PRO instructions describe G as compensation for differences between the parallel and perpendicular optical measurements. The software stores calibrated values with filter information. [1] The stored factor therefore belongs with the optical configuration used to establish it.</p><p>An FP reference needs an assigned polarization value under defined conditions. Thermo Fisher's PolarScreen protocol lists an FP reference kit for checking instrument accuracy and setting G. It also specifies different green and red optical settings: excitation/emission centers of 485/535 nm for green and 535/590 nm for red, with respective excitation/emission bandwidths of 25/20 nm. [2] A factor established in the green path is not automatically valid in the red path.</p><p>Changing both channel gains by an identical multiplicative factor would leave their relative response unchanged in an ideal linear instrument. Real gain controls, detector responses and software corrections differ. A gain change therefore calls for verification; it does not imply that every instrument necessarily needs a different numerical G.</p><h2 id=\"a-small-channel-error-can-make-a-substantial-mp-shift\">A small channel error can make a substantial mP shift</h2><p>Suppose a blank-corrected reference gives 1,100 and 900 relative fluorescence units (RFU) in the parallel and perpendicular channels. With the convention that G multiplies the perpendicular channel, G = 1 gives 100 millipolarization units (mP).</p><p>Now let the perpendicular response rise by 10%, to 990 RFU, while the parallel response stays at 1,100 RFU. Keeping G = 1 produces about 52.6 mP. For this constructed scaling change, G = 1/1.1, approximately 0.9091, restores 100 mP. Nothing about the reference molecule changed. This example assumes proportional response and correct blank subtraction; it is not a recommended calibration value.</p><h2 id=\"check-more-than-the-calibration-well\">Check more than the calibration well</h2><p>Forcing one sample to an assigned mP can absorb a blank mismatch, an incorrect reference value or a signal-dependent detector error into G. The calibration well can land exactly on its target while other samples remain biased.</p><p>Use the correct reference solvent, temperature and concentration, with replicate reference blanks. Check a second appropriate polarization level if available, and verify behavior across the intensity range relevant to the assay. A dilution test should preserve polarization within the qualified working range when sample chemistry remains unchanged. Keep the calibration reference distinct from the biological positive and negative controls.</p><p>Matched photomultiplier tubes (PMTs) and stable paired optics can support consistent relative response. Simultaneous acquisition reduces differences caused by measuring the two components at different times. Neither capability exempts the full optical path from calibration; BMG's matched-pair architecture is an example of the hardware approach. [3]</p><h2 id=\"transfer-the-record-with-the-factor\">Transfer the record with the factor</h2><p>Save the reader identity, optical module or filters, gains, plate and volume, temperature, reference identity, assigned mP and date of calibration. Record whether the software applies G to the parallel or perpendicular term and whether exported channels are already corrected. Applying the factor twice creates another error.</p><p>After a settings change, measure the reference and assay controls before committing a full screen. Recalibrate when the check fails or the manufacturer requires it, investigate the cause, and keep the previous configuration with its original results. When two readers disagree on absolute mP, those records let you distinguish a calibration difference from a changed sample.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.</p><p id=\"ref-2\">2. Thermo Fisher Scientific. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/polarscreen_nr_competitor_assay_universal_man.pdf\">PolarScreen Nuclear Receptor Competitor Assays Universal Protocol</a>, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.</p><p id=\"ref-3\">3. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/pherastar-detection-system/\">PHERAstar detection system</a>. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.</p>",
+  "body_text": "The fluorescence polarization (FP) G factor describes relative channel response and should be reused only after that response has been checked in the new configuration. A filter change, a different reader or a change in relative channel gain can alter that response. Some instruments manage calibration internally; follow the system's documented method and verify an appropriate reference before carrying the factor into a new protocol. [1]\n\nG belongs to the measurement configuration\n\nTecan's Infinite 200 PRO instructions describe G as compensation for differences between the parallel and perpendicular optical measurements. The software stores calibrated values with filter information. [1] The stored factor therefore belongs with the optical configuration used to establish it.\n\nAn FP reference needs an assigned polarization value under defined conditions. Thermo Fisher's PolarScreen protocol lists an FP reference kit for checking instrument accuracy and setting G. It also specifies different green and red optical settings: excitation/emission centers of 485/535 nm for green and 535/590 nm for red, with respective excitation/emission bandwidths of 25/20 nm. [2] A factor established in the green path is not automatically valid in the red path.\n\nChanging both channel gains by an identical multiplicative factor would leave their relative response unchanged in an ideal linear instrument. Real gain controls, detector responses and software corrections differ. A gain change therefore calls for verification; it does not imply that every instrument necessarily needs a different numerical G.\n\nA small channel error can make a substantial mP shift\n\nSuppose a blank-corrected reference gives 1,100 and 900 relative fluorescence units (RFU) in the parallel and perpendicular channels. With the convention that G multiplies the perpendicular channel, G = 1 gives 100 millipolarization units (mP).\n\nNow let the perpendicular response rise by 10%, to 990 RFU, while the parallel response stays at 1,100 RFU. Keeping G = 1 produces about 52.6 mP. For this constructed scaling change, G = 1/1.1, approximately 0.9091, restores 100 mP. Nothing about the reference molecule changed. This example assumes proportional response and correct blank subtraction; it is not a recommended calibration value.\n\nCheck more than the calibration well\n\nForcing one sample to an assigned mP can absorb a blank mismatch, an incorrect reference value or a signal-dependent detector error into G. The calibration well can land exactly on its target while other samples remain biased.\n\nUse the correct reference solvent, temperature and concentration, with replicate reference blanks. Check a second appropriate polarization level if available, and verify behavior across the intensity range relevant to the assay. A dilution test should preserve polarization within the qualified working range when sample chemistry remains unchanged. Keep the calibration reference distinct from the biological positive and negative controls.\n\nMatched photomultiplier tubes (PMTs) and stable paired optics can support consistent relative response. Simultaneous acquisition reduces differences caused by measuring the two components at different times. Neither capability exempts the full optical path from calibration; BMG's matched-pair architecture is an example of the hardware approach. [3]\n\nTransfer the record with the factor\n\nSave the reader identity, optical module or filters, gains, plate and volume, temperature, reference identity, assigned mP and date of calibration. Record whether the software applies G to the parallel or perpendicular term and whether exported channels are already corrected. Applying the factor twice creates another error.\n\nAfter a settings change, measure the reference and assay controls before committing a full screen. Recalibrate when the check fails or the manufacturer requires it, investigate the cause, and keep the previous configuration with its original results. When two readers disagree on absolute mP, those records let you distinguish a calibration difference from a changed sample.\n\nReferences\n\n1. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.\n\n2. Thermo Fisher Scientific. PolarScreen Nuclear Receptor Competitor Assays Universal Protocol, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.\n\n3. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The fluorescence polarization (FP) G factor describes relative channel response and should be reused only after that response has been checked in the new configuration. A filter change, a different reader or a change in relative channel gain can alter that response. Some instruments manage calibration internally; follow the system's documented method and verify an appropriate reference before carrying the factor into a new protocol. [1]",
+          "html": "<p>The fluorescence polarization (FP) G factor describes relative channel response and should be reused only after that response has been checked in the new configuration. A filter change, a different reader or a change in relative channel gain can alter that response. Some instruments manage calibration internally; follow the system's documented method and verify an appropriate reference before carrying the factor into a new protocol. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "g-belongs-to-the-measurement-configuration",
+      "heading": "G belongs to the measurement configuration",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "G belongs to the measurement configuration",
+          "html": "<h2 id=\"g-belongs-to-the-measurement-configuration\">G belongs to the measurement configuration</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Tecan's Infinite 200 PRO instructions describe G as compensation for differences between the parallel and perpendicular optical measurements. The software stores calibrated values with filter information. [1] The stored factor therefore belongs with the optical configuration used to establish it.",
+          "html": "<p>Tecan's Infinite 200 PRO instructions describe G as compensation for differences between the parallel and perpendicular optical measurements. The software stores calibrated values with filter information. [1] The stored factor therefore belongs with the optical configuration used to establish it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "An FP reference needs an assigned polarization value under defined conditions. Thermo Fisher's PolarScreen protocol lists an FP reference kit for checking instrument accuracy and setting G. It also specifies different green and red optical settings: excitation/emission centers of 485/535 nm for green and 535/590 nm for red, with respective excitation/emission bandwidths of 25/20 nm. [2] A factor established in the green path is not automatically valid in the red path.",
+          "html": "<p>An FP reference needs an assigned polarization value under defined conditions. Thermo Fisher's PolarScreen protocol lists an FP reference kit for checking instrument accuracy and setting G. It also specifies different green and red optical settings: excitation/emission centers of 485/535 nm for green and 535/590 nm for red, with respective excitation/emission bandwidths of 25/20 nm. [2] A factor established in the green path is not automatically valid in the red path.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Changing both channel gains by an identical multiplicative factor would leave their relative response unchanged in an ideal linear instrument. Real gain controls, detector responses and software corrections differ. A gain change therefore calls for verification; it does not imply that every instrument necessarily needs a different numerical G.",
+          "html": "<p>Changing both channel gains by an identical multiplicative factor would leave their relative response unchanged in an ideal linear instrument. Real gain controls, detector responses and software corrections differ. A gain change therefore calls for verification; it does not imply that every instrument necessarily needs a different numerical G.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-small-channel-error-can-make-a-substantial-mp-shift",
+      "heading": "A small channel error can make a substantial mP shift",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A small channel error can make a substantial mP shift",
+          "html": "<h2 id=\"a-small-channel-error-can-make-a-substantial-mp-shift\">A small channel error can make a substantial mP shift</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose a blank-corrected reference gives 1,100 and 900 relative fluorescence units (RFU) in the parallel and perpendicular channels. With the convention that G multiplies the perpendicular channel, G = 1 gives 100 millipolarization units (mP).",
+          "html": "<p>Suppose a blank-corrected reference gives 1,100 and 900 relative fluorescence units (RFU) in the parallel and perpendicular channels. With the convention that G multiplies the perpendicular channel, G = 1 gives 100 millipolarization units (mP).</p>"
+        },
+        {
+          "type": "p",
+          "text": "Now let the perpendicular response rise by 10%, to 990 RFU, while the parallel response stays at 1,100 RFU. Keeping G = 1 produces about 52.6 mP. For this constructed scaling change, G = 1/1.1, approximately 0.9091, restores 100 mP. Nothing about the reference molecule changed. This example assumes proportional response and correct blank subtraction; it is not a recommended calibration value.",
+          "html": "<p>Now let the perpendicular response rise by 10%, to 990 RFU, while the parallel response stays at 1,100 RFU. Keeping G = 1 produces about 52.6 mP. For this constructed scaling change, G = 1/1.1, approximately 0.9091, restores 100 mP. Nothing about the reference molecule changed. This example assumes proportional response and correct blank subtraction; it is not a recommended calibration value.</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-more-than-the-calibration-well",
+      "heading": "Check more than the calibration well",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check more than the calibration well",
+          "html": "<h2 id=\"check-more-than-the-calibration-well\">Check more than the calibration well</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Forcing one sample to an assigned mP can absorb a blank mismatch, an incorrect reference value or a signal-dependent detector error into G. The calibration well can land exactly on its target while other samples remain biased.",
+          "html": "<p>Forcing one sample to an assigned mP can absorb a blank mismatch, an incorrect reference value or a signal-dependent detector error into G. The calibration well can land exactly on its target while other samples remain biased.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use the correct reference solvent, temperature and concentration, with replicate reference blanks. Check a second appropriate polarization level if available, and verify behavior across the intensity range relevant to the assay. A dilution test should preserve polarization within the qualified working range when sample chemistry remains unchanged. Keep the calibration reference distinct from the biological positive and negative controls.",
+          "html": "<p>Use the correct reference solvent, temperature and concentration, with replicate reference blanks. Check a second appropriate polarization level if available, and verify behavior across the intensity range relevant to the assay. A dilution test should preserve polarization within the qualified working range when sample chemistry remains unchanged. Keep the calibration reference distinct from the biological positive and negative controls.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Matched photomultiplier tubes (PMTs) and stable paired optics can support consistent relative response. Simultaneous acquisition reduces differences caused by measuring the two components at different times. Neither capability exempts the full optical path from calibration; BMG's matched-pair architecture is an example of the hardware approach. [3]",
+          "html": "<p>Matched photomultiplier tubes (PMTs) and stable paired optics can support consistent relative response. Simultaneous acquisition reduces differences caused by measuring the two components at different times. Neither capability exempts the full optical path from calibration; BMG's matched-pair architecture is an example of the hardware approach. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "transfer-the-record-with-the-factor",
+      "heading": "Transfer the record with the factor",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Transfer the record with the factor",
+          "html": "<h2 id=\"transfer-the-record-with-the-factor\">Transfer the record with the factor</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Save the reader identity, optical module or filters, gains, plate and volume, temperature, reference identity, assigned mP and date of calibration. Record whether the software applies G to the parallel or perpendicular term and whether exported channels are already corrected. Applying the factor twice creates another error.",
+          "html": "<p>Save the reader identity, optical module or filters, gains, plate and volume, temperature, reference identity, assigned mP and date of calibration. Record whether the software applies G to the parallel or perpendicular term and whether exported channels are already corrected. Applying the factor twice creates another error.</p>"
+        },
+        {
+          "type": "p",
+          "text": "After a settings change, measure the reference and assay controls before committing a full screen. Recalibrate when the check fails or the manufacturer requires it, investigate the cause, and keep the previous configuration with its original results. When two readers disagree on absolute mP, those records let you distinguish a calibration difference from a changed sample.",
+          "html": "<p>After a settings change, measure the reference and assay controls before committing a full screen. Recalibrate when the check fails or the manufacturer requires it, investigate the cause, and keep the previous configuration with its original results. When two readers disagree on absolute mP, those records let you distinguish a calibration difference from a changed sample.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.",
+          "html": "<p id=\"ref-1\">1. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Thermo Fisher Scientific. PolarScreen Nuclear Receptor Competitor Assays Universal Protocol, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.",
+          "html": "<p id=\"ref-2\">2. Thermo Fisher Scientific. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/polarscreen_nr_competitor_assay_universal_man.pdf\">PolarScreen Nuclear Receptor Competitor Assays Universal Protocol</a>, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+          "html": "<p id=\"ref-3\">3. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/pherastar-detection-system/\">PHERAstar detection system</a>. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Thermo Fisher Scientific. PolarScreen Nuclear Receptor Competitor Assays Universal Protocol, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.",
+      "urls": [
+        "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/polarscreen_nr_competitor_assay_universal_man.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. BMG LABTECH. PHERAstar detection system. Manufacturer description of two matched detector pairs, including a pair optimized for time-resolved fluorescence. Complete page archived 29 September 2026; architecture is not independent performance validation.",
+      "urls": [
+        "https://www.bmglabtech.com/en/pherastar-detection-system/"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "5042bf33a4bb90e9179b7e2f3b06a0a2c1bdf3157d339ad0a4e7f9a0e4fa10b7"
+}

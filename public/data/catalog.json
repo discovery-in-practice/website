@@ -863,5 +863,190 @@
     "date_modified": "2026-10-02",
     "json_url": "https://discoveryinpractice.com/articles/white-vs-black-plates-tr-fret-htrf/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/white-vs-black-plates-tr-fret-htrf/article.md"
+  },
+  {
+    "id": "protac-molecular-glue-bretsa-cetsa-nanobret-assays",
+    "title": "Choosing assays for molecular glue and PROTAC screening",
+    "canonical_url": "https://discoveryinpractice.com/compare/protac-molecular-glue-bretsa-cetsa-nanobret-assays/",
+    "summary": "Separate cellular engagement recruitment ubiquitination and protein loss",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "PROTAC",
+      "Molecular glues",
+      "Protein degradation"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "debf2b439521a9f8c60e690f734b1b2f45c9826d504bc593a7e7573ea0879aa1",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/compare/protac-molecular-glue-bretsa-cetsa-nanobret-assays/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/protac-molecular-glue-bretsa-cetsa-nanobret-assays/article.md"
+  },
+  {
+    "id": "fp-ratio-photon-loss-precision",
+    "title": "The ratio survived but the precision did not",
+    "canonical_url": "https://discoveryinpractice.com/articles/fp-ratio-photon-loss-precision/",
+    "summary": "An unchanged FP ratio can hide lost precision. Follow photon-count examples and practical controls for attenuation, background and fluorescent compounds.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Photon counting",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "3dad338ec9060ab62e1dc650a9d27493d704abf6bcb24b9a30b506752050ed1b",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/fp-ratio-photon-loss-precision/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fp-ratio-photon-loss-precision/article.md"
+  },
+  {
+    "id": "ligand-depletion-receptor-concentration",
+    "title": "More receptor can make affinity harder to measure",
+    "canonical_url": "https://discoveryinpractice.com/articles/ligand-depletion-receptor-concentration/",
+    "summary": "See how receptor concentration changes free ligand, shifts binding midpoints and limits Kd estimates, with worked examples and practical assay controls.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Ligand depletion",
+      "Binding affinity",
+      "Receptor concentration"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "0e7391f2498829790eabdb2c742a8827104de5491e7122b99bc75901b5d87f36",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/ligand-depletion-receptor-concentration/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/ligand-depletion-receptor-concentration/article.md"
+  },
+  {
+    "id": "simultaneous-dual-emission-ratio-precision",
+    "title": "When does simultaneous dual-emission detection improve FP, TR-FRET or BRET precision?",
+    "canonical_url": "https://discoveryinpractice.com/articles/simultaneous-dual-emission-ratio-precision/",
+    "summary": "How simultaneous dual-emission detection reduces timing errors in FP, TR-FRET and BRET, and why weak channels and calibration still matter.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "TR-FRET",
+      "BRET",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "394f0d23cc1570c67035d1f870e8ff8b693f20c5d38bf413bbc7cb299517d6cc",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/simultaneous-dual-emission-ratio-precision/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/simultaneous-dual-emission-ratio-precision/article.md"
+  },
+  {
+    "id": "matched-pmts-ratio-calibration",
+    "title": "Are two PMTs enough for accurate ratiometric measurements, or do they need matching and calibration?",
+    "canonical_url": "https://discoveryinpractice.com/articles/matched-pmts-ratio-calibration/",
+    "summary": "Learn why simultaneous detection, relative channel calibration and linearity all matter for accurate FP, TR-FRET and BRET measurements.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Detector linearity",
+      "Ratiometric assays",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "768d3cc7a0d051475630d723bb5be38c1092b0d933872b31c3d06a370e8ee8c0",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/matched-pmts-ratio-calibration/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/matched-pmts-ratio-calibration/article.md"
+  },
+  {
+    "id": "nanobret-ratio-constant-donor-signal-falls",
+    "title": "Why can my NanoBRET ratio stay constant while the donor signal falls?",
+    "canonical_url": "https://discoveryinpractice.com/articles/nanobret-ratio-constant-donor-signal-falls/",
+    "summary": "Why a NanoBRET ratio can stay constant as donor light falls, how precision suffers and which raw signals and controls to inspect.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "NanoBRET",
+      "BRET",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "a847a1d6ff22f2b3eb87457eb5a527b99625ce8f6128c9f6820e08af96a15313",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/nanobret-ratio-constant-donor-signal-falls/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/nanobret-ratio-constant-donor-signal-falls/article.md"
+  },
+  {
+    "id": "free-fp-tracer-concentration-mp",
+    "title": "Why does the mP value of my free FP tracer change when I change its concentration?",
+    "canonical_url": "https://discoveryinpractice.com/articles/free-fp-tracer-concentration-mp/",
+    "summary": "Diagnose concentration-dependent fluorescence polarization using raw channels, matched blanks, linearity checks and controls for tracer behavior.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Background noise",
+      "Tracer design"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "9d3b037904a05276e304c77e3ae676555124795d6e21e5aa3748010e49c26c87",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/free-fp-tracer-concentration-mp/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/free-fp-tracer-concentration-mp/article.md"
+  },
+  {
+    "id": "reuse-fp-g-factor-filters-gain-reader",
+    "title": "Can I reuse the same FP G factor after changing filters, gain settings or readers?",
+    "canonical_url": "https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/",
+    "summary": "Know when to verify or recalibrate an FP G factor after changing filters, gains or readers, and why one matching reference value is insufficient.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence polarization",
+      "Channel calibration",
+      "Plate readers"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "5042bf33a4bb90e9179b7e2f3b06a0a2c1bdf3157d339ad0a4e7f9a0e4fa10b7",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-05",
+    "date_modified": "2026-10-05",
+    "json_url": "https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/article.md"
   }
 ]

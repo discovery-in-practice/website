@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "id": "fp-ratio-photon-loss-precision",
+  "canonical_url": "https://discoveryinpractice.com/articles/fp-ratio-photon-loss-precision/",
+  "title": "The ratio survived but the precision did not",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "An unchanged FP ratio can hide lost precision. Follow photon-count examples and practical controls for attenuation, background and fluorescent compounds.",
+  "takeaways": [
+    "The same answer from fewer photons",
+    "Background makes the bargain worse",
+    "Simultaneous collection protects a different part of the measurement"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "Fluorescence polarization",
+    "Photon counting",
+    "Assay precision"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-05",
+  "date_modified": "2026-10-05",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Two wells return 200 millipolarization units. One contains a bright tracer. The other contains the same tracer and a compound that absorbs much of the light. They can have the same average fluorescence polarization even though the dimmer well is less reliable.</p><p>Proportional attenuation removes light from both polarization channels without necessarily moving the expected ratio. It also leaves fewer photons from which to estimate that ratio. A compound can therefore escape an interference check based on the mean polarization while making individual wells less trustworthy.</p><p>Hall and colleagues describe this distinction in their review of fluorescence polarization screening: proportional optical interference can spare the FP value while reducing precision. Additive fluorescence behaves differently and can shift the value itself. [1] The raw intensities help distinguish those failures.</p><h2 id=\"the-same-answer-from-fewer-photons\">The same answer from fewer photons</h2><p>For parallel and perpendicular channel readings A and B, use the usual polarization definition with a relative channel-response correction G:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"P = (A − GB) divided by (A + GB)\"><mrow><mrow><mtext>P = </mtext></mrow><mfrac><mrow><mrow><mtext>A − GB</mtext></mrow></mrow><mrow><mrow><mtext>A + GB</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>Polarization P is a fraction; multiplying it by 1,000 gives mP. Background subtraction belongs in the individual channels. The following constructed example sets G to one and initially assumes negligible background, linear detection and independent Poisson photon counts. These are detected counts during the acquisition interval, not arbitrary fluorescence units relabeled as photons.</p><p>Suppose the expected counts are 6,000 parallel and 4,000 perpendicular. The expected ratio of those means is 0.2, or 200 mP. Attenuate both signals fourfold and the means become 1,500 and 1,000. The ratio remains 0.2.</p><p>First-order propagation of the independent counting variances gives the approximate variance of polarization:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Var(P) ≈ (1 − P²) divided by (A + B)\"><mrow><mrow><mtext>Var(P) ≈ </mtext></mrow><mfrac><mrow><mrow><mtext>1 − P²</mtext></mrow></mrow><mrow><mrow><mtext>A + B</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>The first well has an approximate measurement standard deviation of 9.8 mP. The attenuated well has 19.6 mP. Retaining one-quarter of the photons doubles this uncertainty. Owicki's treatment of FP screening statistics connects polarization precision to photon collection and gives the broader basis for this calculation. [2]</p><p>These are standard deviations of individual measurements under the model, not standard errors of a replicated mean. They also exclude pipetting variation, binding variation, drift and other assay noise. Their usefulness is to show a loss of information that can occur even when the chemistry and the expected ratio stay unchanged.</p><h2 id=\"background-makes-the-bargain-worse\">Background makes the bargain worse</h2><p>Now give each channel a fixed background contribution averaging 1,000 detected counts. Assume its mean is known accurately enough that uncertainty in the blank estimate can be neglected. Subtraction removes those mean counts from the channel values used to calculate polarization. It leaves the background photons' counting variance in the measurement.</p><p>With A and B now denoting the net signal means, the variance contributions must use the gross photon counts. For independent channels:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Var(P) ≈ (4[B² Var(A) + A² Var(B)]) divided by ((A + B)⁴)\"><mrow><mrow><mtext>Var(P) ≈ </mtext></mrow><mfrac><mrow><mrow><mtext>4[B² Var(A) + A² Var(B)]</mtext></mrow></mrow><mrow><mrow><mtext>(A + B)⁴</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>For the bright well, the variance terms are 7,000 and 5,000 counts. For the attenuated well, they are 2,500 and 2,000. Polarization calculated from the net channel means remains 200 mP in both cases, while the predicted uncertainty separates further.</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Signal condition</th><th scope=\"col\">Background per channel</th><th scope=\"col\">Approximate SD</th></tr></thead><tbody><tr><th scope=\"row\">6,000 and 4,000 net counts</th><td>Negligible</td><td>9.8 mP</td></tr><tr><th scope=\"row\">1,500 and 1,000 net counts</th><td>Negligible</td><td>19.6 mP</td></tr><tr><th scope=\"row\">6,000 and 4,000 net counts</th><td>1,000 counts</td><td>10.8 mP</td></tr><tr><th scope=\"row\">1,500 and 1,000 net counts</th><td>1,000 counts</td><td>26.8 mP</td></tr></tbody></table></div><p>This background is deliberately held fixed while tracer light is attenuated, as might approximate detector background or an unaffected contribution. It is not a universal model of compound interference. Background originating inside the sample may change with the compound. Estimating the blank from a finite number of noisy wells introduces additional uncertainty as well.</p><p>Near a hit threshold, a noisier well has a greater chance of landing on either side of the cutoff. An apparently harmless intensity loss can increase both follow-up workload and the risk of missing a real effect, depending on the response and threshold. An unchanged plate-average ratio offers little reassurance about that individual well.</p><h2 id=\"simultaneous-collection-protects-a-different-part-of-the-measurement\">Simultaneous collection protects a different part of the measurement</h2><p>Suppose source intensity fluctuates while the reader measures the two channels. When both are collected simultaneously, a shared proportional change can cancel in the ratio. Sequential acquisition allows the channels to sample different brightness conditions. Calibrated simultaneous dual-emission collection is valuable because it preserves that common timing.</p><p>Independent photon fluctuations do not cancel in the same way. Two channels can share an illumination fluctuation while retaining their own counting noise. A complete uncertainty calculation includes their covariance. The simple formulas above describe the independent-counting case and should not be applied unchanged when other correlated fluctuations dominate.</p><p>This also explains the value of efficient optics. More useful photons improve counting precision without requiring more tracer. Raising tracer concentration can change ligand depletion, binding equilibria and assay sensitivity to competitors. Collecting the available emission efficiently can preserve a concentration chosen for sound biochemical reasons.</p><p>Longer acquisition is worth testing when counting noise dominates. Under the ideal model, four times the collection interval recovers the precision lost through fourfold attenuation. In a real plate, bleaching, drift and throughput can spoil that trade. Inspect precision against collection time before committing a screen to a slower setting.</p><h2 id=\"a-practical-interference-review\">A practical interference review</h2><p>Retain both background-corrected channels, their corresponding blanks and the acquisition settings. Also keep the raw readings before subtraction. A negative net value may reveal a background or low-signal problem that a ratio-only export conceals. Use the reader's documented channel convention when reconstructing total fluorescence; the FP denominator A + GB is different from the commonly used total-intensity expression A + 2GB.</p><p>Compare each compound with a suitable tracer control at the same tracer concentration and binding state. Look at the direction of both channel changes alongside the polarization. Similar fractional decreases suggest proportional attenuation as one possibility. Extra fluorescence, a channel-specific change or an altered binding population can produce another pattern. Use those patterns to choose the next control, then test the suspected mechanism.</p><p>One useful follow-up contains compound and tracer without the binding partner, with a matching compound-only well to examine fluorescence in the measurement bands. Add a control representing the bound state where feasible. A compound can interact differently with free and bound tracer, and a no-protein counterassay cannot reproduce every interference mechanism.</p><p>Check several compound concentrations. Inspect absorption or fluorescence spectra when the signal pattern warrants it, and consider a different tracer or an independent assay chemistry for consequential hits. Simply subtracting compound-only fluorescence may be inadequate if the compound changes tracer brightness, aggregates, scatters light or behaves differently when protein is present. [1]</p><p>Set intensity-review limits using the precision needed for the assay's useful effect sizes. There is no universal percentage loss that makes every FP result unusable. A modest loss in a dim assay can matter more than a much larger loss in a bright one. Accept an intensity loss only when the remaining precision supports the intended decision.</p><h2 id=\"protect-the-photons-that-remain\">Protect the photons that remain</h2><p>Weak samples deserve optical isolation from bright neighbors. Subtracting an estimated leakage contribution can restore a mean intensity while leaving the noise contributed by the unwanted photons. Blocking interwell light before detection can therefore protect precision in a way that normalization alone cannot. Test representative bright-neighbor patterns when low-intensity wells are important to the screen.</p><p>Keep both channels inside their verified linear ranges. Compression of one channel can bias the ratio; proportional compression of both can conceal a response problem. A stable ratio is useful evidence only alongside the channel data and an appropriate range check.</p><p>Temperature adds a separate source of change through viscosity, rotational motion and tracer behavior. Maintain the validated binding and measurement temperature rather than assuming the ratio removes thermal effects. A stable chamber helps prevent a nominal room-temperature FP assay from drifting through different conditions during a long batch. [1]</p><p>For a questionable hit, save the ratio-versus-intensity plot beside the concentration-response curve. A point at 200 mP supported by abundant tracer light and a point at 200 mP reconstructed from weak, background-heavy channels deserve different confidence, even when the screening software prints them in the same column.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Hall MD et al. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/\">Fluorescence polarization assays in high-throughput screening and drug discovery: a review</a>. Methods and Applications in Fluorescence 4 (2016), 022001. Supplied PDF pp. 26–27: proportional versus additive interference and follow-up; p. 23: temperature.</p><p id=\"ref-2\">2. Owicki JC (2000). <a href=\"https://doi.org/10.1177/108705710000500501\">Fluorescence polarization and anisotropy in high throughput screening: perspectives and primer</a>. Journal of Biomolecular Screening 5:297–306. Supplied Fluorescence Methods in Drug Discovery collection, PDF p. 131: shot-noise treatment. Numerical examples here are independently calculated idealized cases.</p>",
+  "body_text": "Two wells return 200 millipolarization units. One contains a bright tracer. The other contains the same tracer and a compound that absorbs much of the light. They can have the same average fluorescence polarization even though the dimmer well is less reliable.\n\nProportional attenuation removes light from both polarization channels without necessarily moving the expected ratio. It also leaves fewer photons from which to estimate that ratio. A compound can therefore escape an interference check based on the mean polarization while making individual wells less trustworthy.\n\nHall and colleagues describe this distinction in their review of fluorescence polarization screening: proportional optical interference can spare the FP value while reducing precision. Additive fluorescence behaves differently and can shift the value itself. [1] The raw intensities help distinguish those failures.\n\nThe same answer from fewer photons\n\nFor parallel and perpendicular channel readings A and B, use the usual polarization definition with a relative channel-response correction G:\n\nP = (A − GB) divided by (A + GB)\n\nPolarization P is a fraction; multiplying it by 1,000 gives mP. Background subtraction belongs in the individual channels. The following constructed example sets G to one and initially assumes negligible background, linear detection and independent Poisson photon counts. These are detected counts during the acquisition interval, not arbitrary fluorescence units relabeled as photons.\n\nSuppose the expected counts are 6,000 parallel and 4,000 perpendicular. The expected ratio of those means is 0.2, or 200 mP. Attenuate both signals fourfold and the means become 1,500 and 1,000. The ratio remains 0.2.\n\nFirst-order propagation of the independent counting variances gives the approximate variance of polarization:\n\nVar(P) ≈ (1 − P²) divided by (A + B)\n\nThe first well has an approximate measurement standard deviation of 9.8 mP. The attenuated well has 19.6 mP. Retaining one-quarter of the photons doubles this uncertainty. Owicki's treatment of FP screening statistics connects polarization precision to photon collection and gives the broader basis for this calculation. [2]\n\nThese are standard deviations of individual measurements under the model, not standard errors of a replicated mean. They also exclude pipetting variation, binding variation, drift and other assay noise. Their usefulness is to show a loss of information that can occur even when the chemistry and the expected ratio stay unchanged.\n\nBackground makes the bargain worse\n\nNow give each channel a fixed background contribution averaging 1,000 detected counts. Assume its mean is known accurately enough that uncertainty in the blank estimate can be neglected. Subtraction removes those mean counts from the channel values used to calculate polarization. It leaves the background photons' counting variance in the measurement.\n\nWith A and B now denoting the net signal means, the variance contributions must use the gross photon counts. For independent channels:\n\nVar(P) ≈ (4[B² Var(A) + A² Var(B)]) divided by ((A + B)⁴)\n\nFor the bright well, the variance terms are 7,000 and 5,000 counts. For the attenuated well, they are 2,500 and 2,000. Polarization calculated from the net channel means remains 200 mP in both cases, while the predicted uncertainty separates further.\n\nSignal condition | Background per channel | Approximate SD | 6,000 and 4,000 net counts | Negligible | 9.8 mP | 1,500 and 1,000 net counts | Negligible | 19.6 mP | 6,000 and 4,000 net counts | 1,000 counts | 10.8 mP | 1,500 and 1,000 net counts | 1,000 counts | 26.8 mP | \n\nThis background is deliberately held fixed while tracer light is attenuated, as might approximate detector background or an unaffected contribution. It is not a universal model of compound interference. Background originating inside the sample may change with the compound. Estimating the blank from a finite number of noisy wells introduces additional uncertainty as well.\n\nNear a hit threshold, a noisier well has a greater chance of landing on either side of the cutoff. An apparently harmless intensity loss can increase both follow-up workload and the risk of missing a real effect, depending on the response and threshold. An unchanged plate-average ratio offers little reassurance about that individual well.\n\nSimultaneous collection protects a different part of the measurement\n\nSuppose source intensity fluctuates while the reader measures the two channels. When both are collected simultaneously, a shared proportional change can cancel in the ratio. Sequential acquisition allows the channels to sample different brightness conditions. Calibrated simultaneous dual-emission collection is valuable because it preserves that common timing.\n\nIndependent photon fluctuations do not cancel in the same way. Two channels can share an illumination fluctuation while retaining their own counting noise. A complete uncertainty calculation includes their covariance. The simple formulas above describe the independent-counting case and should not be applied unchanged when other correlated fluctuations dominate.\n\nThis also explains the value of efficient optics. More useful photons improve counting precision without requiring more tracer. Raising tracer concentration can change ligand depletion, binding equilibria and assay sensitivity to competitors. Collecting the available emission efficiently can preserve a concentration chosen for sound biochemical reasons.\n\nLonger acquisition is worth testing when counting noise dominates. Under the ideal model, four times the collection interval recovers the precision lost through fourfold attenuation. In a real plate, bleaching, drift and throughput can spoil that trade. Inspect precision against collection time before committing a screen to a slower setting.\n\nA practical interference review\n\nRetain both background-corrected channels, their corresponding blanks and the acquisition settings. Also keep the raw readings before subtraction. A negative net value may reveal a background or low-signal problem that a ratio-only export conceals. Use the reader's documented channel convention when reconstructing total fluorescence; the FP denominator A + GB is different from the commonly used total-intensity expression A + 2GB.\n\nCompare each compound with a suitable tracer control at the same tracer concentration and binding state. Look at the direction of both channel changes alongside the polarization. Similar fractional decreases suggest proportional attenuation as one possibility. Extra fluorescence, a channel-specific change or an altered binding population can produce another pattern. Use those patterns to choose the next control, then test the suspected mechanism.\n\nOne useful follow-up contains compound and tracer without the binding partner, with a matching compound-only well to examine fluorescence in the measurement bands. Add a control representing the bound state where feasible. A compound can interact differently with free and bound tracer, and a no-protein counterassay cannot reproduce every interference mechanism.\n\nCheck several compound concentrations. Inspect absorption or fluorescence spectra when the signal pattern warrants it, and consider a different tracer or an independent assay chemistry for consequential hits. Simply subtracting compound-only fluorescence may be inadequate if the compound changes tracer brightness, aggregates, scatters light or behaves differently when protein is present. [1]\n\nSet intensity-review limits using the precision needed for the assay's useful effect sizes. There is no universal percentage loss that makes every FP result unusable. A modest loss in a dim assay can matter more than a much larger loss in a bright one. Accept an intensity loss only when the remaining precision supports the intended decision.\n\nProtect the photons that remain\n\nWeak samples deserve optical isolation from bright neighbors. Subtracting an estimated leakage contribution can restore a mean intensity while leaving the noise contributed by the unwanted photons. Blocking interwell light before detection can therefore protect precision in a way that normalization alone cannot. Test representative bright-neighbor patterns when low-intensity wells are important to the screen.\n\nKeep both channels inside their verified linear ranges. Compression of one channel can bias the ratio; proportional compression of both can conceal a response problem. A stable ratio is useful evidence only alongside the channel data and an appropriate range check.\n\nTemperature adds a separate source of change through viscosity, rotational motion and tracer behavior. Maintain the validated binding and measurement temperature rather than assuming the ratio removes thermal effects. A stable chamber helps prevent a nominal room-temperature FP assay from drifting through different conditions during a long batch. [1]\n\nFor a questionable hit, save the ratio-versus-intensity plot beside the concentration-response curve. A point at 200 mP supported by abundant tracer light and a point at 200 mP reconstructed from weak, background-heavy channels deserve different confidence, even when the screening software prints them in the same column.\n\nReferences\n\n1. Hall MD et al. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 4 (2016), 022001. Supplied PDF pp. 26–27: proportional versus additive interference and follow-up; p. 23: temperature.\n\n2. Owicki JC (2000). Fluorescence polarization and anisotropy in high throughput screening: perspectives and primer. Journal of Biomolecular Screening 5:297–306. Supplied Fluorescence Methods in Drug Discovery collection, PDF p. 131: shot-noise treatment. Numerical examples here are independently calculated idealized cases.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two wells return 200 millipolarization units. One contains a bright tracer. The other contains the same tracer and a compound that absorbs much of the light. They can have the same average fluorescence polarization even though the dimmer well is less reliable.",
+          "html": "<p>Two wells return 200 millipolarization units. One contains a bright tracer. The other contains the same tracer and a compound that absorbs much of the light. They can have the same average fluorescence polarization even though the dimmer well is less reliable.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Proportional attenuation removes light from both polarization channels without necessarily moving the expected ratio. It also leaves fewer photons from which to estimate that ratio. A compound can therefore escape an interference check based on the mean polarization while making individual wells less trustworthy.",
+          "html": "<p>Proportional attenuation removes light from both polarization channels without necessarily moving the expected ratio. It also leaves fewer photons from which to estimate that ratio. A compound can therefore escape an interference check based on the mean polarization while making individual wells less trustworthy.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Hall and colleagues describe this distinction in their review of fluorescence polarization screening: proportional optical interference can spare the FP value while reducing precision. Additive fluorescence behaves differently and can shift the value itself. [1] The raw intensities help distinguish those failures.",
+          "html": "<p>Hall and colleagues describe this distinction in their review of fluorescence polarization screening: proportional optical interference can spare the FP value while reducing precision. Additive fluorescence behaves differently and can shift the value itself. [1] The raw intensities help distinguish those failures.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-same-answer-from-fewer-photons",
+      "heading": "The same answer from fewer photons",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The same answer from fewer photons",
+          "html": "<h2 id=\"the-same-answer-from-fewer-photons\">The same answer from fewer photons</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For parallel and perpendicular channel readings A and B, use the usual polarization definition with a relative channel-response correction G:",
+          "html": "<p>For parallel and perpendicular channel readings A and B, use the usual polarization definition with a relative channel-response correction G:</p>"
+        },
+        {
+          "type": "div",
+          "text": "P = (A − GB) divided by (A + GB)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"P = (A − GB) divided by (A + GB)\"><mrow><mrow><mtext>P = </mtext></mrow><mfrac><mrow><mrow><mtext>A − GB</mtext></mrow></mrow><mrow><mrow><mtext>A + GB</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Polarization P is a fraction; multiplying it by 1,000 gives mP. Background subtraction belongs in the individual channels. The following constructed example sets G to one and initially assumes negligible background, linear detection and independent Poisson photon counts. These are detected counts during the acquisition interval, not arbitrary fluorescence units relabeled as photons.",
+          "html": "<p>Polarization P is a fraction; multiplying it by 1,000 gives mP. Background subtraction belongs in the individual channels. The following constructed example sets G to one and initially assumes negligible background, linear detection and independent Poisson photon counts. These are detected counts during the acquisition interval, not arbitrary fluorescence units relabeled as photons.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose the expected counts are 6,000 parallel and 4,000 perpendicular. The expected ratio of those means is 0.2, or 200 mP. Attenuate both signals fourfold and the means become 1,500 and 1,000. The ratio remains 0.2.",
+          "html": "<p>Suppose the expected counts are 6,000 parallel and 4,000 perpendicular. The expected ratio of those means is 0.2, or 200 mP. Attenuate both signals fourfold and the means become 1,500 and 1,000. The ratio remains 0.2.</p>"
+        },
+        {
+          "type": "p",
+          "text": "First-order propagation of the independent counting variances gives the approximate variance of polarization:",
+          "html": "<p>First-order propagation of the independent counting variances gives the approximate variance of polarization:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Var(P) ≈ (1 − P²) divided by (A + B)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Var(P) ≈ (1 − P²) divided by (A + B)\"><mrow><mrow><mtext>Var(P) ≈ </mtext></mrow><mfrac><mrow><mrow><mtext>1 − P²</mtext></mrow></mrow><mrow><mrow><mtext>A + B</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "The first well has an approximate measurement standard deviation of 9.8 mP. The attenuated well has 19.6 mP. Retaining one-quarter of the photons doubles this uncertainty. Owicki's treatment of FP screening statistics connects polarization precision to photon collection and gives the broader basis for this calculation. [2]",
+          "html": "<p>The first well has an approximate measurement standard deviation of 9.8 mP. The attenuated well has 19.6 mP. Retaining one-quarter of the photons doubles this uncertainty. Owicki's treatment of FP screening statistics connects polarization precision to photon collection and gives the broader basis for this calculation. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "These are standard deviations of individual measurements under the model, not standard errors of a replicated mean. They also exclude pipetting variation, binding variation, drift and other assay noise. Their usefulness is to show a loss of information that can occur even when the chemistry and the expected ratio stay unchanged.",
+          "html": "<p>These are standard deviations of individual measurements under the model, not standard errors of a replicated mean. They also exclude pipetting variation, binding variation, drift and other assay noise. Their usefulness is to show a loss of information that can occur even when the chemistry and the expected ratio stay unchanged.</p>"
+        }
+      ]
+    },
+    {
+      "id": "background-makes-the-bargain-worse",
+      "heading": "Background makes the bargain worse",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Background makes the bargain worse",
+          "html": "<h2 id=\"background-makes-the-bargain-worse\">Background makes the bargain worse</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Now give each channel a fixed background contribution averaging 1,000 detected counts. Assume its mean is known accurately enough that uncertainty in the blank estimate can be neglected. Subtraction removes those mean counts from the channel values used to calculate polarization. It leaves the background photons' counting variance in the measurement.",
+          "html": "<p>Now give each channel a fixed background contribution averaging 1,000 detected counts. Assume its mean is known accurately enough that uncertainty in the blank estimate can be neglected. Subtraction removes those mean counts from the channel values used to calculate polarization. It leaves the background photons' counting variance in the measurement.</p>"
+        },
+        {
+          "type": "p",
+          "text": "With A and B now denoting the net signal means, the variance contributions must use the gross photon counts. For independent channels:",
+          "html": "<p>With A and B now denoting the net signal means, the variance contributions must use the gross photon counts. For independent channels:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Var(P) ≈ (4[B² Var(A) + A² Var(B)]) divided by ((A + B)⁴)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Var(P) ≈ (4[B² Var(A) + A² Var(B)]) divided by ((A + B)⁴)\"><mrow><mrow><mtext>Var(P) ≈ </mtext></mrow><mfrac><mrow><mrow><mtext>4[B² Var(A) + A² Var(B)]</mtext></mrow></mrow><mrow><mrow><mtext>(A + B)⁴</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "For the bright well, the variance terms are 7,000 and 5,000 counts. For the attenuated well, they are 2,500 and 2,000. Polarization calculated from the net channel means remains 200 mP in both cases, while the predicted uncertainty separates further.",
+          "html": "<p>For the bright well, the variance terms are 7,000 and 5,000 counts. For the attenuated well, they are 2,500 and 2,000. Polarization calculated from the net channel means remains 200 mP in both cases, while the predicted uncertainty separates further.</p>"
+        },
+        {
+          "type": "div",
+          "text": "Signal condition | Background per channel | Approximate SD | 6,000 and 4,000 net counts | Negligible | 9.8 mP | 1,500 and 1,000 net counts | Negligible | 19.6 mP | 6,000 and 4,000 net counts | 1,000 counts | 10.8 mP | 1,500 and 1,000 net counts | 1,000 counts | 26.8 mP | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Signal condition</th><th scope=\"col\">Background per channel</th><th scope=\"col\">Approximate SD</th></tr></thead><tbody><tr><th scope=\"row\">6,000 and 4,000 net counts</th><td>Negligible</td><td>9.8 mP</td></tr><tr><th scope=\"row\">1,500 and 1,000 net counts</th><td>Negligible</td><td>19.6 mP</td></tr><tr><th scope=\"row\">6,000 and 4,000 net counts</th><td>1,000 counts</td><td>10.8 mP</td></tr><tr><th scope=\"row\">1,500 and 1,000 net counts</th><td>1,000 counts</td><td>26.8 mP</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "This background is deliberately held fixed while tracer light is attenuated, as might approximate detector background or an unaffected contribution. It is not a universal model of compound interference. Background originating inside the sample may change with the compound. Estimating the blank from a finite number of noisy wells introduces additional uncertainty as well.",
+          "html": "<p>This background is deliberately held fixed while tracer light is attenuated, as might approximate detector background or an unaffected contribution. It is not a universal model of compound interference. Background originating inside the sample may change with the compound. Estimating the blank from a finite number of noisy wells introduces additional uncertainty as well.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Near a hit threshold, a noisier well has a greater chance of landing on either side of the cutoff. An apparently harmless intensity loss can increase both follow-up workload and the risk of missing a real effect, depending on the response and threshold. An unchanged plate-average ratio offers little reassurance about that individual well.",
+          "html": "<p>Near a hit threshold, a noisier well has a greater chance of landing on either side of the cutoff. An apparently harmless intensity loss can increase both follow-up workload and the risk of missing a real effect, depending on the response and threshold. An unchanged plate-average ratio offers little reassurance about that individual well.</p>"
+        }
+      ]
+    },
+    {
+      "id": "simultaneous-collection-protects-a-different-part-of-the-measurement",
+      "heading": "Simultaneous collection protects a different part of the measurement",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Simultaneous collection protects a different part of the measurement",
+          "html": "<h2 id=\"simultaneous-collection-protects-a-different-part-of-the-measurement\">Simultaneous collection protects a different part of the measurement</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose source intensity fluctuates while the reader measures the two channels. When both are collected simultaneously, a shared proportional change can cancel in the ratio. Sequential acquisition allows the channels to sample different brightness conditions. Calibrated simultaneous dual-emission collection is valuable because it preserves that common timing.",
+          "html": "<p>Suppose source intensity fluctuates while the reader measures the two channels. When both are collected simultaneously, a shared proportional change can cancel in the ratio. Sequential acquisition allows the channels to sample different brightness conditions. Calibrated simultaneous dual-emission collection is valuable because it preserves that common timing.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Independent photon fluctuations do not cancel in the same way. Two channels can share an illumination fluctuation while retaining their own counting noise. A complete uncertainty calculation includes their covariance. The simple formulas above describe the independent-counting case and should not be applied unchanged when other correlated fluctuations dominate.",
+          "html": "<p>Independent photon fluctuations do not cancel in the same way. Two channels can share an illumination fluctuation while retaining their own counting noise. A complete uncertainty calculation includes their covariance. The simple formulas above describe the independent-counting case and should not be applied unchanged when other correlated fluctuations dominate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This also explains the value of efficient optics. More useful photons improve counting precision without requiring more tracer. Raising tracer concentration can change ligand depletion, binding equilibria and assay sensitivity to competitors. Collecting the available emission efficiently can preserve a concentration chosen for sound biochemical reasons.",
+          "html": "<p>This also explains the value of efficient optics. More useful photons improve counting precision without requiring more tracer. Raising tracer concentration can change ligand depletion, binding equilibria and assay sensitivity to competitors. Collecting the available emission efficiently can preserve a concentration chosen for sound biochemical reasons.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Longer acquisition is worth testing when counting noise dominates. Under the ideal model, four times the collection interval recovers the precision lost through fourfold attenuation. In a real plate, bleaching, drift and throughput can spoil that trade. Inspect precision against collection time before committing a screen to a slower setting.",
+          "html": "<p>Longer acquisition is worth testing when counting noise dominates. Under the ideal model, four times the collection interval recovers the precision lost through fourfold attenuation. In a real plate, bleaching, drift and throughput can spoil that trade. Inspect precision against collection time before committing a screen to a slower setting.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-practical-interference-review",
+      "heading": "A practical interference review",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A practical interference review",
+          "html": "<h2 id=\"a-practical-interference-review\">A practical interference review</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Retain both background-corrected channels, their corresponding blanks and the acquisition settings. Also keep the raw readings before subtraction. A negative net value may reveal a background or low-signal problem that a ratio-only export conceals. Use the reader's documented channel convention when reconstructing total fluorescence; the FP denominator A + GB is different from the commonly used total-intensity expression A + 2GB.",
+          "html": "<p>Retain both background-corrected channels, their corresponding blanks and the acquisition settings. Also keep the raw readings before subtraction. A negative net value may reveal a background or low-signal problem that a ratio-only export conceals. Use the reader's documented channel convention when reconstructing total fluorescence; the FP denominator A + GB is different from the commonly used total-intensity expression A + 2GB.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare each compound with a suitable tracer control at the same tracer concentration and binding state. Look at the direction of both channel changes alongside the polarization. Similar fractional decreases suggest proportional attenuation as one possibility. Extra fluorescence, a channel-specific change or an altered binding population can produce another pattern. Use those patterns to choose the next control, then test the suspected mechanism.",
+          "html": "<p>Compare each compound with a suitable tracer control at the same tracer concentration and binding state. Look at the direction of both channel changes alongside the polarization. Similar fractional decreases suggest proportional attenuation as one possibility. Extra fluorescence, a channel-specific change or an altered binding population can produce another pattern. Use those patterns to choose the next control, then test the suspected mechanism.</p>"
+        },
+        {
+          "type": "p",
+          "text": "One useful follow-up contains compound and tracer without the binding partner, with a matching compound-only well to examine fluorescence in the measurement bands. Add a control representing the bound state where feasible. A compound can interact differently with free and bound tracer, and a no-protein counterassay cannot reproduce every interference mechanism.",
+          "html": "<p>One useful follow-up contains compound and tracer without the binding partner, with a matching compound-only well to examine fluorescence in the measurement bands. Add a control representing the bound state where feasible. A compound can interact differently with free and bound tracer, and a no-protein counterassay cannot reproduce every interference mechanism.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check several compound concentrations. Inspect absorption or fluorescence spectra when the signal pattern warrants it, and consider a different tracer or an independent assay chemistry for consequential hits. Simply subtracting compound-only fluorescence may be inadequate if the compound changes tracer brightness, aggregates, scatters light or behaves differently when protein is present. [1]",
+          "html": "<p>Check several compound concentrations. Inspect absorption or fluorescence spectra when the signal pattern warrants it, and consider a different tracer or an independent assay chemistry for consequential hits. Simply subtracting compound-only fluorescence may be inadequate if the compound changes tracer brightness, aggregates, scatters light or behaves differently when protein is present. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Set intensity-review limits using the precision needed for the assay's useful effect sizes. There is no universal percentage loss that makes every FP result unusable. A modest loss in a dim assay can matter more than a much larger loss in a bright one. Accept an intensity loss only when the remaining precision supports the intended decision.",
+          "html": "<p>Set intensity-review limits using the precision needed for the assay's useful effect sizes. There is no universal percentage loss that makes every FP result unusable. A modest loss in a dim assay can matter more than a much larger loss in a bright one. Accept an intensity loss only when the remaining precision supports the intended decision.</p>"
+        }
+      ]
+    },
+    {
+      "id": "protect-the-photons-that-remain",
+      "heading": "Protect the photons that remain",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Protect the photons that remain",
+          "html": "<h2 id=\"protect-the-photons-that-remain\">Protect the photons that remain</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Weak samples deserve optical isolation from bright neighbors. Subtracting an estimated leakage contribution can restore a mean intensity while leaving the noise contributed by the unwanted photons. Blocking interwell light before detection can therefore protect precision in a way that normalization alone cannot. Test representative bright-neighbor patterns when low-intensity wells are important to the screen.",
+          "html": "<p>Weak samples deserve optical isolation from bright neighbors. Subtracting an estimated leakage contribution can restore a mean intensity while leaving the noise contributed by the unwanted photons. Blocking interwell light before detection can therefore protect precision in a way that normalization alone cannot. Test representative bright-neighbor patterns when low-intensity wells are important to the screen.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep both channels inside their verified linear ranges. Compression of one channel can bias the ratio; proportional compression of both can conceal a response problem. A stable ratio is useful evidence only alongside the channel data and an appropriate range check.",
+          "html": "<p>Keep both channels inside their verified linear ranges. Compression of one channel can bias the ratio; proportional compression of both can conceal a response problem. A stable ratio is useful evidence only alongside the channel data and an appropriate range check.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Temperature adds a separate source of change through viscosity, rotational motion and tracer behavior. Maintain the validated binding and measurement temperature rather than assuming the ratio removes thermal effects. A stable chamber helps prevent a nominal room-temperature FP assay from drifting through different conditions during a long batch. [1]",
+          "html": "<p>Temperature adds a separate source of change through viscosity, rotational motion and tracer behavior. Maintain the validated binding and measurement temperature rather than assuming the ratio removes thermal effects. A stable chamber helps prevent a nominal room-temperature FP assay from drifting through different conditions during a long batch. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a questionable hit, save the ratio-versus-intensity plot beside the concentration-response curve. A point at 200 mP supported by abundant tracer light and a point at 200 mP reconstructed from weak, background-heavy channels deserve different confidence, even when the screening software prints them in the same column.",
+          "html": "<p>For a questionable hit, save the ratio-versus-intensity plot beside the concentration-response curve. A point at 200 mP supported by abundant tracer light and a point at 200 mP reconstructed from weak, background-heavy channels deserve different confidence, even when the screening software prints them in the same column.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Hall MD et al. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 4 (2016), 022001. Supplied PDF pp. 26–27: proportional versus additive interference and follow-up; p. 23: temperature.",
+          "html": "<p id=\"ref-1\">1. Hall MD et al. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/\">Fluorescence polarization assays in high-throughput screening and drug discovery: a review</a>. Methods and Applications in Fluorescence 4 (2016), 022001. Supplied PDF pp. 26–27: proportional versus additive interference and follow-up; p. 23: temperature.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Owicki JC (2000). Fluorescence polarization and anisotropy in high throughput screening: perspectives and primer. Journal of Biomolecular Screening 5:297–306. Supplied Fluorescence Methods in Drug Discovery collection, PDF p. 131: shot-noise treatment. Numerical examples here are independently calculated idealized cases.",
+          "html": "<p id=\"ref-2\">2. Owicki JC (2000). <a href=\"https://doi.org/10.1177/108705710000500501\">Fluorescence polarization and anisotropy in high throughput screening: perspectives and primer</a>. Journal of Biomolecular Screening 5:297–306. Supplied Fluorescence Methods in Drug Discovery collection, PDF p. 131: shot-noise treatment. Numerical examples here are independently calculated idealized cases.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Hall MD et al. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 4 (2016), 022001. Supplied PDF pp. 26–27: proportional versus additive interference and follow-up; p. 23: temperature.",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Owicki JC (2000). Fluorescence polarization and anisotropy in high throughput screening: perspectives and primer. Journal of Biomolecular Screening 5:297–306. Supplied Fluorescence Methods in Drug Discovery collection, PDF p. 131: shot-noise treatment. Numerical examples here are independently calculated idealized cases.",
+      "urls": [
+        "https://doi.org/10.1177/108705710000500501"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "P = (A − GB) divided by (A + GB)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"P = (A − GB) divided by (A + GB)\"><mrow><mrow><mtext>P = </mtext></mrow><mfrac><mrow><mrow><mtext>A − GB</mtext></mrow></mrow><mrow><mrow><mtext>A + GB</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "Var(P) ≈ (1 − P²) divided by (A + B)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Var(P) ≈ (1 − P²) divided by (A + B)\"><mrow><mrow><mtext>Var(P) ≈ </mtext></mrow><mfrac><mrow><mrow><mtext>1 − P²</mtext></mrow></mrow><mrow><mrow><mtext>A + B</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "Var(P) ≈ (4[B² Var(A) + A² Var(B)]) divided by ((A + B)⁴)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Var(P) ≈ (4[B² Var(A) + A² Var(B)]) divided by ((A + B)⁴)\"><mrow><mrow><mtext>Var(P) ≈ </mtext></mrow><mfrac><mrow><mrow><mtext>4[B² Var(A) + A² Var(B)]</mtext></mrow></mrow><mrow><mrow><mtext>(A + B)⁴</mtext></mrow></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "The ratio survived but the precision did not",
+      "rows": [
+        [
+          "Signal condition",
+          "Background per channel",
+          "Approximate SD"
+        ],
+        [
+          "6,000 and 4,000 net counts",
+          "Negligible",
+          "9.8 mP"
+        ],
+        [
+          "1,500 and 1,000 net counts",
+          "Negligible",
+          "19.6 mP"
+        ],
+        [
+          "6,000 and 4,000 net counts",
+          "1,000 counts",
+          "10.8 mP"
+        ],
+        [
+          "1,500 and 1,000 net counts",
+          "1,000 counts",
+          "26.8 mP"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "3dad338ec9060ab62e1dc650a9d27493d704abf6bcb24b9a30b506752050ed1b"
+}

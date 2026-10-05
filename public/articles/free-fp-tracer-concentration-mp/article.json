@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "free-fp-tracer-concentration-mp",
+  "canonical_url": "https://discoveryinpractice.com/articles/free-fp-tracer-concentration-mp/",
+  "title": "Why does the mP value of my free FP tracer change when I change its concentration?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Diagnose concentration-dependent fluorescence polarization using raw channels, matched blanks, linearity checks and controls for tracer behavior.",
+  "takeaways": [
+    "Calculate from the two corrected intensities",
+    "Look at the bright end as well as the dim end",
+    "Confirm that the dilution changes only concentration"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence polarization",
+    "Background noise",
+    "Tracer design"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-05",
+  "date_modified": "2026-10-05",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>For a chemically unchanged free tracer, fluorescence polarization (FP) should be approximately concentration-independent within the reader's useful range. A systematic change in millipolarization units (mP) can arise from additive background, unequal channel response, detector nonlinearity or a change in the tracer itself. A proportional change in brightness may cancel in the ratio, whereas a fixed fluorescent background may shift it. [1]</p><h2 id=\"calculate-from-the-two-corrected-intensities\">Calculate from the two corrected intensities</h2><p>Using one common convention, calculate polarization from blank-corrected parallel and perpendicular intensities:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"mP = 1000 × (I subscript ∥ − G × I subscript ⊥) divided by (I subscript ∥ + G × I subscript ⊥)\"><mrow><mrow><mtext>mP = 1000 × </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>∥</mtext></mrow></mrow></msub><mrow><mtext> − G × </mtext></mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>⊥</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>∥</mtext></mrow></mrow></msub><mrow><mtext> + G × </mtext></mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>⊥</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math></div></div><p>G is the dimensionless correction for relative channel response. The intensities must use compatible units and the same convention as the instrument software. Polarization is dimensionless; multiplying by 1,000 reports mP. Subtract the appropriate blank from each intensity before forming the ratio. Subtracting a blank's mP from a sample's mP does not do the same calculation. [1,2]</p><p>Here is a constructed example with G = 1. A tracer contributes 1,100 RFU parallel and 900 RFU perpendicular, where RFU means relative fluorescence units. Its polarization is 100 mP. Add an uncorrected background of 100 RFU to each channel and the apparent value becomes about 90.9 mP.</p><p>Dilute only the tracer tenfold while leaving that background unchanged. The measured channels become 210 and 190 RFU, giving 50 mP. The tracer still contributes 100 mP, but background now supplies half the summed intensity. An unequal background could move the result in another direction.</p><p>Channel subtraction recovers the original mean in this ideal example, but the background's photon noise remains. Near the blank, the denominator becomes small and noisy, so individual mP values can become erratic. A flat mean with rapidly increasing scatter is a different diagnostic pattern from a smooth concentration-dependent shift.</p><h2 id=\"look-at-the-bright-end-as-well-as-the-dim-end\">Look at the bright end as well as the dim end</h2><p>Plot both corrected channel intensities against tracer concentration. Within an appropriate dilute range they should scale proportionally if the tracer and optics remain unchanged. If one channel bends first at higher signal, its nonlinear response can move mP. Recalibrating G at every concentration can disguise that problem.</p><p>Efficient light collection helps maintain precision at low tracer concentration; broad linear response helps preserve accuracy at the high end. Simultaneous, calibrated polarization channels reduce errors from fluctuations between acquisitions. Check the resulting working range with the actual tracer, including the weakest intended samples.</p><h2 id=\"confirm-that-the-dilution-changes-only-concentration\">Confirm that the dilution changes only concentration</h2><p>Hold buffer, pH, solvent fraction, temperature and volume constant. A serial dilution that also changes glycerol or another viscosity-modifying ingredient can change rotational motion. For a room-temperature biochemical FP assay, stable measurement near the validated temperature helps keep the tracer baseline comparable across the plate. Follow the reagent protocol rather than imposing that condition on every application. [1,3]</p><p>Hall and colleagues identify a rising FP value with increasing probe concentration as a possible sign of aggregation. [1] That pattern alone does not establish aggregation. Check fresh dilutions and time dependence, and consider whether the tracer can self-associate or interact with buffer components or surfaces.</p><p>Use a matrix-matched blank and a free-tracer control in the actual assay buffer. Thermo Fisher's PolarScreen protocol distinguishes these controls from receptor-containing assay wells. [3] Select a working concentration where the corrected mP is stable, both channels are proportional and replicate precision is adequate. Keep the raw dilution data with the protocol so later changes can be compared with the qualified interval.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Hall MD and colleagues. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/\">Fluorescence polarization assays in high-throughput screening and drug discovery: a review</a>. Methods and Applications in Fluorescence 2016;4:022001. Supplied full PDF, sections 2, 4 and 5: polarization calculation, assay development, concentration dependence and interference.</p><p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.</p><p id=\"ref-3\">3. Thermo Fisher Scientific. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/polarscreen_nr_competitor_assay_universal_man.pdf\">PolarScreen Nuclear Receptor Competitor Assays Universal Protocol</a>, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.</p>",
+  "body_text": "For a chemically unchanged free tracer, fluorescence polarization (FP) should be approximately concentration-independent within the reader's useful range. A systematic change in millipolarization units (mP) can arise from additive background, unequal channel response, detector nonlinearity or a change in the tracer itself. A proportional change in brightness may cancel in the ratio, whereas a fixed fluorescent background may shift it. [1]\n\nCalculate from the two corrected intensities\n\nUsing one common convention, calculate polarization from blank-corrected parallel and perpendicular intensities:\n\nmP = 1000 × (I subscript ∥ − G × I subscript ⊥) divided by (I subscript ∥ + G × I subscript ⊥)\n\nG is the dimensionless correction for relative channel response. The intensities must use compatible units and the same convention as the instrument software. Polarization is dimensionless; multiplying by 1,000 reports mP. Subtract the appropriate blank from each intensity before forming the ratio. Subtracting a blank's mP from a sample's mP does not do the same calculation. [1,2]\n\nHere is a constructed example with G = 1. A tracer contributes 1,100 RFU parallel and 900 RFU perpendicular, where RFU means relative fluorescence units. Its polarization is 100 mP. Add an uncorrected background of 100 RFU to each channel and the apparent value becomes about 90.9 mP.\n\nDilute only the tracer tenfold while leaving that background unchanged. The measured channels become 210 and 190 RFU, giving 50 mP. The tracer still contributes 100 mP, but background now supplies half the summed intensity. An unequal background could move the result in another direction.\n\nChannel subtraction recovers the original mean in this ideal example, but the background's photon noise remains. Near the blank, the denominator becomes small and noisy, so individual mP values can become erratic. A flat mean with rapidly increasing scatter is a different diagnostic pattern from a smooth concentration-dependent shift.\n\nLook at the bright end as well as the dim end\n\nPlot both corrected channel intensities against tracer concentration. Within an appropriate dilute range they should scale proportionally if the tracer and optics remain unchanged. If one channel bends first at higher signal, its nonlinear response can move mP. Recalibrating G at every concentration can disguise that problem.\n\nEfficient light collection helps maintain precision at low tracer concentration; broad linear response helps preserve accuracy at the high end. Simultaneous, calibrated polarization channels reduce errors from fluctuations between acquisitions. Check the resulting working range with the actual tracer, including the weakest intended samples.\n\nConfirm that the dilution changes only concentration\n\nHold buffer, pH, solvent fraction, temperature and volume constant. A serial dilution that also changes glycerol or another viscosity-modifying ingredient can change rotational motion. For a room-temperature biochemical FP assay, stable measurement near the validated temperature helps keep the tracer baseline comparable across the plate. Follow the reagent protocol rather than imposing that condition on every application. [1,3]\n\nHall and colleagues identify a rising FP value with increasing probe concentration as a possible sign of aggregation. [1] That pattern alone does not establish aggregation. Check fresh dilutions and time dependence, and consider whether the tracer can self-associate or interact with buffer components or surfaces.\n\nUse a matrix-matched blank and a free-tracer control in the actual assay buffer. Thermo Fisher's PolarScreen protocol distinguishes these controls from receptor-containing assay wells. [3] Select a working concentration where the corrected mP is stable, both channels are proportional and replicate precision is adequate. Keep the raw dilution data with the protocol so later changes can be compared with the qualified interval.\n\nReferences\n\n1. Hall MD and colleagues. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 2016;4:022001. Supplied full PDF, sections 2, 4 and 5: polarization calculation, assay development, concentration dependence and interference.\n\n2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.\n\n3. Thermo Fisher Scientific. PolarScreen Nuclear Receptor Competitor Assays Universal Protocol, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For a chemically unchanged free tracer, fluorescence polarization (FP) should be approximately concentration-independent within the reader's useful range. A systematic change in millipolarization units (mP) can arise from additive background, unequal channel response, detector nonlinearity or a change in the tracer itself. A proportional change in brightness may cancel in the ratio, whereas a fixed fluorescent background may shift it. [1]",
+          "html": "<p>For a chemically unchanged free tracer, fluorescence polarization (FP) should be approximately concentration-independent within the reader's useful range. A systematic change in millipolarization units (mP) can arise from additive background, unequal channel response, detector nonlinearity or a change in the tracer itself. A proportional change in brightness may cancel in the ratio, whereas a fixed fluorescent background may shift it. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "calculate-from-the-two-corrected-intensities",
+      "heading": "Calculate from the two corrected intensities",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Calculate from the two corrected intensities",
+          "html": "<h2 id=\"calculate-from-the-two-corrected-intensities\">Calculate from the two corrected intensities</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Using one common convention, calculate polarization from blank-corrected parallel and perpendicular intensities:",
+          "html": "<p>Using one common convention, calculate polarization from blank-corrected parallel and perpendicular intensities:</p>"
+        },
+        {
+          "type": "div",
+          "text": "mP = 1000 × (I subscript ∥ − G × I subscript ⊥) divided by (I subscript ∥ + G × I subscript ⊥)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"mP = 1000 × (I subscript ∥ − G × I subscript ⊥) divided by (I subscript ∥ + G × I subscript ⊥)\"><mrow><mrow><mtext>mP = 1000 × </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>∥</mtext></mrow></mrow></msub><mrow><mtext> − G × </mtext></mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>⊥</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>∥</mtext></mrow></mrow></msub><mrow><mtext> + G × </mtext></mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>⊥</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "G is the dimensionless correction for relative channel response. The intensities must use compatible units and the same convention as the instrument software. Polarization is dimensionless; multiplying by 1,000 reports mP. Subtract the appropriate blank from each intensity before forming the ratio. Subtracting a blank's mP from a sample's mP does not do the same calculation. [1,2]",
+          "html": "<p>G is the dimensionless correction for relative channel response. The intensities must use compatible units and the same convention as the instrument software. Polarization is dimensionless; multiplying by 1,000 reports mP. Subtract the appropriate blank from each intensity before forming the ratio. Subtracting a blank's mP from a sample's mP does not do the same calculation. [1,2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Here is a constructed example with G = 1. A tracer contributes 1,100 RFU parallel and 900 RFU perpendicular, where RFU means relative fluorescence units. Its polarization is 100 mP. Add an uncorrected background of 100 RFU to each channel and the apparent value becomes about 90.9 mP.",
+          "html": "<p>Here is a constructed example with G = 1. A tracer contributes 1,100 RFU parallel and 900 RFU perpendicular, where RFU means relative fluorescence units. Its polarization is 100 mP. Add an uncorrected background of 100 RFU to each channel and the apparent value becomes about 90.9 mP.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Dilute only the tracer tenfold while leaving that background unchanged. The measured channels become 210 and 190 RFU, giving 50 mP. The tracer still contributes 100 mP, but background now supplies half the summed intensity. An unequal background could move the result in another direction.",
+          "html": "<p>Dilute only the tracer tenfold while leaving that background unchanged. The measured channels become 210 and 190 RFU, giving 50 mP. The tracer still contributes 100 mP, but background now supplies half the summed intensity. An unequal background could move the result in another direction.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Channel subtraction recovers the original mean in this ideal example, but the background's photon noise remains. Near the blank, the denominator becomes small and noisy, so individual mP values can become erratic. A flat mean with rapidly increasing scatter is a different diagnostic pattern from a smooth concentration-dependent shift.",
+          "html": "<p>Channel subtraction recovers the original mean in this ideal example, but the background's photon noise remains. Near the blank, the denominator becomes small and noisy, so individual mP values can become erratic. A flat mean with rapidly increasing scatter is a different diagnostic pattern from a smooth concentration-dependent shift.</p>"
+        }
+      ]
+    },
+    {
+      "id": "look-at-the-bright-end-as-well-as-the-dim-end",
+      "heading": "Look at the bright end as well as the dim end",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Look at the bright end as well as the dim end",
+          "html": "<h2 id=\"look-at-the-bright-end-as-well-as-the-dim-end\">Look at the bright end as well as the dim end</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Plot both corrected channel intensities against tracer concentration. Within an appropriate dilute range they should scale proportionally if the tracer and optics remain unchanged. If one channel bends first at higher signal, its nonlinear response can move mP. Recalibrating G at every concentration can disguise that problem.",
+          "html": "<p>Plot both corrected channel intensities against tracer concentration. Within an appropriate dilute range they should scale proportionally if the tracer and optics remain unchanged. If one channel bends first at higher signal, its nonlinear response can move mP. Recalibrating G at every concentration can disguise that problem.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Efficient light collection helps maintain precision at low tracer concentration; broad linear response helps preserve accuracy at the high end. Simultaneous, calibrated polarization channels reduce errors from fluctuations between acquisitions. Check the resulting working range with the actual tracer, including the weakest intended samples.",
+          "html": "<p>Efficient light collection helps maintain precision at low tracer concentration; broad linear response helps preserve accuracy at the high end. Simultaneous, calibrated polarization channels reduce errors from fluctuations between acquisitions. Check the resulting working range with the actual tracer, including the weakest intended samples.</p>"
+        }
+      ]
+    },
+    {
+      "id": "confirm-that-the-dilution-changes-only-concentration",
+      "heading": "Confirm that the dilution changes only concentration",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Confirm that the dilution changes only concentration",
+          "html": "<h2 id=\"confirm-that-the-dilution-changes-only-concentration\">Confirm that the dilution changes only concentration</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Hold buffer, pH, solvent fraction, temperature and volume constant. A serial dilution that also changes glycerol or another viscosity-modifying ingredient can change rotational motion. For a room-temperature biochemical FP assay, stable measurement near the validated temperature helps keep the tracer baseline comparable across the plate. Follow the reagent protocol rather than imposing that condition on every application. [1,3]",
+          "html": "<p>Hold buffer, pH, solvent fraction, temperature and volume constant. A serial dilution that also changes glycerol or another viscosity-modifying ingredient can change rotational motion. For a room-temperature biochemical FP assay, stable measurement near the validated temperature helps keep the tracer baseline comparable across the plate. Follow the reagent protocol rather than imposing that condition on every application. [1,3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Hall and colleagues identify a rising FP value with increasing probe concentration as a possible sign of aggregation. [1] That pattern alone does not establish aggregation. Check fresh dilutions and time dependence, and consider whether the tracer can self-associate or interact with buffer components or surfaces.",
+          "html": "<p>Hall and colleagues identify a rising FP value with increasing probe concentration as a possible sign of aggregation. [1] That pattern alone does not establish aggregation. Check fresh dilutions and time dependence, and consider whether the tracer can self-associate or interact with buffer components or surfaces.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use a matrix-matched blank and a free-tracer control in the actual assay buffer. Thermo Fisher's PolarScreen protocol distinguishes these controls from receptor-containing assay wells. [3] Select a working concentration where the corrected mP is stable, both channels are proportional and replicate precision is adequate. Keep the raw dilution data with the protocol so later changes can be compared with the qualified interval.",
+          "html": "<p>Use a matrix-matched blank and a free-tracer control in the actual assay buffer. Thermo Fisher's PolarScreen protocol distinguishes these controls from receptor-containing assay wells. [3] Select a working concentration where the corrected mP is stable, both channels are proportional and replicate precision is adequate. Keep the raw dilution data with the protocol so later changes can be compared with the qualified interval.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Hall MD and colleagues. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 2016;4:022001. Supplied full PDF, sections 2, 4 and 5: polarization calculation, assay development, concentration dependence and interference.",
+          "html": "<p id=\"ref-1\">1. Hall MD and colleagues. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/\">Fluorescence polarization assays in high-throughput screening and drug discovery: a review</a>. Methods and Applications in Fluorescence 2016;4:022001. Supplied full PDF, sections 2, 4 and 5: polarization calculation, assay development, concentration dependence and interference.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.",
+          "html": "<p id=\"ref-2\">2. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Thermo Fisher Scientific. PolarScreen Nuclear Receptor Competitor Assays Universal Protocol, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.",
+          "html": "<p id=\"ref-3\">3. Thermo Fisher Scientific. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/polarscreen_nr_competitor_assay_universal_man.pdf\">PolarScreen Nuclear Receptor Competitor Assays Universal Protocol</a>, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Hall MD and colleagues. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 2016;4:022001. Supplied full PDF, sections 2, 4 and 5: polarization calculation, assay development, concentration dependence and interference.",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 79–84. Channel blank subtraction, G-factor calibration, filter-specific records and polarization calculation.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Thermo Fisher Scientific. PolarScreen Nuclear Receptor Competitor Assays Universal Protocol, MAN0007703 revision A.0, 12 March 2014, pp. 2–3 and 8. Green/red filter settings, FP reference kit, assay controls and room-temperature incubation; check the target-specific product sheet.",
+      "urls": [
+        "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/polarscreen_nr_competitor_assay_universal_man.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "mP = 1000 × (I subscript ∥ − G × I subscript ⊥) divided by (I subscript ∥ + G × I subscript ⊥)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"mP = 1000 × (I subscript ∥ − G × I subscript ⊥) divided by (I subscript ∥ + G × I subscript ⊥)\"><mrow><mrow><mtext>mP = 1000 × </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>∥</mtext></mrow></mrow></msub><mrow><mtext> − G × </mtext></mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>⊥</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>∥</mtext></mrow></mrow></msub><mrow><mtext> + G × </mtext></mrow><msub><mrow><mrow><mtext>I</mtext></mrow></mrow><mrow><mrow><mtext>⊥</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "9d3b037904a05276e304c77e3ae676555124795d6e21e5aa3748010e49c26c87"
+}

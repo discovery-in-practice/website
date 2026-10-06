@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "microplate-absorbance-volume-pathlength",
+  "canonical_url": "https://discoveryinpractice.com/articles/microplate-absorbance-volume-pathlength/",
+  "title": "Why does absorbance change when I change the volume, even at the same concentration?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Understand why constant-concentration samples give different absorbance at different volumes, and when pathlength correction can help.",
+  "takeaways": [
+    "Account for the liquid depth",
+    "Water can provide the pathlength reference",
+    "A useful volume check"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Absorbance",
+    "Pathlength",
+    "Microplates"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-06",
+  "date_modified": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>At a fixed concentration and wavelength, adding liquid usually lengthens the absorbance path and increases the reading. A standard cuvette fixes that path, commonly at 1 cm; a microplate well usually does not. Its liquid depth depends on volume, well geometry and the meniscus. [1]</p><h2 id=\"account-for-the-liquid-depth\">Account for the liquid depth</h2><p>For a homogeneous, nonscattering solution within the method's linear range, the Beer–Lambert relationship is:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"A = ε × c × l\"><mrow><mrow><mtext>A = ε × c × l</mtext></mrow></mrow></math></div></div><p>A is dimensionless absorbance, ε is the molar absorption coefficient in L mol⁻¹ cm⁻¹, c is concentration in mol/L, and l is optical pathlength in cm. Use the coefficient for the measurement wavelength and chemical conditions.</p><p>In a constructed example, ε = 10,000 L mol⁻¹ cm⁻¹ and c = 50 µmol/L. A path of 0.30 cm gives A = 0.15; a path of 0.60 cm gives A = 0.30. Both samples have the same concentration. Correcting either result to a 1 cm path gives A = 0.50.</p><p>Doubling the volume only approximately doubles depth in a well with constant cross-sectional area. Tapered wells, changing menisci and beam position complicate that approximation. Use a validated pathlength measurement or volume-specific calibration rather than assuming every well behaves like a straight cylinder.</p><h2 id=\"water-can-provide-the-pathlength-reference\">Water can provide the pathlength reference</h2><p>Some readers estimate optical pathlength from water's near-infrared absorption and normalize the analyte absorbance to 1 cm. Tecan describes measurements between 900 and 1,000 nm and warns that temperature, solvents, salts and absorption by other components can affect its correction. [1]</p><p>The exact algorithm matters. Molecular Devices describes using 1,000 nm near a temperature isosbestic point, where water absorption changes little with temperature, rather than the more temperature-sensitive peak near 977 nm. [2] That design reduces one source of thermal error. It does not establish that the assay chemistry itself is temperature-independent.</p><p>Account for plate background before scaling the sample signal by pathlength; otherwise the calculation also scales an optical contribution that did not arise in the liquid. Follow the reader's specified blanking sequence. Neither pathlength normalization nor ordinary blank subtraction repairs bubbles, condensation or all scattering effects. Tecan explicitly cautions that turbidity can produce a falsely short path estimate. [1,2]</p><h2 id=\"a-useful-volume-check\">A useful volume check</h2><p>Prepare one homogeneous sample stock and dispense a volume series within the plate's recommended range. Include matched buffer blanks at each volume, with replicates. Measure at one temperature using the same wavelength and settings, and compare the raw and path-corrected results.</p><p>Raw absorbance should follow increasing pathlength. Corrected concentrations should agree within the precision needed for the assay. A volume-dependent corrected result calls for investigation of low fill volumes, meniscus effects, blanking, matrix compatibility or the correction method. Agreement over this range supports that specific plate and sample combination.</p><p>Evaporation can make the interpretation especially misleading. In an ideal straight-sided well, loss of solvent raises concentration while reducing depth; those changes can cancel in the product c × l. Uncorrected absorbance might barely move while the concentrations experienced by an enzyme or cell change substantially. This geometric cancellation assumes retained solute, constant well cross-section and ideal optical behavior. Real wells may depart from those assumptions. Track evaporation independently when assay conditions depend on concentration.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.</p><p id=\"ref-2\">2. Molecular Devices. <a href=\"https://www.moleculardevices.com/en/assets/app-note/br/optical-density-measurements-automatically-corrected-to-1-cm-pathlength-with-pathcheck-technology\">Optical density measurements automatically corrected to a 1-cm pathlength with PathCheck Technology</a>. Water absorption, temperature and background correction.</p>",
+  "body_text": "At a fixed concentration and wavelength, adding liquid usually lengthens the absorbance path and increases the reading. A standard cuvette fixes that path, commonly at 1 cm; a microplate well usually does not. Its liquid depth depends on volume, well geometry and the meniscus. [1]\n\nAccount for the liquid depth\n\nFor a homogeneous, nonscattering solution within the method's linear range, the Beer–Lambert relationship is:\n\nA = ε × c × l\n\nA is dimensionless absorbance, ε is the molar absorption coefficient in L mol⁻¹ cm⁻¹, c is concentration in mol/L, and l is optical pathlength in cm. Use the coefficient for the measurement wavelength and chemical conditions.\n\nIn a constructed example, ε = 10,000 L mol⁻¹ cm⁻¹ and c = 50 µmol/L. A path of 0.30 cm gives A = 0.15; a path of 0.60 cm gives A = 0.30. Both samples have the same concentration. Correcting either result to a 1 cm path gives A = 0.50.\n\nDoubling the volume only approximately doubles depth in a well with constant cross-sectional area. Tapered wells, changing menisci and beam position complicate that approximation. Use a validated pathlength measurement or volume-specific calibration rather than assuming every well behaves like a straight cylinder.\n\nWater can provide the pathlength reference\n\nSome readers estimate optical pathlength from water's near-infrared absorption and normalize the analyte absorbance to 1 cm. Tecan describes measurements between 900 and 1,000 nm and warns that temperature, solvents, salts and absorption by other components can affect its correction. [1]\n\nThe exact algorithm matters. Molecular Devices describes using 1,000 nm near a temperature isosbestic point, where water absorption changes little with temperature, rather than the more temperature-sensitive peak near 977 nm. [2] That design reduces one source of thermal error. It does not establish that the assay chemistry itself is temperature-independent.\n\nAccount for plate background before scaling the sample signal by pathlength; otherwise the calculation also scales an optical contribution that did not arise in the liquid. Follow the reader's specified blanking sequence. Neither pathlength normalization nor ordinary blank subtraction repairs bubbles, condensation or all scattering effects. Tecan explicitly cautions that turbidity can produce a falsely short path estimate. [1,2]\n\nA useful volume check\n\nPrepare one homogeneous sample stock and dispense a volume series within the plate's recommended range. Include matched buffer blanks at each volume, with replicates. Measure at one temperature using the same wavelength and settings, and compare the raw and path-corrected results.\n\nRaw absorbance should follow increasing pathlength. Corrected concentrations should agree within the precision needed for the assay. A volume-dependent corrected result calls for investigation of low fill volumes, meniscus effects, blanking, matrix compatibility or the correction method. Agreement over this range supports that specific plate and sample combination.\n\nEvaporation can make the interpretation especially misleading. In an ideal straight-sided well, loss of solvent raises concentration while reducing depth; those changes can cancel in the product c × l. Uncorrected absorbance might barely move while the concentrations experienced by an enzyme or cell change substantially. This geometric cancellation assumes retained solute, constant well cross-section and ideal optical behavior. Real wells may depart from those assumptions. Track evaporation independently when assay conditions depend on concentration.\n\nReferences\n\n1. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.\n\n2. Molecular Devices. Optical density measurements automatically corrected to a 1-cm pathlength with PathCheck Technology. Water absorption, temperature and background correction.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "At a fixed concentration and wavelength, adding liquid usually lengthens the absorbance path and increases the reading. A standard cuvette fixes that path, commonly at 1 cm; a microplate well usually does not. Its liquid depth depends on volume, well geometry and the meniscus. [1]",
+          "html": "<p>At a fixed concentration and wavelength, adding liquid usually lengthens the absorbance path and increases the reading. A standard cuvette fixes that path, commonly at 1 cm; a microplate well usually does not. Its liquid depth depends on volume, well geometry and the meniscus. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "account-for-the-liquid-depth",
+      "heading": "Account for the liquid depth",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Account for the liquid depth",
+          "html": "<h2 id=\"account-for-the-liquid-depth\">Account for the liquid depth</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For a homogeneous, nonscattering solution within the method's linear range, the Beer–Lambert relationship is:",
+          "html": "<p>For a homogeneous, nonscattering solution within the method's linear range, the Beer–Lambert relationship is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "A = ε × c × l",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"A = ε × c × l\"><mrow><mrow><mtext>A = ε × c × l</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "A is dimensionless absorbance, ε is the molar absorption coefficient in L mol⁻¹ cm⁻¹, c is concentration in mol/L, and l is optical pathlength in cm. Use the coefficient for the measurement wavelength and chemical conditions.",
+          "html": "<p>A is dimensionless absorbance, ε is the molar absorption coefficient in L mol⁻¹ cm⁻¹, c is concentration in mol/L, and l is optical pathlength in cm. Use the coefficient for the measurement wavelength and chemical conditions.</p>"
+        },
+        {
+          "type": "p",
+          "text": "In a constructed example, ε = 10,000 L mol⁻¹ cm⁻¹ and c = 50 µmol/L. A path of 0.30 cm gives A = 0.15; a path of 0.60 cm gives A = 0.30. Both samples have the same concentration. Correcting either result to a 1 cm path gives A = 0.50.",
+          "html": "<p>In a constructed example, ε = 10,000 L mol⁻¹ cm⁻¹ and c = 50 µmol/L. A path of 0.30 cm gives A = 0.15; a path of 0.60 cm gives A = 0.30. Both samples have the same concentration. Correcting either result to a 1 cm path gives A = 0.50.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Doubling the volume only approximately doubles depth in a well with constant cross-sectional area. Tapered wells, changing menisci and beam position complicate that approximation. Use a validated pathlength measurement or volume-specific calibration rather than assuming every well behaves like a straight cylinder.",
+          "html": "<p>Doubling the volume only approximately doubles depth in a well with constant cross-sectional area. Tapered wells, changing menisci and beam position complicate that approximation. Use a validated pathlength measurement or volume-specific calibration rather than assuming every well behaves like a straight cylinder.</p>"
+        }
+      ]
+    },
+    {
+      "id": "water-can-provide-the-pathlength-reference",
+      "heading": "Water can provide the pathlength reference",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Water can provide the pathlength reference",
+          "html": "<h2 id=\"water-can-provide-the-pathlength-reference\">Water can provide the pathlength reference</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Some readers estimate optical pathlength from water's near-infrared absorption and normalize the analyte absorbance to 1 cm. Tecan describes measurements between 900 and 1,000 nm and warns that temperature, solvents, salts and absorption by other components can affect its correction. [1]",
+          "html": "<p>Some readers estimate optical pathlength from water's near-infrared absorption and normalize the analyte absorbance to 1 cm. Tecan describes measurements between 900 and 1,000 nm and warns that temperature, solvents, salts and absorption by other components can affect its correction. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The exact algorithm matters. Molecular Devices describes using 1,000 nm near a temperature isosbestic point, where water absorption changes little with temperature, rather than the more temperature-sensitive peak near 977 nm. [2] That design reduces one source of thermal error. It does not establish that the assay chemistry itself is temperature-independent.",
+          "html": "<p>The exact algorithm matters. Molecular Devices describes using 1,000 nm near a temperature isosbestic point, where water absorption changes little with temperature, rather than the more temperature-sensitive peak near 977 nm. [2] That design reduces one source of thermal error. It does not establish that the assay chemistry itself is temperature-independent.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Account for plate background before scaling the sample signal by pathlength; otherwise the calculation also scales an optical contribution that did not arise in the liquid. Follow the reader's specified blanking sequence. Neither pathlength normalization nor ordinary blank subtraction repairs bubbles, condensation or all scattering effects. Tecan explicitly cautions that turbidity can produce a falsely short path estimate. [1,2]",
+          "html": "<p>Account for plate background before scaling the sample signal by pathlength; otherwise the calculation also scales an optical contribution that did not arise in the liquid. Follow the reader's specified blanking sequence. Neither pathlength normalization nor ordinary blank subtraction repairs bubbles, condensation or all scattering effects. Tecan explicitly cautions that turbidity can produce a falsely short path estimate. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-useful-volume-check",
+      "heading": "A useful volume check",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A useful volume check",
+          "html": "<h2 id=\"a-useful-volume-check\">A useful volume check</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Prepare one homogeneous sample stock and dispense a volume series within the plate's recommended range. Include matched buffer blanks at each volume, with replicates. Measure at one temperature using the same wavelength and settings, and compare the raw and path-corrected results.",
+          "html": "<p>Prepare one homogeneous sample stock and dispense a volume series within the plate's recommended range. Include matched buffer blanks at each volume, with replicates. Measure at one temperature using the same wavelength and settings, and compare the raw and path-corrected results.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Raw absorbance should follow increasing pathlength. Corrected concentrations should agree within the precision needed for the assay. A volume-dependent corrected result calls for investigation of low fill volumes, meniscus effects, blanking, matrix compatibility or the correction method. Agreement over this range supports that specific plate and sample combination.",
+          "html": "<p>Raw absorbance should follow increasing pathlength. Corrected concentrations should agree within the precision needed for the assay. A volume-dependent corrected result calls for investigation of low fill volumes, meniscus effects, blanking, matrix compatibility or the correction method. Agreement over this range supports that specific plate and sample combination.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Evaporation can make the interpretation especially misleading. In an ideal straight-sided well, loss of solvent raises concentration while reducing depth; those changes can cancel in the product c × l. Uncorrected absorbance might barely move while the concentrations experienced by an enzyme or cell change substantially. This geometric cancellation assumes retained solute, constant well cross-section and ideal optical behavior. Real wells may depart from those assumptions. Track evaporation independently when assay conditions depend on concentration.",
+          "html": "<p>Evaporation can make the interpretation especially misleading. In an ideal straight-sided well, loss of solvent raises concentration while reducing depth; those changes can cancel in the product c × l. Uncorrected absorbance might barely move while the concentrations experienced by an enzyme or cell change substantially. This geometric cancellation assumes retained solute, constant well cross-section and ideal optical behavior. Real wells may depart from those assumptions. Track evaporation independently when assay conditions depend on concentration.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+          "html": "<p id=\"ref-1\">1. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Molecular Devices. Optical density measurements automatically corrected to a 1-cm pathlength with PathCheck Technology. Water absorption, temperature and background correction.",
+          "html": "<p id=\"ref-2\">2. Molecular Devices. <a href=\"https://www.moleculardevices.com/en/assets/app-note/br/optical-density-measurements-automatically-corrected-to-1-cm-pathlength-with-pathcheck-technology\">Optical density measurements automatically corrected to a 1-cm pathlength with PathCheck Technology</a>. Water absorption, temperature and background correction.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Molecular Devices. Optical density measurements automatically corrected to a 1-cm pathlength with PathCheck Technology. Water absorption, temperature and background correction.",
+      "urls": [
+        "https://www.moleculardevices.com/en/assets/app-note/br/optical-density-measurements-automatically-corrected-to-1-cm-pathlength-with-pathcheck-technology"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "A = ε × c × l",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"A = ε × c × l\"><mrow><mrow><mtext>A = ε × c × l</mtext></mrow></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "f0e558392e82b51601700fef66f52eafa2aec22e954b5e2de7c7eb25d723b376"
+}

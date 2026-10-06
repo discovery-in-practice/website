@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "id": "plate-lid-sealing-film-reader-results",
+  "canonical_url": "https://discoveryinpractice.com/articles/plate-lid-sealing-film-reader-results/",
+  "title": "Can a plate lid or sealing film change my fluorescence, luminescence or absorbance results?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Check transmission, fluorescence, condensation and read geometry before using a lid or sealing film during microplate measurements.",
+  "takeaways": [
+    "Check whether the cover is in the light path",
+    "Visible transparency says little about ultraviolet transmission",
+    "Condensation can create a changing absorbance artifact"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Microplates",
+    "Fluorescence",
+    "Absorbance",
+    "Luminescence"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-06",
+  "date_modified": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A cover in the optical path can absorb, scatter or redirect light, and its material or adhesive may contribute fluorescence. Condensation creates additional, uneven optical effects. A cover can also improve an assay by reducing evaporation. Qualify the exact cover, plate and reading mode together. Transmission and fluorescence background depend on material and wavelength. [1,2,4]</p><h2 id=\"check-whether-the-cover-is-in-the-light-path\">Check whether the cover is in the light path</h2><p>In top-read fluorescence, excitation and emitted light generally cross the cover. In top-read luminescence, the emitted light crosses it. For ordinary vertical absorbance measurements, the transmitted beam passes through the sample and any cover above it. Bottom-read fluorescence may avoid direct passage through a top cover, though evaporation, condensation and the cellular environment can still change the sample. Tecan describes these mode-specific differences in its plate-selection guidance. [4]</p><p>Check the instrument's permitted plate height and lid clearance as well as its optical configuration. A compatible plate footprint does not establish that a raised lid will clear an injector or moving optical assembly. Use the applicable reader instructions. [3]</p><h2 id=\"visible-transparency-says-little-about-ultraviolet-transmission\">Visible transparency says little about ultraviolet transmission</h2><p>Eppendorf specifies greater than 90% transmission from 350 to 750 nm for its Masterclear real-time polymerase chain reaction (PCR) Film. [1] Use the specified wavelength range when judging compatibility. It does not establish performance at 260 or 280 nm for nucleic-acid or protein absorbance, nor the properties of another film with a similar appearance.</p><p>A film's transmission also acts differently in different modes. In a constructed fluorescence example, 90% transmission on the excitation path and 90% on the emission path leave roughly 81% of the original detected signal, before other effects. For luminescence with one passage through the cover, the same assumed transmission leaves roughly 90%. Real performance depends on wavelength, angle and collection geometry.</p><p>Blank subtraction can remove a reproducible additive contribution. It cannot restore photons the cover prevented from reaching the sample or detector. If transmission varies across wells because of wrinkles or droplets, a single blank value cannot describe that variation.</p><h2 id=\"condensation-can-create-a-changing-absorbance-artifact\">Condensation can create a changing absorbance artifact</h2><p>Droplets scatter and redirect light, producing a time-dependent optical contribution as they form or clear. BMG LABTECH's bacterial-growth note illustrates lid-condensation effects on optical-density measurements. [2] The mechanism also gives a reason to inspect condensation in other covered plate workflows, though its size must be established for each mode.</p><p>Keeping temperatures consistent can reduce thermal transitions that promote condensation. Avoid adding an unvalidated heating step solely to clear a lid: temperature may change enzyme kinetics, luminescence or cell behavior. For glow endpoints, preserve the reagent's specified temperature and equilibration conditions.</p><h2 id=\"compare-covered-and-uncovered-controls-fairly\">Compare covered and uncovered controls fairly</h2><p>Use matched wells or plates containing blanks and stable low/high references. Compare the exact lid or seal under the intended incubation and reading conditions. For time-sensitive assays, alternate or balance the order and compare equal-age samples; removing a cover changes handling time and exposure.</p><p>Examine raw signal, replicate variability and spatial patterns, including edges. A uniform loss with preserved assay separation may be acceptable; added background, irregular attenuation or changing condensation may require another material or a validated cover-removal step. Include a bright/dim well pattern if optical crosstalk is important.</p><p>For living cells, also check whether the closure permits the required gas exchange. Record the cover's product number and handling procedure with the protocol. A change of lid or seal deserves a protocol check even when the plate and reader settings stay the same.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Eppendorf. <a href=\"https://www.eppendorf.com/us-en/Products/PCR/PCR-Consumables/PCR-films-foils-p-PF-8642\">PCR films and foils</a>. Masterclear real-time PCR Film transmission specification and closure compatibility.</p><p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/hubfs/1_Webseite/5_Resources/Downloads/Howto%20Notes/HTN10.pdf\">How to optimise OD600 measurements, HowTo Note 10</a>, p. 5. Condensation-related optical-density artifacts; complete six-page note archived.</p><p id=\"ref-3\">3. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 42–43, 92–99, 132 and 159. Pathlength correction, injector operation and application-dependent cleaning.</p><p id=\"ref-4\">4. Tecan. <a href=\"https://www.tecan.com/knowledge-portal/which-plate-for-which-measurement\">Selecting the right plate for a measurement</a>. Manufacturer guidance on covers in absorbance, top/bottom fluorescence and luminescence.</p>",
+  "body_text": "A cover in the optical path can absorb, scatter or redirect light, and its material or adhesive may contribute fluorescence. Condensation creates additional, uneven optical effects. A cover can also improve an assay by reducing evaporation. Qualify the exact cover, plate and reading mode together. Transmission and fluorescence background depend on material and wavelength. [1,2,4]\n\nCheck whether the cover is in the light path\n\nIn top-read fluorescence, excitation and emitted light generally cross the cover. In top-read luminescence, the emitted light crosses it. For ordinary vertical absorbance measurements, the transmitted beam passes through the sample and any cover above it. Bottom-read fluorescence may avoid direct passage through a top cover, though evaporation, condensation and the cellular environment can still change the sample. Tecan describes these mode-specific differences in its plate-selection guidance. [4]\n\nCheck the instrument's permitted plate height and lid clearance as well as its optical configuration. A compatible plate footprint does not establish that a raised lid will clear an injector or moving optical assembly. Use the applicable reader instructions. [3]\n\nVisible transparency says little about ultraviolet transmission\n\nEppendorf specifies greater than 90% transmission from 350 to 750 nm for its Masterclear real-time polymerase chain reaction (PCR) Film. [1] Use the specified wavelength range when judging compatibility. It does not establish performance at 260 or 280 nm for nucleic-acid or protein absorbance, nor the properties of another film with a similar appearance.\n\nA film's transmission also acts differently in different modes. In a constructed fluorescence example, 90% transmission on the excitation path and 90% on the emission path leave roughly 81% of the original detected signal, before other effects. For luminescence with one passage through the cover, the same assumed transmission leaves roughly 90%. Real performance depends on wavelength, angle and collection geometry.\n\nBlank subtraction can remove a reproducible additive contribution. It cannot restore photons the cover prevented from reaching the sample or detector. If transmission varies across wells because of wrinkles or droplets, a single blank value cannot describe that variation.\n\nCondensation can create a changing absorbance artifact\n\nDroplets scatter and redirect light, producing a time-dependent optical contribution as they form or clear. BMG LABTECH's bacterial-growth note illustrates lid-condensation effects on optical-density measurements. [2] The mechanism also gives a reason to inspect condensation in other covered plate workflows, though its size must be established for each mode.\n\nKeeping temperatures consistent can reduce thermal transitions that promote condensation. Avoid adding an unvalidated heating step solely to clear a lid: temperature may change enzyme kinetics, luminescence or cell behavior. For glow endpoints, preserve the reagent's specified temperature and equilibration conditions.\n\nCompare covered and uncovered controls fairly\n\nUse matched wells or plates containing blanks and stable low/high references. Compare the exact lid or seal under the intended incubation and reading conditions. For time-sensitive assays, alternate or balance the order and compare equal-age samples; removing a cover changes handling time and exposure.\n\nExamine raw signal, replicate variability and spatial patterns, including edges. A uniform loss with preserved assay separation may be acceptable; added background, irregular attenuation or changing condensation may require another material or a validated cover-removal step. Include a bright/dim well pattern if optical crosstalk is important.\n\nFor living cells, also check whether the closure permits the required gas exchange. Record the cover's product number and handling procedure with the protocol. A change of lid or seal deserves a protocol check even when the plate and reader settings stay the same.\n\nReferences\n\n1. Eppendorf. PCR films and foils. Masterclear real-time PCR Film transmission specification and closure compatibility.\n\n2. BMG LABTECH. How to optimise OD600 measurements, HowTo Note 10, p. 5. Condensation-related optical-density artifacts; complete six-page note archived.\n\n3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99, 132 and 159. Pathlength correction, injector operation and application-dependent cleaning.\n\n4. Tecan. Selecting the right plate for a measurement. Manufacturer guidance on covers in absorbance, top/bottom fluorescence and luminescence.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A cover in the optical path can absorb, scatter or redirect light, and its material or adhesive may contribute fluorescence. Condensation creates additional, uneven optical effects. A cover can also improve an assay by reducing evaporation. Qualify the exact cover, plate and reading mode together. Transmission and fluorescence background depend on material and wavelength. [1,2,4]",
+          "html": "<p>A cover in the optical path can absorb, scatter or redirect light, and its material or adhesive may contribute fluorescence. Condensation creates additional, uneven optical effects. A cover can also improve an assay by reducing evaporation. Qualify the exact cover, plate and reading mode together. Transmission and fluorescence background depend on material and wavelength. [1,2,4]</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-whether-the-cover-is-in-the-light-path",
+      "heading": "Check whether the cover is in the light path",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check whether the cover is in the light path",
+          "html": "<h2 id=\"check-whether-the-cover-is-in-the-light-path\">Check whether the cover is in the light path</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In top-read fluorescence, excitation and emitted light generally cross the cover. In top-read luminescence, the emitted light crosses it. For ordinary vertical absorbance measurements, the transmitted beam passes through the sample and any cover above it. Bottom-read fluorescence may avoid direct passage through a top cover, though evaporation, condensation and the cellular environment can still change the sample. Tecan describes these mode-specific differences in its plate-selection guidance. [4]",
+          "html": "<p>In top-read fluorescence, excitation and emitted light generally cross the cover. In top-read luminescence, the emitted light crosses it. For ordinary vertical absorbance measurements, the transmitted beam passes through the sample and any cover above it. Bottom-read fluorescence may avoid direct passage through a top cover, though evaporation, condensation and the cellular environment can still change the sample. Tecan describes these mode-specific differences in its plate-selection guidance. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check the instrument's permitted plate height and lid clearance as well as its optical configuration. A compatible plate footprint does not establish that a raised lid will clear an injector or moving optical assembly. Use the applicable reader instructions. [3]",
+          "html": "<p>Check the instrument's permitted plate height and lid clearance as well as its optical configuration. A compatible plate footprint does not establish that a raised lid will clear an injector or moving optical assembly. Use the applicable reader instructions. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "visible-transparency-says-little-about-ultraviolet-transmission",
+      "heading": "Visible transparency says little about ultraviolet transmission",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Visible transparency says little about ultraviolet transmission",
+          "html": "<h2 id=\"visible-transparency-says-little-about-ultraviolet-transmission\">Visible transparency says little about ultraviolet transmission</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Eppendorf specifies greater than 90% transmission from 350 to 750 nm for its Masterclear real-time polymerase chain reaction (PCR) Film. [1] Use the specified wavelength range when judging compatibility. It does not establish performance at 260 or 280 nm for nucleic-acid or protein absorbance, nor the properties of another film with a similar appearance.",
+          "html": "<p>Eppendorf specifies greater than 90% transmission from 350 to 750 nm for its Masterclear real-time polymerase chain reaction (PCR) Film. [1] Use the specified wavelength range when judging compatibility. It does not establish performance at 260 or 280 nm for nucleic-acid or protein absorbance, nor the properties of another film with a similar appearance.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A film's transmission also acts differently in different modes. In a constructed fluorescence example, 90% transmission on the excitation path and 90% on the emission path leave roughly 81% of the original detected signal, before other effects. For luminescence with one passage through the cover, the same assumed transmission leaves roughly 90%. Real performance depends on wavelength, angle and collection geometry.",
+          "html": "<p>A film's transmission also acts differently in different modes. In a constructed fluorescence example, 90% transmission on the excitation path and 90% on the emission path leave roughly 81% of the original detected signal, before other effects. For luminescence with one passage through the cover, the same assumed transmission leaves roughly 90%. Real performance depends on wavelength, angle and collection geometry.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Blank subtraction can remove a reproducible additive contribution. It cannot restore photons the cover prevented from reaching the sample or detector. If transmission varies across wells because of wrinkles or droplets, a single blank value cannot describe that variation.",
+          "html": "<p>Blank subtraction can remove a reproducible additive contribution. It cannot restore photons the cover prevented from reaching the sample or detector. If transmission varies across wells because of wrinkles or droplets, a single blank value cannot describe that variation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "condensation-can-create-a-changing-absorbance-artifact",
+      "heading": "Condensation can create a changing absorbance artifact",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Condensation can create a changing absorbance artifact",
+          "html": "<h2 id=\"condensation-can-create-a-changing-absorbance-artifact\">Condensation can create a changing absorbance artifact</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Droplets scatter and redirect light, producing a time-dependent optical contribution as they form or clear. BMG LABTECH's bacterial-growth note illustrates lid-condensation effects on optical-density measurements. [2] The mechanism also gives a reason to inspect condensation in other covered plate workflows, though its size must be established for each mode.",
+          "html": "<p>Droplets scatter and redirect light, producing a time-dependent optical contribution as they form or clear. BMG LABTECH's bacterial-growth note illustrates lid-condensation effects on optical-density measurements. [2] The mechanism also gives a reason to inspect condensation in other covered plate workflows, though its size must be established for each mode.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keeping temperatures consistent can reduce thermal transitions that promote condensation. Avoid adding an unvalidated heating step solely to clear a lid: temperature may change enzyme kinetics, luminescence or cell behavior. For glow endpoints, preserve the reagent's specified temperature and equilibration conditions.",
+          "html": "<p>Keeping temperatures consistent can reduce thermal transitions that promote condensation. Avoid adding an unvalidated heating step solely to clear a lid: temperature may change enzyme kinetics, luminescence or cell behavior. For glow endpoints, preserve the reagent's specified temperature and equilibration conditions.</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-covered-and-uncovered-controls-fairly",
+      "heading": "Compare covered and uncovered controls fairly",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare covered and uncovered controls fairly",
+          "html": "<h2 id=\"compare-covered-and-uncovered-controls-fairly\">Compare covered and uncovered controls fairly</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use matched wells or plates containing blanks and stable low/high references. Compare the exact lid or seal under the intended incubation and reading conditions. For time-sensitive assays, alternate or balance the order and compare equal-age samples; removing a cover changes handling time and exposure.",
+          "html": "<p>Use matched wells or plates containing blanks and stable low/high references. Compare the exact lid or seal under the intended incubation and reading conditions. For time-sensitive assays, alternate or balance the order and compare equal-age samples; removing a cover changes handling time and exposure.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Examine raw signal, replicate variability and spatial patterns, including edges. A uniform loss with preserved assay separation may be acceptable; added background, irregular attenuation or changing condensation may require another material or a validated cover-removal step. Include a bright/dim well pattern if optical crosstalk is important.",
+          "html": "<p>Examine raw signal, replicate variability and spatial patterns, including edges. A uniform loss with preserved assay separation may be acceptable; added background, irregular attenuation or changing condensation may require another material or a validated cover-removal step. Include a bright/dim well pattern if optical crosstalk is important.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For living cells, also check whether the closure permits the required gas exchange. Record the cover's product number and handling procedure with the protocol. A change of lid or seal deserves a protocol check even when the plate and reader settings stay the same.",
+          "html": "<p>For living cells, also check whether the closure permits the required gas exchange. Record the cover's product number and handling procedure with the protocol. A change of lid or seal deserves a protocol check even when the plate and reader settings stay the same.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Eppendorf. PCR films and foils. Masterclear real-time PCR Film transmission specification and closure compatibility.",
+          "html": "<p id=\"ref-1\">1. Eppendorf. <a href=\"https://www.eppendorf.com/us-en/Products/PCR/PCR-Consumables/PCR-films-foils-p-PF-8642\">PCR films and foils</a>. Masterclear real-time PCR Film transmission specification and closure compatibility.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. BMG LABTECH. How to optimise OD600 measurements, HowTo Note 10, p. 5. Condensation-related optical-density artifacts; complete six-page note archived.",
+          "html": "<p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/hubfs/1_Webseite/5_Resources/Downloads/Howto%20Notes/HTN10.pdf\">How to optimise OD600 measurements, HowTo Note 10</a>, p. 5. Condensation-related optical-density artifacts; complete six-page note archived.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99, 132 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+          "html": "<p id=\"ref-3\">3. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 42–43, 92–99, 132 and 159. Pathlength correction, injector operation and application-dependent cleaning.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Tecan. Selecting the right plate for a measurement. Manufacturer guidance on covers in absorbance, top/bottom fluorescence and luminescence.",
+          "html": "<p id=\"ref-4\">4. Tecan. <a href=\"https://www.tecan.com/knowledge-portal/which-plate-for-which-measurement\">Selecting the right plate for a measurement</a>. Manufacturer guidance on covers in absorbance, top/bottom fluorescence and luminescence.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Eppendorf. PCR films and foils. Masterclear real-time PCR Film transmission specification and closure compatibility.",
+      "urls": [
+        "https://www.eppendorf.com/us-en/Products/PCR/PCR-Consumables/PCR-films-foils-p-PF-8642"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. BMG LABTECH. How to optimise OD600 measurements, HowTo Note 10, p. 5. Condensation-related optical-density artifacts; complete six-page note archived.",
+      "urls": [
+        "https://www.bmglabtech.com/hubfs/1_Webseite/5_Resources/Downloads/Howto%20Notes/HTN10.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99, 132 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Tecan. Selecting the right plate for a measurement. Manufacturer guidance on covers in absorbance, top/bottom fluorescence and luminescence.",
+      "urls": [
+        "https://www.tecan.com/knowledge-portal/which-plate-for-which-measurement"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "106fcb9c979ba0ade02934f391bda5f1e3edf4a122679b70f14d10449540558c"
+}

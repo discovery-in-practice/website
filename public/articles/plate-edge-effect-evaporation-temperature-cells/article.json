@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "plate-edge-effect-evaporation-temperature-cells",
+  "canonical_url": "https://discoveryinpractice.com/articles/plate-edge-effect-evaporation-temperature-cells/",
+  "title": "What causes a plate edge effect: evaporation, temperature or cell biology?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Diagnose microplate edge effects with volume, temperature and cell-distribution checks before applying corrections or changing the assay workflow.",
+  "takeaways": [
+    "Water loss changes concentration",
+    "Temperature can produce a similar map",
+    "Cell placement can establish the pattern early"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Temperature",
+    "Microplates",
+    "Evaporation"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-06",
+  "date_modified": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Evaporation, temperature and cell distribution can each produce an edge effect, and several may contribute to the same perimeter pattern. Compare evidence for volume loss, liquid-temperature gradients and cell distribution before changing the analysis. The Assay Guidance Manual describes each of these contributors and notes that the direction of the signal change depends on the assay. [1]</p><h2 id=\"water-loss-changes-concentration\">Water loss changes concentration</h2><p>Perimeter wells experience a different surrounding environment from interior wells. If water is lost while a nonvolatile solute remains, its concentration rises. An illustrative well falling from 8.0 µL to 6.8 µL loses 15% of its volume but concentrates that solute by about 17.6%, because 8.0/6.8 is approximately 1.176. This assumes no solute loss or reaction.</p><p>Compound and salt concentrations rise, potentially changing both the cells and the detection chemistry. It need not make the signal brighter: altered biology or inhibition can lower the response. Humidity, covers and exposure duration therefore belong in the investigation. [1]</p><p>Weigh matched plates before and after the relevant handling interval, using consistent cover conditions and accounting for condensation or spills. Mass loss can support evaporation as a contributor, but a whole-plate weight does not show which wells lost water. Combine it with a validated volume estimate or a spatially resolved check when the location matters.</p><h2 id=\"temperature-can-produce-a-similar-map\">Temperature can produce a similar map</h2><p>Outer and inner wells may warm or cool at different rates. Promega's CellTiter-Glo 2.0 manual warns that incomplete thermal equilibration can create center-to-edge patterns and that stack position changes the pattern. [2] This can change the detected light without requiring a difference in the original cellular treatment.</p><p>Compare representative liquid-temperature traces with the control map. If possible, alter the acquisition order on matched plates while preserving preparation conditions. A pattern that follows elapsed read time supports a process changing during acquisition, though temperature is only one candidate. A pattern fixed to physical position warrants a different comparison.</p><p>Stable reading near the validated room-temperature condition can protect a lytic glow endpoint from reheating. Chamber stability does not by itself establish humidity control. Avoid unnecessary dry airflow across exposed small wells, while preserving the circulation needed by the instrument's thermal design.</p><h2 id=\"cell-placement-can-establish-the-pattern-early\">Cell placement can establish the pattern early</h2><p>Lundholt and colleagues reported that ambient pre-incubation of newly seeded plates improved cell distribution relative to immediate placement in a carbon-dioxide incubator, reducing edge effects in their system. [3] The eventual map can therefore begin during the first stages of cell handling. It does not prescribe a universal waiting period for every cell type.</p><p>Image representative wells soon after seeding and after the relevant incubation. Examine attachment, distribution and cell number, including the perimeter. A reader that samples the center of each well may respond differently to cells concentrated around the well wall, even if the total number is similar. Validate any change in settling or incubation against the biology being measured.</p><h2 id=\"compare-volume-temperature-and-cell-distribution-evidence\">Compare volume, temperature and cell-distribution evidence</h2><p>Run a cell-free reference through the same plate and reader workflow, with volume-loss and temperature observations alongside it. Add matched cell plates with the original and proposed handling procedure. A clean cell-free map points the next investigation toward cell preparation or biology, but does not exclude detection chemistry that differs between the reference and cellular assay.</p><p>Also test weak wells beside bright wells. Optical crosstalk follows the bright-neighbor layout and can imitate a positional effect. Preventing leakage protects the weak measurement more reliably than subtracting an average contribution after collection.</p><p>Retain the raw map when evaluating a correction. Removing a statistical edge pattern cannot undo a higher compound concentration or a changed cell population. Fix the demonstrated physical or biological cause, then confirm that the intended assay response is preserved.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual. Archived full chapter, sections on incubation, evaporation, positional effects and well effects.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.</p><p id=\"ref-3\">3. Lundholt BK, Scudder KM, Pagliaro L. <a href=\"https://doi.org/10.1177/1087057103256465\">A Simple Technique for Reducing Edge Effect in Cell-Based Assays</a>. Journal of Biomolecular Screening 2003;8(5):566–570. Publisher abstract reviewed; full paper unavailable. No universal pre-incubation duration is inferred.</p>",
+  "body_text": "Evaporation, temperature and cell distribution can each produce an edge effect, and several may contribute to the same perimeter pattern. Compare evidence for volume loss, liquid-temperature gradients and cell distribution before changing the analysis. The Assay Guidance Manual describes each of these contributors and notes that the direction of the signal change depends on the assay. [1]\n\nWater loss changes concentration\n\nPerimeter wells experience a different surrounding environment from interior wells. If water is lost while a nonvolatile solute remains, its concentration rises. An illustrative well falling from 8.0 µL to 6.8 µL loses 15% of its volume but concentrates that solute by about 17.6%, because 8.0/6.8 is approximately 1.176. This assumes no solute loss or reaction.\n\nCompound and salt concentrations rise, potentially changing both the cells and the detection chemistry. It need not make the signal brighter: altered biology or inhibition can lower the response. Humidity, covers and exposure duration therefore belong in the investigation. [1]\n\nWeigh matched plates before and after the relevant handling interval, using consistent cover conditions and accounting for condensation or spills. Mass loss can support evaporation as a contributor, but a whole-plate weight does not show which wells lost water. Combine it with a validated volume estimate or a spatially resolved check when the location matters.\n\nTemperature can produce a similar map\n\nOuter and inner wells may warm or cool at different rates. Promega's CellTiter-Glo 2.0 manual warns that incomplete thermal equilibration can create center-to-edge patterns and that stack position changes the pattern. [2] This can change the detected light without requiring a difference in the original cellular treatment.\n\nCompare representative liquid-temperature traces with the control map. If possible, alter the acquisition order on matched plates while preserving preparation conditions. A pattern that follows elapsed read time supports a process changing during acquisition, though temperature is only one candidate. A pattern fixed to physical position warrants a different comparison.\n\nStable reading near the validated room-temperature condition can protect a lytic glow endpoint from reheating. Chamber stability does not by itself establish humidity control. Avoid unnecessary dry airflow across exposed small wells, while preserving the circulation needed by the instrument's thermal design.\n\nCell placement can establish the pattern early\n\nLundholt and colleagues reported that ambient pre-incubation of newly seeded plates improved cell distribution relative to immediate placement in a carbon-dioxide incubator, reducing edge effects in their system. [3] The eventual map can therefore begin during the first stages of cell handling. It does not prescribe a universal waiting period for every cell type.\n\nImage representative wells soon after seeding and after the relevant incubation. Examine attachment, distribution and cell number, including the perimeter. A reader that samples the center of each well may respond differently to cells concentrated around the well wall, even if the total number is similar. Validate any change in settling or incubation against the biology being measured.\n\nCompare volume, temperature and cell-distribution evidence\n\nRun a cell-free reference through the same plate and reader workflow, with volume-loss and temperature observations alongside it. Add matched cell plates with the original and proposed handling procedure. A clean cell-free map points the next investigation toward cell preparation or biology, but does not exclude detection chemistry that differs between the reference and cellular assay.\n\nAlso test weak wells beside bright wells. Optical crosstalk follows the bright-neighbor layout and can imitate a positional effect. Preventing leakage protects the weak measurement more reliably than subtracting an average contribution after collection.\n\nRetain the raw map when evaluating a correction. Removing a statistical edge pattern cannot undo a higher compound concentration or a changed cell population. Fix the demonstrated physical or biological cause, then confirm that the intended assay response is preserved.\n\nReferences\n\n1. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Archived full chapter, sections on incubation, evaporation, positional effects and well effects.\n\n2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.\n\n3. Lundholt BK, Scudder KM, Pagliaro L. A Simple Technique for Reducing Edge Effect in Cell-Based Assays. Journal of Biomolecular Screening 2003;8(5):566–570. Publisher abstract reviewed; full paper unavailable. No universal pre-incubation duration is inferred.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaporation, temperature and cell distribution can each produce an edge effect, and several may contribute to the same perimeter pattern. Compare evidence for volume loss, liquid-temperature gradients and cell distribution before changing the analysis. The Assay Guidance Manual describes each of these contributors and notes that the direction of the signal change depends on the assay. [1]",
+          "html": "<p>Evaporation, temperature and cell distribution can each produce an edge effect, and several may contribute to the same perimeter pattern. Compare evidence for volume loss, liquid-temperature gradients and cell distribution before changing the analysis. The Assay Guidance Manual describes each of these contributors and notes that the direction of the signal change depends on the assay. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "water-loss-changes-concentration",
+      "heading": "Water loss changes concentration",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Water loss changes concentration",
+          "html": "<h2 id=\"water-loss-changes-concentration\">Water loss changes concentration</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Perimeter wells experience a different surrounding environment from interior wells. If water is lost while a nonvolatile solute remains, its concentration rises. An illustrative well falling from 8.0 µL to 6.8 µL loses 15% of its volume but concentrates that solute by about 17.6%, because 8.0/6.8 is approximately 1.176. This assumes no solute loss or reaction.",
+          "html": "<p>Perimeter wells experience a different surrounding environment from interior wells. If water is lost while a nonvolatile solute remains, its concentration rises. An illustrative well falling from 8.0 µL to 6.8 µL loses 15% of its volume but concentrates that solute by about 17.6%, because 8.0/6.8 is approximately 1.176. This assumes no solute loss or reaction.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compound and salt concentrations rise, potentially changing both the cells and the detection chemistry. It need not make the signal brighter: altered biology or inhibition can lower the response. Humidity, covers and exposure duration therefore belong in the investigation. [1]",
+          "html": "<p>Compound and salt concentrations rise, potentially changing both the cells and the detection chemistry. It need not make the signal brighter: altered biology or inhibition can lower the response. Humidity, covers and exposure duration therefore belong in the investigation. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Weigh matched plates before and after the relevant handling interval, using consistent cover conditions and accounting for condensation or spills. Mass loss can support evaporation as a contributor, but a whole-plate weight does not show which wells lost water. Combine it with a validated volume estimate or a spatially resolved check when the location matters.",
+          "html": "<p>Weigh matched plates before and after the relevant handling interval, using consistent cover conditions and accounting for condensation or spills. Mass loss can support evaporation as a contributor, but a whole-plate weight does not show which wells lost water. Combine it with a validated volume estimate or a spatially resolved check when the location matters.</p>"
+        }
+      ]
+    },
+    {
+      "id": "temperature-can-produce-a-similar-map",
+      "heading": "Temperature can produce a similar map",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Temperature can produce a similar map",
+          "html": "<h2 id=\"temperature-can-produce-a-similar-map\">Temperature can produce a similar map</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Outer and inner wells may warm or cool at different rates. Promega's CellTiter-Glo 2.0 manual warns that incomplete thermal equilibration can create center-to-edge patterns and that stack position changes the pattern. [2] This can change the detected light without requiring a difference in the original cellular treatment.",
+          "html": "<p>Outer and inner wells may warm or cool at different rates. Promega's CellTiter-Glo 2.0 manual warns that incomplete thermal equilibration can create center-to-edge patterns and that stack position changes the pattern. [2] This can change the detected light without requiring a difference in the original cellular treatment.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare representative liquid-temperature traces with the control map. If possible, alter the acquisition order on matched plates while preserving preparation conditions. A pattern that follows elapsed read time supports a process changing during acquisition, though temperature is only one candidate. A pattern fixed to physical position warrants a different comparison.",
+          "html": "<p>Compare representative liquid-temperature traces with the control map. If possible, alter the acquisition order on matched plates while preserving preparation conditions. A pattern that follows elapsed read time supports a process changing during acquisition, though temperature is only one candidate. A pattern fixed to physical position warrants a different comparison.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Stable reading near the validated room-temperature condition can protect a lytic glow endpoint from reheating. Chamber stability does not by itself establish humidity control. Avoid unnecessary dry airflow across exposed small wells, while preserving the circulation needed by the instrument's thermal design.",
+          "html": "<p>Stable reading near the validated room-temperature condition can protect a lytic glow endpoint from reheating. Chamber stability does not by itself establish humidity control. Avoid unnecessary dry airflow across exposed small wells, while preserving the circulation needed by the instrument's thermal design.</p>"
+        }
+      ]
+    },
+    {
+      "id": "cell-placement-can-establish-the-pattern-early",
+      "heading": "Cell placement can establish the pattern early",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Cell placement can establish the pattern early",
+          "html": "<h2 id=\"cell-placement-can-establish-the-pattern-early\">Cell placement can establish the pattern early</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Lundholt and colleagues reported that ambient pre-incubation of newly seeded plates improved cell distribution relative to immediate placement in a carbon-dioxide incubator, reducing edge effects in their system. [3] The eventual map can therefore begin during the first stages of cell handling. It does not prescribe a universal waiting period for every cell type.",
+          "html": "<p>Lundholt and colleagues reported that ambient pre-incubation of newly seeded plates improved cell distribution relative to immediate placement in a carbon-dioxide incubator, reducing edge effects in their system. [3] The eventual map can therefore begin during the first stages of cell handling. It does not prescribe a universal waiting period for every cell type.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Image representative wells soon after seeding and after the relevant incubation. Examine attachment, distribution and cell number, including the perimeter. A reader that samples the center of each well may respond differently to cells concentrated around the well wall, even if the total number is similar. Validate any change in settling or incubation against the biology being measured.",
+          "html": "<p>Image representative wells soon after seeding and after the relevant incubation. Examine attachment, distribution and cell number, including the perimeter. A reader that samples the center of each well may respond differently to cells concentrated around the well wall, even if the total number is similar. Validate any change in settling or incubation against the biology being measured.</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-volume-temperature-and-cell-distribution-evidence",
+      "heading": "Compare volume, temperature and cell-distribution evidence",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare volume, temperature and cell-distribution evidence",
+          "html": "<h2 id=\"compare-volume-temperature-and-cell-distribution-evidence\">Compare volume, temperature and cell-distribution evidence</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Run a cell-free reference through the same plate and reader workflow, with volume-loss and temperature observations alongside it. Add matched cell plates with the original and proposed handling procedure. A clean cell-free map points the next investigation toward cell preparation or biology, but does not exclude detection chemistry that differs between the reference and cellular assay.",
+          "html": "<p>Run a cell-free reference through the same plate and reader workflow, with volume-loss and temperature observations alongside it. Add matched cell plates with the original and proposed handling procedure. A clean cell-free map points the next investigation toward cell preparation or biology, but does not exclude detection chemistry that differs between the reference and cellular assay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Also test weak wells beside bright wells. Optical crosstalk follows the bright-neighbor layout and can imitate a positional effect. Preventing leakage protects the weak measurement more reliably than subtracting an average contribution after collection.",
+          "html": "<p>Also test weak wells beside bright wells. Optical crosstalk follows the bright-neighbor layout and can imitate a positional effect. Preventing leakage protects the weak measurement more reliably than subtracting an average contribution after collection.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Retain the raw map when evaluating a correction. Removing a statistical edge pattern cannot undo a higher compound concentration or a changed cell population. Fix the demonstrated physical or biological cause, then confirm that the intended assay response is preserved.",
+          "html": "<p>Retain the raw map when evaluating a correction. Removing a statistical edge pattern cannot undo a higher compound concentration or a changed cell population. Fix the demonstrated physical or biological cause, then confirm that the intended assay response is preserved.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Archived full chapter, sections on incubation, evaporation, positional effects and well effects.",
+          "html": "<p id=\"ref-1\">1. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual. Archived full chapter, sections on incubation, evaporation, positional effects and well effects.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Lundholt BK, Scudder KM, Pagliaro L. A Simple Technique for Reducing Edge Effect in Cell-Based Assays. Journal of Biomolecular Screening 2003;8(5):566–570. Publisher abstract reviewed; full paper unavailable. No universal pre-incubation duration is inferred.",
+          "html": "<p id=\"ref-3\">3. Lundholt BK, Scudder KM, Pagliaro L. <a href=\"https://doi.org/10.1177/1087057103256465\">A Simple Technique for Reducing Edge Effect in Cell-Based Assays</a>. Journal of Biomolecular Screening 2003;8(5):566–570. Publisher abstract reviewed; full paper unavailable. No universal pre-incubation duration is inferred.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Archived full chapter, sections on incubation, evaporation, positional effects and well effects.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558077/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Lundholt BK, Scudder KM, Pagliaro L. A Simple Technique for Reducing Edge Effect in Cell-Based Assays. Journal of Biomolecular Screening 2003;8(5):566–570. Publisher abstract reviewed; full paper unavailable. No universal pre-incubation duration is inferred.",
+      "urls": [
+        "https://doi.org/10.1177/1087057103256465"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "98150b459c43a6c39147df179d2568b18e6aaccc64ccea94227e1c009b1878eb"
+}

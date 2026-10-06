@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "id": "low-z-prime-384-to-1536-wells",
+  "canonical_url": "https://discoveryinpractice.com/articles/low-z-prime-384-to-1536-wells/",
+  "title": "Why does my assay have low Z-prime after moving from 384 to 1536 wells?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Diagnose low Z-prime after miniaturizing from 384 to 1536 wells, including photon counts, cell loading, evaporation and read geometry.",
+  "takeaways": [
+    "A change of scale can leave Z-prime unchanged",
+    "What unchanged concentration leaves out",
+    "Separate detection from preparation"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "1536-well assays",
+    "Z-prime",
+    "Assay precision"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-06",
+  "date_modified": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>After miniaturization, a low Z-prime often reflects more control variability relative to separation between the high and low controls. Keeping reagent concentrations unchanged does not preserve cell number, detected photons, dispensing precision or evaporation. Smaller wells also change optical geometry. Identify which contribution deteriorated before increasing reagent concentrations or reading every well longer.</p><h2 id=\"a-change-of-scale-can-leave-z-prime-unchanged\">A change of scale can leave Z-prime unchanged</h2><p>Z-prime, written Z′, compares the spread of the control populations with the distance between their means:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\"><mrow><mrow><mtext>Z′ = 1 − </mtext></mrow><mfrac><mrow><mrow><mtext>3(</mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> + </mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>)</mtext></mrow></mrow><mrow><mrow><mtext>|</mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>|</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>The μ terms are mean responses and the σ terms are their standard deviations (SDs). Z′ is dimensionless. The Assay Guidance Manual discusses its use in evaluating control separation and variability. [1]</p><p>Consider three constructed results on a common arbitrary response scale:</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Condition</th><th scope=\"col\">Control mean gap</th><th scope=\"col\">Sum of control SDs</th><th scope=\"col\">Z-prime</th></tr></thead><tbody><tr><th scope=\"row\">Starting assay</th><td>9,000 units</td><td>600 units</td><td>0.80</td></tr><tr><th scope=\"row\">All responses scaled to one-quarter</th><td>2,250 units</td><td>150 units</td><td>0.80</td></tr><tr><th scope=\"row\">Quarter-sized gap, larger relative spread</th><td>2,250 units</td><td>300 units</td><td>0.60</td></tr></tbody></table></div><p>Multiplying every individual result by the same positive constant scales both the gap and the standard deviations equally. Z′ is unchanged. A smaller photon count behaves differently: under ideal Poisson statistics, reducing collected photons fourfold doubles their relative counting uncertainty. A dimmer assay can therefore lose Z′ even when its chemistry preserves the expected fold response.</p><h2 id=\"what-unchanged-concentration-leaves-out\">What unchanged concentration leaves out</h2><p>At unchanged cell concentration, one-quarter of the volume contains one-quarter of the expected cells. Under an ideal model of independent cell loading, 400 cells per well have 5% relative counting variability; 100 cells have 10%. Unequal cell brightness, clumps and dispensing can add further variation. These are model calculations, not expected coefficients of variation (CVs) for every cell assay.</p><p>Evaporation consumes a larger fraction of a small starting volume. Dispensing and mixing also face different well dimensions and fluid behavior. The Assay Guidance Manual's microplate chapter discusses evaporation, liquid handling, mixing and plate geometry as assay-development variables. A transfer that preserves concentrations still needs these steps checked. [2]</p><p>The reader sees a different target too. Read height, illumination footprint and collection optics may need adjustment. Bright neighboring wells can contaminate weak controls. Suitable well opacity and optical isolation should be assessed before relying on software crosstalk correction, which can remove a mean contribution while leaving its photon noise.</p><h2 id=\"separate-detection-from-preparation\">Separate detection from preparation</h2><p>Begin with a stable, premixed cell-free optical control at the intended volumes, including blanks and low signals. This tests the combined plate and detection geometry without reproducing every source of biological variation. Inspect position effects, bright-neighbor leakage, raw-channel precision and linearity. For a ratiometric assay, retain both channel outputs.</p><p>Next, dispense the same control material through the intended liquid-handling workflow. New variability implicates preparation, timing or handling, although further tests are needed to separate them. Finally, test the complete assay with independently prepared replicate plates. Map the controls across the plate and record the elapsed time from dispensing to reading.</p><p>If useful photon collection is limiting, efficient excitation and detection may recover precision without a prolonged read. For time-resolved Förster resonance energy transfer (TR-FRET), compatible laser excitation can help when too few useful photons limit precision. Simultaneous dual-emission collection can reduce errors from measuring the channels at different times. Cell-loading variation needs a separate remedy. [4]</p><p>Temperature deserves its own check. Promega's CellTiter-Glo 2.0 protocol specifies room-temperature equilibration, and its manual identifies temperature effects on intensity and decay. For this lytic endpoint, a stable near-room-temperature measurement chamber helps preserve comparable conditions through the plate sequence. Avoid unvalidated exposure to airflow or heat during waiting and reading. Live-cell protocols may need a different temperature. [3]</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Bray MA, Carpenter A. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK126174/\">Advanced Assay Development Guidelines for Image-Based High Content Screening and Analysis</a>. Assay Guidance Manual, 2017 update. Statistical assessment of controls and assay quality.</p><p id=\"ref-2\">2. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual. Plate geometry, dispensing, mixing and evaporation; previously archived full chapter reviewed.</p><p id=\"ref-3\">3. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, temperature and plate-selection caveats.</p><p id=\"ref-4\">4. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 13 and 20. Ratiometric detection and excitation-source guidance. Timing-error reduction is a mechanism-based inference, not a quantified advantage for every assay.</p>",
+  "body_text": "After miniaturization, a low Z-prime often reflects more control variability relative to separation between the high and low controls. Keeping reagent concentrations unchanged does not preserve cell number, detected photons, dispensing precision or evaporation. Smaller wells also change optical geometry. Identify which contribution deteriorated before increasing reagent concentrations or reading every well longer.\n\nA change of scale can leave Z-prime unchanged\n\nZ-prime, written Z′, compares the spread of the control populations with the distance between their means:\n\nZ′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\n\nThe μ terms are mean responses and the σ terms are their standard deviations (SDs). Z′ is dimensionless. The Assay Guidance Manual discusses its use in evaluating control separation and variability. [1]\n\nConsider three constructed results on a common arbitrary response scale:\n\nCondition | Control mean gap | Sum of control SDs | Z-prime | Starting assay | 9,000 units | 600 units | 0.80 | All responses scaled to one-quarter | 2,250 units | 150 units | 0.80 | Quarter-sized gap, larger relative spread | 2,250 units | 300 units | 0.60 | \n\nMultiplying every individual result by the same positive constant scales both the gap and the standard deviations equally. Z′ is unchanged. A smaller photon count behaves differently: under ideal Poisson statistics, reducing collected photons fourfold doubles their relative counting uncertainty. A dimmer assay can therefore lose Z′ even when its chemistry preserves the expected fold response.\n\nWhat unchanged concentration leaves out\n\nAt unchanged cell concentration, one-quarter of the volume contains one-quarter of the expected cells. Under an ideal model of independent cell loading, 400 cells per well have 5% relative counting variability; 100 cells have 10%. Unequal cell brightness, clumps and dispensing can add further variation. These are model calculations, not expected coefficients of variation (CVs) for every cell assay.\n\nEvaporation consumes a larger fraction of a small starting volume. Dispensing and mixing also face different well dimensions and fluid behavior. The Assay Guidance Manual's microplate chapter discusses evaporation, liquid handling, mixing and plate geometry as assay-development variables. A transfer that preserves concentrations still needs these steps checked. [2]\n\nThe reader sees a different target too. Read height, illumination footprint and collection optics may need adjustment. Bright neighboring wells can contaminate weak controls. Suitable well opacity and optical isolation should be assessed before relying on software crosstalk correction, which can remove a mean contribution while leaving its photon noise.\n\nSeparate detection from preparation\n\nBegin with a stable, premixed cell-free optical control at the intended volumes, including blanks and low signals. This tests the combined plate and detection geometry without reproducing every source of biological variation. Inspect position effects, bright-neighbor leakage, raw-channel precision and linearity. For a ratiometric assay, retain both channel outputs.\n\nNext, dispense the same control material through the intended liquid-handling workflow. New variability implicates preparation, timing or handling, although further tests are needed to separate them. Finally, test the complete assay with independently prepared replicate plates. Map the controls across the plate and record the elapsed time from dispensing to reading.\n\nIf useful photon collection is limiting, efficient excitation and detection may recover precision without a prolonged read. For time-resolved Förster resonance energy transfer (TR-FRET), compatible laser excitation can help when too few useful photons limit precision. Simultaneous dual-emission collection can reduce errors from measuring the channels at different times. Cell-loading variation needs a separate remedy. [4]\n\nTemperature deserves its own check. Promega's CellTiter-Glo 2.0 protocol specifies room-temperature equilibration, and its manual identifies temperature effects on intensity and decay. For this lytic endpoint, a stable near-room-temperature measurement chamber helps preserve comparable conditions through the plate sequence. Avoid unvalidated exposure to airflow or heat during waiting and reading. Live-cell protocols may need a different temperature. [3]\n\nReferences\n\n1. Bray MA, Carpenter A. Advanced Assay Development Guidelines for Image-Based High Content Screening and Analysis. Assay Guidance Manual, 2017 update. Statistical assessment of controls and assay quality.\n\n2. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Plate geometry, dispensing, mixing and evaporation; previously archived full chapter reviewed.\n\n3. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, temperature and plate-selection caveats.\n\n4. Revvity. HTRF Technical Booklet, pp. 13 and 20. Ratiometric detection and excitation-source guidance. Timing-error reduction is a mechanism-based inference, not a quantified advantage for every assay.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "After miniaturization, a low Z-prime often reflects more control variability relative to separation between the high and low controls. Keeping reagent concentrations unchanged does not preserve cell number, detected photons, dispensing precision or evaporation. Smaller wells also change optical geometry. Identify which contribution deteriorated before increasing reagent concentrations or reading every well longer.",
+          "html": "<p>After miniaturization, a low Z-prime often reflects more control variability relative to separation between the high and low controls. Keeping reagent concentrations unchanged does not preserve cell number, detected photons, dispensing precision or evaporation. Smaller wells also change optical geometry. Identify which contribution deteriorated before increasing reagent concentrations or reading every well longer.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-change-of-scale-can-leave-z-prime-unchanged",
+      "heading": "A change of scale can leave Z-prime unchanged",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A change of scale can leave Z-prime unchanged",
+          "html": "<h2 id=\"a-change-of-scale-can-leave-z-prime-unchanged\">A change of scale can leave Z-prime unchanged</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Z-prime, written Z′, compares the spread of the control populations with the distance between their means:",
+          "html": "<p>Z-prime, written Z′, compares the spread of the control populations with the distance between their means:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\"><mrow><mrow><mtext>Z′ = 1 − </mtext></mrow><mfrac><mrow><mrow><mtext>3(</mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> + </mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>)</mtext></mrow></mrow><mrow><mrow><mtext>|</mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>|</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "The μ terms are mean responses and the σ terms are their standard deviations (SDs). Z′ is dimensionless. The Assay Guidance Manual discusses its use in evaluating control separation and variability. [1]",
+          "html": "<p>The μ terms are mean responses and the σ terms are their standard deviations (SDs). Z′ is dimensionless. The Assay Guidance Manual discusses its use in evaluating control separation and variability. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider three constructed results on a common arbitrary response scale:",
+          "html": "<p>Consider three constructed results on a common arbitrary response scale:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Condition | Control mean gap | Sum of control SDs | Z-prime | Starting assay | 9,000 units | 600 units | 0.80 | All responses scaled to one-quarter | 2,250 units | 150 units | 0.80 | Quarter-sized gap, larger relative spread | 2,250 units | 300 units | 0.60 | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Condition</th><th scope=\"col\">Control mean gap</th><th scope=\"col\">Sum of control SDs</th><th scope=\"col\">Z-prime</th></tr></thead><tbody><tr><th scope=\"row\">Starting assay</th><td>9,000 units</td><td>600 units</td><td>0.80</td></tr><tr><th scope=\"row\">All responses scaled to one-quarter</th><td>2,250 units</td><td>150 units</td><td>0.80</td></tr><tr><th scope=\"row\">Quarter-sized gap, larger relative spread</th><td>2,250 units</td><td>300 units</td><td>0.60</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "Multiplying every individual result by the same positive constant scales both the gap and the standard deviations equally. Z′ is unchanged. A smaller photon count behaves differently: under ideal Poisson statistics, reducing collected photons fourfold doubles their relative counting uncertainty. A dimmer assay can therefore lose Z′ even when its chemistry preserves the expected fold response.",
+          "html": "<p>Multiplying every individual result by the same positive constant scales both the gap and the standard deviations equally. Z′ is unchanged. A smaller photon count behaves differently: under ideal Poisson statistics, reducing collected photons fourfold doubles their relative counting uncertainty. A dimmer assay can therefore lose Z′ even when its chemistry preserves the expected fold response.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-unchanged-concentration-leaves-out",
+      "heading": "What unchanged concentration leaves out",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What unchanged concentration leaves out",
+          "html": "<h2 id=\"what-unchanged-concentration-leaves-out\">What unchanged concentration leaves out</h2>"
+        },
+        {
+          "type": "p",
+          "text": "At unchanged cell concentration, one-quarter of the volume contains one-quarter of the expected cells. Under an ideal model of independent cell loading, 400 cells per well have 5% relative counting variability; 100 cells have 10%. Unequal cell brightness, clumps and dispensing can add further variation. These are model calculations, not expected coefficients of variation (CVs) for every cell assay.",
+          "html": "<p>At unchanged cell concentration, one-quarter of the volume contains one-quarter of the expected cells. Under an ideal model of independent cell loading, 400 cells per well have 5% relative counting variability; 100 cells have 10%. Unequal cell brightness, clumps and dispensing can add further variation. These are model calculations, not expected coefficients of variation (CVs) for every cell assay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Evaporation consumes a larger fraction of a small starting volume. Dispensing and mixing also face different well dimensions and fluid behavior. The Assay Guidance Manual's microplate chapter discusses evaporation, liquid handling, mixing and plate geometry as assay-development variables. A transfer that preserves concentrations still needs these steps checked. [2]",
+          "html": "<p>Evaporation consumes a larger fraction of a small starting volume. Dispensing and mixing also face different well dimensions and fluid behavior. The Assay Guidance Manual's microplate chapter discusses evaporation, liquid handling, mixing and plate geometry as assay-development variables. A transfer that preserves concentrations still needs these steps checked. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The reader sees a different target too. Read height, illumination footprint and collection optics may need adjustment. Bright neighboring wells can contaminate weak controls. Suitable well opacity and optical isolation should be assessed before relying on software crosstalk correction, which can remove a mean contribution while leaving its photon noise.",
+          "html": "<p>The reader sees a different target too. Read height, illumination footprint and collection optics may need adjustment. Bright neighboring wells can contaminate weak controls. Suitable well opacity and optical isolation should be assessed before relying on software crosstalk correction, which can remove a mean contribution while leaving its photon noise.</p>"
+        }
+      ]
+    },
+    {
+      "id": "separate-detection-from-preparation",
+      "heading": "Separate detection from preparation",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Separate detection from preparation",
+          "html": "<h2 id=\"separate-detection-from-preparation\">Separate detection from preparation</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Begin with a stable, premixed cell-free optical control at the intended volumes, including blanks and low signals. This tests the combined plate and detection geometry without reproducing every source of biological variation. Inspect position effects, bright-neighbor leakage, raw-channel precision and linearity. For a ratiometric assay, retain both channel outputs.",
+          "html": "<p>Begin with a stable, premixed cell-free optical control at the intended volumes, including blanks and low signals. This tests the combined plate and detection geometry without reproducing every source of biological variation. Inspect position effects, bright-neighbor leakage, raw-channel precision and linearity. For a ratiometric assay, retain both channel outputs.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Next, dispense the same control material through the intended liquid-handling workflow. New variability implicates preparation, timing or handling, although further tests are needed to separate them. Finally, test the complete assay with independently prepared replicate plates. Map the controls across the plate and record the elapsed time from dispensing to reading.",
+          "html": "<p>Next, dispense the same control material through the intended liquid-handling workflow. New variability implicates preparation, timing or handling, although further tests are needed to separate them. Finally, test the complete assay with independently prepared replicate plates. Map the controls across the plate and record the elapsed time from dispensing to reading.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If useful photon collection is limiting, efficient excitation and detection may recover precision without a prolonged read. For time-resolved Förster resonance energy transfer (TR-FRET), compatible laser excitation can help when too few useful photons limit precision. Simultaneous dual-emission collection can reduce errors from measuring the channels at different times. Cell-loading variation needs a separate remedy. [4]",
+          "html": "<p>If useful photon collection is limiting, efficient excitation and detection may recover precision without a prolonged read. For time-resolved Förster resonance energy transfer (TR-FRET), compatible laser excitation can help when too few useful photons limit precision. Simultaneous dual-emission collection can reduce errors from measuring the channels at different times. Cell-loading variation needs a separate remedy. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Temperature deserves its own check. Promega's CellTiter-Glo 2.0 protocol specifies room-temperature equilibration, and its manual identifies temperature effects on intensity and decay. For this lytic endpoint, a stable near-room-temperature measurement chamber helps preserve comparable conditions through the plate sequence. Avoid unvalidated exposure to airflow or heat during waiting and reading. Live-cell protocols may need a different temperature. [3]",
+          "html": "<p>Temperature deserves its own check. Promega's CellTiter-Glo 2.0 protocol specifies room-temperature equilibration, and its manual identifies temperature effects on intensity and decay. For this lytic endpoint, a stable near-room-temperature measurement chamber helps preserve comparable conditions through the plate sequence. Avoid unvalidated exposure to airflow or heat during waiting and reading. Live-cell protocols may need a different temperature. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Bray MA, Carpenter A. Advanced Assay Development Guidelines for Image-Based High Content Screening and Analysis. Assay Guidance Manual, 2017 update. Statistical assessment of controls and assay quality.",
+          "html": "<p id=\"ref-1\">1. Bray MA, Carpenter A. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK126174/\">Advanced Assay Development Guidelines for Image-Based High Content Screening and Analysis</a>. Assay Guidance Manual, 2017 update. Statistical assessment of controls and assay quality.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Plate geometry, dispensing, mixing and evaporation; previously archived full chapter reviewed.",
+          "html": "<p id=\"ref-2\">2. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual. Plate geometry, dispensing, mixing and evaporation; previously archived full chapter reviewed.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, temperature and plate-selection caveats.",
+          "html": "<p id=\"ref-3\">3. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, temperature and plate-selection caveats.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Revvity. HTRF Technical Booklet, pp. 13 and 20. Ratiometric detection and excitation-source guidance. Timing-error reduction is a mechanism-based inference, not a quantified advantage for every assay.",
+          "html": "<p id=\"ref-4\">4. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf\">HTRF Technical Booklet</a>, pp. 13 and 20. Ratiometric detection and excitation-source guidance. Timing-error reduction is a mechanism-based inference, not a quantified advantage for every assay.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Bray MA, Carpenter A. Advanced Assay Development Guidelines for Image-Based High Content Screening and Analysis. Assay Guidance Manual, 2017 update. Statistical assessment of controls and assay quality.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK126174/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual. Plate geometry, dispensing, mixing and evaporation; previously archived full chapter reviewed.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558077/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, sections 3.B and 4.B, PDF pp. 7 and 11. Equilibration, temperature and plate-selection caveats.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Revvity. HTRF Technical Booklet, pp. 13 and 20. Ratiometric detection and excitation-source guidance. Timing-error reduction is a mechanism-based inference, not a quantified advantage for every assay.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-htrf-technical-booklet.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Z′ = 1 − (3( σ subscript high + σ subscript low )) divided by (| μ subscript high − μ subscript low |)\"><mrow><mrow><mtext>Z′ = 1 − </mtext></mrow><mfrac><mrow><mrow><mtext>3(</mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> + </mtext></mrow><msub><mrow><mrow><mtext>σ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>)</mtext></mrow></mrow><mrow><mrow><mtext>|</mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>high</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>μ</mtext></mrow></mrow><mrow><mrow><mtext>low</mtext></mrow></mrow></msub><mrow><mtext>|</mtext></mrow></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Why does my assay have low Z-prime after moving from 384 to 1536 wells?",
+      "rows": [
+        [
+          "Condition",
+          "Control mean gap",
+          "Sum of control SDs",
+          "Z-prime"
+        ],
+        [
+          "Starting assay",
+          "9,000 units",
+          "600 units",
+          "0.80"
+        ],
+        [
+          "All responses scaled to one-quarter",
+          "2,250 units",
+          "150 units",
+          "0.80"
+        ],
+        [
+          "Quarter-sized gap, larger relative spread",
+          "2,250 units",
+          "300 units",
+          "0.60"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "7199831e97962d48201202bc90863af05d65e6470646d24ca1387caa29b9c2ac"
+}

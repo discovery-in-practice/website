@@ -1,0 +1,379 @@
+{
+  "schema_version": "1.0",
+  "id": "choosing-microplates-surface-color-crosstalk",
+  "canonical_url": "https://discoveryinpractice.com/articles/choosing-microplates-surface-color-crosstalk/",
+  "title": "Choosing a microplate: the plastic is part of the assay",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Choose microplates by surface, color, geometry and working volume. Use practical tests to separate useful signal from adsorption, crosstalk and evaporation.",
+  "takeaways": [
+    "Choose the surface before choosing the color",
+    "Color changes where the light goes",
+    "A tiny leakage percentage can be a large assay error"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "Microplates",
+    "Crosstalk",
+    "Assay development"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-06",
+  "date_modified": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Two plates have the same well count, the same color and reassuringly similar catalog photographs. The assay produces twice as much light in one of them. That difference needs an explanation before selecting the plate.</p><p>First establish what changed. More light might reflect better collection. It might also reflect a different amount of protein remaining in solution, a changed cell population, higher background or light arriving from the well next door.</p><p>Microplate selection is part of assay development because the plate participates in both the chemistry and the measurement. The Assay Guidance Manual treats surface properties, optical behavior and plate handling as connected decisions. [1] That is a more useful starting point than “white for luminescence, black for fluorescence,” although those familiar rules have their uses.</p><h2 id=\"choose-the-surface-before-choosing-the-color\">Choose the surface before choosing the color</h2><p>Begin with what must happen at the wall. An ELISA may depend on immobilizing protein there. A homogeneous binding assay may depend on keeping the same protein in solution. Adherent cells need a surface that supports the intended attachment and phenotype. Those requirements can point to different plates before the optics enter the discussion.</p><p>“Tissue-culture treated,” “high binding” and “low binding” are functional choices. They are not successive grades of laboratory quality. Corning, for example, describes a hydrophilic nonbinding treatment intended to reduce nonspecific molecular interactions, including protein adsorption. That does not establish that every reagent in every buffer will be unaffected. [2]</p><p>The quantities can be surprisingly small. A 10-microliter well containing a protein at 1 nM contains 10 femtomoles. For a 50-kDa protein, that is only 0.5 nanograms in the entire well. In a constructed example, loss of 0.1 nanograms to surfaces would remove 20% of the nominal protein amount.</p><p>That is a mass balance, not a prediction of how much a particular plate will bind. It explains why a seemingly minor surface interaction deserves attention when working at low concentrations. A reader cannot collect photons from a complex that never formed because one partner left the solution.</p><p>Compare suitable surface treatments with the actual reagents, buffer, concentration and contact time. Inspect the titration curve and reference-compound behavior as well as the maximum signal. A blocking protein or detergent may help in some assays, but it can also affect binding or enzyme activity; test the remedy rather than treating it as inert.</p><h2 id=\"color-changes-where-the-light-goes\">Color changes where the light goes</h2><p>White walls tend to return more light toward the detection path. Black walls absorb more stray light, often reducing fluorescence background and interwell leakage at the cost of signal. These are useful starting tendencies, not a ranking of assay quality. [3]</p><p>Time-resolved fluorescence provides a good exception to the simple color rule. Revvity's HTRF development guide recommends white plates while also listing validated black formats. Its discussion distinguishes increased counts from the signal-to-noise comparison. Use the plate recommendation for the particular assay and reader, then verify it at the intended volume. [4]</p><p>A clear bottom is another deliberate trade. It permits microscopy or bottom reading, but changes the optical path. Promega's CellTiter-Glo 2.0 manual notes diminished signal and greater crosstalk with opaque-walled, clear-bottom plates compared with the recommended opaque format. That is a reason to test the exact construction, not a prohibition on clear bottoms when imaging is needed. [5]</p><p>Even an empty plate can contribute light. Revvity discusses phosphorescence from plate plastic and recommends dark adaptation for some white-plate luminescence workflows. [6] Include matrix-filled blanks with the same light exposure and handling history. A blank read immediately after opening a package is not necessarily representative of the blanks halfway through a screening queue.</p><h2 id=\"a-tiny-leakage-percentage-can-be-a-large-assay-error\">A tiny leakage percentage can be a large assay error</h2><p>Suppose a bright well measures 1,000,000 units, while a neighboring weak sample would otherwise measure 100. If 0.1% of the bright-well signal appears in that neighbor, it contributes another 1,000 units. The weak sample now reports 1,100: eleven times its intended signal.</p><p>These are illustrative numbers, not a specification for any plate or reader. The point is that leakage should be judged against the receiving well's useful signal, not only against the much larger source.</p><p>A practical plate comparison needs both bright wells and quiet neighbors. Use isolated bright wells surrounded by matrix blanks, with remote blanks for comparison. Add a checkerboard pattern to examine the combined contribution of multiple neighbors. Test more than one brightness and include the intended detector settings.</p><p>For an isolated source, a simple operational estimate is:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Leakage fraction = (Adjacent blank − Remote blank) divided by (Bright well − Remote blank)\"><mrow><mrow><mtext>Leakage fraction = </mtext></mrow><mfrac><mrow><mrow><mtext>Adjacent blank − Remote blank</mtext></mrow></mrow><mrow><mrow><mtext>Bright well − Remote blank</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>This estimates the effect in that layout, optical configuration and signal range. Replicate the blank measurements, inspect directional differences and avoid quoting a stable percentage when the denominator is small or the response is nonlinear.</p><p>Elevated neighboring wells do not, by themselves, prove optical leakage. Liquid carryover, splashing and wicking can produce spatial patterns too. The Assay Guidance Manual explicitly discusses these routes of cross-contamination. [1] Prepare the optical test with careful handling and independent controls; use follow-up layouts or timing tests to separate light transfer from material transfer.</p><p>Revvity's luminescence comparisons show why plate construction and color merit testing together: reductions in crosstalk can come with reductions in useful signal, and the balance differs among formats. [6] A dimmer plate can still support a better assay if it preserves the measurements that determine your hits.</p><h2 id=\"working-volume-changes-the-optical-experiment\">Working volume changes the optical experiment</h2><p>The maximum capacity in a catalog is not the recommended assay volume. Nor is a low-volume plate simply a standard plate with less liquid in it. Well depth, taper and cross-sectional area can differ. These changes affect liquid height and the reader's view of the sample. [1]</p><p>Revisit focus or measurement height when changing plate geometry or volume. Test representative low, intermediate and high signals, and inspect uniformity and bright-neighbor effects. The setting with the largest count in one well need not give the best precision across a plate.</p><p>Good focusing and effective isolation of neighboring wells are particularly valuable when the optical target is small. They should be judged together: efficient collection from the intended well is the objective. A broad collection region that gathers additional neighboring light can make a brightness optimization misleading.</p><p>Specify the actual plate definition in the reader software. Check compatibility with the liquid handler as well. A shallow well can put the bottom closer to a dispensing tip or pin tool; a plate that fits the carrier can still be wrong for the programmed motion. The manual flags this problem for low-volume formats. [1]</p><h2 id=\"the-plate-also-spends-time-outside-the-reader\">The plate also spends time outside the reader</h2><p>Miniaturization makes modest absolute volume losses consequential. If a 5-microliter reaction loses 0.5 microliters of water, its remaining nonvolatile solutes become about 11% more concentrated, assuming no precipitation, adsorption or reaction consumes them:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"(C subscript final) divided by (C subscript initial) = (V subscript initial) divided by (V subscript final) = (5) divided by (4.5) ≈ 1.11\"><mrow><mfrac><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>initial</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>V</mtext></mrow></mrow><mrow><mrow><mtext>initial</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>V</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><mrow><mtext>5</mtext></mrow></mrow><mrow><mrow><mtext>4.5</mtext></mrow></mrow></mfrac><mrow><mtext> ≈ 1.11</mtext></mrow></mrow></math></div></div><p>The same half-microliter loss from 50 microliters raises concentration by only about 1%. This comparison assumes equal absolute losses to illustrate the arithmetic; actual evaporation depends on geometry, environment and time.</p><p>Evaluate lids or seals, exposed dwell time and the real queue. Dry moving air and heat transfer can increase evaporative stress. A measurement chamber that limits unnecessary airflow and heat reaching the plate can help, but a chamber specification alone does not establish the liquid's temperature or volume stability. Check representative wells or sacrificial plates under the actual workflow. [1]</p><p>Temperature matters even without measurable evaporation. Promega specifically calls for temperature equilibration in CellTiter-Glo 2.0 and warns about gradients associated with plate handling and stacking. [5] Keep these histories comparable when testing plate candidates. Otherwise a thermal difference can be mistaken for a better plastic.</p><h2 id=\"a-small-comparison-that-earns-its-plate-budget\">A small comparison that earns its plate budget</h2><p>Choose two or three plausible candidates based on biology and the assay manufacturer's guidance. Compare them with common reagent stocks and balanced preparation/read order. If candidates differ in several features, treat the result as a comparison of complete products; it cannot isolate which feature caused the difference.</p><p>Include four complementary checks:</p><ul>\n<li>Matrix blanks and representative low, intermediate and high assay signals, using the intended volume.</li>\n<li>A complete assay titration and reference compound, to reveal changes hidden by a single bright control.</li>\n<li>Isolated bright wells and a checkerboard with blanks, to examine spatial contamination.</li>\n<li>A uniformity plate or distributed controls after realistic incubation and queue time, to expose positional effects.</li>\n</ul><p>For each candidate, retain raw signals, variability, background, reference-compound behavior and timing. Optimize legitimate reader settings for the candidate, record them, and compare the resulting usable performance. Match read time or required precision when the operational trade matters.</p><p>Confirm the preferred plate with another lot before committing a long campaign. Record manufacturer, catalog number, lot, surface, bottom construction, working volume and reader settings. Keep an approved alternative if continuity of supply matters, but qualify it as an assay change.</p><p>The winning plate is the one that preserves the biology and measures it reliably through the workflow. The brightest plate has only won the brightness comparison.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Auld DS and colleagues. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual, June 1, 2020. Supplied project compilation, PDF pp. 1309–1344; surfaces, geometry, handling, lots and positional effects.</p><p id=\"ref-2\">2. Corning. <a href=\"https://www.corning.com/cala/en/products/life-sciences/products/microplates/biochemical-assay-microplates/non-binding-surface.html\">Nonbinding surface treatment</a>. Mechanism and intended applications. No universal adsorption capacity is assumed in the worked example.</p><p id=\"ref-3\">3. Corning. <a href=\"https://www.corning.com/content/dam/corning/catalog/cls/documents/selection-guides/CLS-DD-081.pdf\">Microplates Product Selection Guide</a>, especially the color and well-geometry guidance; an earlier selection guide is also retained in the project library.</p><p id=\"ref-4\">4. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-reagents-htrf-ppi-assays.pdf\">A Guide to Developing Biochemical Assays with HTRF PPi Reagents</a>, pp. 30–31. Plate types, working volumes and white/black comparisons within the guide's scope.</p><p id=\"ref-5\">5. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en\">CellTiter-Glo 2.0 Cell Viability Assay Technical Manual TM403</a>. Revision 1/23, printed p. 10. Plate construction, crosstalk and temperature equilibration.</p><p id=\"ref-6\">6. Revvity. <a href=\"https://www.revvity.com/ask/microplates-luminescence-assays\">Microplates for Luminescence Assays</a>. Phosphorescence and plate-dependent signal/crosstalk comparisons. Numerical examples in this article are constructed calculations, not measurements from this source.</p>",
+  "body_text": "Two plates have the same well count, the same color and reassuringly similar catalog photographs. The assay produces twice as much light in one of them. That difference needs an explanation before selecting the plate.\n\nFirst establish what changed. More light might reflect better collection. It might also reflect a different amount of protein remaining in solution, a changed cell population, higher background or light arriving from the well next door.\n\nMicroplate selection is part of assay development because the plate participates in both the chemistry and the measurement. The Assay Guidance Manual treats surface properties, optical behavior and plate handling as connected decisions. [1] That is a more useful starting point than “white for luminescence, black for fluorescence,” although those familiar rules have their uses.\n\nChoose the surface before choosing the color\n\nBegin with what must happen at the wall. An ELISA may depend on immobilizing protein there. A homogeneous binding assay may depend on keeping the same protein in solution. Adherent cells need a surface that supports the intended attachment and phenotype. Those requirements can point to different plates before the optics enter the discussion.\n\n“Tissue-culture treated,” “high binding” and “low binding” are functional choices. They are not successive grades of laboratory quality. Corning, for example, describes a hydrophilic nonbinding treatment intended to reduce nonspecific molecular interactions, including protein adsorption. That does not establish that every reagent in every buffer will be unaffected. [2]\n\nThe quantities can be surprisingly small. A 10-microliter well containing a protein at 1 nM contains 10 femtomoles. For a 50-kDa protein, that is only 0.5 nanograms in the entire well. In a constructed example, loss of 0.1 nanograms to surfaces would remove 20% of the nominal protein amount.\n\nThat is a mass balance, not a prediction of how much a particular plate will bind. It explains why a seemingly minor surface interaction deserves attention when working at low concentrations. A reader cannot collect photons from a complex that never formed because one partner left the solution.\n\nCompare suitable surface treatments with the actual reagents, buffer, concentration and contact time. Inspect the titration curve and reference-compound behavior as well as the maximum signal. A blocking protein or detergent may help in some assays, but it can also affect binding or enzyme activity; test the remedy rather than treating it as inert.\n\nColor changes where the light goes\n\nWhite walls tend to return more light toward the detection path. Black walls absorb more stray light, often reducing fluorescence background and interwell leakage at the cost of signal. These are useful starting tendencies, not a ranking of assay quality. [3]\n\nTime-resolved fluorescence provides a good exception to the simple color rule. Revvity's HTRF development guide recommends white plates while also listing validated black formats. Its discussion distinguishes increased counts from the signal-to-noise comparison. Use the plate recommendation for the particular assay and reader, then verify it at the intended volume. [4]\n\nA clear bottom is another deliberate trade. It permits microscopy or bottom reading, but changes the optical path. Promega's CellTiter-Glo 2.0 manual notes diminished signal and greater crosstalk with opaque-walled, clear-bottom plates compared with the recommended opaque format. That is a reason to test the exact construction, not a prohibition on clear bottoms when imaging is needed. [5]\n\nEven an empty plate can contribute light. Revvity discusses phosphorescence from plate plastic and recommends dark adaptation for some white-plate luminescence workflows. [6] Include matrix-filled blanks with the same light exposure and handling history. A blank read immediately after opening a package is not necessarily representative of the blanks halfway through a screening queue.\n\nA tiny leakage percentage can be a large assay error\n\nSuppose a bright well measures 1,000,000 units, while a neighboring weak sample would otherwise measure 100. If 0.1% of the bright-well signal appears in that neighbor, it contributes another 1,000 units. The weak sample now reports 1,100: eleven times its intended signal.\n\nThese are illustrative numbers, not a specification for any plate or reader. The point is that leakage should be judged against the receiving well's useful signal, not only against the much larger source.\n\nA practical plate comparison needs both bright wells and quiet neighbors. Use isolated bright wells surrounded by matrix blanks, with remote blanks for comparison. Add a checkerboard pattern to examine the combined contribution of multiple neighbors. Test more than one brightness and include the intended detector settings.\n\nFor an isolated source, a simple operational estimate is:\n\nLeakage fraction = (Adjacent blank − Remote blank) divided by (Bright well − Remote blank)\n\nThis estimates the effect in that layout, optical configuration and signal range. Replicate the blank measurements, inspect directional differences and avoid quoting a stable percentage when the denominator is small or the response is nonlinear.\n\nElevated neighboring wells do not, by themselves, prove optical leakage. Liquid carryover, splashing and wicking can produce spatial patterns too. The Assay Guidance Manual explicitly discusses these routes of cross-contamination. [1] Prepare the optical test with careful handling and independent controls; use follow-up layouts or timing tests to separate light transfer from material transfer.\n\nRevvity's luminescence comparisons show why plate construction and color merit testing together: reductions in crosstalk can come with reductions in useful signal, and the balance differs among formats. [6] A dimmer plate can still support a better assay if it preserves the measurements that determine your hits.\n\nWorking volume changes the optical experiment\n\nThe maximum capacity in a catalog is not the recommended assay volume. Nor is a low-volume plate simply a standard plate with less liquid in it. Well depth, taper and cross-sectional area can differ. These changes affect liquid height and the reader's view of the sample. [1]\n\nRevisit focus or measurement height when changing plate geometry or volume. Test representative low, intermediate and high signals, and inspect uniformity and bright-neighbor effects. The setting with the largest count in one well need not give the best precision across a plate.\n\nGood focusing and effective isolation of neighboring wells are particularly valuable when the optical target is small. They should be judged together: efficient collection from the intended well is the objective. A broad collection region that gathers additional neighboring light can make a brightness optimization misleading.\n\nSpecify the actual plate definition in the reader software. Check compatibility with the liquid handler as well. A shallow well can put the bottom closer to a dispensing tip or pin tool; a plate that fits the carrier can still be wrong for the programmed motion. The manual flags this problem for low-volume formats. [1]\n\nThe plate also spends time outside the reader\n\nMiniaturization makes modest absolute volume losses consequential. If a 5-microliter reaction loses 0.5 microliters of water, its remaining nonvolatile solutes become about 11% more concentrated, assuming no precipitation, adsorption or reaction consumes them:\n\n(C subscript final) divided by (C subscript initial) = (V subscript initial) divided by (V subscript final) = (5) divided by (4.5) ≈ 1.11\n\nThe same half-microliter loss from 50 microliters raises concentration by only about 1%. This comparison assumes equal absolute losses to illustrate the arithmetic; actual evaporation depends on geometry, environment and time.\n\nEvaluate lids or seals, exposed dwell time and the real queue. Dry moving air and heat transfer can increase evaporative stress. A measurement chamber that limits unnecessary airflow and heat reaching the plate can help, but a chamber specification alone does not establish the liquid's temperature or volume stability. Check representative wells or sacrificial plates under the actual workflow. [1]\n\nTemperature matters even without measurable evaporation. Promega specifically calls for temperature equilibration in CellTiter-Glo 2.0 and warns about gradients associated with plate handling and stacking. [5] Keep these histories comparable when testing plate candidates. Otherwise a thermal difference can be mistaken for a better plastic.\n\nA small comparison that earns its plate budget\n\nChoose two or three plausible candidates based on biology and the assay manufacturer's guidance. Compare them with common reagent stocks and balanced preparation/read order. If candidates differ in several features, treat the result as a comparison of complete products; it cannot isolate which feature caused the difference.\n\nInclude four complementary checks:\n\n\nMatrix blanks and representative low, intermediate and high assay signals, using the intended volume.\nA complete assay titration and reference compound, to reveal changes hidden by a single bright control.\nIsolated bright wells and a checkerboard with blanks, to examine spatial contamination.\nA uniformity plate or distributed controls after realistic incubation and queue time, to expose positional effects.\n\n\nFor each candidate, retain raw signals, variability, background, reference-compound behavior and timing. Optimize legitimate reader settings for the candidate, record them, and compare the resulting usable performance. Match read time or required precision when the operational trade matters.\n\nConfirm the preferred plate with another lot before committing a long campaign. Record manufacturer, catalog number, lot, surface, bottom construction, working volume and reader settings. Keep an approved alternative if continuity of supply matters, but qualify it as an assay change.\n\nThe winning plate is the one that preserves the biology and measures it reliably through the workflow. The brightest plate has only won the brightness comparison.\n\nReferences\n\n1. Auld DS and colleagues. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual, June 1, 2020. Supplied project compilation, PDF pp. 1309–1344; surfaces, geometry, handling, lots and positional effects.\n\n2. Corning. Nonbinding surface treatment. Mechanism and intended applications. No universal adsorption capacity is assumed in the worked example.\n\n3. Corning. Microplates Product Selection Guide, especially the color and well-geometry guidance; an earlier selection guide is also retained in the project library.\n\n4. Revvity. A Guide to Developing Biochemical Assays with HTRF PPi Reagents, pp. 30–31. Plate types, working volumes and white/black comparisons within the guide's scope.\n\n5. Promega. CellTiter-Glo 2.0 Cell Viability Assay Technical Manual TM403. Revision 1/23, printed p. 10. Plate construction, crosstalk and temperature equilibration.\n\n6. Revvity. Microplates for Luminescence Assays. Phosphorescence and plate-dependent signal/crosstalk comparisons. Numerical examples in this article are constructed calculations, not measurements from this source.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Two plates have the same well count, the same color and reassuringly similar catalog photographs. The assay produces twice as much light in one of them. That difference needs an explanation before selecting the plate.",
+          "html": "<p>Two plates have the same well count, the same color and reassuringly similar catalog photographs. The assay produces twice as much light in one of them. That difference needs an explanation before selecting the plate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "First establish what changed. More light might reflect better collection. It might also reflect a different amount of protein remaining in solution, a changed cell population, higher background or light arriving from the well next door.",
+          "html": "<p>First establish what changed. More light might reflect better collection. It might also reflect a different amount of protein remaining in solution, a changed cell population, higher background or light arriving from the well next door.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Microplate selection is part of assay development because the plate participates in both the chemistry and the measurement. The Assay Guidance Manual treats surface properties, optical behavior and plate handling as connected decisions. [1] That is a more useful starting point than “white for luminescence, black for fluorescence,” although those familiar rules have their uses.",
+          "html": "<p>Microplate selection is part of assay development because the plate participates in both the chemistry and the measurement. The Assay Guidance Manual treats surface properties, optical behavior and plate handling as connected decisions. [1] That is a more useful starting point than “white for luminescence, black for fluorescence,” although those familiar rules have their uses.</p>"
+        }
+      ]
+    },
+    {
+      "id": "choose-the-surface-before-choosing-the-color",
+      "heading": "Choose the surface before choosing the color",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Choose the surface before choosing the color",
+          "html": "<h2 id=\"choose-the-surface-before-choosing-the-color\">Choose the surface before choosing the color</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Begin with what must happen at the wall. An ELISA may depend on immobilizing protein there. A homogeneous binding assay may depend on keeping the same protein in solution. Adherent cells need a surface that supports the intended attachment and phenotype. Those requirements can point to different plates before the optics enter the discussion.",
+          "html": "<p>Begin with what must happen at the wall. An ELISA may depend on immobilizing protein there. A homogeneous binding assay may depend on keeping the same protein in solution. Adherent cells need a surface that supports the intended attachment and phenotype. Those requirements can point to different plates before the optics enter the discussion.</p>"
+        },
+        {
+          "type": "p",
+          "text": "“Tissue-culture treated,” “high binding” and “low binding” are functional choices. They are not successive grades of laboratory quality. Corning, for example, describes a hydrophilic nonbinding treatment intended to reduce nonspecific molecular interactions, including protein adsorption. That does not establish that every reagent in every buffer will be unaffected. [2]",
+          "html": "<p>“Tissue-culture treated,” “high binding” and “low binding” are functional choices. They are not successive grades of laboratory quality. Corning, for example, describes a hydrophilic nonbinding treatment intended to reduce nonspecific molecular interactions, including protein adsorption. That does not establish that every reagent in every buffer will be unaffected. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The quantities can be surprisingly small. A 10-microliter well containing a protein at 1 nM contains 10 femtomoles. For a 50-kDa protein, that is only 0.5 nanograms in the entire well. In a constructed example, loss of 0.1 nanograms to surfaces would remove 20% of the nominal protein amount.",
+          "html": "<p>The quantities can be surprisingly small. A 10-microliter well containing a protein at 1 nM contains 10 femtomoles. For a 50-kDa protein, that is only 0.5 nanograms in the entire well. In a constructed example, loss of 0.1 nanograms to surfaces would remove 20% of the nominal protein amount.</p>"
+        },
+        {
+          "type": "p",
+          "text": "That is a mass balance, not a prediction of how much a particular plate will bind. It explains why a seemingly minor surface interaction deserves attention when working at low concentrations. A reader cannot collect photons from a complex that never formed because one partner left the solution.",
+          "html": "<p>That is a mass balance, not a prediction of how much a particular plate will bind. It explains why a seemingly minor surface interaction deserves attention when working at low concentrations. A reader cannot collect photons from a complex that never formed because one partner left the solution.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare suitable surface treatments with the actual reagents, buffer, concentration and contact time. Inspect the titration curve and reference-compound behavior as well as the maximum signal. A blocking protein or detergent may help in some assays, but it can also affect binding or enzyme activity; test the remedy rather than treating it as inert.",
+          "html": "<p>Compare suitable surface treatments with the actual reagents, buffer, concentration and contact time. Inspect the titration curve and reference-compound behavior as well as the maximum signal. A blocking protein or detergent may help in some assays, but it can also affect binding or enzyme activity; test the remedy rather than treating it as inert.</p>"
+        }
+      ]
+    },
+    {
+      "id": "color-changes-where-the-light-goes",
+      "heading": "Color changes where the light goes",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Color changes where the light goes",
+          "html": "<h2 id=\"color-changes-where-the-light-goes\">Color changes where the light goes</h2>"
+        },
+        {
+          "type": "p",
+          "text": "White walls tend to return more light toward the detection path. Black walls absorb more stray light, often reducing fluorescence background and interwell leakage at the cost of signal. These are useful starting tendencies, not a ranking of assay quality. [3]",
+          "html": "<p>White walls tend to return more light toward the detection path. Black walls absorb more stray light, often reducing fluorescence background and interwell leakage at the cost of signal. These are useful starting tendencies, not a ranking of assay quality. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Time-resolved fluorescence provides a good exception to the simple color rule. Revvity's HTRF development guide recommends white plates while also listing validated black formats. Its discussion distinguishes increased counts from the signal-to-noise comparison. Use the plate recommendation for the particular assay and reader, then verify it at the intended volume. [4]",
+          "html": "<p>Time-resolved fluorescence provides a good exception to the simple color rule. Revvity's HTRF development guide recommends white plates while also listing validated black formats. Its discussion distinguishes increased counts from the signal-to-noise comparison. Use the plate recommendation for the particular assay and reader, then verify it at the intended volume. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A clear bottom is another deliberate trade. It permits microscopy or bottom reading, but changes the optical path. Promega's CellTiter-Glo 2.0 manual notes diminished signal and greater crosstalk with opaque-walled, clear-bottom plates compared with the recommended opaque format. That is a reason to test the exact construction, not a prohibition on clear bottoms when imaging is needed. [5]",
+          "html": "<p>A clear bottom is another deliberate trade. It permits microscopy or bottom reading, but changes the optical path. Promega's CellTiter-Glo 2.0 manual notes diminished signal and greater crosstalk with opaque-walled, clear-bottom plates compared with the recommended opaque format. That is a reason to test the exact construction, not a prohibition on clear bottoms when imaging is needed. [5]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Even an empty plate can contribute light. Revvity discusses phosphorescence from plate plastic and recommends dark adaptation for some white-plate luminescence workflows. [6] Include matrix-filled blanks with the same light exposure and handling history. A blank read immediately after opening a package is not necessarily representative of the blanks halfway through a screening queue.",
+          "html": "<p>Even an empty plate can contribute light. Revvity discusses phosphorescence from plate plastic and recommends dark adaptation for some white-plate luminescence workflows. [6] Include matrix-filled blanks with the same light exposure and handling history. A blank read immediately after opening a package is not necessarily representative of the blanks halfway through a screening queue.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-tiny-leakage-percentage-can-be-a-large-assay-error",
+      "heading": "A tiny leakage percentage can be a large assay error",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A tiny leakage percentage can be a large assay error",
+          "html": "<h2 id=\"a-tiny-leakage-percentage-can-be-a-large-assay-error\">A tiny leakage percentage can be a large assay error</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose a bright well measures 1,000,000 units, while a neighboring weak sample would otherwise measure 100. If 0.1% of the bright-well signal appears in that neighbor, it contributes another 1,000 units. The weak sample now reports 1,100: eleven times its intended signal.",
+          "html": "<p>Suppose a bright well measures 1,000,000 units, while a neighboring weak sample would otherwise measure 100. If 0.1% of the bright-well signal appears in that neighbor, it contributes another 1,000 units. The weak sample now reports 1,100: eleven times its intended signal.</p>"
+        },
+        {
+          "type": "p",
+          "text": "These are illustrative numbers, not a specification for any plate or reader. The point is that leakage should be judged against the receiving well's useful signal, not only against the much larger source.",
+          "html": "<p>These are illustrative numbers, not a specification for any plate or reader. The point is that leakage should be judged against the receiving well's useful signal, not only against the much larger source.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A practical plate comparison needs both bright wells and quiet neighbors. Use isolated bright wells surrounded by matrix blanks, with remote blanks for comparison. Add a checkerboard pattern to examine the combined contribution of multiple neighbors. Test more than one brightness and include the intended detector settings.",
+          "html": "<p>A practical plate comparison needs both bright wells and quiet neighbors. Use isolated bright wells surrounded by matrix blanks, with remote blanks for comparison. Add a checkerboard pattern to examine the combined contribution of multiple neighbors. Test more than one brightness and include the intended detector settings.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For an isolated source, a simple operational estimate is:",
+          "html": "<p>For an isolated source, a simple operational estimate is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Leakage fraction = (Adjacent blank − Remote blank) divided by (Bright well − Remote blank)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Leakage fraction = (Adjacent blank − Remote blank) divided by (Bright well − Remote blank)\"><mrow><mrow><mtext>Leakage fraction = </mtext></mrow><mfrac><mrow><mrow><mtext>Adjacent blank − Remote blank</mtext></mrow></mrow><mrow><mrow><mtext>Bright well − Remote blank</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "This estimates the effect in that layout, optical configuration and signal range. Replicate the blank measurements, inspect directional differences and avoid quoting a stable percentage when the denominator is small or the response is nonlinear.",
+          "html": "<p>This estimates the effect in that layout, optical configuration and signal range. Replicate the blank measurements, inspect directional differences and avoid quoting a stable percentage when the denominator is small or the response is nonlinear.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Elevated neighboring wells do not, by themselves, prove optical leakage. Liquid carryover, splashing and wicking can produce spatial patterns too. The Assay Guidance Manual explicitly discusses these routes of cross-contamination. [1] Prepare the optical test with careful handling and independent controls; use follow-up layouts or timing tests to separate light transfer from material transfer.",
+          "html": "<p>Elevated neighboring wells do not, by themselves, prove optical leakage. Liquid carryover, splashing and wicking can produce spatial patterns too. The Assay Guidance Manual explicitly discusses these routes of cross-contamination. [1] Prepare the optical test with careful handling and independent controls; use follow-up layouts or timing tests to separate light transfer from material transfer.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's luminescence comparisons show why plate construction and color merit testing together: reductions in crosstalk can come with reductions in useful signal, and the balance differs among formats. [6] A dimmer plate can still support a better assay if it preserves the measurements that determine your hits.",
+          "html": "<p>Revvity's luminescence comparisons show why plate construction and color merit testing together: reductions in crosstalk can come with reductions in useful signal, and the balance differs among formats. [6] A dimmer plate can still support a better assay if it preserves the measurements that determine your hits.</p>"
+        }
+      ]
+    },
+    {
+      "id": "working-volume-changes-the-optical-experiment",
+      "heading": "Working volume changes the optical experiment",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Working volume changes the optical experiment",
+          "html": "<h2 id=\"working-volume-changes-the-optical-experiment\">Working volume changes the optical experiment</h2>"
+        },
+        {
+          "type": "p",
+          "text": "The maximum capacity in a catalog is not the recommended assay volume. Nor is a low-volume plate simply a standard plate with less liquid in it. Well depth, taper and cross-sectional area can differ. These changes affect liquid height and the reader's view of the sample. [1]",
+          "html": "<p>The maximum capacity in a catalog is not the recommended assay volume. Nor is a low-volume plate simply a standard plate with less liquid in it. Well depth, taper and cross-sectional area can differ. These changes affect liquid height and the reader's view of the sample. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revisit focus or measurement height when changing plate geometry or volume. Test representative low, intermediate and high signals, and inspect uniformity and bright-neighbor effects. The setting with the largest count in one well need not give the best precision across a plate.",
+          "html": "<p>Revisit focus or measurement height when changing plate geometry or volume. Test representative low, intermediate and high signals, and inspect uniformity and bright-neighbor effects. The setting with the largest count in one well need not give the best precision across a plate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Good focusing and effective isolation of neighboring wells are particularly valuable when the optical target is small. They should be judged together: efficient collection from the intended well is the objective. A broad collection region that gathers additional neighboring light can make a brightness optimization misleading.",
+          "html": "<p>Good focusing and effective isolation of neighboring wells are particularly valuable when the optical target is small. They should be judged together: efficient collection from the intended well is the objective. A broad collection region that gathers additional neighboring light can make a brightness optimization misleading.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Specify the actual plate definition in the reader software. Check compatibility with the liquid handler as well. A shallow well can put the bottom closer to a dispensing tip or pin tool; a plate that fits the carrier can still be wrong for the programmed motion. The manual flags this problem for low-volume formats. [1]",
+          "html": "<p>Specify the actual plate definition in the reader software. Check compatibility with the liquid handler as well. A shallow well can put the bottom closer to a dispensing tip or pin tool; a plate that fits the carrier can still be wrong for the programmed motion. The manual flags this problem for low-volume formats. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-plate-also-spends-time-outside-the-reader",
+      "heading": "The plate also spends time outside the reader",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The plate also spends time outside the reader",
+          "html": "<h2 id=\"the-plate-also-spends-time-outside-the-reader\">The plate also spends time outside the reader</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Miniaturization makes modest absolute volume losses consequential. If a 5-microliter reaction loses 0.5 microliters of water, its remaining nonvolatile solutes become about 11% more concentrated, assuming no precipitation, adsorption or reaction consumes them:",
+          "html": "<p>Miniaturization makes modest absolute volume losses consequential. If a 5-microliter reaction loses 0.5 microliters of water, its remaining nonvolatile solutes become about 11% more concentrated, assuming no precipitation, adsorption or reaction consumes them:</p>"
+        },
+        {
+          "type": "div",
+          "text": "(C subscript final) divided by (C subscript initial) = (V subscript initial) divided by (V subscript final) = (5) divided by (4.5) ≈ 1.11",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"(C subscript final) divided by (C subscript initial) = (V subscript initial) divided by (V subscript final) = (5) divided by (4.5) ≈ 1.11\"><mrow><mfrac><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>initial</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>V</mtext></mrow></mrow><mrow><mrow><mtext>initial</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>V</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><mrow><mtext>5</mtext></mrow></mrow><mrow><mrow><mtext>4.5</mtext></mrow></mrow></mfrac><mrow><mtext> ≈ 1.11</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "The same half-microliter loss from 50 microliters raises concentration by only about 1%. This comparison assumes equal absolute losses to illustrate the arithmetic; actual evaporation depends on geometry, environment and time.",
+          "html": "<p>The same half-microliter loss from 50 microliters raises concentration by only about 1%. This comparison assumes equal absolute losses to illustrate the arithmetic; actual evaporation depends on geometry, environment and time.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Evaluate lids or seals, exposed dwell time and the real queue. Dry moving air and heat transfer can increase evaporative stress. A measurement chamber that limits unnecessary airflow and heat reaching the plate can help, but a chamber specification alone does not establish the liquid's temperature or volume stability. Check representative wells or sacrificial plates under the actual workflow. [1]",
+          "html": "<p>Evaluate lids or seals, exposed dwell time and the real queue. Dry moving air and heat transfer can increase evaporative stress. A measurement chamber that limits unnecessary airflow and heat reaching the plate can help, but a chamber specification alone does not establish the liquid's temperature or volume stability. Check representative wells or sacrificial plates under the actual workflow. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Temperature matters even without measurable evaporation. Promega specifically calls for temperature equilibration in CellTiter-Glo 2.0 and warns about gradients associated with plate handling and stacking. [5] Keep these histories comparable when testing plate candidates. Otherwise a thermal difference can be mistaken for a better plastic.",
+          "html": "<p>Temperature matters even without measurable evaporation. Promega specifically calls for temperature equilibration in CellTiter-Glo 2.0 and warns about gradients associated with plate handling and stacking. [5] Keep these histories comparable when testing plate candidates. Otherwise a thermal difference can be mistaken for a better plastic.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-small-comparison-that-earns-its-plate-budget",
+      "heading": "A small comparison that earns its plate budget",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A small comparison that earns its plate budget",
+          "html": "<h2 id=\"a-small-comparison-that-earns-its-plate-budget\">A small comparison that earns its plate budget</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Choose two or three plausible candidates based on biology and the assay manufacturer's guidance. Compare them with common reagent stocks and balanced preparation/read order. If candidates differ in several features, treat the result as a comparison of complete products; it cannot isolate which feature caused the difference.",
+          "html": "<p>Choose two or three plausible candidates based on biology and the assay manufacturer's guidance. Compare them with common reagent stocks and balanced preparation/read order. If candidates differ in several features, treat the result as a comparison of complete products; it cannot isolate which feature caused the difference.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Include four complementary checks:",
+          "html": "<p>Include four complementary checks:</p>"
+        },
+        {
+          "type": "ul",
+          "text": "\nMatrix blanks and representative low, intermediate and high assay signals, using the intended volume.\nA complete assay titration and reference compound, to reveal changes hidden by a single bright control.\nIsolated bright wells and a checkerboard with blanks, to examine spatial contamination.\nA uniformity plate or distributed controls after realistic incubation and queue time, to expose positional effects.\n",
+          "html": "<ul>\n<li>Matrix blanks and representative low, intermediate and high assay signals, using the intended volume.</li>\n<li>A complete assay titration and reference compound, to reveal changes hidden by a single bright control.</li>\n<li>Isolated bright wells and a checkerboard with blanks, to examine spatial contamination.</li>\n<li>A uniformity plate or distributed controls after realistic incubation and queue time, to expose positional effects.</li>\n</ul>"
+        },
+        {
+          "type": "p",
+          "text": "For each candidate, retain raw signals, variability, background, reference-compound behavior and timing. Optimize legitimate reader settings for the candidate, record them, and compare the resulting usable performance. Match read time or required precision when the operational trade matters.",
+          "html": "<p>For each candidate, retain raw signals, variability, background, reference-compound behavior and timing. Optimize legitimate reader settings for the candidate, record them, and compare the resulting usable performance. Match read time or required precision when the operational trade matters.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Confirm the preferred plate with another lot before committing a long campaign. Record manufacturer, catalog number, lot, surface, bottom construction, working volume and reader settings. Keep an approved alternative if continuity of supply matters, but qualify it as an assay change.",
+          "html": "<p>Confirm the preferred plate with another lot before committing a long campaign. Record manufacturer, catalog number, lot, surface, bottom construction, working volume and reader settings. Keep an approved alternative if continuity of supply matters, but qualify it as an assay change.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The winning plate is the one that preserves the biology and measures it reliably through the workflow. The brightest plate has only won the brightness comparison.",
+          "html": "<p>The winning plate is the one that preserves the biology and measures it reliably through the workflow. The brightest plate has only won the brightness comparison.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Auld DS and colleagues. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual, June 1, 2020. Supplied project compilation, PDF pp. 1309–1344; surfaces, geometry, handling, lots and positional effects.",
+          "html": "<p id=\"ref-1\">1. Auld DS and colleagues. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual, June 1, 2020. Supplied project compilation, PDF pp. 1309–1344; surfaces, geometry, handling, lots and positional effects.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Corning. Nonbinding surface treatment. Mechanism and intended applications. No universal adsorption capacity is assumed in the worked example.",
+          "html": "<p id=\"ref-2\">2. Corning. <a href=\"https://www.corning.com/cala/en/products/life-sciences/products/microplates/biochemical-assay-microplates/non-binding-surface.html\">Nonbinding surface treatment</a>. Mechanism and intended applications. No universal adsorption capacity is assumed in the worked example.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Corning. Microplates Product Selection Guide, especially the color and well-geometry guidance; an earlier selection guide is also retained in the project library.",
+          "html": "<p id=\"ref-3\">3. Corning. <a href=\"https://www.corning.com/content/dam/corning/catalog/cls/documents/selection-guides/CLS-DD-081.pdf\">Microplates Product Selection Guide</a>, especially the color and well-geometry guidance; an earlier selection guide is also retained in the project library.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Revvity. A Guide to Developing Biochemical Assays with HTRF PPi Reagents, pp. 30–31. Plate types, working volumes and white/black comparisons within the guide's scope.",
+          "html": "<p id=\"ref-4\">4. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-reagents-htrf-ppi-assays.pdf\">A Guide to Developing Biochemical Assays with HTRF PPi Reagents</a>, pp. 30–31. Plate types, working volumes and white/black comparisons within the guide's scope.</p>"
+        },
+        {
+          "type": "p",
+          "text": "5. Promega. CellTiter-Glo 2.0 Cell Viability Assay Technical Manual TM403. Revision 1/23, printed p. 10. Plate construction, crosstalk and temperature equilibration.",
+          "html": "<p id=\"ref-5\">5. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en\">CellTiter-Glo 2.0 Cell Viability Assay Technical Manual TM403</a>. Revision 1/23, printed p. 10. Plate construction, crosstalk and temperature equilibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "6. Revvity. Microplates for Luminescence Assays. Phosphorescence and plate-dependent signal/crosstalk comparisons. Numerical examples in this article are constructed calculations, not measurements from this source.",
+          "html": "<p id=\"ref-6\">6. Revvity. <a href=\"https://www.revvity.com/ask/microplates-luminescence-assays\">Microplates for Luminescence Assays</a>. Phosphorescence and plate-dependent signal/crosstalk comparisons. Numerical examples in this article are constructed calculations, not measurements from this source.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Auld DS and colleagues. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual, June 1, 2020. Supplied project compilation, PDF pp. 1309–1344; surfaces, geometry, handling, lots and positional effects.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558077/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Corning. Nonbinding surface treatment. Mechanism and intended applications. No universal adsorption capacity is assumed in the worked example.",
+      "urls": [
+        "https://www.corning.com/cala/en/products/life-sciences/products/microplates/biochemical-assay-microplates/non-binding-surface.html"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Corning. Microplates Product Selection Guide, especially the color and well-geometry guidance; an earlier selection guide is also retained in the project library.",
+      "urls": [
+        "https://www.corning.com/content/dam/corning/catalog/cls/documents/selection-guides/CLS-DD-081.pdf"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Revvity. A Guide to Developing Biochemical Assays with HTRF PPi Reagents, pp. 30–31. Plate types, working volumes and white/black comparisons within the guide's scope.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-reagents-htrf-ppi-assays.pdf"
+      ]
+    },
+    {
+      "id": "ref-5",
+      "citation": "5. Promega. CellTiter-Glo 2.0 Cell Viability Assay Technical Manual TM403. Revision 1/23, printed p. 10. Plate construction, crosstalk and temperature equilibration.",
+      "urls": [
+        "https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en"
+      ]
+    },
+    {
+      "id": "ref-6",
+      "citation": "6. Revvity. Microplates for Luminescence Assays. Phosphorescence and plate-dependent signal/crosstalk comparisons. Numerical examples in this article are constructed calculations, not measurements from this source.",
+      "urls": [
+        "https://www.revvity.com/ask/microplates-luminescence-assays"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "Leakage fraction = (Adjacent blank − Remote blank) divided by (Bright well − Remote blank)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Leakage fraction = (Adjacent blank − Remote blank) divided by (Bright well − Remote blank)\"><mrow><mrow><mtext>Leakage fraction = </mtext></mrow><mfrac><mrow><mrow><mtext>Adjacent blank − Remote blank</mtext></mrow></mrow><mrow><mrow><mtext>Bright well − Remote blank</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "(C subscript final) divided by (C subscript initial) = (V subscript initial) divided by (V subscript final) = (5) divided by (4.5) ≈ 1.11",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"(C subscript final) divided by (C subscript initial) = (V subscript initial) divided by (V subscript final) = (5) divided by (4.5) ≈ 1.11\"><mrow><mfrac><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>initial</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>V</mtext></mrow></mrow><mrow><mrow><mtext>initial</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>V</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub></mrow></mfrac><mrow><mtext> = </mtext></mrow><mfrac><mrow><mrow><mtext>5</mtext></mrow></mrow><mrow><mrow><mtext>4.5</mtext></mrow></mrow></mfrac><mrow><mtext> ≈ 1.11</mtext></mrow></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "1110f8534da6603c3b4f2d6b8285a4d5a70fb0454ce55daae0a5f7b105fc6a23"
+}

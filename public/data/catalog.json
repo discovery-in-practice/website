@@ -1048,5 +1048,190 @@
     "date_modified": "2026-10-05",
     "json_url": "https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/article.md"
+  },
+  {
+    "id": "choosing-microplates-surface-color-crosstalk",
+    "title": "Choosing a microplate: the plastic is part of the assay",
+    "canonical_url": "https://discoveryinpractice.com/articles/choosing-microplates-surface-color-crosstalk/",
+    "summary": "Choose microplates by surface, color, geometry and working volume. Use practical tests to separate useful signal from adsorption, crosstalk and evaporation.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Microplates",
+      "Crosstalk",
+      "Assay development"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "1110f8534da6603c3b4f2d6b8285a4d5a70fb0454ce55daae0a5f7b105fc6a23",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/choosing-microplates-surface-color-crosstalk/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/choosing-microplates-surface-color-crosstalk/article.md"
+  },
+  {
+    "id": "z-prime-linearity-screen-qualification",
+    "title": "Controls can look better when the detector stops telling the truth",
+    "canonical_url": "https://discoveryinpractice.com/articles/z-prime-linearity-screen-qualification/",
+    "summary": "Tight controls can conceal signal compression. Qualify intermediate responses, optical linearity, crosstalk and temperature before accepting a screening window.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Z-prime",
+      "Detector linearity",
+      "Assay qualification"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "6d69bd372a3f562f7ed8a4958122ad409b494cfeedab6d1aa0e91af5e436ca65",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/z-prime-linearity-screen-qualification/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/z-prime-linearity-screen-qualification/article.md"
+  },
+  {
+    "id": "crosstalk-384-1536-well-plates",
+    "title": "What causes crosstalk in 384- and 1536-well plates?",
+    "canonical_url": "https://discoveryinpractice.com/articles/crosstalk-384-1536-well-plates/",
+    "summary": "Find the optical causes of microplate crosstalk, test bright-neighbor interference and distinguish leakage from sample carryover.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Crosstalk",
+      "Microplates",
+      "1536-well assays"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "0524dc25f4b566beb94805ca01df7aaacada70f682f49c7fa56b8d0d2f10fa24",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/crosstalk-384-1536-well-plates/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/crosstalk-384-1536-well-plates/article.md"
+  },
+  {
+    "id": "crosstalk-correction-weak-well-noise",
+    "title": "Why can crosstalk correction fix the mean but leave weak wells unreliable?",
+    "canonical_url": "https://discoveryinpractice.com/articles/crosstalk-correction-weak-well-noise/",
+    "summary": "See why subtracting crosstalk can correct a mean while leaving photon noise, and how to test optical suppression and correction independently.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Crosstalk",
+      "Photon counting",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "ee1682852ec0e20a24e309f158ddc1455093735dece9d1669db7fd3e8b59f4ee",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/crosstalk-correction-weak-well-noise/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/crosstalk-correction-weak-well-noise/article.md"
+  },
+  {
+    "id": "plate-edge-effect-evaporation-temperature-cells",
+    "title": "What causes a plate edge effect: evaporation, temperature or cell biology?",
+    "canonical_url": "https://discoveryinpractice.com/articles/plate-edge-effect-evaporation-temperature-cells/",
+    "summary": "Diagnose microplate edge effects with volume, temperature and cell-distribution checks before applying corrections or changing the assay workflow.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Microplates",
+      "Evaporation"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "98150b459c43a6c39147df179d2568b18e6aaccc64ccea94227e1c009b1878eb",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/plate-edge-effect-evaporation-temperature-cells/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/plate-edge-effect-evaporation-temperature-cells/article.md"
+  },
+  {
+    "id": "low-z-prime-384-to-1536-wells",
+    "title": "Why does my assay have low Z-prime after moving from 384 to 1536 wells?",
+    "canonical_url": "https://discoveryinpractice.com/articles/low-z-prime-384-to-1536-wells/",
+    "summary": "Diagnose low Z-prime after miniaturizing from 384 to 1536 wells, including photon counts, cell loading, evaporation and read geometry.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "1536-well assays",
+      "Z-prime",
+      "Assay precision"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "7199831e97962d48201202bc90863af05d65e6470646d24ca1387caa29b9c2ac",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/low-z-prime-384-to-1536-wells/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/low-z-prime-384-to-1536-wells/article.md"
+  },
+  {
+    "id": "microplate-absorbance-volume-pathlength",
+    "title": "Why does absorbance change when I change the volume, even at the same concentration?",
+    "canonical_url": "https://discoveryinpractice.com/articles/microplate-absorbance-volume-pathlength/",
+    "summary": "Understand why constant-concentration samples give different absorbance at different volumes, and when pathlength correction can help.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Absorbance",
+      "Pathlength",
+      "Microplates"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "f0e558392e82b51601700fef66f52eafa2aec22e954b5e2de7c7eb25d723b376",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/microplate-absorbance-volume-pathlength/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/microplate-absorbance-volume-pathlength/article.md"
+  },
+  {
+    "id": "plate-lid-sealing-film-reader-results",
+    "title": "Can a plate lid or sealing film change my fluorescence, luminescence or absorbance results?",
+    "canonical_url": "https://discoveryinpractice.com/articles/plate-lid-sealing-film-reader-results/",
+    "summary": "Check transmission, fluorescence, condensation and read geometry before using a lid or sealing film during microplate measurements.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Microplates",
+      "Fluorescence",
+      "Absorbance",
+      "Luminescence"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "106fcb9c979ba0ade02934f391bda5f1e3edf4a122679b70f14d10449540558c",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-06",
+    "date_modified": "2026-10-06",
+    "json_url": "https://discoveryinpractice.com/articles/plate-lid-sealing-film-reader-results/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/plate-lid-sealing-film-reader-results/article.md"
   }
 ]

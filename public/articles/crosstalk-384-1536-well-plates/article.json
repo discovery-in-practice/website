@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "crosstalk-384-1536-well-plates",
+  "canonical_url": "https://discoveryinpractice.com/articles/crosstalk-384-1536-well-plates/",
+  "title": "What causes crosstalk in 384- and 1536-well plates?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Find the optical causes of microplate crosstalk, test bright-neighbor interference and distinguish leakage from sample carryover.",
+  "takeaways": [
+    "A small percentage can be a large assay error",
+    "Check the well walls and the plate bottom",
+    "Test a layout that can reveal the source"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Crosstalk",
+    "Microplates",
+    "1536-well assays"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-06",
+  "date_modified": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Optical crosstalk occurs when the detector assigned to one well also collects light originating in another. It depends on the plate's optical isolation and the reader's collection geometry. In dense plates, a weak well beside a bright sample is vulnerable; the size of the effect depends on leakage and neighbor brightness. [1]</p><h2 id=\"a-small-percentage-can-be-a-large-assay-error\">A small percentage can be a large assay error</h2><p>Consider a constructed example on a linear signal scale. A bright well emits a signal corresponding to 1,000,000 relative light units (RLU), and 0.01% of that response appears in its neighbor's reading. The neighbor acquires 100 RLU of unwanted signal. If its true signal is 100 RLU, the measured result doubles. If its true signal is 10,000 RLU, the same leakage raises it by only 1%.</p><p>The same leakage fraction produces very different errors in the two samples. That is why a plate containing only equally bright standards can be a poor challenge for interwell isolation.</p><p>Light can reach the detector through inadequately opaque material or through collection paths that admit neighboring emission. Masking, apertures, focus and plate positioning can limit those paths. Promega's bioluminescence guidance emphasizes isolating the measured well and using opaque plates; its comparison includes bright wells beside nominally empty positions. [1]</p><h2 id=\"check-the-well-walls-and-the-plate-bottom\">Check the well walls and the plate bottom</h2><p>For luminescence, white opaque wells often provide useful signal, but a white plate with a transparent bottom behaves differently from a fully opaque plate. Promega's CellTiter-Glo 2.0 manual warns that clear-bottom plates can give lower signal and greater crosstalk. Check the actual plate construction, including the base and any permitted backing. [2]</p><p>Fluorescence adds an excitation path: illumination or scattered light may reach material outside the intended measurement region. The appropriate plate, optical footprint and read height therefore need checking in the actual detection mode. Check fluorescence crosstalk in the intended excitation and collection geometry.</p><h2 id=\"test-a-layout-that-can-reveal-the-source\">Test a layout that can reveal the source</h2><p>Prepare an isolated bright well surrounded by blanks and low positives, with equivalent controls far from the bright well. Include a separate all-blank plate and repeat at several source intensities within the verified linear range. Use the same plate type, volume and reader settings planned for screening.</p><p>Map the excess signal by distance and direction. Then move the bright source in a newly prepared layout. Excess light that follows the source supports optical leakage. A pattern that follows measurement order warrants a separate check for detector recovery or acquisition history. Neither pattern alone proves that sample preparation was clean.</p><p>Optical crosstalk differs from reagent contamination, splashing and injector carryover. Material transferred into a blank can generate a real local signal. Use fresh preparations and appropriate dispensing controls to distinguish these possibilities before adjusting the optics.</p><p>For a glow assay, keep assay age and temperature comparable during the challenge. CellTiter-Glo 2.0 calls for room-temperature equilibration and signal stabilization. A stable near-room-temperature chamber helps keep bright-source output consistent while nearby and distant wells are compared. [2]</p><h2 id=\"block-unwanted-light-before-correcting-its-average\">Block unwanted light before correcting its average</h2><p>Optimize plate opacity, reader masking, focus and positioning using the weak responses that matter to the assay. Software correction can subtract an estimated contribution, but it cannot remove the random photon arrivals already added to the measurement. Coefficients may also change with plate geometry or source position.</p><p>If correction is needed, retain raw readings and test it on independently prepared layouts. Judge success by recovery and precision of the low positives beside bright wells. Keep the adjacent low-positive challenge in the method qualification; distant blanks can miss the interference.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Wieczorek D, Hooper K, Bjerke M. Promega. <a href=\"https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/\">How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results</a>, June 2019, tpub_212. Well isolation, opacity and bright-neighbor testing; historical product rankings are not generalized.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, archived revision January 2023, PDF pp. 7 and 11. Temperature, stabilization and clear-bottom plate caveats.</p>",
+  "body_text": "Optical crosstalk occurs when the detector assigned to one well also collects light originating in another. It depends on the plate's optical isolation and the reader's collection geometry. In dense plates, a weak well beside a bright sample is vulnerable; the size of the effect depends on leakage and neighbor brightness. [1]\n\nA small percentage can be a large assay error\n\nConsider a constructed example on a linear signal scale. A bright well emits a signal corresponding to 1,000,000 relative light units (RLU), and 0.01% of that response appears in its neighbor's reading. The neighbor acquires 100 RLU of unwanted signal. If its true signal is 100 RLU, the measured result doubles. If its true signal is 10,000 RLU, the same leakage raises it by only 1%.\n\nThe same leakage fraction produces very different errors in the two samples. That is why a plate containing only equally bright standards can be a poor challenge for interwell isolation.\n\nLight can reach the detector through inadequately opaque material or through collection paths that admit neighboring emission. Masking, apertures, focus and plate positioning can limit those paths. Promega's bioluminescence guidance emphasizes isolating the measured well and using opaque plates; its comparison includes bright wells beside nominally empty positions. [1]\n\nCheck the well walls and the plate bottom\n\nFor luminescence, white opaque wells often provide useful signal, but a white plate with a transparent bottom behaves differently from a fully opaque plate. Promega's CellTiter-Glo 2.0 manual warns that clear-bottom plates can give lower signal and greater crosstalk. Check the actual plate construction, including the base and any permitted backing. [2]\n\nFluorescence adds an excitation path: illumination or scattered light may reach material outside the intended measurement region. The appropriate plate, optical footprint and read height therefore need checking in the actual detection mode. Check fluorescence crosstalk in the intended excitation and collection geometry.\n\nTest a layout that can reveal the source\n\nPrepare an isolated bright well surrounded by blanks and low positives, with equivalent controls far from the bright well. Include a separate all-blank plate and repeat at several source intensities within the verified linear range. Use the same plate type, volume and reader settings planned for screening.\n\nMap the excess signal by distance and direction. Then move the bright source in a newly prepared layout. Excess light that follows the source supports optical leakage. A pattern that follows measurement order warrants a separate check for detector recovery or acquisition history. Neither pattern alone proves that sample preparation was clean.\n\nOptical crosstalk differs from reagent contamination, splashing and injector carryover. Material transferred into a blank can generate a real local signal. Use fresh preparations and appropriate dispensing controls to distinguish these possibilities before adjusting the optics.\n\nFor a glow assay, keep assay age and temperature comparable during the challenge. CellTiter-Glo 2.0 calls for room-temperature equilibration and signal stabilization. A stable near-room-temperature chamber helps keep bright-source output consistent while nearby and distant wells are compared. [2]\n\nBlock unwanted light before correcting its average\n\nOptimize plate opacity, reader masking, focus and positioning using the weak responses that matter to the assay. Software correction can subtract an estimated contribution, but it cannot remove the random photon arrivals already added to the measurement. Coefficients may also change with plate geometry or source position.\n\nIf correction is needed, retain raw readings and test it on independently prepared layouts. Judge success by recovery and precision of the low positives beside bright wells. Keep the adjacent low-positive challenge in the method qualification; distant blanks can miss the interference.\n\nReferences\n\n1. Wieczorek D, Hooper K, Bjerke M. Promega. How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results, June 2019, tpub_212. Well isolation, opacity and bright-neighbor testing; historical product rankings are not generalized.\n\n2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, PDF pp. 7 and 11. Temperature, stabilization and clear-bottom plate caveats.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Optical crosstalk occurs when the detector assigned to one well also collects light originating in another. It depends on the plate's optical isolation and the reader's collection geometry. In dense plates, a weak well beside a bright sample is vulnerable; the size of the effect depends on leakage and neighbor brightness. [1]",
+          "html": "<p>Optical crosstalk occurs when the detector assigned to one well also collects light originating in another. It depends on the plate's optical isolation and the reader's collection geometry. In dense plates, a weak well beside a bright sample is vulnerable; the size of the effect depends on leakage and neighbor brightness. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-small-percentage-can-be-a-large-assay-error",
+      "heading": "A small percentage can be a large assay error",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A small percentage can be a large assay error",
+          "html": "<h2 id=\"a-small-percentage-can-be-a-large-assay-error\">A small percentage can be a large assay error</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Consider a constructed example on a linear signal scale. A bright well emits a signal corresponding to 1,000,000 relative light units (RLU), and 0.01% of that response appears in its neighbor's reading. The neighbor acquires 100 RLU of unwanted signal. If its true signal is 100 RLU, the measured result doubles. If its true signal is 10,000 RLU, the same leakage raises it by only 1%.",
+          "html": "<p>Consider a constructed example on a linear signal scale. A bright well emits a signal corresponding to 1,000,000 relative light units (RLU), and 0.01% of that response appears in its neighbor's reading. The neighbor acquires 100 RLU of unwanted signal. If its true signal is 100 RLU, the measured result doubles. If its true signal is 10,000 RLU, the same leakage raises it by only 1%.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The same leakage fraction produces very different errors in the two samples. That is why a plate containing only equally bright standards can be a poor challenge for interwell isolation.",
+          "html": "<p>The same leakage fraction produces very different errors in the two samples. That is why a plate containing only equally bright standards can be a poor challenge for interwell isolation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Light can reach the detector through inadequately opaque material or through collection paths that admit neighboring emission. Masking, apertures, focus and plate positioning can limit those paths. Promega's bioluminescence guidance emphasizes isolating the measured well and using opaque plates; its comparison includes bright wells beside nominally empty positions. [1]",
+          "html": "<p>Light can reach the detector through inadequately opaque material or through collection paths that admit neighboring emission. Masking, apertures, focus and plate positioning can limit those paths. Promega's bioluminescence guidance emphasizes isolating the measured well and using opaque plates; its comparison includes bright wells beside nominally empty positions. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-the-well-walls-and-the-plate-bottom",
+      "heading": "Check the well walls and the plate bottom",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check the well walls and the plate bottom",
+          "html": "<h2 id=\"check-the-well-walls-and-the-plate-bottom\">Check the well walls and the plate bottom</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For luminescence, white opaque wells often provide useful signal, but a white plate with a transparent bottom behaves differently from a fully opaque plate. Promega's CellTiter-Glo 2.0 manual warns that clear-bottom plates can give lower signal and greater crosstalk. Check the actual plate construction, including the base and any permitted backing. [2]",
+          "html": "<p>For luminescence, white opaque wells often provide useful signal, but a white plate with a transparent bottom behaves differently from a fully opaque plate. Promega's CellTiter-Glo 2.0 manual warns that clear-bottom plates can give lower signal and greater crosstalk. Check the actual plate construction, including the base and any permitted backing. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Fluorescence adds an excitation path: illumination or scattered light may reach material outside the intended measurement region. The appropriate plate, optical footprint and read height therefore need checking in the actual detection mode. Check fluorescence crosstalk in the intended excitation and collection geometry.",
+          "html": "<p>Fluorescence adds an excitation path: illumination or scattered light may reach material outside the intended measurement region. The appropriate plate, optical footprint and read height therefore need checking in the actual detection mode. Check fluorescence crosstalk in the intended excitation and collection geometry.</p>"
+        }
+      ]
+    },
+    {
+      "id": "test-a-layout-that-can-reveal-the-source",
+      "heading": "Test a layout that can reveal the source",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Test a layout that can reveal the source",
+          "html": "<h2 id=\"test-a-layout-that-can-reveal-the-source\">Test a layout that can reveal the source</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Prepare an isolated bright well surrounded by blanks and low positives, with equivalent controls far from the bright well. Include a separate all-blank plate and repeat at several source intensities within the verified linear range. Use the same plate type, volume and reader settings planned for screening.",
+          "html": "<p>Prepare an isolated bright well surrounded by blanks and low positives, with equivalent controls far from the bright well. Include a separate all-blank plate and repeat at several source intensities within the verified linear range. Use the same plate type, volume and reader settings planned for screening.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Map the excess signal by distance and direction. Then move the bright source in a newly prepared layout. Excess light that follows the source supports optical leakage. A pattern that follows measurement order warrants a separate check for detector recovery or acquisition history. Neither pattern alone proves that sample preparation was clean.",
+          "html": "<p>Map the excess signal by distance and direction. Then move the bright source in a newly prepared layout. Excess light that follows the source supports optical leakage. A pattern that follows measurement order warrants a separate check for detector recovery or acquisition history. Neither pattern alone proves that sample preparation was clean.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Optical crosstalk differs from reagent contamination, splashing and injector carryover. Material transferred into a blank can generate a real local signal. Use fresh preparations and appropriate dispensing controls to distinguish these possibilities before adjusting the optics.",
+          "html": "<p>Optical crosstalk differs from reagent contamination, splashing and injector carryover. Material transferred into a blank can generate a real local signal. Use fresh preparations and appropriate dispensing controls to distinguish these possibilities before adjusting the optics.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a glow assay, keep assay age and temperature comparable during the challenge. CellTiter-Glo 2.0 calls for room-temperature equilibration and signal stabilization. A stable near-room-temperature chamber helps keep bright-source output consistent while nearby and distant wells are compared. [2]",
+          "html": "<p>For a glow assay, keep assay age and temperature comparable during the challenge. CellTiter-Glo 2.0 calls for room-temperature equilibration and signal stabilization. A stable near-room-temperature chamber helps keep bright-source output consistent while nearby and distant wells are compared. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "block-unwanted-light-before-correcting-its-average",
+      "heading": "Block unwanted light before correcting its average",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Block unwanted light before correcting its average",
+          "html": "<h2 id=\"block-unwanted-light-before-correcting-its-average\">Block unwanted light before correcting its average</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Optimize plate opacity, reader masking, focus and positioning using the weak responses that matter to the assay. Software correction can subtract an estimated contribution, but it cannot remove the random photon arrivals already added to the measurement. Coefficients may also change with plate geometry or source position.",
+          "html": "<p>Optimize plate opacity, reader masking, focus and positioning using the weak responses that matter to the assay. Software correction can subtract an estimated contribution, but it cannot remove the random photon arrivals already added to the measurement. Coefficients may also change with plate geometry or source position.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If correction is needed, retain raw readings and test it on independently prepared layouts. Judge success by recovery and precision of the low positives beside bright wells. Keep the adjacent low-positive challenge in the method qualification; distant blanks can miss the interference.",
+          "html": "<p>If correction is needed, retain raw readings and test it on independently prepared layouts. Judge success by recovery and precision of the low positives beside bright wells. Keep the adjacent low-positive challenge in the method qualification; distant blanks can miss the interference.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Wieczorek D, Hooper K, Bjerke M. Promega. How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results, June 2019, tpub_212. Well isolation, opacity and bright-neighbor testing; historical product rankings are not generalized.",
+          "html": "<p id=\"ref-1\">1. Wieczorek D, Hooper K, Bjerke M. Promega. <a href=\"https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/\">How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results</a>, June 2019, tpub_212. Well isolation, opacity and bright-neighbor testing; historical product rankings are not generalized.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, PDF pp. 7 and 11. Temperature, stabilization and clear-bottom plate caveats.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, archived revision January 2023, PDF pp. 7 and 11. Temperature, stabilization and clear-bottom plate caveats.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Wieczorek D, Hooper K, Bjerke M. Promega. How Sensitivity and Crosstalk Affect Your Bioluminescent Assay Results, June 2019, tpub_212. Well isolation, opacity and bright-neighbor testing; historical product rankings are not generalized.",
+      "urls": [
+        "https://www.promega.com/resources/pubhub/2019/how-sensitivity-and-crosstalk-affect-your-bioluminescent-assay-results/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, archived revision January 2023, PDF pp. 7 and 11. Temperature, stabilization and clear-bottom plate caveats.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "0524dc25f4b566beb94805ca01df7aaacada70f682f49c7fa56b8d0d2f10fa24"
+}

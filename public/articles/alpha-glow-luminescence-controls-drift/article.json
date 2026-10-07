@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "alpha-glow-luminescence-controls-drift",
+  "canonical_url": "https://discoveryinpractice.com/articles/alpha-glow-luminescence-controls-drift/",
+  "title": "Why do Alpha or glow-luminescence controls drift from the first plate to the last?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Separate assay age, reagent changes and temperature drift when Alpha or glow-luminescence controls change from the first plate to the last.",
+  "takeaways": [
+    "Later plates may contain older reactions",
+    "The liquid can change while the chamber appears steady",
+    "Change one history while holding the other steady"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Temperature",
+    "Luminescence",
+    "Alpha assays"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-07",
+  "date_modified": "2026-10-07",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Successive plates can differ in assay age, liquid temperature, reagent condition and time spent inside the reader. These variables often move together, so a smooth trend across plate numbers does not identify its cause. Separate the interval from reagent addition to reading from the thermal history of each plate. For endpoints specified near room temperature, include the reader's thermal history in that comparison. [1,2]</p><h2 id=\"later-plates-may-contain-older-reactions\">Later plates may contain older reactions</h2><p>If all plates receive detection reagent together and are read sequentially, the later plates contain older reactions. A glow signal can remain usable for a long time while still changing measurably over a batch. For an illustrative exponential signal with a two-hour half-life, a 30-minute difference in assay age produces about 16% less light at the later measurement. That example is not a half-life specification for CellTiter-Glo or any other kit.</p><p>Alpha reactions can develop in the opposite direction as binding approaches equilibrium. The AlphaScreen practical guide recommends a time course with separate wells for each time point and requires an appropriate minimum incubation for every plate. [1] A time course based on repeatedly exciting the same wells can mix reaction age with measurement history.</p><p>Record when each critical reagent was added and when the plate was mixed, loaded and read. Include read completion time if a plate takes long enough for within-plate timing to matter. Check which plates actually receive the stated incubation, including those delayed by the queue.</p><h2 id=\"the-liquid-can-change-while-the-chamber-appears-steady\">The liquid can change while the chamber appears steady</h2><p>Plates arriving from a stack can have different temperatures even when their bench waiting times match. Once loaded, they may warm toward the chamber temperature. A busy reader may present a different thermal environment from the one encountered by the first plate.</p><p>Promega's CellTiter-Glo 2.0 manual connects temperature with both luminescence intensity and decay and warns about incomplete equilibration in plate stacks. [2] The ADP-Glo manual likewise calls for equilibration of plates and reagents and identifies center-to-edge gradients as a source of variability. [3] Keep the liquid temperature controlled through the reading interval as well as during incubation.</p><h2 id=\"change-one-history-while-holding-the-other-steady\">Change one history while holding the other steady</h2><p>Prepare matched control plates at staggered times so that each reaches the reader at the same assay age. Compare those controls across the intended throughput sequence while recording representative liquid temperatures. A remaining trend warrants investigation of temperature, dispensing and reader behavior; equal age alone does not prove a thermal cause.</p><p>Then hold the thermal conditions consistent and compare controls at deliberately different ages within the proposed reading window. For Alpha, retain separate wells or plates for the time points. This comparison tests whether reaction development or signal decay can explain the observed drift.</p><p>Check reagent preparation age and dispensing separately. Freshly prepared control plates will not isolate the reader if a shared reagent reservoir loses activity, changes concentration or dispenses inconsistently through the run. For ADP-Glo, keep the kinase reaction, ATP-depletion stage and luminescent detection stage distinct; ATP means adenosine triphosphate. [3]</p><h2 id=\"make-the-queue-part-of-the-qualified-protocol\">Make the queue part of the qualified protocol</h2><p>Use distributed controls to inspect raw signal, background and variability across position and acquisition time. Plate normalization may remove a shared multiplicative shift, but unequal sample and control histories can survive that correction. Examine control scatter as well as normalized means.</p><p>Define acceptable ages for the important stages and a restart rule for interrupted batches. Where the kit calls for a room-temperature endpoint, keep the measurement chamber close to the validated condition throughout sustained operation. Save the timing and temperature records with the run so later drift can be compared with the conditions under which the workflow was qualified.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.</p><p id=\"ref-3\">3. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf\">ADP-Glo Kinase Assay Technical Manual TM313</a>, revised July 2023, PDF pp. 17–18. Reaction staging, plate/reagent temperature equilibration and luminescence stability.</p>",
+  "body_text": "Successive plates can differ in assay age, liquid temperature, reagent condition and time spent inside the reader. These variables often move together, so a smooth trend across plate numbers does not identify its cause. Separate the interval from reagent addition to reading from the thermal history of each plate. For endpoints specified near room temperature, include the reader's thermal history in that comparison. [1,2]\n\nLater plates may contain older reactions\n\nIf all plates receive detection reagent together and are read sequentially, the later plates contain older reactions. A glow signal can remain usable for a long time while still changing measurably over a batch. For an illustrative exponential signal with a two-hour half-life, a 30-minute difference in assay age produces about 16% less light at the later measurement. That example is not a half-life specification for CellTiter-Glo or any other kit.\n\nAlpha reactions can develop in the opposite direction as binding approaches equilibrium. The AlphaScreen practical guide recommends a time course with separate wells for each time point and requires an appropriate minimum incubation for every plate. [1] A time course based on repeatedly exciting the same wells can mix reaction age with measurement history.\n\nRecord when each critical reagent was added and when the plate was mixed, loaded and read. Include read completion time if a plate takes long enough for within-plate timing to matter. Check which plates actually receive the stated incubation, including those delayed by the queue.\n\nThe liquid can change while the chamber appears steady\n\nPlates arriving from a stack can have different temperatures even when their bench waiting times match. Once loaded, they may warm toward the chamber temperature. A busy reader may present a different thermal environment from the one encountered by the first plate.\n\nPromega's CellTiter-Glo 2.0 manual connects temperature with both luminescence intensity and decay and warns about incomplete equilibration in plate stacks. [2] The ADP-Glo manual likewise calls for equilibration of plates and reagents and identifies center-to-edge gradients as a source of variability. [3] Keep the liquid temperature controlled through the reading interval as well as during incubation.\n\nChange one history while holding the other steady\n\nPrepare matched control plates at staggered times so that each reaches the reader at the same assay age. Compare those controls across the intended throughput sequence while recording representative liquid temperatures. A remaining trend warrants investigation of temperature, dispensing and reader behavior; equal age alone does not prove a thermal cause.\n\nThen hold the thermal conditions consistent and compare controls at deliberately different ages within the proposed reading window. For Alpha, retain separate wells or plates for the time points. This comparison tests whether reaction development or signal decay can explain the observed drift.\n\nCheck reagent preparation age and dispensing separately. Freshly prepared control plates will not isolate the reader if a shared reagent reservoir loses activity, changes concentration or dispenses inconsistently through the run. For ADP-Glo, keep the kinase reaction, ATP-depletion stage and luminescent detection stage distinct; ATP means adenosine triphosphate. [3]\n\nMake the queue part of the qualified protocol\n\nUse distributed controls to inspect raw signal, background and variability across position and acquisition time. Plate normalization may remove a shared multiplicative shift, but unequal sample and control histories can survive that correction. Examine control scatter as well as normalized means.\n\nDefine acceptable ages for the important stages and a restart rule for interrupted batches. Where the kit calls for a room-temperature endpoint, keep the measurement chamber close to the validated condition throughout sustained operation. Save the timing and temperature records with the run so later drift can be compared with the conditions under which the workflow was qualified.\n\nReferences\n\n1. PerkinElmer. AlphaScreen practical guide, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.\n\n2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.\n\n3. Promega. ADP-Glo Kinase Assay Technical Manual TM313, revised July 2023, PDF pp. 17–18. Reaction staging, plate/reagent temperature equilibration and luminescence stability.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Successive plates can differ in assay age, liquid temperature, reagent condition and time spent inside the reader. These variables often move together, so a smooth trend across plate numbers does not identify its cause. Separate the interval from reagent addition to reading from the thermal history of each plate. For endpoints specified near room temperature, include the reader's thermal history in that comparison. [1,2]",
+          "html": "<p>Successive plates can differ in assay age, liquid temperature, reagent condition and time spent inside the reader. These variables often move together, so a smooth trend across plate numbers does not identify its cause. Separate the interval from reagent addition to reading from the thermal history of each plate. For endpoints specified near room temperature, include the reader's thermal history in that comparison. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "later-plates-may-contain-older-reactions",
+      "heading": "Later plates may contain older reactions",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Later plates may contain older reactions",
+          "html": "<h2 id=\"later-plates-may-contain-older-reactions\">Later plates may contain older reactions</h2>"
+        },
+        {
+          "type": "p",
+          "text": "If all plates receive detection reagent together and are read sequentially, the later plates contain older reactions. A glow signal can remain usable for a long time while still changing measurably over a batch. For an illustrative exponential signal with a two-hour half-life, a 30-minute difference in assay age produces about 16% less light at the later measurement. That example is not a half-life specification for CellTiter-Glo or any other kit.",
+          "html": "<p>If all plates receive detection reagent together and are read sequentially, the later plates contain older reactions. A glow signal can remain usable for a long time while still changing measurably over a batch. For an illustrative exponential signal with a two-hour half-life, a 30-minute difference in assay age produces about 16% less light at the later measurement. That example is not a half-life specification for CellTiter-Glo or any other kit.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Alpha reactions can develop in the opposite direction as binding approaches equilibrium. The AlphaScreen practical guide recommends a time course with separate wells for each time point and requires an appropriate minimum incubation for every plate. [1] A time course based on repeatedly exciting the same wells can mix reaction age with measurement history.",
+          "html": "<p>Alpha reactions can develop in the opposite direction as binding approaches equilibrium. The AlphaScreen practical guide recommends a time course with separate wells for each time point and requires an appropriate minimum incubation for every plate. [1] A time course based on repeatedly exciting the same wells can mix reaction age with measurement history.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Record when each critical reagent was added and when the plate was mixed, loaded and read. Include read completion time if a plate takes long enough for within-plate timing to matter. Check which plates actually receive the stated incubation, including those delayed by the queue.",
+          "html": "<p>Record when each critical reagent was added and when the plate was mixed, loaded and read. Include read completion time if a plate takes long enough for within-plate timing to matter. Check which plates actually receive the stated incubation, including those delayed by the queue.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-liquid-can-change-while-the-chamber-appears-steady",
+      "heading": "The liquid can change while the chamber appears steady",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The liquid can change while the chamber appears steady",
+          "html": "<h2 id=\"the-liquid-can-change-while-the-chamber-appears-steady\">The liquid can change while the chamber appears steady</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Plates arriving from a stack can have different temperatures even when their bench waiting times match. Once loaded, they may warm toward the chamber temperature. A busy reader may present a different thermal environment from the one encountered by the first plate.",
+          "html": "<p>Plates arriving from a stack can have different temperatures even when their bench waiting times match. Once loaded, they may warm toward the chamber temperature. A busy reader may present a different thermal environment from the one encountered by the first plate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Promega's CellTiter-Glo 2.0 manual connects temperature with both luminescence intensity and decay and warns about incomplete equilibration in plate stacks. [2] The ADP-Glo manual likewise calls for equilibration of plates and reagents and identifies center-to-edge gradients as a source of variability. [3] Keep the liquid temperature controlled through the reading interval as well as during incubation.",
+          "html": "<p>Promega's CellTiter-Glo 2.0 manual connects temperature with both luminescence intensity and decay and warns about incomplete equilibration in plate stacks. [2] The ADP-Glo manual likewise calls for equilibration of plates and reagents and identifies center-to-edge gradients as a source of variability. [3] Keep the liquid temperature controlled through the reading interval as well as during incubation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "change-one-history-while-holding-the-other-steady",
+      "heading": "Change one history while holding the other steady",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Change one history while holding the other steady",
+          "html": "<h2 id=\"change-one-history-while-holding-the-other-steady\">Change one history while holding the other steady</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Prepare matched control plates at staggered times so that each reaches the reader at the same assay age. Compare those controls across the intended throughput sequence while recording representative liquid temperatures. A remaining trend warrants investigation of temperature, dispensing and reader behavior; equal age alone does not prove a thermal cause.",
+          "html": "<p>Prepare matched control plates at staggered times so that each reaches the reader at the same assay age. Compare those controls across the intended throughput sequence while recording representative liquid temperatures. A remaining trend warrants investigation of temperature, dispensing and reader behavior; equal age alone does not prove a thermal cause.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Then hold the thermal conditions consistent and compare controls at deliberately different ages within the proposed reading window. For Alpha, retain separate wells or plates for the time points. This comparison tests whether reaction development or signal decay can explain the observed drift.",
+          "html": "<p>Then hold the thermal conditions consistent and compare controls at deliberately different ages within the proposed reading window. For Alpha, retain separate wells or plates for the time points. This comparison tests whether reaction development or signal decay can explain the observed drift.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check reagent preparation age and dispensing separately. Freshly prepared control plates will not isolate the reader if a shared reagent reservoir loses activity, changes concentration or dispenses inconsistently through the run. For ADP-Glo, keep the kinase reaction, ATP-depletion stage and luminescent detection stage distinct; ATP means adenosine triphosphate. [3]",
+          "html": "<p>Check reagent preparation age and dispensing separately. Freshly prepared control plates will not isolate the reader if a shared reagent reservoir loses activity, changes concentration or dispenses inconsistently through the run. For ADP-Glo, keep the kinase reaction, ATP-depletion stage and luminescent detection stage distinct; ATP means adenosine triphosphate. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "make-the-queue-part-of-the-qualified-protocol",
+      "heading": "Make the queue part of the qualified protocol",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Make the queue part of the qualified protocol",
+          "html": "<h2 id=\"make-the-queue-part-of-the-qualified-protocol\">Make the queue part of the qualified protocol</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use distributed controls to inspect raw signal, background and variability across position and acquisition time. Plate normalization may remove a shared multiplicative shift, but unequal sample and control histories can survive that correction. Examine control scatter as well as normalized means.",
+          "html": "<p>Use distributed controls to inspect raw signal, background and variability across position and acquisition time. Plate normalization may remove a shared multiplicative shift, but unequal sample and control histories can survive that correction. Examine control scatter as well as normalized means.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Define acceptable ages for the important stages and a restart rule for interrupted batches. Where the kit calls for a room-temperature endpoint, keep the measurement chamber close to the validated condition throughout sustained operation. Save the timing and temperature records with the run so later drift can be compared with the conditions under which the workflow was qualified.",
+          "html": "<p>Define acceptable ages for the important stages and a restart rule for interrupted batches. Where the kit calls for a room-temperature endpoint, keep the measurement chamber close to the validated condition throughout sustained operation. Save the timing and temperature records with the run so later drift can be compared with the conditions under which the workflow was qualified.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. PerkinElmer. AlphaScreen practical guide, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.",
+          "html": "<p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Promega. ADP-Glo Kinase Assay Technical Manual TM313, revised July 2023, PDF pp. 17–18. Reaction staging, plate/reagent temperature equilibration and luminescence stability.",
+          "html": "<p id=\"ref-3\">3. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf\">ADP-Glo Kinase Assay Technical Manual TM313</a>, revised July 2023, PDF pp. 17–18. Reaction staging, plate/reagent temperature equilibration and luminescence stability.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. PerkinElmer. AlphaScreen practical guide, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.",
+      "urls": [
+        "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Promega. ADP-Glo Kinase Assay Technical Manual TM313, revised July 2023, PDF pp. 17–18. Reaction staging, plate/reagent temperature equilibration and luminescence stability.",
+      "urls": [
+        "https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "9737d2da43329de086a6c086e206c406c0869b39795f1ff113f75c92b3e4634d"
+}

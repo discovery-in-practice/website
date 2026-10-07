@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "plate-reader-warming-incubation-off",
+  "canonical_url": "https://discoveryinpractice.com/articles/plate-reader-warming-incubation-off/",
+  "title": "Why does my plate reader warm the plate when incubation is switched off?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Understand plate-reader warming, room-temperature chamber control and practical temperature checks for CellTiter-Glo and Alpha assays.",
+  "takeaways": [
+    "What happened before this plate matters",
+    "Why this matters for glow luminescence and Alpha",
+    "A practical way to locate the drift"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Temperature",
+    "Luminescence",
+    "Plate readers"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-07",
+  "date_modified": "2026-10-07",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Switching off incubation disables intentional heating; it does not actively hold the sample at laboratory temperature. Operating electronics and other internal components can release heat, and the chamber can retain heat from an earlier run. Room conditions and a plate arriving from an incubator also affect the result. The displayed chamber temperature may differ from the liquid temperature. For a temperature-sensitive assay, measure the plate during the actual reading workload, including runs with incubation switched off. [1]</p><h2 id=\"what-happened-before-this-plate-matters\">What happened before this plate matters</h2><p>A plate reader used repeatedly can behave differently from the same instrument after a long idle period. A preceding 37°C experiment, a warm automation enclosure or changes in laboratory air temperature can alter the next plate's starting conditions. Which mechanism dominates requires measurement; assay light alone cannot identify the source of heat.</p><p>Some readers specify a controllable range beginning several degrees above ambient temperature. That is a heating specification, not a promise to maintain samples at room temperature. A chamber designed to regulate near room temperature, with cooling when required, can prevent an equilibrated plate from warming again during detection. BMG LABTECH's published engineering description gives an example of this capability; it is manufacturer documentation, not an independent comparison of all readers. [1]</p><h2 id=\"why-this-matters-for-glow-luminescence-and-alpha\">Why this matters for glow luminescence and Alpha</h2><p>Promega's CellTiter-Glo 2.0 assay measures adenosine triphosphate (ATP) through a luciferase reaction. Its technical manual states that temperature affects the reaction rate, light intensity and signal decay. The standard protocol calls for approximately 30 minutes of plate equilibration to room temperature before reagent addition, followed by mixing and a 10-minute room-temperature period to stabilize the light signal. Those are kit-specific instructions, not universal equilibration times. [2]</p><p>The same manual warns that tall stacks of plates equilibrate more slowly than plates in a single layer and can develop center-to-edge temperature gradients. A plate can arrive with a temperature gradient already present, so both handling and the measurement environment need attention. [2]</p><p>Revvity advises reading AlphaScreen and AlphaLISA plates near 22°C and keeping incubation and read temperatures consistent between days. Alpha uses a different detection chemistry from luciferase, so neither the magnitude nor the direction of a temperature effect should be transferred from one assay to the other. [3]</p><h2 id=\"a-practical-way-to-locate-the-drift\">A practical way to locate the drift</h2><p>First measure the thermal behavior without relying on assay light as a thermometer. Use a calibrated temperature method suitable for representative liquid volumes and plate positions. Any probe arrangement must be compatible with the reader and must not interfere with its motion. Repeatedly opening the chamber can disturb the temperature being measured.</p><p>Compare an idle reader with one running the intended plate sequence. Record laboratory temperature, chamber readings, representative liquid temperatures, plate-entry times and the preceding instrument method. Match plate type, volume, lids or seals and dwell time. Include center and edge positions where the measurement method permits.</p><p>Then compare assay controls at matched dispense-to-read ages under the two thermal conditions. If liquid temperature changes while elapsed reaction time is held comparable, temperature becomes a credible contributor. If signal drifts while temperature remains stable, investigate reaction kinetics, evaporation, substrate depletion or other assay-specific causes. More than one process can occur together.</p><h2 id=\"choose-control-for-the-assay-stage\">Choose control for the assay stage</h2><p>For a room-temperature lytic endpoint, the useful capability is maintaining the equilibrated sample near its validated detection temperature throughout the measurement sequence. Low disruptive airflow and well-controlled chamber conditions can help, but low airflow alone is not humidity control or proof against evaporation.</p><p>For live-cell kinetic measurements, preserve the biological temperature specified by the assay. Moving such a measurement to room temperature solely to stabilize light can change the biology. Record the actual sample conditions and validate a temperature tolerance against acceptable assay bias and precision; do not choose a universal tolerance from another kit.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/aas/\">Advanced Assay Stability</a>. Manufacturer engineering description. Discusses internal heat and heating/cooling of the measurement chamber. Numerical competitive performance is not inferred here.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>. Archived revision January 2023; sections 3.B and 4.B, PDF pp. 7 and 11. Room-temperature assay handling and temperature-gradient guidance.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays\">AlphaLISA and AlphaScreen No-wash Assays</a>. Tips and FAQs. Guidance to read plates near 22°C and maintain consistent temperatures.</p>",
+  "body_text": "Switching off incubation disables intentional heating; it does not actively hold the sample at laboratory temperature. Operating electronics and other internal components can release heat, and the chamber can retain heat from an earlier run. Room conditions and a plate arriving from an incubator also affect the result. The displayed chamber temperature may differ from the liquid temperature. For a temperature-sensitive assay, measure the plate during the actual reading workload, including runs with incubation switched off. [1]\n\nWhat happened before this plate matters\n\nA plate reader used repeatedly can behave differently from the same instrument after a long idle period. A preceding 37°C experiment, a warm automation enclosure or changes in laboratory air temperature can alter the next plate's starting conditions. Which mechanism dominates requires measurement; assay light alone cannot identify the source of heat.\n\nSome readers specify a controllable range beginning several degrees above ambient temperature. That is a heating specification, not a promise to maintain samples at room temperature. A chamber designed to regulate near room temperature, with cooling when required, can prevent an equilibrated plate from warming again during detection. BMG LABTECH's published engineering description gives an example of this capability; it is manufacturer documentation, not an independent comparison of all readers. [1]\n\nWhy this matters for glow luminescence and Alpha\n\nPromega's CellTiter-Glo 2.0 assay measures adenosine triphosphate (ATP) through a luciferase reaction. Its technical manual states that temperature affects the reaction rate, light intensity and signal decay. The standard protocol calls for approximately 30 minutes of plate equilibration to room temperature before reagent addition, followed by mixing and a 10-minute room-temperature period to stabilize the light signal. Those are kit-specific instructions, not universal equilibration times. [2]\n\nThe same manual warns that tall stacks of plates equilibrate more slowly than plates in a single layer and can develop center-to-edge temperature gradients. A plate can arrive with a temperature gradient already present, so both handling and the measurement environment need attention. [2]\n\nRevvity advises reading AlphaScreen and AlphaLISA plates near 22°C and keeping incubation and read temperatures consistent between days. Alpha uses a different detection chemistry from luciferase, so neither the magnitude nor the direction of a temperature effect should be transferred from one assay to the other. [3]\n\nA practical way to locate the drift\n\nFirst measure the thermal behavior without relying on assay light as a thermometer. Use a calibrated temperature method suitable for representative liquid volumes and plate positions. Any probe arrangement must be compatible with the reader and must not interfere with its motion. Repeatedly opening the chamber can disturb the temperature being measured.\n\nCompare an idle reader with one running the intended plate sequence. Record laboratory temperature, chamber readings, representative liquid temperatures, plate-entry times and the preceding instrument method. Match plate type, volume, lids or seals and dwell time. Include center and edge positions where the measurement method permits.\n\nThen compare assay controls at matched dispense-to-read ages under the two thermal conditions. If liquid temperature changes while elapsed reaction time is held comparable, temperature becomes a credible contributor. If signal drifts while temperature remains stable, investigate reaction kinetics, evaporation, substrate depletion or other assay-specific causes. More than one process can occur together.\n\nChoose control for the assay stage\n\nFor a room-temperature lytic endpoint, the useful capability is maintaining the equilibrated sample near its validated detection temperature throughout the measurement sequence. Low disruptive airflow and well-controlled chamber conditions can help, but low airflow alone is not humidity control or proof against evaporation.\n\nFor live-cell kinetic measurements, preserve the biological temperature specified by the assay. Moving such a measurement to room temperature solely to stabilize light can change the biology. Record the actual sample conditions and validate a temperature tolerance against acceptable assay bias and precision; do not choose a universal tolerance from another kit.\n\nReferences\n\n1. BMG LABTECH. Advanced Assay Stability. Manufacturer engineering description. Discusses internal heat and heating/cooling of the measurement chamber. Numerical competitive performance is not inferred here.\n\n2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403. Archived revision January 2023; sections 3.B and 4.B, PDF pp. 7 and 11. Room-temperature assay handling and temperature-gradient guidance.\n\n3. Revvity. AlphaLISA and AlphaScreen No-wash Assays. Tips and FAQs. Guidance to read plates near 22°C and maintain consistent temperatures.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Switching off incubation disables intentional heating; it does not actively hold the sample at laboratory temperature. Operating electronics and other internal components can release heat, and the chamber can retain heat from an earlier run. Room conditions and a plate arriving from an incubator also affect the result. The displayed chamber temperature may differ from the liquid temperature. For a temperature-sensitive assay, measure the plate during the actual reading workload, including runs with incubation switched off. [1]",
+          "html": "<p>Switching off incubation disables intentional heating; it does not actively hold the sample at laboratory temperature. Operating electronics and other internal components can release heat, and the chamber can retain heat from an earlier run. Room conditions and a plate arriving from an incubator also affect the result. The displayed chamber temperature may differ from the liquid temperature. For a temperature-sensitive assay, measure the plate during the actual reading workload, including runs with incubation switched off. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-happened-before-this-plate-matters",
+      "heading": "What happened before this plate matters",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What happened before this plate matters",
+          "html": "<h2 id=\"what-happened-before-this-plate-matters\">What happened before this plate matters</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A plate reader used repeatedly can behave differently from the same instrument after a long idle period. A preceding 37°C experiment, a warm automation enclosure or changes in laboratory air temperature can alter the next plate's starting conditions. Which mechanism dominates requires measurement; assay light alone cannot identify the source of heat.",
+          "html": "<p>A plate reader used repeatedly can behave differently from the same instrument after a long idle period. A preceding 37°C experiment, a warm automation enclosure or changes in laboratory air temperature can alter the next plate's starting conditions. Which mechanism dominates requires measurement; assay light alone cannot identify the source of heat.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Some readers specify a controllable range beginning several degrees above ambient temperature. That is a heating specification, not a promise to maintain samples at room temperature. A chamber designed to regulate near room temperature, with cooling when required, can prevent an equilibrated plate from warming again during detection. BMG LABTECH's published engineering description gives an example of this capability; it is manufacturer documentation, not an independent comparison of all readers. [1]",
+          "html": "<p>Some readers specify a controllable range beginning several degrees above ambient temperature. That is a heating specification, not a promise to maintain samples at room temperature. A chamber designed to regulate near room temperature, with cooling when required, can prevent an equilibrated plate from warming again during detection. BMG LABTECH's published engineering description gives an example of this capability; it is manufacturer documentation, not an independent comparison of all readers. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "why-this-matters-for-glow-luminescence-and-alpha",
+      "heading": "Why this matters for glow luminescence and Alpha",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Why this matters for glow luminescence and Alpha",
+          "html": "<h2 id=\"why-this-matters-for-glow-luminescence-and-alpha\">Why this matters for glow luminescence and Alpha</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Promega's CellTiter-Glo 2.0 assay measures adenosine triphosphate (ATP) through a luciferase reaction. Its technical manual states that temperature affects the reaction rate, light intensity and signal decay. The standard protocol calls for approximately 30 minutes of plate equilibration to room temperature before reagent addition, followed by mixing and a 10-minute room-temperature period to stabilize the light signal. Those are kit-specific instructions, not universal equilibration times. [2]",
+          "html": "<p>Promega's CellTiter-Glo 2.0 assay measures adenosine triphosphate (ATP) through a luciferase reaction. Its technical manual states that temperature affects the reaction rate, light intensity and signal decay. The standard protocol calls for approximately 30 minutes of plate equilibration to room temperature before reagent addition, followed by mixing and a 10-minute room-temperature period to stabilize the light signal. Those are kit-specific instructions, not universal equilibration times. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The same manual warns that tall stacks of plates equilibrate more slowly than plates in a single layer and can develop center-to-edge temperature gradients. A plate can arrive with a temperature gradient already present, so both handling and the measurement environment need attention. [2]",
+          "html": "<p>The same manual warns that tall stacks of plates equilibrate more slowly than plates in a single layer and can develop center-to-edge temperature gradients. A plate can arrive with a temperature gradient already present, so both handling and the measurement environment need attention. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity advises reading AlphaScreen and AlphaLISA plates near 22°C and keeping incubation and read temperatures consistent between days. Alpha uses a different detection chemistry from luciferase, so neither the magnitude nor the direction of a temperature effect should be transferred from one assay to the other. [3]",
+          "html": "<p>Revvity advises reading AlphaScreen and AlphaLISA plates near 22°C and keeping incubation and read temperatures consistent between days. Alpha uses a different detection chemistry from luciferase, so neither the magnitude nor the direction of a temperature effect should be transferred from one assay to the other. [3]</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-practical-way-to-locate-the-drift",
+      "heading": "A practical way to locate the drift",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A practical way to locate the drift",
+          "html": "<h2 id=\"a-practical-way-to-locate-the-drift\">A practical way to locate the drift</h2>"
+        },
+        {
+          "type": "p",
+          "text": "First measure the thermal behavior without relying on assay light as a thermometer. Use a calibrated temperature method suitable for representative liquid volumes and plate positions. Any probe arrangement must be compatible with the reader and must not interfere with its motion. Repeatedly opening the chamber can disturb the temperature being measured.",
+          "html": "<p>First measure the thermal behavior without relying on assay light as a thermometer. Use a calibrated temperature method suitable for representative liquid volumes and plate positions. Any probe arrangement must be compatible with the reader and must not interfere with its motion. Repeatedly opening the chamber can disturb the temperature being measured.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare an idle reader with one running the intended plate sequence. Record laboratory temperature, chamber readings, representative liquid temperatures, plate-entry times and the preceding instrument method. Match plate type, volume, lids or seals and dwell time. Include center and edge positions where the measurement method permits.",
+          "html": "<p>Compare an idle reader with one running the intended plate sequence. Record laboratory temperature, chamber readings, representative liquid temperatures, plate-entry times and the preceding instrument method. Match plate type, volume, lids or seals and dwell time. Include center and edge positions where the measurement method permits.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Then compare assay controls at matched dispense-to-read ages under the two thermal conditions. If liquid temperature changes while elapsed reaction time is held comparable, temperature becomes a credible contributor. If signal drifts while temperature remains stable, investigate reaction kinetics, evaporation, substrate depletion or other assay-specific causes. More than one process can occur together.",
+          "html": "<p>Then compare assay controls at matched dispense-to-read ages under the two thermal conditions. If liquid temperature changes while elapsed reaction time is held comparable, temperature becomes a credible contributor. If signal drifts while temperature remains stable, investigate reaction kinetics, evaporation, substrate depletion or other assay-specific causes. More than one process can occur together.</p>"
+        }
+      ]
+    },
+    {
+      "id": "choose-control-for-the-assay-stage",
+      "heading": "Choose control for the assay stage",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Choose control for the assay stage",
+          "html": "<h2 id=\"choose-control-for-the-assay-stage\">Choose control for the assay stage</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For a room-temperature lytic endpoint, the useful capability is maintaining the equilibrated sample near its validated detection temperature throughout the measurement sequence. Low disruptive airflow and well-controlled chamber conditions can help, but low airflow alone is not humidity control or proof against evaporation.",
+          "html": "<p>For a room-temperature lytic endpoint, the useful capability is maintaining the equilibrated sample near its validated detection temperature throughout the measurement sequence. Low disruptive airflow and well-controlled chamber conditions can help, but low airflow alone is not humidity control or proof against evaporation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For live-cell kinetic measurements, preserve the biological temperature specified by the assay. Moving such a measurement to room temperature solely to stabilize light can change the biology. Record the actual sample conditions and validate a temperature tolerance against acceptable assay bias and precision; do not choose a universal tolerance from another kit.",
+          "html": "<p>For live-cell kinetic measurements, preserve the biological temperature specified by the assay. Moving such a measurement to room temperature solely to stabilize light can change the biology. Record the actual sample conditions and validate a temperature tolerance against acceptable assay bias and precision; do not choose a universal tolerance from another kit.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. BMG LABTECH. Advanced Assay Stability. Manufacturer engineering description. Discusses internal heat and heating/cooling of the measurement chamber. Numerical competitive performance is not inferred here.",
+          "html": "<p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/aas/\">Advanced Assay Stability</a>. Manufacturer engineering description. Discusses internal heat and heating/cooling of the measurement chamber. Numerical competitive performance is not inferred here.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403. Archived revision January 2023; sections 3.B and 4.B, PDF pp. 7 and 11. Room-temperature assay handling and temperature-gradient guidance.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>. Archived revision January 2023; sections 3.B and 4.B, PDF pp. 7 and 11. Room-temperature assay handling and temperature-gradient guidance.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. AlphaLISA and AlphaScreen No-wash Assays. Tips and FAQs. Guidance to read plates near 22°C and maintain consistent temperatures.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays\">AlphaLISA and AlphaScreen No-wash Assays</a>. Tips and FAQs. Guidance to read plates near 22°C and maintain consistent temperatures.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. BMG LABTECH. Advanced Assay Stability. Manufacturer engineering description. Discusses internal heat and heating/cooling of the measurement chamber. Numerical competitive performance is not inferred here.",
+      "urls": [
+        "https://www.bmglabtech.com/en/aas/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403. Archived revision January 2023; sections 3.B and 4.B, PDF pp. 7 and 11. Room-temperature assay handling and temperature-gradient guidance.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. AlphaLISA and AlphaScreen No-wash Assays. Tips and FAQs. Guidance to read plates near 22°C and maintain consistent temperatures.",
+      "urls": [
+        "https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "f6eee891b03c318879fb1594abd7830952e801662c49ef1fc2c33a89599ed3f2"
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "id": "alpha-assay-temperature",
+  "canonical_url": "https://discoveryinpractice.com/articles/alpha-assay-temperature/",
+  "title": "Your Alpha assay is also a thermometer",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Troubleshoot temperature effects in Alpha assays by testing liquid temperature, plate timing and control behavior under realistic screening conditions.",
+  "takeaways": [
+    "A few degrees can change the result",
+    "Your plate map also contains a clock",
+    "There are two clocks to manage"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "Alpha assays",
+    "Temperature",
+    "Plate readers"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-07",
+  "date_modified": "2026-10-07",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>An Alpha plate can report a convincing biological effect even when the biology has not changed. A temperature difference across the plate can produce that apparent effect through the detection chemistry.</p><p>Temperature deserves the same attention as binding, bead concentrations, and optical settings when troubleshooting an Alpha assay. It can help explain drifting controls, edge effects, disagreement between development and screening, and the plate that behaves beautifully until you put forty more behind it.</p><h2 id=\"a-few-degrees-can-change-the-result\">A few degrees can change the result</h2><p>Alpha detection starts with excitation of a donor bead, which generates singlet oxygen. If a suitable acceptor bead is close enough, that chemistry produces the light we measure. The signal therefore depends on both the interaction bringing the beads together and the efficiency of the detection process. [1]</p><p>The older AlphaScreen practical guide gives a typical signal change of approximately 8% per °C. Revvity's current guidance describes changes as high as 10% per °C, depending on the assay. It distinguishes temperature effects on the approach to binding equilibrium from effects on singlet-oxygen generation and diffusion during measurement. [1, 2]</p><p>Neither figure is a universal correction factor. The response can vary with temperature, matrix, and Alpha format, and it need not be linear. A reagent's storage stability also tells you very little about the temperature dependence of its light output during a read.</p><p>Consider a simple example. Your high-signal control is 10,000 counts and your low-signal control is 1,000. A sample has no inhibitory activity and should look like the high control. Assume, locally, that its measured signal falls by 8% for each degree it is cooler than those controls.</p><p>At 2 °C cooler, the sample reads 8,400 counts. Using the usual high-to-low normalization for an inhibition assay:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Apparent inhibition (%) = 100 × [1 − (sample − low) divided by (high − low) ]\"><mrow><mrow><mtext>Apparent inhibition (%) = 100 × [1 − </mtext></mrow><mfrac><mrow><mrow><mtext>sample − low</mtext></mrow></mrow><mrow><mrow><mtext>high − low</mtext></mrow></mrow></mfrac><mrow><mtext>]</mtext></mrow></mrow></math></div></div><div class=\"math-paragraph\">Substitution gives <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"100 × [1 − (8,400 − 1,000) divided by (10,000 − 1,000) ] = 17.8%.\"><mrow><mrow><mtext>100 × [1 − </mtext></mrow><mfrac><mrow><mrow><mtext>8,400 − 1,000</mtext></mrow></mrow><mrow><mrow><mtext>10,000 − 1,000</mtext></mrow></mrow></mfrac><mrow><mtext>] = 17.8%.</mtext></mrow></mrow></math></div></div><p>That is nearly eighteen percentage points of apparent inhibition without an inhibitor. This is a constructed example, with fixed control values and an assumed linear temperature response. Even under those simple assumptions, a small temperature difference consumes a substantial fraction of the assay window.</p><p>Normalization would cancel a common multiplicative change if samples and controls experienced it equally. In this example, only the sample signal has changed. Controls confined to one thermal region cannot reliably correct samples in another. A reassuring Z′ calculated from those controls does not establish uniform conditions across the plate.</p><h2 id=\"your-plate-map-also-contains-a-clock\">Your plate map also contains a clock</h2><p>A reader measures wells in an order. If the plate is warming or cooling during acquisition, later wells are measured under different conditions from earlier ones. Time becomes position on the exported plate map.</p><p>Revvity explicitly lists temperature changes during reading as a cause of signal gradients. [3] A smooth directional pattern may therefore reflect the measurement sequence, even when dispensing was uniform. Plot signal against actual read order as well as row and column.</p><p>Evaporation and thermal equilibration can produce similar maps, and both may be occurring on the same plate. A center-to-edge pattern alone does not identify which one you have. The Assay Guidance Manual includes temperature gradients among the sources of plate effects and discusses a luminescence example in which the center and edges cool differently. [4]</p><p>Where the instrument permits a different acquisition order, compare fresh, identically prepared plates using balanced read orders. Match their assay ages. A pattern that follows elapsed read time strengthens the case for a time-dependent process, although it still does not distinguish temperature from evolving chemistry. Follow up with a temperature measurement or a controlled equilibration comparison.</p><h2 id=\"there-are-two-clocks-to-manage\">There are two clocks to manage</h2><p>The first clock is chemical: binding partners approach equilibrium and assay reactions progress. The second is thermal: liquid, plastic, and the surrounding environment approach a common temperature.</p><p>“Wait another half hour” changes both clocks. An improvement does not tell you which process was responsible.</p><p>The practical guide illustrates that extending an Alpha assay's incubation can change the measured competition curve as the system approaches equilibrium. It also discusses the time needed for a plate to equilibrate after a temperature mismatch. [1] An incubation time borrowed from another assay therefore needs checking in yours.</p><p>A useful comparison holds assay age constant while changing thermal history. Stagger preparation so that plates reach the reader at the same time after the relevant reagent addition. Give one the routine handling sequence and another a defined, verified thermal equilibration step. Balance the order of those conditions across replicate runs. Record enough timestamps to reconstruct what actually happened.</p><p>Record which reagent addition starts each incubation. In a multistep binding assay, “incubated for sixty minutes” leaves too much unspecified.</p><p>Matching assay age does not isolate the detection chemistry: the different temperature histories may also have changed binding. To separate those contributions, add a suitable detection control and examine the binding time course independently. The handling comparison alone cannot separate these effects.</p><h2 id=\"chamber-temperature-is-not-sample-temperature\">Chamber temperature is not sample temperature</h2><p>A chamber temperature reading is useful, but it is not a measurement of every sample. The plate has thermal mass, its own starting temperature, and a finite rate of heat exchange. Well volume, plate design, seals, and stack position can all affect the time needed to equilibrate.</p><p>The CellTiter-Glo 2.0 manual explains that temperature affects both luminescence intensity and decay. It also warns that plates cooling in tall stacks take longer to equilibrate than plates in a single layer, and that gradients can depend on a plate's position in the stack. [5] A long-lived glow gives you scheduling flexibility; it does not make light output independent of temperature.</p><p>For instrument evaluation, ask what happens to sample temperature during a realistic sequence of reads. A heating-only system cannot actively bring a chamber below its current temperature. Holding a lower operating temperature requires heat removal, including heat generated by internal components. Ask for sample-temperature measurements during sustained operation as well as the chamber specification.</p><p>Moving air can aid heat exchange while also promoting evaporation; the balance depends on humidity, exposure, and sealing. [4] A thermally stable measurement environment that limits unnecessary airflow over samples is worth evaluating, especially at small volumes. It still needs testing with the plate and handling method you intend to use.</p><h2 id=\"testing-for-temperature-effects\">Testing for temperature effects</h2><p>Start with a uniformity plate: identical high-signal assay wells distributed across the plate, with low controls placed throughout rather than confined to one corner. Use the actual plate type, fill volume, seal, and acquisition settings. This lets you look for spatial patterns without differences in compound activity.</p><p>Compare routine handling with a controlled equilibration workflow. Use a separate, representative plate for temperature measurements, placing suitable probes in liquid at center and edge positions where feasible. Record the measurement limitations: an air sensor or an infrared reading of plastic does not directly report the temperature of every assay well.</p><p>Plot signal against well position and acquisition time. Compare the first plate with later plates in a realistic batch. Keep light exposure, reagent age, dispensing order, and reader settings controlled or recorded. If the pattern remains after thermal equilibration, investigate those other causes.</p><p>Use separate wells or plates for successive time points when investigating Alpha signal stability. Revvity's AlphaPlex guide warns that measurement itself can reduce subsequent signal through oxidation of protein recognition elements. [6] Repeatedly reading the same plate can therefore mix genuine time dependence with effects of the earlier reads.</p><p>That observation also explains one advantage of collecting two AlphaPlex emission channels simultaneously: both channels sample the same measurement event, acquisition is faster, and the second channel avoids a separate excitation/read cycle. The guide reports a possible second-read reduction of a few percent, while also reporting no significant sensitivity difference between the sequential and simultaneous configurations it discusses. [6] Both channels are measured at the same time, but their signals remain temperature-dependent.</p><h2 id=\"what-belongs-in-the-working-protocol\">What belongs in the working protocol</h2><ul>\n<li>Do specify how plates reach read temperature. Specify incubation conditions, transfer, stack arrangement, equilibration, and permitted queue time. “Room temperature” needs an operational meaning.</li>\n<li>Do distribute controls. Place them across the plate so that spatial differences are visible.</li>\n<li>Do test a full batch. An isolated development plate does not reproduce a stack, an instrument warming during use, or a growing queue.</li>\n<li>Do not use a published temperature coefficient to repair a screen after the fact. Establish the response of your own assay and investigate how samples and controls differed.</li>\n<li>Do not interpret every extra minute as beneficial. Thermal equilibration, binding equilibration, and read-induced changes can pull the result in different directions.</li>\n</ul><h2 id=\"references\">References</h2><p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>. Especially PDF pp. 7, 30, 32 and 37; printed pp. 1, 24, 26 and 31. Legacy guide supplied to this project; public copy linked for readers.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays\">AlphaLISA and AlphaScreen no-wash assays</a>. Temperature FAQ.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://www.revvity.com/ask/alpha-troubleshooting-tables\">Alpha troubleshooting tables</a>. Signal inconsistency and temperature guidance.</p><p id=\"ref-4\">4. Assay Guidance Manual, supplied 2021 compilation. Microplate incubation and plate-effects discussion, PDF pp. 1337–1344, especially p. 1342 / printed p. 1322. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Online chapter entry</a>; the cited text was checked in the supplied 2021 edition.</p><p id=\"ref-5\">5. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en\">CellTiter-Glo 2.0 Assay technical manual TM403</a>. Revised January 2023. Section 4.B, PDF p. 11 / printed p. 10.</p><p id=\"ref-6\">6. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf\">AlphaPlex assay development user guide</a>. Incubation guidance and optics selection, pp. 8 and 12–13.</p>",
+  "body_text": "An Alpha plate can report a convincing biological effect even when the biology has not changed. A temperature difference across the plate can produce that apparent effect through the detection chemistry.\n\nTemperature deserves the same attention as binding, bead concentrations, and optical settings when troubleshooting an Alpha assay. It can help explain drifting controls, edge effects, disagreement between development and screening, and the plate that behaves beautifully until you put forty more behind it.\n\nA few degrees can change the result\n\nAlpha detection starts with excitation of a donor bead, which generates singlet oxygen. If a suitable acceptor bead is close enough, that chemistry produces the light we measure. The signal therefore depends on both the interaction bringing the beads together and the efficiency of the detection process. [1]\n\nThe older AlphaScreen practical guide gives a typical signal change of approximately 8% per °C. Revvity's current guidance describes changes as high as 10% per °C, depending on the assay. It distinguishes temperature effects on the approach to binding equilibrium from effects on singlet-oxygen generation and diffusion during measurement. [1, 2]\n\nNeither figure is a universal correction factor. The response can vary with temperature, matrix, and Alpha format, and it need not be linear. A reagent's storage stability also tells you very little about the temperature dependence of its light output during a read.\n\nConsider a simple example. Your high-signal control is 10,000 counts and your low-signal control is 1,000. A sample has no inhibitory activity and should look like the high control. Assume, locally, that its measured signal falls by 8% for each degree it is cooler than those controls.\n\nAt 2 °C cooler, the sample reads 8,400 counts. Using the usual high-to-low normalization for an inhibition assay:\n\nApparent inhibition (%) = 100 × [1 − (sample − low) divided by (high − low) ]\n\nSubstitution gives 100 × [1 − (8,400 − 1,000) divided by (10,000 − 1,000) ] = 17.8%.\n\nThat is nearly eighteen percentage points of apparent inhibition without an inhibitor. This is a constructed example, with fixed control values and an assumed linear temperature response. Even under those simple assumptions, a small temperature difference consumes a substantial fraction of the assay window.\n\nNormalization would cancel a common multiplicative change if samples and controls experienced it equally. In this example, only the sample signal has changed. Controls confined to one thermal region cannot reliably correct samples in another. A reassuring Z′ calculated from those controls does not establish uniform conditions across the plate.\n\nYour plate map also contains a clock\n\nA reader measures wells in an order. If the plate is warming or cooling during acquisition, later wells are measured under different conditions from earlier ones. Time becomes position on the exported plate map.\n\nRevvity explicitly lists temperature changes during reading as a cause of signal gradients. [3] A smooth directional pattern may therefore reflect the measurement sequence, even when dispensing was uniform. Plot signal against actual read order as well as row and column.\n\nEvaporation and thermal equilibration can produce similar maps, and both may be occurring on the same plate. A center-to-edge pattern alone does not identify which one you have. The Assay Guidance Manual includes temperature gradients among the sources of plate effects and discusses a luminescence example in which the center and edges cool differently. [4]\n\nWhere the instrument permits a different acquisition order, compare fresh, identically prepared plates using balanced read orders. Match their assay ages. A pattern that follows elapsed read time strengthens the case for a time-dependent process, although it still does not distinguish temperature from evolving chemistry. Follow up with a temperature measurement or a controlled equilibration comparison.\n\nThere are two clocks to manage\n\nThe first clock is chemical: binding partners approach equilibrium and assay reactions progress. The second is thermal: liquid, plastic, and the surrounding environment approach a common temperature.\n\n“Wait another half hour” changes both clocks. An improvement does not tell you which process was responsible.\n\nThe practical guide illustrates that extending an Alpha assay's incubation can change the measured competition curve as the system approaches equilibrium. It also discusses the time needed for a plate to equilibrate after a temperature mismatch. [1] An incubation time borrowed from another assay therefore needs checking in yours.\n\nA useful comparison holds assay age constant while changing thermal history. Stagger preparation so that plates reach the reader at the same time after the relevant reagent addition. Give one the routine handling sequence and another a defined, verified thermal equilibration step. Balance the order of those conditions across replicate runs. Record enough timestamps to reconstruct what actually happened.\n\nRecord which reagent addition starts each incubation. In a multistep binding assay, “incubated for sixty minutes” leaves too much unspecified.\n\nMatching assay age does not isolate the detection chemistry: the different temperature histories may also have changed binding. To separate those contributions, add a suitable detection control and examine the binding time course independently. The handling comparison alone cannot separate these effects.\n\nChamber temperature is not sample temperature\n\nA chamber temperature reading is useful, but it is not a measurement of every sample. The plate has thermal mass, its own starting temperature, and a finite rate of heat exchange. Well volume, plate design, seals, and stack position can all affect the time needed to equilibrate.\n\nThe CellTiter-Glo 2.0 manual explains that temperature affects both luminescence intensity and decay. It also warns that plates cooling in tall stacks take longer to equilibrate than plates in a single layer, and that gradients can depend on a plate's position in the stack. [5] A long-lived glow gives you scheduling flexibility; it does not make light output independent of temperature.\n\nFor instrument evaluation, ask what happens to sample temperature during a realistic sequence of reads. A heating-only system cannot actively bring a chamber below its current temperature. Holding a lower operating temperature requires heat removal, including heat generated by internal components. Ask for sample-temperature measurements during sustained operation as well as the chamber specification.\n\nMoving air can aid heat exchange while also promoting evaporation; the balance depends on humidity, exposure, and sealing. [4] A thermally stable measurement environment that limits unnecessary airflow over samples is worth evaluating, especially at small volumes. It still needs testing with the plate and handling method you intend to use.\n\nTesting for temperature effects\n\nStart with a uniformity plate: identical high-signal assay wells distributed across the plate, with low controls placed throughout rather than confined to one corner. Use the actual plate type, fill volume, seal, and acquisition settings. This lets you look for spatial patterns without differences in compound activity.\n\nCompare routine handling with a controlled equilibration workflow. Use a separate, representative plate for temperature measurements, placing suitable probes in liquid at center and edge positions where feasible. Record the measurement limitations: an air sensor or an infrared reading of plastic does not directly report the temperature of every assay well.\n\nPlot signal against well position and acquisition time. Compare the first plate with later plates in a realistic batch. Keep light exposure, reagent age, dispensing order, and reader settings controlled or recorded. If the pattern remains after thermal equilibration, investigate those other causes.\n\nUse separate wells or plates for successive time points when investigating Alpha signal stability. Revvity's AlphaPlex guide warns that measurement itself can reduce subsequent signal through oxidation of protein recognition elements. [6] Repeatedly reading the same plate can therefore mix genuine time dependence with effects of the earlier reads.\n\nThat observation also explains one advantage of collecting two AlphaPlex emission channels simultaneously: both channels sample the same measurement event, acquisition is faster, and the second channel avoids a separate excitation/read cycle. The guide reports a possible second-read reduction of a few percent, while also reporting no significant sensitivity difference between the sequential and simultaneous configurations it discusses. [6] Both channels are measured at the same time, but their signals remain temperature-dependent.\n\nWhat belongs in the working protocol\n\n\nDo specify how plates reach read temperature. Specify incubation conditions, transfer, stack arrangement, equilibration, and permitted queue time. “Room temperature” needs an operational meaning.\nDo distribute controls. Place them across the plate so that spatial differences are visible.\nDo test a full batch. An isolated development plate does not reproduce a stack, an instrument warming during use, or a growing queue.\nDo not use a published temperature coefficient to repair a screen after the fact. Establish the response of your own assay and investigate how samples and controls differed.\nDo not interpret every extra minute as beneficial. Thermal equilibration, binding equilibration, and read-induced changes can pull the result in different directions.\n\n\nReferences\n\n1. PerkinElmer. AlphaScreen practical guide. Especially PDF pp. 7, 30, 32 and 37; printed pp. 1, 24, 26 and 31. Legacy guide supplied to this project; public copy linked for readers.\n\n2. Revvity. AlphaLISA and AlphaScreen no-wash assays. Temperature FAQ.\n\n3. Revvity. Alpha troubleshooting tables. Signal inconsistency and temperature guidance.\n\n4. Assay Guidance Manual, supplied 2021 compilation. Microplate incubation and plate-effects discussion, PDF pp. 1337–1344, especially p. 1342 / printed p. 1322. Online chapter entry; the cited text was checked in the supplied 2021 edition.\n\n5. Promega. CellTiter-Glo 2.0 Assay technical manual TM403. Revised January 2023. Section 4.B, PDF p. 11 / printed p. 10.\n\n6. Revvity. AlphaPlex assay development user guide. Incubation guidance and optics selection, pp. 8 and 12–13.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "An Alpha plate can report a convincing biological effect even when the biology has not changed. A temperature difference across the plate can produce that apparent effect through the detection chemistry.",
+          "html": "<p>An Alpha plate can report a convincing biological effect even when the biology has not changed. A temperature difference across the plate can produce that apparent effect through the detection chemistry.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Temperature deserves the same attention as binding, bead concentrations, and optical settings when troubleshooting an Alpha assay. It can help explain drifting controls, edge effects, disagreement between development and screening, and the plate that behaves beautifully until you put forty more behind it.",
+          "html": "<p>Temperature deserves the same attention as binding, bead concentrations, and optical settings when troubleshooting an Alpha assay. It can help explain drifting controls, edge effects, disagreement between development and screening, and the plate that behaves beautifully until you put forty more behind it.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-few-degrees-can-change-the-result",
+      "heading": "A few degrees can change the result",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A few degrees can change the result",
+          "html": "<h2 id=\"a-few-degrees-can-change-the-result\">A few degrees can change the result</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Alpha detection starts with excitation of a donor bead, which generates singlet oxygen. If a suitable acceptor bead is close enough, that chemistry produces the light we measure. The signal therefore depends on both the interaction bringing the beads together and the efficiency of the detection process. [1]",
+          "html": "<p>Alpha detection starts with excitation of a donor bead, which generates singlet oxygen. If a suitable acceptor bead is close enough, that chemistry produces the light we measure. The signal therefore depends on both the interaction bringing the beads together and the efficiency of the detection process. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The older AlphaScreen practical guide gives a typical signal change of approximately 8% per °C. Revvity's current guidance describes changes as high as 10% per °C, depending on the assay. It distinguishes temperature effects on the approach to binding equilibrium from effects on singlet-oxygen generation and diffusion during measurement. [1, 2]",
+          "html": "<p>The older AlphaScreen practical guide gives a typical signal change of approximately 8% per °C. Revvity's current guidance describes changes as high as 10% per °C, depending on the assay. It distinguishes temperature effects on the approach to binding equilibrium from effects on singlet-oxygen generation and diffusion during measurement. [1, 2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Neither figure is a universal correction factor. The response can vary with temperature, matrix, and Alpha format, and it need not be linear. A reagent's storage stability also tells you very little about the temperature dependence of its light output during a read.",
+          "html": "<p>Neither figure is a universal correction factor. The response can vary with temperature, matrix, and Alpha format, and it need not be linear. A reagent's storage stability also tells you very little about the temperature dependence of its light output during a read.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider a simple example. Your high-signal control is 10,000 counts and your low-signal control is 1,000. A sample has no inhibitory activity and should look like the high control. Assume, locally, that its measured signal falls by 8% for each degree it is cooler than those controls.",
+          "html": "<p>Consider a simple example. Your high-signal control is 10,000 counts and your low-signal control is 1,000. A sample has no inhibitory activity and should look like the high control. Assume, locally, that its measured signal falls by 8% for each degree it is cooler than those controls.</p>"
+        },
+        {
+          "type": "p",
+          "text": "At 2 °C cooler, the sample reads 8,400 counts. Using the usual high-to-low normalization for an inhibition assay:",
+          "html": "<p>At 2 °C cooler, the sample reads 8,400 counts. Using the usual high-to-low normalization for an inhibition assay:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Apparent inhibition (%) = 100 × [1 − (sample − low) divided by (high − low) ]",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Apparent inhibition (%) = 100 × [1 − (sample − low) divided by (high − low) ]\"><mrow><mrow><mtext>Apparent inhibition (%) = 100 × [1 − </mtext></mrow><mfrac><mrow><mrow><mtext>sample − low</mtext></mrow></mrow><mrow><mrow><mtext>high − low</mtext></mrow></mrow></mfrac><mrow><mtext>]</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "div",
+          "text": "Substitution gives 100 × [1 − (8,400 − 1,000) divided by (10,000 − 1,000) ] = 17.8%.",
+          "html": "<div class=\"math-paragraph\">Substitution gives <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"100 × [1 − (8,400 − 1,000) divided by (10,000 − 1,000) ] = 17.8%.\"><mrow><mrow><mtext>100 × [1 − </mtext></mrow><mfrac><mrow><mrow><mtext>8,400 − 1,000</mtext></mrow></mrow><mrow><mrow><mtext>10,000 − 1,000</mtext></mrow></mrow></mfrac><mrow><mtext>] = 17.8%.</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "That is nearly eighteen percentage points of apparent inhibition without an inhibitor. This is a constructed example, with fixed control values and an assumed linear temperature response. Even under those simple assumptions, a small temperature difference consumes a substantial fraction of the assay window.",
+          "html": "<p>That is nearly eighteen percentage points of apparent inhibition without an inhibitor. This is a constructed example, with fixed control values and an assumed linear temperature response. Even under those simple assumptions, a small temperature difference consumes a substantial fraction of the assay window.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Normalization would cancel a common multiplicative change if samples and controls experienced it equally. In this example, only the sample signal has changed. Controls confined to one thermal region cannot reliably correct samples in another. A reassuring Z′ calculated from those controls does not establish uniform conditions across the plate.",
+          "html": "<p>Normalization would cancel a common multiplicative change if samples and controls experienced it equally. In this example, only the sample signal has changed. Controls confined to one thermal region cannot reliably correct samples in another. A reassuring Z′ calculated from those controls does not establish uniform conditions across the plate.</p>"
+        }
+      ]
+    },
+    {
+      "id": "your-plate-map-also-contains-a-clock",
+      "heading": "Your plate map also contains a clock",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Your plate map also contains a clock",
+          "html": "<h2 id=\"your-plate-map-also-contains-a-clock\">Your plate map also contains a clock</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A reader measures wells in an order. If the plate is warming or cooling during acquisition, later wells are measured under different conditions from earlier ones. Time becomes position on the exported plate map.",
+          "html": "<p>A reader measures wells in an order. If the plate is warming or cooling during acquisition, later wells are measured under different conditions from earlier ones. Time becomes position on the exported plate map.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity explicitly lists temperature changes during reading as a cause of signal gradients. [3] A smooth directional pattern may therefore reflect the measurement sequence, even when dispensing was uniform. Plot signal against actual read order as well as row and column.",
+          "html": "<p>Revvity explicitly lists temperature changes during reading as a cause of signal gradients. [3] A smooth directional pattern may therefore reflect the measurement sequence, even when dispensing was uniform. Plot signal against actual read order as well as row and column.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Evaporation and thermal equilibration can produce similar maps, and both may be occurring on the same plate. A center-to-edge pattern alone does not identify which one you have. The Assay Guidance Manual includes temperature gradients among the sources of plate effects and discusses a luminescence example in which the center and edges cool differently. [4]",
+          "html": "<p>Evaporation and thermal equilibration can produce similar maps, and both may be occurring on the same plate. A center-to-edge pattern alone does not identify which one you have. The Assay Guidance Manual includes temperature gradients among the sources of plate effects and discusses a luminescence example in which the center and edges cool differently. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Where the instrument permits a different acquisition order, compare fresh, identically prepared plates using balanced read orders. Match their assay ages. A pattern that follows elapsed read time strengthens the case for a time-dependent process, although it still does not distinguish temperature from evolving chemistry. Follow up with a temperature measurement or a controlled equilibration comparison.",
+          "html": "<p>Where the instrument permits a different acquisition order, compare fresh, identically prepared plates using balanced read orders. Match their assay ages. A pattern that follows elapsed read time strengthens the case for a time-dependent process, although it still does not distinguish temperature from evolving chemistry. Follow up with a temperature measurement or a controlled equilibration comparison.</p>"
+        }
+      ]
+    },
+    {
+      "id": "there-are-two-clocks-to-manage",
+      "heading": "There are two clocks to manage",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "There are two clocks to manage",
+          "html": "<h2 id=\"there-are-two-clocks-to-manage\">There are two clocks to manage</h2>"
+        },
+        {
+          "type": "p",
+          "text": "The first clock is chemical: binding partners approach equilibrium and assay reactions progress. The second is thermal: liquid, plastic, and the surrounding environment approach a common temperature.",
+          "html": "<p>The first clock is chemical: binding partners approach equilibrium and assay reactions progress. The second is thermal: liquid, plastic, and the surrounding environment approach a common temperature.</p>"
+        },
+        {
+          "type": "p",
+          "text": "“Wait another half hour” changes both clocks. An improvement does not tell you which process was responsible.",
+          "html": "<p>“Wait another half hour” changes both clocks. An improvement does not tell you which process was responsible.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The practical guide illustrates that extending an Alpha assay's incubation can change the measured competition curve as the system approaches equilibrium. It also discusses the time needed for a plate to equilibrate after a temperature mismatch. [1] An incubation time borrowed from another assay therefore needs checking in yours.",
+          "html": "<p>The practical guide illustrates that extending an Alpha assay's incubation can change the measured competition curve as the system approaches equilibrium. It also discusses the time needed for a plate to equilibrate after a temperature mismatch. [1] An incubation time borrowed from another assay therefore needs checking in yours.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A useful comparison holds assay age constant while changing thermal history. Stagger preparation so that plates reach the reader at the same time after the relevant reagent addition. Give one the routine handling sequence and another a defined, verified thermal equilibration step. Balance the order of those conditions across replicate runs. Record enough timestamps to reconstruct what actually happened.",
+          "html": "<p>A useful comparison holds assay age constant while changing thermal history. Stagger preparation so that plates reach the reader at the same time after the relevant reagent addition. Give one the routine handling sequence and another a defined, verified thermal equilibration step. Balance the order of those conditions across replicate runs. Record enough timestamps to reconstruct what actually happened.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Record which reagent addition starts each incubation. In a multistep binding assay, “incubated for sixty minutes” leaves too much unspecified.",
+          "html": "<p>Record which reagent addition starts each incubation. In a multistep binding assay, “incubated for sixty minutes” leaves too much unspecified.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Matching assay age does not isolate the detection chemistry: the different temperature histories may also have changed binding. To separate those contributions, add a suitable detection control and examine the binding time course independently. The handling comparison alone cannot separate these effects.",
+          "html": "<p>Matching assay age does not isolate the detection chemistry: the different temperature histories may also have changed binding. To separate those contributions, add a suitable detection control and examine the binding time course independently. The handling comparison alone cannot separate these effects.</p>"
+        }
+      ]
+    },
+    {
+      "id": "chamber-temperature-is-not-sample-temperature",
+      "heading": "Chamber temperature is not sample temperature",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Chamber temperature is not sample temperature",
+          "html": "<h2 id=\"chamber-temperature-is-not-sample-temperature\">Chamber temperature is not sample temperature</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A chamber temperature reading is useful, but it is not a measurement of every sample. The plate has thermal mass, its own starting temperature, and a finite rate of heat exchange. Well volume, plate design, seals, and stack position can all affect the time needed to equilibrate.",
+          "html": "<p>A chamber temperature reading is useful, but it is not a measurement of every sample. The plate has thermal mass, its own starting temperature, and a finite rate of heat exchange. Well volume, plate design, seals, and stack position can all affect the time needed to equilibrate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The CellTiter-Glo 2.0 manual explains that temperature affects both luminescence intensity and decay. It also warns that plates cooling in tall stacks take longer to equilibrate than plates in a single layer, and that gradients can depend on a plate's position in the stack. [5] A long-lived glow gives you scheduling flexibility; it does not make light output independent of temperature.",
+          "html": "<p>The CellTiter-Glo 2.0 manual explains that temperature affects both luminescence intensity and decay. It also warns that plates cooling in tall stacks take longer to equilibrate than plates in a single layer, and that gradients can depend on a plate's position in the stack. [5] A long-lived glow gives you scheduling flexibility; it does not make light output independent of temperature.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For instrument evaluation, ask what happens to sample temperature during a realistic sequence of reads. A heating-only system cannot actively bring a chamber below its current temperature. Holding a lower operating temperature requires heat removal, including heat generated by internal components. Ask for sample-temperature measurements during sustained operation as well as the chamber specification.",
+          "html": "<p>For instrument evaluation, ask what happens to sample temperature during a realistic sequence of reads. A heating-only system cannot actively bring a chamber below its current temperature. Holding a lower operating temperature requires heat removal, including heat generated by internal components. Ask for sample-temperature measurements during sustained operation as well as the chamber specification.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Moving air can aid heat exchange while also promoting evaporation; the balance depends on humidity, exposure, and sealing. [4] A thermally stable measurement environment that limits unnecessary airflow over samples is worth evaluating, especially at small volumes. It still needs testing with the plate and handling method you intend to use.",
+          "html": "<p>Moving air can aid heat exchange while also promoting evaporation; the balance depends on humidity, exposure, and sealing. [4] A thermally stable measurement environment that limits unnecessary airflow over samples is worth evaluating, especially at small volumes. It still needs testing with the plate and handling method you intend to use.</p>"
+        }
+      ]
+    },
+    {
+      "id": "testing-for-temperature-effects",
+      "heading": "Testing for temperature effects",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Testing for temperature effects",
+          "html": "<h2 id=\"testing-for-temperature-effects\">Testing for temperature effects</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Start with a uniformity plate: identical high-signal assay wells distributed across the plate, with low controls placed throughout rather than confined to one corner. Use the actual plate type, fill volume, seal, and acquisition settings. This lets you look for spatial patterns without differences in compound activity.",
+          "html": "<p>Start with a uniformity plate: identical high-signal assay wells distributed across the plate, with low controls placed throughout rather than confined to one corner. Use the actual plate type, fill volume, seal, and acquisition settings. This lets you look for spatial patterns without differences in compound activity.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare routine handling with a controlled equilibration workflow. Use a separate, representative plate for temperature measurements, placing suitable probes in liquid at center and edge positions where feasible. Record the measurement limitations: an air sensor or an infrared reading of plastic does not directly report the temperature of every assay well.",
+          "html": "<p>Compare routine handling with a controlled equilibration workflow. Use a separate, representative plate for temperature measurements, placing suitable probes in liquid at center and edge positions where feasible. Record the measurement limitations: an air sensor or an infrared reading of plastic does not directly report the temperature of every assay well.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Plot signal against well position and acquisition time. Compare the first plate with later plates in a realistic batch. Keep light exposure, reagent age, dispensing order, and reader settings controlled or recorded. If the pattern remains after thermal equilibration, investigate those other causes.",
+          "html": "<p>Plot signal against well position and acquisition time. Compare the first plate with later plates in a realistic batch. Keep light exposure, reagent age, dispensing order, and reader settings controlled or recorded. If the pattern remains after thermal equilibration, investigate those other causes.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use separate wells or plates for successive time points when investigating Alpha signal stability. Revvity's AlphaPlex guide warns that measurement itself can reduce subsequent signal through oxidation of protein recognition elements. [6] Repeatedly reading the same plate can therefore mix genuine time dependence with effects of the earlier reads.",
+          "html": "<p>Use separate wells or plates for successive time points when investigating Alpha signal stability. Revvity's AlphaPlex guide warns that measurement itself can reduce subsequent signal through oxidation of protein recognition elements. [6] Repeatedly reading the same plate can therefore mix genuine time dependence with effects of the earlier reads.</p>"
+        },
+        {
+          "type": "p",
+          "text": "That observation also explains one advantage of collecting two AlphaPlex emission channels simultaneously: both channels sample the same measurement event, acquisition is faster, and the second channel avoids a separate excitation/read cycle. The guide reports a possible second-read reduction of a few percent, while also reporting no significant sensitivity difference between the sequential and simultaneous configurations it discusses. [6] Both channels are measured at the same time, but their signals remain temperature-dependent.",
+          "html": "<p>That observation also explains one advantage of collecting two AlphaPlex emission channels simultaneously: both channels sample the same measurement event, acquisition is faster, and the second channel avoids a separate excitation/read cycle. The guide reports a possible second-read reduction of a few percent, while also reporting no significant sensitivity difference between the sequential and simultaneous configurations it discusses. [6] Both channels are measured at the same time, but their signals remain temperature-dependent.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-belongs-in-the-working-protocol",
+      "heading": "What belongs in the working protocol",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What belongs in the working protocol",
+          "html": "<h2 id=\"what-belongs-in-the-working-protocol\">What belongs in the working protocol</h2>"
+        },
+        {
+          "type": "ul",
+          "text": "\nDo specify how plates reach read temperature. Specify incubation conditions, transfer, stack arrangement, equilibration, and permitted queue time. “Room temperature” needs an operational meaning.\nDo distribute controls. Place them across the plate so that spatial differences are visible.\nDo test a full batch. An isolated development plate does not reproduce a stack, an instrument warming during use, or a growing queue.\nDo not use a published temperature coefficient to repair a screen after the fact. Establish the response of your own assay and investigate how samples and controls differed.\nDo not interpret every extra minute as beneficial. Thermal equilibration, binding equilibration, and read-induced changes can pull the result in different directions.\n",
+          "html": "<ul>\n<li>Do specify how plates reach read temperature. Specify incubation conditions, transfer, stack arrangement, equilibration, and permitted queue time. “Room temperature” needs an operational meaning.</li>\n<li>Do distribute controls. Place them across the plate so that spatial differences are visible.</li>\n<li>Do test a full batch. An isolated development plate does not reproduce a stack, an instrument warming during use, or a growing queue.</li>\n<li>Do not use a published temperature coefficient to repair a screen after the fact. Establish the response of your own assay and investigate how samples and controls differed.</li>\n<li>Do not interpret every extra minute as beneficial. Thermal equilibration, binding equilibration, and read-induced changes can pull the result in different directions.</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. PerkinElmer. AlphaScreen practical guide. Especially PDF pp. 7, 30, 32 and 37; printed pp. 1, 24, 26 and 31. Legacy guide supplied to this project; public copy linked for readers.",
+          "html": "<p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>. Especially PDF pp. 7, 30, 32 and 37; printed pp. 1, 24, 26 and 31. Legacy guide supplied to this project; public copy linked for readers.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. AlphaLISA and AlphaScreen no-wash assays. Temperature FAQ.",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays\">AlphaLISA and AlphaScreen no-wash assays</a>. Temperature FAQ.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. Alpha troubleshooting tables. Signal inconsistency and temperature guidance.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://www.revvity.com/ask/alpha-troubleshooting-tables\">Alpha troubleshooting tables</a>. Signal inconsistency and temperature guidance.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Assay Guidance Manual, supplied 2021 compilation. Microplate incubation and plate-effects discussion, PDF pp. 1337–1344, especially p. 1342 / printed p. 1322. Online chapter entry; the cited text was checked in the supplied 2021 edition.",
+          "html": "<p id=\"ref-4\">4. Assay Guidance Manual, supplied 2021 compilation. Microplate incubation and plate-effects discussion, PDF pp. 1337–1344, especially p. 1342 / printed p. 1322. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Online chapter entry</a>; the cited text was checked in the supplied 2021 edition.</p>"
+        },
+        {
+          "type": "p",
+          "text": "5. Promega. CellTiter-Glo 2.0 Assay technical manual TM403. Revised January 2023. Section 4.B, PDF p. 11 / printed p. 10.",
+          "html": "<p id=\"ref-5\">5. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en\">CellTiter-Glo 2.0 Assay technical manual TM403</a>. Revised January 2023. Section 4.B, PDF p. 11 / printed p. 10.</p>"
+        },
+        {
+          "type": "p",
+          "text": "6. Revvity. AlphaPlex assay development user guide. Incubation guidance and optics selection, pp. 8 and 12–13.",
+          "html": "<p id=\"ref-6\">6. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf\">AlphaPlex assay development user guide</a>. Incubation guidance and optics selection, pp. 8 and 12–13.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. PerkinElmer. AlphaScreen practical guide. Especially PDF pp. 7, 30, 32 and 37; printed pp. 1, 24, 26 and 31. Legacy guide supplied to this project; public copy linked for readers.",
+      "urls": [
+        "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. AlphaLISA and AlphaScreen no-wash assays. Temperature FAQ.",
+      "urls": [
+        "https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. Alpha troubleshooting tables. Signal inconsistency and temperature guidance.",
+      "urls": [
+        "https://www.revvity.com/ask/alpha-troubleshooting-tables"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Assay Guidance Manual, supplied 2021 compilation. Microplate incubation and plate-effects discussion, PDF pp. 1337–1344, especially p. 1342 / printed p. 1322. Online chapter entry; the cited text was checked in the supplied 2021 edition.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558077/"
+      ]
+    },
+    {
+      "id": "ref-5",
+      "citation": "5. Promega. CellTiter-Glo 2.0 Assay technical manual TM403. Revised January 2023. Section 4.B, PDF p. 11 / printed p. 10.",
+      "urls": [
+        "https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en"
+      ]
+    },
+    {
+      "id": "ref-6",
+      "citation": "6. Revvity. AlphaPlex assay development user guide. Incubation guidance and optics selection, pp. 8 and 12–13.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "Apparent inhibition (%) = 100 × [1 − (sample − low) divided by (high − low) ]",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Apparent inhibition (%) = 100 × [1 − (sample − low) divided by (high − low) ]\"><mrow><mrow><mtext>Apparent inhibition (%) = 100 × [1 − </mtext></mrow><mfrac><mrow><mrow><mtext>sample − low</mtext></mrow></mrow><mrow><mrow><mtext>high − low</mtext></mrow></mrow></mfrac><mrow><mtext>]</mtext></mrow></mrow></math>"
+    },
+    {
+      "description": "100 × [1 − (8,400 − 1,000) divided by (10,000 − 1,000) ] = 17.8%.",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"100 × [1 − (8,400 − 1,000) divided by (10,000 − 1,000) ] = 17.8%.\"><mrow><mrow><mtext>100 × [1 − </mtext></mrow><mfrac><mrow><mrow><mtext>8,400 − 1,000</mtext></mrow></mrow><mrow><mrow><mtext>10,000 − 1,000</mtext></mrow></mrow></mfrac><mrow><mtext>] = 17.8%.</mtext></mrow></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "459994ad13514d838be1e6d86fe8bdb80774a01991542da4e39793274af3c27c"
+}

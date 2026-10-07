@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "id": "plate-liquid-temperature-reader-setpoint",
+  "canonical_url": "https://discoveryinpractice.com/articles/plate-liquid-temperature-reader-setpoint/",
+  "title": "How can I tell whether the liquid in my plate has reached the reader's temperature setpoint?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Distinguish chamber and liquid temperatures, understand thermal lag, and qualify equilibration across wells during a realistic plate-reader run.",
+  "takeaways": [
+    "The sensor and the assay can settle at different times",
+    "A nearly completed temperature change can still matter",
+    "Qualify a representative plate"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Temperature",
+    "Microplates",
+    "Assay qualification"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-07",
+  "date_modified": "2026-10-07",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Measure representative liquid temperatures under actual plate-handling conditions; a stable chamber display does not establish that every well has reached its setpoint. Molecular Devices' SpectraMax L guide explicitly distinguishes its chamber-air sensors from sample temperature and warns that sample equilibration can be prolonged. [1] Verify that the liquid remains within the assay's acceptable temperature range when each well is measured.</p><h2 id=\"the-sensor-and-the-assay-can-settle-at-different-times\">The sensor and the assay can settle at different times</h2><p>Air, plate plastic and liquid exchange heat at different rates. A chamber may recover its setpoint quickly after loading while the liquid continues warming or cooling. Reagents added just before reading can create another temperature step. A lid, a different fill volume or a different plate material can change the response.</p><p>Promega's CellTiter-Glo 2.0 manual warns that plates in tall stacks equilibrate more slowly than plates in a single layer. Incomplete equilibration can create center-to-edge differences, with the pattern also depending on position in the stack. [2] Equal time on the bench therefore need not mean equal liquid temperature.</p><h2 id=\"a-nearly-completed-temperature-change-can-still-matter\">A nearly completed temperature change can still matter</h2><p>A simple illustrative cooling model is:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"T(t) = T subscript final + ( T subscript start − T subscript final ) × exp( (−t) divided by (τ) )\"><mrow><mrow><mtext>T(t) = </mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub><mrow><mtext> + (</mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>start</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub><mrow><mtext>) × exp(</mtext></mrow><mfrac><mrow><mrow><mtext>−t</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac><mrow><mtext>)</mtext></mrow></mrow></math></div></div><p>T(t) is liquid temperature at time t, T_start is the starting temperature, T_final is the eventual temperature, and τ is an assumed thermal time constant. Here temperatures are in °C and t and τ use the same time units. The model describes one uniform compartment approaching constant surroundings; a real plate may require a more complicated description.</p><p>Suppose the liquid starts at 37°C, approaches 22°C and has τ = 5 minutes. After 15 minutes, it is approximately 22.75°C. It has completed about 95% of the temperature change yet remains 0.75°C above the target. Reaching within 0.5°C takes about 17 minutes in this model. None of these times is a recommended waiting period for a real plate.</p><p>A residual difference of this size can matter to temperature-sensitive chemistry. The AlphaScreen practical guide describes a historical example with substantial temperature-dependent signal and warns about count gradients while plates warm or cool during reading. [3] Determine the response for the specific assay before setting the allowable temperature deviation.</p><h2 id=\"qualify-a-representative-plate\">Qualify a representative plate</h2><p>Use a sacrificial plate containing liquid with thermal properties representative of the assay. Match plate construction, well volume, cover and loading sequence. Select a calibrated, instrument-compatible method capable of measuring the relevant liquid volume without materially changing it.</p><p>Include center, edge and corner positions, and record temperatures through the actual reading interval. A probe can displace liquid or conduct heat into a small well; a surface infrared measurement may describe the lid or liquid surface rather than the bulk liquid. Establish what the method measures and include its uncertainty when deciding whether the temperature requirement is met.</p><p>Run the comparison after the prescribed instrument preparation and during sustained plate throughput. Record the chamber value alongside the liquid measurements. Recheck after substantial changes to volume, plate type, loading cadence or incoming temperature.</p><h2 id=\"keep-equilibration-valid-after-the-plate-enters\">Keep equilibration valid after the plate enters</h2><p>A plate equilibrated on the bench can drift again inside a warmer chamber. Stable measurement close to the validated room-temperature endpoint reduces that second transition, but the liquid still needs verification. Check individual locations as well as the average across wells.</p><p>Specify the acceptable liquid-temperature range, the positions assessed and the handling conditions that produced it. Base the protocol's equilibration and maximum-wait instructions on those measurements.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Molecular Devices. <a href=\"https://www.moleculardevices.com/sites/default/files/en/assets/user-guide/br/spectramax-l-userguide-01120174e.pdf\">SpectraMax L User Guide, 0112-0174 E</a>, p. 29, Temperature Regulation. Verified web excerpt distinguishes chamber-air sensing from sample temperature and describes potentially prolonged equilibration. Full PDF download unavailable.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.</p><p id=\"ref-3\">3. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.</p>",
+  "body_text": "Measure representative liquid temperatures under actual plate-handling conditions; a stable chamber display does not establish that every well has reached its setpoint. Molecular Devices' SpectraMax L guide explicitly distinguishes its chamber-air sensors from sample temperature and warns that sample equilibration can be prolonged. [1] Verify that the liquid remains within the assay's acceptable temperature range when each well is measured.\n\nThe sensor and the assay can settle at different times\n\nAir, plate plastic and liquid exchange heat at different rates. A chamber may recover its setpoint quickly after loading while the liquid continues warming or cooling. Reagents added just before reading can create another temperature step. A lid, a different fill volume or a different plate material can change the response.\n\nPromega's CellTiter-Glo 2.0 manual warns that plates in tall stacks equilibrate more slowly than plates in a single layer. Incomplete equilibration can create center-to-edge differences, with the pattern also depending on position in the stack. [2] Equal time on the bench therefore need not mean equal liquid temperature.\n\nA nearly completed temperature change can still matter\n\nA simple illustrative cooling model is:\n\nT(t) = T subscript final + ( T subscript start − T subscript final ) × exp( (−t) divided by (τ) )\n\nT(t) is liquid temperature at time t, T_start is the starting temperature, T_final is the eventual temperature, and τ is an assumed thermal time constant. Here temperatures are in °C and t and τ use the same time units. The model describes one uniform compartment approaching constant surroundings; a real plate may require a more complicated description.\n\nSuppose the liquid starts at 37°C, approaches 22°C and has τ = 5 minutes. After 15 minutes, it is approximately 22.75°C. It has completed about 95% of the temperature change yet remains 0.75°C above the target. Reaching within 0.5°C takes about 17 minutes in this model. None of these times is a recommended waiting period for a real plate.\n\nA residual difference of this size can matter to temperature-sensitive chemistry. The AlphaScreen practical guide describes a historical example with substantial temperature-dependent signal and warns about count gradients while plates warm or cool during reading. [3] Determine the response for the specific assay before setting the allowable temperature deviation.\n\nQualify a representative plate\n\nUse a sacrificial plate containing liquid with thermal properties representative of the assay. Match plate construction, well volume, cover and loading sequence. Select a calibrated, instrument-compatible method capable of measuring the relevant liquid volume without materially changing it.\n\nInclude center, edge and corner positions, and record temperatures through the actual reading interval. A probe can displace liquid or conduct heat into a small well; a surface infrared measurement may describe the lid or liquid surface rather than the bulk liquid. Establish what the method measures and include its uncertainty when deciding whether the temperature requirement is met.\n\nRun the comparison after the prescribed instrument preparation and during sustained plate throughput. Record the chamber value alongside the liquid measurements. Recheck after substantial changes to volume, plate type, loading cadence or incoming temperature.\n\nKeep equilibration valid after the plate enters\n\nA plate equilibrated on the bench can drift again inside a warmer chamber. Stable measurement close to the validated room-temperature endpoint reduces that second transition, but the liquid still needs verification. Check individual locations as well as the average across wells.\n\nSpecify the acceptable liquid-temperature range, the positions assessed and the handling conditions that produced it. Base the protocol's equilibration and maximum-wait instructions on those measurements.\n\nReferences\n\n1. Molecular Devices. SpectraMax L User Guide, 0112-0174 E, p. 29, Temperature Regulation. Verified web excerpt distinguishes chamber-air sensing from sample temperature and describes potentially prolonged equilibration. Full PDF download unavailable.\n\n2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.\n\n3. PerkinElmer. AlphaScreen practical guide, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Measure representative liquid temperatures under actual plate-handling conditions; a stable chamber display does not establish that every well has reached its setpoint. Molecular Devices' SpectraMax L guide explicitly distinguishes its chamber-air sensors from sample temperature and warns that sample equilibration can be prolonged. [1] Verify that the liquid remains within the assay's acceptable temperature range when each well is measured.",
+          "html": "<p>Measure representative liquid temperatures under actual plate-handling conditions; a stable chamber display does not establish that every well has reached its setpoint. Molecular Devices' SpectraMax L guide explicitly distinguishes its chamber-air sensors from sample temperature and warns that sample equilibration can be prolonged. [1] Verify that the liquid remains within the assay's acceptable temperature range when each well is measured.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-sensor-and-the-assay-can-settle-at-different-times",
+      "heading": "The sensor and the assay can settle at different times",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The sensor and the assay can settle at different times",
+          "html": "<h2 id=\"the-sensor-and-the-assay-can-settle-at-different-times\">The sensor and the assay can settle at different times</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Air, plate plastic and liquid exchange heat at different rates. A chamber may recover its setpoint quickly after loading while the liquid continues warming or cooling. Reagents added just before reading can create another temperature step. A lid, a different fill volume or a different plate material can change the response.",
+          "html": "<p>Air, plate plastic and liquid exchange heat at different rates. A chamber may recover its setpoint quickly after loading while the liquid continues warming or cooling. Reagents added just before reading can create another temperature step. A lid, a different fill volume or a different plate material can change the response.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Promega's CellTiter-Glo 2.0 manual warns that plates in tall stacks equilibrate more slowly than plates in a single layer. Incomplete equilibration can create center-to-edge differences, with the pattern also depending on position in the stack. [2] Equal time on the bench therefore need not mean equal liquid temperature.",
+          "html": "<p>Promega's CellTiter-Glo 2.0 manual warns that plates in tall stacks equilibrate more slowly than plates in a single layer. Incomplete equilibration can create center-to-edge differences, with the pattern also depending on position in the stack. [2] Equal time on the bench therefore need not mean equal liquid temperature.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-nearly-completed-temperature-change-can-still-matter",
+      "heading": "A nearly completed temperature change can still matter",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A nearly completed temperature change can still matter",
+          "html": "<h2 id=\"a-nearly-completed-temperature-change-can-still-matter\">A nearly completed temperature change can still matter</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A simple illustrative cooling model is:",
+          "html": "<p>A simple illustrative cooling model is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "T(t) = T subscript final + ( T subscript start − T subscript final ) × exp( (−t) divided by (τ) )",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"T(t) = T subscript final + ( T subscript start − T subscript final ) × exp( (−t) divided by (τ) )\"><mrow><mrow><mtext>T(t) = </mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub><mrow><mtext> + (</mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>start</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub><mrow><mtext>) × exp(</mtext></mrow><mfrac><mrow><mrow><mtext>−t</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac><mrow><mtext>)</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "T(t) is liquid temperature at time t, T_start is the starting temperature, T_final is the eventual temperature, and τ is an assumed thermal time constant. Here temperatures are in °C and t and τ use the same time units. The model describes one uniform compartment approaching constant surroundings; a real plate may require a more complicated description.",
+          "html": "<p>T(t) is liquid temperature at time t, T_start is the starting temperature, T_final is the eventual temperature, and τ is an assumed thermal time constant. Here temperatures are in °C and t and τ use the same time units. The model describes one uniform compartment approaching constant surroundings; a real plate may require a more complicated description.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose the liquid starts at 37°C, approaches 22°C and has τ = 5 minutes. After 15 minutes, it is approximately 22.75°C. It has completed about 95% of the temperature change yet remains 0.75°C above the target. Reaching within 0.5°C takes about 17 minutes in this model. None of these times is a recommended waiting period for a real plate.",
+          "html": "<p>Suppose the liquid starts at 37°C, approaches 22°C and has τ = 5 minutes. After 15 minutes, it is approximately 22.75°C. It has completed about 95% of the temperature change yet remains 0.75°C above the target. Reaching within 0.5°C takes about 17 minutes in this model. None of these times is a recommended waiting period for a real plate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A residual difference of this size can matter to temperature-sensitive chemistry. The AlphaScreen practical guide describes a historical example with substantial temperature-dependent signal and warns about count gradients while plates warm or cool during reading. [3] Determine the response for the specific assay before setting the allowable temperature deviation.",
+          "html": "<p>A residual difference of this size can matter to temperature-sensitive chemistry. The AlphaScreen practical guide describes a historical example with substantial temperature-dependent signal and warns about count gradients while plates warm or cool during reading. [3] Determine the response for the specific assay before setting the allowable temperature deviation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "qualify-a-representative-plate",
+      "heading": "Qualify a representative plate",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Qualify a representative plate",
+          "html": "<h2 id=\"qualify-a-representative-plate\">Qualify a representative plate</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Use a sacrificial plate containing liquid with thermal properties representative of the assay. Match plate construction, well volume, cover and loading sequence. Select a calibrated, instrument-compatible method capable of measuring the relevant liquid volume without materially changing it.",
+          "html": "<p>Use a sacrificial plate containing liquid with thermal properties representative of the assay. Match plate construction, well volume, cover and loading sequence. Select a calibrated, instrument-compatible method capable of measuring the relevant liquid volume without materially changing it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Include center, edge and corner positions, and record temperatures through the actual reading interval. A probe can displace liquid or conduct heat into a small well; a surface infrared measurement may describe the lid or liquid surface rather than the bulk liquid. Establish what the method measures and include its uncertainty when deciding whether the temperature requirement is met.",
+          "html": "<p>Include center, edge and corner positions, and record temperatures through the actual reading interval. A probe can displace liquid or conduct heat into a small well; a surface infrared measurement may describe the lid or liquid surface rather than the bulk liquid. Establish what the method measures and include its uncertainty when deciding whether the temperature requirement is met.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Run the comparison after the prescribed instrument preparation and during sustained plate throughput. Record the chamber value alongside the liquid measurements. Recheck after substantial changes to volume, plate type, loading cadence or incoming temperature.",
+          "html": "<p>Run the comparison after the prescribed instrument preparation and during sustained plate throughput. Record the chamber value alongside the liquid measurements. Recheck after substantial changes to volume, plate type, loading cadence or incoming temperature.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-equilibration-valid-after-the-plate-enters",
+      "heading": "Keep equilibration valid after the plate enters",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep equilibration valid after the plate enters",
+          "html": "<h2 id=\"keep-equilibration-valid-after-the-plate-enters\">Keep equilibration valid after the plate enters</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A plate equilibrated on the bench can drift again inside a warmer chamber. Stable measurement close to the validated room-temperature endpoint reduces that second transition, but the liquid still needs verification. Check individual locations as well as the average across wells.",
+          "html": "<p>A plate equilibrated on the bench can drift again inside a warmer chamber. Stable measurement close to the validated room-temperature endpoint reduces that second transition, but the liquid still needs verification. Check individual locations as well as the average across wells.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Specify the acceptable liquid-temperature range, the positions assessed and the handling conditions that produced it. Base the protocol's equilibration and maximum-wait instructions on those measurements.",
+          "html": "<p>Specify the acceptable liquid-temperature range, the positions assessed and the handling conditions that produced it. Base the protocol's equilibration and maximum-wait instructions on those measurements.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Molecular Devices. SpectraMax L User Guide, 0112-0174 E, p. 29, Temperature Regulation. Verified web excerpt distinguishes chamber-air sensing from sample temperature and describes potentially prolonged equilibration. Full PDF download unavailable.",
+          "html": "<p id=\"ref-1\">1. Molecular Devices. <a href=\"https://www.moleculardevices.com/sites/default/files/en/assets/user-guide/br/spectramax-l-userguide-01120174e.pdf\">SpectraMax L User Guide, 0112-0174 E</a>, p. 29, Temperature Regulation. Verified web excerpt distinguishes chamber-air sensing from sample temperature and describes potentially prolonged equilibration. Full PDF download unavailable.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/\">CellTiter-Glo 2.0 Assay Technical Manual TM403</a>, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. PerkinElmer. AlphaScreen practical guide, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.",
+          "html": "<p id=\"ref-3\">3. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Molecular Devices. SpectraMax L User Guide, 0112-0174 E, p. 29, Temperature Regulation. Verified web excerpt distinguishes chamber-air sensing from sample temperature and describes potentially prolonged equilibration. Full PDF download unavailable.",
+      "urls": [
+        "https://www.moleculardevices.com/sites/default/files/en/assets/user-guide/br/spectramax-l-userguide-01120174e.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. CellTiter-Glo 2.0 Assay Technical Manual TM403, revised January 2023, PDF pp. 7 and 11. Room-temperature protocol, signal temperature dependence and stack equilibration.",
+      "urls": [
+        "https://www.promega.com/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. PerkinElmer. AlphaScreen practical guide, PDF pp. 30 and 32 / printed pp. 24 and 26. Separate time-point wells, binding equilibration and temperature sensitivity. Historical examples are assay-specific.",
+      "urls": [
+        "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "T(t) = T subscript final + ( T subscript start − T subscript final ) × exp( (−t) divided by (τ) )",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"T(t) = T subscript final + ( T subscript start − T subscript final ) × exp( (−t) divided by (τ) )\"><mrow><mrow><mtext>T(t) = </mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub><mrow><mtext> + (</mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>start</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>final</mtext></mrow></mrow></msub><mrow><mtext>) × exp(</mtext></mrow><mfrac><mrow><mrow><mtext>−t</mtext></mrow></mrow><mrow><mrow><mtext>τ</mtext></mrow></mrow></mfrac><mrow><mtext>)</mtext></mrow></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "609435b9dadd085570afa59e8242db3df81cfc22f81bd72104090a0426eea788"
+}

@@ -47,6 +47,10 @@
       "label": "BRET"
     },
     {
+      "id": "alpha-assays",
+      "label": "Alpha assays"
+    },
+    {
       "id": "binding-assays",
       "label": "Binding assays"
     },
@@ -506,6 +510,76 @@
         "luminescence",
         "fluorescence",
         "absorbance"
+      ]
+    },
+    "microplate-temperature-stability-qualification": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 100,
+      "tags": [
+        "plate-effects"
+      ]
+    },
+    "plate-queue-ic50-assay-timing": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 120,
+      "tags": [
+        "plate-effects"
+      ]
+    },
+    "alpha-assay-temperature": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 130,
+      "tags": [
+        "plate-effects",
+        "alpha-assays"
+      ]
+    },
+    "plate-reader-warming-incubation-off": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 140,
+      "tags": [
+        "luminescence",
+        "plate-effects",
+        "alpha-assays"
+      ]
+    },
+    "ambient-plus-four-room-temperature-plate-reader": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 150,
+      "tags": [
+        "plate-effects"
+      ]
+    },
+    "plate-liquid-temperature-reader-setpoint": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 160,
+      "tags": [
+        "plate-effects"
+      ]
+    },
+    "alpha-glow-luminescence-controls-drift": {
+      "section": "troubleshooting",
+      "group": "handling",
+      "order": 170,
+      "tags": [
+        "luminescence",
+        "plate-effects",
+        "alpha-assays"
+      ]
+    },
+    "cell-luminescence-37c-room-temperature": {
+      "section": "assays",
+      "group": "handling",
+      "order": 130,
+      "tags": [
+        "luminescence",
+        "plate-effects"
       ]
     }
   },

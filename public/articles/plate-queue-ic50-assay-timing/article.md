@@ -1,0 +1,104 @@
+# The plate queue changed your IC50
+
+By Andrew Stewart · CC BY 4.0
+
+https://discoveryinpractice.com/articles/plate-queue-ic50-assay-timing/
+
+Map assay clocks, challenge plate queues and define restart rules. Use full curves, temperature control and reliable detection to test a screening workflow.
+
+Give twelve plates their detection reagent at the same time. Wait thirty minutes, then read them at four-minute intervals. The first plate enters the reader at an assay age of thirty minutes. The last enters at seventy-four. Put a twenty-minute interruption halfway through the run and the last plate reaches ninety-four minutes.
+
+Whether the curves change in this hypothetical run depends on the assay. The scheduling difference is present before a single photon has been counted, and it belongs in qualification whenever values from those plates will be compared.
+
+A protocol can specify “incubate for thirty minutes” while the automation implements a much wider range. The operator can follow every written step and still produce different assay ages across the batch.
+
+## Give each interval a name
+
+There is rarely just one assay clock. Compound preincubation can begin before the biological reaction starts. Reaction duration may end at a terminating addition. Detection chemistry then develops, the plate approaches reading temperature, and measurement occurs over an interval rather than at one instant.
+
+Each interval can affect a different part of the result. Compound occupancy can continue changing before substrate arrives. Once the reaction starts, waiting may add product; after detection reagent, it may instead change the light output or its stability. An apparently convenient delay can alter more than one of these at once.
+
+ADP-Glo makes the distinctions concrete. The kinase reaction precedes the ADP-Glo reagent step and the later kinase detection step. The manual gives separate instructions for these stages, including room-temperature equilibration. If a reaction ran at another temperature, it instructs equilibration before adding ADP-Glo reagent. Time spent in that transition should be assessed as part of the reaction history; cooling alone does not establish that catalysis has stopped. Follow and qualify the actual termination procedure. [1]
+
+For the automation record, retain timestamps for the events that matter to the assay: critical additions, any validated stop, detection additions, and acquisition start and finish. Record lid removal and temperature equilibration when they affect exposure or timing. The relevant quantity is often an interval calculated from two events, not the wall-clock time of the final read.
+
+An instrument log may record a command being issued rather than a dispense being completed. Establish which event each timestamp represents and whether the devices share a synchronized clock. Otherwise, an apparently precise timing audit can be built on times that mean different things.
+
+## Work through the queue before optimizing it
+
+For the twelve-plate example, assume detection reagent was added at time zero to every plate and the first acquisition begins at thirty minutes. Ignore dispensing duration for this simple illustration. A pause occurs immediately before plate seven:
+
+| Plate | Normal read age | Read age with pause |
+| --- | --- | --- |
+| 1 | 30 min | 30 min |
+| 6 | 50 min | 50 min |
+| 7 | 54 min | 74 min |
+| 12 | 74 min | 94 min |
+
+The normal age spread is forty-four minutes. After the interruption it is sixty-four. Well-level acquisition creates an additional spread within each plate. If signal or biology changes appreciably over that period, the first well's timestamp cannot describe the entire plate.
+
+Staggering detection additions can hold the detection-to-read interval closer to thirty minutes. That may be a good solution, provided it does not quietly create variable biological reaction times upstream. If all kinase reactions start together but their terminating additions are staggered, the reaction ages have changed. If each plate's start is staggered as well, another device may become the scheduling constraint.
+
+Check the proposed schedule from the first addition onward. Decide which intervals need tight control, which tolerate a qualified range, and where a pause can safely occur. A schedule that preserves the final wait while allowing an earlier critical interval to drift has moved the problem.
+
+## A stable glow leaves other questions open
+
+A long-lived detection signal gives the scheduler flexibility after signal development. Earlier stages need their own timing limits, and the concentration-response curves still need testing across the proposed reading interval.
+
+The historical AlphaScreen guide reports a cAMP example in which prolonged incubation raises the 
+
+IC subscript 50
+
+ from 5 to 15 nM as the bead-associated system approaches equilibrium. It recommends establishing the time course and ensuring that all plates receive the required minimum incubation. That specific example provides a reason to test the curve across the queue, without predicting that every competitive assay will shift in the same direction. [2]
+
+For glow assays, temperature remains part of the timing qualification. Promega's CellTiter-Glo 2.0 manual explains that temperature affects light intensity and decay, and warns that plates in tall stacks equilibrate more slowly than plates arranged in a single layer. Stack position can therefore correlate with both assay age and thermal history. [3]
+
+Keep equilibrated endpoint plates close to their validated room-temperature condition during reading. Check the measurement chamber during a sustained run, when internal heat production and repeated loading may differ from the first development plate. Fast reading is useful if it preserves precision, but speed alone cannot compensate for a warmer sample environment or an unqualified pre-read interval.
+
+## Put full curves at the ends and in the middle
+
+Build a qualification run that resembles production, including the intended batch size, plate type, volumes and covers. Place reference concentration-response curves early, in the middle and late in the sequence. Include distributed endpoint controls, but do not let Z′ replace the curves. Endpoint populations can remain well separated while the intermediate response changes.
+
+Choose reference compounds that exercise the assay's intended decisions. Several compounds spanning potency and, where known, different kinetic behavior provide more information than one convenient inhibitor. Use replication that can distinguish normal run-to-run variation from the changes that would alter hit calling or compound ranking.
+
+Confirm that the expected dim and bright wells fall within the reader's verified linear range, with margin for routine variation. High-signal compression or light leaking from a bright neighbor can distort the curves used to judge the queue. Optical isolation and sufficient linear range make those curves a more dependable test. Normalizing to compromised controls preserves the underlying measurement problem.
+
+Compare fitted midpoint, slope and response limits, with their uncertainty, and retain the unnormalized signals. Examine these against the recorded intervals and temperature observations. If the same proportional signal change affects samples and controls, normalization may hide it while photon counts change. A concentration-dependent effect can alter the curve itself.
+
+Run the normal sequence and a deliberate interruption chosen from a credible operating scenario. A pause before termination tests a different vulnerability from a pause after detection development. Start with separate challenges so their consequences remain interpretable. Combining every stress in the first experiment can demonstrate fragility while giving little guidance about its cause.
+
+## Break the link between identity and position
+
+If the same compound panel always occupies the last plate, compound identity and queue position are inseparable. Repeat matched panels in different early, middle and late positions, or counterbalance those assignments across runs. Within plates, avoid putting increasing concentration in a direction that always tracks dispensing and reading time.
+
+The Assay Guidance Manual describes row and column patterns arising from both dispense timing and reader timing. It also recommends investigating plate position and orientation when qualifying incubation. Those observations support a design that changes one assignment while preserving the rest of the process. [4]
+
+Use fresh matched material for the comparison. In Alpha assays especially, rereading a plate introduces measurement history as well as additional waiting. A reversible change in read order on a compatible reader can help investigate acquisition-time effects, but it still needs controls for assay age and handling.
+
+For ratiometric assays, simultaneous collection gives the numerator and denominator the same sampling interval. That helps when excitation or sample signal changes between sequential reads: a change shared by both channels has a better chance of canceling in the ratio. Independent photon noise, spectral leakage and channel calibration still matter. Each channel also needs adequate linear range; division does not repair compression.
+
+Simultaneous collection may shorten acquisition in a suitable configuration. Revvity's AlphaPlex guide also describes possible second-read signal loss, a separate reason to collect channels together. The benefit occurs within a well; plate-to-plate scheduling and required incubations still need qualification. [5]
+
+## Write the restart rule while the run is still hypothetical
+
+Choose acceptance limits from measured assay precision and the decisions the data will support. There is no universal allowable 
+
+IC subscript 50
+
+ shift that suits every screen. Specify the tested ranges for the critical intervals and what happens when an interrupted run exceeds them.
+
+The resulting rule might permit a pause after a validated stop, require a reduced batch size, or call for repeat plates when a maximum reaction age is exceeded. Select the rule using the qualification results. Preserve the actual timing record with the run so a later discrepancy can be examined against the conditions tested.
+
+An operator encountering a jam should be able to identify which plates remain within the qualified window. That decision is much easier when the protocol contains a pause location, an age limit and a defined next action, rather than a single incubation time that applied only to the first plate.
+
+## References
+
+1. Promega. [ADP-Glo Kinase Assay technical manual TM313](https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/adp-glo-kinase-assay-protocol.pdf). Revised July 2023. Sections 4.B–4.E and 5, especially PDF pp. 17–18: reaction staging and temperature guidance.
+
+2. PerkinElmer. [AlphaScreen practical guide](https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf). PDF p. 30, printed p. 24: time courses, multiple plates and the cAMP example.
+
+3. Promega. [CellTiter-Glo 2.0 Assay technical manual TM403](https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/101/celltiterglo-2-0-assay-protocol.pdf?la=en). Revised January 2023. PDF p. 11, section 4.B: temperature, decay and stack equilibration.
+
+4. [Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology](https://www.ncbi.nlm.nih.gov/books/NBK558077/). Assay Guidance Manual, supplied 2021 compilation, PDF pp. 1337 and 1342: positional effects and timing.
+
+5. Revvity. [AlphaPlex assay development user guide](https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf). PDF pp. 12–13: sequential versus simultaneous detection. The guide also reports comparable sensitivity for the configurations it discusses; no numerical throughput improvement is assumed here.

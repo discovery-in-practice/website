@@ -1233,5 +1233,189 @@
     "date_modified": "2026-10-06",
     "json_url": "https://discoveryinpractice.com/articles/plate-lid-sealing-film-reader-results/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/plate-lid-sealing-film-reader-results/article.md"
+  },
+  {
+    "id": "microplate-temperature-stability-qualification",
+    "title": "The plate is recording its temperature history",
+    "canonical_url": "https://discoveryinpractice.com/articles/microplate-temperature-stability-qualification/",
+    "summary": "Qualify liquid temperature during plate reads, busy runs and interruptions. Separate thermal drift from evaporation and optical crosstalk before correcting data.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Plate readers",
+      "Assay qualification"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "fd6d19a46e11ac5a3f70a01e85ebe3967ae0a796c66ba4016e41d17f813ce3a1",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/microplate-temperature-stability-qualification/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/microplate-temperature-stability-qualification/article.md"
+  },
+  {
+    "id": "plate-queue-ic50-assay-timing",
+    "title": "The plate queue changed your IC50",
+    "canonical_url": "https://discoveryinpractice.com/articles/plate-queue-ic50-assay-timing/",
+    "summary": "Map assay clocks, challenge plate queues and define restart rules. Use full curves, temperature control and reliable detection to test a screening workflow.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Assay timing",
+      "Automation",
+      "IC50"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "76c72d656a97207a232d89459eedffcffc4afdda4f1a9ba4bbe9b61ec26c1406",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/plate-queue-ic50-assay-timing/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/plate-queue-ic50-assay-timing/article.md"
+  },
+  {
+    "id": "alpha-assay-temperature",
+    "title": "Your Alpha assay is also a thermometer",
+    "canonical_url": "https://discoveryinpractice.com/articles/alpha-assay-temperature/",
+    "summary": "Troubleshoot temperature effects in Alpha assays by testing liquid temperature, plate timing and control behavior under realistic screening conditions.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Alpha assays",
+      "Temperature",
+      "Plate readers"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "459994ad13514d838be1e6d86fe8bdb80774a01991542da4e39793274af3c27c",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/alpha-assay-temperature/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/alpha-assay-temperature/article.md"
+  },
+  {
+    "id": "plate-reader-warming-incubation-off",
+    "title": "Why does my plate reader warm the plate when incubation is switched off?",
+    "canonical_url": "https://discoveryinpractice.com/articles/plate-reader-warming-incubation-off/",
+    "summary": "Understand plate-reader warming, room-temperature chamber control and practical temperature checks for CellTiter-Glo and Alpha assays.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Luminescence",
+      "Plate readers"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "f6eee891b03c318879fb1594abd7830952e801662c49ef1fc2c33a89599ed3f2",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/plate-reader-warming-incubation-off/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/plate-reader-warming-incubation-off/article.md"
+  },
+  {
+    "id": "ambient-plus-four-room-temperature-plate-reader",
+    "title": "Can a reader specified as “ambient +4°C” keep my assay at room temperature?",
+    "canonical_url": "https://discoveryinpractice.com/articles/ambient-plus-four-room-temperature-plate-reader/",
+    "summary": "Understand above-ambient temperature specifications, chamber heating and cooling, and the checks needed for stable room-temperature assay detection.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Plate readers",
+      "Assay qualification"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "6481aba3eacccc7b0178b14146140b7f871f0bbf5fb9857ee45f331ee034f7cc",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/ambient-plus-four-room-temperature-plate-reader/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/ambient-plus-four-room-temperature-plate-reader/article.md"
+  },
+  {
+    "id": "plate-liquid-temperature-reader-setpoint",
+    "title": "How can I tell whether the liquid in my plate has reached the reader's temperature setpoint?",
+    "canonical_url": "https://discoveryinpractice.com/articles/plate-liquid-temperature-reader-setpoint/",
+    "summary": "Distinguish chamber and liquid temperatures, understand thermal lag, and qualify equilibration across wells during a realistic plate-reader run.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Microplates",
+      "Assay qualification"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "609435b9dadd085570afa59e8242db3df81cfc22f81bd72104090a0426eea788",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/plate-liquid-temperature-reader-setpoint/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/plate-liquid-temperature-reader-setpoint/article.md"
+  },
+  {
+    "id": "alpha-glow-luminescence-controls-drift",
+    "title": "Why do Alpha or glow-luminescence controls drift from the first plate to the last?",
+    "canonical_url": "https://discoveryinpractice.com/articles/alpha-glow-luminescence-controls-drift/",
+    "summary": "Separate assay age, reagent changes and temperature drift when Alpha or glow-luminescence controls change from the first plate to the last.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Luminescence",
+      "Alpha assays"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "9737d2da43329de086a6c086e206c406c0869b39795f1ff113f75c92b3e4634d",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/alpha-glow-luminescence-controls-drift/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/alpha-glow-luminescence-controls-drift/article.md"
+  },
+  {
+    "id": "cell-luminescence-37c-room-temperature",
+    "title": "Should I read a cell-based luminescence assay at 37°C or at room temperature?",
+    "canonical_url": "https://discoveryinpractice.com/articles/cell-luminescence-37c-room-temperature/",
+    "summary": "Choose detection temperature using CellTiter-Glo, RealTime-Glo MT and HiBiT Lytic protocols, with clear distinctions between live-cell and lytic assays.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Temperature",
+      "Luminescence",
+      "CellTiter-Glo"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "b633e48e43a8d41ae394f7272279ec4d80004dedfb7faaa2820bca92434798e7",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-07",
+    "date_modified": "2026-10-07",
+    "json_url": "https://discoveryinpractice.com/articles/cell-luminescence-37c-room-temperature/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/cell-luminescence-37c-room-temperature/article.md"
   }
 ]

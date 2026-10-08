@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "rereading-alpha-assay-signal-change",
+  "canonical_url": "https://discoveryinpractice.com/articles/rereading-alpha-assay-signal-change/",
+  "title": "Why does rereading an Alpha assay change its signal?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Separate Alpha signal changes caused by reaction age, temperature and excitation history, with a matched once-read versus reread experiment.",
+  "takeaways": [
+    "Excitation can alter the next measurement",
+    "Reaction age and temperature can hide the loss",
+    "Compare reading histories at the same final time"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Alpha assays",
+    "Assay timing",
+    "Temperature"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-08",
+  "date_modified": "2026-10-08",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>The second reading occurs later and follows a previous excitation; liquid temperature may have changed as well. Any of these conditions can change an Alpha result. Continuing binding or warming may raise the signal; exposure-related damage or other changes may lower it. Compare wells with different reading histories at the same assay age and temperature before deciding that the reader is drifting. [1,2]</p><h2 id=\"excitation-can-alter-the-next-measurement\">Excitation can alter the next measurement</h2><p>AlphaScreen donor beads absorb light at 680 nm and generate singlet oxygen. When acceptor beads are sufficiently close, that reactive oxygen initiates the light-producing chemistry. Each excitation initiates a fresh round of reactive chemistry. [1]</p><p>Revvity's AlphaPlex development guide describes a small reduction after the first measurement from oxidation of protein recognition elements. In the configuration discussed, a second sequential reading may be lower by a few percent. [2] Revvity describes this mechanism for its AlphaPlex example; the loss need not be the same in another AlphaScreen, AlphaLISA or AlphaPlex assay. Exposure settings, reagents and recognition chemistry matter.</p><p>Ambient-light damage to donor beads is a separate exposure problem discussed in the AlphaScreen practical guide. [1] Keep plate handling and light protection consistent while testing reader-induced changes. Extra bench time otherwise becomes extra light exposure as well.</p><h2 id=\"reaction-age-and-temperature-can-hide-the-loss\">Reaction age and temperature can hide the loss</h2><p>Binding may continue toward equilibrium between readings. The AlphaScreen guide recommends determining that time course with separate wells for each time point. It also describes signal gradients while a plate warms or cools during acquisition. [1] A warmer second reading could partly offset an exposure-related loss. Similar first and second counts therefore do not prove that the first excitation had no effect.</p><p>Stable measurement close to the assay's validated room-temperature condition makes this comparison easier to interpret. Equilibrate the liquid before reading and keep its thermal conditions consistent inside the chamber. A stable display alone does not establish equal sample temperature, especially when matched plates have different residence times.</p><h2 id=\"compare-reading-histories-at-the-same-final-time\">Compare reading histories at the same final time</h2><p>Prepare matched replicate wells from the same mixture. Designate one set to be read only at the final time and another set to be read earlier and again at that final time. Distribute the sets across the plate to reduce position bias. If selective well reading is unavailable, use matched plates with equivalent handling and temperature histories.</p><p>Keep volumes, incubation, mixing, light exposure and final acquisition settings the same. Record the earlier excitation settings and the exact times. Additional sets can test whether the effect increases with the number of prior reads. Use enough replicates to distinguish a small difference from ordinary well variability.</p><p>A lower final signal in previously read wells supports a measurement-history effect. If once-read control wells also change across final time points, investigate reaction age, temperature and other shared processes. Either pattern needs appropriate controls; the comparison does not, by itself, identify a particular oxidized protein or damaged bead component.</p><h2 id=\"in-alphaplex-the-first-channel-can-affect-the-second\">In AlphaPlex, the first channel can affect the second</h2><p>Sequential AlphaPlex acquisition can expose the same sample before collecting its second emission channel. Simultaneous dual-emission detection collects both channels during one acquisition, avoiding the extra excitation required by that sequential arrangement. Properly calibrated paired detectors are useful here because the two observations share the same exposure history.</p><p>Revvity also reports configuration-dependent differences in optical throughput and comparable assay sensitivity for its illustrated sequential and simultaneous setups. [2] Avoid turning fewer reads into a universal sensitivity multiplier. The practical benefit is shorter acquisition and a cleaner comparison of two emissions from the same sample state.</p><p>Keep the first valid result and record all rereads. If a rerun is needed, apply a predefined rule and compare it with controls that have the same exposure history. A rerun policy should define which result is retained before either reading is inspected.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>, PDF pp. 8, 30–32 / printed pp. 2, 24–26. Signal chemistry, separate wells for time points, light exposure and temperature effects. Historical numerical examples are assay-specific.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf\">AlphaPlex assay development guide</a>, archived edition, p. 13 and pp. 27–28. Oxidation-related second-read loss, simultaneous versus sequential acquisition and configuration-specific optical/sensitivity results.</p>",
+  "body_text": "The second reading occurs later and follows a previous excitation; liquid temperature may have changed as well. Any of these conditions can change an Alpha result. Continuing binding or warming may raise the signal; exposure-related damage or other changes may lower it. Compare wells with different reading histories at the same assay age and temperature before deciding that the reader is drifting. [1,2]\n\nExcitation can alter the next measurement\n\nAlphaScreen donor beads absorb light at 680 nm and generate singlet oxygen. When acceptor beads are sufficiently close, that reactive oxygen initiates the light-producing chemistry. Each excitation initiates a fresh round of reactive chemistry. [1]\n\nRevvity's AlphaPlex development guide describes a small reduction after the first measurement from oxidation of protein recognition elements. In the configuration discussed, a second sequential reading may be lower by a few percent. [2] Revvity describes this mechanism for its AlphaPlex example; the loss need not be the same in another AlphaScreen, AlphaLISA or AlphaPlex assay. Exposure settings, reagents and recognition chemistry matter.\n\nAmbient-light damage to donor beads is a separate exposure problem discussed in the AlphaScreen practical guide. [1] Keep plate handling and light protection consistent while testing reader-induced changes. Extra bench time otherwise becomes extra light exposure as well.\n\nReaction age and temperature can hide the loss\n\nBinding may continue toward equilibrium between readings. The AlphaScreen guide recommends determining that time course with separate wells for each time point. It also describes signal gradients while a plate warms or cools during acquisition. [1] A warmer second reading could partly offset an exposure-related loss. Similar first and second counts therefore do not prove that the first excitation had no effect.\n\nStable measurement close to the assay's validated room-temperature condition makes this comparison easier to interpret. Equilibrate the liquid before reading and keep its thermal conditions consistent inside the chamber. A stable display alone does not establish equal sample temperature, especially when matched plates have different residence times.\n\nCompare reading histories at the same final time\n\nPrepare matched replicate wells from the same mixture. Designate one set to be read only at the final time and another set to be read earlier and again at that final time. Distribute the sets across the plate to reduce position bias. If selective well reading is unavailable, use matched plates with equivalent handling and temperature histories.\n\nKeep volumes, incubation, mixing, light exposure and final acquisition settings the same. Record the earlier excitation settings and the exact times. Additional sets can test whether the effect increases with the number of prior reads. Use enough replicates to distinguish a small difference from ordinary well variability.\n\nA lower final signal in previously read wells supports a measurement-history effect. If once-read control wells also change across final time points, investigate reaction age, temperature and other shared processes. Either pattern needs appropriate controls; the comparison does not, by itself, identify a particular oxidized protein or damaged bead component.\n\nIn AlphaPlex, the first channel can affect the second\n\nSequential AlphaPlex acquisition can expose the same sample before collecting its second emission channel. Simultaneous dual-emission detection collects both channels during one acquisition, avoiding the extra excitation required by that sequential arrangement. Properly calibrated paired detectors are useful here because the two observations share the same exposure history.\n\nRevvity also reports configuration-dependent differences in optical throughput and comparable assay sensitivity for its illustrated sequential and simultaneous setups. [2] Avoid turning fewer reads into a universal sensitivity multiplier. The practical benefit is shorter acquisition and a cleaner comparison of two emissions from the same sample state.\n\nKeep the first valid result and record all rereads. If a rerun is needed, apply a predefined rule and compare it with controls that have the same exposure history. A rerun policy should define which result is retained before either reading is inspected.\n\nReferences\n\n1. PerkinElmer. AlphaScreen practical guide, PDF pp. 8, 30–32 / printed pp. 2, 24–26. Signal chemistry, separate wells for time points, light exposure and temperature effects. Historical numerical examples are assay-specific.\n\n2. Revvity. AlphaPlex assay development guide, archived edition, p. 13 and pp. 27–28. Oxidation-related second-read loss, simultaneous versus sequential acquisition and configuration-specific optical/sensitivity results.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The second reading occurs later and follows a previous excitation; liquid temperature may have changed as well. Any of these conditions can change an Alpha result. Continuing binding or warming may raise the signal; exposure-related damage or other changes may lower it. Compare wells with different reading histories at the same assay age and temperature before deciding that the reader is drifting. [1,2]",
+          "html": "<p>The second reading occurs later and follows a previous excitation; liquid temperature may have changed as well. Any of these conditions can change an Alpha result. Continuing binding or warming may raise the signal; exposure-related damage or other changes may lower it. Compare wells with different reading histories at the same assay age and temperature before deciding that the reader is drifting. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "excitation-can-alter-the-next-measurement",
+      "heading": "Excitation can alter the next measurement",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Excitation can alter the next measurement",
+          "html": "<h2 id=\"excitation-can-alter-the-next-measurement\">Excitation can alter the next measurement</h2>"
+        },
+        {
+          "type": "p",
+          "text": "AlphaScreen donor beads absorb light at 680 nm and generate singlet oxygen. When acceptor beads are sufficiently close, that reactive oxygen initiates the light-producing chemistry. Each excitation initiates a fresh round of reactive chemistry. [1]",
+          "html": "<p>AlphaScreen donor beads absorb light at 680 nm and generate singlet oxygen. When acceptor beads are sufficiently close, that reactive oxygen initiates the light-producing chemistry. Each excitation initiates a fresh round of reactive chemistry. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's AlphaPlex development guide describes a small reduction after the first measurement from oxidation of protein recognition elements. In the configuration discussed, a second sequential reading may be lower by a few percent. [2] Revvity describes this mechanism for its AlphaPlex example; the loss need not be the same in another AlphaScreen, AlphaLISA or AlphaPlex assay. Exposure settings, reagents and recognition chemistry matter.",
+          "html": "<p>Revvity's AlphaPlex development guide describes a small reduction after the first measurement from oxidation of protein recognition elements. In the configuration discussed, a second sequential reading may be lower by a few percent. [2] Revvity describes this mechanism for its AlphaPlex example; the loss need not be the same in another AlphaScreen, AlphaLISA or AlphaPlex assay. Exposure settings, reagents and recognition chemistry matter.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Ambient-light damage to donor beads is a separate exposure problem discussed in the AlphaScreen practical guide. [1] Keep plate handling and light protection consistent while testing reader-induced changes. Extra bench time otherwise becomes extra light exposure as well.",
+          "html": "<p>Ambient-light damage to donor beads is a separate exposure problem discussed in the AlphaScreen practical guide. [1] Keep plate handling and light protection consistent while testing reader-induced changes. Extra bench time otherwise becomes extra light exposure as well.</p>"
+        }
+      ]
+    },
+    {
+      "id": "reaction-age-and-temperature-can-hide-the-loss",
+      "heading": "Reaction age and temperature can hide the loss",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Reaction age and temperature can hide the loss",
+          "html": "<h2 id=\"reaction-age-and-temperature-can-hide-the-loss\">Reaction age and temperature can hide the loss</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Binding may continue toward equilibrium between readings. The AlphaScreen guide recommends determining that time course with separate wells for each time point. It also describes signal gradients while a plate warms or cools during acquisition. [1] A warmer second reading could partly offset an exposure-related loss. Similar first and second counts therefore do not prove that the first excitation had no effect.",
+          "html": "<p>Binding may continue toward equilibrium between readings. The AlphaScreen guide recommends determining that time course with separate wells for each time point. It also describes signal gradients while a plate warms or cools during acquisition. [1] A warmer second reading could partly offset an exposure-related loss. Similar first and second counts therefore do not prove that the first excitation had no effect.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Stable measurement close to the assay's validated room-temperature condition makes this comparison easier to interpret. Equilibrate the liquid before reading and keep its thermal conditions consistent inside the chamber. A stable display alone does not establish equal sample temperature, especially when matched plates have different residence times.",
+          "html": "<p>Stable measurement close to the assay's validated room-temperature condition makes this comparison easier to interpret. Equilibrate the liquid before reading and keep its thermal conditions consistent inside the chamber. A stable display alone does not establish equal sample temperature, especially when matched plates have different residence times.</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-reading-histories-at-the-same-final-time",
+      "heading": "Compare reading histories at the same final time",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare reading histories at the same final time",
+          "html": "<h2 id=\"compare-reading-histories-at-the-same-final-time\">Compare reading histories at the same final time</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Prepare matched replicate wells from the same mixture. Designate one set to be read only at the final time and another set to be read earlier and again at that final time. Distribute the sets across the plate to reduce position bias. If selective well reading is unavailable, use matched plates with equivalent handling and temperature histories.",
+          "html": "<p>Prepare matched replicate wells from the same mixture. Designate one set to be read only at the final time and another set to be read earlier and again at that final time. Distribute the sets across the plate to reduce position bias. If selective well reading is unavailable, use matched plates with equivalent handling and temperature histories.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep volumes, incubation, mixing, light exposure and final acquisition settings the same. Record the earlier excitation settings and the exact times. Additional sets can test whether the effect increases with the number of prior reads. Use enough replicates to distinguish a small difference from ordinary well variability.",
+          "html": "<p>Keep volumes, incubation, mixing, light exposure and final acquisition settings the same. Record the earlier excitation settings and the exact times. Additional sets can test whether the effect increases with the number of prior reads. Use enough replicates to distinguish a small difference from ordinary well variability.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A lower final signal in previously read wells supports a measurement-history effect. If once-read control wells also change across final time points, investigate reaction age, temperature and other shared processes. Either pattern needs appropriate controls; the comparison does not, by itself, identify a particular oxidized protein or damaged bead component.",
+          "html": "<p>A lower final signal in previously read wells supports a measurement-history effect. If once-read control wells also change across final time points, investigate reaction age, temperature and other shared processes. Either pattern needs appropriate controls; the comparison does not, by itself, identify a particular oxidized protein or damaged bead component.</p>"
+        }
+      ]
+    },
+    {
+      "id": "in-alphaplex-the-first-channel-can-affect-the-second",
+      "heading": "In AlphaPlex, the first channel can affect the second",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "In AlphaPlex, the first channel can affect the second",
+          "html": "<h2 id=\"in-alphaplex-the-first-channel-can-affect-the-second\">In AlphaPlex, the first channel can affect the second</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Sequential AlphaPlex acquisition can expose the same sample before collecting its second emission channel. Simultaneous dual-emission detection collects both channels during one acquisition, avoiding the extra excitation required by that sequential arrangement. Properly calibrated paired detectors are useful here because the two observations share the same exposure history.",
+          "html": "<p>Sequential AlphaPlex acquisition can expose the same sample before collecting its second emission channel. Simultaneous dual-emission detection collects both channels during one acquisition, avoiding the extra excitation required by that sequential arrangement. Properly calibrated paired detectors are useful here because the two observations share the same exposure history.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity also reports configuration-dependent differences in optical throughput and comparable assay sensitivity for its illustrated sequential and simultaneous setups. [2] Avoid turning fewer reads into a universal sensitivity multiplier. The practical benefit is shorter acquisition and a cleaner comparison of two emissions from the same sample state.",
+          "html": "<p>Revvity also reports configuration-dependent differences in optical throughput and comparable assay sensitivity for its illustrated sequential and simultaneous setups. [2] Avoid turning fewer reads into a universal sensitivity multiplier. The practical benefit is shorter acquisition and a cleaner comparison of two emissions from the same sample state.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep the first valid result and record all rereads. If a rerun is needed, apply a predefined rule and compare it with controls that have the same exposure history. A rerun policy should define which result is retained before either reading is inspected.",
+          "html": "<p>Keep the first valid result and record all rereads. If a rerun is needed, apply a predefined rule and compare it with controls that have the same exposure history. A rerun policy should define which result is retained before either reading is inspected.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. PerkinElmer. AlphaScreen practical guide, PDF pp. 8, 30–32 / printed pp. 2, 24–26. Signal chemistry, separate wells for time points, light exposure and temperature effects. Historical numerical examples are assay-specific.",
+          "html": "<p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>, PDF pp. 8, 30–32 / printed pp. 2, 24–26. Signal chemistry, separate wells for time points, light exposure and temperature effects. Historical numerical examples are assay-specific.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. AlphaPlex assay development guide, archived edition, p. 13 and pp. 27–28. Oxidation-related second-read loss, simultaneous versus sequential acquisition and configuration-specific optical/sensitivity results.",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf\">AlphaPlex assay development guide</a>, archived edition, p. 13 and pp. 27–28. Oxidation-related second-read loss, simultaneous versus sequential acquisition and configuration-specific optical/sensitivity results.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. PerkinElmer. AlphaScreen practical guide, PDF pp. 8, 30–32 / printed pp. 2, 24–26. Signal chemistry, separate wells for time points, light exposure and temperature effects. Historical numerical examples are assay-specific.",
+      "urls": [
+        "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. AlphaPlex assay development guide, archived edition, p. 13 and pp. 27–28. Oxidation-related second-read loss, simultaneous versus sequential acquisition and configuration-specific optical/sensitivity results.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "c60ca4657aeb86786d601f7e63b6342e69e4b5491a00c826cf39959183108c87"
+}

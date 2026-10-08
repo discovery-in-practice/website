@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.0",
+  "id": "alphaplex-dual-emission-crosstalk",
+  "canonical_url": "https://discoveryinpractice.com/articles/alphaplex-dual-emission-crosstalk/",
+  "title": "AlphaPlex: your first measurement can change the second",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Learn why AlphaPlex read order matters, how simultaneous dual emission helps, and how to distinguish spectral leakage, well crosstalk and antibody effects.",
+  "takeaways": [
+    "Reading an Alpha assay does something to it",
+    "A small signal shift can become a larger concentration error",
+    "Three problems called crosstalk"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "AlphaPlex",
+    "Dual emission",
+    "Crosstalk"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-08",
+  "date_modified": "2026-10-08",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Measuring two analytes in one well saves sample, but the order of the two emission readings can matter.</p><p>In an AlphaPlex assay, that is a chemistry question as well as an instrument question. The excitation used to generate the first signal can slightly change the material you are about to measure again.</p><p>Simultaneous dual-emission detection has an unusually concrete benefit here: collect both colors from the same excitation event, and neither measurement has to wait for a second exposure. The same assay also illustrates why several different problems get called crosstalk.</p><h2 id=\"reading-an-alpha-assay-does-something-to-it\">Reading an Alpha assay does something to it</h2><p>Alpha detection begins with excitation of donor beads, which generate singlet oxygen. Nearby acceptor beads convert that chemistry into light. AlphaPlex uses distinguishable acceptor emissions to measure more than one analyte in a well. [1]</p><p>This is an active chemical measurement. Revvity's development guide reports that sequential reading can slightly reduce the second signal through oxidation of protein recognition elements, with losses of a few percent. It recommends reading the generally weaker terbium channel before europium when using the sequential arrangement described. [1]</p><p>That does not mean every second read fails. It means that read history belongs among the experimental conditions. A second pass is not necessarily a fresh observation of an untouched sample.</p><p>Consider two ways of measuring a duplex. In the first, excite the well, collect one emission, then repeat the excitation-and-collection sequence for the other emission. In the second, collect both emissions during the same interval following one excitation. The latter gives both measurements the same excitation history and avoids the extra cycle required solely to obtain the other color.</p><p>That is the case for simultaneous detection even when the sample is otherwise stable. It also shortens the measurement sequence, reducing the time over which the plate can change temperature or continue developing signal. Whole-plate throughput still includes movement and settling; halving the number of collection cycles does not guarantee halving every run time.</p><p>The guide also reports comparable sensitivity for the sequential and simultaneous configurations it discusses, despite different optical paths and signal intensities. [1] Fewer repeat excitations and faster paired collection are useful benefits without promising an automatic improvement in detection limit.</p><h2 id=\"a-small-signal-shift-can-become-a-larger-concentration-error\">A small signal shift can become a larger concentration error</h2><p>Suppose a sample loses 3% of its signal before the second channel is measured. That sounds modest. Its effect on reported concentration depends on where the sample lies on the calibration curve.</p><p>For an illustrative, background-free saturating response, let:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"S = (S subscript max C) divided by (K + C)\"><mrow><mrow><mtext>S = </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>S</mtext></mrow></mrow><mrow><mrow><mtext>max</mtext></mrow></mrow></msub><mrow><mtext> C</mtext></mrow></mrow><mrow><mrow><mtext>K + C</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>Here S is signal, C is concentration and K is the concentration giving half-maximal signal. The subscript max denotes the upper signal limit. This simple curve is a teaching model, not a prescribed fit for every AlphaPlex assay.</p><p>Set the maximum signal to 100. A signal of 90 corresponds to C = 9K. Reduce that signal by 3%, to 87.3, and interpret it against the original calibration:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"C = (K S) divided by (S subscript max − S)\"><mrow><mrow><mtext>C = </mtext></mrow><mfrac><mrow><mrow><mtext>K S</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>S</mtext></mrow></mrow><mrow><mrow><mtext>max</mtext></mrow></mrow></msub><mrow><mtext> − S</mtext></mrow></mrow></mfrac></mrow></math></div></div><p>The inferred concentration becomes about 6.87K, roughly 24% lower. At a signal of 50, the same proportional signal loss changes the inferred concentration from K to about 0.942K, only 5.8% lower.</p><p>The difference comes from the curve's slope. Near the upper plateau, a large concentration change produces a small signal change, so a small measurement shift becomes a large concentration error when the curve is inverted.</p><p>This example assumes the reference calibration has not undergone the same signal change. If standards and samples experience identical proportional losses and are calibrated together, the scaling can be absorbed by the fitted curve. The risk is mismatched read histories, unequal losses or extrapolation from poorly resolved parts of the curve. Do not apply the 24% figure as a general AlphaPlex correction.</p><p>Validate sample dilutions and measurement history together. A second read that seems harmless in the middle of the curve may deserve closer attention near its upper end.</p><h2 id=\"three-problems-called-crosstalk\">Three problems called crosstalk</h2><p>First, photons can enter the wrong emission channel. This is spectral leakage. A very bright europium signal, for example, may contribute a small fraction to the terbium measurement. The relevant quantity is that fraction multiplied by the bright signal, compared with the weak signal you care about.</p><p>Second, light can arrive from another well. This is interwell leakage. It depends on the plate and collection geometry, so a correction derived from two colors in the same well does not diagnose it.</p><p>Third, antibodies can recognize an unintended target. Now the assay is making an unwanted biochemical signal. Better wavelength separation will faithfully measure that unwanted signal.</p><p>Revvity distinguishes these mechanisms in its AlphaPlex guidance. [1] Keeping them separate gives you a much better troubleshooting experiment than increasing the integration time and hoping for the best.</p><p>For spectral leakage, use controls that emit from only one acceptor-bead type and measure both channels. For interwell leakage, arrange bright sources beside blanks and weak samples, with remote controls elsewhere. For antibody specificity, challenge each assay with the other analyte and relevant related molecules. Retain the complete multiplex reagent mixture when testing whether combining assays changes their behavior.</p><h2 id=\"subtraction-removes-an-average-not-the-photons-that-arrived\">Subtraction removes an average, not the photons that arrived</h2><p>Imagine a linear detector reporting 1,000,000 detected photons in the europium channel. The true terbium contribution is 1,000 photons, but an illustrative 2% spectral leakage adds another 20,000 to its measurement. The reader reports 21,000 in that channel. These are hypothetical photon counts, not arbitrary luminescence units from a commercial reader.</p><p>Assuming negligible reverse leakage and an exactly known coefficient c, correction gives:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"T subscript estimated = M subscript T − c M subscript E\"><mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>estimated</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msub><mrow><mrow><mtext>M</mtext></mrow></mrow><mrow><mrow><mtext>T</mtext></mrow></mrow></msub><mrow><mtext> − c </mtext></mrow><msub><mrow><mrow><mtext>M</mtext></mrow></mrow><mrow><mrow><mtext>E</mtext></mrow></mrow></msub></mrow></math></div></div><p>The two M terms are measured channel counts; here c = 0.02. Subtraction recovers the expected 1,000. It does not recover the precision of a measurement that never collected the extra light.</p><p>For independent Poisson channel counts in this simplified model, the corrected variance is 21,000 + 0.02² × 1,000,000 = 21,400. The standard deviation is about 146 photons, or 14.6% of the desired signal. Without leakage, 1,000 photons would have an ideal shot-noise standard deviation of about 32, or 3.2%. The photon-statistics principle is the same one that limits other optical assays. [2]</p><p>There is a second vulnerability. If the actual leakage is 2% but you subtract 1.8%, you leave 2,000 unwanted counts behind. The corrected result becomes 3,000 instead of 1,000. A coefficient error of just 0.2 percentage points has tripled the answer.</p><p>That arithmetic explains why clean spectral selection matters even when software offers compensation. It also explains why correction factors should be checked across the expected brightness range. Compression in the bright channel would make the number used for subtraction too small. Neither simultaneous collection nor a compensation spreadsheet restores information lost through nonlinear detection.</p><p>If leakage is appreciable in both directions, characterize both contributions and use a validated two-channel correction. The one-way example above deliberately omits that complication to expose the precision cost.</p><h2 id=\"two-analytes-do-not-automatically-make-a-normalization-ratio\">Two analytes do not automatically make a normalization ratio</h2><p>NanoBRET uses donor and acceptor emission as parts of an energy-transfer measurement. An AlphaPlex duplex may instead measure two independently changing analytes. Dividing one by the other imposes an additional biological interpretation.</p><p>For a phosphorylated-protein/total-protein assay, for example, a ratio may be useful after validating both measurements. It should not replace their individual calibration curves or hide a total-protein result below its quantifiable range. For two cytokines, a ratio is a different endpoint from either cytokine concentration.</p><p>Simultaneous detection pairs the measurements in time without establishing that one analyte is a stable reference for the other. Export both channels, both corrected results and any derived ratio so that a change in the denominator remains visible.</p><h2 id=\"thermal-stability-still-earns-its-place\">Thermal stability still earns its place</h2><p>Revvity's Alpha guidance states that temperature affects both assay equilibration and signal generation, and recommends bringing the final incubation temperature close to the reader temperature. Reported sensitivity can reach 10% per degree Celsius in some AlphaLISA or AlphaScreen assays; that is an assay-dependent observation, not a universal coefficient for every AlphaPlex channel. [3]</p><p>Do not assume two emissions share an identical temperature response. Check each calibrated result across the intended handling conditions. For small volumes, minimize uncontrolled exposure to warm airflow and drying conditions. Stable sample temperature, sensible separation from heat-producing components and validated evaporation control help keep both assays reproducible.</p><p>Use separately prepared, equivalent wells or plates to compare temperatures and acquisition modes. Repeatedly reading the same Alpha wells introduces exactly the read-history effect you are trying to understand. Balance preparation and read order so assay age does not become a substitute explanation.</p><h2 id=\"qualify-the-duplex-under-its-hardest-conditions\">Qualify the duplex under its hardest conditions</h2><p>Build the qualification plate around unequal signals: high analyte A with low B, then high B with low A, alongside blanks and midrange controls. A pair of equally bright standards is an easy examination for the optics.</p><p>Compare each analyte's calibration in the complete mixture with and without the other analyte at a challenging concentration. Check recovery, precision and usable concentration range after correction. Repeat the critical combinations beside bright wells and after realistic queue times.</p><p>When selecting detection settings, ask for simultaneous collection of both emissions from one excitation cycle, efficient collection of the weaker color, verified linearity at the bright end and low interwell leakage in the actual plate. A duplex is ready when both analytes meet their required recovery and precision across the concentrations you intend to report.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf\">AlphaPlex assay development user guide</a>. See pp. 12–14 for acquisition and optics, and pp. 14–20 for crosstalk and multiplex validation. The comparison discussed is specific to the configurations in the guide.</p><p id=\"ref-2\">2. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/eu/en/resources/interactive-tools/photon-counting-snr-simulator.html\">Photon-counting signal-to-noise simulator and technical explanation</a>. Photon counting statistics and the effect of background. Numerical examples in this article are independent constructed calculations.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays\">AlphaLISA and AlphaScreen no-wash assays</a>. Temperature guidance, signal-generation mechanisms and assay-dependent thermal sensitivity.</p>",
+  "body_text": "Measuring two analytes in one well saves sample, but the order of the two emission readings can matter.\n\nIn an AlphaPlex assay, that is a chemistry question as well as an instrument question. The excitation used to generate the first signal can slightly change the material you are about to measure again.\n\nSimultaneous dual-emission detection has an unusually concrete benefit here: collect both colors from the same excitation event, and neither measurement has to wait for a second exposure. The same assay also illustrates why several different problems get called crosstalk.\n\nReading an Alpha assay does something to it\n\nAlpha detection begins with excitation of donor beads, which generate singlet oxygen. Nearby acceptor beads convert that chemistry into light. AlphaPlex uses distinguishable acceptor emissions to measure more than one analyte in a well. [1]\n\nThis is an active chemical measurement. Revvity's development guide reports that sequential reading can slightly reduce the second signal through oxidation of protein recognition elements, with losses of a few percent. It recommends reading the generally weaker terbium channel before europium when using the sequential arrangement described. [1]\n\nThat does not mean every second read fails. It means that read history belongs among the experimental conditions. A second pass is not necessarily a fresh observation of an untouched sample.\n\nConsider two ways of measuring a duplex. In the first, excite the well, collect one emission, then repeat the excitation-and-collection sequence for the other emission. In the second, collect both emissions during the same interval following one excitation. The latter gives both measurements the same excitation history and avoids the extra cycle required solely to obtain the other color.\n\nThat is the case for simultaneous detection even when the sample is otherwise stable. It also shortens the measurement sequence, reducing the time over which the plate can change temperature or continue developing signal. Whole-plate throughput still includes movement and settling; halving the number of collection cycles does not guarantee halving every run time.\n\nThe guide also reports comparable sensitivity for the sequential and simultaneous configurations it discusses, despite different optical paths and signal intensities. [1] Fewer repeat excitations and faster paired collection are useful benefits without promising an automatic improvement in detection limit.\n\nA small signal shift can become a larger concentration error\n\nSuppose a sample loses 3% of its signal before the second channel is measured. That sounds modest. Its effect on reported concentration depends on where the sample lies on the calibration curve.\n\nFor an illustrative, background-free saturating response, let:\n\nS = (S subscript max C) divided by (K + C)\n\nHere S is signal, C is concentration and K is the concentration giving half-maximal signal. The subscript max denotes the upper signal limit. This simple curve is a teaching model, not a prescribed fit for every AlphaPlex assay.\n\nSet the maximum signal to 100. A signal of 90 corresponds to C = 9K. Reduce that signal by 3%, to 87.3, and interpret it against the original calibration:\n\nC = (K S) divided by (S subscript max − S)\n\nThe inferred concentration becomes about 6.87K, roughly 24% lower. At a signal of 50, the same proportional signal loss changes the inferred concentration from K to about 0.942K, only 5.8% lower.\n\nThe difference comes from the curve's slope. Near the upper plateau, a large concentration change produces a small signal change, so a small measurement shift becomes a large concentration error when the curve is inverted.\n\nThis example assumes the reference calibration has not undergone the same signal change. If standards and samples experience identical proportional losses and are calibrated together, the scaling can be absorbed by the fitted curve. The risk is mismatched read histories, unequal losses or extrapolation from poorly resolved parts of the curve. Do not apply the 24% figure as a general AlphaPlex correction.\n\nValidate sample dilutions and measurement history together. A second read that seems harmless in the middle of the curve may deserve closer attention near its upper end.\n\nThree problems called crosstalk\n\nFirst, photons can enter the wrong emission channel. This is spectral leakage. A very bright europium signal, for example, may contribute a small fraction to the terbium measurement. The relevant quantity is that fraction multiplied by the bright signal, compared with the weak signal you care about.\n\nSecond, light can arrive from another well. This is interwell leakage. It depends on the plate and collection geometry, so a correction derived from two colors in the same well does not diagnose it.\n\nThird, antibodies can recognize an unintended target. Now the assay is making an unwanted biochemical signal. Better wavelength separation will faithfully measure that unwanted signal.\n\nRevvity distinguishes these mechanisms in its AlphaPlex guidance. [1] Keeping them separate gives you a much better troubleshooting experiment than increasing the integration time and hoping for the best.\n\nFor spectral leakage, use controls that emit from only one acceptor-bead type and measure both channels. For interwell leakage, arrange bright sources beside blanks and weak samples, with remote controls elsewhere. For antibody specificity, challenge each assay with the other analyte and relevant related molecules. Retain the complete multiplex reagent mixture when testing whether combining assays changes their behavior.\n\nSubtraction removes an average, not the photons that arrived\n\nImagine a linear detector reporting 1,000,000 detected photons in the europium channel. The true terbium contribution is 1,000 photons, but an illustrative 2% spectral leakage adds another 20,000 to its measurement. The reader reports 21,000 in that channel. These are hypothetical photon counts, not arbitrary luminescence units from a commercial reader.\n\nAssuming negligible reverse leakage and an exactly known coefficient c, correction gives:\n\nT subscript estimated = M subscript T − c M subscript E\n\nThe two M terms are measured channel counts; here c = 0.02. Subtraction recovers the expected 1,000. It does not recover the precision of a measurement that never collected the extra light.\n\nFor independent Poisson channel counts in this simplified model, the corrected variance is 21,000 + 0.02² × 1,000,000 = 21,400. The standard deviation is about 146 photons, or 14.6% of the desired signal. Without leakage, 1,000 photons would have an ideal shot-noise standard deviation of about 32, or 3.2%. The photon-statistics principle is the same one that limits other optical assays. [2]\n\nThere is a second vulnerability. If the actual leakage is 2% but you subtract 1.8%, you leave 2,000 unwanted counts behind. The corrected result becomes 3,000 instead of 1,000. A coefficient error of just 0.2 percentage points has tripled the answer.\n\nThat arithmetic explains why clean spectral selection matters even when software offers compensation. It also explains why correction factors should be checked across the expected brightness range. Compression in the bright channel would make the number used for subtraction too small. Neither simultaneous collection nor a compensation spreadsheet restores information lost through nonlinear detection.\n\nIf leakage is appreciable in both directions, characterize both contributions and use a validated two-channel correction. The one-way example above deliberately omits that complication to expose the precision cost.\n\nTwo analytes do not automatically make a normalization ratio\n\nNanoBRET uses donor and acceptor emission as parts of an energy-transfer measurement. An AlphaPlex duplex may instead measure two independently changing analytes. Dividing one by the other imposes an additional biological interpretation.\n\nFor a phosphorylated-protein/total-protein assay, for example, a ratio may be useful after validating both measurements. It should not replace their individual calibration curves or hide a total-protein result below its quantifiable range. For two cytokines, a ratio is a different endpoint from either cytokine concentration.\n\nSimultaneous detection pairs the measurements in time without establishing that one analyte is a stable reference for the other. Export both channels, both corrected results and any derived ratio so that a change in the denominator remains visible.\n\nThermal stability still earns its place\n\nRevvity's Alpha guidance states that temperature affects both assay equilibration and signal generation, and recommends bringing the final incubation temperature close to the reader temperature. Reported sensitivity can reach 10% per degree Celsius in some AlphaLISA or AlphaScreen assays; that is an assay-dependent observation, not a universal coefficient for every AlphaPlex channel. [3]\n\nDo not assume two emissions share an identical temperature response. Check each calibrated result across the intended handling conditions. For small volumes, minimize uncontrolled exposure to warm airflow and drying conditions. Stable sample temperature, sensible separation from heat-producing components and validated evaporation control help keep both assays reproducible.\n\nUse separately prepared, equivalent wells or plates to compare temperatures and acquisition modes. Repeatedly reading the same Alpha wells introduces exactly the read-history effect you are trying to understand. Balance preparation and read order so assay age does not become a substitute explanation.\n\nQualify the duplex under its hardest conditions\n\nBuild the qualification plate around unequal signals: high analyte A with low B, then high B with low A, alongside blanks and midrange controls. A pair of equally bright standards is an easy examination for the optics.\n\nCompare each analyte's calibration in the complete mixture with and without the other analyte at a challenging concentration. Check recovery, precision and usable concentration range after correction. Repeat the critical combinations beside bright wells and after realistic queue times.\n\nWhen selecting detection settings, ask for simultaneous collection of both emissions from one excitation cycle, efficient collection of the weaker color, verified linearity at the bright end and low interwell leakage in the actual plate. A duplex is ready when both analytes meet their required recovery and precision across the concentrations you intend to report.\n\nReferences\n\n1. Revvity. AlphaPlex assay development user guide. See pp. 12–14 for acquisition and optics, and pp. 14–20 for crosstalk and multiplex validation. The comparison discussed is specific to the configurations in the guide.\n\n2. Hamamatsu Photonics. Photon-counting signal-to-noise simulator and technical explanation. Photon counting statistics and the effect of background. Numerical examples in this article are independent constructed calculations.\n\n3. Revvity. AlphaLISA and AlphaScreen no-wash assays. Temperature guidance, signal-generation mechanisms and assay-dependent thermal sensitivity.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Measuring two analytes in one well saves sample, but the order of the two emission readings can matter.",
+          "html": "<p>Measuring two analytes in one well saves sample, but the order of the two emission readings can matter.</p>"
+        },
+        {
+          "type": "p",
+          "text": "In an AlphaPlex assay, that is a chemistry question as well as an instrument question. The excitation used to generate the first signal can slightly change the material you are about to measure again.",
+          "html": "<p>In an AlphaPlex assay, that is a chemistry question as well as an instrument question. The excitation used to generate the first signal can slightly change the material you are about to measure again.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous dual-emission detection has an unusually concrete benefit here: collect both colors from the same excitation event, and neither measurement has to wait for a second exposure. The same assay also illustrates why several different problems get called crosstalk.",
+          "html": "<p>Simultaneous dual-emission detection has an unusually concrete benefit here: collect both colors from the same excitation event, and neither measurement has to wait for a second exposure. The same assay also illustrates why several different problems get called crosstalk.</p>"
+        }
+      ]
+    },
+    {
+      "id": "reading-an-alpha-assay-does-something-to-it",
+      "heading": "Reading an Alpha assay does something to it",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Reading an Alpha assay does something to it",
+          "html": "<h2 id=\"reading-an-alpha-assay-does-something-to-it\">Reading an Alpha assay does something to it</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Alpha detection begins with excitation of donor beads, which generate singlet oxygen. Nearby acceptor beads convert that chemistry into light. AlphaPlex uses distinguishable acceptor emissions to measure more than one analyte in a well. [1]",
+          "html": "<p>Alpha detection begins with excitation of donor beads, which generate singlet oxygen. Nearby acceptor beads convert that chemistry into light. AlphaPlex uses distinguishable acceptor emissions to measure more than one analyte in a well. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "This is an active chemical measurement. Revvity's development guide reports that sequential reading can slightly reduce the second signal through oxidation of protein recognition elements, with losses of a few percent. It recommends reading the generally weaker terbium channel before europium when using the sequential arrangement described. [1]",
+          "html": "<p>This is an active chemical measurement. Revvity's development guide reports that sequential reading can slightly reduce the second signal through oxidation of protein recognition elements, with losses of a few percent. It recommends reading the generally weaker terbium channel before europium when using the sequential arrangement described. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "That does not mean every second read fails. It means that read history belongs among the experimental conditions. A second pass is not necessarily a fresh observation of an untouched sample.",
+          "html": "<p>That does not mean every second read fails. It means that read history belongs among the experimental conditions. A second pass is not necessarily a fresh observation of an untouched sample.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider two ways of measuring a duplex. In the first, excite the well, collect one emission, then repeat the excitation-and-collection sequence for the other emission. In the second, collect both emissions during the same interval following one excitation. The latter gives both measurements the same excitation history and avoids the extra cycle required solely to obtain the other color.",
+          "html": "<p>Consider two ways of measuring a duplex. In the first, excite the well, collect one emission, then repeat the excitation-and-collection sequence for the other emission. In the second, collect both emissions during the same interval following one excitation. The latter gives both measurements the same excitation history and avoids the extra cycle required solely to obtain the other color.</p>"
+        },
+        {
+          "type": "p",
+          "text": "That is the case for simultaneous detection even when the sample is otherwise stable. It also shortens the measurement sequence, reducing the time over which the plate can change temperature or continue developing signal. Whole-plate throughput still includes movement and settling; halving the number of collection cycles does not guarantee halving every run time.",
+          "html": "<p>That is the case for simultaneous detection even when the sample is otherwise stable. It also shortens the measurement sequence, reducing the time over which the plate can change temperature or continue developing signal. Whole-plate throughput still includes movement and settling; halving the number of collection cycles does not guarantee halving every run time.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The guide also reports comparable sensitivity for the sequential and simultaneous configurations it discusses, despite different optical paths and signal intensities. [1] Fewer repeat excitations and faster paired collection are useful benefits without promising an automatic improvement in detection limit.",
+          "html": "<p>The guide also reports comparable sensitivity for the sequential and simultaneous configurations it discusses, despite different optical paths and signal intensities. [1] Fewer repeat excitations and faster paired collection are useful benefits without promising an automatic improvement in detection limit.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-small-signal-shift-can-become-a-larger-concentration-error",
+      "heading": "A small signal shift can become a larger concentration error",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A small signal shift can become a larger concentration error",
+          "html": "<h2 id=\"a-small-signal-shift-can-become-a-larger-concentration-error\">A small signal shift can become a larger concentration error</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose a sample loses 3% of its signal before the second channel is measured. That sounds modest. Its effect on reported concentration depends on where the sample lies on the calibration curve.",
+          "html": "<p>Suppose a sample loses 3% of its signal before the second channel is measured. That sounds modest. Its effect on reported concentration depends on where the sample lies on the calibration curve.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For an illustrative, background-free saturating response, let:",
+          "html": "<p>For an illustrative, background-free saturating response, let:</p>"
+        },
+        {
+          "type": "div",
+          "text": "S = (S subscript max C) divided by (K + C)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"S = (S subscript max C) divided by (K + C)\"><mrow><mrow><mtext>S = </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>S</mtext></mrow></mrow><mrow><mrow><mtext>max</mtext></mrow></mrow></msub><mrow><mtext> C</mtext></mrow></mrow><mrow><mrow><mtext>K + C</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here S is signal, C is concentration and K is the concentration giving half-maximal signal. The subscript max denotes the upper signal limit. This simple curve is a teaching model, not a prescribed fit for every AlphaPlex assay.",
+          "html": "<p>Here S is signal, C is concentration and K is the concentration giving half-maximal signal. The subscript max denotes the upper signal limit. This simple curve is a teaching model, not a prescribed fit for every AlphaPlex assay.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Set the maximum signal to 100. A signal of 90 corresponds to C = 9K. Reduce that signal by 3%, to 87.3, and interpret it against the original calibration:",
+          "html": "<p>Set the maximum signal to 100. A signal of 90 corresponds to C = 9K. Reduce that signal by 3%, to 87.3, and interpret it against the original calibration:</p>"
+        },
+        {
+          "type": "div",
+          "text": "C = (K S) divided by (S subscript max − S)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"C = (K S) divided by (S subscript max − S)\"><mrow><mrow><mtext>C = </mtext></mrow><mfrac><mrow><mrow><mtext>K S</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>S</mtext></mrow></mrow><mrow><mrow><mtext>max</mtext></mrow></mrow></msub><mrow><mtext> − S</mtext></mrow></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "The inferred concentration becomes about 6.87K, roughly 24% lower. At a signal of 50, the same proportional signal loss changes the inferred concentration from K to about 0.942K, only 5.8% lower.",
+          "html": "<p>The inferred concentration becomes about 6.87K, roughly 24% lower. At a signal of 50, the same proportional signal loss changes the inferred concentration from K to about 0.942K, only 5.8% lower.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The difference comes from the curve's slope. Near the upper plateau, a large concentration change produces a small signal change, so a small measurement shift becomes a large concentration error when the curve is inverted.",
+          "html": "<p>The difference comes from the curve's slope. Near the upper plateau, a large concentration change produces a small signal change, so a small measurement shift becomes a large concentration error when the curve is inverted.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This example assumes the reference calibration has not undergone the same signal change. If standards and samples experience identical proportional losses and are calibrated together, the scaling can be absorbed by the fitted curve. The risk is mismatched read histories, unequal losses or extrapolation from poorly resolved parts of the curve. Do not apply the 24% figure as a general AlphaPlex correction.",
+          "html": "<p>This example assumes the reference calibration has not undergone the same signal change. If standards and samples experience identical proportional losses and are calibrated together, the scaling can be absorbed by the fitted curve. The risk is mismatched read histories, unequal losses or extrapolation from poorly resolved parts of the curve. Do not apply the 24% figure as a general AlphaPlex correction.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Validate sample dilutions and measurement history together. A second read that seems harmless in the middle of the curve may deserve closer attention near its upper end.",
+          "html": "<p>Validate sample dilutions and measurement history together. A second read that seems harmless in the middle of the curve may deserve closer attention near its upper end.</p>"
+        }
+      ]
+    },
+    {
+      "id": "three-problems-called-crosstalk",
+      "heading": "Three problems called crosstalk",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Three problems called crosstalk",
+          "html": "<h2 id=\"three-problems-called-crosstalk\">Three problems called crosstalk</h2>"
+        },
+        {
+          "type": "p",
+          "text": "First, photons can enter the wrong emission channel. This is spectral leakage. A very bright europium signal, for example, may contribute a small fraction to the terbium measurement. The relevant quantity is that fraction multiplied by the bright signal, compared with the weak signal you care about.",
+          "html": "<p>First, photons can enter the wrong emission channel. This is spectral leakage. A very bright europium signal, for example, may contribute a small fraction to the terbium measurement. The relevant quantity is that fraction multiplied by the bright signal, compared with the weak signal you care about.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Second, light can arrive from another well. This is interwell leakage. It depends on the plate and collection geometry, so a correction derived from two colors in the same well does not diagnose it.",
+          "html": "<p>Second, light can arrive from another well. This is interwell leakage. It depends on the plate and collection geometry, so a correction derived from two colors in the same well does not diagnose it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Third, antibodies can recognize an unintended target. Now the assay is making an unwanted biochemical signal. Better wavelength separation will faithfully measure that unwanted signal.",
+          "html": "<p>Third, antibodies can recognize an unintended target. Now the assay is making an unwanted biochemical signal. Better wavelength separation will faithfully measure that unwanted signal.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity distinguishes these mechanisms in its AlphaPlex guidance. [1] Keeping them separate gives you a much better troubleshooting experiment than increasing the integration time and hoping for the best.",
+          "html": "<p>Revvity distinguishes these mechanisms in its AlphaPlex guidance. [1] Keeping them separate gives you a much better troubleshooting experiment than increasing the integration time and hoping for the best.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For spectral leakage, use controls that emit from only one acceptor-bead type and measure both channels. For interwell leakage, arrange bright sources beside blanks and weak samples, with remote controls elsewhere. For antibody specificity, challenge each assay with the other analyte and relevant related molecules. Retain the complete multiplex reagent mixture when testing whether combining assays changes their behavior.",
+          "html": "<p>For spectral leakage, use controls that emit from only one acceptor-bead type and measure both channels. For interwell leakage, arrange bright sources beside blanks and weak samples, with remote controls elsewhere. For antibody specificity, challenge each assay with the other analyte and relevant related molecules. Retain the complete multiplex reagent mixture when testing whether combining assays changes their behavior.</p>"
+        }
+      ]
+    },
+    {
+      "id": "subtraction-removes-an-average-not-the-photons-that-arrived",
+      "heading": "Subtraction removes an average, not the photons that arrived",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Subtraction removes an average, not the photons that arrived",
+          "html": "<h2 id=\"subtraction-removes-an-average-not-the-photons-that-arrived\">Subtraction removes an average, not the photons that arrived</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Imagine a linear detector reporting 1,000,000 detected photons in the europium channel. The true terbium contribution is 1,000 photons, but an illustrative 2% spectral leakage adds another 20,000 to its measurement. The reader reports 21,000 in that channel. These are hypothetical photon counts, not arbitrary luminescence units from a commercial reader.",
+          "html": "<p>Imagine a linear detector reporting 1,000,000 detected photons in the europium channel. The true terbium contribution is 1,000 photons, but an illustrative 2% spectral leakage adds another 20,000 to its measurement. The reader reports 21,000 in that channel. These are hypothetical photon counts, not arbitrary luminescence units from a commercial reader.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Assuming negligible reverse leakage and an exactly known coefficient c, correction gives:",
+          "html": "<p>Assuming negligible reverse leakage and an exactly known coefficient c, correction gives:</p>"
+        },
+        {
+          "type": "div",
+          "text": "T subscript estimated = M subscript T − c M subscript E",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"T subscript estimated = M subscript T − c M subscript E\"><mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>estimated</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msub><mrow><mrow><mtext>M</mtext></mrow></mrow><mrow><mrow><mtext>T</mtext></mrow></mrow></msub><mrow><mtext> − c </mtext></mrow><msub><mrow><mrow><mtext>M</mtext></mrow></mrow><mrow><mrow><mtext>E</mtext></mrow></mrow></msub></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "The two M terms are measured channel counts; here c = 0.02. Subtraction recovers the expected 1,000. It does not recover the precision of a measurement that never collected the extra light.",
+          "html": "<p>The two M terms are measured channel counts; here c = 0.02. Subtraction recovers the expected 1,000. It does not recover the precision of a measurement that never collected the extra light.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For independent Poisson channel counts in this simplified model, the corrected variance is 21,000 + 0.02² × 1,000,000 = 21,400. The standard deviation is about 146 photons, or 14.6% of the desired signal. Without leakage, 1,000 photons would have an ideal shot-noise standard deviation of about 32, or 3.2%. The photon-statistics principle is the same one that limits other optical assays. [2]",
+          "html": "<p>For independent Poisson channel counts in this simplified model, the corrected variance is 21,000 + 0.02² × 1,000,000 = 21,400. The standard deviation is about 146 photons, or 14.6% of the desired signal. Without leakage, 1,000 photons would have an ideal shot-noise standard deviation of about 32, or 3.2%. The photon-statistics principle is the same one that limits other optical assays. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "There is a second vulnerability. If the actual leakage is 2% but you subtract 1.8%, you leave 2,000 unwanted counts behind. The corrected result becomes 3,000 instead of 1,000. A coefficient error of just 0.2 percentage points has tripled the answer.",
+          "html": "<p>There is a second vulnerability. If the actual leakage is 2% but you subtract 1.8%, you leave 2,000 unwanted counts behind. The corrected result becomes 3,000 instead of 1,000. A coefficient error of just 0.2 percentage points has tripled the answer.</p>"
+        },
+        {
+          "type": "p",
+          "text": "That arithmetic explains why clean spectral selection matters even when software offers compensation. It also explains why correction factors should be checked across the expected brightness range. Compression in the bright channel would make the number used for subtraction too small. Neither simultaneous collection nor a compensation spreadsheet restores information lost through nonlinear detection.",
+          "html": "<p>That arithmetic explains why clean spectral selection matters even when software offers compensation. It also explains why correction factors should be checked across the expected brightness range. Compression in the bright channel would make the number used for subtraction too small. Neither simultaneous collection nor a compensation spreadsheet restores information lost through nonlinear detection.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If leakage is appreciable in both directions, characterize both contributions and use a validated two-channel correction. The one-way example above deliberately omits that complication to expose the precision cost.",
+          "html": "<p>If leakage is appreciable in both directions, characterize both contributions and use a validated two-channel correction. The one-way example above deliberately omits that complication to expose the precision cost.</p>"
+        }
+      ]
+    },
+    {
+      "id": "two-analytes-do-not-automatically-make-a-normalization-ratio",
+      "heading": "Two analytes do not automatically make a normalization ratio",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Two analytes do not automatically make a normalization ratio",
+          "html": "<h2 id=\"two-analytes-do-not-automatically-make-a-normalization-ratio\">Two analytes do not automatically make a normalization ratio</h2>"
+        },
+        {
+          "type": "p",
+          "text": "NanoBRET uses donor and acceptor emission as parts of an energy-transfer measurement. An AlphaPlex duplex may instead measure two independently changing analytes. Dividing one by the other imposes an additional biological interpretation.",
+          "html": "<p>NanoBRET uses donor and acceptor emission as parts of an energy-transfer measurement. An AlphaPlex duplex may instead measure two independently changing analytes. Dividing one by the other imposes an additional biological interpretation.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a phosphorylated-protein/total-protein assay, for example, a ratio may be useful after validating both measurements. It should not replace their individual calibration curves or hide a total-protein result below its quantifiable range. For two cytokines, a ratio is a different endpoint from either cytokine concentration.",
+          "html": "<p>For a phosphorylated-protein/total-protein assay, for example, a ratio may be useful after validating both measurements. It should not replace their individual calibration curves or hide a total-protein result below its quantifiable range. For two cytokines, a ratio is a different endpoint from either cytokine concentration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Simultaneous detection pairs the measurements in time without establishing that one analyte is a stable reference for the other. Export both channels, both corrected results and any derived ratio so that a change in the denominator remains visible.",
+          "html": "<p>Simultaneous detection pairs the measurements in time without establishing that one analyte is a stable reference for the other. Export both channels, both corrected results and any derived ratio so that a change in the denominator remains visible.</p>"
+        }
+      ]
+    },
+    {
+      "id": "thermal-stability-still-earns-its-place",
+      "heading": "Thermal stability still earns its place",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Thermal stability still earns its place",
+          "html": "<h2 id=\"thermal-stability-still-earns-its-place\">Thermal stability still earns its place</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's Alpha guidance states that temperature affects both assay equilibration and signal generation, and recommends bringing the final incubation temperature close to the reader temperature. Reported sensitivity can reach 10% per degree Celsius in some AlphaLISA or AlphaScreen assays; that is an assay-dependent observation, not a universal coefficient for every AlphaPlex channel. [3]",
+          "html": "<p>Revvity's Alpha guidance states that temperature affects both assay equilibration and signal generation, and recommends bringing the final incubation temperature close to the reader temperature. Reported sensitivity can reach 10% per degree Celsius in some AlphaLISA or AlphaScreen assays; that is an assay-dependent observation, not a universal coefficient for every AlphaPlex channel. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Do not assume two emissions share an identical temperature response. Check each calibrated result across the intended handling conditions. For small volumes, minimize uncontrolled exposure to warm airflow and drying conditions. Stable sample temperature, sensible separation from heat-producing components and validated evaporation control help keep both assays reproducible.",
+          "html": "<p>Do not assume two emissions share an identical temperature response. Check each calibrated result across the intended handling conditions. For small volumes, minimize uncontrolled exposure to warm airflow and drying conditions. Stable sample temperature, sensible separation from heat-producing components and validated evaporation control help keep both assays reproducible.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use separately prepared, equivalent wells or plates to compare temperatures and acquisition modes. Repeatedly reading the same Alpha wells introduces exactly the read-history effect you are trying to understand. Balance preparation and read order so assay age does not become a substitute explanation.",
+          "html": "<p>Use separately prepared, equivalent wells or plates to compare temperatures and acquisition modes. Repeatedly reading the same Alpha wells introduces exactly the read-history effect you are trying to understand. Balance preparation and read order so assay age does not become a substitute explanation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "qualify-the-duplex-under-its-hardest-conditions",
+      "heading": "Qualify the duplex under its hardest conditions",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Qualify the duplex under its hardest conditions",
+          "html": "<h2 id=\"qualify-the-duplex-under-its-hardest-conditions\">Qualify the duplex under its hardest conditions</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Build the qualification plate around unequal signals: high analyte A with low B, then high B with low A, alongside blanks and midrange controls. A pair of equally bright standards is an easy examination for the optics.",
+          "html": "<p>Build the qualification plate around unequal signals: high analyte A with low B, then high B with low A, alongside blanks and midrange controls. A pair of equally bright standards is an easy examination for the optics.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare each analyte's calibration in the complete mixture with and without the other analyte at a challenging concentration. Check recovery, precision and usable concentration range after correction. Repeat the critical combinations beside bright wells and after realistic queue times.",
+          "html": "<p>Compare each analyte's calibration in the complete mixture with and without the other analyte at a challenging concentration. Check recovery, precision and usable concentration range after correction. Repeat the critical combinations beside bright wells and after realistic queue times.</p>"
+        },
+        {
+          "type": "p",
+          "text": "When selecting detection settings, ask for simultaneous collection of both emissions from one excitation cycle, efficient collection of the weaker color, verified linearity at the bright end and low interwell leakage in the actual plate. A duplex is ready when both analytes meet their required recovery and precision across the concentrations you intend to report.",
+          "html": "<p>When selecting detection settings, ask for simultaneous collection of both emissions from one excitation cycle, efficient collection of the weaker color, verified linearity at the bright end and low interwell leakage in the actual plate. A duplex is ready when both analytes meet their required recovery and precision across the concentrations you intend to report.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Revvity. AlphaPlex assay development user guide. See pp. 12–14 for acquisition and optics, and pp. 14–20 for crosstalk and multiplex validation. The comparison discussed is specific to the configurations in the guide.",
+          "html": "<p id=\"ref-1\">1. Revvity. <a href=\"https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf\">AlphaPlex assay development user guide</a>. See pp. 12–14 for acquisition and optics, and pp. 14–20 for crosstalk and multiplex validation. The comparison discussed is specific to the configurations in the guide.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Hamamatsu Photonics. Photon-counting signal-to-noise simulator and technical explanation. Photon counting statistics and the effect of background. Numerical examples in this article are independent constructed calculations.",
+          "html": "<p id=\"ref-2\">2. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/eu/en/resources/interactive-tools/photon-counting-snr-simulator.html\">Photon-counting signal-to-noise simulator and technical explanation</a>. Photon counting statistics and the effect of background. Numerical examples in this article are independent constructed calculations.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. AlphaLISA and AlphaScreen no-wash assays. Temperature guidance, signal-generation mechanisms and assay-dependent thermal sensitivity.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays\">AlphaLISA and AlphaScreen no-wash assays</a>. Temperature guidance, signal-generation mechanisms and assay-dependent thermal sensitivity.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Revvity. AlphaPlex assay development user guide. See pp. 12–14 for acquisition and optics, and pp. 14–20 for crosstalk and multiplex validation. The comparison discussed is specific to the configurations in the guide.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/gde-user-guide-alphaplex-assay-development-guide.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Hamamatsu Photonics. Photon-counting signal-to-noise simulator and technical explanation. Photon counting statistics and the effect of background. Numerical examples in this article are independent constructed calculations.",
+      "urls": [
+        "https://www.hamamatsu.com/eu/en/resources/interactive-tools/photon-counting-snr-simulator.html"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. AlphaLISA and AlphaScreen no-wash assays. Temperature guidance, signal-generation mechanisms and assay-dependent thermal sensitivity.",
+      "urls": [
+        "https://www.revvity.com/ask/alphalisa-and-alphascreen-no-wash-assays"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "S = (S subscript max C) divided by (K + C)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"S = (S subscript max C) divided by (K + C)\"><mrow><mrow><mtext>S = </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>S</mtext></mrow></mrow><mrow><mrow><mtext>max</mtext></mrow></mrow></msub><mrow><mtext> C</mtext></mrow></mrow><mrow><mrow><mtext>K + C</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "C = (K S) divided by (S subscript max − S)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"C = (K S) divided by (S subscript max − S)\"><mrow><mrow><mtext>C = </mtext></mrow><mfrac><mrow><mrow><mtext>K S</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>S</mtext></mrow></mrow><mrow><mrow><mtext>max</mtext></mrow></mrow></msub><mrow><mtext> − S</mtext></mrow></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "T subscript estimated = M subscript T − c M subscript E",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"T subscript estimated = M subscript T − c M subscript E\"><mrow><msub><mrow><mrow><mtext>T</mtext></mrow></mrow><mrow><mrow><mtext>estimated</mtext></mrow></mrow></msub><mrow><mtext> = </mtext></mrow><msub><mrow><mrow><mtext>M</mtext></mrow></mrow><mrow><mrow><mtext>T</mtext></mrow></mrow></msub><mrow><mtext> − c </mtext></mrow><msub><mrow><mrow><mtext>M</mtext></mrow></mrow><mrow><mrow><mtext>E</mtext></mrow></mrow></msub></mrow></math>"
+    }
+  ],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "97740248cd433887d6cd91a5f729d6184a18f6111109e1428ecf4b9dcfdfdd06"
+}

@@ -1417,5 +1417,189 @@
     "date_modified": "2026-10-07",
     "json_url": "https://discoveryinpractice.com/articles/cell-luminescence-37c-room-temperature/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/cell-luminescence-37c-room-temperature/article.md"
+  },
+  {
+    "id": "alphaplex-dual-emission-crosstalk",
+    "title": "AlphaPlex: your first measurement can change the second",
+    "canonical_url": "https://discoveryinpractice.com/articles/alphaplex-dual-emission-crosstalk/",
+    "summary": "Learn why AlphaPlex read order matters, how simultaneous dual emission helps, and how to distinguish spectral leakage, well crosstalk and antibody effects.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "AlphaPlex",
+      "Dual emission",
+      "Crosstalk"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "97740248cd433887d6cd91a5f729d6184a18f6111109e1428ecf4b9dcfdfdd06",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/alphaplex-dual-emission-crosstalk/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/alphaplex-dual-emission-crosstalk/article.md"
+  },
+  {
+    "id": "alpha-htrf-fp-lumit-assay-comparison",
+    "title": "Choosing Alpha HTRF and alternative screening assays",
+    "canonical_url": "https://discoveryinpractice.com/compare/alpha-htrf-fp-lumit-assay-comparison/",
+    "summary": "Match the assay to the molecular event and the interference you can control",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Alpha assays",
+      "HTRF",
+      "Assay selection"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "17d7e02f44910fe28276e16c468be3726e742b5740d66ad4f259f148b08e249e",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/compare/alpha-htrf-fp-lumit-assay-comparison/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/alpha-htrf-fp-lumit-assay-comparison/article.md"
+  },
+  {
+    "id": "alpha-assay-hook-effect-dilution",
+    "title": "The sample got brighter when we diluted it",
+    "canonical_url": "https://discoveryinpractice.com/articles/alpha-assay-hook-effect-dilution/",
+    "summary": "A weak Alpha signal can hide excess analyte. Learn to interpret dilution series and separate the hook effect from matrix interference and detector compression.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Alpha assays",
+      "Hook effect",
+      "Dilution"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "d0fe42acf6d4d25337c29cc5f022379d6c6cfbeb9e089715d6253a5c832970fc",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/alpha-assay-hook-effect-dilution/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/alpha-assay-hook-effect-dilution/article.md"
+  },
+  {
+    "id": "alpha-assay-azide-biotin-buffer-interference",
+    "title": "The inactive ingredient in the reagent bottle",
+    "canonical_url": "https://discoveryinpractice.com/articles/alpha-assay-azide-biotin-buffer-interference/",
+    "summary": "Trace azide, free biotin and medium carryover into Alpha assays. Learn how dilution and addition order change interference and the controls needed to find it.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Alpha assays",
+      "Buffer interference",
+      "Biotin"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "342ff6fbd85f7eb9e0f049374d3b26ac325de4b50ba33b2e67aba0453caa2282",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/alpha-assay-azide-biotin-buffer-interference/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/alpha-assay-azide-biotin-buffer-interference/article.md"
+  },
+  {
+    "id": "lumit-interference-controls",
+    "title": "Lumit: no wash steps doesn't mean no interference",
+    "canonical_url": "https://discoveryinpractice.com/articles/lumit-interference-controls/",
+    "summary": "Investigate Lumit results with dilution series, matrix controls and tests that separate antibody recognition, light production and detector response.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Lumit",
+      "Immunoassays",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "3f380b1de219f81842b79c41dbbbffd53320bb66906040e9888706d724f37734",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/lumit-interference-controls/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/lumit-interference-controls/article.md"
+  },
+  {
+    "id": "fluorescence-increases-after-dilution",
+    "title": "Why does my sample get brighter when I dilute it?",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-increases-after-dilution/",
+    "summary": "Distinguish raw fluorescence from dilution-corrected recovery, then investigate inner-filter effects, antigen excess, matrix interference and overload.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Assay interference",
+      "Dilution"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "3dd6d267b3204f6a9b51ec3650d7c916176eea4d5fbac1edd4730001cd3d9b21",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescence-increases-after-dilution/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescence-increases-after-dilution/article.md"
+  },
+  {
+    "id": "rereading-alpha-assay-signal-change",
+    "title": "Why does rereading an Alpha assay change its signal?",
+    "canonical_url": "https://discoveryinpractice.com/articles/rereading-alpha-assay-signal-change/",
+    "summary": "Separate Alpha signal changes caused by reaction age, temperature and excitation history, with a matched once-read versus reread experiment.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Alpha assays",
+      "Assay timing",
+      "Temperature"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "c60ca4657aeb86786d601f7e63b6342e69e4b5491a00c826cf39959183108c87",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/rereading-alpha-assay-signal-change/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/rereading-alpha-assay-signal-change/article.md"
+  },
+  {
+    "id": "sequential-alphaplex-channel-bias",
+    "title": "Can sequential AlphaPlex channel reads bias the result even if both channels look stable?",
+    "canonical_url": "https://discoveryinpractice.com/articles/sequential-alphaplex-channel-bias/",
+    "summary": "See how AlphaPlex channel order can bias a repeatable ratio, and how simultaneous dual emission and matched reading-history controls help.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "AlphaPlex",
+      "Dual emission",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "e2aef6d61bafea981a99125c8c9e90c6f50e7863dacf5eb67c724cee40e97f0e",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-08",
+    "date_modified": "2026-10-08",
+    "json_url": "https://discoveryinpractice.com/articles/sequential-alphaplex-channel-bias/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/sequential-alphaplex-channel-bias/article.md"
   }
 ]

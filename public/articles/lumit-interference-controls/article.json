@@ -1,0 +1,377 @@
+{
+  "schema_version": "1.0",
+  "id": "lumit-interference-controls",
+  "canonical_url": "https://discoveryinpractice.com/articles/lumit-interference-controls/",
+  "title": "Lumit: no wash steps doesn't mean no interference",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Investigate Lumit results with dilution series, matrix controls and tests that separate antibody recognition, light production and detector response.",
+  "takeaways": [
+    "The useful complex is the one that makes light",
+    "Dilution is a diagnostic experiment",
+    "A buffer standard does not reproduce a treated sample"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "Lumit",
+    "Immunoassays",
+    "Assay interference"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-08",
+  "date_modified": "2026-10-08",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>A diluted sample gives more light than the undiluted sample. Before blaming the pipette, consider the possibility that the dilution worked perfectly. In a homogeneous immunoassay, dilution changes the concentration of the analyte and everything else carried into the well. A matrix component may change the light output more than the analyte does.</p><p>Lumit removes the wash steps from many familiar immunoassay workflows. That saves handling and makes large experiments easier to run. It also means that sample components remain present during detection. Good troubleshooting starts by asking whether an unexpected signal comes from the analyte, antibody recognition, the light-producing reaction or the measurement itself.</p><h2 id=\"the-useful-complex-is-the-one-that-makes-light\">The useful complex is the one that makes light</h2><p>In a typical two-antibody Lumit assay, binding to the analyte brings the small and large luciferase fragments close enough to form an active enzyme. Some formats label the analyte-specific antibodies directly; cellular systems can use labelled secondary antibodies with an appropriate primary pair. Hwang and colleagues demonstrated the latter approach for total and phosphorylated cellular proteins. [1] Check which architecture your assay uses before borrowing a control from another kit.</p><p>For a sandwich format, binding more antibody does not necessarily mean making more productive complexes. At sufficiently high antigen concentrations, the two antibody populations can become occupied on separate antigen molecules. There is then less opportunity to bring the luciferase fragments together on the same target.</p><p>Promega explicitly describes this high-dose hook effect in its Lumit glucagon troubleshooting guide: excessive glucagon can yield less light than a lower concentration. [2] Dilution can move the sample back toward the useful assay range and increase signal. That is a documented kit-specific example, not a claim that every Lumit assay hooks at the same concentration or even within its intended working range.</p><p>Once a response turns downward, one light value can correspond to more than one antigen concentration. Curve fitting cannot resolve that ambiguity. Keep unknowns on the validated portion of the calibration curve.</p><h2 id=\"dilution-is-a-diagnostic-experiment\">Dilution is a diagnostic experiment</h2><p>Test a suspicious sample at several dilutions, using a validated diluent and consistent assay volumes. Convert each reading to concentration using the calibration curve, then account for the sample dilution:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"C subscript original = D C subscript measured\"><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>original</mtext></mrow></mrow></msub><mrow><mtext> = D </mtext></mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub></mrow></math></div></div><p>Here D is the pre-assay dilution factor. C_measured must already use the same concentration convention as the standards. If the calibration labels refer to concentrations before detection reagent addition, do not apply that reagent-volume factor a second time.</p><p>Consider these invented results, with every measured concentration assumed to lie within the calibrated range:</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Sample preparation</th><th scope=\"col\">Dilution factor</th><th scope=\"col\">Measured ng/ml</th><th scope=\"col\">Corrected ng/ml</th></tr></thead><tbody><tr><th scope=\"row\">Undiluted</th><td>1</td><td>20</td><td>20</td></tr><tr><th scope=\"row\">Twofold dilution</th><td>2</td><td>25</td><td>50</td></tr><tr><th scope=\"row\">Fourfold dilution</th><td>4</td><td>24</td><td>96</td></tr><tr><th scope=\"row\">Eightfold dilution</th><td>8</td><td>12.5</td><td>100</td></tr></tbody></table></div><p>The corrected estimates approach agreement only after sufficient dilution. The undiluted value would badly understate the amount suggested by the later dilutions. The small difference between 96 and 100 would need assessment against the assay's actual precision and predefined acceptance criteria.</p><p>This pattern is consistent with relief of interference or an antigen-excess effect. It does not prove which one occurred. Dilution also changes pH buffering, detergent concentration, protein interactions and optical absorption. Document what changes in the experiment before naming the mechanism.</p><p>Nor does agreement between two dilutions establish absolute accuracy. Both might share a calibration bias, or the standard protein might behave differently from endogenous material. Dilutional agreement is evidence about consistency under those conditions. Assess it alongside spike recovery and relevant controls.</p><h2 id=\"a-buffer-standard-does-not-reproduce-a-treated-sample\">A buffer standard does not reproduce a treated sample</h2><p>Promega's Lumit labeling guide recommends testing calibration material in both buffer and the relevant sample matrix. It notes that sample components can increase background or reduce complementation, and that dilution may reduce these effects. [3]</p><p>For assay development, compare low, middle and high analyte additions across representative matrices. Include the medium, serum content, lysis chemistry and sample fraction expected in routine use. A calibration curve made in clean buffer can look excellent while systematically misreading the samples beside it.</p><p>Spike recovery answers a related question. After correcting for any volume changes, calculate:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Recovery (%) = 100 (C subscript spiked − C subscript unspiked) divided by (C subscript added)\"><mrow><mrow><mtext>Recovery (%) = 100 </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>spiked</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>unspiked</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>added</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math></div></div><p>If a sample measures 20 ng/ml, adding 40 ng/ml should bring it to 60 ng/ml under the assumed proportional conditions. A measured result of 52 ng/ml gives 80% recovery of the addition. Those numbers are illustrative, not an acceptance specification. Establish acceptance limits for the intended application and concentration range.</p><p>Include an unspiked partner and keep the spike volume small or explicitly correct for dilution. A purified spike may not reproduce the accessibility, binding partners or modification state of native analyte. Good spike recovery therefore supports compatibility of the added material; it does not establish every aspect of native-analyte recovery.</p><p>Conditioned medium deserves particular attention. It can differ from unused medium in ways that track treatment or cell growth. Promega's HMGB1 guide discusses using conditioned medium when refining quantitative interpolation. [4] Simply matching the name on the medium bottle may not match the sample.</p><h2 id=\"luminescence-still-has-to-get-out-of-the-well\">Luminescence still has to get out of the well</h2><p>Eliminating excitation light removes one set of optical problems. It does not prevent sample components from absorbing the emitted photons. Promega's HMGB1 manual specifically identifies colored compounds and phenol-red-related effects as potential sources of altered luminescence. [4]</p><p>An independent light-producing control in a representative matrix can help investigate that possibility. Match the relevant emission and assay conditions as closely as practical. A response in such a control may reflect enzyme inhibition as well as optical absorption, so further separation may be needed. Avoid interpreting every loss of light as failed antibody binding.</p><p>Detergent compatibility is also easy to overlook when adapting an existing lysate protocol. Hwang and colleagues tested lysis conditions that preserved the complementation readout. [1] A buffer that extracts a protein successfully for a Western blot has not thereby qualified itself for a homogeneous luminescence reaction. Test recovery and background at the final detergent concentration, after every reagent addition.</p><h2 id=\"keep-room-temperature-stable-through-the-reading\">Keep room temperature stable through the reading</h2><p>For the glucagon assay, Promega states that both signal intensity and stability depend on temperature and calls for room-temperature equilibration of the relevant buffers. [2] Its HMGB1 guidance separately specifies the biological exposure temperature and a constant room-temperature environment for antibody and detection incubations. [4]</p><p>Preserve that intended endpoint temperature when measuring the plate. Equilibrating reagents in a 22°C room and then holding the plate in a progressively warming chamber changes the conditions midway through the procedure. A heater set to off is not a demonstration that the chamber stays near room temperature.</p><p>Look for evidence from sustained reader operation, with realistic plate loading and dwell times. Effective heat removal and limited heat transfer from internal components help keep the sample environment stable. Avoid unnecessary airflow over exposed wells, especially at low volumes; evaporation can change both matrix composition and analyte concentration. Low airflow alone does not demonstrate humidity control.</p><p>Check representative liquid temperatures rather than relying solely on the displayed chamber value. Distribute assay controls across positions and across the run. Consistent reagent-to-read timing remains necessary even with a stable temperature: a glow signal offers a measurement window, not an exemption from kinetics. The appropriate temperature and timing remain kit-specific, and living-cell exposure conditions should follow the biology.</p><h2 id=\"separate-an-assay-ceiling-from-a-reader-ceiling\">Separate an assay ceiling from a reader ceiling</h2><p>A hook effect occurs in the binding chemistry. Detector compression occurs when increasing light no longer produces the expected proportional increase in reported signal. Both can compromise a calibration, but they require different remedies. A reader with a wide verified linear range cannot repair an antigen-excess hook, and a well-designed antibody pair cannot correct nonlinear detection.</p><p>Diluting a sample can improve either problem. To isolate detector behavior, use a validated optical attenuation or instrument-linearity test that changes incoming light without changing antibody and antigen concentrations. A detector gain change may be informative, but it is not automatically equivalent to reducing the photon flux at the detector. Confirm what the setting actually changes.</p><p>Also challenge weak wells beside the brightest standards in the intended plate. Low crosstalk and appropriate collection geometry protect weak-sample estimates from neighboring light. Longer integration can improve photon-limited precision, but it cannot identify a signal that came from the wrong well or repair a biased calibration.</p><p>Before screening, qualify the matrix, useful concentration range, dilution behavior and measurement conditions together. Keep an explicit rule for samples outside that range. When a diluted sample gets brighter, preserve the observation and investigate it. Use the follow-up controls to determine whether dilution relieved a chemical, optical or instrumental limitation.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Hwang B. et al. <a href=\"https://www.nature.com/articles/s42003-019-0723-9\">A homogeneous bioluminescent immunoassay to probe cellular signaling pathway regulation</a>. Communications Biology 3, 8 (2020). doi:10.1038/s42003-019-0723-9.</p><p id=\"ref-2\">2. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/500/lumit-glucagon-immunoassay-protocol-tm682.pdf?rev=cbcd081802774f5da3e6f2a96bc364d5\">Lumit Glucagon Immunoassay, TM682</a>. Revised November 2025. Sections 7 and 8A: hook effect, timing, temperature and optical considerations.</p><p id=\"ref-3\">3. Promega. <a href=\"https://se.promega.com/-/media/files/resources/protocols/technical-manuals/500/tm602-lumit-immunoassay-labeling-kit-technical-manual.pdf?rev=7fdb8f65a8544f768b89b44020dacea8&amp;sc_lang=en\">Lumit Immunoassay Labeling Kit, TM602</a>. Sections 5C and 5D: antibody optimization, matrix effects and calibration.</p><p id=\"ref-4\">4. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/500/lumit-hmgb1-human-mouse-immunoassay-protocol-tm681.pdf?rev=505ad36a956147bea9d481d1161b2ff3&amp;sc_lang=en\">Lumit HMGB1 Human/Mouse Immunoassay, TM681</a>. Revised May 2025. Sections 5, 8B and 8C: sample matrix, temperature and spectral interference.</p>",
+  "body_text": "A diluted sample gives more light than the undiluted sample. Before blaming the pipette, consider the possibility that the dilution worked perfectly. In a homogeneous immunoassay, dilution changes the concentration of the analyte and everything else carried into the well. A matrix component may change the light output more than the analyte does.\n\nLumit removes the wash steps from many familiar immunoassay workflows. That saves handling and makes large experiments easier to run. It also means that sample components remain present during detection. Good troubleshooting starts by asking whether an unexpected signal comes from the analyte, antibody recognition, the light-producing reaction or the measurement itself.\n\nThe useful complex is the one that makes light\n\nIn a typical two-antibody Lumit assay, binding to the analyte brings the small and large luciferase fragments close enough to form an active enzyme. Some formats label the analyte-specific antibodies directly; cellular systems can use labelled secondary antibodies with an appropriate primary pair. Hwang and colleagues demonstrated the latter approach for total and phosphorylated cellular proteins. [1] Check which architecture your assay uses before borrowing a control from another kit.\n\nFor a sandwich format, binding more antibody does not necessarily mean making more productive complexes. At sufficiently high antigen concentrations, the two antibody populations can become occupied on separate antigen molecules. There is then less opportunity to bring the luciferase fragments together on the same target.\n\nPromega explicitly describes this high-dose hook effect in its Lumit glucagon troubleshooting guide: excessive glucagon can yield less light than a lower concentration. [2] Dilution can move the sample back toward the useful assay range and increase signal. That is a documented kit-specific example, not a claim that every Lumit assay hooks at the same concentration or even within its intended working range.\n\nOnce a response turns downward, one light value can correspond to more than one antigen concentration. Curve fitting cannot resolve that ambiguity. Keep unknowns on the validated portion of the calibration curve.\n\nDilution is a diagnostic experiment\n\nTest a suspicious sample at several dilutions, using a validated diluent and consistent assay volumes. Convert each reading to concentration using the calibration curve, then account for the sample dilution:\n\nC subscript original = D C subscript measured\n\nHere D is the pre-assay dilution factor. C_measured must already use the same concentration convention as the standards. If the calibration labels refer to concentrations before detection reagent addition, do not apply that reagent-volume factor a second time.\n\nConsider these invented results, with every measured concentration assumed to lie within the calibrated range:\n\nSample preparation | Dilution factor | Measured ng/ml | Corrected ng/ml | Undiluted | 1 | 20 | 20 | Twofold dilution | 2 | 25 | 50 | Fourfold dilution | 4 | 24 | 96 | Eightfold dilution | 8 | 12.5 | 100 | \n\nThe corrected estimates approach agreement only after sufficient dilution. The undiluted value would badly understate the amount suggested by the later dilutions. The small difference between 96 and 100 would need assessment against the assay's actual precision and predefined acceptance criteria.\n\nThis pattern is consistent with relief of interference or an antigen-excess effect. It does not prove which one occurred. Dilution also changes pH buffering, detergent concentration, protein interactions and optical absorption. Document what changes in the experiment before naming the mechanism.\n\nNor does agreement between two dilutions establish absolute accuracy. Both might share a calibration bias, or the standard protein might behave differently from endogenous material. Dilutional agreement is evidence about consistency under those conditions. Assess it alongside spike recovery and relevant controls.\n\nA buffer standard does not reproduce a treated sample\n\nPromega's Lumit labeling guide recommends testing calibration material in both buffer and the relevant sample matrix. It notes that sample components can increase background or reduce complementation, and that dilution may reduce these effects. [3]\n\nFor assay development, compare low, middle and high analyte additions across representative matrices. Include the medium, serum content, lysis chemistry and sample fraction expected in routine use. A calibration curve made in clean buffer can look excellent while systematically misreading the samples beside it.\n\nSpike recovery answers a related question. After correcting for any volume changes, calculate:\n\nRecovery (%) = 100 (C subscript spiked − C subscript unspiked) divided by (C subscript added)\n\nIf a sample measures 20 ng/ml, adding 40 ng/ml should bring it to 60 ng/ml under the assumed proportional conditions. A measured result of 52 ng/ml gives 80% recovery of the addition. Those numbers are illustrative, not an acceptance specification. Establish acceptance limits for the intended application and concentration range.\n\nInclude an unspiked partner and keep the spike volume small or explicitly correct for dilution. A purified spike may not reproduce the accessibility, binding partners or modification state of native analyte. Good spike recovery therefore supports compatibility of the added material; it does not establish every aspect of native-analyte recovery.\n\nConditioned medium deserves particular attention. It can differ from unused medium in ways that track treatment or cell growth. Promega's HMGB1 guide discusses using conditioned medium when refining quantitative interpolation. [4] Simply matching the name on the medium bottle may not match the sample.\n\nLuminescence still has to get out of the well\n\nEliminating excitation light removes one set of optical problems. It does not prevent sample components from absorbing the emitted photons. Promega's HMGB1 manual specifically identifies colored compounds and phenol-red-related effects as potential sources of altered luminescence. [4]\n\nAn independent light-producing control in a representative matrix can help investigate that possibility. Match the relevant emission and assay conditions as closely as practical. A response in such a control may reflect enzyme inhibition as well as optical absorption, so further separation may be needed. Avoid interpreting every loss of light as failed antibody binding.\n\nDetergent compatibility is also easy to overlook when adapting an existing lysate protocol. Hwang and colleagues tested lysis conditions that preserved the complementation readout. [1] A buffer that extracts a protein successfully for a Western blot has not thereby qualified itself for a homogeneous luminescence reaction. Test recovery and background at the final detergent concentration, after every reagent addition.\n\nKeep room temperature stable through the reading\n\nFor the glucagon assay, Promega states that both signal intensity and stability depend on temperature and calls for room-temperature equilibration of the relevant buffers. [2] Its HMGB1 guidance separately specifies the biological exposure temperature and a constant room-temperature environment for antibody and detection incubations. [4]\n\nPreserve that intended endpoint temperature when measuring the plate. Equilibrating reagents in a 22°C room and then holding the plate in a progressively warming chamber changes the conditions midway through the procedure. A heater set to off is not a demonstration that the chamber stays near room temperature.\n\nLook for evidence from sustained reader operation, with realistic plate loading and dwell times. Effective heat removal and limited heat transfer from internal components help keep the sample environment stable. Avoid unnecessary airflow over exposed wells, especially at low volumes; evaporation can change both matrix composition and analyte concentration. Low airflow alone does not demonstrate humidity control.\n\nCheck representative liquid temperatures rather than relying solely on the displayed chamber value. Distribute assay controls across positions and across the run. Consistent reagent-to-read timing remains necessary even with a stable temperature: a glow signal offers a measurement window, not an exemption from kinetics. The appropriate temperature and timing remain kit-specific, and living-cell exposure conditions should follow the biology.\n\nSeparate an assay ceiling from a reader ceiling\n\nA hook effect occurs in the binding chemistry. Detector compression occurs when increasing light no longer produces the expected proportional increase in reported signal. Both can compromise a calibration, but they require different remedies. A reader with a wide verified linear range cannot repair an antigen-excess hook, and a well-designed antibody pair cannot correct nonlinear detection.\n\nDiluting a sample can improve either problem. To isolate detector behavior, use a validated optical attenuation or instrument-linearity test that changes incoming light without changing antibody and antigen concentrations. A detector gain change may be informative, but it is not automatically equivalent to reducing the photon flux at the detector. Confirm what the setting actually changes.\n\nAlso challenge weak wells beside the brightest standards in the intended plate. Low crosstalk and appropriate collection geometry protect weak-sample estimates from neighboring light. Longer integration can improve photon-limited precision, but it cannot identify a signal that came from the wrong well or repair a biased calibration.\n\nBefore screening, qualify the matrix, useful concentration range, dilution behavior and measurement conditions together. Keep an explicit rule for samples outside that range. When a diluted sample gets brighter, preserve the observation and investigate it. Use the follow-up controls to determine whether dilution relieved a chemical, optical or instrumental limitation.\n\nReferences\n\n1. Hwang B. et al. A homogeneous bioluminescent immunoassay to probe cellular signaling pathway regulation. Communications Biology 3, 8 (2020). doi:10.1038/s42003-019-0723-9.\n\n2. Promega. Lumit Glucagon Immunoassay, TM682. Revised November 2025. Sections 7 and 8A: hook effect, timing, temperature and optical considerations.\n\n3. Promega. Lumit Immunoassay Labeling Kit, TM602. Sections 5C and 5D: antibody optimization, matrix effects and calibration.\n\n4. Promega. Lumit HMGB1 Human/Mouse Immunoassay, TM681. Revised May 2025. Sections 5, 8B and 8C: sample matrix, temperature and spectral interference.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A diluted sample gives more light than the undiluted sample. Before blaming the pipette, consider the possibility that the dilution worked perfectly. In a homogeneous immunoassay, dilution changes the concentration of the analyte and everything else carried into the well. A matrix component may change the light output more than the analyte does.",
+          "html": "<p>A diluted sample gives more light than the undiluted sample. Before blaming the pipette, consider the possibility that the dilution worked perfectly. In a homogeneous immunoassay, dilution changes the concentration of the analyte and everything else carried into the well. A matrix component may change the light output more than the analyte does.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Lumit removes the wash steps from many familiar immunoassay workflows. That saves handling and makes large experiments easier to run. It also means that sample components remain present during detection. Good troubleshooting starts by asking whether an unexpected signal comes from the analyte, antibody recognition, the light-producing reaction or the measurement itself.",
+          "html": "<p>Lumit removes the wash steps from many familiar immunoassay workflows. That saves handling and makes large experiments easier to run. It also means that sample components remain present during detection. Good troubleshooting starts by asking whether an unexpected signal comes from the analyte, antibody recognition, the light-producing reaction or the measurement itself.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-useful-complex-is-the-one-that-makes-light",
+      "heading": "The useful complex is the one that makes light",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The useful complex is the one that makes light",
+          "html": "<h2 id=\"the-useful-complex-is-the-one-that-makes-light\">The useful complex is the one that makes light</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In a typical two-antibody Lumit assay, binding to the analyte brings the small and large luciferase fragments close enough to form an active enzyme. Some formats label the analyte-specific antibodies directly; cellular systems can use labelled secondary antibodies with an appropriate primary pair. Hwang and colleagues demonstrated the latter approach for total and phosphorylated cellular proteins. [1] Check which architecture your assay uses before borrowing a control from another kit.",
+          "html": "<p>In a typical two-antibody Lumit assay, binding to the analyte brings the small and large luciferase fragments close enough to form an active enzyme. Some formats label the analyte-specific antibodies directly; cellular systems can use labelled secondary antibodies with an appropriate primary pair. Hwang and colleagues demonstrated the latter approach for total and phosphorylated cellular proteins. [1] Check which architecture your assay uses before borrowing a control from another kit.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a sandwich format, binding more antibody does not necessarily mean making more productive complexes. At sufficiently high antigen concentrations, the two antibody populations can become occupied on separate antigen molecules. There is then less opportunity to bring the luciferase fragments together on the same target.",
+          "html": "<p>For a sandwich format, binding more antibody does not necessarily mean making more productive complexes. At sufficiently high antigen concentrations, the two antibody populations can become occupied on separate antigen molecules. There is then less opportunity to bring the luciferase fragments together on the same target.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Promega explicitly describes this high-dose hook effect in its Lumit glucagon troubleshooting guide: excessive glucagon can yield less light than a lower concentration. [2] Dilution can move the sample back toward the useful assay range and increase signal. That is a documented kit-specific example, not a claim that every Lumit assay hooks at the same concentration or even within its intended working range.",
+          "html": "<p>Promega explicitly describes this high-dose hook effect in its Lumit glucagon troubleshooting guide: excessive glucagon can yield less light than a lower concentration. [2] Dilution can move the sample back toward the useful assay range and increase signal. That is a documented kit-specific example, not a claim that every Lumit assay hooks at the same concentration or even within its intended working range.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Once a response turns downward, one light value can correspond to more than one antigen concentration. Curve fitting cannot resolve that ambiguity. Keep unknowns on the validated portion of the calibration curve.",
+          "html": "<p>Once a response turns downward, one light value can correspond to more than one antigen concentration. Curve fitting cannot resolve that ambiguity. Keep unknowns on the validated portion of the calibration curve.</p>"
+        }
+      ]
+    },
+    {
+      "id": "dilution-is-a-diagnostic-experiment",
+      "heading": "Dilution is a diagnostic experiment",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Dilution is a diagnostic experiment",
+          "html": "<h2 id=\"dilution-is-a-diagnostic-experiment\">Dilution is a diagnostic experiment</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Test a suspicious sample at several dilutions, using a validated diluent and consistent assay volumes. Convert each reading to concentration using the calibration curve, then account for the sample dilution:",
+          "html": "<p>Test a suspicious sample at several dilutions, using a validated diluent and consistent assay volumes. Convert each reading to concentration using the calibration curve, then account for the sample dilution:</p>"
+        },
+        {
+          "type": "div",
+          "text": "C subscript original = D C subscript measured",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"C subscript original = D C subscript measured\"><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>original</mtext></mrow></mrow></msub><mrow><mtext> = D </mtext></mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "Here D is the pre-assay dilution factor. C_measured must already use the same concentration convention as the standards. If the calibration labels refer to concentrations before detection reagent addition, do not apply that reagent-volume factor a second time.",
+          "html": "<p>Here D is the pre-assay dilution factor. C_measured must already use the same concentration convention as the standards. If the calibration labels refer to concentrations before detection reagent addition, do not apply that reagent-volume factor a second time.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Consider these invented results, with every measured concentration assumed to lie within the calibrated range:",
+          "html": "<p>Consider these invented results, with every measured concentration assumed to lie within the calibrated range:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Sample preparation | Dilution factor | Measured ng/ml | Corrected ng/ml | Undiluted | 1 | 20 | 20 | Twofold dilution | 2 | 25 | 50 | Fourfold dilution | 4 | 24 | 96 | Eightfold dilution | 8 | 12.5 | 100 | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Sample preparation</th><th scope=\"col\">Dilution factor</th><th scope=\"col\">Measured ng/ml</th><th scope=\"col\">Corrected ng/ml</th></tr></thead><tbody><tr><th scope=\"row\">Undiluted</th><td>1</td><td>20</td><td>20</td></tr><tr><th scope=\"row\">Twofold dilution</th><td>2</td><td>25</td><td>50</td></tr><tr><th scope=\"row\">Fourfold dilution</th><td>4</td><td>24</td><td>96</td></tr><tr><th scope=\"row\">Eightfold dilution</th><td>8</td><td>12.5</td><td>100</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "The corrected estimates approach agreement only after sufficient dilution. The undiluted value would badly understate the amount suggested by the later dilutions. The small difference between 96 and 100 would need assessment against the assay's actual precision and predefined acceptance criteria.",
+          "html": "<p>The corrected estimates approach agreement only after sufficient dilution. The undiluted value would badly understate the amount suggested by the later dilutions. The small difference between 96 and 100 would need assessment against the assay's actual precision and predefined acceptance criteria.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This pattern is consistent with relief of interference or an antigen-excess effect. It does not prove which one occurred. Dilution also changes pH buffering, detergent concentration, protein interactions and optical absorption. Document what changes in the experiment before naming the mechanism.",
+          "html": "<p>This pattern is consistent with relief of interference or an antigen-excess effect. It does not prove which one occurred. Dilution also changes pH buffering, detergent concentration, protein interactions and optical absorption. Document what changes in the experiment before naming the mechanism.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Nor does agreement between two dilutions establish absolute accuracy. Both might share a calibration bias, or the standard protein might behave differently from endogenous material. Dilutional agreement is evidence about consistency under those conditions. Assess it alongside spike recovery and relevant controls.",
+          "html": "<p>Nor does agreement between two dilutions establish absolute accuracy. Both might share a calibration bias, or the standard protein might behave differently from endogenous material. Dilutional agreement is evidence about consistency under those conditions. Assess it alongside spike recovery and relevant controls.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-buffer-standard-does-not-reproduce-a-treated-sample",
+      "heading": "A buffer standard does not reproduce a treated sample",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A buffer standard does not reproduce a treated sample",
+          "html": "<h2 id=\"a-buffer-standard-does-not-reproduce-a-treated-sample\">A buffer standard does not reproduce a treated sample</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Promega's Lumit labeling guide recommends testing calibration material in both buffer and the relevant sample matrix. It notes that sample components can increase background or reduce complementation, and that dilution may reduce these effects. [3]",
+          "html": "<p>Promega's Lumit labeling guide recommends testing calibration material in both buffer and the relevant sample matrix. It notes that sample components can increase background or reduce complementation, and that dilution may reduce these effects. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For assay development, compare low, middle and high analyte additions across representative matrices. Include the medium, serum content, lysis chemistry and sample fraction expected in routine use. A calibration curve made in clean buffer can look excellent while systematically misreading the samples beside it.",
+          "html": "<p>For assay development, compare low, middle and high analyte additions across representative matrices. Include the medium, serum content, lysis chemistry and sample fraction expected in routine use. A calibration curve made in clean buffer can look excellent while systematically misreading the samples beside it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Spike recovery answers a related question. After correcting for any volume changes, calculate:",
+          "html": "<p>Spike recovery answers a related question. After correcting for any volume changes, calculate:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Recovery (%) = 100 (C subscript spiked − C subscript unspiked) divided by (C subscript added)",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Recovery (%) = 100 (C subscript spiked − C subscript unspiked) divided by (C subscript added)\"><mrow><mrow><mtext>Recovery (%) = 100 </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>spiked</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>unspiked</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>added</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "If a sample measures 20 ng/ml, adding 40 ng/ml should bring it to 60 ng/ml under the assumed proportional conditions. A measured result of 52 ng/ml gives 80% recovery of the addition. Those numbers are illustrative, not an acceptance specification. Establish acceptance limits for the intended application and concentration range.",
+          "html": "<p>If a sample measures 20 ng/ml, adding 40 ng/ml should bring it to 60 ng/ml under the assumed proportional conditions. A measured result of 52 ng/ml gives 80% recovery of the addition. Those numbers are illustrative, not an acceptance specification. Establish acceptance limits for the intended application and concentration range.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Include an unspiked partner and keep the spike volume small or explicitly correct for dilution. A purified spike may not reproduce the accessibility, binding partners or modification state of native analyte. Good spike recovery therefore supports compatibility of the added material; it does not establish every aspect of native-analyte recovery.",
+          "html": "<p>Include an unspiked partner and keep the spike volume small or explicitly correct for dilution. A purified spike may not reproduce the accessibility, binding partners or modification state of native analyte. Good spike recovery therefore supports compatibility of the added material; it does not establish every aspect of native-analyte recovery.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Conditioned medium deserves particular attention. It can differ from unused medium in ways that track treatment or cell growth. Promega's HMGB1 guide discusses using conditioned medium when refining quantitative interpolation. [4] Simply matching the name on the medium bottle may not match the sample.",
+          "html": "<p>Conditioned medium deserves particular attention. It can differ from unused medium in ways that track treatment or cell growth. Promega's HMGB1 guide discusses using conditioned medium when refining quantitative interpolation. [4] Simply matching the name on the medium bottle may not match the sample.</p>"
+        }
+      ]
+    },
+    {
+      "id": "luminescence-still-has-to-get-out-of-the-well",
+      "heading": "Luminescence still has to get out of the well",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Luminescence still has to get out of the well",
+          "html": "<h2 id=\"luminescence-still-has-to-get-out-of-the-well\">Luminescence still has to get out of the well</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Eliminating excitation light removes one set of optical problems. It does not prevent sample components from absorbing the emitted photons. Promega's HMGB1 manual specifically identifies colored compounds and phenol-red-related effects as potential sources of altered luminescence. [4]",
+          "html": "<p>Eliminating excitation light removes one set of optical problems. It does not prevent sample components from absorbing the emitted photons. Promega's HMGB1 manual specifically identifies colored compounds and phenol-red-related effects as potential sources of altered luminescence. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "An independent light-producing control in a representative matrix can help investigate that possibility. Match the relevant emission and assay conditions as closely as practical. A response in such a control may reflect enzyme inhibition as well as optical absorption, so further separation may be needed. Avoid interpreting every loss of light as failed antibody binding.",
+          "html": "<p>An independent light-producing control in a representative matrix can help investigate that possibility. Match the relevant emission and assay conditions as closely as practical. A response in such a control may reflect enzyme inhibition as well as optical absorption, so further separation may be needed. Avoid interpreting every loss of light as failed antibody binding.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Detergent compatibility is also easy to overlook when adapting an existing lysate protocol. Hwang and colleagues tested lysis conditions that preserved the complementation readout. [1] A buffer that extracts a protein successfully for a Western blot has not thereby qualified itself for a homogeneous luminescence reaction. Test recovery and background at the final detergent concentration, after every reagent addition.",
+          "html": "<p>Detergent compatibility is also easy to overlook when adapting an existing lysate protocol. Hwang and colleagues tested lysis conditions that preserved the complementation readout. [1] A buffer that extracts a protein successfully for a Western blot has not thereby qualified itself for a homogeneous luminescence reaction. Test recovery and background at the final detergent concentration, after every reagent addition.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-room-temperature-stable-through-the-reading",
+      "heading": "Keep room temperature stable through the reading",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep room temperature stable through the reading",
+          "html": "<h2 id=\"keep-room-temperature-stable-through-the-reading\">Keep room temperature stable through the reading</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For the glucagon assay, Promega states that both signal intensity and stability depend on temperature and calls for room-temperature equilibration of the relevant buffers. [2] Its HMGB1 guidance separately specifies the biological exposure temperature and a constant room-temperature environment for antibody and detection incubations. [4]",
+          "html": "<p>For the glucagon assay, Promega states that both signal intensity and stability depend on temperature and calls for room-temperature equilibration of the relevant buffers. [2] Its HMGB1 guidance separately specifies the biological exposure temperature and a constant room-temperature environment for antibody and detection incubations. [4]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Preserve that intended endpoint temperature when measuring the plate. Equilibrating reagents in a 22°C room and then holding the plate in a progressively warming chamber changes the conditions midway through the procedure. A heater set to off is not a demonstration that the chamber stays near room temperature.",
+          "html": "<p>Preserve that intended endpoint temperature when measuring the plate. Equilibrating reagents in a 22°C room and then holding the plate in a progressively warming chamber changes the conditions midway through the procedure. A heater set to off is not a demonstration that the chamber stays near room temperature.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Look for evidence from sustained reader operation, with realistic plate loading and dwell times. Effective heat removal and limited heat transfer from internal components help keep the sample environment stable. Avoid unnecessary airflow over exposed wells, especially at low volumes; evaporation can change both matrix composition and analyte concentration. Low airflow alone does not demonstrate humidity control.",
+          "html": "<p>Look for evidence from sustained reader operation, with realistic plate loading and dwell times. Effective heat removal and limited heat transfer from internal components help keep the sample environment stable. Avoid unnecessary airflow over exposed wells, especially at low volumes; evaporation can change both matrix composition and analyte concentration. Low airflow alone does not demonstrate humidity control.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Check representative liquid temperatures rather than relying solely on the displayed chamber value. Distribute assay controls across positions and across the run. Consistent reagent-to-read timing remains necessary even with a stable temperature: a glow signal offers a measurement window, not an exemption from kinetics. The appropriate temperature and timing remain kit-specific, and living-cell exposure conditions should follow the biology.",
+          "html": "<p>Check representative liquid temperatures rather than relying solely on the displayed chamber value. Distribute assay controls across positions and across the run. Consistent reagent-to-read timing remains necessary even with a stable temperature: a glow signal offers a measurement window, not an exemption from kinetics. The appropriate temperature and timing remain kit-specific, and living-cell exposure conditions should follow the biology.</p>"
+        }
+      ]
+    },
+    {
+      "id": "separate-an-assay-ceiling-from-a-reader-ceiling",
+      "heading": "Separate an assay ceiling from a reader ceiling",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Separate an assay ceiling from a reader ceiling",
+          "html": "<h2 id=\"separate-an-assay-ceiling-from-a-reader-ceiling\">Separate an assay ceiling from a reader ceiling</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A hook effect occurs in the binding chemistry. Detector compression occurs when increasing light no longer produces the expected proportional increase in reported signal. Both can compromise a calibration, but they require different remedies. A reader with a wide verified linear range cannot repair an antigen-excess hook, and a well-designed antibody pair cannot correct nonlinear detection.",
+          "html": "<p>A hook effect occurs in the binding chemistry. Detector compression occurs when increasing light no longer produces the expected proportional increase in reported signal. Both can compromise a calibration, but they require different remedies. A reader with a wide verified linear range cannot repair an antigen-excess hook, and a well-designed antibody pair cannot correct nonlinear detection.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Diluting a sample can improve either problem. To isolate detector behavior, use a validated optical attenuation or instrument-linearity test that changes incoming light without changing antibody and antigen concentrations. A detector gain change may be informative, but it is not automatically equivalent to reducing the photon flux at the detector. Confirm what the setting actually changes.",
+          "html": "<p>Diluting a sample can improve either problem. To isolate detector behavior, use a validated optical attenuation or instrument-linearity test that changes incoming light without changing antibody and antigen concentrations. A detector gain change may be informative, but it is not automatically equivalent to reducing the photon flux at the detector. Confirm what the setting actually changes.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Also challenge weak wells beside the brightest standards in the intended plate. Low crosstalk and appropriate collection geometry protect weak-sample estimates from neighboring light. Longer integration can improve photon-limited precision, but it cannot identify a signal that came from the wrong well or repair a biased calibration.",
+          "html": "<p>Also challenge weak wells beside the brightest standards in the intended plate. Low crosstalk and appropriate collection geometry protect weak-sample estimates from neighboring light. Longer integration can improve photon-limited precision, but it cannot identify a signal that came from the wrong well or repair a biased calibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Before screening, qualify the matrix, useful concentration range, dilution behavior and measurement conditions together. Keep an explicit rule for samples outside that range. When a diluted sample gets brighter, preserve the observation and investigate it. Use the follow-up controls to determine whether dilution relieved a chemical, optical or instrumental limitation.",
+          "html": "<p>Before screening, qualify the matrix, useful concentration range, dilution behavior and measurement conditions together. Keep an explicit rule for samples outside that range. When a diluted sample gets brighter, preserve the observation and investigate it. Use the follow-up controls to determine whether dilution relieved a chemical, optical or instrumental limitation.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Hwang B. et al. A homogeneous bioluminescent immunoassay to probe cellular signaling pathway regulation. Communications Biology 3, 8 (2020). doi:10.1038/s42003-019-0723-9.",
+          "html": "<p id=\"ref-1\">1. Hwang B. et al. <a href=\"https://www.nature.com/articles/s42003-019-0723-9\">A homogeneous bioluminescent immunoassay to probe cellular signaling pathway regulation</a>. Communications Biology 3, 8 (2020). doi:10.1038/s42003-019-0723-9.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. Lumit Glucagon Immunoassay, TM682. Revised November 2025. Sections 7 and 8A: hook effect, timing, temperature and optical considerations.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/500/lumit-glucagon-immunoassay-protocol-tm682.pdf?rev=cbcd081802774f5da3e6f2a96bc364d5\">Lumit Glucagon Immunoassay, TM682</a>. Revised November 2025. Sections 7 and 8A: hook effect, timing, temperature and optical considerations.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Promega. Lumit Immunoassay Labeling Kit, TM602. Sections 5C and 5D: antibody optimization, matrix effects and calibration.",
+          "html": "<p id=\"ref-3\">3. Promega. <a href=\"https://se.promega.com/-/media/files/resources/protocols/technical-manuals/500/tm602-lumit-immunoassay-labeling-kit-technical-manual.pdf?rev=7fdb8f65a8544f768b89b44020dacea8&amp;sc_lang=en\">Lumit Immunoassay Labeling Kit, TM602</a>. Sections 5C and 5D: antibody optimization, matrix effects and calibration.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Promega. Lumit HMGB1 Human/Mouse Immunoassay, TM681. Revised May 2025. Sections 5, 8B and 8C: sample matrix, temperature and spectral interference.",
+          "html": "<p id=\"ref-4\">4. Promega. <a href=\"https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/500/lumit-hmgb1-human-mouse-immunoassay-protocol-tm681.pdf?rev=505ad36a956147bea9d481d1161b2ff3&amp;sc_lang=en\">Lumit HMGB1 Human/Mouse Immunoassay, TM681</a>. Revised May 2025. Sections 5, 8B and 8C: sample matrix, temperature and spectral interference.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Hwang B. et al. A homogeneous bioluminescent immunoassay to probe cellular signaling pathway regulation. Communications Biology 3, 8 (2020). doi:10.1038/s42003-019-0723-9.",
+      "urls": [
+        "https://www.nature.com/articles/s42003-019-0723-9"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. Lumit Glucagon Immunoassay, TM682. Revised November 2025. Sections 7 and 8A: hook effect, timing, temperature and optical considerations.",
+      "urls": [
+        "https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/500/lumit-glucagon-immunoassay-protocol-tm682.pdf?rev=cbcd081802774f5da3e6f2a96bc364d5"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Promega. Lumit Immunoassay Labeling Kit, TM602. Sections 5C and 5D: antibody optimization, matrix effects and calibration.",
+      "urls": [
+        "https://se.promega.com/-/media/files/resources/protocols/technical-manuals/500/tm602-lumit-immunoassay-labeling-kit-technical-manual.pdf?rev=7fdb8f65a8544f768b89b44020dacea8&sc_lang=en"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Promega. Lumit HMGB1 Human/Mouse Immunoassay, TM681. Revised May 2025. Sections 5, 8B and 8C: sample matrix, temperature and spectral interference.",
+      "urls": [
+        "https://worldwide.promega.com/-/media/files/resources/protocols/technical-manuals/500/lumit-hmgb1-human-mouse-immunoassay-protocol-tm681.pdf?rev=505ad36a956147bea9d481d1161b2ff3&sc_lang=en"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "C subscript original = D C subscript measured",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"C subscript original = D C subscript measured\"><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>original</mtext></mrow></mrow></msub><mrow><mtext> = D </mtext></mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>measured</mtext></mrow></mrow></msub></mrow></math>"
+    },
+    {
+      "description": "Recovery (%) = 100 (C subscript spiked − C subscript unspiked) divided by (C subscript added)",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"Recovery (%) = 100 (C subscript spiked − C subscript unspiked) divided by (C subscript added)\"><mrow><mrow><mtext>Recovery (%) = 100 </mtext></mrow><mfrac><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>spiked</mtext></mrow></mrow></msub><mrow><mtext> − </mtext></mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>unspiked</mtext></mrow></mrow></msub></mrow><mrow><msub><mrow><mrow><mtext>C</mtext></mrow></mrow><mrow><mrow><mtext>added</mtext></mrow></mrow></msub></mrow></mfrac></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Lumit: no wash steps doesn't mean no interference",
+      "rows": [
+        [
+          "Sample preparation",
+          "Dilution factor",
+          "Measured ng/ml",
+          "Corrected ng/ml"
+        ],
+        [
+          "Undiluted",
+          "1",
+          "20",
+          "20"
+        ],
+        [
+          "Twofold dilution",
+          "2",
+          "25",
+          "50"
+        ],
+        [
+          "Fourfold dilution",
+          "4",
+          "24",
+          "96"
+        ],
+        [
+          "Eightfold dilution",
+          "8",
+          "12.5",
+          "100"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "3f380b1de219f81842b79c41dbbbffd53320bb66906040e9888706d724f37734"
+}

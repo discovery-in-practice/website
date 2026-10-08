@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "fluorescence-increases-after-dilution",
+  "canonical_url": "https://discoveryinpractice.com/articles/fluorescence-increases-after-dilution/",
+  "title": "Why does my sample get brighter when I dilute it?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Distinguish raw fluorescence from dilution-corrected recovery, then investigate inner-filter effects, antigen excess, matrix interference and overload.",
+  "takeaways": [
+    "Keep the raw result beside the corrected result",
+    "Absorbing material can intercept the measurement",
+    "Check whether the raw signal actually rose"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "Assay interference",
+    "Dilution"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-08",
+  "date_modified": "2026-10-08",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Dilution can relieve optical absorption, molecular quenching or assay inhibition strongly enough that the measured signal rises despite less sample being present. In a sandwich assay, dilution can also relieve antigen excess and restore productive complexes. Keep raw readings and dilution-corrected results in separate worksheet columns so it is clear which one increased. [1,2]</p><h2 id=\"keep-the-raw-result-beside-the-corrected-result\">Keep the raw result beside the corrected result</h2><p>Suppose an undiluted sample gives 1,000 relative fluorescence units (RFU), while a twofold dilution gives 700 RFU after matched blank correction. Multiplying by two gives a corrected response of 1,400 RFU. The sample became dimmer in the well even though its dilution-corrected response increased.</p><p>That multiplication is a recovery diagnostic only where response is expected to be proportional to concentration. For a nonlinear assay calibration, first convert the diluted result to concentration using the valid standard curve, then apply the dilution factor. Revvity's AlphaLISA IL6 instructions use this concentration-based procedure. [2]</p><p>If the twofold dilution instead gives 1,200 RFU at unchanged settings, the raw signal really has increased. Keep that observation distinct from recovery calculations when troubleshooting.</p><h2 id=\"absorbing-material-can-intercept-the-measurement\">Absorbing material can intercept the measurement</h2><p>In fluorescence, primary inner-filter effects reduce the excitation reaching fluorophores in the observed region. Secondary inner-filter effects absorb emitted light before it reaches the detector. The absorber may be the dye itself or another sample component. The Assay Guidance Manual describes this interference at both excitation and emission wavelengths. [1]</p><p>Dilution reduces absorber concentration and may improve light transmission enough to outweigh the loss of fluorophore. The effect depends on wavelength, optical geometry and concentration. Dilution can also change molecular quenching, binding equilibria, pH or enzyme inhibition. A rising response does not identify one mechanism on its own.</p><p>In a sandwich AlphaLISA assay, excessive analyte can occupy binding partners separately and reduce productive proximity. The AL223 manual excludes the post-hook region from valid standard-curve fitting. Diluting a sample before following the assay protocol can bring it back into the usable region. Diluting an already assembled detection mixture also changes reagent concentrations and is a different experiment. [2]</p><h2 id=\"check-whether-the-raw-signal-actually-rose\">Check whether the raw signal actually rose</h2><p>When detector output increases monotonically with incident light, compression reduces the separation between bright samples but preserves their order. Under those conditions, less incident light cannot produce more raw output. That constraint applies only while the detector response remains monotonic.</p><p>Ordinary compression can explain improved dilution-corrected recovery. A higher raw reading after dilution requires another change, such as sample chemistry, acquisition settings or nonmonotonic overload. Hamamatsu describes different high-rate counting responses, including response models that can turn downward. [3] Do not infer a specific overload mechanism from one dilution pair.</p><h2 id=\"separate-matrix-effects-from-detector-response\">Separate matrix effects from detector response</h2><p>Prepare a dilution series at constant final well volume using the assay's specified diluent. Where feasible, compare with standards in appropriately matched or analyte-depleted matrix. Keep timing and detection-reagent concentrations consistent. Inspect absorbance at the relevant wavelengths and use a compatible reporter-only interference control to investigate optical or detection effects.</p><p>Test reader linearity separately with a qualified reference or validated optical attenuation; diluting the biological assay changes too many things to isolate the detector. A verified linear working range makes this diagnosis easier.</p><p>For temperature-sensitive endpoints, give the dilution series the same thermal history. The AL223 procedure specifies 23°C incubations and warns about temperature-dependent signal. [2] Keep the measurement chamber stable near the validated temperature. Read extra dilution points where corrected concentrations begin to agree, and retain the surrounding points when reporting the result.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Anton Simeonov and Mindy I. Davis. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK343429/\">Interference with Fluorescence and Absorbance</a>. Assay Guidance Manual, updated 1 July 2018. Reviewed in the supplied June 2026 compilation, PDF pp. 1259–1264, particularly p. 1262.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://resources.revvity.com/pdfs/MAN_ALPHALISA_HUMAN_IL6_AL223C-F.pdf\">AlphaLISA human IL6 kit AL223 manual</a>, Manual-AL223-VRB1, pp. 5–8. Matrix, incubation temperature, hook-effect and sample-dilution guidance. Assay-specific requirements.</p><p id=\"ref-3\">3. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting noise, background and count-rate nonlinearity. Numerical examples here are constructed.</p>",
+  "body_text": "Dilution can relieve optical absorption, molecular quenching or assay inhibition strongly enough that the measured signal rises despite less sample being present. In a sandwich assay, dilution can also relieve antigen excess and restore productive complexes. Keep raw readings and dilution-corrected results in separate worksheet columns so it is clear which one increased. [1,2]\n\nKeep the raw result beside the corrected result\n\nSuppose an undiluted sample gives 1,000 relative fluorescence units (RFU), while a twofold dilution gives 700 RFU after matched blank correction. Multiplying by two gives a corrected response of 1,400 RFU. The sample became dimmer in the well even though its dilution-corrected response increased.\n\nThat multiplication is a recovery diagnostic only where response is expected to be proportional to concentration. For a nonlinear assay calibration, first convert the diluted result to concentration using the valid standard curve, then apply the dilution factor. Revvity's AlphaLISA IL6 instructions use this concentration-based procedure. [2]\n\nIf the twofold dilution instead gives 1,200 RFU at unchanged settings, the raw signal really has increased. Keep that observation distinct from recovery calculations when troubleshooting.\n\nAbsorbing material can intercept the measurement\n\nIn fluorescence, primary inner-filter effects reduce the excitation reaching fluorophores in the observed region. Secondary inner-filter effects absorb emitted light before it reaches the detector. The absorber may be the dye itself or another sample component. The Assay Guidance Manual describes this interference at both excitation and emission wavelengths. [1]\n\nDilution reduces absorber concentration and may improve light transmission enough to outweigh the loss of fluorophore. The effect depends on wavelength, optical geometry and concentration. Dilution can also change molecular quenching, binding equilibria, pH or enzyme inhibition. A rising response does not identify one mechanism on its own.\n\nIn a sandwich AlphaLISA assay, excessive analyte can occupy binding partners separately and reduce productive proximity. The AL223 manual excludes the post-hook region from valid standard-curve fitting. Diluting a sample before following the assay protocol can bring it back into the usable region. Diluting an already assembled detection mixture also changes reagent concentrations and is a different experiment. [2]\n\nCheck whether the raw signal actually rose\n\nWhen detector output increases monotonically with incident light, compression reduces the separation between bright samples but preserves their order. Under those conditions, less incident light cannot produce more raw output. That constraint applies only while the detector response remains monotonic.\n\nOrdinary compression can explain improved dilution-corrected recovery. A higher raw reading after dilution requires another change, such as sample chemistry, acquisition settings or nonmonotonic overload. Hamamatsu describes different high-rate counting responses, including response models that can turn downward. [3] Do not infer a specific overload mechanism from one dilution pair.\n\nSeparate matrix effects from detector response\n\nPrepare a dilution series at constant final well volume using the assay's specified diluent. Where feasible, compare with standards in appropriately matched or analyte-depleted matrix. Keep timing and detection-reagent concentrations consistent. Inspect absorbance at the relevant wavelengths and use a compatible reporter-only interference control to investigate optical or detection effects.\n\nTest reader linearity separately with a qualified reference or validated optical attenuation; diluting the biological assay changes too many things to isolate the detector. A verified linear working range makes this diagnosis easier.\n\nFor temperature-sensitive endpoints, give the dilution series the same thermal history. The AL223 procedure specifies 23°C incubations and warns about temperature-dependent signal. [2] Keep the measurement chamber stable near the validated temperature. Read extra dilution points where corrected concentrations begin to agree, and retain the surrounding points when reporting the result.\n\nReferences\n\n1. Anton Simeonov and Mindy I. Davis. Interference with Fluorescence and Absorbance. Assay Guidance Manual, updated 1 July 2018. Reviewed in the supplied June 2026 compilation, PDF pp. 1259–1264, particularly p. 1262.\n\n2. Revvity. AlphaLISA human IL6 kit AL223 manual, Manual-AL223-VRB1, pp. 5–8. Matrix, incubation temperature, hook-effect and sample-dilution guidance. Assay-specific requirements.\n\n3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting noise, background and count-rate nonlinearity. Numerical examples here are constructed.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dilution can relieve optical absorption, molecular quenching or assay inhibition strongly enough that the measured signal rises despite less sample being present. In a sandwich assay, dilution can also relieve antigen excess and restore productive complexes. Keep raw readings and dilution-corrected results in separate worksheet columns so it is clear which one increased. [1,2]",
+          "html": "<p>Dilution can relieve optical absorption, molecular quenching or assay inhibition strongly enough that the measured signal rises despite less sample being present. In a sandwich assay, dilution can also relieve antigen excess and restore productive complexes. Keep raw readings and dilution-corrected results in separate worksheet columns so it is clear which one increased. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-the-raw-result-beside-the-corrected-result",
+      "heading": "Keep the raw result beside the corrected result",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep the raw result beside the corrected result",
+          "html": "<h2 id=\"keep-the-raw-result-beside-the-corrected-result\">Keep the raw result beside the corrected result</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose an undiluted sample gives 1,000 relative fluorescence units (RFU), while a twofold dilution gives 700 RFU after matched blank correction. Multiplying by two gives a corrected response of 1,400 RFU. The sample became dimmer in the well even though its dilution-corrected response increased.",
+          "html": "<p>Suppose an undiluted sample gives 1,000 relative fluorescence units (RFU), while a twofold dilution gives 700 RFU after matched blank correction. Multiplying by two gives a corrected response of 1,400 RFU. The sample became dimmer in the well even though its dilution-corrected response increased.</p>"
+        },
+        {
+          "type": "p",
+          "text": "That multiplication is a recovery diagnostic only where response is expected to be proportional to concentration. For a nonlinear assay calibration, first convert the diluted result to concentration using the valid standard curve, then apply the dilution factor. Revvity's AlphaLISA IL6 instructions use this concentration-based procedure. [2]",
+          "html": "<p>That multiplication is a recovery diagnostic only where response is expected to be proportional to concentration. For a nonlinear assay calibration, first convert the diluted result to concentration using the valid standard curve, then apply the dilution factor. Revvity's AlphaLISA IL6 instructions use this concentration-based procedure. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "If the twofold dilution instead gives 1,200 RFU at unchanged settings, the raw signal really has increased. Keep that observation distinct from recovery calculations when troubleshooting.",
+          "html": "<p>If the twofold dilution instead gives 1,200 RFU at unchanged settings, the raw signal really has increased. Keep that observation distinct from recovery calculations when troubleshooting.</p>"
+        }
+      ]
+    },
+    {
+      "id": "absorbing-material-can-intercept-the-measurement",
+      "heading": "Absorbing material can intercept the measurement",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Absorbing material can intercept the measurement",
+          "html": "<h2 id=\"absorbing-material-can-intercept-the-measurement\">Absorbing material can intercept the measurement</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In fluorescence, primary inner-filter effects reduce the excitation reaching fluorophores in the observed region. Secondary inner-filter effects absorb emitted light before it reaches the detector. The absorber may be the dye itself or another sample component. The Assay Guidance Manual describes this interference at both excitation and emission wavelengths. [1]",
+          "html": "<p>In fluorescence, primary inner-filter effects reduce the excitation reaching fluorophores in the observed region. Secondary inner-filter effects absorb emitted light before it reaches the detector. The absorber may be the dye itself or another sample component. The Assay Guidance Manual describes this interference at both excitation and emission wavelengths. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Dilution reduces absorber concentration and may improve light transmission enough to outweigh the loss of fluorophore. The effect depends on wavelength, optical geometry and concentration. Dilution can also change molecular quenching, binding equilibria, pH or enzyme inhibition. A rising response does not identify one mechanism on its own.",
+          "html": "<p>Dilution reduces absorber concentration and may improve light transmission enough to outweigh the loss of fluorophore. The effect depends on wavelength, optical geometry and concentration. Dilution can also change molecular quenching, binding equilibria, pH or enzyme inhibition. A rising response does not identify one mechanism on its own.</p>"
+        },
+        {
+          "type": "p",
+          "text": "In a sandwich AlphaLISA assay, excessive analyte can occupy binding partners separately and reduce productive proximity. The AL223 manual excludes the post-hook region from valid standard-curve fitting. Diluting a sample before following the assay protocol can bring it back into the usable region. Diluting an already assembled detection mixture also changes reagent concentrations and is a different experiment. [2]",
+          "html": "<p>In a sandwich AlphaLISA assay, excessive analyte can occupy binding partners separately and reduce productive proximity. The AL223 manual excludes the post-hook region from valid standard-curve fitting. Diluting a sample before following the assay protocol can bring it back into the usable region. Diluting an already assembled detection mixture also changes reagent concentrations and is a different experiment. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "check-whether-the-raw-signal-actually-rose",
+      "heading": "Check whether the raw signal actually rose",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Check whether the raw signal actually rose",
+          "html": "<h2 id=\"check-whether-the-raw-signal-actually-rose\">Check whether the raw signal actually rose</h2>"
+        },
+        {
+          "type": "p",
+          "text": "When detector output increases monotonically with incident light, compression reduces the separation between bright samples but preserves their order. Under those conditions, less incident light cannot produce more raw output. That constraint applies only while the detector response remains monotonic.",
+          "html": "<p>When detector output increases monotonically with incident light, compression reduces the separation between bright samples but preserves their order. Under those conditions, less incident light cannot produce more raw output. That constraint applies only while the detector response remains monotonic.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Ordinary compression can explain improved dilution-corrected recovery. A higher raw reading after dilution requires another change, such as sample chemistry, acquisition settings or nonmonotonic overload. Hamamatsu describes different high-rate counting responses, including response models that can turn downward. [3] Do not infer a specific overload mechanism from one dilution pair.",
+          "html": "<p>Ordinary compression can explain improved dilution-corrected recovery. A higher raw reading after dilution requires another change, such as sample chemistry, acquisition settings or nonmonotonic overload. Hamamatsu describes different high-rate counting responses, including response models that can turn downward. [3] Do not infer a specific overload mechanism from one dilution pair.</p>"
+        }
+      ]
+    },
+    {
+      "id": "separate-matrix-effects-from-detector-response",
+      "heading": "Separate matrix effects from detector response",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Separate matrix effects from detector response",
+          "html": "<h2 id=\"separate-matrix-effects-from-detector-response\">Separate matrix effects from detector response</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Prepare a dilution series at constant final well volume using the assay's specified diluent. Where feasible, compare with standards in appropriately matched or analyte-depleted matrix. Keep timing and detection-reagent concentrations consistent. Inspect absorbance at the relevant wavelengths and use a compatible reporter-only interference control to investigate optical or detection effects.",
+          "html": "<p>Prepare a dilution series at constant final well volume using the assay's specified diluent. Where feasible, compare with standards in appropriately matched or analyte-depleted matrix. Keep timing and detection-reagent concentrations consistent. Inspect absorbance at the relevant wavelengths and use a compatible reporter-only interference control to investigate optical or detection effects.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Test reader linearity separately with a qualified reference or validated optical attenuation; diluting the biological assay changes too many things to isolate the detector. A verified linear working range makes this diagnosis easier.",
+          "html": "<p>Test reader linearity separately with a qualified reference or validated optical attenuation; diluting the biological assay changes too many things to isolate the detector. A verified linear working range makes this diagnosis easier.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For temperature-sensitive endpoints, give the dilution series the same thermal history. The AL223 procedure specifies 23°C incubations and warns about temperature-dependent signal. [2] Keep the measurement chamber stable near the validated temperature. Read extra dilution points where corrected concentrations begin to agree, and retain the surrounding points when reporting the result.",
+          "html": "<p>For temperature-sensitive endpoints, give the dilution series the same thermal history. The AL223 procedure specifies 23°C incubations and warns about temperature-dependent signal. [2] Keep the measurement chamber stable near the validated temperature. Read extra dilution points where corrected concentrations begin to agree, and retain the surrounding points when reporting the result.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Anton Simeonov and Mindy I. Davis. Interference with Fluorescence and Absorbance. Assay Guidance Manual, updated 1 July 2018. Reviewed in the supplied June 2026 compilation, PDF pp. 1259–1264, particularly p. 1262.",
+          "html": "<p id=\"ref-1\">1. Anton Simeonov and Mindy I. Davis. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK343429/\">Interference with Fluorescence and Absorbance</a>. Assay Guidance Manual, updated 1 July 2018. Reviewed in the supplied June 2026 compilation, PDF pp. 1259–1264, particularly p. 1262.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. AlphaLISA human IL6 kit AL223 manual, Manual-AL223-VRB1, pp. 5–8. Matrix, incubation temperature, hook-effect and sample-dilution guidance. Assay-specific requirements.",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://resources.revvity.com/pdfs/MAN_ALPHALISA_HUMAN_IL6_AL223C-F.pdf\">AlphaLISA human IL6 kit AL223 manual</a>, Manual-AL223-VRB1, pp. 5–8. Matrix, incubation temperature, hook-effect and sample-dilution guidance. Assay-specific requirements.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting noise, background and count-rate nonlinearity. Numerical examples here are constructed.",
+          "html": "<p id=\"ref-3\">3. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting noise, background and count-rate nonlinearity. Numerical examples here are constructed.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Anton Simeonov and Mindy I. Davis. Interference with Fluorescence and Absorbance. Assay Guidance Manual, updated 1 July 2018. Reviewed in the supplied June 2026 compilation, PDF pp. 1259–1264, particularly p. 1262.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK343429/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. AlphaLISA human IL6 kit AL223 manual, Manual-AL223-VRB1, pp. 5–8. Matrix, incubation temperature, hook-effect and sample-dilution guidance. Assay-specific requirements.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/MAN_ALPHALISA_HUMAN_IL6_AL223C-F.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition, April 2017, printed pp. 149–153 (PDF pp. 162–166). Counting noise, background and count-rate nonlinearity. Numerical examples here are constructed.",
+      "urls": [
+        "https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v4E.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "3dd6d267b3204f6a9b51ec3650d7c916176eea4d5fbac1edd4730001cd3d9b21"
+}

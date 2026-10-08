@@ -2,27 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://discoveryinpractice.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/about/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/absorbance/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/alpha-assays/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/adp-glo-light-after-kinase/</loc>
     <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/alpha-assay-azide-biotin-buffer-interference/</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/alpha-assay-hook-effect-dilution/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/alpha-assay-temperature/</loc>
@@ -31,6 +39,10 @@
   <url>
     <loc>https://discoveryinpractice.com/articles/alpha-glow-luminescence-controls-drift/</loc>
     <lastmod>2026-10-07</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/alphaplex-dual-emission-crosstalk/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/ambient-plus-four-room-temperature-plate-reader/</loc>
@@ -97,6 +109,10 @@
     <lastmod>2026-10-01</lastmod>
   </url>
   <url>
+    <loc>https://discoveryinpractice.com/articles/fluorescence-increases-after-dilution/</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
     <loc>https://discoveryinpractice.com/articles/fluorescence-intensity-read-height/</loc>
     <lastmod>2026-10-01</lastmod>
   </url>
@@ -155,6 +171,10 @@
   <url>
     <loc>https://discoveryinpractice.com/articles/luminescence-signal-different-plate-readers/</loc>
     <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/lumit-interference-controls/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/matched-pmts-ratio-calibration/</loc>
@@ -217,8 +237,16 @@
     <lastmod>2026-09-30</lastmod>
   </url>
   <url>
+    <loc>https://discoveryinpractice.com/articles/rereading-alpha-assay-signal-change/</loc>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
     <loc>https://discoveryinpractice.com/articles/reuse-fp-g-factor-filters-gain-reader/</loc>
     <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/articles/sequential-alphaplex-channel-bias/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/articles/simultaneous-dual-emission-ratio-precision/</loc>
@@ -246,7 +274,7 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/assays/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/bench-tips/plate-map/</loc>
@@ -254,15 +282,19 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/binding-assays/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/bret/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/compare/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://discoveryinpractice.com/compare/alpha-htrf-fp-lumit-assay-comparison/</loc>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/compare/confocal-screening-systems/</loc>
@@ -282,38 +314,38 @@
   </url>
   <url>
     <loc>https://discoveryinpractice.com/concepts/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/fluorescence/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/luminescence/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/plate-effects/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/references/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/reuse/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/screening-equipment/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/trf-htrf/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
   <url>
     <loc>https://discoveryinpractice.com/troubleshooting/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,336 @@
+{
+  "schema_version": "1.0",
+  "id": "kinase-assay-reaction-detection-dilution",
+  "canonical_url": "https://discoveryinpractice.com/articles/kinase-assay-reaction-detection-dilution/",
+  "title": "Let the reaction and the detector use different concentrations",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Optimize kinase reactions and detection separately. Follow a worked dilution example, account for total substrate and validate stopping, timing and temperature.",
+  "takeaways": [
+    "Follow one aliquot",
+    "Count the unmodified substrate",
+    "Choose the enzyme conditions for the question"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "Kinase assays",
+    "Detection chemistry",
+    "Dilution"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-09",
+  "date_modified": "2026-10-09",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>The substrate concentration that suits the kinase may be too high for the detection assay. This disagreement can consume a surprising amount of assay-development time, particularly when both reactions have been assigned to the same well and the protocol has begun to feel permanent.</p><p>A high substrate concentration may be appropriate for the enzymology or the scientific question. The capture chemistry used to measure product has its own binding capacities and useful concentration range. Trying to satisfy both with one concentration can produce a compromise that serves neither particularly well.</p><p>The AlphaScreen practical guide offers a straightforward option: perform the enzyme reaction at a suitable substrate concentration, then transfer a diluted aliquot into the detection assay. [1] Separating the stages lets each process use suitable conditions, provided the concentration accounting is explicit. Every concentration needs a named stage, and the endpoint has to survive the journey between them.</p><h2 id=\"follow-one-aliquot\">Follow one aliquot</h2><p>Consider a constructed kinase reaction containing 2 micromolar biotinylated peptide in 20 microliters. Suppose the enzyme converts 5% of that peptide to phosphorylated product. The reaction now contains 100 nM product and 1,900 nM unmodified substrate. These illustrative values are not a recommended operating point for a particular kinase or kit.</p><p>Add 5 microliters of a suitable, validated stop solution. The total volume becomes 25 microliters, so product falls to 80 nM and total peptide to 1,600 nM. Nothing has been lost in this calculation; the same molecules occupy more liquid.</p><p>Transfer 2.5 microliters of the stopped mixture into a detection well and bring that well to 20 microliters with the appropriate reagents and buffer. This is an eightfold dilution of the stopped mixture. Including the earlier stop addition, the overall dilution relative to the enzyme reaction is tenfold:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"D = (25) divided by (20) × (20) divided by (2.5) = 10\"><mrow><mrow><mtext>D = </mtext></mrow><mfrac><mrow><mrow><mtext>25</mtext></mrow></mrow><mrow><mrow><mtext>20</mtext></mrow></mrow></mfrac><mrow><mtext> × </mtext></mrow><mfrac><mrow><mrow><mtext>20</mtext></mrow></mrow><mrow><mrow><mtext>2.5</mtext></mrow></mrow></mfrac><mrow><mtext> = 10</mtext></mrow></mrow></math></div></div><p>The detection well contains 10 nM product. It also contains 190 nM unmodified peptide. A spreadsheet that follows only the product can miss the larger population competing for capture sites.</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Stage</th><th scope=\"col\">Product</th><th scope=\"col\">Total biotinylated peptide</th></tr></thead><tbody><tr><th scope=\"row\">Enzyme reaction</th><td>100 nM</td><td>2,000 nM</td></tr><tr><th scope=\"row\">After stop addition</th><td>80 nM</td><td>1,600 nM</td></tr><tr><th scope=\"row\">Detection, tenfold overall dilution</th><td>10 nM</td><td>200 nM</td></tr><tr><th scope=\"row\">Detection, hundredfold overall dilution</th><td>1 nM</td><td>20 nM</td></tr></tbody></table></div><p>The last row adds a separate tenfold dilution of the stopped mixture before the same transfer into detection reagents. It illustrates the accounting, not validated recovery. Use practical transfer volumes and a qualified diluent; a vanishingly small direct transfer is rarely an attractive substitute for an intermediate dilution.</p><h2 id=\"count-the-unmodified-substrate\">Count the unmodified substrate</h2><p>In this example, both phosphorylated and unmodified peptides carry biotin. Both can occupy streptavidin sites even though only the phosphorylated population should recruit the phospho-specific detection partner. Ten nanomolar product can therefore arrive accompanied by enough total peptide to disrupt the capture system.</p><p>Revvity's Alpha kinase guidance gives an approximate theoretical streptavidin-donor capacity of 30 nM at 20 micrograms per milliliter beads, with lower practical capacity possible for larger substrates. It cautions that excessive substrate or antibody can generate a hook effect. [2] The 200 nM total peptide in our tenfold-diluted example would exceed that theoretical benchmark. Twenty nanomolar after hundredfold dilution is a candidate to test, not proof of compatibility.</p><p>This is why a product-only standard curve in clean buffer may be misleading. The real reaction also contains unmodified substrate, ATP, salts, enzyme and stopping reagent. Build conversion standards that replace unmodified substrate with known phosphorylated product while keeping total peptide and the relevant matrix constant. Check whether the response can distinguish the conversion levels the screen needs.</p><p>Capture reagent requirements can change across a substrate titration. The HTRF KinEASE-TK manual explicitly separates enzyme-stage and final detection concentrations and adjusts streptavidin-XL665 during substrate optimization. It also asks for corresponding negative controls because changing that reagent can change background. [3] A substrate titration consequently deserves a detection check at every materially different condition.</p><h2 id=\"choose-the-enzyme-conditions-for-the-question\">Choose the enzyme conditions for the question</h2><p>Dilution creates flexibility; it does not establish the right reaction conditions. Choose ATP, peptide, enzyme and incubation time with the intended pharmacology in mind. An ATP-competitive inhibitor can show a different apparent potency when ATP changes. A long incubation with extensive conversion can complicate interpretation of an endpoint as an initial reaction rate.</p><p>Establish a useful time course and conversion window before settling the detection dilution. If a particular substrate concentration is needed to investigate mechanism, preserve it during the enzyme reaction and ask whether the resulting product can be measured after a validated transfer. If the goal is a screening assay, justify the reaction conditions for that goal rather than choosing them solely to maximize counts.</p><p>Keep compound concentrations stage-specific as well. A compound tested at 10 micromolar during the enzyme reaction would be at 0.1 micromolar after hundredfold dilution into detection. That can reduce direct detection interference, but it also makes a poorly matched counterscreen dangerously reassuring. Test the detector at the concentration and matrix it actually sees, and retain the original reaction concentration when reporting potency.</p><h2 id=\"validate-the-stop-before-transfer\">Validate the stop before transfer</h2><p>An enzyme that remains active can continue making product after transfer. Its rate may fall, but even modest residual activity can matter when the measured product concentration is small. Mixing, transfer order and waiting time then become part of the apparent activity.</p><p>For illustration, 0.2 nM additional product per minute in a detection well would add 2 nM over ten minutes. Against an intended 10 nM endpoint, that is a 20% change. This is a simple conditional calculation; dilution does not imply that particular residual rate.</p><p>Validate the stop in the complete workflow. Hold matched stopped samples for different intervals before detection and test the longest delay the batch can realistically encounter. Where practical, use an independent endpoint check or known product standards to distinguish continuing catalysis from detection-complex development. A signal that drifts after stopping does not identify its own cause.</p><p>EDTA is used to stop suitable metal-dependent kinase reactions in both the Alpha guidance and the KinEASE-TK protocol. [2,3] Its effectiveness depends on the relevant metal and chelator concentrations. Subsequent additions must not restore conditions that permit appreciable catalysis. A stop reagent must also preserve the product and remain compatible with capture and detection. Verify those properties under the final assay conditions.</p><h2 id=\"the-reaction-temperature-can-end-before-the-read-temperature-begins\">The reaction temperature can end before the read temperature begins</h2><p>These stages can also use different temperatures. Revvity's Alpha kinase outline specifies a temperature appropriate to the enzyme reaction, followed by EDTA quenching and a one-hour room-temperature bead incubation. [2] The KinEASE-TK manual similarly distinguishes a kinase-dependent reaction at room temperature or 37°C from detection incubation at room temperature. [3]</p><p>A reaction run at 37°C therefore does not automatically justify reading the completed detection assay at 37°C. Allow the specified detection conditions to develop after a validated stop. For temperature-sensitive Alpha chemistry, consistent near-room-temperature detection and a stable measurement chamber help keep signal changes from becoming confused with product changes. [1]</p><p>Qualification should follow a real batch through stop addition, dilution, equilibration and reading. A warm stack, cool reagent addition or gradually warming chamber can give nominally identical wells different temperature histories. Record allowable waits and verify liquid behavior under the intended workflow. Cooling alone is an unreliable way to declare a reaction finished.</p><h2 id=\"what-better-detection-buys\">What better detection buys</h2><p>Sensitive detection can make greater dilution practical, opening a useful separation between enzyme conditions and capture conditions. A wide verified linear range then helps retain both low-product samples and higher-conversion controls without compressing the bright end. There are two ranges to qualify: the chemistry's concentration-response range and the instrument's response to incident light.</p><p>For a ratiometric TR-FRET endpoint, simultaneous donor and acceptor acquisition can reduce errors from changes shared by the two channels between sequential readings. Appropriate excitation and efficient photon collection help at the diluted endpoint. Preserve both raw channels alongside the ratio so that channel-specific interference or compression remains visible.</p><p>Low optical crosstalk becomes particularly valuable when dilution places inhibited wells near the background and active controls remain bright. Preventing neighboring photons from entering those weak measurements protects their precision. Subtracting an average leakage estimate cannot remove the photon noise those photons contributed.</p><p>Before transferring the assay to a screening queue, put the reaction concentration, stop dilution and detection concentration in separate columns of the protocol. Include the unmodified substrate, compound and matrix components. That table can expose an excess of competing substrate before it appears as an unexplained loss of signal.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>. Separate enzyme and detection concentrations: PDF p. 27 / printed p. 21. Temperature sensitivity: PDF p. 32 / printed p. 26.</p><p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/alpha-kinase-anti-phospho-antibody-assays\">Alpha kinase anti-phospho antibody assays</a>. Protocol-in-brief and Tips. Capacity estimates apply to the stated bead concentration and do not replace substrate-specific optimization.</p><p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62TK0PEB-62TK0PEC-62TK0PEJ.pdf\">HTRF KinEASE-TK manual</a>. Revision 07, October 2025. Reaction/detection stages and temperature: pp. 1, 3–4; substrate-dependent detection optimization: pp. 5–6. This kit's instructions are distinct from the hypothetical Alpha dilution calculation.</p>",
+  "body_text": "The substrate concentration that suits the kinase may be too high for the detection assay. This disagreement can consume a surprising amount of assay-development time, particularly when both reactions have been assigned to the same well and the protocol has begun to feel permanent.\n\nA high substrate concentration may be appropriate for the enzymology or the scientific question. The capture chemistry used to measure product has its own binding capacities and useful concentration range. Trying to satisfy both with one concentration can produce a compromise that serves neither particularly well.\n\nThe AlphaScreen practical guide offers a straightforward option: perform the enzyme reaction at a suitable substrate concentration, then transfer a diluted aliquot into the detection assay. [1] Separating the stages lets each process use suitable conditions, provided the concentration accounting is explicit. Every concentration needs a named stage, and the endpoint has to survive the journey between them.\n\nFollow one aliquot\n\nConsider a constructed kinase reaction containing 2 micromolar biotinylated peptide in 20 microliters. Suppose the enzyme converts 5% of that peptide to phosphorylated product. The reaction now contains 100 nM product and 1,900 nM unmodified substrate. These illustrative values are not a recommended operating point for a particular kinase or kit.\n\nAdd 5 microliters of a suitable, validated stop solution. The total volume becomes 25 microliters, so product falls to 80 nM and total peptide to 1,600 nM. Nothing has been lost in this calculation; the same molecules occupy more liquid.\n\nTransfer 2.5 microliters of the stopped mixture into a detection well and bring that well to 20 microliters with the appropriate reagents and buffer. This is an eightfold dilution of the stopped mixture. Including the earlier stop addition, the overall dilution relative to the enzyme reaction is tenfold:\n\nD = (25) divided by (20) × (20) divided by (2.5) = 10\n\nThe detection well contains 10 nM product. It also contains 190 nM unmodified peptide. A spreadsheet that follows only the product can miss the larger population competing for capture sites.\n\nStage | Product | Total biotinylated peptide | Enzyme reaction | 100 nM | 2,000 nM | After stop addition | 80 nM | 1,600 nM | Detection, tenfold overall dilution | 10 nM | 200 nM | Detection, hundredfold overall dilution | 1 nM | 20 nM | \n\nThe last row adds a separate tenfold dilution of the stopped mixture before the same transfer into detection reagents. It illustrates the accounting, not validated recovery. Use practical transfer volumes and a qualified diluent; a vanishingly small direct transfer is rarely an attractive substitute for an intermediate dilution.\n\nCount the unmodified substrate\n\nIn this example, both phosphorylated and unmodified peptides carry biotin. Both can occupy streptavidin sites even though only the phosphorylated population should recruit the phospho-specific detection partner. Ten nanomolar product can therefore arrive accompanied by enough total peptide to disrupt the capture system.\n\nRevvity's Alpha kinase guidance gives an approximate theoretical streptavidin-donor capacity of 30 nM at 20 micrograms per milliliter beads, with lower practical capacity possible for larger substrates. It cautions that excessive substrate or antibody can generate a hook effect. [2] The 200 nM total peptide in our tenfold-diluted example would exceed that theoretical benchmark. Twenty nanomolar after hundredfold dilution is a candidate to test, not proof of compatibility.\n\nThis is why a product-only standard curve in clean buffer may be misleading. The real reaction also contains unmodified substrate, ATP, salts, enzyme and stopping reagent. Build conversion standards that replace unmodified substrate with known phosphorylated product while keeping total peptide and the relevant matrix constant. Check whether the response can distinguish the conversion levels the screen needs.\n\nCapture reagent requirements can change across a substrate titration. The HTRF KinEASE-TK manual explicitly separates enzyme-stage and final detection concentrations and adjusts streptavidin-XL665 during substrate optimization. It also asks for corresponding negative controls because changing that reagent can change background. [3] A substrate titration consequently deserves a detection check at every materially different condition.\n\nChoose the enzyme conditions for the question\n\nDilution creates flexibility; it does not establish the right reaction conditions. Choose ATP, peptide, enzyme and incubation time with the intended pharmacology in mind. An ATP-competitive inhibitor can show a different apparent potency when ATP changes. A long incubation with extensive conversion can complicate interpretation of an endpoint as an initial reaction rate.\n\nEstablish a useful time course and conversion window before settling the detection dilution. If a particular substrate concentration is needed to investigate mechanism, preserve it during the enzyme reaction and ask whether the resulting product can be measured after a validated transfer. If the goal is a screening assay, justify the reaction conditions for that goal rather than choosing them solely to maximize counts.\n\nKeep compound concentrations stage-specific as well. A compound tested at 10 micromolar during the enzyme reaction would be at 0.1 micromolar after hundredfold dilution into detection. That can reduce direct detection interference, but it also makes a poorly matched counterscreen dangerously reassuring. Test the detector at the concentration and matrix it actually sees, and retain the original reaction concentration when reporting potency.\n\nValidate the stop before transfer\n\nAn enzyme that remains active can continue making product after transfer. Its rate may fall, but even modest residual activity can matter when the measured product concentration is small. Mixing, transfer order and waiting time then become part of the apparent activity.\n\nFor illustration, 0.2 nM additional product per minute in a detection well would add 2 nM over ten minutes. Against an intended 10 nM endpoint, that is a 20% change. This is a simple conditional calculation; dilution does not imply that particular residual rate.\n\nValidate the stop in the complete workflow. Hold matched stopped samples for different intervals before detection and test the longest delay the batch can realistically encounter. Where practical, use an independent endpoint check or known product standards to distinguish continuing catalysis from detection-complex development. A signal that drifts after stopping does not identify its own cause.\n\nEDTA is used to stop suitable metal-dependent kinase reactions in both the Alpha guidance and the KinEASE-TK protocol. [2,3] Its effectiveness depends on the relevant metal and chelator concentrations. Subsequent additions must not restore conditions that permit appreciable catalysis. A stop reagent must also preserve the product and remain compatible with capture and detection. Verify those properties under the final assay conditions.\n\nThe reaction temperature can end before the read temperature begins\n\nThese stages can also use different temperatures. Revvity's Alpha kinase outline specifies a temperature appropriate to the enzyme reaction, followed by EDTA quenching and a one-hour room-temperature bead incubation. [2] The KinEASE-TK manual similarly distinguishes a kinase-dependent reaction at room temperature or 37°C from detection incubation at room temperature. [3]\n\nA reaction run at 37°C therefore does not automatically justify reading the completed detection assay at 37°C. Allow the specified detection conditions to develop after a validated stop. For temperature-sensitive Alpha chemistry, consistent near-room-temperature detection and a stable measurement chamber help keep signal changes from becoming confused with product changes. [1]\n\nQualification should follow a real batch through stop addition, dilution, equilibration and reading. A warm stack, cool reagent addition or gradually warming chamber can give nominally identical wells different temperature histories. Record allowable waits and verify liquid behavior under the intended workflow. Cooling alone is an unreliable way to declare a reaction finished.\n\nWhat better detection buys\n\nSensitive detection can make greater dilution practical, opening a useful separation between enzyme conditions and capture conditions. A wide verified linear range then helps retain both low-product samples and higher-conversion controls without compressing the bright end. There are two ranges to qualify: the chemistry's concentration-response range and the instrument's response to incident light.\n\nFor a ratiometric TR-FRET endpoint, simultaneous donor and acceptor acquisition can reduce errors from changes shared by the two channels between sequential readings. Appropriate excitation and efficient photon collection help at the diluted endpoint. Preserve both raw channels alongside the ratio so that channel-specific interference or compression remains visible.\n\nLow optical crosstalk becomes particularly valuable when dilution places inhibited wells near the background and active controls remain bright. Preventing neighboring photons from entering those weak measurements protects their precision. Subtracting an average leakage estimate cannot remove the photon noise those photons contributed.\n\nBefore transferring the assay to a screening queue, put the reaction concentration, stop dilution and detection concentration in separate columns of the protocol. Include the unmodified substrate, compound and matrix components. That table can expose an excess of competing substrate before it appears as an unexplained loss of signal.\n\nReferences\n\n1. PerkinElmer. AlphaScreen practical guide. Separate enzyme and detection concentrations: PDF p. 27 / printed p. 21. Temperature sensitivity: PDF p. 32 / printed p. 26.\n\n2. Revvity. Alpha kinase anti-phospho antibody assays. Protocol-in-brief and Tips. Capacity estimates apply to the stated bead concentration and do not replace substrate-specific optimization.\n\n3. Revvity. HTRF KinEASE-TK manual. Revision 07, October 2025. Reaction/detection stages and temperature: pp. 1, 3–4; substrate-dependent detection optimization: pp. 5–6. This kit's instructions are distinct from the hypothetical Alpha dilution calculation.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The substrate concentration that suits the kinase may be too high for the detection assay. This disagreement can consume a surprising amount of assay-development time, particularly when both reactions have been assigned to the same well and the protocol has begun to feel permanent.",
+          "html": "<p>The substrate concentration that suits the kinase may be too high for the detection assay. This disagreement can consume a surprising amount of assay-development time, particularly when both reactions have been assigned to the same well and the protocol has begun to feel permanent.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A high substrate concentration may be appropriate for the enzymology or the scientific question. The capture chemistry used to measure product has its own binding capacities and useful concentration range. Trying to satisfy both with one concentration can produce a compromise that serves neither particularly well.",
+          "html": "<p>A high substrate concentration may be appropriate for the enzymology or the scientific question. The capture chemistry used to measure product has its own binding capacities and useful concentration range. Trying to satisfy both with one concentration can produce a compromise that serves neither particularly well.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The AlphaScreen practical guide offers a straightforward option: perform the enzyme reaction at a suitable substrate concentration, then transfer a diluted aliquot into the detection assay. [1] Separating the stages lets each process use suitable conditions, provided the concentration accounting is explicit. Every concentration needs a named stage, and the endpoint has to survive the journey between them.",
+          "html": "<p>The AlphaScreen practical guide offers a straightforward option: perform the enzyme reaction at a suitable substrate concentration, then transfer a diluted aliquot into the detection assay. [1] Separating the stages lets each process use suitable conditions, provided the concentration accounting is explicit. Every concentration needs a named stage, and the endpoint has to survive the journey between them.</p>"
+        }
+      ]
+    },
+    {
+      "id": "follow-one-aliquot",
+      "heading": "Follow one aliquot",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Follow one aliquot",
+          "html": "<h2 id=\"follow-one-aliquot\">Follow one aliquot</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Consider a constructed kinase reaction containing 2 micromolar biotinylated peptide in 20 microliters. Suppose the enzyme converts 5% of that peptide to phosphorylated product. The reaction now contains 100 nM product and 1,900 nM unmodified substrate. These illustrative values are not a recommended operating point for a particular kinase or kit.",
+          "html": "<p>Consider a constructed kinase reaction containing 2 micromolar biotinylated peptide in 20 microliters. Suppose the enzyme converts 5% of that peptide to phosphorylated product. The reaction now contains 100 nM product and 1,900 nM unmodified substrate. These illustrative values are not a recommended operating point for a particular kinase or kit.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Add 5 microliters of a suitable, validated stop solution. The total volume becomes 25 microliters, so product falls to 80 nM and total peptide to 1,600 nM. Nothing has been lost in this calculation; the same molecules occupy more liquid.",
+          "html": "<p>Add 5 microliters of a suitable, validated stop solution. The total volume becomes 25 microliters, so product falls to 80 nM and total peptide to 1,600 nM. Nothing has been lost in this calculation; the same molecules occupy more liquid.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Transfer 2.5 microliters of the stopped mixture into a detection well and bring that well to 20 microliters with the appropriate reagents and buffer. This is an eightfold dilution of the stopped mixture. Including the earlier stop addition, the overall dilution relative to the enzyme reaction is tenfold:",
+          "html": "<p>Transfer 2.5 microliters of the stopped mixture into a detection well and bring that well to 20 microliters with the appropriate reagents and buffer. This is an eightfold dilution of the stopped mixture. Including the earlier stop addition, the overall dilution relative to the enzyme reaction is tenfold:</p>"
+        },
+        {
+          "type": "div",
+          "text": "D = (25) divided by (20) × (20) divided by (2.5) = 10",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"D = (25) divided by (20) × (20) divided by (2.5) = 10\"><mrow><mrow><mtext>D = </mtext></mrow><mfrac><mrow><mrow><mtext>25</mtext></mrow></mrow><mrow><mrow><mtext>20</mtext></mrow></mrow></mfrac><mrow><mtext> × </mtext></mrow><mfrac><mrow><mrow><mtext>20</mtext></mrow></mrow><mrow><mrow><mtext>2.5</mtext></mrow></mrow></mfrac><mrow><mtext> = 10</mtext></mrow></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "The detection well contains 10 nM product. It also contains 190 nM unmodified peptide. A spreadsheet that follows only the product can miss the larger population competing for capture sites.",
+          "html": "<p>The detection well contains 10 nM product. It also contains 190 nM unmodified peptide. A spreadsheet that follows only the product can miss the larger population competing for capture sites.</p>"
+        },
+        {
+          "type": "div",
+          "text": "Stage | Product | Total biotinylated peptide | Enzyme reaction | 100 nM | 2,000 nM | After stop addition | 80 nM | 1,600 nM | Detection, tenfold overall dilution | 10 nM | 200 nM | Detection, hundredfold overall dilution | 1 nM | 20 nM | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Stage</th><th scope=\"col\">Product</th><th scope=\"col\">Total biotinylated peptide</th></tr></thead><tbody><tr><th scope=\"row\">Enzyme reaction</th><td>100 nM</td><td>2,000 nM</td></tr><tr><th scope=\"row\">After stop addition</th><td>80 nM</td><td>1,600 nM</td></tr><tr><th scope=\"row\">Detection, tenfold overall dilution</th><td>10 nM</td><td>200 nM</td></tr><tr><th scope=\"row\">Detection, hundredfold overall dilution</th><td>1 nM</td><td>20 nM</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "The last row adds a separate tenfold dilution of the stopped mixture before the same transfer into detection reagents. It illustrates the accounting, not validated recovery. Use practical transfer volumes and a qualified diluent; a vanishingly small direct transfer is rarely an attractive substitute for an intermediate dilution.",
+          "html": "<p>The last row adds a separate tenfold dilution of the stopped mixture before the same transfer into detection reagents. It illustrates the accounting, not validated recovery. Use practical transfer volumes and a qualified diluent; a vanishingly small direct transfer is rarely an attractive substitute for an intermediate dilution.</p>"
+        }
+      ]
+    },
+    {
+      "id": "count-the-unmodified-substrate",
+      "heading": "Count the unmodified substrate",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Count the unmodified substrate",
+          "html": "<h2 id=\"count-the-unmodified-substrate\">Count the unmodified substrate</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In this example, both phosphorylated and unmodified peptides carry biotin. Both can occupy streptavidin sites even though only the phosphorylated population should recruit the phospho-specific detection partner. Ten nanomolar product can therefore arrive accompanied by enough total peptide to disrupt the capture system.",
+          "html": "<p>In this example, both phosphorylated and unmodified peptides carry biotin. Both can occupy streptavidin sites even though only the phosphorylated population should recruit the phospho-specific detection partner. Ten nanomolar product can therefore arrive accompanied by enough total peptide to disrupt the capture system.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Revvity's Alpha kinase guidance gives an approximate theoretical streptavidin-donor capacity of 30 nM at 20 micrograms per milliliter beads, with lower practical capacity possible for larger substrates. It cautions that excessive substrate or antibody can generate a hook effect. [2] The 200 nM total peptide in our tenfold-diluted example would exceed that theoretical benchmark. Twenty nanomolar after hundredfold dilution is a candidate to test, not proof of compatibility.",
+          "html": "<p>Revvity's Alpha kinase guidance gives an approximate theoretical streptavidin-donor capacity of 30 nM at 20 micrograms per milliliter beads, with lower practical capacity possible for larger substrates. It cautions that excessive substrate or antibody can generate a hook effect. [2] The 200 nM total peptide in our tenfold-diluted example would exceed that theoretical benchmark. Twenty nanomolar after hundredfold dilution is a candidate to test, not proof of compatibility.</p>"
+        },
+        {
+          "type": "p",
+          "text": "This is why a product-only standard curve in clean buffer may be misleading. The real reaction also contains unmodified substrate, ATP, salts, enzyme and stopping reagent. Build conversion standards that replace unmodified substrate with known phosphorylated product while keeping total peptide and the relevant matrix constant. Check whether the response can distinguish the conversion levels the screen needs.",
+          "html": "<p>This is why a product-only standard curve in clean buffer may be misleading. The real reaction also contains unmodified substrate, ATP, salts, enzyme and stopping reagent. Build conversion standards that replace unmodified substrate with known phosphorylated product while keeping total peptide and the relevant matrix constant. Check whether the response can distinguish the conversion levels the screen needs.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Capture reagent requirements can change across a substrate titration. The HTRF KinEASE-TK manual explicitly separates enzyme-stage and final detection concentrations and adjusts streptavidin-XL665 during substrate optimization. It also asks for corresponding negative controls because changing that reagent can change background. [3] A substrate titration consequently deserves a detection check at every materially different condition.",
+          "html": "<p>Capture reagent requirements can change across a substrate titration. The HTRF KinEASE-TK manual explicitly separates enzyme-stage and final detection concentrations and adjusts streptavidin-XL665 during substrate optimization. It also asks for corresponding negative controls because changing that reagent can change background. [3] A substrate titration consequently deserves a detection check at every materially different condition.</p>"
+        }
+      ]
+    },
+    {
+      "id": "choose-the-enzyme-conditions-for-the-question",
+      "heading": "Choose the enzyme conditions for the question",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Choose the enzyme conditions for the question",
+          "html": "<h2 id=\"choose-the-enzyme-conditions-for-the-question\">Choose the enzyme conditions for the question</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Dilution creates flexibility; it does not establish the right reaction conditions. Choose ATP, peptide, enzyme and incubation time with the intended pharmacology in mind. An ATP-competitive inhibitor can show a different apparent potency when ATP changes. A long incubation with extensive conversion can complicate interpretation of an endpoint as an initial reaction rate.",
+          "html": "<p>Dilution creates flexibility; it does not establish the right reaction conditions. Choose ATP, peptide, enzyme and incubation time with the intended pharmacology in mind. An ATP-competitive inhibitor can show a different apparent potency when ATP changes. A long incubation with extensive conversion can complicate interpretation of an endpoint as an initial reaction rate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Establish a useful time course and conversion window before settling the detection dilution. If a particular substrate concentration is needed to investigate mechanism, preserve it during the enzyme reaction and ask whether the resulting product can be measured after a validated transfer. If the goal is a screening assay, justify the reaction conditions for that goal rather than choosing them solely to maximize counts.",
+          "html": "<p>Establish a useful time course and conversion window before settling the detection dilution. If a particular substrate concentration is needed to investigate mechanism, preserve it during the enzyme reaction and ask whether the resulting product can be measured after a validated transfer. If the goal is a screening assay, justify the reaction conditions for that goal rather than choosing them solely to maximize counts.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Keep compound concentrations stage-specific as well. A compound tested at 10 micromolar during the enzyme reaction would be at 0.1 micromolar after hundredfold dilution into detection. That can reduce direct detection interference, but it also makes a poorly matched counterscreen dangerously reassuring. Test the detector at the concentration and matrix it actually sees, and retain the original reaction concentration when reporting potency.",
+          "html": "<p>Keep compound concentrations stage-specific as well. A compound tested at 10 micromolar during the enzyme reaction would be at 0.1 micromolar after hundredfold dilution into detection. That can reduce direct detection interference, but it also makes a poorly matched counterscreen dangerously reassuring. Test the detector at the concentration and matrix it actually sees, and retain the original reaction concentration when reporting potency.</p>"
+        }
+      ]
+    },
+    {
+      "id": "validate-the-stop-before-transfer",
+      "heading": "Validate the stop before transfer",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Validate the stop before transfer",
+          "html": "<h2 id=\"validate-the-stop-before-transfer\">Validate the stop before transfer</h2>"
+        },
+        {
+          "type": "p",
+          "text": "An enzyme that remains active can continue making product after transfer. Its rate may fall, but even modest residual activity can matter when the measured product concentration is small. Mixing, transfer order and waiting time then become part of the apparent activity.",
+          "html": "<p>An enzyme that remains active can continue making product after transfer. Its rate may fall, but even modest residual activity can matter when the measured product concentration is small. Mixing, transfer order and waiting time then become part of the apparent activity.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For illustration, 0.2 nM additional product per minute in a detection well would add 2 nM over ten minutes. Against an intended 10 nM endpoint, that is a 20% change. This is a simple conditional calculation; dilution does not imply that particular residual rate.",
+          "html": "<p>For illustration, 0.2 nM additional product per minute in a detection well would add 2 nM over ten minutes. Against an intended 10 nM endpoint, that is a 20% change. This is a simple conditional calculation; dilution does not imply that particular residual rate.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Validate the stop in the complete workflow. Hold matched stopped samples for different intervals before detection and test the longest delay the batch can realistically encounter. Where practical, use an independent endpoint check or known product standards to distinguish continuing catalysis from detection-complex development. A signal that drifts after stopping does not identify its own cause.",
+          "html": "<p>Validate the stop in the complete workflow. Hold matched stopped samples for different intervals before detection and test the longest delay the batch can realistically encounter. Where practical, use an independent endpoint check or known product standards to distinguish continuing catalysis from detection-complex development. A signal that drifts after stopping does not identify its own cause.</p>"
+        },
+        {
+          "type": "p",
+          "text": "EDTA is used to stop suitable metal-dependent kinase reactions in both the Alpha guidance and the KinEASE-TK protocol. [2,3] Its effectiveness depends on the relevant metal and chelator concentrations. Subsequent additions must not restore conditions that permit appreciable catalysis. A stop reagent must also preserve the product and remain compatible with capture and detection. Verify those properties under the final assay conditions.",
+          "html": "<p>EDTA is used to stop suitable metal-dependent kinase reactions in both the Alpha guidance and the KinEASE-TK protocol. [2,3] Its effectiveness depends on the relevant metal and chelator concentrations. Subsequent additions must not restore conditions that permit appreciable catalysis. A stop reagent must also preserve the product and remain compatible with capture and detection. Verify those properties under the final assay conditions.</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-reaction-temperature-can-end-before-the-read-temperature-begins",
+      "heading": "The reaction temperature can end before the read temperature begins",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The reaction temperature can end before the read temperature begins",
+          "html": "<h2 id=\"the-reaction-temperature-can-end-before-the-read-temperature-begins\">The reaction temperature can end before the read temperature begins</h2>"
+        },
+        {
+          "type": "p",
+          "text": "These stages can also use different temperatures. Revvity's Alpha kinase outline specifies a temperature appropriate to the enzyme reaction, followed by EDTA quenching and a one-hour room-temperature bead incubation. [2] The KinEASE-TK manual similarly distinguishes a kinase-dependent reaction at room temperature or 37°C from detection incubation at room temperature. [3]",
+          "html": "<p>These stages can also use different temperatures. Revvity's Alpha kinase outline specifies a temperature appropriate to the enzyme reaction, followed by EDTA quenching and a one-hour room-temperature bead incubation. [2] The KinEASE-TK manual similarly distinguishes a kinase-dependent reaction at room temperature or 37°C from detection incubation at room temperature. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A reaction run at 37°C therefore does not automatically justify reading the completed detection assay at 37°C. Allow the specified detection conditions to develop after a validated stop. For temperature-sensitive Alpha chemistry, consistent near-room-temperature detection and a stable measurement chamber help keep signal changes from becoming confused with product changes. [1]",
+          "html": "<p>A reaction run at 37°C therefore does not automatically justify reading the completed detection assay at 37°C. Allow the specified detection conditions to develop after a validated stop. For temperature-sensitive Alpha chemistry, consistent near-room-temperature detection and a stable measurement chamber help keep signal changes from becoming confused with product changes. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Qualification should follow a real batch through stop addition, dilution, equilibration and reading. A warm stack, cool reagent addition or gradually warming chamber can give nominally identical wells different temperature histories. Record allowable waits and verify liquid behavior under the intended workflow. Cooling alone is an unreliable way to declare a reaction finished.",
+          "html": "<p>Qualification should follow a real batch through stop addition, dilution, equilibration and reading. A warm stack, cool reagent addition or gradually warming chamber can give nominally identical wells different temperature histories. Record allowable waits and verify liquid behavior under the intended workflow. Cooling alone is an unreliable way to declare a reaction finished.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-better-detection-buys",
+      "heading": "What better detection buys",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What better detection buys",
+          "html": "<h2 id=\"what-better-detection-buys\">What better detection buys</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Sensitive detection can make greater dilution practical, opening a useful separation between enzyme conditions and capture conditions. A wide verified linear range then helps retain both low-product samples and higher-conversion controls without compressing the bright end. There are two ranges to qualify: the chemistry's concentration-response range and the instrument's response to incident light.",
+          "html": "<p>Sensitive detection can make greater dilution practical, opening a useful separation between enzyme conditions and capture conditions. A wide verified linear range then helps retain both low-product samples and higher-conversion controls without compressing the bright end. There are two ranges to qualify: the chemistry's concentration-response range and the instrument's response to incident light.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a ratiometric TR-FRET endpoint, simultaneous donor and acceptor acquisition can reduce errors from changes shared by the two channels between sequential readings. Appropriate excitation and efficient photon collection help at the diluted endpoint. Preserve both raw channels alongside the ratio so that channel-specific interference or compression remains visible.",
+          "html": "<p>For a ratiometric TR-FRET endpoint, simultaneous donor and acceptor acquisition can reduce errors from changes shared by the two channels between sequential readings. Appropriate excitation and efficient photon collection help at the diluted endpoint. Preserve both raw channels alongside the ratio so that channel-specific interference or compression remains visible.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Low optical crosstalk becomes particularly valuable when dilution places inhibited wells near the background and active controls remain bright. Preventing neighboring photons from entering those weak measurements protects their precision. Subtracting an average leakage estimate cannot remove the photon noise those photons contributed.",
+          "html": "<p>Low optical crosstalk becomes particularly valuable when dilution places inhibited wells near the background and active controls remain bright. Preventing neighboring photons from entering those weak measurements protects their precision. Subtracting an average leakage estimate cannot remove the photon noise those photons contributed.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Before transferring the assay to a screening queue, put the reaction concentration, stop dilution and detection concentration in separate columns of the protocol. Include the unmodified substrate, compound and matrix components. That table can expose an excess of competing substrate before it appears as an unexplained loss of signal.",
+          "html": "<p>Before transferring the assay to a screening queue, put the reaction concentration, stop dilution and detection concentration in separate columns of the protocol. Include the unmodified substrate, compound and matrix components. That table can expose an excess of competing substrate before it appears as an unexplained loss of signal.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. PerkinElmer. AlphaScreen practical guide. Separate enzyme and detection concentrations: PDF p. 27 / printed p. 21. Temperature sensitivity: PDF p. 32 / printed p. 26.",
+          "html": "<p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>. Separate enzyme and detection concentrations: PDF p. 27 / printed p. 21. Temperature sensitivity: PDF p. 32 / printed p. 26.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Revvity. Alpha kinase anti-phospho antibody assays. Protocol-in-brief and Tips. Capacity estimates apply to the stated bead concentration and do not replace substrate-specific optimization.",
+          "html": "<p id=\"ref-2\">2. Revvity. <a href=\"https://www.revvity.com/ask/alpha-kinase-anti-phospho-antibody-assays\">Alpha kinase anti-phospho antibody assays</a>. Protocol-in-brief and Tips. Capacity estimates apply to the stated bead concentration and do not replace substrate-specific optimization.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Revvity. HTRF KinEASE-TK manual. Revision 07, October 2025. Reaction/detection stages and temperature: pp. 1, 3–4; substrate-dependent detection optimization: pp. 5–6. This kit's instructions are distinct from the hypothetical Alpha dilution calculation.",
+          "html": "<p id=\"ref-3\">3. Revvity. <a href=\"https://resources.revvity.com/pdfs/rvty_ls_manual_62TK0PEB-62TK0PEC-62TK0PEJ.pdf\">HTRF KinEASE-TK manual</a>. Revision 07, October 2025. Reaction/detection stages and temperature: pp. 1, 3–4; substrate-dependent detection optimization: pp. 5–6. This kit's instructions are distinct from the hypothetical Alpha dilution calculation.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. PerkinElmer. AlphaScreen practical guide. Separate enzyme and detection concentrations: PDF p. 27 / printed p. 21. Temperature sensitivity: PDF p. 32 / printed p. 26.",
+      "urls": [
+        "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Revvity. Alpha kinase anti-phospho antibody assays. Protocol-in-brief and Tips. Capacity estimates apply to the stated bead concentration and do not replace substrate-specific optimization.",
+      "urls": [
+        "https://www.revvity.com/ask/alpha-kinase-anti-phospho-antibody-assays"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Revvity. HTRF KinEASE-TK manual. Revision 07, October 2025. Reaction/detection stages and temperature: pp. 1, 3–4; substrate-dependent detection optimization: pp. 5–6. This kit's instructions are distinct from the hypothetical Alpha dilution calculation.",
+      "urls": [
+        "https://resources.revvity.com/pdfs/rvty_ls_manual_62TK0PEB-62TK0PEC-62TK0PEJ.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "D = (25) divided by (20) × (20) divided by (2.5) = 10",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"D = (25) divided by (20) × (20) divided by (2.5) = 10\"><mrow><mrow><mtext>D = </mtext></mrow><mfrac><mrow><mrow><mtext>25</mtext></mrow></mrow><mrow><mrow><mtext>20</mtext></mrow></mrow></mfrac><mrow><mtext> × </mtext></mrow><mfrac><mrow><mrow><mtext>20</mtext></mrow></mrow><mrow><mrow><mtext>2.5</mtext></mrow></mrow></mfrac><mrow><mtext> = 10</mtext></mrow></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Let the reaction and the detector use different concentrations",
+      "rows": [
+        [
+          "Stage",
+          "Product",
+          "Total biotinylated peptide"
+        ],
+        [
+          "Enzyme reaction",
+          "100 nM",
+          "2,000 nM"
+        ],
+        [
+          "After stop addition",
+          "80 nM",
+          "1,600 nM"
+        ],
+        [
+          "Detection, tenfold overall dilution",
+          "10 nM",
+          "200 nM"
+        ],
+        [
+          "Detection, hundredfold overall dilution",
+          "1 nM",
+          "20 nM"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "8d0a60bbb9ac22836419fab53987c4a34a326a0e6359e75c07c96a8d8fcb78ad"
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "test-plate-reader-injector-carryover",
+  "canonical_url": "https://discoveryinpractice.com/articles/test-plate-reader-injector-carryover/",
+  "title": "How do I test for injector carryover in a plate reader?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Test injector carryover with sequential blanks and positive-control recovery, including residues that suppress rather than increase luminescence.",
+  "takeaways": [
+    "Identify what the injector actually carries",
+    "Collect successive dispenses in fresh receivers",
+    "Include a positive-control recovery test"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Liquid handling",
+    "Luminescence",
+    "Assay interference"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-09",
+  "date_modified": "2026-10-09",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>After running the previous reagent through the injector, perform the intended changeover and test the next dispenses for contamination and assay suppression. Include controls prepared without the challenged fluid path. An inhibitory residue can leave the blank unchanged while suppressing the next positive sample. Promega documents exactly that problem for some dual-luciferase reagent workflows. [1,2]</p><h2 id=\"identify-what-the-injector-actually-carries\">Identify what the injector actually carries</h2><p>Many reader injectors draw reagent from a reservoir and dispense it into wells. They do not aspirate each sample as a liquid-handling pipette might. In that arrangement, carryover can originate in tubing, pumps, valves or the outlet after a reagent change; splash or accidental contact can introduce additional contamination. The relevant test follows the actual fluid path. [3]</p><p>Record the reagent sequence, contact time, hold time, tubing and pump configuration, wash procedure and prime volume. Test realistic difficult transitions. A water-to-dye demonstration alone cannot establish cleaning for a proteinaceous or strongly adsorbing reagent.</p><h2 id=\"collect-successive-dispenses-in-fresh-receivers\">Collect successive dispenses in fresh receivers</h2><p>First establish uncontaminated baseline dispenses from a clean path or a suitable independent dispenser. Expose the test path to the challenge reagent under the intended conditions, then apply the proposed manufacturer-compatible changeover procedure. Collect successive next-reagent dispenses in fresh wells or vessels, labeling their order and volume in µL, plus cumulative volume in µL or mL.</p><p>Measure a suitable chemical or optical marker against a calibration prepared in the receiving matrix. If response is linear and comparable, background-corrected residual signal divided by the challenge reference signal can estimate carryover. Correct for any differences in dilution or collected volume. Report each dispense in order; an acceptable sequence average can conceal a failed first well.</p><p>Define the acceptable residual concentration from the next assay's tolerance. There is no universal carryover percentage that proves compatibility with every assay.</p><h2 id=\"include-a-positive-control-recovery-test\">Include a positive-control recovery test</h2><p>Promega's Dual-Luciferase manual describes Stop &amp; Glo components adsorbing reversibly to plastic surfaces and later suppressing firefly luciferase when another reagent passes through the system. [1] Nano-Glo Dual-Luciferase likewise requires dedicated reagent paths and warns against using its Stop &amp; Glo injector for firefly-luciferase or Ultra-Glo reagents, including CellTiter-Glo. [2]</p><p>For a permitted changeover, challenge a fixed positive assay control with each collected dispense and compare recovery with uncontaminated reagent. An unchanged blank accompanied by reduced positive-control light reveals inhibition that a blank-only check would miss. Include weak and strong controls if the assay uses a broad signal range. This is a proposed qualification design; it does not override a manufacturer's dedicated-line requirement.</p><h2 id=\"separate-fluid-residue-from-optical-leakage\">Separate fluid residue from optical leakage</h2><p>Read collected receiver samples away from the bright challenge wells, ideally on another plate, and include neighboring blanks where appropriate. Contamination remains with the collected liquid; optical crosstalk depends on the measurement arrangement. Relocation is a useful diagnostic, though adsorption or reaction can change the contaminant with time.</p><p>Prevent bright-well leakage physically where possible. Correcting its average contribution does not remove the associated photon noise, and an optical artifact should not be mistaken for a failed wash.</p><p>Use only cleaning agents and procedures compatible with both the injector and reagent manufacturer instructions. Repeat the qualification after relevant tubing, chemistry or procedure changes. Save the sequential-dispense and positive-control recovery results with the protocol, including the acceptance limits.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/dual-luciferase-reporter-assay-system-protocol.pdf\">Dual-Luciferase Reporter Assay System, TM040</a>, revised August 2023, sections 4.A–4.B and 6.D. Timing, injectors and Stop &amp; Glo reagent carryover.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanoglo-dual-luciferase-reporter-assay-protocol.pdf\">Nano-Glo Dual-Luciferase Reporter Assay, TM426</a>, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.</p><p id=\"ref-3\">3. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.</p>",
+  "body_text": "After running the previous reagent through the injector, perform the intended changeover and test the next dispenses for contamination and assay suppression. Include controls prepared without the challenged fluid path. An inhibitory residue can leave the blank unchanged while suppressing the next positive sample. Promega documents exactly that problem for some dual-luciferase reagent workflows. [1,2]\n\nIdentify what the injector actually carries\n\nMany reader injectors draw reagent from a reservoir and dispense it into wells. They do not aspirate each sample as a liquid-handling pipette might. In that arrangement, carryover can originate in tubing, pumps, valves or the outlet after a reagent change; splash or accidental contact can introduce additional contamination. The relevant test follows the actual fluid path. [3]\n\nRecord the reagent sequence, contact time, hold time, tubing and pump configuration, wash procedure and prime volume. Test realistic difficult transitions. A water-to-dye demonstration alone cannot establish cleaning for a proteinaceous or strongly adsorbing reagent.\n\nCollect successive dispenses in fresh receivers\n\nFirst establish uncontaminated baseline dispenses from a clean path or a suitable independent dispenser. Expose the test path to the challenge reagent under the intended conditions, then apply the proposed manufacturer-compatible changeover procedure. Collect successive next-reagent dispenses in fresh wells or vessels, labeling their order and volume in µL, plus cumulative volume in µL or mL.\n\nMeasure a suitable chemical or optical marker against a calibration prepared in the receiving matrix. If response is linear and comparable, background-corrected residual signal divided by the challenge reference signal can estimate carryover. Correct for any differences in dilution or collected volume. Report each dispense in order; an acceptable sequence average can conceal a failed first well.\n\nDefine the acceptable residual concentration from the next assay's tolerance. There is no universal carryover percentage that proves compatibility with every assay.\n\nInclude a positive-control recovery test\n\nPromega's Dual-Luciferase manual describes Stop & Glo components adsorbing reversibly to plastic surfaces and later suppressing firefly luciferase when another reagent passes through the system. [1] Nano-Glo Dual-Luciferase likewise requires dedicated reagent paths and warns against using its Stop & Glo injector for firefly-luciferase or Ultra-Glo reagents, including CellTiter-Glo. [2]\n\nFor a permitted changeover, challenge a fixed positive assay control with each collected dispense and compare recovery with uncontaminated reagent. An unchanged blank accompanied by reduced positive-control light reveals inhibition that a blank-only check would miss. Include weak and strong controls if the assay uses a broad signal range. This is a proposed qualification design; it does not override a manufacturer's dedicated-line requirement.\n\nSeparate fluid residue from optical leakage\n\nRead collected receiver samples away from the bright challenge wells, ideally on another plate, and include neighboring blanks where appropriate. Contamination remains with the collected liquid; optical crosstalk depends on the measurement arrangement. Relocation is a useful diagnostic, though adsorption or reaction can change the contaminant with time.\n\nPrevent bright-well leakage physically where possible. Correcting its average contribution does not remove the associated photon noise, and an optical artifact should not be mistaken for a failed wash.\n\nUse only cleaning agents and procedures compatible with both the injector and reagent manufacturer instructions. Repeat the qualification after relevant tubing, chemistry or procedure changes. Save the sequential-dispense and positive-control recovery results with the protocol, including the acceptance limits.\n\nReferences\n\n1. Promega. Dual-Luciferase Reporter Assay System, TM040, revised August 2023, sections 4.A–4.B and 6.D. Timing, injectors and Stop & Glo reagent carryover.\n\n2. Promega. Nano-Glo Dual-Luciferase Reporter Assay, TM426, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.\n\n3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "After running the previous reagent through the injector, perform the intended changeover and test the next dispenses for contamination and assay suppression. Include controls prepared without the challenged fluid path. An inhibitory residue can leave the blank unchanged while suppressing the next positive sample. Promega documents exactly that problem for some dual-luciferase reagent workflows. [1,2]",
+          "html": "<p>After running the previous reagent through the injector, perform the intended changeover and test the next dispenses for contamination and assay suppression. Include controls prepared without the challenged fluid path. An inhibitory residue can leave the blank unchanged while suppressing the next positive sample. Promega documents exactly that problem for some dual-luciferase reagent workflows. [1,2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "identify-what-the-injector-actually-carries",
+      "heading": "Identify what the injector actually carries",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Identify what the injector actually carries",
+          "html": "<h2 id=\"identify-what-the-injector-actually-carries\">Identify what the injector actually carries</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Many reader injectors draw reagent from a reservoir and dispense it into wells. They do not aspirate each sample as a liquid-handling pipette might. In that arrangement, carryover can originate in tubing, pumps, valves or the outlet after a reagent change; splash or accidental contact can introduce additional contamination. The relevant test follows the actual fluid path. [3]",
+          "html": "<p>Many reader injectors draw reagent from a reservoir and dispense it into wells. They do not aspirate each sample as a liquid-handling pipette might. In that arrangement, carryover can originate in tubing, pumps, valves or the outlet after a reagent change; splash or accidental contact can introduce additional contamination. The relevant test follows the actual fluid path. [3]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Record the reagent sequence, contact time, hold time, tubing and pump configuration, wash procedure and prime volume. Test realistic difficult transitions. A water-to-dye demonstration alone cannot establish cleaning for a proteinaceous or strongly adsorbing reagent.",
+          "html": "<p>Record the reagent sequence, contact time, hold time, tubing and pump configuration, wash procedure and prime volume. Test realistic difficult transitions. A water-to-dye demonstration alone cannot establish cleaning for a proteinaceous or strongly adsorbing reagent.</p>"
+        }
+      ]
+    },
+    {
+      "id": "collect-successive-dispenses-in-fresh-receivers",
+      "heading": "Collect successive dispenses in fresh receivers",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Collect successive dispenses in fresh receivers",
+          "html": "<h2 id=\"collect-successive-dispenses-in-fresh-receivers\">Collect successive dispenses in fresh receivers</h2>"
+        },
+        {
+          "type": "p",
+          "text": "First establish uncontaminated baseline dispenses from a clean path or a suitable independent dispenser. Expose the test path to the challenge reagent under the intended conditions, then apply the proposed manufacturer-compatible changeover procedure. Collect successive next-reagent dispenses in fresh wells or vessels, labeling their order and volume in µL, plus cumulative volume in µL or mL.",
+          "html": "<p>First establish uncontaminated baseline dispenses from a clean path or a suitable independent dispenser. Expose the test path to the challenge reagent under the intended conditions, then apply the proposed manufacturer-compatible changeover procedure. Collect successive next-reagent dispenses in fresh wells or vessels, labeling their order and volume in µL, plus cumulative volume in µL or mL.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Measure a suitable chemical or optical marker against a calibration prepared in the receiving matrix. If response is linear and comparable, background-corrected residual signal divided by the challenge reference signal can estimate carryover. Correct for any differences in dilution or collected volume. Report each dispense in order; an acceptable sequence average can conceal a failed first well.",
+          "html": "<p>Measure a suitable chemical or optical marker against a calibration prepared in the receiving matrix. If response is linear and comparable, background-corrected residual signal divided by the challenge reference signal can estimate carryover. Correct for any differences in dilution or collected volume. Report each dispense in order; an acceptable sequence average can conceal a failed first well.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Define the acceptable residual concentration from the next assay's tolerance. There is no universal carryover percentage that proves compatibility with every assay.",
+          "html": "<p>Define the acceptable residual concentration from the next assay's tolerance. There is no universal carryover percentage that proves compatibility with every assay.</p>"
+        }
+      ]
+    },
+    {
+      "id": "include-a-positive-control-recovery-test",
+      "heading": "Include a positive-control recovery test",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Include a positive-control recovery test",
+          "html": "<h2 id=\"include-a-positive-control-recovery-test\">Include a positive-control recovery test</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Promega's Dual-Luciferase manual describes Stop & Glo components adsorbing reversibly to plastic surfaces and later suppressing firefly luciferase when another reagent passes through the system. [1] Nano-Glo Dual-Luciferase likewise requires dedicated reagent paths and warns against using its Stop & Glo injector for firefly-luciferase or Ultra-Glo reagents, including CellTiter-Glo. [2]",
+          "html": "<p>Promega's Dual-Luciferase manual describes Stop &amp; Glo components adsorbing reversibly to plastic surfaces and later suppressing firefly luciferase when another reagent passes through the system. [1] Nano-Glo Dual-Luciferase likewise requires dedicated reagent paths and warns against using its Stop &amp; Glo injector for firefly-luciferase or Ultra-Glo reagents, including CellTiter-Glo. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a permitted changeover, challenge a fixed positive assay control with each collected dispense and compare recovery with uncontaminated reagent. An unchanged blank accompanied by reduced positive-control light reveals inhibition that a blank-only check would miss. Include weak and strong controls if the assay uses a broad signal range. This is a proposed qualification design; it does not override a manufacturer's dedicated-line requirement.",
+          "html": "<p>For a permitted changeover, challenge a fixed positive assay control with each collected dispense and compare recovery with uncontaminated reagent. An unchanged blank accompanied by reduced positive-control light reveals inhibition that a blank-only check would miss. Include weak and strong controls if the assay uses a broad signal range. This is a proposed qualification design; it does not override a manufacturer's dedicated-line requirement.</p>"
+        }
+      ]
+    },
+    {
+      "id": "separate-fluid-residue-from-optical-leakage",
+      "heading": "Separate fluid residue from optical leakage",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Separate fluid residue from optical leakage",
+          "html": "<h2 id=\"separate-fluid-residue-from-optical-leakage\">Separate fluid residue from optical leakage</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Read collected receiver samples away from the bright challenge wells, ideally on another plate, and include neighboring blanks where appropriate. Contamination remains with the collected liquid; optical crosstalk depends on the measurement arrangement. Relocation is a useful diagnostic, though adsorption or reaction can change the contaminant with time.",
+          "html": "<p>Read collected receiver samples away from the bright challenge wells, ideally on another plate, and include neighboring blanks where appropriate. Contamination remains with the collected liquid; optical crosstalk depends on the measurement arrangement. Relocation is a useful diagnostic, though adsorption or reaction can change the contaminant with time.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Prevent bright-well leakage physically where possible. Correcting its average contribution does not remove the associated photon noise, and an optical artifact should not be mistaken for a failed wash.",
+          "html": "<p>Prevent bright-well leakage physically where possible. Correcting its average contribution does not remove the associated photon noise, and an optical artifact should not be mistaken for a failed wash.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use only cleaning agents and procedures compatible with both the injector and reagent manufacturer instructions. Repeat the qualification after relevant tubing, chemistry or procedure changes. Save the sequential-dispense and positive-control recovery results with the protocol, including the acceptance limits.",
+          "html": "<p>Use only cleaning agents and procedures compatible with both the injector and reagent manufacturer instructions. Repeat the qualification after relevant tubing, chemistry or procedure changes. Save the sequential-dispense and positive-control recovery results with the protocol, including the acceptance limits.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Promega. Dual-Luciferase Reporter Assay System, TM040, revised August 2023, sections 4.A–4.B and 6.D. Timing, injectors and Stop & Glo reagent carryover.",
+          "html": "<p id=\"ref-1\">1. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/dual-luciferase-reporter-assay-system-protocol.pdf\">Dual-Luciferase Reporter Assay System, TM040</a>, revised August 2023, sections 4.A–4.B and 6.D. Timing, injectors and Stop &amp; Glo reagent carryover.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. Nano-Glo Dual-Luciferase Reporter Assay, TM426, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanoglo-dual-luciferase-reporter-assay-protocol.pdf\">Nano-Glo Dual-Luciferase Reporter Assay, TM426</a>, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+          "html": "<p id=\"ref-3\">3. Tecan. <a href=\"https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf\">Infinite 200 PRO Instructions for Use, revision 1.4</a>, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Promega. Dual-Luciferase Reporter Assay System, TM040, revised August 2023, sections 4.A–4.B and 6.D. Timing, injectors and Stop & Glo reagent carryover.",
+      "urls": [
+        "https://www.promega.com/-/media/files/resources/protocols/technical-manuals/0/dual-luciferase-reporter-assay-system-protocol.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. Nano-Glo Dual-Luciferase Reporter Assay, TM426, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.",
+      "urls": [
+        "https://www.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanoglo-dual-luciferase-reporter-assay-protocol.pdf"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Tecan. Infinite 200 PRO Instructions for Use, revision 1.4, June 2021, pp. 42–43, 92–99 and 159. Pathlength correction, injector operation and application-dependent cleaning.",
+      "urls": [
+        "https://www.tecan.com/hubfs/30125944_IFU_Infinite200-PRO_V1_4_English_German-Warnings.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "2f10570ab513dd59d7c88419e1aa827a802f42367e2eef52f4134b97f69101f8"
+}

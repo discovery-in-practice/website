@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "id": "384-1536-well-assay-mixing",
+  "canonical_url": "https://discoveryinpractice.com/articles/384-1536-well-assay-mixing/",
+  "title": "How do I know whether a 384- or 1536-well assay is actually mixed?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Learn why shaking speed and stable fluorescence do not prove mixing, and how to qualify a mixing method for a dense microplate assay.",
+  "takeaways": [
+    "A flat fluorescence trace can miss stratification",
+    "Allow for molecular size and diffusion distance",
+    "Record more than shaking speed"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Mixing",
+    "1536-well assays",
+    "Liquid handling"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-09",
+  "date_modified": "2026-10-09",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Validate mixing in the actual plate, volume and liquid formulation: a shaking setting, visible plate motion or repeatable whole-well signal does not establish uniform concentrations. The Assay Guidance Manual notes that the narrow wells of 1,536-well plates may not form a robust vortex under ordinary orbital shaking. [1]</p><h2 id=\"a-flat-fluorescence-trace-can-miss-stratification\">A flat fluorescence trace can miss stratification</h2><p>Suppose you add a small fluorescent aliquot to a larger volume of clear buffer. If detection collects light from most of the well and fluorescence is linear, the total signal can remain similar whether the dye is evenly distributed or concentrated in one region. The number of dye molecules has barely changed. Stable bulk fluorescence is therefore a weak mixing test on its own.</p><p>Use a readout sensitive to spatial concentration differences, such as a validated fluorescence image or height-resolved measurement. Include a thoroughly premixed reference and a deliberately poorly mixed preparation to show that the test distinguishes them. Avoid detector saturation, self-quenching and focus changes that could masquerade as mixing.</p><p>An assay-specific reaction can provide another useful challenge, but reaction kinetics, temperature and dispensing precision then become part of the interpretation. Extra shaking that changes the endpoint may indicate incomplete mixing; it can also change biology, bubbles or elapsed reaction time. Include equal-age controls.</p><h2 id=\"allow-for-molecular-size-and-diffusion-distance\">Allow for molecular size and diffusion distance</h2><p>The Assay Guidance Manual describes dimethyl sulfoxide (DMSO) droplets sinking into aqueous well contents and slowly diffusing without agitation. [1] The concentration near the bottom can temporarily differ from the concentration calculated from the final volume. That matters when a small compound addition contacts cells or starts a rapid reaction.</p><p>Diffusive mixing time scales approximately with the square of the distance and inversely with the diffusion coefficient. Halving a relevant distance reduces the characteristic time approximately fourfold for the same freely diffusing species. A small-ion example cannot establish the waiting time for a protein, viscous reagent or particle suspension. Density differences and adsorption add further complications.</p><h2 id=\"record-more-than-shaking-speed\">Record more than shaking speed</h2><p>Record plate manufacturer and product, working volume, addition volume, addition position, liquid composition, shaker orbit, speed and duration. Revolutions per minute (rpm) alone do not describe the motion. A different orbital diameter can produce different circulation at the same rpm.</p><p>Compare candidate settings with the premixed reference across representative plate positions. Include the most difficult intended formulation and small addition volume. Confirm acceptable spatial uniformity or assay recovery, replicate precision and acceptable bubble levels and no spillage or cross-well contamination. Define those acceptance limits from the assay's required precision before choosing the preferred condition.</p><h2 id=\"use-kit-timings-as-specific-instructions\">Use kit timings as specific instructions</h2><p>For Nano-Glo Dual-Luciferase in 384-well plates, Promega describes dedicated mixing conditions and minimum incubation periods; its manual warns that small volumes are harder to mix. [2] Those instructions belong to that chemistry and plate workflow. They do not validate a different 1,536-well assay or a different shaker.</p><p>Optical orbital averaging samples several positions within a well; it does not establish fluid mixing. Excessive agitation can disturb adherent cells, and detergent-containing mixtures can foam. [1,2] For room-temperature glow endpoints, keep mixing and waiting steps in a thermally consistent workflow. Keep the evidence for adequate mixing with the protocol, including the reference preparation and the conditions under which the check could detect a gradient.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual, Mixing and Dispensing sections. Supplied NIH compilation, PDF pp. 1573–1575 / printed pp. 1551–1553.</p><p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanoglo-dual-luciferase-reporter-assay-protocol.pdf\">Nano-Glo Dual-Luciferase Reporter Assay, TM426</a>, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.</p>",
+  "body_text": "Validate mixing in the actual plate, volume and liquid formulation: a shaking setting, visible plate motion or repeatable whole-well signal does not establish uniform concentrations. The Assay Guidance Manual notes that the narrow wells of 1,536-well plates may not form a robust vortex under ordinary orbital shaking. [1]\n\nA flat fluorescence trace can miss stratification\n\nSuppose you add a small fluorescent aliquot to a larger volume of clear buffer. If detection collects light from most of the well and fluorescence is linear, the total signal can remain similar whether the dye is evenly distributed or concentrated in one region. The number of dye molecules has barely changed. Stable bulk fluorescence is therefore a weak mixing test on its own.\n\nUse a readout sensitive to spatial concentration differences, such as a validated fluorescence image or height-resolved measurement. Include a thoroughly premixed reference and a deliberately poorly mixed preparation to show that the test distinguishes them. Avoid detector saturation, self-quenching and focus changes that could masquerade as mixing.\n\nAn assay-specific reaction can provide another useful challenge, but reaction kinetics, temperature and dispensing precision then become part of the interpretation. Extra shaking that changes the endpoint may indicate incomplete mixing; it can also change biology, bubbles or elapsed reaction time. Include equal-age controls.\n\nAllow for molecular size and diffusion distance\n\nThe Assay Guidance Manual describes dimethyl sulfoxide (DMSO) droplets sinking into aqueous well contents and slowly diffusing without agitation. [1] The concentration near the bottom can temporarily differ from the concentration calculated from the final volume. That matters when a small compound addition contacts cells or starts a rapid reaction.\n\nDiffusive mixing time scales approximately with the square of the distance and inversely with the diffusion coefficient. Halving a relevant distance reduces the characteristic time approximately fourfold for the same freely diffusing species. A small-ion example cannot establish the waiting time for a protein, viscous reagent or particle suspension. Density differences and adsorption add further complications.\n\nRecord more than shaking speed\n\nRecord plate manufacturer and product, working volume, addition volume, addition position, liquid composition, shaker orbit, speed and duration. Revolutions per minute (rpm) alone do not describe the motion. A different orbital diameter can produce different circulation at the same rpm.\n\nCompare candidate settings with the premixed reference across representative plate positions. Include the most difficult intended formulation and small addition volume. Confirm acceptable spatial uniformity or assay recovery, replicate precision and acceptable bubble levels and no spillage or cross-well contamination. Define those acceptance limits from the assay's required precision before choosing the preferred condition.\n\nUse kit timings as specific instructions\n\nFor Nano-Glo Dual-Luciferase in 384-well plates, Promega describes dedicated mixing conditions and minimum incubation periods; its manual warns that small volumes are harder to mix. [2] Those instructions belong to that chemistry and plate workflow. They do not validate a different 1,536-well assay or a different shaker.\n\nOptical orbital averaging samples several positions within a well; it does not establish fluid mixing. Excessive agitation can disturb adherent cells, and detergent-containing mixtures can foam. [1,2] For room-temperature glow endpoints, keep mixing and waiting steps in a thermally consistent workflow. Keep the evidence for adequate mixing with the protocol, including the reference preparation and the conditions under which the check could detect a gradient.\n\nReferences\n\n1. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual, Mixing and Dispensing sections. Supplied NIH compilation, PDF pp. 1573–1575 / printed pp. 1551–1553.\n\n2. Promega. Nano-Glo Dual-Luciferase Reporter Assay, TM426, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Validate mixing in the actual plate, volume and liquid formulation: a shaking setting, visible plate motion or repeatable whole-well signal does not establish uniform concentrations. The Assay Guidance Manual notes that the narrow wells of 1,536-well plates may not form a robust vortex under ordinary orbital shaking. [1]",
+          "html": "<p>Validate mixing in the actual plate, volume and liquid formulation: a shaking setting, visible plate motion or repeatable whole-well signal does not establish uniform concentrations. The Assay Guidance Manual notes that the narrow wells of 1,536-well plates may not form a robust vortex under ordinary orbital shaking. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-flat-fluorescence-trace-can-miss-stratification",
+      "heading": "A flat fluorescence trace can miss stratification",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A flat fluorescence trace can miss stratification",
+          "html": "<h2 id=\"a-flat-fluorescence-trace-can-miss-stratification\">A flat fluorescence trace can miss stratification</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Suppose you add a small fluorescent aliquot to a larger volume of clear buffer. If detection collects light from most of the well and fluorescence is linear, the total signal can remain similar whether the dye is evenly distributed or concentrated in one region. The number of dye molecules has barely changed. Stable bulk fluorescence is therefore a weak mixing test on its own.",
+          "html": "<p>Suppose you add a small fluorescent aliquot to a larger volume of clear buffer. If detection collects light from most of the well and fluorescence is linear, the total signal can remain similar whether the dye is evenly distributed or concentrated in one region. The number of dye molecules has barely changed. Stable bulk fluorescence is therefore a weak mixing test on its own.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use a readout sensitive to spatial concentration differences, such as a validated fluorescence image or height-resolved measurement. Include a thoroughly premixed reference and a deliberately poorly mixed preparation to show that the test distinguishes them. Avoid detector saturation, self-quenching and focus changes that could masquerade as mixing.",
+          "html": "<p>Use a readout sensitive to spatial concentration differences, such as a validated fluorescence image or height-resolved measurement. Include a thoroughly premixed reference and a deliberately poorly mixed preparation to show that the test distinguishes them. Avoid detector saturation, self-quenching and focus changes that could masquerade as mixing.</p>"
+        },
+        {
+          "type": "p",
+          "text": "An assay-specific reaction can provide another useful challenge, but reaction kinetics, temperature and dispensing precision then become part of the interpretation. Extra shaking that changes the endpoint may indicate incomplete mixing; it can also change biology, bubbles or elapsed reaction time. Include equal-age controls.",
+          "html": "<p>An assay-specific reaction can provide another useful challenge, but reaction kinetics, temperature and dispensing precision then become part of the interpretation. Extra shaking that changes the endpoint may indicate incomplete mixing; it can also change biology, bubbles or elapsed reaction time. Include equal-age controls.</p>"
+        }
+      ]
+    },
+    {
+      "id": "allow-for-molecular-size-and-diffusion-distance",
+      "heading": "Allow for molecular size and diffusion distance",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Allow for molecular size and diffusion distance",
+          "html": "<h2 id=\"allow-for-molecular-size-and-diffusion-distance\">Allow for molecular size and diffusion distance</h2>"
+        },
+        {
+          "type": "p",
+          "text": "The Assay Guidance Manual describes dimethyl sulfoxide (DMSO) droplets sinking into aqueous well contents and slowly diffusing without agitation. [1] The concentration near the bottom can temporarily differ from the concentration calculated from the final volume. That matters when a small compound addition contacts cells or starts a rapid reaction.",
+          "html": "<p>The Assay Guidance Manual describes dimethyl sulfoxide (DMSO) droplets sinking into aqueous well contents and slowly diffusing without agitation. [1] The concentration near the bottom can temporarily differ from the concentration calculated from the final volume. That matters when a small compound addition contacts cells or starts a rapid reaction.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Diffusive mixing time scales approximately with the square of the distance and inversely with the diffusion coefficient. Halving a relevant distance reduces the characteristic time approximately fourfold for the same freely diffusing species. A small-ion example cannot establish the waiting time for a protein, viscous reagent or particle suspension. Density differences and adsorption add further complications.",
+          "html": "<p>Diffusive mixing time scales approximately with the square of the distance and inversely with the diffusion coefficient. Halving a relevant distance reduces the characteristic time approximately fourfold for the same freely diffusing species. A small-ion example cannot establish the waiting time for a protein, viscous reagent or particle suspension. Density differences and adsorption add further complications.</p>"
+        }
+      ]
+    },
+    {
+      "id": "record-more-than-shaking-speed",
+      "heading": "Record more than shaking speed",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Record more than shaking speed",
+          "html": "<h2 id=\"record-more-than-shaking-speed\">Record more than shaking speed</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Record plate manufacturer and product, working volume, addition volume, addition position, liquid composition, shaker orbit, speed and duration. Revolutions per minute (rpm) alone do not describe the motion. A different orbital diameter can produce different circulation at the same rpm.",
+          "html": "<p>Record plate manufacturer and product, working volume, addition volume, addition position, liquid composition, shaker orbit, speed and duration. Revolutions per minute (rpm) alone do not describe the motion. A different orbital diameter can produce different circulation at the same rpm.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare candidate settings with the premixed reference across representative plate positions. Include the most difficult intended formulation and small addition volume. Confirm acceptable spatial uniformity or assay recovery, replicate precision and acceptable bubble levels and no spillage or cross-well contamination. Define those acceptance limits from the assay's required precision before choosing the preferred condition.",
+          "html": "<p>Compare candidate settings with the premixed reference across representative plate positions. Include the most difficult intended formulation and small addition volume. Confirm acceptable spatial uniformity or assay recovery, replicate precision and acceptable bubble levels and no spillage or cross-well contamination. Define those acceptance limits from the assay's required precision before choosing the preferred condition.</p>"
+        }
+      ]
+    },
+    {
+      "id": "use-kit-timings-as-specific-instructions",
+      "heading": "Use kit timings as specific instructions",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Use kit timings as specific instructions",
+          "html": "<h2 id=\"use-kit-timings-as-specific-instructions\">Use kit timings as specific instructions</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For Nano-Glo Dual-Luciferase in 384-well plates, Promega describes dedicated mixing conditions and minimum incubation periods; its manual warns that small volumes are harder to mix. [2] Those instructions belong to that chemistry and plate workflow. They do not validate a different 1,536-well assay or a different shaker.",
+          "html": "<p>For Nano-Glo Dual-Luciferase in 384-well plates, Promega describes dedicated mixing conditions and minimum incubation periods; its manual warns that small volumes are harder to mix. [2] Those instructions belong to that chemistry and plate workflow. They do not validate a different 1,536-well assay or a different shaker.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Optical orbital averaging samples several positions within a well; it does not establish fluid mixing. Excessive agitation can disturb adherent cells, and detergent-containing mixtures can foam. [1,2] For room-temperature glow endpoints, keep mixing and waiting steps in a thermally consistent workflow. Keep the evidence for adequate mixing with the protocol, including the reference preparation and the conditions under which the check could detect a gradient.",
+          "html": "<p>Optical orbital averaging samples several positions within a well; it does not establish fluid mixing. Excessive agitation can disturb adherent cells, and detergent-containing mixtures can foam. [1,2] For room-temperature glow endpoints, keep mixing and waiting steps in a thermally consistent workflow. Keep the evidence for adequate mixing with the protocol, including the reference preparation and the conditions under which the check could detect a gradient.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual, Mixing and Dispensing sections. Supplied NIH compilation, PDF pp. 1573–1575 / printed pp. 1551–1553.",
+          "html": "<p id=\"ref-1\">1. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK558077/\">Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology</a>. Assay Guidance Manual, Mixing and Dispensing sections. Supplied NIH compilation, PDF pp. 1573–1575 / printed pp. 1551–1553.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Promega. Nano-Glo Dual-Luciferase Reporter Assay, TM426, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.",
+          "html": "<p id=\"ref-2\">2. Promega. <a href=\"https://www.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanoglo-dual-luciferase-reporter-assay-protocol.pdf\">Nano-Glo Dual-Luciferase Reporter Assay, TM426</a>, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Microplate Selection and Recommended Practices in High-throughput Screening and Quantitative Biology. Assay Guidance Manual, Mixing and Dispensing sections. Supplied NIH compilation, PDF pp. 1573–1575 / printed pp. 1551–1553.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK558077/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Promega. Nano-Glo Dual-Luciferase Reporter Assay, TM426, revised February 2024, sections 3.A–3.H and 4.C. Temperature, mixing, injection, reagent carryover and coincidence-reporter design.",
+      "urls": [
+        "https://www.promega.com/-/media/files/resources/protocols/technical-manuals/101/nanoglo-dual-luciferase-reporter-assay-protocol.pdf"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "b4963356941b9d55c8cd45cdfdb2f781b67d92b2af8c0f5dcb0fb11971cf5b38"
+}

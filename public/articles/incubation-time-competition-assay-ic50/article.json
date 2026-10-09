@@ -1,0 +1,333 @@
+{
+  "schema_version": "1.0",
+  "id": "incubation-time-competition-assay-ic50",
+  "canonical_url": "https://discoveryinpractice.com/articles/incubation-time-competition-assay-ic50/",
+  "title": "Waiting longer can move the competition curve",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Longer incubation can improve an assay window while changing potency. Explore AlphaScreen and hERG examples and a practical way to qualify complete curves.",
+  "takeaways": [
+    "What is still happening in the well",
+    "The endpoints can look excellent while the middle moves",
+    "A different assay makes the same practical point"
+  ],
+  "limitations_summary": "Interpret constructed examples as illustrations, and qualify proposed checks in the assay and instrument conditions described. Keep the stated model assumptions and method-specific limitations with the result.",
+  "topics": [
+    "Assay timing",
+    "Competition assays",
+    "AlphaScreen"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-09",
+  "date_modified": "2026-10-09",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>The signal is still climbing. Another hour could bring more counts and a cleaner window. In a competitive binding assay, it can also change the concentration required to produce half the response.</p><div class=\"math-paragraph\">The AlphaScreen practical guide describes exactly this problem in a cAMP assay. It recommends at least an hour after the final reagent addition for suitable signal, while reporting that maximal counts typically occur after 14–16 hours at room temperature. During that prolonged incubation, its example <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> shifts from 5 to 15 nM. The brighter measurement has a different competition curve. [1]</div><p>Those times belong to the assay described in the historical guide. The example shows how an incubation can improve the signal while changing the result; each Alpha assay needs its own timing qualification.</p><h2 id=\"what-is-still-happening-in-the-well\">What is still happening in the well</h2><p>In this competitive format, unlabeled cAMP competes with a biotinylated cAMP tracer in a bead-based detection system. The guide attributes the shift to an increase in the local concentration of biotin-cAMP between associated donor and acceptor beads as equilibrium is approached. For prolonged incubation, it suggests reducing biotin-cAMP concentration, giving 2 nM instead of 10 nM as an example. [1]</p><p>That recommendation changes the assay chemistry. It deserves a fresh standard curve and evaluation of the usable range, rather than being treated as a general correction for late plates. Lower tracer concentration may change the signal and the competition conditions together.</p><p>The underlying issue is familiar from binding experiments: occupancy takes time to develop. Association and dissociation rates determine how quickly a particular mixture approaches equilibrium. In a competition experiment, the tracer and competitor each contribute their own kinetics. Order of addition can matter before equilibrium, especially if one ligand has had a substantial head start. The Assay Guidance Manual's treatment of kinetic binding makes these dependencies explicit. [2]</p><p>A bead assay adds further events between ligand binding and the measured light. A signal plateau therefore deserves interpretation. It may reflect the relevant system reaching a reproducible state; it may also conceal offsetting changes or a limiting detection step. A flat high control cannot establish that every intermediate competitor concentration has stopped moving. Check that the detector remains linear as counts rise, too. Compression at the bright end can flatten a time course while the chemistry continues to develop. A wide, verified linear detection range helps preserve changes in both dim and bright wells. [4]</p><h2 id=\"the-endpoints-can-look-excellent-while-the-middle-moves\">The endpoints can look excellent while the middle moves</h2><p>Here is a constructed illustration using the guide's two midpoint values. Assume a decreasing competition curve with slope one, fixed high and low signals of 10,500 and 500 units, and no change in either endpoint. At competitor concentration c, the model is:</p><div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"S(c) = L + (H − L) divided by (1 + (c) divided by (IC subscript 50))\"><mrow><mrow><mtext>S(c) = L + </mtext></mrow><mfrac><mrow><mrow><mtext>H − L</mtext></mrow></mrow><mrow><mrow><mtext>1 + </mtext></mrow><mfrac><mrow><mrow><mtext>c</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></mfrac></mrow></mfrac></mrow></math></div></div><p>H and L are the upper and lower limits. This simple curve describes a response; it does not assert the molecular mechanism of the cAMP assay. At 10 nM competitor, the two hypothetical curves give:</p><div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Curve midpoint</th><th scope=\"col\">Signal at 10 nM</th><th scope=\"col\">Normalized inhibition</th></tr></thead><tbody><tr><th scope=\"row\">5 nM</th><td>3,833</td><td>66.7%</td></tr><tr><th scope=\"row\">15 nM</th><td>6,500</td><td>40.0%</td></tr></tbody></table></div><p>The intermediate signals are calculated, not measurements from the guide. They show what a threefold midpoint shift could mean for a single-concentration screen. A compound can cross a hit threshold even though both endpoint controls remain exactly where they were.</p><p>Give those controls standard deviations of 300 and 100 units, respectively. Both curves would have the same Z′ of 0.88, because the high-control mean, low-control mean and their variation have not changed. The control statistics show a well-separated measurement window while leaving this change in the competition curve untested.</p><p>A reference curve supplies information the two endpoint populations cannot. Its midpoint follows the competition response, and its slope and limits help reveal whether the change is more complicated than a horizontal displacement. Retain uncertainty on those fits. A small apparent shift from a poorly constrained curve should not carry the same weight as a reproducible shift supported by well-sampled plateaus.</p><h2 id=\"a-different-assay-makes-the-same-practical-point\">A different assay makes the same practical point</h2><div class=\"math-paragraph\">The Predictor hERG fluorescence polarization manual reports a time-course example for E-4031. Its <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> rises from 23 nM after one hour to 39 nM after four hours, while the reported assay window rises from 111 to 153 mP and Z′ improves from 0.56 to 0.77. The manual suggests a complex equilibrium involving tracer, binding sites and membrane, while noting that it was not studied further. It recommends determining timing for the intended workflow. [3]</div><p>The improvement in control separation accompanies a changed potency estimate. The Alpha and hERG examples use different detection mechanisms and cannot supply a universal direction or magnitude for incubation effects. Together they give a good reason to qualify the curve as well as the signal.</p><div class=\"math-paragraph\">Comparing values from different days or protocols requires that timing information. A time-dependent <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> is an experimental result under specified conditions. Leaving the incubation out of the record makes that result harder to interpret, particularly when a series contains compounds with different binding kinetics.</div><h2 id=\"give-each-possible-explanation-its-own-experiment\">Give each possible explanation its own experiment</h2><div class=\"math-paragraph\">A shift with time does not establish long residence time. Residence time concerns dissociation; a moving competition curve can also reflect association, changing tracer distribution, nonspecific binding or instability. A kinetic binding experiment with an appropriate model and adequate observation period provides stronger evidence about rates. Two endpoint <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> values provide much less information. [2]</div><p>Enzyme assays bring another distinction. If catalysis continues during the added waiting period, product accumulates and substrate may become depleted. A changing response can then arise even with rapidly equilibrating inhibitor binding. Determine whether the biological reaction is still running and whether the intended initial-rate assumptions remain reasonable. Reagents that develop the detection signal add further timing requirements after the enzyme reaction has ended.</p><p>Temperature can affect these stages differently. Bringing plates to a reproducible liquid temperature improves comparability, but cooling a reaction does not automatically stop it. Include any pre-stop equilibration interval in the workflow assessment. A stable chamber cannot reconstruct the reaction history of a plate that waited too long before the terminating reagent arrived.</p><p>For Alpha assays, previous illumination is another variable. The practical guide explicitly recommends separate wells for each time point when establishing the equilibrium time course. Use fresh matched wells or plates for that purpose, with reagent preparation and handling held as consistent as practical. Otherwise, time since preparation and number of previous measurements become entangled. [1]</p><h2 id=\"qualify-the-interval-you-intend-to-use\">Qualify the interval you intend to use</h2><p>Start with the earliest allowed read, the normal operating time and the latest plausible read after a routine delay. Include the assay's actual minimum incubation requirements. If no prior timing information exists, a broader exploratory time course comes first; an arbitrary three-point schedule may miss the behavior you need to understand.</p><p>At each selected time, measure a complete concentration-response curve, not only the no-competitor and fully displaced controls. Use enough concentrations to define both limits and the region around the midpoint, with replication suitable for the assay's precision. Include more than one reference ligand where possible. A rapidly equilibrating standard may remain well behaved while a slower compound continues to change.</p><p>Distribute the controls and curve replicates so concentration is not inseparable from row, column or acquisition time. Retain raw signal as well as normalized response. A common multiplicative intensity change may largely disappear during normalization; a concentration-dependent change will not generally do so. Plot signal, midpoint and slope against elapsed time rather than reducing the qualification to one pass/fail statistic.</p><p>Define acceptable variation from the use of the assay. A screen seeking large effects and a medicinal-chemistry assay ranking close analogs may need different tolerances. Estimate ordinary between-run variation before declaring an allowable potency drift. Specify an operating interval and a rule for plates that fall outside it.</p><p>If longer incubation moves the curve, the next useful step is to establish whether it eventually stabilizes and whether that stable state is practical for the workflow. A defined earlier endpoint can also be useful when validated and reported consistently, with its kinetic limitations understood. Record the interval beside the reported potency. A colleague comparing the next run should be able to tell whether a changed curve reflects a new compound or a different time point.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>. PDF p. 30, printed p. 24: equilibrium time course, separate wells and the cAMP incubation example. Historical assay-specific guidance.</p><p id=\"ref-2\">2. Hoare SRJ (2021). Analyzing Kinetic Binding Data. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK53196/\">Assay Guidance Manual</a>. Supplied 2021 compilation, PDF pp. 61–79: association, dissociation, competition kinetics and limits of rate estimation. Consult the chapter's models before inferring residence time from endpoint data.</p><p id=\"ref-3\">3. Invitrogen. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/Predictor_hERG_FP_Assay_man.pdf\">Predictor hERG Fluorescence Polarization Assay manual</a>. PDF p. 11, section 7.1 and Table 7: E-4031 time course. These historical results describe this assay, not a general FP incubation requirement.</p><p id=\"ref-4\">4. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>. Printed pp. 149–150: count-rate linearity and correction. A signal plateau alone does not establish linear detector response.</p>",
+  "body_text": "The signal is still climbing. Another hour could bring more counts and a cleaner window. In a competitive binding assay, it can also change the concentration required to produce half the response.\n\nThe AlphaScreen practical guide describes exactly this problem in a cAMP assay. It recommends at least an hour after the final reagent addition for suitable signal, while reporting that maximal counts typically occur after 14–16 hours at room temperature. During that prolonged incubation, its example IC subscript 50 shifts from 5 to 15 nM. The brighter measurement has a different competition curve. [1]\n\nThose times belong to the assay described in the historical guide. The example shows how an incubation can improve the signal while changing the result; each Alpha assay needs its own timing qualification.\n\nWhat is still happening in the well\n\nIn this competitive format, unlabeled cAMP competes with a biotinylated cAMP tracer in a bead-based detection system. The guide attributes the shift to an increase in the local concentration of biotin-cAMP between associated donor and acceptor beads as equilibrium is approached. For prolonged incubation, it suggests reducing biotin-cAMP concentration, giving 2 nM instead of 10 nM as an example. [1]\n\nThat recommendation changes the assay chemistry. It deserves a fresh standard curve and evaluation of the usable range, rather than being treated as a general correction for late plates. Lower tracer concentration may change the signal and the competition conditions together.\n\nThe underlying issue is familiar from binding experiments: occupancy takes time to develop. Association and dissociation rates determine how quickly a particular mixture approaches equilibrium. In a competition experiment, the tracer and competitor each contribute their own kinetics. Order of addition can matter before equilibrium, especially if one ligand has had a substantial head start. The Assay Guidance Manual's treatment of kinetic binding makes these dependencies explicit. [2]\n\nA bead assay adds further events between ligand binding and the measured light. A signal plateau therefore deserves interpretation. It may reflect the relevant system reaching a reproducible state; it may also conceal offsetting changes or a limiting detection step. A flat high control cannot establish that every intermediate competitor concentration has stopped moving. Check that the detector remains linear as counts rise, too. Compression at the bright end can flatten a time course while the chemistry continues to develop. A wide, verified linear detection range helps preserve changes in both dim and bright wells. [4]\n\nThe endpoints can look excellent while the middle moves\n\nHere is a constructed illustration using the guide's two midpoint values. Assume a decreasing competition curve with slope one, fixed high and low signals of 10,500 and 500 units, and no change in either endpoint. At competitor concentration c, the model is:\n\nS(c) = L + (H − L) divided by (1 + (c) divided by (IC subscript 50))\n\nH and L are the upper and lower limits. This simple curve describes a response; it does not assert the molecular mechanism of the cAMP assay. At 10 nM competitor, the two hypothetical curves give:\n\nCurve midpoint | Signal at 10 nM | Normalized inhibition | 5 nM | 3,833 | 66.7% | 15 nM | 6,500 | 40.0% | \n\nThe intermediate signals are calculated, not measurements from the guide. They show what a threefold midpoint shift could mean for a single-concentration screen. A compound can cross a hit threshold even though both endpoint controls remain exactly where they were.\n\nGive those controls standard deviations of 300 and 100 units, respectively. Both curves would have the same Z′ of 0.88, because the high-control mean, low-control mean and their variation have not changed. The control statistics show a well-separated measurement window while leaving this change in the competition curve untested.\n\nA reference curve supplies information the two endpoint populations cannot. Its midpoint follows the competition response, and its slope and limits help reveal whether the change is more complicated than a horizontal displacement. Retain uncertainty on those fits. A small apparent shift from a poorly constrained curve should not carry the same weight as a reproducible shift supported by well-sampled plateaus.\n\nA different assay makes the same practical point\n\nThe Predictor hERG fluorescence polarization manual reports a time-course example for E-4031. Its IC subscript 50 rises from 23 nM after one hour to 39 nM after four hours, while the reported assay window rises from 111 to 153 mP and Z′ improves from 0.56 to 0.77. The manual suggests a complex equilibrium involving tracer, binding sites and membrane, while noting that it was not studied further. It recommends determining timing for the intended workflow. [3]\n\nThe improvement in control separation accompanies a changed potency estimate. The Alpha and hERG examples use different detection mechanisms and cannot supply a universal direction or magnitude for incubation effects. Together they give a good reason to qualify the curve as well as the signal.\n\nComparing values from different days or protocols requires that timing information. A time-dependent IC subscript 50 is an experimental result under specified conditions. Leaving the incubation out of the record makes that result harder to interpret, particularly when a series contains compounds with different binding kinetics.\n\nGive each possible explanation its own experiment\n\nA shift with time does not establish long residence time. Residence time concerns dissociation; a moving competition curve can also reflect association, changing tracer distribution, nonspecific binding or instability. A kinetic binding experiment with an appropriate model and adequate observation period provides stronger evidence about rates. Two endpoint IC subscript 50 values provide much less information. [2]\n\nEnzyme assays bring another distinction. If catalysis continues during the added waiting period, product accumulates and substrate may become depleted. A changing response can then arise even with rapidly equilibrating inhibitor binding. Determine whether the biological reaction is still running and whether the intended initial-rate assumptions remain reasonable. Reagents that develop the detection signal add further timing requirements after the enzyme reaction has ended.\n\nTemperature can affect these stages differently. Bringing plates to a reproducible liquid temperature improves comparability, but cooling a reaction does not automatically stop it. Include any pre-stop equilibration interval in the workflow assessment. A stable chamber cannot reconstruct the reaction history of a plate that waited too long before the terminating reagent arrived.\n\nFor Alpha assays, previous illumination is another variable. The practical guide explicitly recommends separate wells for each time point when establishing the equilibrium time course. Use fresh matched wells or plates for that purpose, with reagent preparation and handling held as consistent as practical. Otherwise, time since preparation and number of previous measurements become entangled. [1]\n\nQualify the interval you intend to use\n\nStart with the earliest allowed read, the normal operating time and the latest plausible read after a routine delay. Include the assay's actual minimum incubation requirements. If no prior timing information exists, a broader exploratory time course comes first; an arbitrary three-point schedule may miss the behavior you need to understand.\n\nAt each selected time, measure a complete concentration-response curve, not only the no-competitor and fully displaced controls. Use enough concentrations to define both limits and the region around the midpoint, with replication suitable for the assay's precision. Include more than one reference ligand where possible. A rapidly equilibrating standard may remain well behaved while a slower compound continues to change.\n\nDistribute the controls and curve replicates so concentration is not inseparable from row, column or acquisition time. Retain raw signal as well as normalized response. A common multiplicative intensity change may largely disappear during normalization; a concentration-dependent change will not generally do so. Plot signal, midpoint and slope against elapsed time rather than reducing the qualification to one pass/fail statistic.\n\nDefine acceptable variation from the use of the assay. A screen seeking large effects and a medicinal-chemistry assay ranking close analogs may need different tolerances. Estimate ordinary between-run variation before declaring an allowable potency drift. Specify an operating interval and a rule for plates that fall outside it.\n\nIf longer incubation moves the curve, the next useful step is to establish whether it eventually stabilizes and whether that stable state is practical for the workflow. A defined earlier endpoint can also be useful when validated and reported consistently, with its kinetic limitations understood. Record the interval beside the reported potency. A colleague comparing the next run should be able to tell whether a changed curve reflects a new compound or a different time point.\n\nReferences\n\n1. PerkinElmer. AlphaScreen practical guide. PDF p. 30, printed p. 24: equilibrium time course, separate wells and the cAMP incubation example. Historical assay-specific guidance.\n\n2. Hoare SRJ (2021). Analyzing Kinetic Binding Data. Assay Guidance Manual. Supplied 2021 compilation, PDF pp. 61–79: association, dissociation, competition kinetics and limits of rate estimation. Consult the chapter's models before inferring residence time from endpoint data.\n\n3. Invitrogen. Predictor hERG Fluorescence Polarization Assay manual. PDF p. 11, section 7.1 and Table 7: E-4031 time course. These historical results describe this assay, not a general FP incubation requirement.\n\n4. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition. Printed pp. 149–150: count-rate linearity and correction. A signal plateau alone does not establish linear detector response.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The signal is still climbing. Another hour could bring more counts and a cleaner window. In a competitive binding assay, it can also change the concentration required to produce half the response.",
+          "html": "<p>The signal is still climbing. Another hour could bring more counts and a cleaner window. In a competitive binding assay, it can also change the concentration required to produce half the response.</p>"
+        },
+        {
+          "type": "div",
+          "text": "The AlphaScreen practical guide describes exactly this problem in a cAMP assay. It recommends at least an hour after the final reagent addition for suitable signal, while reporting that maximal counts typically occur after 14–16 hours at room temperature. During that prolonged incubation, its example IC subscript 50 shifts from 5 to 15 nM. The brighter measurement has a different competition curve. [1]",
+          "html": "<div class=\"math-paragraph\">The AlphaScreen practical guide describes exactly this problem in a cAMP assay. It recommends at least an hour after the final reagent addition for suitable signal, while reporting that maximal counts typically occur after 14–16 hours at room temperature. During that prolonged incubation, its example <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> shifts from 5 to 15 nM. The brighter measurement has a different competition curve. [1]</div>"
+        },
+        {
+          "type": "p",
+          "text": "Those times belong to the assay described in the historical guide. The example shows how an incubation can improve the signal while changing the result; each Alpha assay needs its own timing qualification.",
+          "html": "<p>Those times belong to the assay described in the historical guide. The example shows how an incubation can improve the signal while changing the result; each Alpha assay needs its own timing qualification.</p>"
+        }
+      ]
+    },
+    {
+      "id": "what-is-still-happening-in-the-well",
+      "heading": "What is still happening in the well",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "What is still happening in the well",
+          "html": "<h2 id=\"what-is-still-happening-in-the-well\">What is still happening in the well</h2>"
+        },
+        {
+          "type": "p",
+          "text": "In this competitive format, unlabeled cAMP competes with a biotinylated cAMP tracer in a bead-based detection system. The guide attributes the shift to an increase in the local concentration of biotin-cAMP between associated donor and acceptor beads as equilibrium is approached. For prolonged incubation, it suggests reducing biotin-cAMP concentration, giving 2 nM instead of 10 nM as an example. [1]",
+          "html": "<p>In this competitive format, unlabeled cAMP competes with a biotinylated cAMP tracer in a bead-based detection system. The guide attributes the shift to an increase in the local concentration of biotin-cAMP between associated donor and acceptor beads as equilibrium is approached. For prolonged incubation, it suggests reducing biotin-cAMP concentration, giving 2 nM instead of 10 nM as an example. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "That recommendation changes the assay chemistry. It deserves a fresh standard curve and evaluation of the usable range, rather than being treated as a general correction for late plates. Lower tracer concentration may change the signal and the competition conditions together.",
+          "html": "<p>That recommendation changes the assay chemistry. It deserves a fresh standard curve and evaluation of the usable range, rather than being treated as a general correction for late plates. Lower tracer concentration may change the signal and the competition conditions together.</p>"
+        },
+        {
+          "type": "p",
+          "text": "The underlying issue is familiar from binding experiments: occupancy takes time to develop. Association and dissociation rates determine how quickly a particular mixture approaches equilibrium. In a competition experiment, the tracer and competitor each contribute their own kinetics. Order of addition can matter before equilibrium, especially if one ligand has had a substantial head start. The Assay Guidance Manual's treatment of kinetic binding makes these dependencies explicit. [2]",
+          "html": "<p>The underlying issue is familiar from binding experiments: occupancy takes time to develop. Association and dissociation rates determine how quickly a particular mixture approaches equilibrium. In a competition experiment, the tracer and competitor each contribute their own kinetics. Order of addition can matter before equilibrium, especially if one ligand has had a substantial head start. The Assay Guidance Manual's treatment of kinetic binding makes these dependencies explicit. [2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "A bead assay adds further events between ligand binding and the measured light. A signal plateau therefore deserves interpretation. It may reflect the relevant system reaching a reproducible state; it may also conceal offsetting changes or a limiting detection step. A flat high control cannot establish that every intermediate competitor concentration has stopped moving. Check that the detector remains linear as counts rise, too. Compression at the bright end can flatten a time course while the chemistry continues to develop. A wide, verified linear detection range helps preserve changes in both dim and bright wells. [4]",
+          "html": "<p>A bead assay adds further events between ligand binding and the measured light. A signal plateau therefore deserves interpretation. It may reflect the relevant system reaching a reproducible state; it may also conceal offsetting changes or a limiting detection step. A flat high control cannot establish that every intermediate competitor concentration has stopped moving. Check that the detector remains linear as counts rise, too. Compression at the bright end can flatten a time course while the chemistry continues to develop. A wide, verified linear detection range helps preserve changes in both dim and bright wells. [4]</p>"
+        }
+      ]
+    },
+    {
+      "id": "the-endpoints-can-look-excellent-while-the-middle-moves",
+      "heading": "The endpoints can look excellent while the middle moves",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "The endpoints can look excellent while the middle moves",
+          "html": "<h2 id=\"the-endpoints-can-look-excellent-while-the-middle-moves\">The endpoints can look excellent while the middle moves</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Here is a constructed illustration using the guide's two midpoint values. Assume a decreasing competition curve with slope one, fixed high and low signals of 10,500 and 500 units, and no change in either endpoint. At competitor concentration c, the model is:",
+          "html": "<p>Here is a constructed illustration using the guide's two midpoint values. Assume a decreasing competition curve with slope one, fixed high and low signals of 10,500 and 500 units, and no change in either endpoint. At competitor concentration c, the model is:</p>"
+        },
+        {
+          "type": "div",
+          "text": "S(c) = L + (H − L) divided by (1 + (c) divided by (IC subscript 50))",
+          "html": "<div class=\"math-paragraph\"><div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"S(c) = L + (H − L) divided by (1 + (c) divided by (IC subscript 50))\"><mrow><mrow><mtext>S(c) = L + </mtext></mrow><mfrac><mrow><mrow><mtext>H − L</mtext></mrow></mrow><mrow><mrow><mtext>1 + </mtext></mrow><mfrac><mrow><mrow><mtext>c</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></mfrac></mrow></mfrac></mrow></math></div></div>"
+        },
+        {
+          "type": "p",
+          "text": "H and L are the upper and lower limits. This simple curve describes a response; it does not assert the molecular mechanism of the cAMP assay. At 10 nM competitor, the two hypothetical curves give:",
+          "html": "<p>H and L are the upper and lower limits. This simple curve describes a response; it does not assert the molecular mechanism of the cAMP assay. At 10 nM competitor, the two hypothetical curves give:</p>"
+        },
+        {
+          "type": "div",
+          "text": "Curve midpoint | Signal at 10 nM | Normalized inhibition | 5 nM | 3,833 | 66.7% | 15 nM | 6,500 | 40.0% | ",
+          "html": "<div class=\"table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Article data table\"><table><thead><tr><th scope=\"col\">Curve midpoint</th><th scope=\"col\">Signal at 10 nM</th><th scope=\"col\">Normalized inhibition</th></tr></thead><tbody><tr><th scope=\"row\">5 nM</th><td>3,833</td><td>66.7%</td></tr><tr><th scope=\"row\">15 nM</th><td>6,500</td><td>40.0%</td></tr></tbody></table></div>"
+        },
+        {
+          "type": "p",
+          "text": "The intermediate signals are calculated, not measurements from the guide. They show what a threefold midpoint shift could mean for a single-concentration screen. A compound can cross a hit threshold even though both endpoint controls remain exactly where they were.",
+          "html": "<p>The intermediate signals are calculated, not measurements from the guide. They show what a threefold midpoint shift could mean for a single-concentration screen. A compound can cross a hit threshold even though both endpoint controls remain exactly where they were.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Give those controls standard deviations of 300 and 100 units, respectively. Both curves would have the same Z′ of 0.88, because the high-control mean, low-control mean and their variation have not changed. The control statistics show a well-separated measurement window while leaving this change in the competition curve untested.",
+          "html": "<p>Give those controls standard deviations of 300 and 100 units, respectively. Both curves would have the same Z′ of 0.88, because the high-control mean, low-control mean and their variation have not changed. The control statistics show a well-separated measurement window while leaving this change in the competition curve untested.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A reference curve supplies information the two endpoint populations cannot. Its midpoint follows the competition response, and its slope and limits help reveal whether the change is more complicated than a horizontal displacement. Retain uncertainty on those fits. A small apparent shift from a poorly constrained curve should not carry the same weight as a reproducible shift supported by well-sampled plateaus.",
+          "html": "<p>A reference curve supplies information the two endpoint populations cannot. Its midpoint follows the competition response, and its slope and limits help reveal whether the change is more complicated than a horizontal displacement. Retain uncertainty on those fits. A small apparent shift from a poorly constrained curve should not carry the same weight as a reproducible shift supported by well-sampled plateaus.</p>"
+        }
+      ]
+    },
+    {
+      "id": "a-different-assay-makes-the-same-practical-point",
+      "heading": "A different assay makes the same practical point",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "A different assay makes the same practical point",
+          "html": "<h2 id=\"a-different-assay-makes-the-same-practical-point\">A different assay makes the same practical point</h2>"
+        },
+        {
+          "type": "div",
+          "text": "The Predictor hERG fluorescence polarization manual reports a time-course example for E-4031. Its IC subscript 50 rises from 23 nM after one hour to 39 nM after four hours, while the reported assay window rises from 111 to 153 mP and Z′ improves from 0.56 to 0.77. The manual suggests a complex equilibrium involving tracer, binding sites and membrane, while noting that it was not studied further. It recommends determining timing for the intended workflow. [3]",
+          "html": "<div class=\"math-paragraph\">The Predictor hERG fluorescence polarization manual reports a time-course example for E-4031. Its <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> rises from 23 nM after one hour to 39 nM after four hours, while the reported assay window rises from 111 to 153 mP and Z′ improves from 0.56 to 0.77. The manual suggests a complex equilibrium involving tracer, binding sites and membrane, while noting that it was not studied further. It recommends determining timing for the intended workflow. [3]</div>"
+        },
+        {
+          "type": "p",
+          "text": "The improvement in control separation accompanies a changed potency estimate. The Alpha and hERG examples use different detection mechanisms and cannot supply a universal direction or magnitude for incubation effects. Together they give a good reason to qualify the curve as well as the signal.",
+          "html": "<p>The improvement in control separation accompanies a changed potency estimate. The Alpha and hERG examples use different detection mechanisms and cannot supply a universal direction or magnitude for incubation effects. Together they give a good reason to qualify the curve as well as the signal.</p>"
+        },
+        {
+          "type": "div",
+          "text": "Comparing values from different days or protocols requires that timing information. A time-dependent IC subscript 50 is an experimental result under specified conditions. Leaving the incubation out of the record makes that result harder to interpret, particularly when a series contains compounds with different binding kinetics.",
+          "html": "<div class=\"math-paragraph\">Comparing values from different days or protocols requires that timing information. A time-dependent <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> is an experimental result under specified conditions. Leaving the incubation out of the record makes that result harder to interpret, particularly when a series contains compounds with different binding kinetics.</div>"
+        }
+      ]
+    },
+    {
+      "id": "give-each-possible-explanation-its-own-experiment",
+      "heading": "Give each possible explanation its own experiment",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Give each possible explanation its own experiment",
+          "html": "<h2 id=\"give-each-possible-explanation-its-own-experiment\">Give each possible explanation its own experiment</h2>"
+        },
+        {
+          "type": "div",
+          "text": "A shift with time does not establish long residence time. Residence time concerns dissociation; a moving competition curve can also reflect association, changing tracer distribution, nonspecific binding or instability. A kinetic binding experiment with an appropriate model and adequate observation period provides stronger evidence about rates. Two endpoint IC subscript 50 values provide much less information. [2]",
+          "html": "<div class=\"math-paragraph\">A shift with time does not establish long residence time. Residence time concerns dissociation; a moving competition curve can also reflect association, changing tracer distribution, nonspecific binding or instability. A kinetic binding experiment with an appropriate model and adequate observation period provides stronger evidence about rates. Two endpoint <div class=\"equation\" tabindex=\"0\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math></div> values provide much less information. [2]</div>"
+        },
+        {
+          "type": "p",
+          "text": "Enzyme assays bring another distinction. If catalysis continues during the added waiting period, product accumulates and substrate may become depleted. A changing response can then arise even with rapidly equilibrating inhibitor binding. Determine whether the biological reaction is still running and whether the intended initial-rate assumptions remain reasonable. Reagents that develop the detection signal add further timing requirements after the enzyme reaction has ended.",
+          "html": "<p>Enzyme assays bring another distinction. If catalysis continues during the added waiting period, product accumulates and substrate may become depleted. A changing response can then arise even with rapidly equilibrating inhibitor binding. Determine whether the biological reaction is still running and whether the intended initial-rate assumptions remain reasonable. Reagents that develop the detection signal add further timing requirements after the enzyme reaction has ended.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Temperature can affect these stages differently. Bringing plates to a reproducible liquid temperature improves comparability, but cooling a reaction does not automatically stop it. Include any pre-stop equilibration interval in the workflow assessment. A stable chamber cannot reconstruct the reaction history of a plate that waited too long before the terminating reagent arrived.",
+          "html": "<p>Temperature can affect these stages differently. Bringing plates to a reproducible liquid temperature improves comparability, but cooling a reaction does not automatically stop it. Include any pre-stop equilibration interval in the workflow assessment. A stable chamber cannot reconstruct the reaction history of a plate that waited too long before the terminating reagent arrived.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For Alpha assays, previous illumination is another variable. The practical guide explicitly recommends separate wells for each time point when establishing the equilibrium time course. Use fresh matched wells or plates for that purpose, with reagent preparation and handling held as consistent as practical. Otherwise, time since preparation and number of previous measurements become entangled. [1]",
+          "html": "<p>For Alpha assays, previous illumination is another variable. The practical guide explicitly recommends separate wells for each time point when establishing the equilibrium time course. Use fresh matched wells or plates for that purpose, with reagent preparation and handling held as consistent as practical. Otherwise, time since preparation and number of previous measurements become entangled. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "qualify-the-interval-you-intend-to-use",
+      "heading": "Qualify the interval you intend to use",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Qualify the interval you intend to use",
+          "html": "<h2 id=\"qualify-the-interval-you-intend-to-use\">Qualify the interval you intend to use</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Start with the earliest allowed read, the normal operating time and the latest plausible read after a routine delay. Include the assay's actual minimum incubation requirements. If no prior timing information exists, a broader exploratory time course comes first; an arbitrary three-point schedule may miss the behavior you need to understand.",
+          "html": "<p>Start with the earliest allowed read, the normal operating time and the latest plausible read after a routine delay. Include the assay's actual minimum incubation requirements. If no prior timing information exists, a broader exploratory time course comes first; an arbitrary three-point schedule may miss the behavior you need to understand.</p>"
+        },
+        {
+          "type": "p",
+          "text": "At each selected time, measure a complete concentration-response curve, not only the no-competitor and fully displaced controls. Use enough concentrations to define both limits and the region around the midpoint, with replication suitable for the assay's precision. Include more than one reference ligand where possible. A rapidly equilibrating standard may remain well behaved while a slower compound continues to change.",
+          "html": "<p>At each selected time, measure a complete concentration-response curve, not only the no-competitor and fully displaced controls. Use enough concentrations to define both limits and the region around the midpoint, with replication suitable for the assay's precision. Include more than one reference ligand where possible. A rapidly equilibrating standard may remain well behaved while a slower compound continues to change.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Distribute the controls and curve replicates so concentration is not inseparable from row, column or acquisition time. Retain raw signal as well as normalized response. A common multiplicative intensity change may largely disappear during normalization; a concentration-dependent change will not generally do so. Plot signal, midpoint and slope against elapsed time rather than reducing the qualification to one pass/fail statistic.",
+          "html": "<p>Distribute the controls and curve replicates so concentration is not inseparable from row, column or acquisition time. Retain raw signal as well as normalized response. A common multiplicative intensity change may largely disappear during normalization; a concentration-dependent change will not generally do so. Plot signal, midpoint and slope against elapsed time rather than reducing the qualification to one pass/fail statistic.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Define acceptable variation from the use of the assay. A screen seeking large effects and a medicinal-chemistry assay ranking close analogs may need different tolerances. Estimate ordinary between-run variation before declaring an allowable potency drift. Specify an operating interval and a rule for plates that fall outside it.",
+          "html": "<p>Define acceptable variation from the use of the assay. A screen seeking large effects and a medicinal-chemistry assay ranking close analogs may need different tolerances. Estimate ordinary between-run variation before declaring an allowable potency drift. Specify an operating interval and a rule for plates that fall outside it.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If longer incubation moves the curve, the next useful step is to establish whether it eventually stabilizes and whether that stable state is practical for the workflow. A defined earlier endpoint can also be useful when validated and reported consistently, with its kinetic limitations understood. Record the interval beside the reported potency. A colleague comparing the next run should be able to tell whether a changed curve reflects a new compound or a different time point.",
+          "html": "<p>If longer incubation moves the curve, the next useful step is to establish whether it eventually stabilizes and whether that stable state is practical for the workflow. A defined earlier endpoint can also be useful when validated and reported consistently, with its kinetic limitations understood. Record the interval beside the reported potency. A colleague comparing the next run should be able to tell whether a changed curve reflects a new compound or a different time point.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. PerkinElmer. AlphaScreen practical guide. PDF p. 30, printed p. 24: equilibrium time course, separate wells and the cAMP incubation example. Historical assay-specific guidance.",
+          "html": "<p id=\"ref-1\">1. PerkinElmer. <a href=\"https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf\">AlphaScreen practical guide</a>. PDF p. 30, printed p. 24: equilibrium time course, separate wells and the cAMP incubation example. Historical assay-specific guidance.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Hoare SRJ (2021). Analyzing Kinetic Binding Data. Assay Guidance Manual. Supplied 2021 compilation, PDF pp. 61–79: association, dissociation, competition kinetics and limits of rate estimation. Consult the chapter's models before inferring residence time from endpoint data.",
+          "html": "<p id=\"ref-2\">2. Hoare SRJ (2021). Analyzing Kinetic Binding Data. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK53196/\">Assay Guidance Manual</a>. Supplied 2021 compilation, PDF pp. 61–79: association, dissociation, competition kinetics and limits of rate estimation. Consult the chapter's models before inferring residence time from endpoint data.</p>"
+        },
+        {
+          "type": "p",
+          "text": "3. Invitrogen. Predictor hERG Fluorescence Polarization Assay manual. PDF p. 11, section 7.1 and Table 7: E-4031 time course. These historical results describe this assay, not a general FP incubation requirement.",
+          "html": "<p id=\"ref-3\">3. Invitrogen. <a href=\"https://documents.thermofisher.com/TFS-Assets/LSG/manuals/Predictor_hERG_FP_Assay_man.pdf\">Predictor hERG Fluorescence Polarization Assay manual</a>. PDF p. 11, section 7.1 and Table 7: E-4031 time course. These historical results describe this assay, not a general FP incubation requirement.</p>"
+        },
+        {
+          "type": "p",
+          "text": "4. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition. Printed pp. 149–150: count-rate linearity and correction. A signal plateau alone does not establish linear detector response.",
+          "html": "<p id=\"ref-4\">4. Hamamatsu Photonics. <a href=\"https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/etd/PMT_handbook_v4E.pdf\">Photomultiplier Tubes: Basics and Applications, fourth edition</a>. Printed pp. 149–150: count-rate linearity and correction. A signal plateau alone does not establish linear detector response.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. PerkinElmer. AlphaScreen practical guide. PDF p. 30, printed p. 24: equilibrium time course, separate wells and the cAMP incubation example. Historical assay-specific guidance.",
+      "urls": [
+        "https://www.urmc.rochester.edu/MediaLibraries/URMCMedia/hts/documents/AlphaScreenPracticalGuide.pdf"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Hoare SRJ (2021). Analyzing Kinetic Binding Data. Assay Guidance Manual. Supplied 2021 compilation, PDF pp. 61–79: association, dissociation, competition kinetics and limits of rate estimation. Consult the chapter's models before inferring residence time from endpoint data.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK53196/"
+      ]
+    },
+    {
+      "id": "ref-3",
+      "citation": "3. Invitrogen. Predictor hERG Fluorescence Polarization Assay manual. PDF p. 11, section 7.1 and Table 7: E-4031 time course. These historical results describe this assay, not a general FP incubation requirement.",
+      "urls": [
+        "https://documents.thermofisher.com/TFS-Assets/LSG/manuals/Predictor_hERG_FP_Assay_man.pdf"
+      ]
+    },
+    {
+      "id": "ref-4",
+      "citation": "4. Hamamatsu Photonics. Photomultiplier Tubes: Basics and Applications, fourth edition. Printed pp. 149–150: count-rate linearity and correction. A signal plateau alone does not establish linear detector response.",
+      "urls": [
+        "https://www.hamamatsu.com/content/dam/hamamatsu-photonics/sites/documents/99_SALES_LIBRARY/etd/PMT_handbook_v4E.pdf"
+      ]
+    }
+  ],
+  "equations": [
+    {
+      "description": "IC subscript 50",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math>"
+    },
+    {
+      "description": "S(c) = L + (H − L) divided by (1 + (c) divided by (IC subscript 50))",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"S(c) = L + (H − L) divided by (1 + (c) divided by (IC subscript 50))\"><mrow><mrow><mtext>S(c) = L + </mtext></mrow><mfrac><mrow><mrow><mtext>H − L</mtext></mrow></mrow><mrow><mrow><mtext>1 + </mtext></mrow><mfrac><mrow><mrow><mtext>c</mtext></mrow></mrow><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></mfrac></mrow></mfrac></mrow></math>"
+    },
+    {
+      "description": "IC subscript 50",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math>"
+    },
+    {
+      "description": "IC subscript 50",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math>"
+    },
+    {
+      "description": "IC subscript 50",
+      "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\" aria-label=\"IC subscript 50\"><mrow><msub><mrow><mrow><mtext>IC</mtext></mrow></mrow><mrow><mrow><mtext>50</mtext></mrow></mrow></msub></mrow></math>"
+    }
+  ],
+  "tables": [
+    {
+      "caption": "Waiting longer can move the competition curve",
+      "rows": [
+        [
+          "Curve midpoint",
+          "Signal at 10 nM",
+          "Normalized inhibition"
+        ],
+        [
+          "5 nM",
+          "3,833",
+          "66.7%"
+        ],
+        [
+          "15 nM",
+          "6,500",
+          "40.0%"
+        ]
+      ],
+      "data_kind": "author-provided table; see source caveats"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "9adef4a6ae136fab9e827a67f827185d83d6eb299af28d672bd02c04edcc0218"
+}

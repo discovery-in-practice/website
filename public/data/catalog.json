@@ -1601,5 +1601,190 @@
     "date_modified": "2026-10-08",
     "json_url": "https://discoveryinpractice.com/articles/sequential-alphaplex-channel-bias/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/sequential-alphaplex-channel-bias/article.md"
+  },
+  {
+    "id": "1536-well-assay-evaporation-temperature",
+    "title": "1536-well assays: the waiting time is part of the assay",
+    "canonical_url": "https://discoveryinpractice.com/articles/1536-well-assay-evaporation-temperature/",
+    "summary": "Optimize 1536-well assays for real screening runs: control evaporation, queue time, mixing, room-temperature glow detection and plate reader stability.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "1536-well assays",
+      "Evaporation",
+      "Temperature",
+      "Automation"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "ecc7f18806d09f4c32328708f198e9464ee0087bb47eba496633610e91f8b1f2",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/1536-well-assay-evaporation-temperature/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/1536-well-assay-evaporation-temperature/article.md"
+  },
+  {
+    "id": "low-volume-liquid-handling",
+    "title": "Low volume liquid handling for drug discovery",
+    "canonical_url": "https://discoveryinpractice.com/compare/low-volume-liquid-handling/",
+    "summary": "Choosing among acoustic transfer digital dispensing and positive displacement",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Liquid handling",
+      "Miniaturization",
+      "Automation"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "a57e53e8efd4e50467aec57b2d578bfbbf4323fc2797b4af32ce2039c4597031",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/compare/low-volume-liquid-handling/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/low-volume-liquid-handling/article.md"
+  },
+  {
+    "id": "incubation-time-competition-assay-ic50",
+    "title": "Waiting longer can move the competition curve",
+    "canonical_url": "https://discoveryinpractice.com/articles/incubation-time-competition-assay-ic50/",
+    "summary": "Longer incubation can improve an assay window while changing potency. Explore AlphaScreen and hERG examples and a practical way to qualify complete curves.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Assay timing",
+      "Competition assays",
+      "AlphaScreen"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "9adef4a6ae136fab9e827a67f827185d83d6eb299af28d672bd02c04edcc0218",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/incubation-time-competition-assay-ic50/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/incubation-time-competition-assay-ic50/article.md"
+  },
+  {
+    "id": "microplate-mixing-dispensing-1536-well",
+    "title": "Dispensed does not mean mixed",
+    "canonical_url": "https://discoveryinpractice.com/articles/microplate-mixing-dispensing-1536-well/",
+    "summary": "Accurate dispensing can still create uneven early exposure. Explore DMSO gradients, diffusion times and practical mixing checks for 384- and 1536-well assays.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Mixing",
+      "Liquid handling",
+      "1536-well assays"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "6143917063b31e7c3210813e9bb0e10863a4458378d7a8a7b55fea2066248a17",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/microplate-mixing-dispensing-1536-well/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/microplate-mixing-dispensing-1536-well/article.md"
+  },
+  {
+    "id": "kinase-assay-reaction-detection-dilution",
+    "title": "Let the reaction and the detector use different concentrations",
+    "canonical_url": "https://discoveryinpractice.com/articles/kinase-assay-reaction-detection-dilution/",
+    "summary": "Optimize kinase reactions and detection separately. Follow a worked dilution example, account for total substrate and validate stopping, timing and temperature.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Kinase assays",
+      "Detection chemistry",
+      "Dilution"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "8d0a60bbb9ac22836419fab53987c4a34a326a0e6359e75c07c96a8d8fcb78ad",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/kinase-assay-reaction-detection-dilution/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/kinase-assay-reaction-detection-dilution/article.md"
+  },
+  {
+    "id": "384-1536-well-assay-mixing",
+    "title": "How do I know whether a 384- or 1536-well assay is actually mixed?",
+    "canonical_url": "https://discoveryinpractice.com/articles/384-1536-well-assay-mixing/",
+    "summary": "Learn why shaking speed and stable fluorescence do not prove mixing, and how to qualify a mixing method for a dense microplate assay.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Mixing",
+      "1536-well assays",
+      "Liquid handling"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "b4963356941b9d55c8cd45cdfdb2f781b67d92b2af8c0f5dcb0fb11971cf5b38",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/384-1536-well-assay-mixing/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/384-1536-well-assay-mixing/article.md"
+  },
+  {
+    "id": "when-to-use-inject-and-read",
+    "title": "When do I need inject-and-read measurements instead of dispensing the whole plate first?",
+    "canonical_url": "https://discoveryinpractice.com/articles/when-to-use-inject-and-read/",
+    "summary": "Choose inject-and-read from reaction kinetics and timing tolerance, with examples distinguishing fast signals from stable glow endpoints.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Luminescence",
+      "Assay timing",
+      "Inject-and-read"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "2c80bc20b52f6b611c1c0ec1810e530988f27d82e69876688917fd0e95da089a",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/when-to-use-inject-and-read/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/when-to-use-inject-and-read/article.md"
+  },
+  {
+    "id": "test-plate-reader-injector-carryover",
+    "title": "How do I test for injector carryover in a plate reader?",
+    "canonical_url": "https://discoveryinpractice.com/articles/test-plate-reader-injector-carryover/",
+    "summary": "Test injector carryover with sequential blanks and positive-control recovery, including residues that suppress rather than increase luminescence.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Liquid handling",
+      "Luminescence",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "2f10570ab513dd59d7c88419e1aa827a802f42367e2eef52f4134b97f69101f8",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-09",
+    "date_modified": "2026-10-09",
+    "json_url": "https://discoveryinpractice.com/articles/test-plate-reader-injector-carryover/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/test-plate-reader-injector-carryover/article.md"
   }
 ]

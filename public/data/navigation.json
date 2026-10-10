@@ -721,6 +721,61 @@
         "luminescence",
         "screening-equipment"
       ]
+    },
+    "msd-luminex-biomarker-assays": {
+      "section": "compare",
+      "group": "formats",
+      "order": 120,
+      "tags": []
+    },
+    "label-free-binding-instruments": {
+      "section": "compare",
+      "group": "equipment",
+      "order": 100,
+      "tags": [
+        "binding-assays",
+        "screening-equipment"
+      ]
+    },
+    "screening-flow-cytometers": {
+      "section": "compare",
+      "group": "equipment",
+      "order": 120,
+      "tags": [
+        "screening-equipment"
+      ]
+    },
+    "luciferase-inhibitor-increased-signal": {
+      "section": "troubleshooting",
+      "group": "chemistry",
+      "order": 100,
+      "tags": [
+        "luminescence"
+      ]
+    },
+    "luciferase-reporter-hit-confirmation": {
+      "section": "troubleshooting",
+      "group": "chemistry",
+      "order": 130,
+      "tags": [
+        "luminescence"
+      ]
+    },
+    "fluorescent-screening-hit-interference": {
+      "section": "troubleshooting",
+      "group": "chemistry",
+      "order": 160,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "luminescence-hit-reporter-inhibition": {
+      "section": "troubleshooting",
+      "group": "chemistry",
+      "order": 170,
+      "tags": [
+        "luminescence"
+      ]
     }
   },
   "groups": {

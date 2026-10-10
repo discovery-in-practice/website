@@ -1786,5 +1786,168 @@
     "date_modified": "2026-10-09",
     "json_url": "https://discoveryinpractice.com/articles/test-plate-reader-injector-carryover/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/test-plate-reader-injector-carryover/article.md"
+  },
+  {
+    "id": "msd-luminex-biomarker-assays",
+    "title": "Choosing MSD Luminex and alternative biomarker assays",
+    "canonical_url": "https://discoveryinpractice.com/compare/msd-luminex-biomarker-assays/",
+    "summary": "Select the panel that can quantify the biology in your actual samples",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Biomarker assays",
+      "MSD",
+      "Luminex",
+      "Multiplexing"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "4c1c3909bb19155a55859dbb1bd2f512c21b96da2c0754190b97f5441d75d2af",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/compare/msd-luminex-biomarker-assays/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/msd-luminex-biomarker-assays/article.md"
+  },
+  {
+    "id": "label-free-binding-instruments",
+    "title": "Label free binding instruments for drug discovery",
+    "canonical_url": "https://discoveryinpractice.com/compare/label-free-binding-instruments/",
+    "summary": "Comparing SPR BLI and GCI for affinity kinetics and screening",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Label-free binding",
+      "SPR",
+      "BLI",
+      "GCI"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "a7e79d64fdb703af3d6751387b13c3bc884a61b71aa9433391d87fe7917a06db",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/compare/label-free-binding-instruments/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/label-free-binding-instruments/article.md"
+  },
+  {
+    "id": "screening-flow-cytometers",
+    "title": "Flow cytometers for drug discovery screening",
+    "canonical_url": "https://discoveryinpractice.com/compare/screening-flow-cytometers/",
+    "summary": "Comparing iQue CytoFLEX and Attune plate based workflows",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Flow cytometry",
+      "Screening",
+      "Instrument selection"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "d1737db1aa19e875f5e22f09fb569286c67d21f265aba3d3da241f2c23872aaf",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/compare/screening-flow-cytometers/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/screening-flow-cytometers/article.md"
+  },
+  {
+    "id": "luciferase-inhibitor-increased-signal",
+    "title": "When blocking luciferase creates more light",
+    "canonical_url": "https://discoveryinpractice.com/articles/luciferase-inhibitor-increased-signal/",
+    "summary": "Why a luciferase inhibitor can make cells brighter, how reporter stabilization changes the result, and which controls separate protein abundance from activity.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Luciferase",
+      "Reporter assays",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "898ea954fe6906c98c961c70e42e77f8debe8a947ec57f6ebe7588f398d52e37",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/articles/luciferase-inhibitor-increased-signal/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/luciferase-inhibitor-increased-signal/article.md"
+  },
+  {
+    "id": "luciferase-reporter-hit-confirmation",
+    "title": "The inhibitor that made the reporter brighter",
+    "canonical_url": "https://discoveryinpractice.com/articles/luciferase-reporter-hit-confirmation/",
+    "summary": "Investigate brighter luciferase reporter hits with raw-channel checks, reporter counterscreens and independent endpoints that can retain useful biology.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Luciferase",
+      "Hit confirmation",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "e855a1b8fcb5193c8ff66c439dfb7c3e3103d88a2b17ca0ef67ef80e84ee42d8",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/articles/luciferase-reporter-hit-confirmation/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/luciferase-reporter-hit-confirmation/article.md"
+  },
+  {
+    "id": "fluorescent-screening-hit-interference",
+    "title": "How can I tell whether a fluorescent screening hit is active or just interfering with detection?",
+    "canonical_url": "https://discoveryinpractice.com/articles/fluorescent-screening-hit-interference/",
+    "summary": "Separate real activity from autofluorescence, quenching and inner-filter effects with compound-only controls and matched detection counterassays.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Assay interference",
+      "Hit confirmation"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "20cc225473767b02430ad2426c83871318e89e9567a21a1c25f42440c7d93ee3",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/articles/fluorescent-screening-hit-interference/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/fluorescent-screening-hit-interference/article.md"
+  },
+  {
+    "id": "luminescence-hit-reporter-inhibition",
+    "title": "How can I tell whether a luminescence hit changes the biology or inhibits the reporter reaction?",
+    "canonical_url": "https://discoveryinpractice.com/articles/luminescence-hit-reporter-inhibition/",
+    "summary": "Test luminescence hits for reporter inhibition, signal quenching and reporter stabilization using matched counterassays and independent biology.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Luminescence",
+      "Luciferase",
+      "Assay interference"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "c9fe3e6f2663a5dc7d2570ac4e65ef99f22eb1e1a9ecf42ff72469eb04b1bfdd",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-10",
+    "date_modified": "2026-10-10",
+    "json_url": "https://discoveryinpractice.com/articles/luminescence-hit-reporter-inhibition/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/luminescence-hit-reporter-inhibition/article.md"
   }
 ]

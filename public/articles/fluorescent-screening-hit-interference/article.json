@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "fluorescent-screening-hit-interference",
+  "canonical_url": "https://discoveryinpractice.com/articles/fluorescent-screening-hit-interference/",
+  "title": "How can I tell whether a fluorescent screening hit is active or just interfering with detection?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "Separate real activity from autofluorescence, quenching and inner-filter effects with compound-only controls and matched detection counterassays.",
+  "takeaways": [
+    "Run both compound-only and detection-only controls",
+    "Absorbing light can mimic inhibition",
+    "Change the detection vulnerability"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "Assay interference",
+    "Hit confirmation"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-10",
+  "date_modified": "2026-10-10",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Test whether the compound changes the detection signal when the biological reaction cannot change it, then confirm the biological effect with a suitably independent readout. Compound autofluorescence can add light; absorption and quenching can remove light. Either process can produce a smooth concentration-response curve. A smooth potency curve may come from altered fluorescence rather than target activity. [1]</p><h2 id=\"run-both-compound-only-and-detection-only-controls\">Run both compound-only and detection-only controls</h2><p>A compound-only control contains the test compound in the relevant assay matrix, without the assay's fluorescent label or product. Measure it at the same excitation and emission settings. A concentration-dependent signal shows that the compound can contribute light in that window. Match solvent, pH and incubation conditions because fluorescence can depend on the environment.</p><p>A detection-only counterassay contains the fluorescent tracer or preformed product plus compound, but omits or disables the target-dependent step. This detects loss of assay fluorescence as well as added fluorescence. Compound-only wells cannot reveal quenching of a fluorophore that is absent.</p><p>Use a fluorescent concentration representative of the actual assay endpoint. An excessively bright counterassay can conceal additive interference that overwhelms a weak screening signal. For example, an added 100 relative fluorescence units (RFU) of compound fluorescence adds only 1% to a 10,000 RFU reference but doubles a 100 RFU assay signal. These are illustrative values, not measurements. [1]</p><h2 id=\"absorbing-light-can-mimic-inhibition\">Absorbing light can mimic inhibition</h2><p>An absorbing compound can intercept excitation light before it reaches the fluorophore or absorb emitted light before it reaches the detector. These inner-filter effects can lower measured fluorescence without changing product concentration. Other quenching mechanisms also exist, so a signal decrease alone does not identify its cause. [1]</p><p>Compare compound absorption with the actual excitation and emission bands, not just the nominal peak wavelengths. A spectrum and a matched product-spike experiment help distinguish candidates for optical interference. Keep plate type and volume constant: pathlength changes can alter the size of an absorption artifact.</p><p>For fluorescence polarization (FP), inspect both polarization channels and total fluorescence as well as millipolarization units (mP). Compound fluorescence can alter the ratio even when the displayed mP value looks physically plausible. The Hall review discusses these intensity checks and assay-specific interference controls. [2]</p><h2 id=\"change-the-detection-vulnerability\">Change the detection vulnerability</h2><p>Confirm activity with a method that reports the same biological event through different chemistry or physics. For an enzyme reaction, an appropriate mass-spectrometric product measurement may be useful. Changing to a spectrally distinct fluorophore can also help, but a broad absorber may interfere in both windows. Verify that the alternate substrate or label still reports the biological event of interest.</p><p>For a concrete spectral example, the Assay Guidance Manual describes resorufin detection with excitation at 530 nm and emission at 590 nm in a coupled enzyme assay. Those are reported detection wavelengths, not a universal filter specification. Changing to that chemistry also introduces a coupling reaction that needs its own controls. [1]</p><p>Flexible wavelengths and effective optical rejection help avoid some interfering bands. Wider emission collection can improve photon counts while admitting more compound fluorescence. No filter, dichroic mirror or simultaneous channel measurement can reliably distinguish two molecules emitting overlapping light merely by collecting it more efficiently.</p><h2 id=\"keep-activity-and-interference-as-separate-findings\">Keep activity and interference as separate findings</h2><p>A compound can be biologically active and optically troublesome at the same time; the Assay Guidance Manual explicitly makes this point. [1] Flag the affected concentration range and preserve the primary result, counterassay result and independent biological result together.</p><p>A negative detection counterassay narrows the alternatives under the conditions tested. It does not exclude aggregation, substrate-specific effects or cellular toxicity. Advance a hit when the evidence supports its biological interpretation, and record which concentrations remain uncertain.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. Simeonov A, Davis MI. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK343429/\">Interference with Fluorescence and Absorbance</a>. Assay Guidance Manual, updated 1 July 2018. Fluorescence interferences and assay-design strategies; supplied NIH compilation, PDF pp. 1259–1271.</p><p id=\"ref-2\">2. Hall MD and colleagues. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/\">Fluorescence polarization assays in high-throughput screening and drug discovery: a review</a>. Methods and Applications in Fluorescence 2016;4:022001, section 5. Supplied full PDF; compound interference and raw-intensity checks.</p>",
+  "body_text": "Test whether the compound changes the detection signal when the biological reaction cannot change it, then confirm the biological effect with a suitably independent readout. Compound autofluorescence can add light; absorption and quenching can remove light. Either process can produce a smooth concentration-response curve. A smooth potency curve may come from altered fluorescence rather than target activity. [1]\n\nRun both compound-only and detection-only controls\n\nA compound-only control contains the test compound in the relevant assay matrix, without the assay's fluorescent label or product. Measure it at the same excitation and emission settings. A concentration-dependent signal shows that the compound can contribute light in that window. Match solvent, pH and incubation conditions because fluorescence can depend on the environment.\n\nA detection-only counterassay contains the fluorescent tracer or preformed product plus compound, but omits or disables the target-dependent step. This detects loss of assay fluorescence as well as added fluorescence. Compound-only wells cannot reveal quenching of a fluorophore that is absent.\n\nUse a fluorescent concentration representative of the actual assay endpoint. An excessively bright counterassay can conceal additive interference that overwhelms a weak screening signal. For example, an added 100 relative fluorescence units (RFU) of compound fluorescence adds only 1% to a 10,000 RFU reference but doubles a 100 RFU assay signal. These are illustrative values, not measurements. [1]\n\nAbsorbing light can mimic inhibition\n\nAn absorbing compound can intercept excitation light before it reaches the fluorophore or absorb emitted light before it reaches the detector. These inner-filter effects can lower measured fluorescence without changing product concentration. Other quenching mechanisms also exist, so a signal decrease alone does not identify its cause. [1]\n\nCompare compound absorption with the actual excitation and emission bands, not just the nominal peak wavelengths. A spectrum and a matched product-spike experiment help distinguish candidates for optical interference. Keep plate type and volume constant: pathlength changes can alter the size of an absorption artifact.\n\nFor fluorescence polarization (FP), inspect both polarization channels and total fluorescence as well as millipolarization units (mP). Compound fluorescence can alter the ratio even when the displayed mP value looks physically plausible. The Hall review discusses these intensity checks and assay-specific interference controls. [2]\n\nChange the detection vulnerability\n\nConfirm activity with a method that reports the same biological event through different chemistry or physics. For an enzyme reaction, an appropriate mass-spectrometric product measurement may be useful. Changing to a spectrally distinct fluorophore can also help, but a broad absorber may interfere in both windows. Verify that the alternate substrate or label still reports the biological event of interest.\n\nFor a concrete spectral example, the Assay Guidance Manual describes resorufin detection with excitation at 530 nm and emission at 590 nm in a coupled enzyme assay. Those are reported detection wavelengths, not a universal filter specification. Changing to that chemistry also introduces a coupling reaction that needs its own controls. [1]\n\nFlexible wavelengths and effective optical rejection help avoid some interfering bands. Wider emission collection can improve photon counts while admitting more compound fluorescence. No filter, dichroic mirror or simultaneous channel measurement can reliably distinguish two molecules emitting overlapping light merely by collecting it more efficiently.\n\nKeep activity and interference as separate findings\n\nA compound can be biologically active and optically troublesome at the same time; the Assay Guidance Manual explicitly makes this point. [1] Flag the affected concentration range and preserve the primary result, counterassay result and independent biological result together.\n\nA negative detection counterassay narrows the alternatives under the conditions tested. It does not exclude aggregation, substrate-specific effects or cellular toxicity. Advance a hit when the evidence supports its biological interpretation, and record which concentrations remain uncertain.\n\nReferences\n\n1. Simeonov A, Davis MI. Interference with Fluorescence and Absorbance. Assay Guidance Manual, updated 1 July 2018. Fluorescence interferences and assay-design strategies; supplied NIH compilation, PDF pp. 1259–1271.\n\n2. Hall MD and colleagues. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 2016;4:022001, section 5. Supplied full PDF; compound interference and raw-intensity checks.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Test whether the compound changes the detection signal when the biological reaction cannot change it, then confirm the biological effect with a suitably independent readout. Compound autofluorescence can add light; absorption and quenching can remove light. Either process can produce a smooth concentration-response curve. A smooth potency curve may come from altered fluorescence rather than target activity. [1]",
+          "html": "<p>Test whether the compound changes the detection signal when the biological reaction cannot change it, then confirm the biological effect with a suitably independent readout. Compound autofluorescence can add light; absorption and quenching can remove light. Either process can produce a smooth concentration-response curve. A smooth potency curve may come from altered fluorescence rather than target activity. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "run-both-compound-only-and-detection-only-controls",
+      "heading": "Run both compound-only and detection-only controls",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Run both compound-only and detection-only controls",
+          "html": "<h2 id=\"run-both-compound-only-and-detection-only-controls\">Run both compound-only and detection-only controls</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A compound-only control contains the test compound in the relevant assay matrix, without the assay's fluorescent label or product. Measure it at the same excitation and emission settings. A concentration-dependent signal shows that the compound can contribute light in that window. Match solvent, pH and incubation conditions because fluorescence can depend on the environment.",
+          "html": "<p>A compound-only control contains the test compound in the relevant assay matrix, without the assay's fluorescent label or product. Measure it at the same excitation and emission settings. A concentration-dependent signal shows that the compound can contribute light in that window. Match solvent, pH and incubation conditions because fluorescence can depend on the environment.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A detection-only counterassay contains the fluorescent tracer or preformed product plus compound, but omits or disables the target-dependent step. This detects loss of assay fluorescence as well as added fluorescence. Compound-only wells cannot reveal quenching of a fluorophore that is absent.",
+          "html": "<p>A detection-only counterassay contains the fluorescent tracer or preformed product plus compound, but omits or disables the target-dependent step. This detects loss of assay fluorescence as well as added fluorescence. Compound-only wells cannot reveal quenching of a fluorophore that is absent.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Use a fluorescent concentration representative of the actual assay endpoint. An excessively bright counterassay can conceal additive interference that overwhelms a weak screening signal. For example, an added 100 relative fluorescence units (RFU) of compound fluorescence adds only 1% to a 10,000 RFU reference but doubles a 100 RFU assay signal. These are illustrative values, not measurements. [1]",
+          "html": "<p>Use a fluorescent concentration representative of the actual assay endpoint. An excessively bright counterassay can conceal additive interference that overwhelms a weak screening signal. For example, an added 100 relative fluorescence units (RFU) of compound fluorescence adds only 1% to a 10,000 RFU reference but doubles a 100 RFU assay signal. These are illustrative values, not measurements. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "absorbing-light-can-mimic-inhibition",
+      "heading": "Absorbing light can mimic inhibition",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Absorbing light can mimic inhibition",
+          "html": "<h2 id=\"absorbing-light-can-mimic-inhibition\">Absorbing light can mimic inhibition</h2>"
+        },
+        {
+          "type": "p",
+          "text": "An absorbing compound can intercept excitation light before it reaches the fluorophore or absorb emitted light before it reaches the detector. These inner-filter effects can lower measured fluorescence without changing product concentration. Other quenching mechanisms also exist, so a signal decrease alone does not identify its cause. [1]",
+          "html": "<p>An absorbing compound can intercept excitation light before it reaches the fluorophore or absorb emitted light before it reaches the detector. These inner-filter effects can lower measured fluorescence without changing product concentration. Other quenching mechanisms also exist, so a signal decrease alone does not identify its cause. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare compound absorption with the actual excitation and emission bands, not just the nominal peak wavelengths. A spectrum and a matched product-spike experiment help distinguish candidates for optical interference. Keep plate type and volume constant: pathlength changes can alter the size of an absorption artifact.",
+          "html": "<p>Compare compound absorption with the actual excitation and emission bands, not just the nominal peak wavelengths. A spectrum and a matched product-spike experiment help distinguish candidates for optical interference. Keep plate type and volume constant: pathlength changes can alter the size of an absorption artifact.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For fluorescence polarization (FP), inspect both polarization channels and total fluorescence as well as millipolarization units (mP). Compound fluorescence can alter the ratio even when the displayed mP value looks physically plausible. The Hall review discusses these intensity checks and assay-specific interference controls. [2]",
+          "html": "<p>For fluorescence polarization (FP), inspect both polarization channels and total fluorescence as well as millipolarization units (mP). Compound fluorescence can alter the ratio even when the displayed mP value looks physically plausible. The Hall review discusses these intensity checks and assay-specific interference controls. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "change-the-detection-vulnerability",
+      "heading": "Change the detection vulnerability",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Change the detection vulnerability",
+          "html": "<h2 id=\"change-the-detection-vulnerability\">Change the detection vulnerability</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Confirm activity with a method that reports the same biological event through different chemistry or physics. For an enzyme reaction, an appropriate mass-spectrometric product measurement may be useful. Changing to a spectrally distinct fluorophore can also help, but a broad absorber may interfere in both windows. Verify that the alternate substrate or label still reports the biological event of interest.",
+          "html": "<p>Confirm activity with a method that reports the same biological event through different chemistry or physics. For an enzyme reaction, an appropriate mass-spectrometric product measurement may be useful. Changing to a spectrally distinct fluorophore can also help, but a broad absorber may interfere in both windows. Verify that the alternate substrate or label still reports the biological event of interest.</p>"
+        },
+        {
+          "type": "p",
+          "text": "For a concrete spectral example, the Assay Guidance Manual describes resorufin detection with excitation at 530 nm and emission at 590 nm in a coupled enzyme assay. Those are reported detection wavelengths, not a universal filter specification. Changing to that chemistry also introduces a coupling reaction that needs its own controls. [1]",
+          "html": "<p>For a concrete spectral example, the Assay Guidance Manual describes resorufin detection with excitation at 530 nm and emission at 590 nm in a coupled enzyme assay. Those are reported detection wavelengths, not a universal filter specification. Changing to that chemistry also introduces a coupling reaction that needs its own controls. [1]</p>"
+        },
+        {
+          "type": "p",
+          "text": "Flexible wavelengths and effective optical rejection help avoid some interfering bands. Wider emission collection can improve photon counts while admitting more compound fluorescence. No filter, dichroic mirror or simultaneous channel measurement can reliably distinguish two molecules emitting overlapping light merely by collecting it more efficiently.",
+          "html": "<p>Flexible wavelengths and effective optical rejection help avoid some interfering bands. Wider emission collection can improve photon counts while admitting more compound fluorescence. No filter, dichroic mirror or simultaneous channel measurement can reliably distinguish two molecules emitting overlapping light merely by collecting it more efficiently.</p>"
+        }
+      ]
+    },
+    {
+      "id": "keep-activity-and-interference-as-separate-findings",
+      "heading": "Keep activity and interference as separate findings",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Keep activity and interference as separate findings",
+          "html": "<h2 id=\"keep-activity-and-interference-as-separate-findings\">Keep activity and interference as separate findings</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A compound can be biologically active and optically troublesome at the same time; the Assay Guidance Manual explicitly makes this point. [1] Flag the affected concentration range and preserve the primary result, counterassay result and independent biological result together.",
+          "html": "<p>A compound can be biologically active and optically troublesome at the same time; the Assay Guidance Manual explicitly makes this point. [1] Flag the affected concentration range and preserve the primary result, counterassay result and independent biological result together.</p>"
+        },
+        {
+          "type": "p",
+          "text": "A negative detection counterassay narrows the alternatives under the conditions tested. It does not exclude aggregation, substrate-specific effects or cellular toxicity. Advance a hit when the evidence supports its biological interpretation, and record which concentrations remain uncertain.",
+          "html": "<p>A negative detection counterassay narrows the alternatives under the conditions tested. It does not exclude aggregation, substrate-specific effects or cellular toxicity. Advance a hit when the evidence supports its biological interpretation, and record which concentrations remain uncertain.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. Simeonov A, Davis MI. Interference with Fluorescence and Absorbance. Assay Guidance Manual, updated 1 July 2018. Fluorescence interferences and assay-design strategies; supplied NIH compilation, PDF pp. 1259–1271.",
+          "html": "<p id=\"ref-1\">1. Simeonov A, Davis MI. <a href=\"https://www.ncbi.nlm.nih.gov/books/NBK343429/\">Interference with Fluorescence and Absorbance</a>. Assay Guidance Manual, updated 1 July 2018. Fluorescence interferences and assay-design strategies; supplied NIH compilation, PDF pp. 1259–1271.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. Hall MD and colleagues. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 2016;4:022001, section 5. Supplied full PDF; compound interference and raw-intensity checks.",
+          "html": "<p id=\"ref-2\">2. Hall MD and colleagues. <a href=\"https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/\">Fluorescence polarization assays in high-throughput screening and drug discovery: a review</a>. Methods and Applications in Fluorescence 2016;4:022001, section 5. Supplied full PDF; compound interference and raw-intensity checks.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. Simeonov A, Davis MI. Interference with Fluorescence and Absorbance. Assay Guidance Manual, updated 1 July 2018. Fluorescence interferences and assay-design strategies; supplied NIH compilation, PDF pp. 1259–1271.",
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK343429/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. Hall MD and colleagues. Fluorescence polarization assays in high-throughput screening and drug discovery: a review. Methods and Applications in Fluorescence 2016;4:022001, section 5. Supplied full PDF; compound interference and raw-intensity checks.",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5563979/"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "20cc225473767b02430ad2426c83871318e89e9567a21a1c25f42440c7d93ee3"
+}

@@ -1949,5 +1949,51 @@
     "date_modified": "2026-10-10",
     "json_url": "https://discoveryinpractice.com/articles/luminescence-hit-reporter-inhibition/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/luminescence-hit-reporter-inhibition/article.md"
+  },
+  {
+    "id": "when-to-use-orbital-averaging",
+    "title": "When should I use orbital averaging?",
+    "canonical_url": "https://discoveryinpractice.com/articles/when-to-use-orbital-averaging/",
+    "summary": "When orbital averaging helps heterogeneous cell assays, how it differs from shaking and how to compare center, spiral and matrix reads.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "Orbital averaging",
+      "Cell-based assays"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "79587e2c16de9c9691fae602417b63963b43008056ce6c5411b842fee847e250",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-12",
+    "date_modified": "2026-10-12",
+    "json_url": "https://discoveryinpractice.com/articles/when-to-use-orbital-averaging/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/when-to-use-orbital-averaging/article.md"
+  },
+  {
+    "id": "flashes-versus-fluorescence-integration-time",
+    "title": "Should I increase the number of flashes or the integration time in a fluorescence assay?",
+    "canonical_url": "https://discoveryinpractice.com/articles/flashes-versus-fluorescence-integration-time/",
+    "summary": "Choose between more flashes and longer collection windows for prompt fluorescence and TR-FRET, with timing examples and practical checks.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Fluorescence",
+      "TR-FRET",
+      "Acquisition timing"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "5dc66abafe98dae76e43f24709bc61ebefda0ea949a8f2b3f825b589cca862f1",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-12",
+    "date_modified": "2026-10-12",
+    "json_url": "https://discoveryinpractice.com/articles/flashes-versus-fluorescence-integration-time/article.json",
+    "markdown_url": "https://discoveryinpractice.com/articles/flashes-versus-fluorescence-integration-time/article.md"
   }
 ]

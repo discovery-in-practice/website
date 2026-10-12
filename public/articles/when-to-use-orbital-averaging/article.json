@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "when-to-use-orbital-averaging",
+  "canonical_url": "https://discoveryinpractice.com/articles/when-to-use-orbital-averaging/",
+  "title": "When should I use orbital averaging?",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "When orbital averaging helps heterogeneous cell assays, how it differs from shaking and how to compare center, spiral and matrix reads.",
+  "takeaways": [
+    "Repeating one position does not sample the rest of the well",
+    "An orbit samples a ring",
+    "Compare spatial coverage without adding more reading time"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Fluorescence",
+    "Orbital averaging",
+    "Cell-based assays"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-12",
+  "date_modified": "2026-10-12",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Use orbital averaging when fluorescence varies across a well and a center reading does not reliably represent the sample. Adherent cells, uneven seeding and patchy expression are common reasons to investigate it. The reader averages signals from several positions along an orbit, reducing dependence on the well center if the orbit crosses the relevant material. [1]</p><h2 id=\"repeating-one-position-does-not-sample-the-rest-of-the-well\">Repeating one position does not sample the rest of the well</h2><p>A reader can produce highly repeatable measurements of a small region that contains unusually few cells. More flashes at that location may reduce photon-counting noise while leaving the sampling bias unchanged. Moving the measurement across the well addresses a different source of uncertainty.</p><p>BMG LABTECH's heterogeneous-cell guidance includes green fluorescent protein (GFP)-expressing HeLa cells: 50,000 cells per well in a 96-well plate, measured from below at 482 nm excitation and 530 nm emission. Across ten replicate wells, scanning modes reduced the coefficient of variation (CV) relative to center readings. That is a configuration-specific example of spatial sampling helping a cell assay, rather than a guarantee for every cell type or plate. [2]</p><h2 id=\"an-orbit-samples-a-ring\">An orbit samples a ring</h2><p>Orbital averaging uses a defined circular path. Spiral averaging covers changing radii, while a matrix scan measures a grid and can retain a spatial map. These geometries answer different questions. A ring could miss a compact central cluster; a center reading could miss cells near the wall. A matrix scan can reveal either pattern before you choose a faster routine read. [1,2]</p><p>The resulting average is not automatically a whole-well total. The measured value depends on which regions were sampled, their weighting and the instrument's optical footprint. If the assay requires total cell-associated signal, compare the selected geometry against a suitably validated whole-well method. Avoid interpreting an uncalibrated spatial average as an absolute cell count.</p><p>Orbital averaging is also distinct from orbital shaking. Shaking moves liquid to mix or resuspend it. Averaging changes the locations sampled during measurement; it does not establish that the contents are well mixed. Check the reader's definition of each setting.</p><h2 id=\"compare-spatial-coverage-without-adding-more-reading-time\">Compare spatial coverage without adding more reading time</h2><p>Start with representative untreated and treated wells, including low cell densities and weak responses. Inspect a matrix scan or suitable images for central clusters, rings, detached patches and bubbles. Use matrix-matched blanks to see whether the well wall or plate base contributes position-dependent background.</p><p>Compare center, orbital and broader scanning modes at similar total acquisition time or flash count where feasible. Otherwise a longer scan may look better simply because it collected more photons. Record the orbit diameter in mm, read height, plate type, fill volume and actual time per well in s. Keep the path within the usable well area, allowing for the optical spot size.</p><p>Evaluate independently prepared replicate wells, not only repeated reads of one well. Check whether the change preserves the treatment response and improves precision at the weak end. If a scan changes the mean substantially, inspect its map before assuming that the larger value is better.</p><h2 id=\"decide-whether-the-spatial-pattern-is-biology\">Decide whether the spatial pattern is biology</h2><p>For a homogeneous soluble fluorophore, scanning may add little beyond a well-chosen center measurement. For an assay of cell migration or localized growth, the spatial pattern may itself be the result; collapsing it into one average can discard useful information.</p><p>If you exclude scan points, define the rule before looking at compound identities and apply it consistently. Removing inconvenient low-signal regions after seeing the answer can hide detachment or cytotoxicity. Retain the maps from development so an unexpected screening result can be compared with the spatial patterns you already observed.</p><h2 id=\"references\">References</h2><p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/well-scanning/\">Well-scanning</a>. Orbital, spiral and matrix acquisition.</p><p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/howto-notes/how-to-reduce-data-variability-in-heterogenous-cell-samples/\">How to reduce data variability in heterogenous cell samples</a>, Figures 4–6. GFP HeLa example and spatial heterogeneity. No universal orbit diameter or improvement is inferred.</p>",
+  "body_text": "Use orbital averaging when fluorescence varies across a well and a center reading does not reliably represent the sample. Adherent cells, uneven seeding and patchy expression are common reasons to investigate it. The reader averages signals from several positions along an orbit, reducing dependence on the well center if the orbit crosses the relevant material. [1]\n\nRepeating one position does not sample the rest of the well\n\nA reader can produce highly repeatable measurements of a small region that contains unusually few cells. More flashes at that location may reduce photon-counting noise while leaving the sampling bias unchanged. Moving the measurement across the well addresses a different source of uncertainty.\n\nBMG LABTECH's heterogeneous-cell guidance includes green fluorescent protein (GFP)-expressing HeLa cells: 50,000 cells per well in a 96-well plate, measured from below at 482 nm excitation and 530 nm emission. Across ten replicate wells, scanning modes reduced the coefficient of variation (CV) relative to center readings. That is a configuration-specific example of spatial sampling helping a cell assay, rather than a guarantee for every cell type or plate. [2]\n\nAn orbit samples a ring\n\nOrbital averaging uses a defined circular path. Spiral averaging covers changing radii, while a matrix scan measures a grid and can retain a spatial map. These geometries answer different questions. A ring could miss a compact central cluster; a center reading could miss cells near the wall. A matrix scan can reveal either pattern before you choose a faster routine read. [1,2]\n\nThe resulting average is not automatically a whole-well total. The measured value depends on which regions were sampled, their weighting and the instrument's optical footprint. If the assay requires total cell-associated signal, compare the selected geometry against a suitably validated whole-well method. Avoid interpreting an uncalibrated spatial average as an absolute cell count.\n\nOrbital averaging is also distinct from orbital shaking. Shaking moves liquid to mix or resuspend it. Averaging changes the locations sampled during measurement; it does not establish that the contents are well mixed. Check the reader's definition of each setting.\n\nCompare spatial coverage without adding more reading time\n\nStart with representative untreated and treated wells, including low cell densities and weak responses. Inspect a matrix scan or suitable images for central clusters, rings, detached patches and bubbles. Use matrix-matched blanks to see whether the well wall or plate base contributes position-dependent background.\n\nCompare center, orbital and broader scanning modes at similar total acquisition time or flash count where feasible. Otherwise a longer scan may look better simply because it collected more photons. Record the orbit diameter in mm, read height, plate type, fill volume and actual time per well in s. Keep the path within the usable well area, allowing for the optical spot size.\n\nEvaluate independently prepared replicate wells, not only repeated reads of one well. Check whether the change preserves the treatment response and improves precision at the weak end. If a scan changes the mean substantially, inspect its map before assuming that the larger value is better.\n\nDecide whether the spatial pattern is biology\n\nFor a homogeneous soluble fluorophore, scanning may add little beyond a well-chosen center measurement. For an assay of cell migration or localized growth, the spatial pattern may itself be the result; collapsing it into one average can discard useful information.\n\nIf you exclude scan points, define the rule before looking at compound identities and apply it consistently. Removing inconvenient low-signal regions after seeing the answer can hide detachment or cytotoxicity. Retain the maps from development so an unexpected screening result can be compared with the spatial patterns you already observed.\n\nReferences\n\n1. BMG LABTECH. Well-scanning. Orbital, spiral and matrix acquisition.\n\n2. BMG LABTECH. How to reduce data variability in heterogenous cell samples, Figures 4–6. GFP HeLa example and spatial heterogeneity. No universal orbit diameter or improvement is inferred.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Use orbital averaging when fluorescence varies across a well and a center reading does not reliably represent the sample. Adherent cells, uneven seeding and patchy expression are common reasons to investigate it. The reader averages signals from several positions along an orbit, reducing dependence on the well center if the orbit crosses the relevant material. [1]",
+          "html": "<p>Use orbital averaging when fluorescence varies across a well and a center reading does not reliably represent the sample. Adherent cells, uneven seeding and patchy expression are common reasons to investigate it. The reader averages signals from several positions along an orbit, reducing dependence on the well center if the orbit crosses the relevant material. [1]</p>"
+        }
+      ]
+    },
+    {
+      "id": "repeating-one-position-does-not-sample-the-rest-of-the-well",
+      "heading": "Repeating one position does not sample the rest of the well",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Repeating one position does not sample the rest of the well",
+          "html": "<h2 id=\"repeating-one-position-does-not-sample-the-rest-of-the-well\">Repeating one position does not sample the rest of the well</h2>"
+        },
+        {
+          "type": "p",
+          "text": "A reader can produce highly repeatable measurements of a small region that contains unusually few cells. More flashes at that location may reduce photon-counting noise while leaving the sampling bias unchanged. Moving the measurement across the well addresses a different source of uncertainty.",
+          "html": "<p>A reader can produce highly repeatable measurements of a small region that contains unusually few cells. More flashes at that location may reduce photon-counting noise while leaving the sampling bias unchanged. Moving the measurement across the well addresses a different source of uncertainty.</p>"
+        },
+        {
+          "type": "p",
+          "text": "BMG LABTECH's heterogeneous-cell guidance includes green fluorescent protein (GFP)-expressing HeLa cells: 50,000 cells per well in a 96-well plate, measured from below at 482 nm excitation and 530 nm emission. Across ten replicate wells, scanning modes reduced the coefficient of variation (CV) relative to center readings. That is a configuration-specific example of spatial sampling helping a cell assay, rather than a guarantee for every cell type or plate. [2]",
+          "html": "<p>BMG LABTECH's heterogeneous-cell guidance includes green fluorescent protein (GFP)-expressing HeLa cells: 50,000 cells per well in a 96-well plate, measured from below at 482 nm excitation and 530 nm emission. Across ten replicate wells, scanning modes reduced the coefficient of variation (CV) relative to center readings. That is a configuration-specific example of spatial sampling helping a cell assay, rather than a guarantee for every cell type or plate. [2]</p>"
+        }
+      ]
+    },
+    {
+      "id": "an-orbit-samples-a-ring",
+      "heading": "An orbit samples a ring",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "An orbit samples a ring",
+          "html": "<h2 id=\"an-orbit-samples-a-ring\">An orbit samples a ring</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Orbital averaging uses a defined circular path. Spiral averaging covers changing radii, while a matrix scan measures a grid and can retain a spatial map. These geometries answer different questions. A ring could miss a compact central cluster; a center reading could miss cells near the wall. A matrix scan can reveal either pattern before you choose a faster routine read. [1,2]",
+          "html": "<p>Orbital averaging uses a defined circular path. Spiral averaging covers changing radii, while a matrix scan measures a grid and can retain a spatial map. These geometries answer different questions. A ring could miss a compact central cluster; a center reading could miss cells near the wall. A matrix scan can reveal either pattern before you choose a faster routine read. [1,2]</p>"
+        },
+        {
+          "type": "p",
+          "text": "The resulting average is not automatically a whole-well total. The measured value depends on which regions were sampled, their weighting and the instrument's optical footprint. If the assay requires total cell-associated signal, compare the selected geometry against a suitably validated whole-well method. Avoid interpreting an uncalibrated spatial average as an absolute cell count.",
+          "html": "<p>The resulting average is not automatically a whole-well total. The measured value depends on which regions were sampled, their weighting and the instrument's optical footprint. If the assay requires total cell-associated signal, compare the selected geometry against a suitably validated whole-well method. Avoid interpreting an uncalibrated spatial average as an absolute cell count.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Orbital averaging is also distinct from orbital shaking. Shaking moves liquid to mix or resuspend it. Averaging changes the locations sampled during measurement; it does not establish that the contents are well mixed. Check the reader's definition of each setting.",
+          "html": "<p>Orbital averaging is also distinct from orbital shaking. Shaking moves liquid to mix or resuspend it. Averaging changes the locations sampled during measurement; it does not establish that the contents are well mixed. Check the reader's definition of each setting.</p>"
+        }
+      ]
+    },
+    {
+      "id": "compare-spatial-coverage-without-adding-more-reading-time",
+      "heading": "Compare spatial coverage without adding more reading time",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Compare spatial coverage without adding more reading time",
+          "html": "<h2 id=\"compare-spatial-coverage-without-adding-more-reading-time\">Compare spatial coverage without adding more reading time</h2>"
+        },
+        {
+          "type": "p",
+          "text": "Start with representative untreated and treated wells, including low cell densities and weak responses. Inspect a matrix scan or suitable images for central clusters, rings, detached patches and bubbles. Use matrix-matched blanks to see whether the well wall or plate base contributes position-dependent background.",
+          "html": "<p>Start with representative untreated and treated wells, including low cell densities and weak responses. Inspect a matrix scan or suitable images for central clusters, rings, detached patches and bubbles. Use matrix-matched blanks to see whether the well wall or plate base contributes position-dependent background.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Compare center, orbital and broader scanning modes at similar total acquisition time or flash count where feasible. Otherwise a longer scan may look better simply because it collected more photons. Record the orbit diameter in mm, read height, plate type, fill volume and actual time per well in s. Keep the path within the usable well area, allowing for the optical spot size.",
+          "html": "<p>Compare center, orbital and broader scanning modes at similar total acquisition time or flash count where feasible. Otherwise a longer scan may look better simply because it collected more photons. Record the orbit diameter in mm, read height, plate type, fill volume and actual time per well in s. Keep the path within the usable well area, allowing for the optical spot size.</p>"
+        },
+        {
+          "type": "p",
+          "text": "Evaluate independently prepared replicate wells, not only repeated reads of one well. Check whether the change preserves the treatment response and improves precision at the weak end. If a scan changes the mean substantially, inspect its map before assuming that the larger value is better.",
+          "html": "<p>Evaluate independently prepared replicate wells, not only repeated reads of one well. Check whether the change preserves the treatment response and improves precision at the weak end. If a scan changes the mean substantially, inspect its map before assuming that the larger value is better.</p>"
+        }
+      ]
+    },
+    {
+      "id": "decide-whether-the-spatial-pattern-is-biology",
+      "heading": "Decide whether the spatial pattern is biology",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Decide whether the spatial pattern is biology",
+          "html": "<h2 id=\"decide-whether-the-spatial-pattern-is-biology\">Decide whether the spatial pattern is biology</h2>"
+        },
+        {
+          "type": "p",
+          "text": "For a homogeneous soluble fluorophore, scanning may add little beyond a well-chosen center measurement. For an assay of cell migration or localized growth, the spatial pattern may itself be the result; collapsing it into one average can discard useful information.",
+          "html": "<p>For a homogeneous soluble fluorophore, scanning may add little beyond a well-chosen center measurement. For an assay of cell migration or localized growth, the spatial pattern may itself be the result; collapsing it into one average can discard useful information.</p>"
+        },
+        {
+          "type": "p",
+          "text": "If you exclude scan points, define the rule before looking at compound identities and apply it consistently. Removing inconvenient low-signal regions after seeing the answer can hide detachment or cytotoxicity. Retain the maps from development so an unexpected screening result can be compared with the spatial patterns you already observed.",
+          "html": "<p>If you exclude scan points, define the rule before looking at compound identities and apply it consistently. Removing inconvenient low-signal regions after seeing the answer can hide detachment or cytotoxicity. Retain the maps from development so an unexpected screening result can be compared with the spatial patterns you already observed.</p>"
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "heading": "References",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "References",
+          "html": "<h2 id=\"references\">References</h2>"
+        },
+        {
+          "type": "p",
+          "text": "1. BMG LABTECH. Well-scanning. Orbital, spiral and matrix acquisition.",
+          "html": "<p id=\"ref-1\">1. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/well-scanning/\">Well-scanning</a>. Orbital, spiral and matrix acquisition.</p>"
+        },
+        {
+          "type": "p",
+          "text": "2. BMG LABTECH. How to reduce data variability in heterogenous cell samples, Figures 4–6. GFP HeLa example and spatial heterogeneity. No universal orbit diameter or improvement is inferred.",
+          "html": "<p id=\"ref-2\">2. BMG LABTECH. <a href=\"https://www.bmglabtech.com/en/howto-notes/how-to-reduce-data-variability-in-heterogenous-cell-samples/\">How to reduce data variability in heterogenous cell samples</a>, Figures 4–6. GFP HeLa example and spatial heterogeneity. No universal orbit diameter or improvement is inferred.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-1",
+      "citation": "1. BMG LABTECH. Well-scanning. Orbital, spiral and matrix acquisition.",
+      "urls": [
+        "https://www.bmglabtech.com/en/well-scanning/"
+      ]
+    },
+    {
+      "id": "ref-2",
+      "citation": "2. BMG LABTECH. How to reduce data variability in heterogenous cell samples, Figures 4–6. GFP HeLa example and spatial heterogeneity. No universal orbit diameter or improvement is inferred.",
+      "urls": [
+        "https://www.bmglabtech.com/en/howto-notes/how-to-reduce-data-variability-in-heterogenous-cell-samples/"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [],
+  "display_additions": {},
+  "content_sha256": "79587e2c16de9c9691fae602417b63963b43008056ce6c5411b842fee847e250"
+}

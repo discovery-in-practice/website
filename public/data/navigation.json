@@ -776,6 +776,23 @@
       "tags": [
         "luminescence"
       ]
+    },
+    "when-to-use-orbital-averaging": {
+      "section": "assays",
+      "group": "handling",
+      "order": 120,
+      "tags": [
+        "fluorescence"
+      ]
+    },
+    "flashes-versus-fluorescence-integration-time": {
+      "section": "concepts",
+      "group": "photons",
+      "order": 100,
+      "tags": [
+        "fluorescence",
+        "trf-htrf"
+      ]
     }
   },
   "groups": {

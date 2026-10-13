@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1060" role="img" aria-labelledby="title desc"><title id="title">Coldest setpoint in a 22 °C laboratory</title><desc id="desc">Every reader warms the plate above the room unless it can cool. Two can, one at the read position. Floors apply vendors’ “ambient +n °C” figures to a 22 °C lab. PHERAstar FSX AAS is optional and operates at 18–45 °C in the read chamber; detectors are cooled too. Spark Te-Cool is optional at the incubation position; the plate is read elsewhere. With Te-Cool fitted, room limit drops to 30 °C; at 30 °C and 50% RH the 18 °C floor is the dew point (calculated). Nexus: “The instrument cannot reach temperatures lower than the ambient temperature.” Alpha signal moves about 8% per °C (PerkinElmer); +4 °C shifts it by about a third (calculated). Tecan’s own note reports glow luminescence rising 34% in six minutes at +4 °C over ambient.</desc><rect width="1200" height="1060" fill="#f6f3eb"/>
+<text x="32" y="37" fill="#505650" font-family="Arial, sans-serif" font-size="14" font-weight="400">DISCOVERY IN PRACTICE  /  MICROPLATE READERS</text>
+<text x="32" y="77" fill="#20211f" font-family="Arial, sans-serif" font-size="28" font-weight="700">Coldest setpoint in a 22 °C laboratory</text>
+<text x="32" y="123" fill="#505650" font-family="Arial, sans-serif" font-size="18" font-weight="400">A dashed line marks room temperature. An open dot marks optional cooling at an incubation position, separate from the read position.</text>
+<rect x="270" y="190" width="240" height="725" fill="#e7eef1"/>
+<line x1="270" y1="190" x2="270" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="262" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">16</text>
+<line x1="350" y1="190" x2="350" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="342" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">18</text>
+<line x1="430" y1="190" x2="430" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="422" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">20</text>
+<line x1="510" y1="190" x2="510" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="502" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">22</text>
+<line x1="590" y1="190" x2="590" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="582" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">24</text>
+<line x1="670" y1="190" x2="670" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="662" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">26</text>
+<line x1="750" y1="190" x2="750" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="742" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">28</text>
+<line x1="510" y1="190" x2="510" y2="915" stroke="#20211f" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="32" y="221" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">CLARIOstar Plus</text>
+<line x1="510" y1="215" x2="630" y2="215" stroke="#28618b" stroke-width="3"/>
+<circle cx="630" cy="215" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="210" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">25 °C · Ambient +3</text>
+<text x="32" y="305" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">EnVision Nexus</text>
+<line x1="510" y1="299" x2="710" y2="299" stroke="#28618b" stroke-width="3"/>
+<circle cx="710" cy="299" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="294" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">27 °C · Ambient +5</text>
+<text x="32" y="389" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">PHERAstar FSX</text>
+<line x1="510" y1="383" x2="350" y2="383" stroke="#28618b" stroke-width="3"/>
+<circle cx="350" cy="383" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="378" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">18 °C · AAS option, 18–45 °C, in the read chamber</text>
+<text x="32" y="473" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">SpectraMax iD3/iD5</text>
+<line x1="510" y1="467" x2="710" y2="467" stroke="#28618b" stroke-width="3"/>
+<circle cx="710" cy="467" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="462" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">27 °C · Ambient +5</text>
+<text x="32" y="557" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy H1</text>
+<line x1="510" y1="551" x2="670" y2="551" stroke="#28618b" stroke-width="3"/>
+<circle cx="670" cy="551" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="546" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">26 °C · Ambient +4</text>
+<text x="32" y="641" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy Neo2</text>
+<line x1="510" y1="635" x2="670" y2="635" stroke="#28618b" stroke-width="3"/>
+<circle cx="670" cy="635" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="630" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">26 °C · Ambient +4 (Alpha mode +3, max 30 °C)</text>
+<text x="32" y="725" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Tecan Spark</text>
+<line x1="510" y1="719" x2="670" y2="719" stroke="#28618b" stroke-width="3"/>
+<circle cx="670" cy="719" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<line x1="350" y1="719" x2="510" y2="719" stroke="#28618b" stroke-width="2" stroke-dasharray="5 5"/>
+<circle cx="350" cy="719" r="6" fill="#f6f3eb" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="714" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">26 (18 with Te-Cool) °C · Ambient +4; Te-Cool</text>
+<text x="784" y="737" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">option at the incubation position</text>
+<text x="32" y="809" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">VANTAstar</text>
+<line x1="510" y1="803" x2="670" y2="803" stroke="#28618b" stroke-width="3"/>
+<circle cx="670" cy="803" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="798" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">26 °C · Ambient +4</text>
+<text x="32" y="893" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Varioskan LUX</text>
+<line x1="510" y1="887" x2="670" y2="887" stroke="#28618b" stroke-width="3"/>
+<circle cx="670" cy="887" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="882" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">26 °C · Ambient +4</text>
+<text x="270" y="1000" fill="#505650" font-family="Arial, sans-serif" font-size="17" font-weight="400">Coldest setpoint, °C · room temperature 22 °C</text>
+</svg>

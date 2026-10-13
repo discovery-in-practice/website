@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1420" role="img" aria-labelledby="title desc"><title id="title">Fluorescein detection limits: printed and committed figures</title><desc id="desc">Top-read fluorescein detection limits, in pM on a logarithmic scale (lower is better). Light dots show brochure or data-sheet headlines; dark dots show the binding figure from the vendor’s own manual or guaranteed table. A single dark dot marks a single published “&lt;” limit. Sources: vendor brochures, data sheets and manuals as cited in the comparison matrix. Neo2 guarantee is provisional pending a newer manual. H1 guarantee is in 96-well; its data sheet is in 384-well. iD5 prints “optimized” and “guaranteed.” Varioskan prints amol per well with no volume.</desc><rect width="1200" height="1420" fill="#f6f3eb"/>
+<text x="32" y="37" fill="#505650" font-family="Arial, sans-serif" font-size="14" font-weight="400">DISCOVERY IN PRACTICE  /  MICROPLATE READERS</text>
+<text x="32" y="77" fill="#20211f" font-family="Arial, sans-serif" font-size="28" font-weight="700">Fluorescein detection limits: printed and committed figures</text>
+<text x="32" y="123" fill="#505650" font-family="Arial, sans-serif" font-size="18" font-weight="400">The number printed, and the number the vendor commits to. A line connects the two figures; it does not represent uncertainty.</text>
+<text x="32" y="180" fill="#20211f" font-family="Arial, sans-serif" font-size="23" font-weight="700">Filters</text>
+<line x1="270.0" y1="204" x2="270.0" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="260.0" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0.1</text>
+<line x1="321.86383981995675" y1="204" x2="321.86383981995675" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="311.86383981995675" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0.2</text>
+<line x1="390.42410678669546" y1="204" x2="390.42410678669546" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="380.42410678669546" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0.5</text>
+<line x1="442.28794660665227" y1="204" x2="442.28794660665227" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="432.28794660665227" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">1</text>
+<line x1="494.151786426609" y1="204" x2="494.151786426609" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="484.151786426609" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">2</text>
+<line x1="562.7120533933478" y1="204" x2="562.7120533933478" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="552.7120533933478" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">5</text>
+<line x1="614.5758932133045" y1="204" x2="614.5758932133045" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="604.5758932133045" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">10</text>
+<line x1="666.4397330332613" y1="204" x2="666.4397330332613" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="656.4397330332613" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">20</text>
+<line x1="735.0" y1="204" x2="735.0" y2="684" stroke="#d6d5ce" stroke-width="2"/>
+<text x="725.0" y="713" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">50</text>
+<text x="32" y="228" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">CLARIOstar Plus</text>
+<circle cx="300.3384014380834" cy="222" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="228" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;0.15 pM · single limit · printed limit = spec</text>
+<text x="32" y="281" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">EnVision Nexus</text>
+<circle cx="494.151786426609" cy="275" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="281" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;2 pM · single limit; no separate guarantee found</text>
+<text x="32" y="334" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">PHERAstar FSX</text>
+<circle cx="300.3384014380834" cy="328" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="334" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;0.15 pM · single limit · printed limit = spec</text>
+<text x="32" y="387" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">SpectraMax iD3/iD5</text>
+<line x1="390.42410678669546" y1="381" x2="524.4901878646924" y2="381" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="390.42410678669546" cy="381" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="524.4901878646924" cy="381" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="387" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">0.5 → 3 pM · 6×</text>
+<text x="32" y="440" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy H1</text>
+<line x1="338.56026696673877" y1="434" x2="614.5758932133045" y2="434" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="338.56026696673877" cy="434" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="614.5758932133045" cy="434" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="440" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">0.25 → 10 pM · 40×</text>
+<text x="32" y="493" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy Neo2</text>
+<line x1="321.86383981995675" y1="487" x2="562.7120533933478" y2="487" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="321.86383981995675" cy="487" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="562.7120533933478" cy="487" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="493" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">0.2 → 5 pM · 25×</text>
+<text x="32" y="546" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Tecan Spark</text>
+<line x1="338.56026696673877" y1="540" x2="614.5758932133045" y2="540" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="338.56026696673877" cy="540" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="614.5758932133045" cy="540" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="546" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">0.25 → 10 pM · 40×</text>
+<text x="32" y="599" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">VANTAstar</text>
+<circle cx="390.42410678669546" cy="593" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="599" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;0.5 pM · single limit · printed limit = spec</text>
+<text x="32" y="652" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Varioskan LUX</text>
+<text x="772" y="652" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">No filter fluorescence path</text>
+<text x="270" y="748" fill="#505650" font-family="Arial, sans-serif" font-size="17" font-weight="400">pM fluorescein · log scale · lower is better</text>
+<text x="32" y="810" fill="#20211f" font-family="Arial, sans-serif" font-size="23" font-weight="700">Monochromator</text>
+<line x1="270.0" y1="834" x2="270.0" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="260.0" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0.1</text>
+<line x1="321.86383981995675" y1="834" x2="321.86383981995675" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="311.86383981995675" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0.2</text>
+<line x1="390.42410678669546" y1="834" x2="390.42410678669546" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="380.42410678669546" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0.5</text>
+<line x1="442.28794660665227" y1="834" x2="442.28794660665227" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="432.28794660665227" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">1</text>
+<line x1="494.151786426609" y1="834" x2="494.151786426609" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="484.151786426609" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">2</text>
+<line x1="562.7120533933478" y1="834" x2="562.7120533933478" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="552.7120533933478" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">5</text>
+<line x1="614.5758932133045" y1="834" x2="614.5758932133045" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="604.5758932133045" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">10</text>
+<line x1="666.4397330332613" y1="834" x2="666.4397330332613" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="656.4397330332613" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">20</text>
+<line x1="735.0" y1="834" x2="735.0" y2="1314" stroke="#d6d5ce" stroke-width="2"/>
+<text x="725.0" y="1343" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">50</text>
+<text x="32" y="858" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">CLARIOstar Plus</text>
+<circle cx="363.73636617540603" cy="852" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="858" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;0.35 pM · single limit · printed limit = spec</text>
+<text x="32" y="911" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">EnVision Nexus</text>
+<text x="772" y="911" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">No monochromator</text>
+<text x="32" y="964" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">PHERAstar FSX</text>
+<text x="772" y="964" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">No monochromator</text>
+<text x="32" y="1017" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">SpectraMax iD3/iD5</text>
+<line x1="442.28794660665227" y1="1011" x2="576.3540276846492" y2="1011" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="442.28794660665227" cy="1011" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="576.3540276846492" cy="1011" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="1017" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">1 → 6 pM · 6×</text>
+<text x="32" y="1070" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy H1</text>
+<line x1="510.848213573391" y1="1064" x2="666.4397330332613" y2="1064" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="510.848213573391" cy="1064" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="666.4397330332613" cy="1064" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="1070" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">2.5 → 20 pM · 8×</text>
+<text x="32" y="1123" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy Neo2</text>
+<line x1="494.151786426609" y1="1117" x2="666.4397330332613" y2="1117" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="494.151786426609" cy="1117" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="666.4397330332613" cy="1117" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="1123" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">2 → 20 pM · 10×</text>
+<text x="32" y="1176" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Tecan Spark</text>
+<line x1="390.42410678669546" y1="1170" x2="666.4397330332613" y2="1170" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="390.42410678669546" cy="1170" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="666.4397330332613" cy="1170" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="1176" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">0.5 → 20 pM · 40×</text>
+<text x="32" y="1229" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">VANTAstar</text>
+<circle cx="425.59151945987026" cy="1223" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="772" y="1229" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;0.8 pM · single limit · printed limit = spec</text>
+<text x="32" y="1282" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Varioskan LUX</text>
+<text x="772" y="1282" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">400 amol/well; no volume. Cannot place on pM axis.</text>
+<text x="270" y="1378" fill="#505650" font-family="Arial, sans-serif" font-size="17" font-weight="400">pM fluorescein · log scale · lower is better</text>
+</svg>

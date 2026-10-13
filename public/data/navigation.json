@@ -793,6 +793,48 @@
         "fluorescence",
         "trf-htrf"
       ]
+    },
+    "microplate-reader-specifications": {
+      "section": "compare",
+      "group": "equipment",
+      "order": 20,
+      "tags": [
+        "screening-equipment",
+        "fluorescence",
+        "luminescence",
+        "trf-htrf",
+        "absorbance",
+        "bret",
+        "plate-effects"
+      ]
+    },
+    "microplate-readers-at-a-glance": {
+      "section": "compare",
+      "group": "equipment",
+      "order": 21,
+      "tags": [
+        "screening-equipment",
+        "fluorescence",
+        "luminescence",
+        "trf-htrf",
+        "absorbance",
+        "bret",
+        "plate-effects"
+      ]
+    },
+    "microplate-reader-performance-charts": {
+      "section": "compare",
+      "group": "equipment",
+      "order": 22,
+      "tags": [
+        "screening-equipment",
+        "fluorescence",
+        "luminescence",
+        "trf-htrf",
+        "absorbance",
+        "bret",
+        "plate-effects"
+      ]
     }
   },
   "groups": {

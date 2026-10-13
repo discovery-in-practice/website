@@ -1,0 +1,1158 @@
+{
+  "schema_version": "1.0",
+  "id": "microplate-readers-at-a-glance",
+  "canonical_url": "https://discoveryinpractice.com/compare/microplate-readers-at-a-glance/",
+  "title": "Microplate readers at a glance: 21 practical questions",
+  "author": {
+    "name": "Andrew Stewart",
+    "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+  },
+  "language": "en",
+  "summary": "A question-led overview of nine microplate readers, with the conditions behind each answer and links to the detailed comparison.",
+  "takeaways": [
+    "Compare the named configuration",
+    "Keep measurement conditions beside specifications",
+    "Follow the source edition"
+  ],
+  "limitations_summary": "",
+  "topics": [
+    "Microplate readers",
+    "Fluorescence",
+    "Luminescence",
+    "TR-FRET",
+    "Absorbance"
+  ],
+  "publication_status": "published",
+  "date_published": "2026-10-13",
+  "date_modified": "2026-10-13",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_status": "Published under CC BY 4.0",
+  "content_version": "1.0",
+  "body_html": "<p>Start with the capabilities that matter to your assay. The answers below retain the conditions that distinguish a standard feature from an option, a partial capability or an unconfirmed specification. Follow each question to the detailed finding.</p><nav class=\"reader-suite\" aria-label=\"Microplate reader comparison pages\"><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/\">Specifications</a><a aria-current=\"page\" href=\"https://discoveryinpractice.com/compare/microplate-readers-at-a-glance/\">At a glance</a><a href=\"https://discoveryinpractice.com/compare/microplate-reader-performance-charts/\">Performance charts</a></nav><div class=\"matrix-tools\" data-matrix-tools hidden><label>Find a feature <input type=\"search\" data-matrix-search placeholder=\"Try gain, HTRF, temperature…\"></label><label>Show a reader <select data-matrix-reader><option value=\"\">All readers</option><option>CLARIOstar Plus</option><option>EnVision Nexus</option><option>PHERAstar FSX</option><option>SpectraMax iD3 / iD5</option><option>Synergy H1</option><option>Synergy Neo2</option><option>Tecan Spark</option><option>VANTAstar</option><option>Varioskan LUX</option></select></label><p data-matrix-status role=\"status\" aria-live=\"polite\"></p></div><section class=\"matrix-finding\" data-matrix-finding id=\"question-1\"><h2 data-source-cell=\"At a glance!A5\">Dichroic mirror that tracks the wavelength on the monochromator path</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-12\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Dichroic mirror that tracks the wavelength on the monochromator path</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E5\">LVD, 340–740 nm</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B5\">No monochromator</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C5\">Matched dichroic in each module</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G5\">No dichroic on mono path</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H5\">No dichroic on mono path</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D5\">No dichroic on mono path</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F5\">One fixed (510 nm) on standard</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I5\">LVD, 340–740 nm</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J5\">No dichroic</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-2\"><h2 data-source-cell=\"At a glance!A6\">Bandwidth the user can set</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-10\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Bandwidth the user can set</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E6\">8–100 nm</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B6\">Set by module</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C6\">Set by module</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G6\">Fixed 15 / 25 nm</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H6\">M2 builds only; else fixed 16 nm</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D6\">3–50 nm</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F6\">Enhanced only; standard fixed 20 nm</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I6\">8–100 nm</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J6\">Emission fixed 12 nm</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-3\"><h2 data-source-cell=\"At a glance!A7\">Gain chosen per well inside one read, kinetics included</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-8\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Gain chosen per well inside one read, kinetics included</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E7\">EDR</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B7\">No gain on the counter; no ceiling published</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C7\">EDR</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G7\">Endpoints only</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H7\">User sets; saturates at 99,999</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D7\">Auto-range adds minutes</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F7\">User picks; extended = two passes</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I7\">EDR</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J7\">Per well; kinetics not published</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-4\"><h2 data-source-cell=\"At a glance!A8\">Two emission colors read at the same instant (top)</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-9\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Two emission colors read at the same instant (top)</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E8\">Sequential</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B8\">Filter path only</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C8\">Matched PMT pairs</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G8\">Sequential</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H8\">Sequential</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D8\">Dual-top builds; unmatched tubes; special cube</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F8\">Sequential</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I8\">Sequential</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J8\">Sequential</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-5\"><h2 data-source-cell=\"At a glance!A9\">Two emission colors read at the same instant (bottom)</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-9\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Two emission colors read at the same instant (bottom)</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E9\">Sequential</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B9\">Not confirmed</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C9\">Same modules, top or bottom</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G9\">Sequential</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H9\">Sequential</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D9\">One bottom PMT</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F9\">Sequential</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I9\">Sequential</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J9\">Sequential</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-6\"><h2 data-source-cell=\"At a glance!A10\">Same optics read top and bottom, switched in software</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-14\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Same optics read top and bottom, switched in software</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E10\">Autofocus both sides</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B10\">Not FP, sensitive lum or Alpha</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C10\">All modes</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G10\">Bottom lum a factory option, 20–30× weaker</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H10\">Filters top only</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D10\">Separate bottom cubes</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F10\">FI yes; bottom lum unconfirmed</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I10\">Autofocus both sides</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J10\">No focus; adapter sets height</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-7\"><h2 data-source-cell=\"At a glance!A11\">Injection at the read position</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-26\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Injection at the read position</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E11\">At the read position</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B11\">Not published</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C11\">50 readings/s through injection</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G11\">Waits 500 ms after injection</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H11\">Not published</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D11\">Read starts up to 1 s after dispense</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F11\">Injects elsewhere; plate moves</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I11\">Injects, then reads</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J11\">Only with head set to L by hand</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-8\"><h2 data-source-cell=\"At a glance!A12\">Crosstalk mask between plate and detector</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-22\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Crosstalk mask between plate and detector</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E12\">Aperture spoon over the well</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B12\">Hand-swapped; mismatch not enforced</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C12\">Spoon per plate format</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G12\">None; “use every other well”</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H12\">None</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D12\">Inside the cube, after the lens</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F12\">Separate line item</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I12\">Automatic to 384</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J12\">Shield after collection</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-9\"><h2 data-source-cell=\"At a glance!A13\">Laser excitation for TRF</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-27\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Laser excitation for TRF</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E13\">Flash lamp</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B13\">Option (343 nm DPSS)</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C13\">Option, 60 flashes/s</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G13\">Flash lamp</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H13\">Flash lamp</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D13\">Dual-top builds only (7 of 19)</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F13\">Flash lamp</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I13\">Flash lamp</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J13\">Flash lamp</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-10\"><h2 data-source-cell=\"At a glance!A14\">Decay-curve tool for setting the TRF window</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-29\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Decay-curve tool for setting the TRF window</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E14\">No (BMG: an FSX feature)</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B14\">Fixed default curve only</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C14\">Decay Curve Monitoring</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G14\">Not offered</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H14\">Not published</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D14\">No</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F14\">Not offered</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I14\">No (BMG: an FSX feature)</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J14\">Not offered</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-11\"><h2 data-source-cell=\"At a glance!A15\">HTRF in black plates</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-28\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>HTRF in black plates</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E15\">Certified black and white</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B15\">“Only… in WHITE plates”</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C15\">Certified black and white</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G15\">Not confirmed</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H15\">Filter mode, white plates only</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D15\">White only</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F15\">Not on the monochromator path</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I15\">Figures for black and white</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J15\">Certified; plate color not stated</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-12\"><h2 data-source-cell=\"At a glance!A16\">AlphaScreen / AlphaLISA</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-33\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>AlphaScreen / AlphaLISA</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E16\">680 nm laser module</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B16\">Enhanced or HT mode, never both</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C16\">680 nm laser</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G16\">Not offered</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H16\">Not offered</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D16\">768 cube moves per 384 plate</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F16\">Corrected for heat in software</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I16\">Not offered</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J16\">LED, no laser, no cooling</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-13\"><h2 data-source-cell=\"At a glance!A17\">Fluorescence polarization</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-30\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Fluorescence polarization</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E17\">&lt;0.5 mP; UV option</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B17\">Top only</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C17\">Both planes at once</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G17\">iD5 only; mono needs 10× dye</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H17\">Filters, top only</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D17\">Dual cube special order</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F17\">Top only; not on Cyto 300/400</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I17\">Top and bottom</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J17\">Never</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-14\"><h2 data-source-cell=\"At a glance!A18\">1536-well plates</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-39\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>1536-well plates</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E18\">To 1536</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B18\">1–1536</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C18\">To 3456</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G18\">Stops at 384</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H18\">Stops at 384</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D18\">Injectors to 384 only</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F18\">Enhanced modules only</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I18\">Stops at 384</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J18\">Own adapter; no lid, no dispensing</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-15\"><h2 data-source-cell=\"At a glance!A19\">Full absorbance spectrum in about a second per well</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-37\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Full absorbance spectrum in about a second per well</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E19\">&lt;1 s</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B19\">Filters only, no spectrum</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C19\">&lt;1 s (spectrometer option)</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G19\">Not published</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H19\">“An hour or more” per plate</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D19\">~60 s per well</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F19\">≤5 s</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I19\">&lt;1 s</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J19\">~18 s (calculated)</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-16\"><h2 data-source-cell=\"At a glance!A20\">Chamber held at or below room temperature</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-50\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Chamber held at or below room temperature</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E20\">Ambient +3</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B20\">Ambient +5</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C20\">AAS option, 18–45 °C</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G20\">Ambient +5</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H20\">Ambient +4</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D20\">Ambient +4</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F20\">Te-Cool at incubation position only</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I20\">Ambient +4</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J20\">Ambient +4</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-17\"><h2 data-source-cell=\"At a glance!A21\">CO₂ / O₂ control inside the reader</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-53\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>CO₂ / O₂ control inside the reader</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E21\">ACU, 0.1–20%</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B21\">Not offered</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C21\">Not offered</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G21\">User-installed mixer</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H21\">G builds, separate unit</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D21\">External add-on</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F21\">At incubation position</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I21\">ACU, 1–20%</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J21\">Option module</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-18\"><h2 data-source-cell=\"At a glance!A22\">Humidity control</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-52\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Humidity control</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E22\">No</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B22\">No; lids barred in sensitive modes</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C22\">No</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G22\">No; injected reads unlidded</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H22\">No</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D22\">No</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F22\">Cassette + Lid Lifter</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I22\">No</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J22\">No</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-19\"><h2 data-source-cell=\"At a glance!A23\">No plate adapters or hand-set read height</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-42\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>No plate adapters or hand-set read height</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E23\">Autofocus</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B23\">Hand-swapped apertures fix the height</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C23\">Plate defined in software</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G23\">Re-tune per plate lot</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H23\">Auto Z-focus</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D23\">Fixed bottom focus</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F23\">Auto Z-focus</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I23\">Autofocus</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J23\">Adapter per plate and lid</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-20\"><h2 data-source-cell=\"At a glance!A24\">Software on any number of PCs, no fee</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-55\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Software on any number of PCs, no fee</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E24\">Unlimited</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B24\">One bound PC</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C24\">Unlimited</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G24\">Per seat; Import license extra</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H24\">5 installs</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D24\">5 installs + USB dongle</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F24\">2 installs</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I24\">Unlimited</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J24\">Unlimited</td></tr></tbody></table></section><section class=\"matrix-finding\" data-matrix-finding id=\"question-21\"><h2 data-source-cell=\"At a glance!A25\">21 CFR Part 11 without a per-seat fee</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-57\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>21 CFR Part 11 without a per-seat fee</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E25\">No per-seat fee</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B25\">Option</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C25\">Included, no fee</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G25\">GxP edition</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H25\">Option</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D25\">Option</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F25\">Paid option</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I25\">No per-seat fee</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J25\">Separate edition</td></tr></tbody></table></section><h2 id=\"sources\">Sources</h2><p id=\"ref-matrix\">The <a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#sources\">document library accompanying the detailed matrix</a> lists the documents, editions, links and availability notes for these comparisons.</p>",
+  "body_text": "Start with the capabilities that matter to your assay. The answers below retain the conditions that distinguish a standard feature from an option, a partial capability or an unconfirmed specification. Follow each question to the detailed finding.\n\nSpecificationsAt a glancePerformance charts\n\nFind a feature Show a reader All readersCLARIOstar PlusEnVision NexusPHERAstar FSXSpectraMax iD3 / iD5Synergy H1Synergy Neo2Tecan SparkVANTAstarVarioskan LUX\n\nDichroic mirror that tracks the wavelength on the monochromator pathRead the detailed comparison →Dichroic mirror that tracks the wavelength on the monochromator pathReader | Answer and condition | CLARIOstar Plus | LVD, 340–740 nm | EnVision Nexus | No monochromator | PHERAstar FSX | Matched dichroic in each module | SpectraMax iD3 / iD5 | No dichroic on mono path | Synergy H1 | No dichroic on mono path | Synergy Neo2 | No dichroic on mono path | Tecan Spark | One fixed (510 nm) on standard | VANTAstar | LVD, 340–740 nm | Varioskan LUX | No dichroic | \n\nBandwidth the user can setRead the detailed comparison →Bandwidth the user can setReader | Answer and condition | CLARIOstar Plus | 8–100 nm | EnVision Nexus | Set by module | PHERAstar FSX | Set by module | SpectraMax iD3 / iD5 | Fixed 15 / 25 nm | Synergy H1 | M2 builds only; else fixed 16 nm | Synergy Neo2 | 3–50 nm | Tecan Spark | Enhanced only; standard fixed 20 nm | VANTAstar | 8–100 nm | Varioskan LUX | Emission fixed 12 nm | \n\nGain chosen per well inside one read, kinetics includedRead the detailed comparison →Gain chosen per well inside one read, kinetics includedReader | Answer and condition | CLARIOstar Plus | EDR | EnVision Nexus | No gain on the counter; no ceiling published | PHERAstar FSX | EDR | SpectraMax iD3 / iD5 | Endpoints only | Synergy H1 | User sets; saturates at 99,999 | Synergy Neo2 | Auto-range adds minutes | Tecan Spark | User picks; extended = two passes | VANTAstar | EDR | Varioskan LUX | Per well; kinetics not published | \n\nTwo emission colors read at the same instant (top)Read the detailed comparison →Two emission colors read at the same instant (top)Reader | Answer and condition | CLARIOstar Plus | Sequential | EnVision Nexus | Filter path only | PHERAstar FSX | Matched PMT pairs | SpectraMax iD3 / iD5 | Sequential | Synergy H1 | Sequential | Synergy Neo2 | Dual-top builds; unmatched tubes; special cube | Tecan Spark | Sequential | VANTAstar | Sequential | Varioskan LUX | Sequential | \n\nTwo emission colors read at the same instant (bottom)Read the detailed comparison →Two emission colors read at the same instant (bottom)Reader | Answer and condition | CLARIOstar Plus | Sequential | EnVision Nexus | Not confirmed | PHERAstar FSX | Same modules, top or bottom | SpectraMax iD3 / iD5 | Sequential | Synergy H1 | Sequential | Synergy Neo2 | One bottom PMT | Tecan Spark | Sequential | VANTAstar | Sequential | Varioskan LUX | Sequential | \n\nSame optics read top and bottom, switched in softwareRead the detailed comparison →Same optics read top and bottom, switched in softwareReader | Answer and condition | CLARIOstar Plus | Autofocus both sides | EnVision Nexus | Not FP, sensitive lum or Alpha | PHERAstar FSX | All modes | SpectraMax iD3 / iD5 | Bottom lum a factory option, 20–30× weaker | Synergy H1 | Filters top only | Synergy Neo2 | Separate bottom cubes | Tecan Spark | FI yes; bottom lum unconfirmed | VANTAstar | Autofocus both sides | Varioskan LUX | No focus; adapter sets height | \n\nInjection at the read positionRead the detailed comparison →Injection at the read positionReader | Answer and condition | CLARIOstar Plus | At the read position | EnVision Nexus | Not published | PHERAstar FSX | 50 readings/s through injection | SpectraMax iD3 / iD5 | Waits 500 ms after injection | Synergy H1 | Not published | Synergy Neo2 | Read starts up to 1 s after dispense | Tecan Spark | Injects elsewhere; plate moves | VANTAstar | Injects, then reads | Varioskan LUX | Only with head set to L by hand | \n\nCrosstalk mask between plate and detectorRead the detailed comparison →Crosstalk mask between plate and detectorReader | Answer and condition | CLARIOstar Plus | Aperture spoon over the well | EnVision Nexus | Hand-swapped; mismatch not enforced | PHERAstar FSX | Spoon per plate format | SpectraMax iD3 / iD5 | None; “use every other well” | Synergy H1 | None | Synergy Neo2 | Inside the cube, after the lens | Tecan Spark | Separate line item | VANTAstar | Automatic to 384 | Varioskan LUX | Shield after collection | \n\nLaser excitation for TRFRead the detailed comparison →Laser excitation for TRFReader | Answer and condition | CLARIOstar Plus | Flash lamp | EnVision Nexus | Option (343 nm DPSS) | PHERAstar FSX | Option, 60 flashes/s | SpectraMax iD3 / iD5 | Flash lamp | Synergy H1 | Flash lamp | Synergy Neo2 | Dual-top builds only (7 of 19) | Tecan Spark | Flash lamp | VANTAstar | Flash lamp | Varioskan LUX | Flash lamp | \n\nDecay-curve tool for setting the TRF windowRead the detailed comparison →Decay-curve tool for setting the TRF windowReader | Answer and condition | CLARIOstar Plus | No (BMG: an FSX feature) | EnVision Nexus | Fixed default curve only | PHERAstar FSX | Decay Curve Monitoring | SpectraMax iD3 / iD5 | Not offered | Synergy H1 | Not published | Synergy Neo2 | No | Tecan Spark | Not offered | VANTAstar | No (BMG: an FSX feature) | Varioskan LUX | Not offered | \n\nHTRF in black platesRead the detailed comparison →HTRF in black platesReader | Answer and condition | CLARIOstar Plus | Certified black and white | EnVision Nexus | “Only… in WHITE plates” | PHERAstar FSX | Certified black and white | SpectraMax iD3 / iD5 | Not confirmed | Synergy H1 | Filter mode, white plates only | Synergy Neo2 | White only | Tecan Spark | Not on the monochromator path | VANTAstar | Figures for black and white | Varioskan LUX | Certified; plate color not stated | \n\nAlphaScreen / AlphaLISARead the detailed comparison →AlphaScreen / AlphaLISAReader | Answer and condition | CLARIOstar Plus | 680 nm laser module | EnVision Nexus | Enhanced or HT mode, never both | PHERAstar FSX | 680 nm laser | SpectraMax iD3 / iD5 | Not offered | Synergy H1 | Not offered | Synergy Neo2 | 768 cube moves per 384 plate | Tecan Spark | Corrected for heat in software | VANTAstar | Not offered | Varioskan LUX | LED, no laser, no cooling | \n\nFluorescence polarizationRead the detailed comparison →Fluorescence polarizationReader | Answer and condition | CLARIOstar Plus | <0.5 mP; UV option | EnVision Nexus | Top only | PHERAstar FSX | Both planes at once | SpectraMax iD3 / iD5 | iD5 only; mono needs 10× dye | Synergy H1 | Filters, top only | Synergy Neo2 | Dual cube special order | Tecan Spark | Top only; not on Cyto 300/400 | VANTAstar | Top and bottom | Varioskan LUX | Never | \n\n1536-well platesRead the detailed comparison →1536-well platesReader | Answer and condition | CLARIOstar Plus | To 1536 | EnVision Nexus | 1–1536 | PHERAstar FSX | To 3456 | SpectraMax iD3 / iD5 | Stops at 384 | Synergy H1 | Stops at 384 | Synergy Neo2 | Injectors to 384 only | Tecan Spark | Enhanced modules only | VANTAstar | Stops at 384 | Varioskan LUX | Own adapter; no lid, no dispensing | \n\nFull absorbance spectrum in about a second per wellRead the detailed comparison →Full absorbance spectrum in about a second per wellReader | Answer and condition | CLARIOstar Plus | <1 s | EnVision Nexus | Filters only, no spectrum | PHERAstar FSX | <1 s (spectrometer option) | SpectraMax iD3 / iD5 | Not published | Synergy H1 | “An hour or more” per plate | Synergy Neo2 | ~60 s per well | Tecan Spark | ≤5 s | VANTAstar | <1 s | Varioskan LUX | ~18 s (calculated) | \n\nChamber held at or below room temperatureRead the detailed comparison →Chamber held at or below room temperatureReader | Answer and condition | CLARIOstar Plus | Ambient +3 | EnVision Nexus | Ambient +5 | PHERAstar FSX | AAS option, 18–45 °C | SpectraMax iD3 / iD5 | Ambient +5 | Synergy H1 | Ambient +4 | Synergy Neo2 | Ambient +4 | Tecan Spark | Te-Cool at incubation position only | VANTAstar | Ambient +4 | Varioskan LUX | Ambient +4 | \n\nCO₂ / O₂ control inside the readerRead the detailed comparison →CO₂ / O₂ control inside the readerReader | Answer and condition | CLARIOstar Plus | ACU, 0.1–20% | EnVision Nexus | Not offered | PHERAstar FSX | Not offered | SpectraMax iD3 / iD5 | User-installed mixer | Synergy H1 | G builds, separate unit | Synergy Neo2 | External add-on | Tecan Spark | At incubation position | VANTAstar | ACU, 1–20% | Varioskan LUX | Option module | \n\nHumidity controlRead the detailed comparison →Humidity controlReader | Answer and condition | CLARIOstar Plus | No | EnVision Nexus | No; lids barred in sensitive modes | PHERAstar FSX | No | SpectraMax iD3 / iD5 | No; injected reads unlidded | Synergy H1 | No | Synergy Neo2 | No | Tecan Spark | Cassette + Lid Lifter | VANTAstar | No | Varioskan LUX | No | \n\nNo plate adapters or hand-set read heightRead the detailed comparison →No plate adapters or hand-set read heightReader | Answer and condition | CLARIOstar Plus | Autofocus | EnVision Nexus | Hand-swapped apertures fix the height | PHERAstar FSX | Plate defined in software | SpectraMax iD3 / iD5 | Re-tune per plate lot | Synergy H1 | Auto Z-focus | Synergy Neo2 | Fixed bottom focus | Tecan Spark | Auto Z-focus | VANTAstar | Autofocus | Varioskan LUX | Adapter per plate and lid | \n\nSoftware on any number of PCs, no feeRead the detailed comparison →Software on any number of PCs, no feeReader | Answer and condition | CLARIOstar Plus | Unlimited | EnVision Nexus | One bound PC | PHERAstar FSX | Unlimited | SpectraMax iD3 / iD5 | Per seat; Import license extra | Synergy H1 | 5 installs | Synergy Neo2 | 5 installs + USB dongle | Tecan Spark | 2 installs | VANTAstar | Unlimited | Varioskan LUX | Unlimited | \n\n21 CFR Part 11 without a per-seat feeRead the detailed comparison →21 CFR Part 11 without a per-seat feeReader | Answer and condition | CLARIOstar Plus | No per-seat fee | EnVision Nexus | Option | PHERAstar FSX | Included, no fee | SpectraMax iD3 / iD5 | GxP edition | Synergy H1 | Option | Synergy Neo2 | Option | Tecan Spark | Paid option | VANTAstar | No per-seat fee | Varioskan LUX | Separate edition | \n\nSources\n\nThe document library accompanying the detailed matrix lists the documents, editions, links and availability notes for these comparisons.",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "Introduction",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Start with the capabilities that matter to your assay. The answers below retain the conditions that distinguish a standard feature from an option, a partial capability or an unconfirmed specification. Follow each question to the detailed finding.",
+          "html": "<p>Start with the capabilities that matter to your assay. The answers below retain the conditions that distinguish a standard feature from an option, a partial capability or an unconfirmed specification. Follow each question to the detailed finding.</p>"
+        },
+        {
+          "type": "nav",
+          "text": "SpecificationsAt a glancePerformance charts",
+          "html": "<nav class=\"reader-suite\" aria-label=\"Microplate reader comparison pages\"><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/\">Specifications</a><a aria-current=\"page\" href=\"https://discoveryinpractice.com/compare/microplate-readers-at-a-glance/\">At a glance</a><a href=\"https://discoveryinpractice.com/compare/microplate-reader-performance-charts/\">Performance charts</a></nav>"
+        },
+        {
+          "type": "div",
+          "text": "Find a feature Show a reader All readersCLARIOstar PlusEnVision NexusPHERAstar FSXSpectraMax iD3 / iD5Synergy H1Synergy Neo2Tecan SparkVANTAstarVarioskan LUX",
+          "html": "<div class=\"matrix-tools\" data-matrix-tools hidden><label>Find a feature <input type=\"search\" data-matrix-search placeholder=\"Try gain, HTRF, temperature…\"></label><label>Show a reader <select data-matrix-reader><option value=\"\">All readers</option><option>CLARIOstar Plus</option><option>EnVision Nexus</option><option>PHERAstar FSX</option><option>SpectraMax iD3 / iD5</option><option>Synergy H1</option><option>Synergy Neo2</option><option>Tecan Spark</option><option>VANTAstar</option><option>Varioskan LUX</option></select></label><p data-matrix-status role=\"status\" aria-live=\"polite\"></p></div>"
+        },
+        {
+          "type": "section",
+          "text": "Dichroic mirror that tracks the wavelength on the monochromator pathRead the detailed comparison →Dichroic mirror that tracks the wavelength on the monochromator pathReader | Answer and condition | CLARIOstar Plus | LVD, 340–740 nm | EnVision Nexus | No monochromator | PHERAstar FSX | Matched dichroic in each module | SpectraMax iD3 / iD5 | No dichroic on mono path | Synergy H1 | No dichroic on mono path | Synergy Neo2 | No dichroic on mono path | Tecan Spark | One fixed (510 nm) on standard | VANTAstar | LVD, 340–740 nm | Varioskan LUX | No dichroic | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-1\"><h2 data-source-cell=\"At a glance!A5\">Dichroic mirror that tracks the wavelength on the monochromator path</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-12\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Dichroic mirror that tracks the wavelength on the monochromator path</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E5\">LVD, 340–740 nm</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B5\">No monochromator</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C5\">Matched dichroic in each module</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G5\">No dichroic on mono path</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H5\">No dichroic on mono path</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D5\">No dichroic on mono path</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F5\">One fixed (510 nm) on standard</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I5\">LVD, 340–740 nm</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J5\">No dichroic</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Bandwidth the user can setRead the detailed comparison →Bandwidth the user can setReader | Answer and condition | CLARIOstar Plus | 8–100 nm | EnVision Nexus | Set by module | PHERAstar FSX | Set by module | SpectraMax iD3 / iD5 | Fixed 15 / 25 nm | Synergy H1 | M2 builds only; else fixed 16 nm | Synergy Neo2 | 3–50 nm | Tecan Spark | Enhanced only; standard fixed 20 nm | VANTAstar | 8–100 nm | Varioskan LUX | Emission fixed 12 nm | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-2\"><h2 data-source-cell=\"At a glance!A6\">Bandwidth the user can set</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-10\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Bandwidth the user can set</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E6\">8–100 nm</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B6\">Set by module</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C6\">Set by module</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G6\">Fixed 15 / 25 nm</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H6\">M2 builds only; else fixed 16 nm</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D6\">3–50 nm</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F6\">Enhanced only; standard fixed 20 nm</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I6\">8–100 nm</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J6\">Emission fixed 12 nm</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Gain chosen per well inside one read, kinetics includedRead the detailed comparison →Gain chosen per well inside one read, kinetics includedReader | Answer and condition | CLARIOstar Plus | EDR | EnVision Nexus | No gain on the counter; no ceiling published | PHERAstar FSX | EDR | SpectraMax iD3 / iD5 | Endpoints only | Synergy H1 | User sets; saturates at 99,999 | Synergy Neo2 | Auto-range adds minutes | Tecan Spark | User picks; extended = two passes | VANTAstar | EDR | Varioskan LUX | Per well; kinetics not published | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-3\"><h2 data-source-cell=\"At a glance!A7\">Gain chosen per well inside one read, kinetics included</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-8\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Gain chosen per well inside one read, kinetics included</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E7\">EDR</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B7\">No gain on the counter; no ceiling published</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C7\">EDR</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G7\">Endpoints only</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H7\">User sets; saturates at 99,999</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D7\">Auto-range adds minutes</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F7\">User picks; extended = two passes</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I7\">EDR</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J7\">Per well; kinetics not published</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Two emission colors read at the same instant (top)Read the detailed comparison →Two emission colors read at the same instant (top)Reader | Answer and condition | CLARIOstar Plus | Sequential | EnVision Nexus | Filter path only | PHERAstar FSX | Matched PMT pairs | SpectraMax iD3 / iD5 | Sequential | Synergy H1 | Sequential | Synergy Neo2 | Dual-top builds; unmatched tubes; special cube | Tecan Spark | Sequential | VANTAstar | Sequential | Varioskan LUX | Sequential | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-4\"><h2 data-source-cell=\"At a glance!A8\">Two emission colors read at the same instant (top)</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-9\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Two emission colors read at the same instant (top)</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E8\">Sequential</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B8\">Filter path only</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C8\">Matched PMT pairs</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G8\">Sequential</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H8\">Sequential</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D8\">Dual-top builds; unmatched tubes; special cube</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F8\">Sequential</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I8\">Sequential</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J8\">Sequential</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Two emission colors read at the same instant (bottom)Read the detailed comparison →Two emission colors read at the same instant (bottom)Reader | Answer and condition | CLARIOstar Plus | Sequential | EnVision Nexus | Not confirmed | PHERAstar FSX | Same modules, top or bottom | SpectraMax iD3 / iD5 | Sequential | Synergy H1 | Sequential | Synergy Neo2 | One bottom PMT | Tecan Spark | Sequential | VANTAstar | Sequential | Varioskan LUX | Sequential | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-5\"><h2 data-source-cell=\"At a glance!A9\">Two emission colors read at the same instant (bottom)</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-9\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Two emission colors read at the same instant (bottom)</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E9\">Sequential</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B9\">Not confirmed</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C9\">Same modules, top or bottom</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G9\">Sequential</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H9\">Sequential</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D9\">One bottom PMT</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F9\">Sequential</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I9\">Sequential</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J9\">Sequential</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Same optics read top and bottom, switched in softwareRead the detailed comparison →Same optics read top and bottom, switched in softwareReader | Answer and condition | CLARIOstar Plus | Autofocus both sides | EnVision Nexus | Not FP, sensitive lum or Alpha | PHERAstar FSX | All modes | SpectraMax iD3 / iD5 | Bottom lum a factory option, 20–30× weaker | Synergy H1 | Filters top only | Synergy Neo2 | Separate bottom cubes | Tecan Spark | FI yes; bottom lum unconfirmed | VANTAstar | Autofocus both sides | Varioskan LUX | No focus; adapter sets height | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-6\"><h2 data-source-cell=\"At a glance!A10\">Same optics read top and bottom, switched in software</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-14\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Same optics read top and bottom, switched in software</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E10\">Autofocus both sides</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B10\">Not FP, sensitive lum or Alpha</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C10\">All modes</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G10\">Bottom lum a factory option, 20–30× weaker</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H10\">Filters top only</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D10\">Separate bottom cubes</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F10\">FI yes; bottom lum unconfirmed</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I10\">Autofocus both sides</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J10\">No focus; adapter sets height</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Injection at the read positionRead the detailed comparison →Injection at the read positionReader | Answer and condition | CLARIOstar Plus | At the read position | EnVision Nexus | Not published | PHERAstar FSX | 50 readings/s through injection | SpectraMax iD3 / iD5 | Waits 500 ms after injection | Synergy H1 | Not published | Synergy Neo2 | Read starts up to 1 s after dispense | Tecan Spark | Injects elsewhere; plate moves | VANTAstar | Injects, then reads | Varioskan LUX | Only with head set to L by hand | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-7\"><h2 data-source-cell=\"At a glance!A11\">Injection at the read position</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-26\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Injection at the read position</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E11\">At the read position</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B11\">Not published</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C11\">50 readings/s through injection</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G11\">Waits 500 ms after injection</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H11\">Not published</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D11\">Read starts up to 1 s after dispense</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F11\">Injects elsewhere; plate moves</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I11\">Injects, then reads</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J11\">Only with head set to L by hand</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Crosstalk mask between plate and detectorRead the detailed comparison →Crosstalk mask between plate and detectorReader | Answer and condition | CLARIOstar Plus | Aperture spoon over the well | EnVision Nexus | Hand-swapped; mismatch not enforced | PHERAstar FSX | Spoon per plate format | SpectraMax iD3 / iD5 | None; “use every other well” | Synergy H1 | None | Synergy Neo2 | Inside the cube, after the lens | Tecan Spark | Separate line item | VANTAstar | Automatic to 384 | Varioskan LUX | Shield after collection | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-8\"><h2 data-source-cell=\"At a glance!A12\">Crosstalk mask between plate and detector</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-22\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Crosstalk mask between plate and detector</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E12\">Aperture spoon over the well</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B12\">Hand-swapped; mismatch not enforced</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C12\">Spoon per plate format</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G12\">None; “use every other well”</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H12\">None</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D12\">Inside the cube, after the lens</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F12\">Separate line item</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I12\">Automatic to 384</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J12\">Shield after collection</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Laser excitation for TRFRead the detailed comparison →Laser excitation for TRFReader | Answer and condition | CLARIOstar Plus | Flash lamp | EnVision Nexus | Option (343 nm DPSS) | PHERAstar FSX | Option, 60 flashes/s | SpectraMax iD3 / iD5 | Flash lamp | Synergy H1 | Flash lamp | Synergy Neo2 | Dual-top builds only (7 of 19) | Tecan Spark | Flash lamp | VANTAstar | Flash lamp | Varioskan LUX | Flash lamp | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-9\"><h2 data-source-cell=\"At a glance!A13\">Laser excitation for TRF</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-27\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Laser excitation for TRF</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E13\">Flash lamp</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B13\">Option (343 nm DPSS)</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C13\">Option, 60 flashes/s</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G13\">Flash lamp</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H13\">Flash lamp</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D13\">Dual-top builds only (7 of 19)</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F13\">Flash lamp</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I13\">Flash lamp</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J13\">Flash lamp</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Decay-curve tool for setting the TRF windowRead the detailed comparison →Decay-curve tool for setting the TRF windowReader | Answer and condition | CLARIOstar Plus | No (BMG: an FSX feature) | EnVision Nexus | Fixed default curve only | PHERAstar FSX | Decay Curve Monitoring | SpectraMax iD3 / iD5 | Not offered | Synergy H1 | Not published | Synergy Neo2 | No | Tecan Spark | Not offered | VANTAstar | No (BMG: an FSX feature) | Varioskan LUX | Not offered | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-10\"><h2 data-source-cell=\"At a glance!A14\">Decay-curve tool for setting the TRF window</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-29\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Decay-curve tool for setting the TRF window</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E14\">No (BMG: an FSX feature)</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B14\">Fixed default curve only</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C14\">Decay Curve Monitoring</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G14\">Not offered</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H14\">Not published</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D14\">No</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F14\">Not offered</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I14\">No (BMG: an FSX feature)</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J14\">Not offered</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "HTRF in black platesRead the detailed comparison →HTRF in black platesReader | Answer and condition | CLARIOstar Plus | Certified black and white | EnVision Nexus | “Only… in WHITE plates” | PHERAstar FSX | Certified black and white | SpectraMax iD3 / iD5 | Not confirmed | Synergy H1 | Filter mode, white plates only | Synergy Neo2 | White only | Tecan Spark | Not on the monochromator path | VANTAstar | Figures for black and white | Varioskan LUX | Certified; plate color not stated | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-11\"><h2 data-source-cell=\"At a glance!A15\">HTRF in black plates</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-28\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>HTRF in black plates</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E15\">Certified black and white</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B15\">“Only… in WHITE plates”</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C15\">Certified black and white</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G15\">Not confirmed</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H15\">Filter mode, white plates only</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D15\">White only</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F15\">Not on the monochromator path</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I15\">Figures for black and white</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J15\">Certified; plate color not stated</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "AlphaScreen / AlphaLISARead the detailed comparison →AlphaScreen / AlphaLISAReader | Answer and condition | CLARIOstar Plus | 680 nm laser module | EnVision Nexus | Enhanced or HT mode, never both | PHERAstar FSX | 680 nm laser | SpectraMax iD3 / iD5 | Not offered | Synergy H1 | Not offered | Synergy Neo2 | 768 cube moves per 384 plate | Tecan Spark | Corrected for heat in software | VANTAstar | Not offered | Varioskan LUX | LED, no laser, no cooling | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-12\"><h2 data-source-cell=\"At a glance!A16\">AlphaScreen / AlphaLISA</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-33\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>AlphaScreen / AlphaLISA</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E16\">680 nm laser module</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B16\">Enhanced or HT mode, never both</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C16\">680 nm laser</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G16\">Not offered</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H16\">Not offered</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D16\">768 cube moves per 384 plate</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F16\">Corrected for heat in software</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I16\">Not offered</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J16\">LED, no laser, no cooling</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Fluorescence polarizationRead the detailed comparison →Fluorescence polarizationReader | Answer and condition | CLARIOstar Plus | <0.5 mP; UV option | EnVision Nexus | Top only | PHERAstar FSX | Both planes at once | SpectraMax iD3 / iD5 | iD5 only; mono needs 10× dye | Synergy H1 | Filters, top only | Synergy Neo2 | Dual cube special order | Tecan Spark | Top only; not on Cyto 300/400 | VANTAstar | Top and bottom | Varioskan LUX | Never | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-13\"><h2 data-source-cell=\"At a glance!A17\">Fluorescence polarization</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-30\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Fluorescence polarization</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E17\">&lt;0.5 mP; UV option</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B17\">Top only</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C17\">Both planes at once</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G17\">iD5 only; mono needs 10× dye</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H17\">Filters, top only</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D17\">Dual cube special order</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F17\">Top only; not on Cyto 300/400</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I17\">Top and bottom</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J17\">Never</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "1536-well platesRead the detailed comparison →1536-well platesReader | Answer and condition | CLARIOstar Plus | To 1536 | EnVision Nexus | 1–1536 | PHERAstar FSX | To 3456 | SpectraMax iD3 / iD5 | Stops at 384 | Synergy H1 | Stops at 384 | Synergy Neo2 | Injectors to 384 only | Tecan Spark | Enhanced modules only | VANTAstar | Stops at 384 | Varioskan LUX | Own adapter; no lid, no dispensing | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-14\"><h2 data-source-cell=\"At a glance!A18\">1536-well plates</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-39\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>1536-well plates</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E18\">To 1536</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B18\">1–1536</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C18\">To 3456</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G18\">Stops at 384</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H18\">Stops at 384</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D18\">Injectors to 384 only</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F18\">Enhanced modules only</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I18\">Stops at 384</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J18\">Own adapter; no lid, no dispensing</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Full absorbance spectrum in about a second per wellRead the detailed comparison →Full absorbance spectrum in about a second per wellReader | Answer and condition | CLARIOstar Plus | <1 s | EnVision Nexus | Filters only, no spectrum | PHERAstar FSX | <1 s (spectrometer option) | SpectraMax iD3 / iD5 | Not published | Synergy H1 | “An hour or more” per plate | Synergy Neo2 | ~60 s per well | Tecan Spark | ≤5 s | VANTAstar | <1 s | Varioskan LUX | ~18 s (calculated) | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-15\"><h2 data-source-cell=\"At a glance!A19\">Full absorbance spectrum in about a second per well</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-37\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Full absorbance spectrum in about a second per well</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E19\">&lt;1 s</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B19\">Filters only, no spectrum</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C19\">&lt;1 s (spectrometer option)</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G19\">Not published</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H19\">“An hour or more” per plate</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D19\">~60 s per well</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F19\">≤5 s</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I19\">&lt;1 s</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J19\">~18 s (calculated)</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Chamber held at or below room temperatureRead the detailed comparison →Chamber held at or below room temperatureReader | Answer and condition | CLARIOstar Plus | Ambient +3 | EnVision Nexus | Ambient +5 | PHERAstar FSX | AAS option, 18–45 °C | SpectraMax iD3 / iD5 | Ambient +5 | Synergy H1 | Ambient +4 | Synergy Neo2 | Ambient +4 | Tecan Spark | Te-Cool at incubation position only | VANTAstar | Ambient +4 | Varioskan LUX | Ambient +4 | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-16\"><h2 data-source-cell=\"At a glance!A20\">Chamber held at or below room temperature</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-50\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Chamber held at or below room temperature</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E20\">Ambient +3</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B20\">Ambient +5</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C20\">AAS option, 18–45 °C</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G20\">Ambient +5</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H20\">Ambient +4</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D20\">Ambient +4</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F20\">Te-Cool at incubation position only</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I20\">Ambient +4</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J20\">Ambient +4</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "CO₂ / O₂ control inside the readerRead the detailed comparison →CO₂ / O₂ control inside the readerReader | Answer and condition | CLARIOstar Plus | ACU, 0.1–20% | EnVision Nexus | Not offered | PHERAstar FSX | Not offered | SpectraMax iD3 / iD5 | User-installed mixer | Synergy H1 | G builds, separate unit | Synergy Neo2 | External add-on | Tecan Spark | At incubation position | VANTAstar | ACU, 1–20% | Varioskan LUX | Option module | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-17\"><h2 data-source-cell=\"At a glance!A21\">CO₂ / O₂ control inside the reader</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-53\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>CO₂ / O₂ control inside the reader</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E21\">ACU, 0.1–20%</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B21\">Not offered</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C21\">Not offered</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G21\">User-installed mixer</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H21\">G builds, separate unit</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D21\">External add-on</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F21\">At incubation position</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I21\">ACU, 1–20%</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J21\">Option module</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Humidity controlRead the detailed comparison →Humidity controlReader | Answer and condition | CLARIOstar Plus | No | EnVision Nexus | No; lids barred in sensitive modes | PHERAstar FSX | No | SpectraMax iD3 / iD5 | No; injected reads unlidded | Synergy H1 | No | Synergy Neo2 | No | Tecan Spark | Cassette + Lid Lifter | VANTAstar | No | Varioskan LUX | No | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-18\"><h2 data-source-cell=\"At a glance!A22\">Humidity control</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-52\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Humidity control</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E22\">No</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B22\">No; lids barred in sensitive modes</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C22\">No</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G22\">No; injected reads unlidded</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H22\">No</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D22\">No</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F22\">Cassette + Lid Lifter</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I22\">No</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J22\">No</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "No plate adapters or hand-set read heightRead the detailed comparison →No plate adapters or hand-set read heightReader | Answer and condition | CLARIOstar Plus | Autofocus | EnVision Nexus | Hand-swapped apertures fix the height | PHERAstar FSX | Plate defined in software | SpectraMax iD3 / iD5 | Re-tune per plate lot | Synergy H1 | Auto Z-focus | Synergy Neo2 | Fixed bottom focus | Tecan Spark | Auto Z-focus | VANTAstar | Autofocus | Varioskan LUX | Adapter per plate and lid | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-19\"><h2 data-source-cell=\"At a glance!A23\">No plate adapters or hand-set read height</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-42\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>No plate adapters or hand-set read height</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E23\">Autofocus</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B23\">Hand-swapped apertures fix the height</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C23\">Plate defined in software</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G23\">Re-tune per plate lot</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H23\">Auto Z-focus</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D23\">Fixed bottom focus</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F23\">Auto Z-focus</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I23\">Autofocus</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J23\">Adapter per plate and lid</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "Software on any number of PCs, no feeRead the detailed comparison →Software on any number of PCs, no feeReader | Answer and condition | CLARIOstar Plus | Unlimited | EnVision Nexus | One bound PC | PHERAstar FSX | Unlimited | SpectraMax iD3 / iD5 | Per seat; Import license extra | Synergy H1 | 5 installs | Synergy Neo2 | 5 installs + USB dongle | Tecan Spark | 2 installs | VANTAstar | Unlimited | Varioskan LUX | Unlimited | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-20\"><h2 data-source-cell=\"At a glance!A24\">Software on any number of PCs, no fee</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-55\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>Software on any number of PCs, no fee</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E24\">Unlimited</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B24\">One bound PC</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C24\">Unlimited</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G24\">Per seat; Import license extra</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H24\">5 installs</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D24\">5 installs + USB dongle</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F24\">2 installs</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I24\">Unlimited</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J24\">Unlimited</td></tr></tbody></table></section>"
+        },
+        {
+          "type": "section",
+          "text": "21 CFR Part 11 without a per-seat feeRead the detailed comparison →21 CFR Part 11 without a per-seat feeReader | Answer and condition | CLARIOstar Plus | No per-seat fee | EnVision Nexus | Option | PHERAstar FSX | Included, no fee | SpectraMax iD3 / iD5 | GxP edition | Synergy H1 | Option | Synergy Neo2 | Option | Tecan Spark | Paid option | VANTAstar | No per-seat fee | Varioskan LUX | Separate edition | ",
+          "html": "<section class=\"matrix-finding\" data-matrix-finding id=\"question-21\"><h2 data-source-cell=\"At a glance!A25\">21 CFR Part 11 without a per-seat fee</h2><p><a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#finding-57\">Read the detailed comparison →</a></p><table class=\"reader-glance\"><caption>21 CFR Part 11 without a per-seat fee</caption><thead><tr><th scope=\"col\">Reader</th><th scope=\"col\">Answer and condition</th></tr></thead><tbody><tr data-reader=\"CLARIOstar Plus\"><th scope=\"row\">CLARIOstar Plus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!E25\">No per-seat fee</td></tr><tr data-reader=\"EnVision Nexus\"><th scope=\"row\">EnVision Nexus</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!B25\">Option</td></tr><tr data-reader=\"PHERAstar FSX\"><th scope=\"row\">PHERAstar FSX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!C25\">Included, no fee</td></tr><tr data-reader=\"SpectraMax iD3 / iD5\"><th scope=\"row\">SpectraMax iD3 / iD5</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!G25\">GxP edition</td></tr><tr data-reader=\"Synergy H1\"><th scope=\"row\">Synergy H1</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!H25\">Option</td></tr><tr data-reader=\"Synergy Neo2\"><th scope=\"row\">Synergy Neo2</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!D25\">Option</td></tr><tr data-reader=\"Tecan Spark\"><th scope=\"row\">Tecan Spark</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!F25\">Paid option</td></tr><tr data-reader=\"VANTAstar\"><th scope=\"row\">VANTAstar</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!I25\">No per-seat fee</td></tr><tr data-reader=\"Varioskan LUX\"><th scope=\"row\">Varioskan LUX</th><td data-label=\"Answer and condition\" data-source-cell=\"At a glance!J25\">Separate edition</td></tr></tbody></table></section>"
+        }
+      ]
+    },
+    {
+      "id": "sources",
+      "heading": "Sources",
+      "blocks": [
+        {
+          "type": "h2",
+          "text": "Sources",
+          "html": "<h2 id=\"sources\">Sources</h2>"
+        },
+        {
+          "type": "p",
+          "text": "The document library accompanying the detailed matrix lists the documents, editions, links and availability notes for these comparisons.",
+          "html": "<p id=\"ref-matrix\">The <a href=\"https://discoveryinpractice.com/compare/microplate-reader-specifications/#sources\">document library accompanying the detailed matrix</a> lists the documents, editions, links and availability notes for these comparisons.</p>"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-matrix",
+      "citation": "Microplate reader specifications: documents and source editions",
+      "urls": [
+        "https://discoveryinpractice.com/compare/microplate-reader-specifications/#sources"
+      ]
+    }
+  ],
+  "equations": [],
+  "tables": [
+    {
+      "caption": "Dichroic mirror that tracks the wavelength on the monochromator path",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "LVD, 340–740 nm"
+        ],
+        [
+          "EnVision Nexus",
+          "No monochromator"
+        ],
+        [
+          "PHERAstar FSX",
+          "Matched dichroic in each module"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "No dichroic on mono path"
+        ],
+        [
+          "Synergy H1",
+          "No dichroic on mono path"
+        ],
+        [
+          "Synergy Neo2",
+          "No dichroic on mono path"
+        ],
+        [
+          "Tecan Spark",
+          "One fixed (510 nm) on standard"
+        ],
+        [
+          "VANTAstar",
+          "LVD, 340–740 nm"
+        ],
+        [
+          "Varioskan LUX",
+          "No dichroic"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Bandwidth the user can set",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "8–100 nm"
+        ],
+        [
+          "EnVision Nexus",
+          "Set by module"
+        ],
+        [
+          "PHERAstar FSX",
+          "Set by module"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Fixed 15 / 25 nm"
+        ],
+        [
+          "Synergy H1",
+          "M2 builds only; else fixed 16 nm"
+        ],
+        [
+          "Synergy Neo2",
+          "3–50 nm"
+        ],
+        [
+          "Tecan Spark",
+          "Enhanced only; standard fixed 20 nm"
+        ],
+        [
+          "VANTAstar",
+          "8–100 nm"
+        ],
+        [
+          "Varioskan LUX",
+          "Emission fixed 12 nm"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Gain chosen per well inside one read, kinetics included",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "EDR"
+        ],
+        [
+          "EnVision Nexus",
+          "No gain on the counter; no ceiling published"
+        ],
+        [
+          "PHERAstar FSX",
+          "EDR"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Endpoints only"
+        ],
+        [
+          "Synergy H1",
+          "User sets; saturates at 99,999"
+        ],
+        [
+          "Synergy Neo2",
+          "Auto-range adds minutes"
+        ],
+        [
+          "Tecan Spark",
+          "User picks; extended = two passes"
+        ],
+        [
+          "VANTAstar",
+          "EDR"
+        ],
+        [
+          "Varioskan LUX",
+          "Per well; kinetics not published"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Two emission colors read at the same instant (top)",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Sequential"
+        ],
+        [
+          "EnVision Nexus",
+          "Filter path only"
+        ],
+        [
+          "PHERAstar FSX",
+          "Matched PMT pairs"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Sequential"
+        ],
+        [
+          "Synergy H1",
+          "Sequential"
+        ],
+        [
+          "Synergy Neo2",
+          "Dual-top builds; unmatched tubes; special cube"
+        ],
+        [
+          "Tecan Spark",
+          "Sequential"
+        ],
+        [
+          "VANTAstar",
+          "Sequential"
+        ],
+        [
+          "Varioskan LUX",
+          "Sequential"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Two emission colors read at the same instant (bottom)",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Sequential"
+        ],
+        [
+          "EnVision Nexus",
+          "Not confirmed"
+        ],
+        [
+          "PHERAstar FSX",
+          "Same modules, top or bottom"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Sequential"
+        ],
+        [
+          "Synergy H1",
+          "Sequential"
+        ],
+        [
+          "Synergy Neo2",
+          "One bottom PMT"
+        ],
+        [
+          "Tecan Spark",
+          "Sequential"
+        ],
+        [
+          "VANTAstar",
+          "Sequential"
+        ],
+        [
+          "Varioskan LUX",
+          "Sequential"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Same optics read top and bottom, switched in software",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Autofocus both sides"
+        ],
+        [
+          "EnVision Nexus",
+          "Not FP, sensitive lum or Alpha"
+        ],
+        [
+          "PHERAstar FSX",
+          "All modes"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Bottom lum a factory option, 20–30× weaker"
+        ],
+        [
+          "Synergy H1",
+          "Filters top only"
+        ],
+        [
+          "Synergy Neo2",
+          "Separate bottom cubes"
+        ],
+        [
+          "Tecan Spark",
+          "FI yes; bottom lum unconfirmed"
+        ],
+        [
+          "VANTAstar",
+          "Autofocus both sides"
+        ],
+        [
+          "Varioskan LUX",
+          "No focus; adapter sets height"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Injection at the read position",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "At the read position"
+        ],
+        [
+          "EnVision Nexus",
+          "Not published"
+        ],
+        [
+          "PHERAstar FSX",
+          "50 readings/s through injection"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Waits 500 ms after injection"
+        ],
+        [
+          "Synergy H1",
+          "Not published"
+        ],
+        [
+          "Synergy Neo2",
+          "Read starts up to 1 s after dispense"
+        ],
+        [
+          "Tecan Spark",
+          "Injects elsewhere; plate moves"
+        ],
+        [
+          "VANTAstar",
+          "Injects, then reads"
+        ],
+        [
+          "Varioskan LUX",
+          "Only with head set to L by hand"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Crosstalk mask between plate and detector",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Aperture spoon over the well"
+        ],
+        [
+          "EnVision Nexus",
+          "Hand-swapped; mismatch not enforced"
+        ],
+        [
+          "PHERAstar FSX",
+          "Spoon per plate format"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "None; “use every other well”"
+        ],
+        [
+          "Synergy H1",
+          "None"
+        ],
+        [
+          "Synergy Neo2",
+          "Inside the cube, after the lens"
+        ],
+        [
+          "Tecan Spark",
+          "Separate line item"
+        ],
+        [
+          "VANTAstar",
+          "Automatic to 384"
+        ],
+        [
+          "Varioskan LUX",
+          "Shield after collection"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Laser excitation for TRF",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Flash lamp"
+        ],
+        [
+          "EnVision Nexus",
+          "Option (343 nm DPSS)"
+        ],
+        [
+          "PHERAstar FSX",
+          "Option, 60 flashes/s"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Flash lamp"
+        ],
+        [
+          "Synergy H1",
+          "Flash lamp"
+        ],
+        [
+          "Synergy Neo2",
+          "Dual-top builds only (7 of 19)"
+        ],
+        [
+          "Tecan Spark",
+          "Flash lamp"
+        ],
+        [
+          "VANTAstar",
+          "Flash lamp"
+        ],
+        [
+          "Varioskan LUX",
+          "Flash lamp"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Decay-curve tool for setting the TRF window",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "No (BMG: an FSX feature)"
+        ],
+        [
+          "EnVision Nexus",
+          "Fixed default curve only"
+        ],
+        [
+          "PHERAstar FSX",
+          "Decay Curve Monitoring"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Not offered"
+        ],
+        [
+          "Synergy H1",
+          "Not published"
+        ],
+        [
+          "Synergy Neo2",
+          "No"
+        ],
+        [
+          "Tecan Spark",
+          "Not offered"
+        ],
+        [
+          "VANTAstar",
+          "No (BMG: an FSX feature)"
+        ],
+        [
+          "Varioskan LUX",
+          "Not offered"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "HTRF in black plates",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Certified black and white"
+        ],
+        [
+          "EnVision Nexus",
+          "“Only… in WHITE plates”"
+        ],
+        [
+          "PHERAstar FSX",
+          "Certified black and white"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Not confirmed"
+        ],
+        [
+          "Synergy H1",
+          "Filter mode, white plates only"
+        ],
+        [
+          "Synergy Neo2",
+          "White only"
+        ],
+        [
+          "Tecan Spark",
+          "Not on the monochromator path"
+        ],
+        [
+          "VANTAstar",
+          "Figures for black and white"
+        ],
+        [
+          "Varioskan LUX",
+          "Certified; plate color not stated"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "AlphaScreen / AlphaLISA",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "680 nm laser module"
+        ],
+        [
+          "EnVision Nexus",
+          "Enhanced or HT mode, never both"
+        ],
+        [
+          "PHERAstar FSX",
+          "680 nm laser"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Not offered"
+        ],
+        [
+          "Synergy H1",
+          "Not offered"
+        ],
+        [
+          "Synergy Neo2",
+          "768 cube moves per 384 plate"
+        ],
+        [
+          "Tecan Spark",
+          "Corrected for heat in software"
+        ],
+        [
+          "VANTAstar",
+          "Not offered"
+        ],
+        [
+          "Varioskan LUX",
+          "LED, no laser, no cooling"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Fluorescence polarization",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "<0.5 mP; UV option"
+        ],
+        [
+          "EnVision Nexus",
+          "Top only"
+        ],
+        [
+          "PHERAstar FSX",
+          "Both planes at once"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "iD5 only; mono needs 10× dye"
+        ],
+        [
+          "Synergy H1",
+          "Filters, top only"
+        ],
+        [
+          "Synergy Neo2",
+          "Dual cube special order"
+        ],
+        [
+          "Tecan Spark",
+          "Top only; not on Cyto 300/400"
+        ],
+        [
+          "VANTAstar",
+          "Top and bottom"
+        ],
+        [
+          "Varioskan LUX",
+          "Never"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "1536-well plates",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "To 1536"
+        ],
+        [
+          "EnVision Nexus",
+          "1–1536"
+        ],
+        [
+          "PHERAstar FSX",
+          "To 3456"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Stops at 384"
+        ],
+        [
+          "Synergy H1",
+          "Stops at 384"
+        ],
+        [
+          "Synergy Neo2",
+          "Injectors to 384 only"
+        ],
+        [
+          "Tecan Spark",
+          "Enhanced modules only"
+        ],
+        [
+          "VANTAstar",
+          "Stops at 384"
+        ],
+        [
+          "Varioskan LUX",
+          "Own adapter; no lid, no dispensing"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Full absorbance spectrum in about a second per well",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "<1 s"
+        ],
+        [
+          "EnVision Nexus",
+          "Filters only, no spectrum"
+        ],
+        [
+          "PHERAstar FSX",
+          "<1 s (spectrometer option)"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Not published"
+        ],
+        [
+          "Synergy H1",
+          "“An hour or more” per plate"
+        ],
+        [
+          "Synergy Neo2",
+          "~60 s per well"
+        ],
+        [
+          "Tecan Spark",
+          "≤5 s"
+        ],
+        [
+          "VANTAstar",
+          "<1 s"
+        ],
+        [
+          "Varioskan LUX",
+          "~18 s (calculated)"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Chamber held at or below room temperature",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Ambient +3"
+        ],
+        [
+          "EnVision Nexus",
+          "Ambient +5"
+        ],
+        [
+          "PHERAstar FSX",
+          "AAS option, 18–45 °C"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Ambient +5"
+        ],
+        [
+          "Synergy H1",
+          "Ambient +4"
+        ],
+        [
+          "Synergy Neo2",
+          "Ambient +4"
+        ],
+        [
+          "Tecan Spark",
+          "Te-Cool at incubation position only"
+        ],
+        [
+          "VANTAstar",
+          "Ambient +4"
+        ],
+        [
+          "Varioskan LUX",
+          "Ambient +4"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "CO₂ / O₂ control inside the reader",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "ACU, 0.1–20%"
+        ],
+        [
+          "EnVision Nexus",
+          "Not offered"
+        ],
+        [
+          "PHERAstar FSX",
+          "Not offered"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "User-installed mixer"
+        ],
+        [
+          "Synergy H1",
+          "G builds, separate unit"
+        ],
+        [
+          "Synergy Neo2",
+          "External add-on"
+        ],
+        [
+          "Tecan Spark",
+          "At incubation position"
+        ],
+        [
+          "VANTAstar",
+          "ACU, 1–20%"
+        ],
+        [
+          "Varioskan LUX",
+          "Option module"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Humidity control",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "No"
+        ],
+        [
+          "EnVision Nexus",
+          "No; lids barred in sensitive modes"
+        ],
+        [
+          "PHERAstar FSX",
+          "No"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "No; injected reads unlidded"
+        ],
+        [
+          "Synergy H1",
+          "No"
+        ],
+        [
+          "Synergy Neo2",
+          "No"
+        ],
+        [
+          "Tecan Spark",
+          "Cassette + Lid Lifter"
+        ],
+        [
+          "VANTAstar",
+          "No"
+        ],
+        [
+          "Varioskan LUX",
+          "No"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "No plate adapters or hand-set read height",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Autofocus"
+        ],
+        [
+          "EnVision Nexus",
+          "Hand-swapped apertures fix the height"
+        ],
+        [
+          "PHERAstar FSX",
+          "Plate defined in software"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Re-tune per plate lot"
+        ],
+        [
+          "Synergy H1",
+          "Auto Z-focus"
+        ],
+        [
+          "Synergy Neo2",
+          "Fixed bottom focus"
+        ],
+        [
+          "Tecan Spark",
+          "Auto Z-focus"
+        ],
+        [
+          "VANTAstar",
+          "Autofocus"
+        ],
+        [
+          "Varioskan LUX",
+          "Adapter per plate and lid"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "Software on any number of PCs, no fee",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "Unlimited"
+        ],
+        [
+          "EnVision Nexus",
+          "One bound PC"
+        ],
+        [
+          "PHERAstar FSX",
+          "Unlimited"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "Per seat; Import license extra"
+        ],
+        [
+          "Synergy H1",
+          "5 installs"
+        ],
+        [
+          "Synergy Neo2",
+          "5 installs + USB dongle"
+        ],
+        [
+          "Tecan Spark",
+          "2 installs"
+        ],
+        [
+          "VANTAstar",
+          "Unlimited"
+        ],
+        [
+          "Varioskan LUX",
+          "Unlimited"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    },
+    {
+      "caption": "21 CFR Part 11 without a per-seat fee",
+      "rows": [
+        [
+          "Reader",
+          "Answer and condition"
+        ],
+        [
+          "CLARIOstar Plus",
+          "No per-seat fee"
+        ],
+        [
+          "EnVision Nexus",
+          "Option"
+        ],
+        [
+          "PHERAstar FSX",
+          "Included, no fee"
+        ],
+        [
+          "SpectraMax iD3 / iD5",
+          "GxP edition"
+        ],
+        [
+          "Synergy H1",
+          "Option"
+        ],
+        [
+          "Synergy Neo2",
+          "Option"
+        ],
+        [
+          "Tecan Spark",
+          "Paid option"
+        ],
+        [
+          "VANTAstar",
+          "No per-seat fee"
+        ],
+        [
+          "Varioskan LUX",
+          "Separate edition"
+        ]
+      ],
+      "data_kind": "source comparison and stated illustrative calculations"
+    }
+  ],
+  "display_additions": {},
+  "content_sha256": "a5f63672dd680553ee2886a9432b765898a8e5fbc7d47189b76689fe9a995e5a"
+}

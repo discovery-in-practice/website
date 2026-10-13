@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1060" role="img" aria-labelledby="title desc"><title id="title">Reading both colors of a 384-well ratio assay</title><desc id="desc">A second detector halves the read time in the source comparison. Dark bars show the vendor’s fastest printed one-color read, or both colors at once where stated. Light bars show an estimated second pass for one-detector readers: an upper bound because plate movement is shared. Vendor settings differ (1 flash, sweep mode, “lowest setting”). Spark: Spark Cyto brochure ≤30 s for 384 wells. H1: kinetic figure, no flash count stated. Neo2’s 11 s is one color, and dual-emission time is not published; it reads two colors at once only on Dual Filter Top builds with a special-order cube.</desc><rect width="1200" height="1060" fill="#f6f3eb"/>
+<text x="32" y="37" fill="#505650" font-family="Arial, sans-serif" font-size="14" font-weight="400">DISCOVERY IN PRACTICE  /  MICROPLATE READERS</text>
+<text x="32" y="77" fill="#20211f" font-family="Arial, sans-serif" font-size="28" font-weight="700">Reading both colors of a 384-well ratio assay</text>
+<text x="32" y="123" fill="#505650" font-family="Arial, sans-serif" font-size="18" font-weight="400">Blue: vendor read. Pale blue: estimated second pass, an upper bound. Both-color totals are labeled; Neo2 remains one-color only.</text>
+<line x1="270.0" y1="190" x2="270.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="262.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">0</text>
+<line x1="364.0" y1="190" x2="364.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="356.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">20</text>
+<line x1="458.0" y1="190" x2="458.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="450.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">40</text>
+<line x1="552.0" y1="190" x2="552.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="544.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">60</text>
+<line x1="646.0" y1="190" x2="646.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="638.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">80</text>
+<line x1="740.0" y1="190" x2="740.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="732.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">100</text>
+<text x="32" y="221" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">CLARIOstar Plus</text>
+<rect x="270" y="205" width="70.5" height="20" fill="#28618b"/>
+<rect x="340.5" y="205" width="70.5" height="20" fill="#9fbacd"/>
+<text x="784" y="210" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">30 s · estimated two-color total</text>
+<text x="32" y="305" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">EnVision Nexus</text>
+<rect x="270" y="289" width="65.8" height="20" fill="#28618b"/>
+<text x="784" y="294" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">14 s · both colors at once</text>
+<text x="32" y="389" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">PHERAstar FSX</text>
+<rect x="270" y="373" width="65.8" height="20" fill="#28618b"/>
+<text x="784" y="378" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">14 s · both colors at once</text>
+<text x="32" y="473" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">SpectraMax iD3/iD5</text>
+<rect x="270" y="457" width="150.4" height="20" fill="#28618b"/>
+<rect x="420.4" y="457" width="150.4" height="20" fill="#9fbacd"/>
+<text x="784" y="462" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">64 s · estimated two-color total</text>
+<text x="32" y="557" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy H1</text>
+<rect x="270" y="541" width="103.4" height="20" fill="#28618b"/>
+<rect x="373.4" y="541" width="103.4" height="20" fill="#9fbacd"/>
+<text x="784" y="546" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">44 s · estimated two-color total</text>
+<text x="32" y="641" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy Neo2</text>
+<rect x="270" y="625" width="51.7" height="20" fill="#28618b"/>
+<text x="784" y="630" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">11 s · one color; dual time not published</text>
+<text x="32" y="725" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Tecan Spark</text>
+<rect x="270" y="709" width="141.0" height="20" fill="#28618b"/>
+<rect x="411.0" y="709" width="141.0" height="20" fill="#9fbacd"/>
+<text x="784" y="714" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">60 s · estimated two-color total</text>
+<text x="32" y="809" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">VANTAstar</text>
+<rect x="270" y="793" width="75.2" height="20" fill="#28618b"/>
+<rect x="345.2" y="793" width="75.2" height="20" fill="#9fbacd"/>
+<text x="784" y="798" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">32 s · estimated two-color total</text>
+<text x="32" y="893" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Varioskan LUX</text>
+<rect x="270" y="877" width="211.5" height="20" fill="#28618b"/>
+<rect x="481.5" y="877" width="211.5" height="20" fill="#9fbacd"/>
+<text x="784" y="882" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">90 s · estimated two-color total</text>
+<text x="270" y="1000" fill="#505650" font-family="Arial, sans-serif" font-size="17" font-weight="400">Seconds per 384-well plate</text>
+</svg>

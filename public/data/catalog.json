@@ -1995,5 +1995,79 @@
     "date_modified": "2026-10-12",
     "json_url": "https://discoveryinpractice.com/articles/flashes-versus-fluorescence-integration-time/article.json",
     "markdown_url": "https://discoveryinpractice.com/articles/flashes-versus-fluorescence-integration-time/article.md"
+  },
+  {
+    "id": "microplate-reader-specifications",
+    "title": "Microplate reader comparison: specifications and features",
+    "canonical_url": "https://discoveryinpractice.com/compare/microplate-reader-specifications/",
+    "summary": "Compare nine microplate readers across fluorescence, luminescence, TR-FRET, absorbance, plate handling, temperature control and ownership.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Microplate readers",
+      "Fluorescence",
+      "Luminescence",
+      "TR-FRET",
+      "Absorbance"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "c2f82025775fe28cabdc89edf5d04a4d70adc74ca4d0f5714b6429f9fcf85fe0",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-13",
+    "date_modified": "2026-10-13",
+    "json_url": "https://discoveryinpractice.com/compare/microplate-reader-specifications/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/microplate-reader-specifications/article.md"
+  },
+  {
+    "id": "microplate-readers-at-a-glance",
+    "title": "Microplate readers at a glance: 21 practical questions",
+    "canonical_url": "https://discoveryinpractice.com/compare/microplate-readers-at-a-glance/",
+    "summary": "A question-led overview of nine microplate readers, with the conditions behind each answer and links to the detailed comparison.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Microplate readers",
+      "Fluorescence",
+      "Luminescence",
+      "TR-FRET",
+      "Absorbance"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "a5f63672dd680553ee2886a9432b765898a8e5fbc7d47189b76689fe9a995e5a",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-13",
+    "date_modified": "2026-10-13",
+    "json_url": "https://discoveryinpractice.com/compare/microplate-readers-at-a-glance/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/microplate-readers-at-a-glance/article.md"
+  },
+  {
+    "id": "microplate-reader-performance-charts",
+    "title": "Microplate reader performance: four comparisons in charts",
+    "canonical_url": "https://discoveryinpractice.com/compare/microplate-reader-performance-charts/",
+    "summary": "Compare microplate reader sensitivity, dual-color read times and temperature control, with published values and measurement conditions kept visible.",
+    "author": {
+      "name": "Andrew Stewart",
+      "url": "https://discoveryinpractice.com/about/#andrew-stewart"
+    },
+    "topics": [
+      "Microplate readers",
+      "Fluorescence",
+      "Luminescence",
+      "Temperature"
+    ],
+    "content_version": "1.0",
+    "content_sha256": "2dcb46b7d40c10478ca08731ab1e09a815b605cdaf95d1babaced7d672c20259",
+    "publication_status": "published",
+    "license": "CC-BY-4.0",
+    "date_published": "2026-10-13",
+    "date_modified": "2026-10-13",
+    "json_url": "https://discoveryinpractice.com/compare/microplate-reader-performance-charts/article.json",
+    "markdown_url": "https://discoveryinpractice.com/compare/microplate-reader-performance-charts/article.md"
   }
 ]

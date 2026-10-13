@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1060" role="img" aria-labelledby="title desc"><title id="title">Luminescence: committed figure versus printed headline</title><desc id="desc">Shown as a ratio within each vendor’s own documents, because glow and flash figures cannot share one absolute axis. Light dot = headline (1×); dark dot = manual specification, guaranteed table or vendor measurement. Single “&lt;” limits are shown at 1×; missing or incompatible comparisons are not plotted. The original chart compares the same chemistry and plate. Spark source volumes differ: 55 µL in the brochure versus 100 µL in the Reference Guide. Spark glow values are 9 versus &lt;10 pM. Spark sources: ENLITEN flash ≤12 amol in 55 µL; Reference Guide 30124664 v2.2 (2024) §9.7.2. iD: live spec page versus Tables A-6/A-7. Nexus: spec sheet 947574 versus Revvity technical note (2025), Figure 1, Ultra-sensitive, same kit/plate/volume, 1 s. Neo2 manual specifies 10 s/well, 96-well, 200 µL.</desc><rect width="1200" height="1060" fill="#f6f3eb"/>
+<text x="32" y="37" fill="#505650" font-family="Arial, sans-serif" font-size="14" font-weight="400">DISCOVERY IN PRACTICE  /  MICROPLATE READERS</text>
+<text x="32" y="77" fill="#20211f" font-family="Arial, sans-serif" font-size="28" font-weight="700">Luminescence: committed figure versus printed headline</text>
+<text x="32" y="123" fill="#505650" font-family="Arial, sans-serif" font-size="18" font-weight="400">Each reader is compared with its own headline. Ratios preserve the source chart’s figures and limits.</text>
+<line x1="270.0" y1="190" x2="270.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="258.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">1×</text>
+<line x1="390.0" y1="190" x2="390.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="378.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">10×</text>
+<line x1="510.0" y1="190" x2="510.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="498.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">100×</text>
+<line x1="630.0" y1="190" x2="630.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="618.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">1,000×</text>
+<line x1="750.0" y1="190" x2="750.0" y2="915" stroke="#d6d5ce" stroke-width="2"/>
+<text x="738.0" y="949" fill="#505650" font-family="Arial, sans-serif" font-size="16" font-weight="400">10,000×</text>
+<text x="32" y="221" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">CLARIOstar Plus</text>
+<circle cx="270.0" cy="215" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="210" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">1× · &lt;0.4 pM · single limit</text>
+<text x="32" y="305" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">EnVision Nexus</text>
+<line x1="270.0" y1="299" x2="740.2265436660327" y2="299" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="270.0" cy="299" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="740.2265436660327" cy="299" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="294" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">8,290× · &lt;0.001 pM → 8.29 pM</text>
+<text x="32" y="389" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">PHERAstar FSX</text>
+<circle cx="270.0" cy="383" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="378" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">1× · &lt;0.4 pM · single limit</text>
+<text x="32" y="473" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">SpectraMax iD3/iD5</text>
+<line x1="270.0" y1="467" x2="353.87640052032225" y2="467" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="270.0" cy="467" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="353.87640052032225" cy="467" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="462" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">5× · 4 pM (384) → 20 pM guaranteed (384)</text>
+<text x="32" y="557" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy H1</text>
+<text x="784" y="546" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">10 amol (no plate) vs ≤75 amol (96-well); not</text>
+<text x="784" y="569" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">plotted</text>
+<text x="32" y="641" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Synergy Neo2</text>
+<text x="784" y="630" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">5 amol (no volume) vs ≤50 amol (96-well, 200 µL);</text>
+<text x="784" y="653" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">not plotted</text>
+<text x="32" y="725" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Tecan Spark</text>
+<line x1="270.0" y1="719" x2="338.1842068880394" y2="719" stroke="#d6d5ce" stroke-width="3"/>
+<circle cx="270.0" cy="719" r="6" fill="#9fbacd" stroke="#9fbacd" stroke-width="3"/>
+<circle cx="338.1842068880394" cy="719" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="714" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">3.7× · 0.218 pM flash → &lt;0.8 pM flash at 10 s/well</text>
+<text x="32" y="809" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">VANTAstar</text>
+<circle cx="270.0" cy="803" r="6" fill="#28618b" stroke="#28618b" stroke-width="3"/>
+<text x="784" y="798" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">1× · &lt;0.8 pM · single limit</text>
+<text x="32" y="893" fill="#20211f" font-family="Arial, sans-serif" font-size="18" font-weight="400">Varioskan LUX</text>
+<text x="784" y="882" fill="#20211f" font-family="Arial, sans-serif" font-size="17" font-weight="400">&lt;7 amol (no volume); not plotted</text>
+<text x="270" y="1000" fill="#505650" font-family="Arial, sans-serif" font-size="17" font-weight="400">Committed or vendor-measured figure ÷ headline · log scale</text>
+</svg>
